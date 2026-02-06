@@ -1,0 +1,15 @@
+[project]
+name = "codex-common-news-reports"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "feedparser>=6.0.12",
+    "imageio-ffmpeg>=0.6.0",
+    "moviepy>=2.2.1",
+    "requests>=2.32.5",
+    "rich>=14.3.2",
+    "toml>=0.10.2",
+    "yt-dlp[default]>=2026.2.4",
+]

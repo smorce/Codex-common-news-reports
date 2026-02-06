@@ -1,0 +1,7 @@
+requests
+feedparser
+yt-dlp[default]
+moviepy
+imageio-ffmpeg
+rich
+toml

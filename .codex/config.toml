@@ -1,0 +1,6 @@
+# プロジェクト用 Codex 設定（trusted 時のみ読み込まれる）
+# chrome-devtools MCP をヘッドレスで起動（このリポジトリで codex exec するとき用）
+
+[mcp_servers."chrome-devtools"]
+command = "npx"
+args = ["-y", "chrome-devtools-mcp@latest", "--headless=true"]

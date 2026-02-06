@@ -1,0 +1,40 @@
+# 技術ブログ
+tech_blogs = [
+    "https://engineering.atspotify.com/feed/",
+    "https://netflixtechblog.com/feed",
+    "https://blog.cloudflare.com/rss/",
+    "https://blog.google/technology/developers/rss/",
+    "https://aws.amazon.com/blogs/aws/feed/",
+    "https://devblogs.microsoft.com/python/feed/",
+    "https://blog.twitter.com/engineering/en_us/blog.rss",
+    "https://medium.com/feed/airbnb-engineering",
+]
+
+# AI/ML関連
+ai_ml = [
+    "https://ai.googleblog.com/feeds/posts/default",
+    "https://openai.com/blog/rss/",
+    "https://huggingface.co/blog/feed.xml",
+    "https://ai-news.dev/feeds/",
+    "https://rss.beehiiv.com/feeds/GcFiF2T4I5.xml",
+    "https://gihyo.jp/feed/rss1",
+    "https://thinkingmachines.ai/index.xml",
+]
+
+zenn = [
+    "https://zenn.dev/topics/cursor/feed",
+    "https://zenn.dev/topics/langchain/feed",
+    "https://zenn.dev/topics/mcp/feed",
+    "https://zenn.dev/topics/ai駆動開発/feed",
+]
+
+qiita = [
+    "http://qiita.com/tags/AI/feed.atom",
+    "http://qiita.com/tags/Cursor/feed.atom",
+    "http://qiita.com/tags/LangChain/feed.atom",
+    "http://qiita.com/tags/LLM/feed.atom",
+    "http://qiita.com/tags/mcp/feed.atom",
+    "http://qiita.com/tags/AI駆動開発/feed.atom",
+]
+
+
