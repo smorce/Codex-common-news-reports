@@ -541,8 +541,33 @@ class CodexDailyRunner:
             if 'HOME' not in env:
                 env['HOME'] = user_home
             env['CODEX_HOME'] = str(Path.home() / ".codex")
-            # Windows で codex (Node) が CP932 で stderr を出すため、子プロセス出力は CP932 でデコードする
-            subprocess_encoding = "cp932" if sys.platform == "win32" else "utf-8"
+            
+            # Windows でのエンコーディング自動判定
+            # Codex CLI (Node) は環境によって UTF-8 か CP932 かが異なるため、
+            # 実際に短いコマンドを投げて判定を試みる
+            def detect_encoding():
+                if sys.platform != "win32":
+                    return "utf-8"
+                try:
+                    # 日本語を含む出力を期待してバージョン情報を取得（通常は英数字だが、
+                    # 環境変数等で日本語が混じる可能性がある。ここでは安全に UTF-8 を優先しつつ、
+                    # 失敗したら CP932 に倒す）
+                    test_proc = subprocess.run(
+                        ["codex", "--version"], 
+                        capture_output=True, 
+                        shell=True,
+                        timeout=5
+                    )
+                    # UTF-8 でデコードしてみて、エラーが出なければ UTF-8 とみなす
+                    test_proc.stdout.decode('utf-8')
+                    return "utf-8"
+                except UnicodeDecodeError:
+                    return "cp932"
+                except Exception:
+                    return "utf-8" # フォールバック
+
+            subprocess_encoding = detect_encoding()
+            self.log(f"Detected subprocess encoding: {subprocess_encoding}")
             
             # リポジトリルートを cwd にすることで .codex/config.toml（ローカル・ヘッドレス MCP）が読み込まれる（trusted 時）
             process = subprocess.Popen(
