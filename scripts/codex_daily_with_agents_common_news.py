@@ -541,6 +541,8 @@ class CodexDailyRunner:
             if 'HOME' not in env:
                 env['HOME'] = user_home
             env['CODEX_HOME'] = str(Path.home() / ".codex")
+            # Windows で codex (Node) が CP932 で stderr を出すため、子プロセス出力は CP932 でデコードする
+            subprocess_encoding = "cp932" if sys.platform == "win32" else "utf-8"
             
             # リポジトリルートを cwd にすることで .codex/config.toml（ローカル・ヘッドレス MCP）が読み込まれる（trusted 時）
             process = subprocess.Popen(
@@ -549,7 +551,8 @@ class CodexDailyRunner:
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 text=True,
-                encoding='utf-8',
+                encoding=subprocess_encoding,
+                errors="replace",
                 shell=True,
                 env=env,
                 cwd=str(self.repo_path)
