@@ -317,12 +317,16 @@ class CodexDailyRunner:
             self.log("Running GeminiCLI (yt_top3_gemini_report) → gemini_youtube_report.md ...")
             self.run_gemini_youtube_report(output_dir, date_dir)
 
-            # Git操作（出力物と新規/更新された scripts もコミット）
+            # Git操作（出力物・scripts・Gemini_YouTube_Summary_Report をコミット）
             self.git_operations(output_dir, date_dir)
             try:
                 self.git_operations(self.repo_path / "scripts", date_dir)
             except Exception as e:
                 self.log(f"WARNING: git add for scripts failed: {e}")
+            try:
+                self.git_operations(self.repo_path / "Gemini_YouTube_Summary_Report", date_dir)
+            except Exception as e:
+                self.log(f"WARNING: git add for Gemini_YouTube_Summary_Report failed: {e}")
 
             self.log("=== Finished ===")
 
