@@ -870,7 +870,7 @@ def clean_gemini_output(result: str) -> str:
     return "\n".join(output_lines).strip()
 
 
-def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "gemini-3-flash-preview", retry_count: int = 2) -> str:
+def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "gemini-2.5-pro", retry_count: int = 2) -> str:
     """
     Calls Gemini CLI with video file reference using @file syntax.
     Captures stdout as summary.
@@ -882,7 +882,7 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
     Args:
         video_file: Path to video file
         extra_prompt: Additional instructions
-        model: Gemini model to use (default: gemini-3-flash-preview)
+        model: Gemini model to use (default: gemini-2.5-pro)
         retry_count: Number of retries on quality validation failure
     """
     # Verify video file exists
@@ -1382,7 +1382,7 @@ Examples:
     ap.add_argument("channel_url", help="YouTube channel URL (e.g., https://www.youtube.com/@handle or /channel/UC...)")
     ap.add_argument("-o", "--outdir", default="yt_top3_report", help="Output directory (default: yt_top3_report)")
     ap.add_argument("-n", "--num-videos", type=int, default=3, help="Number of videos to retrieve and summarize (default: 3)")
-    ap.add_argument("-m", "--model", default="gemini-3-flash-preview", help="使用するGeminiモデル（デフォルト: gemini-3-flash-preview）")
+    ap.add_argument("-m", "--model", default="gemini-2.5-pro", help="使用するGeminiモデル（デフォルト: gemini-2.5-pro）")
     ap.add_argument("--keep-mp4", action="store_true", help="Keep downloaded MP4 files after processing (default: delete)")
     ap.add_argument("--no-download", action="store_true", help="Skip downloading and summarization (debug RSS only)")
     ap.add_argument("--extra-prompt", default="", help="Extra instructions appended to Gemini prompt (optional)")

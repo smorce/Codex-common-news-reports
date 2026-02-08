@@ -19,6 +19,7 @@ except Exception:
     pass
 
 
+import random
 import subprocess
 import tempfile
 import shutil
@@ -30,6 +31,87 @@ from pathlib import Path
 from dotenv import load_dotenv
 from rich.console import Console
 from rich.panel import Panel
+
+
+# =============================================================================
+# リトライ設定 (Retry Configuration) - 429 等の一時的エラー用
+# =============================================================================
+LLM_MAX_RETRIES = int(os.getenv("LLM_MAX_RETRIES", "3"))
+LLM_RETRY_BASE_DELAY = float(os.getenv("LLM_RETRY_BASE_DELAY", "10.0"))
+LLM_RETRY_MAX_DELAY = float(os.getenv("LLM_RETRY_MAX_DELAY", "120.0"))
+LLM_RETRY_STATUS_CODES = [429, 500, 502, 503, 504]
+
+
+class RetryHandler:
+    """
+    指数バックオフとジッターを使用したリトライハンドラー。
+    Codex 実行時の 429 / 5xx / タイムアウト等に備える。
+    """
+
+    def __init__(
+        self,
+        max_retries: int = LLM_MAX_RETRIES,
+        base_delay: float = LLM_RETRY_BASE_DELAY,
+        max_delay: float = LLM_RETRY_MAX_DELAY,
+        retry_status_codes: list[int] | None = None,
+        log_func=None,
+    ):
+        self.max_retries = max_retries
+        self.base_delay = base_delay
+        self.max_delay = max_delay
+        self.retry_status_codes = retry_status_codes or LLM_RETRY_STATUS_CODES
+        self.log_func = log_func
+
+    def should_retry(self, exception: Exception, attempt: int) -> bool:
+        """
+        リトライすべきかどうかを判定する。
+
+        Args:
+            exception: 発生した例外
+            attempt: 現在の試行回数（0始まり）
+
+        Returns:
+            リトライすべき場合は True
+        """
+        if attempt >= self.max_retries:
+            return False
+
+        error_str = str(exception)
+
+        # コンテキストウィンドウ超過エラーはリトライしない（回復不可能）
+        non_retryable_keywords = [
+            "context_length_exceeded",
+            "context window",
+            "input exceeds",
+        ]
+        if any(kw in error_str.lower() for kw in non_retryable_keywords):
+            msg = f"Non-retryable error detected (context length exceeded): {error_str[:200]}"
+            if self.log_func:
+                self.log_func(msg)
+            return False
+
+        # ステータスコード（429, 5xx 等）が含まれる場合はリトライ
+        for code in self.retry_status_codes:
+            if str(code) in error_str:
+                return True
+
+        # タイムアウトや接続エラーもリトライ
+        retry_keywords = ["timeout", "connection", "rate", "limit", "throttl"]
+        return any(kw in error_str.lower() for kw in retry_keywords)
+
+    def get_delay(self, attempt: int) -> float:
+        """
+        リトライ前の待機時間を計算する（指数バックオフ + ジッター）。
+
+        Args:
+            attempt: 現在の試行回数（0始まり）
+
+        Returns:
+            待機時間（秒）
+        """
+        delay = min(self.base_delay * (2**attempt), self.max_delay)
+        jitter = random.uniform(0, delay * 0.1)
+        return delay + jitter
 
 
 class CodexDailyRunner:
@@ -66,8 +148,11 @@ class CodexDailyRunner:
         # ディレクトリ作成
         self.report_dir.mkdir(exist_ok=True)
         self.logs_dir.mkdir(exist_ok=True)
+
+        # 429 / 5xx 等用のリトライハンドラー（log は後から参照するため lambda で遅延）
+        self.retry_handler = RetryHandler(log_func=lambda msg: self.log(msg))
         # ---------------------------------------
-    
+
     def log(self, message):
         """ログメッセージを記録"""
         timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
@@ -228,6 +313,9 @@ class CodexDailyRunner:
                 md_output_name="report_3.md",
             )
 
+            # 4) GeminiCLI（YouTube要約）を実行し、report.md を YYYY-MM-DD にコピー
+            self.log("Running GeminiCLI (yt_top3_gemini_report) → gemini_youtube_report.md ...")
+            self.run_gemini_youtube_report(output_dir, date_dir)
 
             # Git操作（出力物と新規/更新された scripts もコミット）
             self.git_operations(output_dir, date_dir)
@@ -274,18 +362,30 @@ class CodexDailyRunner:
         self.kill_headless_chrome()
         time.sleep(2)  # OSによるプロセス解放待ち
 
-        # Codex 実行
+        # Codex 実行（429 / 5xx 等は指数バックオフでリトライ）
         self.log("Invoking codex exec...")
-        try:
-            _ = self.run_codex(agents_content, expected_report_path=temp_json)
-        except Exception as e:
-            # 非ゼロ終了でも temp_json が存在すれば続行
-            if not (temp_json.exists() and temp_json.stat().st_size > 0):
-                raise
-        finally:
-            # 今回起動したヘッドレス Chrome を終了（次の AGENTS_* 実行で衝突しないように）
-            self.kill_headless_chrome()
-            time.sleep(1)
+        attempt = 0
+        while True:
+            try:
+                _ = self.run_codex(agents_content, expected_report_path=temp_json)
+                break
+            except Exception as e:
+                # 非ゼロ終了でも temp_json が存在すれば続行
+                if temp_json.exists() and temp_json.stat().st_size > 0:
+                    break
+                if not self.retry_handler.should_retry(e, attempt):
+                    raise
+                delay = self.retry_handler.get_delay(attempt)
+                self.log(
+                    f"Retrying after error (attempt {attempt + 1}/{self.retry_handler.max_retries}): {e}. "
+                    f"Waiting {delay:.1f}s..."
+                )
+                time.sleep(delay)
+                attempt += 1
+            finally:
+                # 今回起動したヘッドレス Chrome を終了（次の AGENTS_* 実行で衝突しないように）
+                self.kill_headless_chrome()
+                time.sleep(1)
 
         # 生成された JSON を読み込み
         if (not temp_json.exists()) or (temp_json.stat().st_size == 0):
@@ -630,16 +730,17 @@ class CodexDailyRunner:
                     self.log(f"report.json found despite non-zero exit. Treating as success: {report_file}")
                     return stdout_content
                 
-                # report.json がない場合のみ例外を投げる
+                # report.json がない場合のみ例外を投げる（メッセージに stderr の一部を含め 429 等をリトライ判定に利用）
+                err_snippet = (stderr_content or "")[-2000:] if stderr_content else ""
                 raise subprocess.CalledProcessError(
                     rc,
                     [
-                        codex_cmd, 'exec', '--yolo', 
-                        '-m', 'gpt-5.2-codex', 
+                        codex_cmd, 'exec', '--yolo',
+                        '-m', 'gpt-5.2-codex',
                         '-c', 'model_reasoning_effort=medium',
                         '-c', 'text.verbosity="medium"'
                     ],
-                    f"Codex failed. See {err_file}"
+                    f"Codex failed. See {err_file}. stderr excerpt: {err_snippet}"
                 )
 
             return stdout_content
@@ -715,6 +816,116 @@ class CodexDailyRunner:
             raise RuntimeError(f"Git operation failed: {e}")
         except Exception as e:
             raise RuntimeError(f"Git operation error: {e}")
+
+    # GeminiCLI（YouTube要約）の出力フォルダ名・コピー先ファイル名
+    GEMINI_YOUTUBE_OUTPUT_DIR = "Gemini_YouTube_Summary_Report"
+    GEMINI_YOUTUBE_REPORT_COPY_NAME = "gemini_youtube_report.md"
+
+    def _write_gemini_error_report(
+        self, output_dir: Path, error_message: str, error_detail: str = ""
+    ) -> None:
+        """失敗時に reports/YYYY-MM-DD/gemini_youtube_report.md にエラー内容を書き出す（Git push に含まれる）。"""
+        dest = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
+        utc_now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        lines = [
+            "# Gemini YouTube Report (Error)",
+            "",
+            f"- Generated at: {utc_now}",
+            "- Status: Failed",
+            "",
+            "## Error",
+            "",
+            error_message,
+        ]
+        if error_detail:
+            lines.extend(["", "## Details", "", "```", error_detail, "```", ""])
+        dest.write_text("\n".join(lines), encoding="utf-8")
+        self.log(f"Wrote error report to {dest}")
+
+    def run_gemini_youtube_report(self, output_dir: Path, date_dir: str) -> None:
+        """
+        yt_top3_gemini_report.py を実行し、成功時に report.md を YYYY-MM-DD フォルダにコピーする。
+        一時的な失敗は RetryHandler でリトライ。最終的に失敗した場合はエラー内容を同パスに書き出し、Git push に含める。
+        """
+        gemini_cmd = [
+            "uv", "run", "--link-mode=copy", "yt_top3_gemini_report.py",
+            "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g",
+            "-o", self.GEMINI_YOUTUBE_OUTPUT_DIR,
+            "-n", "5",
+        ]
+        self.log(f"Running GeminiCLI: {' '.join(gemini_cmd)}")
+        attempt = 0
+        last_error_message = ""
+        last_error_detail = ""
+        while True:
+            try:
+                result = subprocess.run(
+                    gemini_cmd,
+                    cwd=str(self.repo_path),
+                    capture_output=True,
+                    text=True,
+                    encoding="utf-8",
+                    errors="replace",
+                    timeout=600,
+                )
+                if result.returncode != 0:
+                    err_snippet = (result.stderr or result.stdout or "")[-2000:]
+                    last_error_message = f"GeminiCLI exited with code {result.returncode}."
+                    last_error_detail = err_snippet
+                    raise RuntimeError(f"{last_error_message} {err_snippet}")
+
+                src_report = self.repo_path / self.GEMINI_YOUTUBE_OUTPUT_DIR / "report.md"
+                if not src_report.exists():
+                    last_error_message = f"Gemini report not found: {src_report}"
+                    raise FileNotFoundError(last_error_message)
+
+                dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
+                shutil.copy2(src_report, dest_report)
+                self.log(f"Copied Gemini report to {dest_report}")
+                return
+
+            except subprocess.TimeoutExpired as e:
+                last_error_message = "GeminiCLI timed out."
+                last_error_detail = str(e)
+                if not self.retry_handler.should_retry(e, attempt):
+                    self.log("GeminiCLI timed out. Writing error report and continuing.")
+                    self._write_gemini_error_report(
+                        output_dir, last_error_message, last_error_detail
+                    )
+                    return
+                delay = self.retry_handler.get_delay(attempt)
+                self.log(
+                    f"GeminiCLI timed out. Retrying (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
+                    f"Waiting {delay:.1f}s..."
+                )
+                time.sleep(delay)
+                attempt += 1
+            except (RuntimeError, FileNotFoundError) as e:
+                if not last_error_message:
+                    last_error_message = str(e)
+                self.log(f"GeminiCLI error: {e}")
+                if not self.retry_handler.should_retry(e, attempt):
+                    self.log(
+                        "Skipping copy (non-retryable or max retries). Writing error report and continuing."
+                    )
+                    self._write_gemini_error_report(
+                        output_dir, last_error_message, last_error_detail
+                    )
+                    return
+                delay = self.retry_handler.get_delay(attempt)
+                self.log(
+                    f"Retrying GeminiCLI (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
+                    f"Waiting {delay:.1f}s..."
+                )
+                time.sleep(delay)
+                attempt += 1
+            except Exception as e:
+                self.log(f"GeminiCLI unexpected error (continuing): {e}")
+                cause = getattr(e, "__cause__", None)
+                self._write_gemini_error_report(
+                    output_dir, str(e), str(cause) if cause else ""
+                )
+                return
 
     def _normalize_report(self, data):
         """（未使用）将来的な入力ゆらぎ対応のために残置。現状は Codex 生成JSONをそのまま使用。"""

@@ -11,12 +11,15 @@ uv add -r requirements.txt --link-mode=copy
 
 
 # BRチャンネルの動画をダウンロードして最新 TOP N の動画をGeminiCLIで要約してレポートする。mp4は削除。
-uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g" -o out_report -n 1
+uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g" -o out_report -n 5
 
 
-uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g" -o out_report -n 5 --model gemini-2.5-pro
-→レートリミットを考えるとこっちの方が安定するかも。
+uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g" -o out_report -n 5 --model gemini-3-flash-preview
+→3.0 はレートリミットエラーが出やすいので微妙。
 - 生成物: out_report/report.md と out_report/mp4/ 以下のMP4
+
+
+
 
 
 # コモンニュースを取得したい場合は以下を実行するだけ。AGENTS.md の指示が動き出す。勝手にブラウザが開く。
