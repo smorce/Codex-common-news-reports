@@ -832,7 +832,7 @@ class CodexDailyRunner:
                 
                 if staged_result.stdout.strip():
                     # ステージ済みの変更がある場合はコミットとプッシュ
-                    commit_msg = f"Auto: AI News report {date} (JSON)"
+                    commit_msg = f"Auto: Common News report {date} (JSON)"
                     subprocess.run(['git', 'commit', '-m', commit_msg], check=True)
                     subprocess.run(['git', 'push', 'origin', self.branch], check=True)
                     self.log(f"Committed and pushed to {self.branch}")
@@ -852,6 +852,21 @@ class CodexDailyRunner:
     # GeminiCLI（YouTube要約）の出力フォルダ名・コピー先ファイル名
     GEMINI_YOUTUBE_OUTPUT_DIR = "Gemini_YouTube_Summary_Report"
     GEMINI_YOUTUBE_REPORT_COPY_NAME = "gemini_youtube_report.md"
+
+    def _gemini_report_usable(self, src_report: Path) -> bool:
+        """Gemini の report.md が存在し、中身が有効そうか（タイムアウト後でも生成済みの可能性）を判定する。"""
+        if not src_report.is_file():
+            return False
+        try:
+            text = src_report.read_text(encoding="utf-8", errors="replace")
+            if len(text) < 200:
+                return False
+            # 完成したレポートに含まれるキーワードがどれかあれば有効とみなす
+            return any(
+                k in text for k in ("YouTube", "要約", "一覧", "生成日時")
+            )
+        except Exception:
+            return False
 
     def _write_gemini_error_report(
         self, output_dir: Path, error_message: str, error_detail: str = ""
@@ -897,6 +912,7 @@ class CodexDailyRunner:
         attempt = 0
         last_error_message = ""
         last_error_detail = ""
+        src_report = self.repo_path / self.GEMINI_YOUTUBE_OUTPUT_DIR / "report.md"
         while True:
             try:
                 result = subprocess.run(
@@ -914,7 +930,6 @@ class CodexDailyRunner:
                     last_error_detail = err_snippet
                     raise RuntimeError(f"{last_error_message} {err_snippet}")
 
-                src_report = self.repo_path / self.GEMINI_YOUTUBE_OUTPUT_DIR / "report.md"
                 if not src_report.exists():
                     last_error_message = f"Gemini report not found: {src_report}"
                     raise FileNotFoundError(last_error_message)
@@ -928,6 +943,14 @@ class CodexDailyRunner:
                 last_error_message = "GeminiCLI timed out."
                 last_error_detail = str(e)
                 if not self.retry_handler.should_retry(e, attempt):
+                    if self._gemini_report_usable(src_report):
+                        dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
+                        shutil.copy2(src_report, dest_report)
+                        self.log(
+                            "GeminiCLI timed out but report.md was present and valid. "
+                            f"Copied to {dest_report} and continuing."
+                        )
+                        return
                     self.log("GeminiCLI timed out. Writing error report and continuing.")
                     self._write_gemini_error_report(
                         output_dir, last_error_message, last_error_detail
@@ -945,6 +968,14 @@ class CodexDailyRunner:
                     last_error_message = str(e)
                 self.log(f"GeminiCLI error: {e}")
                 if not self.retry_handler.should_retry(e, attempt):
+                    if self._gemini_report_usable(src_report):
+                        dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
+                        shutil.copy2(src_report, dest_report)
+                        self.log(
+                            "GeminiCLI failed but report.md was present and valid. "
+                            f"Copied to {dest_report} and continuing."
+                        )
+                        return
                     self.log(
                         "Skipping copy (non-retryable or max retries). Writing error report and continuing."
                     )
@@ -987,7 +1018,7 @@ class CodexDailyRunner:
 
         lines = []
         # ヘッダー
-        lines.append(f"# AI News Report ({esc(report_obj.get('site'))})")
+        lines.append(f"# AI Common Report ({esc(report_obj.get('site'))})")
         lines.append("")
         lines.append(f"- Generated at: {esc(report_obj.get('generated_at'))}")
         lines.append(f"- Articles: {report_obj.get('num_articles', len(report_obj.get('articles', [])))}")
