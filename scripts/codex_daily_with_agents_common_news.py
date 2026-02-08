@@ -853,6 +853,11 @@ class CodexDailyRunner:
             "-o", self.GEMINI_YOUTUBE_OUTPUT_DIR,
             "-n", "5",
         ]
+        # 実行前に前回の出力フォルダがあれば削除
+        gemini_output_dir = self.repo_path / self.GEMINI_YOUTUBE_OUTPUT_DIR
+        if gemini_output_dir.is_dir():
+            shutil.rmtree(gemini_output_dir)
+            self.log(f"Removed existing {self.GEMINI_YOUTUBE_OUTPUT_DIR} before run.")
         self.log(f"Running GeminiCLI: {' '.join(gemini_cmd)}")
         attempt = 0
         last_error_message = ""
