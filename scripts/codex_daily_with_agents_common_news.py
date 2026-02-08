@@ -874,12 +874,15 @@ class CodexDailyRunner:
         """
         yt_top3_gemini_report.py を実行し、成功時に report.md を YYYY-MM-DD フォルダにコピーする。
         一時的な失敗は RetryHandler でリトライ。最終的に失敗した場合はエラー内容を同パスに書き出し、Git push に含める。
+
+        n: TOP N 件の BRチャンネル の動画を要約
+        要約モデル：gemini-2.5-pro。これが安定していて良い。
         """
         gemini_cmd = [
             "uv", "run", "--link-mode=copy", "yt_top3_gemini_report.py",
             "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g",
             "-o", self.GEMINI_YOUTUBE_OUTPUT_DIR,
-            "-n", "5",
+            "-n", "3",
         ]
         # 実行前に前回の出力フォルダがあれば削除
         gemini_output_dir = self.repo_path / self.GEMINI_YOUTUBE_OUTPUT_DIR
@@ -899,7 +902,7 @@ class CodexDailyRunner:
                     text=True,
                     encoding="utf-8",
                     errors="replace",
-                    timeout=600,
+                    timeout=1200,
                 )
                 if result.returncode != 0:
                     err_snippet = (result.stderr or result.stdout or "")[-2000:]
