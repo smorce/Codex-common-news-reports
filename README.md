@@ -20,7 +20,22 @@ uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channe
 - 生成物: out_report/report.md と out_report/mp4/ 以下のMP4
 
 
+# PowerShell
+Windows PowerShell 5.1 では 「UTF-8（BOMなし）」＋一部のUnicode文字でパーサが崩れる既知事例があります。以下で保存し直す。
 
+```
+$path = ".\run_codex_spinner.ps1"
+
+# 重要：読み取り側を UTF-8 と明示（BOMなしUTF-8でもこちらで正しく読めることが多い）
+$raw  = Get-Content $path -Raw -Encoding utf8
+
+# 書き出しは UTF-8（BOM付き）
+[System.IO.File]::WriteAllText(
+  $path,
+  $raw,
+  (New-Object System.Text.UTF8Encoding($true))
+)
+```
 
 
 # コモンニュースを取得したい場合は以下を実行するだけ。AGENTS.md の指示が動き出す。勝手にブラウザが開く。
