@@ -26,6 +26,7 @@ import shutil
 import json
 import threading
 import time
+import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 from dotenv import load_dotenv
@@ -164,6 +165,18 @@ class CodexDailyRunner:
         
         # コンソールにも出力
         print(f"[{timestamp}] {message}")
+
+    def log_failure(self, step_name: str, e: Exception, failed_steps: list) -> None:
+        """失敗をログに記録し、後で見返せるようトレースバックと一覧用に保持する。"""
+        failed_steps.append((step_name, str(e)))
+        self.log(f"WARNING: {step_name} failed (continuing): {e}")
+        tb = traceback.format_exc().strip()
+        if tb and "NoneType: None" not in tb:
+            timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
+            with open(self.log_file, "a", encoding="utf-8") as f:
+                f.write(f"{timestamp}\t(traceback)\n")
+                for line in tb.splitlines():
+                    f.write(f"\t{line}\n")
     
     def cleanup_temp_files(self):
         """一時ファイルを検索して削除する"""
@@ -264,75 +277,101 @@ class CodexDailyRunner:
             self.log(f"Warning: kill_headless_chrome failed: {e}")
 
     def run(self):
-        """メイン実行処理"""
+        """メイン実行処理。各ステップは失敗しても次のステップに進む。"""
+        self.log("=== Start ===")
+        failed_steps: list[tuple[str, str]] = []
+
+        # 起動前に前回残ったヘッドレス Chrome を終了
         try:
-            self.log("=== Start ===")
-
-            # 起動前に前回残ったヘッドレス Chrome を終了
             self.kill_headless_chrome()
+        except Exception as e:
+            self.log_failure("kill_headless_chrome", e, failed_steps)
 
-            # 一時ファイルのクリーンアップ
+        # 一時ファイルのクリーンアップ
+        try:
             self.cleanup_temp_files()
+        except Exception as e:
+            self.log_failure("cleanup_temp_files", e, failed_steps)
 
-            # パスの存在確認
-            if not self.repo_path.exists():
-                raise FileNotFoundError(f"Repo not found: {self.repo_path}")
-            if not self.agents_1_file.exists():
-                raise FileNotFoundError(f"AGENTS_1.md not found: {self.agents_1_file}")
-            if not self.agents_2_file.exists():
-                raise FileNotFoundError(f"AGENTS_2.md not found: {self.agents_2_file}")
-            if not self.agents_3_file.exists():
-                raise FileNotFoundError(f"AGENTS_3.md not found: {self.agents_3_file}")
+        # リポジトリが無い場合は続行不可
+        if not self.repo_path.exists():
+            self.log(f"ERROR: Repo not found: {self.repo_path}. Aborting.")
+            raise FileNotFoundError(f"Repo not found: {self.repo_path}")
 
-            # 日付と出力ディレクトリ
-            date_dir = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-            output_dir = self.report_dir / date_dir
-            output_dir.mkdir(parents=True, exist_ok=True)
+        # 日付と出力ディレクトリ
+        date_dir = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        output_dir = self.report_dir / date_dir
+        output_dir.mkdir(parents=True, exist_ok=True)
 
-            # 1) AGENTS_1.md を使って要約とレポート生成（LLM/Codex CLI）
-            self.log("Processing AGENTS_1.md → report_1.json / report_1.md ...")
-            self.process_agents(
-                agents_path=self.agents_1_file,
-                json_output_name="report_1.json",
-                md_output_name="report_1.md",
-            )
+        # 1) AGENTS_1.md を使って要約とレポート生成（LLM/Codex CLI）
+        if self.agents_1_file.exists():
+            try:
+                self.log("Processing AGENTS_1.md → report_1.json / report_1.md ...")
+                self.process_agents(
+                    agents_path=self.agents_1_file,
+                    json_output_name="report_1.json",
+                    md_output_name="report_1.md",
+                )
+            except Exception as e:
+                self.log_failure("AGENTS_1", e, failed_steps)
+        else:
+            self.log(f"WARNING: AGENTS_1.md not found, skipping: {self.agents_1_file}")
 
-            # 2) AGENTS_2.md を使って要約とレポート生成（LLM/Codex CLI）
-            self.log("Processing AGENTS_2.md → report_2.json / report_2.md ...")
-            self.process_agents(
-                agents_path=self.agents_2_file,
-                json_output_name="report_2.json",
-                md_output_name="report_2.md",
-            )
+        # 2) AGENTS_2.md を使って要約とレポート生成（LLM/Codex CLI）
+        if self.agents_2_file.exists():
+            try:
+                self.log("Processing AGENTS_2.md → report_2.json / report_2.md ...")
+                self.process_agents(
+                    agents_path=self.agents_2_file,
+                    json_output_name="report_2.json",
+                    md_output_name="report_2.md",
+                )
+            except Exception as e:
+                self.log_failure("AGENTS_2", e, failed_steps)
+        else:
+            self.log(f"WARNING: AGENTS_2.md not found, skipping: {self.agents_2_file}")
 
-            # 3) AGENTS_3.md を使って要約とレポート生成（LLM/Codex CLI）
-            self.log("Processing AGENTS_3.md → report_3.json / report_3.md ...")
-            self.process_agents(
-                agents_path=self.agents_3_file,
-                json_output_name="report_3.json",
-                md_output_name="report_3.md",
-            )
+        # 3) AGENTS_3.md を使って要約とレポート生成（LLM/Codex CLI）
+        if self.agents_3_file.exists():
+            try:
+                self.log("Processing AGENTS_3.md → report_3.json / report_3.md ...")
+                self.process_agents(
+                    agents_path=self.agents_3_file,
+                    json_output_name="report_3.json",
+                    md_output_name="report_3.md",
+                )
+            except Exception as e:
+                self.log_failure("AGENTS_3", e, failed_steps)
+        else:
+            self.log(f"WARNING: AGENTS_3.md not found, skipping: {self.agents_3_file}")
 
-            # 4) GeminiCLI（YouTube要約）を実行し、report.md を YYYY-MM-DD にコピー
+        # 4) GeminiCLI（YouTube要約）を実行し、report.md を YYYY-MM-DD にコピー
+        try:
             self.log("Running GeminiCLI (yt_top3_gemini_report) → gemini_youtube_report.md ...")
             self.run_gemini_youtube_report(output_dir, date_dir)
-
-            # Git操作（出力物・scripts・Gemini_YouTube_Summary_Report をコミット）
-            self.git_operations(output_dir, date_dir)
-            try:
-                self.git_operations(self.repo_path / "scripts", date_dir)
-            except Exception as e:
-                self.log(f"WARNING: git add for scripts failed: {e}")
-            try:
-                self.git_operations(self.repo_path / "Gemini_YouTube_Summary_Report", date_dir)
-            except Exception as e:
-                self.log(f"WARNING: git add for Gemini_YouTube_Summary_Report failed: {e}")
-
-            self.log("=== Finished ===")
-
         except Exception as e:
-            self.log(f"ERROR: {e}")
-            raise
+            self.log_failure("GeminiCLI (run_gemini_youtube_report)", e, failed_steps)
+
+        # Git操作（出力物・scripts・Gemini_YouTube_Summary_Report をコミット）
+        try:
+            self.git_operations(output_dir, date_dir)
+        except Exception as e:
+            self.log_failure("git_operations(output_dir)", e, failed_steps)
+        try:
+            self.git_operations(self.repo_path / "scripts", date_dir)
+        except Exception as e:
+            self.log_failure("git_operations(scripts)", e, failed_steps)
+        try:
+            self.git_operations(self.repo_path / "Gemini_YouTube_Summary_Report", date_dir)
+        except Exception as e:
+            self.log_failure("git_operations(Gemini_YouTube_Summary_Report)", e, failed_steps)
+
+        if failed_steps:
+            self.log("=== Failed steps summary (see tracebacks above in this log) ===")
+            for step_name, err in failed_steps:
+                self.log(f"  - {step_name}: {err}")
+
+        self.log("=== Finished ===")
 
     def process_agents(self, agents_path: Path, json_output_name: str, md_output_name: str):
         """指定の AGENTS ファイルを使って Codex を実行し、所定のファイル名で保存して返す。"""
