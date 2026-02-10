@@ -942,16 +942,29 @@ class CodexDailyRunner:
             "-o", self.GEMINI_YOUTUBE_OUTPUT_DIR,
             "-n", "3",
         ]
-        # 実行前に前回の出力フォルダがあれば削除
-        gemini_output_dir = self.repo_path / self.GEMINI_YOUTUBE_OUTPUT_DIR
-        if gemini_output_dir.is_dir():
-            shutil.rmtree(gemini_output_dir)
-            self.log(f"Removed existing {self.GEMINI_YOUTUBE_OUTPUT_DIR} before run.")
+        # 上書き運用：出力ディレクトリは削除しない（OneDrive/Windows でアクセス拒否が起きやすいため）。
+        # ただし、失敗時のフォールバックで「前回の report.md」を誤ってコピーしないよう、
+        # 今回実行で report.md が更新されたか（mtime）をチェックする。
         self.log(f"Running GeminiCLI: {' '.join(gemini_cmd)}")
         attempt = 0
         last_error_message = ""
         last_error_detail = ""
         src_report = self.repo_path / self.GEMINI_YOUTUBE_OUTPUT_DIR / "report.md"
+        run_started_at = time.time()
+        prev_report_mtime = src_report.stat().st_mtime if src_report.exists() else None
+
+        def _is_fresh_report(p: Path) -> bool:
+            if not p.is_file():
+                return False
+            try:
+                mtime = p.stat().st_mtime
+                if prev_report_mtime is not None and mtime == prev_report_mtime:
+                    return False
+                # Windows/ファイルシステムの時刻解像度ゆらぎを少しだけ吸収
+                return mtime >= (run_started_at - 2.0)
+            except Exception:
+                return False
+
         while True:
             try:
                 result = subprocess.run(
@@ -972,6 +985,9 @@ class CodexDailyRunner:
                 if not src_report.exists():
                     last_error_message = f"Gemini report not found: {src_report}"
                     raise FileNotFoundError(last_error_message)
+                if not _is_fresh_report(src_report):
+                    last_error_message = f"Gemini report was not updated in this run: {src_report}"
+                    raise RuntimeError(last_error_message)
 
                 dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
                 shutil.copy2(src_report, dest_report)
@@ -982,7 +998,7 @@ class CodexDailyRunner:
                 last_error_message = "GeminiCLI timed out."
                 last_error_detail = str(e)
                 if not self.retry_handler.should_retry(e, attempt):
-                    if self._gemini_report_usable(src_report):
+                    if _is_fresh_report(src_report) and self._gemini_report_usable(src_report):
                         dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
                         shutil.copy2(src_report, dest_report)
                         self.log(
@@ -1007,7 +1023,7 @@ class CodexDailyRunner:
                     last_error_message = str(e)
                 self.log(f"GeminiCLI error: {e}")
                 if not self.retry_handler.should_retry(e, attempt):
-                    if self._gemini_report_usable(src_report):
+                    if _is_fresh_report(src_report) and self._gemini_report_usable(src_report):
                         dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
                         shutil.copy2(src_report, dest_report)
                         self.log(
