@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-02-14T09:07:40.4096023+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://note.freee.co.jp/n/n3dc93dc763fc",
+      "title": "freee共同創業者・横路隆によるCAIO就任に伴うfreeeのAI戦略発表｜freee公式note",
+      "date": null,
+      "executive_summary": [
+        "CAIO就任を契機に、freeeがAI戦略を公表したという話題。",
+        "SaaSの価値を再定義するという位置づけが示されている。",
+        "AI時代のSaaSでは、AIが成果を終わらせる価値源泉だと述べている。",
+        "Done by YouからDone for Youへの転換を打ち出している。",
+        "AI BPOの拡大と連携で体験と生産性を高める方針が示される。",
+        "記事は長文で、約12,000文字の分量とされている。",
+        "公開時期はサイト上では「最近」と記載されている。"
+      ],
+      "key_findings": [
+        {
+          "point": "CAIO就任に合わせてAI戦略を公表し、SaaSの価値再定義を掲げる。",
+          "footnote": "CAIO就任を機にAI戦略を公表、SaaSの価値を再定義する。"
+        },
+        {
+          "point": "AIが成果を完了させることが価値源泉になるという見立て。",
+          "footnote": "AI時代のSaaSは人が使うよりAIが成果を終わらせる価値源泉。"
+        },
+        {
+          "point": "Done by YouからDone for Youへの転換を主張している。",
+          "footnote": "Done by YouからDone for Youへ、AI BPO拡大と連携で体験と生産性を高める。"
+        },
+        {
+          "point": "分量は約12,000文字とされる長文記事。",
+          "footnote": "約12,000文字"
+        },
+        {
+          "point": "掲載時期は「最近」と表示されている。",
+          "footnote": "最近"
+        }
+      ],
+      "references": [
+        "https://note.freee.co.jp/n/n3dc93dc763fc",
+        "https://ai-news.dev/"
+      ],
+      "retrieved_at": "2026-02-14T09:07:40.4096023+09:00"
+    },
+    {
+      "url": "https://xenospectrum.com/ai-disruption-2026-matt-shumer-warning/",
+      "title": "「何か大変なことが起きている」とAI企業CEOが警告：GPT-5.3が自らを構築し、知能爆発のループが..",
+      "date": null,
+      "executive_summary": [
+        "AI企業CEOが「何か大変なことが起きている」と警告する話題。",
+        "GPT-5.3が自らを構築し、知能爆発のループが始まったという含意が示される。",
+        "世界は過小評価のリスクを警戒する声が高まっている。",
+        "同時公開で自己改良が加速し、多くの職が代替対象になるという見方。",
+        "早期適応と日々の実験で人間の役割を再定義する必要性が示される。",
+        "記事は約3,500文字とされる中程度の分量。",
+        "公開時期はサイト上では「最近」と記載されている。"
+      ],
+      "key_findings": [
+        {
+          "point": "過小評価のリスクを警戒する声が高まっている。",
+          "footnote": "世界は過小評価のリスクを警戒する声が高まる。"
+        },
+        {
+          "point": "同時公開で自己改良が加速し、職の代替が進むという見立て。",
+          "footnote": "同時公開で自己改良が加速し、多くの職が代替対象となる。"
+        },
+        {
+          "point": "早期適応と日々の実験で人間の役割を再定義すべきとする。",
+          "footnote": "早期適応と日々の実験で人間の役割を再定義する。"
+        },
+        {
+          "point": "分量は約3,500文字と表示されている。",
+          "footnote": "約3,500文字"
+        },
+        {
+          "point": "掲載時期は「最近」と表示されている。",
+          "footnote": "最近"
+        }
+      ],
+      "references": [
+        "https://xenospectrum.com/ai-disruption-2026-matt-shumer-warning/",
+        "https://ai-news.dev/"
+      ],
+      "retrieved_at": "2026-02-14T09:07:40.4096023+09:00"
+    },
+    {
+      "url": "https://forbesjapan.com/articles/detail/91599",
+      "title": "ChatGPTで書いた文章がバレる15の決定的サイン、2026年最新版 | Forbes JAPAN 公式サイト（フォ..",
+      "date": null,
+      "executive_summary": [
+        "ChatGPTで書いた文章が見抜かれるサインを扱う記事。",
+        "前置きや安易な安全宣言を過度に使う癖を避けるべきとする。",
+        "論理飛躍や比喩のずれが本質を曖昧にするという指摘。",
+        "解決策として新パターン学習や禁止リスト作成が挙げられる。",
+        "声出し確認を行うことも対策の一つとして示される。",
+        "記事は約4,000文字とされる分量。",
+        "公開時期はサイト上では「最近」と記載されている。"
+      ],
+      "key_findings": [
+        {
+          "point": "前置きや安全宣言の過度な使用は避けるべきだと示す。",
+          "footnote": "前置きや安易な安全宣言を過度に使う癖を避けるべき"
+        },
+        {
+          "point": "論理飛躍や比喩のずれが本質を曖昧にすると指摘する。",
+          "footnote": "論理飛躍や比喩のずれは本質を曖昧にする"
+        },
+        {
+          "point": "解決策として新パターン学習や禁止リスト作成が挙げられる。",
+          "footnote": "解決策は新パターン学習、禁止リスト作成、声出し確認を挙げる"
+        },
+        {
+          "point": "分量は約4,000文字と表示されている。",
+          "footnote": "約4,000文字"
+        },
+        {
+          "point": "掲載時期は「最近」と表示されている。",
+          "footnote": "最近"
+        }
+      ],
+      "references": [
+        "https://forbesjapan.com/articles/detail/91599",
+        "https://ai-news.dev/"
+      ],
+      "retrieved_at": "2026-02-14T09:07:40.4096023+09:00"
+    }
+  ]
+}

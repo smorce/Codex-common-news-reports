@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-02-14T09:02:13+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/aa55b468ce18fb",
+      "title": "OpenAI の「Shell」ツールを試す",
+      "date": "2026-02-14T03:58:00+09:00",
+      "executive_summary": [
+        "Responses APIに長時間エージェント向けの新プリミティブが導入された。",
+        "サーバーサイド圧縮でコンテキスト制限を超えた長時間実行を狙う。",
+        "ネットワーク付きコンテナで制御されたインターネットアクセスが提供される。",
+        "API内スキルのネイティブサポートとスプレッドシートスキルが示された。",
+        "「Shell」ツールはモデルにコマンド実行環境を与える。",
+        "使い方はホスト型コンテナ実行とローカル実行の2種類。",
+        "ShellはResponses API限定で、Chat Completions APIでは使えない。",
+        "ホスト型Shellの環境や制約、プリインストール言語が具体的に列挙された。"
+      ],
+      "key_findings": [
+        {
+          "point": "Responses API向けに長時間エージェント実行の新プリミティブが追加された。",
+          "footnote": "「Responses API に新しい一連のプリミティブを導入」"
+        },
+        {
+          "point": "サーバーサイド圧縮でコンテキスト制限を回避し長時間実行を可能にする。",
+          "footnote": "「コンテキスト制限に達することなく、数時間にわたるエージェント実行を可能にします。」"
+        },
+        {
+          "point": "ネットワーク付きコンテナでOpenAIホストの環境に制御されたインターネットアクセスが提供される。",
+          "footnote": "「OpenAI がホストするコンテナに制御されたインターネットアクセスを提供」"
+        },
+        {
+          "point": "API内スキルとしてAgent Skills標準とスプレッドシートスキルが言及された。",
+          "footnote": "「Agent Skills 標準のネイティブサポートと、最初の実装済みスプレッドシートスキル。」"
+        },
+        {
+          "point": "Shellツールはモデルにコマンド実行環境を与えると説明されている。",
+          "footnote": "「『Shell』ツールは、モデルにコマンド実行環境を与える」"
+        },
+        {
+          "point": "Shellの利用形態はホスト型コンテナ実行とローカル実行の2種類。",
+          "footnote": "「2種類の使い方がある。」「OpenAIが提供するホスト型コンテナ上で実行」「ローカルで実行」"
+        },
+        {
+          "point": "ShellはResponses API専用でChat Completions APIでは使えない。",
+          "footnote": "「Responses APIでのみ利用可能、Chat Completions APIでは使えない。」"
+        },
+        {
+          "point": "ホスト型ShellはDebian 12ベースで/mnt/dataを使い、TTYやsudoは不可。Python/Node/Java/PHP/Ruby/Goがプリインストール。",
+          "footnote": "「Debian 12ベース」「/mnt/data」「インタラクティブなTTYセッション」「sudo」「Python: 3.11」「Node.js: 22.16」「Java: 17.0」「PHP: 8.2」「Ruby: 3.1」「Go: 1.23」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/aa55b468ce18fb"
+      ],
+      "retrieved_at": "2026-02-14T09:02:13+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/f101213f318bb7",
+      "title": "「Ovis2.6-30B-A3B」を試す",
+      "date": "2026-02-14T00:26:00+09:00",
+      "executive_summary": [
+        "Ovis2.6-30B-A3BはAlibaba AIDCの最新マルチモーダルLLMとして紹介されている。",
+        "公式からの告知はまだ出ていないとのコメントがある。",
+        "仕様として64Kコンテキストと2880×2880解像度が挙げられている。",
+        "MoE 30B/3Bアクティブ構成とApache 2.0ライセンスが明記。",
+        "「画像で考える」アクティブな視覚推論が特徴として記載。",
+        "実行サンプルは2分弱で回答し、サンプル程度なら動作したとの所感。",
+        "日本語は問題なさそうとの評価がある。",
+        "モデルサイズ増大でローカル利用は量子化が必要、GGUF不在を課題視。"
+      ],
+      "key_findings": [
+        {
+          "point": "公式アナウンスは未確認とされている。",
+          "footnote": "「まだ公式からは告知など出ていない」"
+        },
+        {
+          "point": "Alibaba AIDCの最新マルチモーダルLLMとして紹介。",
+          "footnote": "「AlibabaのAIDCチームによる最新のマルチモーダルLLM」"
+        },
+        {
+          "point": "64Kコンテキストと2880×2880解像度が特徴。",
+          "footnote": "「64Kコンテキスト + 2880×2880解像度」"
+        },
+        {
+          "point": "MoE 30B/3Bアクティブ構成。",
+          "footnote": "「MoE 30B/3Bアクティブ」"
+        },
+        {
+          "point": "Apache 2.0ライセンス。",
+          "footnote": "「Apache 2.0」"
+        },
+        {
+          "point": "『画像で考える』アクティブ視覚推論が特徴。",
+          "footnote": "「『画像で考える』: アクティブな視覚推論」"
+        },
+        {
+          "point": "回答は2分弱でサンプル程度は動作。",
+          "footnote": "「回答は2分弱ほどとちょっと遅くなったが、サンプル程度なら動いていそう。」"
+        },
+        {
+          "point": "日本語は問題なさそうとの所感。",
+          "footnote": "「日本語は問題なさそうね。」"
+        },
+        {
+          "point": "モデルが大きくなり量子化が必要で、GGUFがない点が課題。",
+          "footnote": "「モデルサイズがどんどん大きく」「ローカルで動かすには量子化が必要」「GGUFがない」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/f101213f318bb7",
+        "https://huggingface.co/AIDC-AI/Ovis2.6-30B-A3B"
+      ],
+      "retrieved_at": "2026-02-14T09:02:13+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/20bbccec8d75ed",
+      "title": "メモ: 生成AIチャットボット向けAmazon DynamoDBデータモデル",
+      "date": "2026-02-13T13:39:00+09:00",
+      "executive_summary": [
+        "生成AIチャットボットの会話履歴をDynamoDBに保存するデータモデル設計のメモ。",
+        "参照元はAWSブログ記事で、やや古いが参考にしたいという立場。",
+        "フレームワークが持つ場合もあるがユースケース次第で独自設計が必要と述べる。",
+        "Diaによる要約で、アクセスパターンの決定が最重要と整理。",
+        "1アイテム詰め込みは400KB制限とWCUコストで破綻すると説明。",
+        "会話メタデータとメッセージを垂直分割し、TTLで古い会話を削除。",
+        "想定API/RPSが列挙され、書き込みが多いワークロードを前提に設計する。",
+        "PKをユーザー、SKでCONV/CHAT/MSG/ULIDを区別する設計例。",
+        "GLM-4.7とCodexでチュートリアル作成を試し、Codexの整理力を評価。"
+      ],
+      "key_findings": [
+        {
+          "point": "DynamoDBでチャット履歴を保存するデータモデル設計についてのメモ。",
+          "footnote": "「LLMチャットボットの会話履歴の永続ストレージとしてDynamoDBを使う場合のデータモデル設計」"
+        },
+        {
+          "point": "フレームワークで吸収されることもあるが独自設計が必要な場合がある。",
+          "footnote": "「ユースケース次第ではそのまま使えなかったり、独自の設計が必要になったり」"
+        },
+        {
+          "point": "要点はアクセスパターンの決定、1アイテム詰め込み回避、垂直分割、TTL。",
+          "footnote": "「アクセスパターンをちゃんと決める」「1アイテムに全部詰め込むとすぐ詰む」「垂直分割」「TTLで古い会話を自動削除」"
+        },
+        {
+          "point": "アクセスパターンからスキーマ設計を始めるのが重要と明記。",
+          "footnote": "「どんなクエリを投げるか（アクセスパターン）から決めるのが大事」"
+        },
+        {
+          "point": "想定APIとRPSが提示され、書き込みが多いワークロード。",
+          "footnote": "「PutMessage: メッセージ追加（ユーザー＆ボット）（書き込み、1000 RPS）」「書き込みがかなり多い」"
+        },
+        {
+          "point": "会話を1アイテムにまとめると400KB制限とWCUコストで破綻。",
+          "footnote": "「『会話まるごと1アイテム』は 400KB 制限と WCU コストで破綻する」"
+        },
+        {
+          "point": "会話メタデータとメッセージを垂直分割して保存する。",
+          "footnote": "「会話メタデータとメッセージを分けて垂直分割する」"
+        },
+        {
+          "point": "PKはユーザー、SKはCONVとCHAT#...#MSG#ULIDで区別。",
+          "footnote": "「PK はユーザー」「CONV#」「CHAT#...#MSG#ULID」"
+        },
+        {
+          "point": "ULIDで一意性と時系列ソート性、TTLで90日後自動削除。",
+          "footnote": "「ULID でメッセージの一意性＋時系列ソート性」「TTL で 90 日後に自動削除」"
+        },
+        {
+          "point": "GLM-4.7は途中で混乱し、Codexで再整理したとの比較。",
+          "footnote": "「GLM-4.7…途中で…しっちゃかめっちゃか」「Codexに再整理してもらった」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/20bbccec8d75ed",
+        "https://aws.amazon.com/jp/blogs/database/amazon-dynamodb-data-models-for-generative-ai-chatbots/",
+        "https://www.diabrowser.com/"
+      ],
+      "retrieved_at": "2026-02-14T09:02:13+09:00"
+    }
+  ]
+}
