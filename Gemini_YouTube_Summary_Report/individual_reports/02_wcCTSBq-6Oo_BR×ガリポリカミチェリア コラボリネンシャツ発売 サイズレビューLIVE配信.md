@@ -1,6 +1,6 @@
 # 動画要約レポート #2
 
-- 生成日時: 2026-02-15 09:45:36 JST
+- 生成日時: 2026-02-16 09:31:31 JST
 - チャンネルURL: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
 - チャンネルID: UCUWtuyVjeMQygQiy3adHb1g
 - RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWtuyVjeMQygQiy3adHb1g
