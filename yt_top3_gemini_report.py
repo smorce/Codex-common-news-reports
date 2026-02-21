@@ -3,6 +3,7 @@
 
 import argparse
 import datetime as dt
+import json
 import os
 import platform
 import re
@@ -810,7 +811,7 @@ def find_gemini_command() -> str | None:
 
 def validate_summary_quality(summary: str) -> tuple[bool, str]:
     """
-    Validate the quality of Gemini's summary output.
+    Validate the quality of Gemini's summary output (JSON format).
     Returns (is_valid, error_message)
     """
     if not summary or len(summary.strip()) < 50:
@@ -831,20 +832,45 @@ def validate_summary_quality(summary: str) -> tuple[bool, str]:
         if indicator in summary or indicator.lower() in summary_lower:
             return False, f"Gemini CLIが動画を解析できませんでした。動画ファイルの形式やサイズに問題がある可能性があります。"
     
-    # Check for required sections
-    required_sections = ["## 要約", "## 要点", "## 主張", "## 推奨"]
-    missing_sections = [s for s in required_sections if s not in summary]
-    if missing_sections:
-        return False, f"必須セクションが不足: {', '.join(missing_sections)}"
+    # Try to parse as JSON and check for required fields
+    try:
+        json_data = json.loads(summary)
+        if not isinstance(json_data, dict):
+            return False, "JSONが辞書形式ではありません"
+        
+        required_fields = ["summary", "key_points", "conclusion", "recommended_action"]
+        missing_fields = [f for f in required_fields if f not in json_data]
+        if missing_fields:
+            return False, f"必須フィールドが不足: {', '.join(missing_fields)}"
+        
+        # Validate field types and content
+        if not isinstance(json_data.get("summary"), str) or len(json_data["summary"].strip()) < 20:
+            return False, "summary フィールドが短すぎるか無効です"
+        
+        if not isinstance(json_data.get("key_points"), list) or len(json_data["key_points"]) < 2:
+            return False, "key_points フィールドが無効です（2個以上必要）"
+        
+        if not isinstance(json_data.get("conclusion"), str) or len(json_data["conclusion"].strip()) < 10:
+            return False, "conclusion フィールドが短すぎるか無効です"
+        
+        if not isinstance(json_data.get("recommended_action"), str) or len(json_data["recommended_action"].strip()) < 5:
+            return False, "recommended_action フィールドが短すぎるか無効です"
+        
+    except json.JSONDecodeError as e:
+        return False, f"JSONパースエラー: {str(e)}"
     
     # Check for excessive English text (more than 30% of content)
     # This helps detect cases where Gemini returns English instead of Japanese
-    lines = summary.split("\n")
-    content_lines = [l for l in lines if l.strip() and not l.strip().startswith("#")]
-    if content_lines:
-        english_heavy_lines = sum(1 for line in content_lines 
-                                  if len(re.findall(r'[a-zA-Z]', line)) > len(line) * 0.5)
-        if english_heavy_lines > len(content_lines) * 0.3:
+    all_text = " ".join([
+        str(json_data.get("summary", "")),
+        " ".join(json_data.get("key_points", [])),
+        str(json_data.get("conclusion", "")),
+        str(json_data.get("recommended_action", ""))
+    ])
+    
+    if all_text:
+        english_chars = len(re.findall(r'[a-zA-Z]', all_text))
+        if english_chars > len(all_text) * 0.3:
             return False, "英語テキストが多すぎます（日本語出力が期待されます）"
     
     return True, ""
@@ -852,22 +878,45 @@ def validate_summary_quality(summary: str) -> tuple[bool, str]:
 
 def clean_gemini_output(result: str) -> str:
     """
-    Clean up Gemini output to ensure Japanese-only content.
-    Removes common English preambles and non-summary content.
+    Clean up Gemini output to extract content from tagged format.
+    Extracts content between <<<JSON_OUTPUT and JSON_OUTPUT>>> tags.
+    Falls back to extracting JSON object if tags not found.
     """
-    lines = result.split("\n")
-    output_lines = []
-    found_first_section = False
+    # First, try to extract content from tagged format
+    start_tag = "<<<JSON_OUTPUT"
+    end_tag = "JSON_OUTPUT>>>"
     
-    for line in lines:
-        # Start collecting from the first section header
-        if line.strip().startswith("## "):
-            found_first_section = True
-        
-        if found_first_section:
-            output_lines.append(line)
+    if start_tag in result and end_tag in result:
+        start_idx = result.find(start_tag) + len(start_tag)
+        end_idx = result.find(end_tag)
+        if start_idx < end_idx:
+            extracted = result[start_idx:end_idx].strip()
+            if extracted:
+                print(f"[DEBUG] Extracted content from tagged format ({len(extracted)} chars)", file=sys.stderr)
+                return extracted
     
-    return "\n".join(output_lines).strip()
+    # Fallback: try to extract JSON object directly
+    # Look for outermost { } pair
+    try:
+        first_brace = result.find("{")
+        if first_brace != -1:
+            # Find matching closing brace
+            brace_count = 0
+            for i in range(first_brace, len(result)):
+                if result[i] == "{":
+                    brace_count += 1
+                elif result[i] == "}":
+                    brace_count -= 1
+                    if brace_count == 0:
+                        extracted = result[first_brace:i+1]
+                        print(f"[DEBUG] Extracted JSON from braces ({len(extracted)} chars)", file=sys.stderr)
+                        return extracted
+    except Exception as e:
+        print(f"[DEBUG] Failed to extract JSON from braces: {e}", file=sys.stderr)
+    
+    # If all else fails, return as-is
+    print(f"[DEBUG] Using result as-is ({len(result)} chars)", file=sys.stderr)
+    return result
 
 
 def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "gemini-2.5-pro", retry_count: int = 2) -> str:
@@ -875,9 +924,9 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
     Calls Gemini CLI with video file reference using @file syntax.
     Captures stdout as summary.
     
-    Note: Standard input has 8MB limit, so we use @file syntax to reference
-    the video file path directly instead of piping through stdin.
-    Format: gemini "@{file_path} プロンプト"
+    Important: Uses -e none and --output-format json to ensure clean JSON output.
+    Prompt is passed via stdin with tagged JSON format specification.
+    Format: echo "prompt" | gemini -e none -m <model> --output-format json
     
     Args:
         video_file: Path to video file
@@ -945,7 +994,8 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
         print(f"[INFO] Supported formats: {', '.join(supported_formats)}", file=sys.stderr)
     
     # Build prompt with @file reference for stdin
-    # Use strong context reset and explicit task declaration
+    # Use -e none and --output-format json to ensure clean JSON output
+    # Use tagged JSON format specification for structured output
     prompt_parts = [
         f"@{video_file_abs}",
         "",
@@ -954,21 +1004,23 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
         "1.上記の動画ファイルを視聴する 2.その内容を日本語で要約する 3.要約のみ出力し、要約以外の関係ないコメントや説明は一切含めないでください。",
         "出力は3番のみください。",
         "",
-        "### 出力形式",
+        "### 最終出力形式",
         "",
-        "## 要約（100〜180字）",
-        "動画の内容を簡潔に説明",
+        "以下のJSONスキーマに従って、日本語の要約を生成してください。",
+        "このJSON以外は**一切出力しないでください**。",
         "",
-        "## 要点（3〜5個）",
-        "- ポイント1",
-        "- ポイント2",
-        "- ポイント3",
-        "",
-        "## 主張・結論",
-        "動画の核心メッセージを1〜2文で",
-        "",
-        "## 推奨アクション",
-        "視聴者への具体的なアクション1つ",
+        "<<<JSON_OUTPUT",
+        "{",
+        '  "summary": "動画の内容を簡潔に説明（100〜180字）",',
+        '  "key_points": [',
+        '    "ポイント1",',
+        '    "ポイント2",',
+        '    "ポイント3"',
+        '  ],',
+        '  "conclusion": "動画の核心メッセージを1〜2文で",',
+        '  "recommended_action": "視聴者への具体的なアクション1つ"',
+        "}",
+        "JSON_OUTPUT>>>",
     ]
     if extra_prompt:
         prompt_parts.append("")
@@ -981,8 +1033,8 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
     print(f"[DEBUG] Prompt preview (first 500 chars):\n{prompt[:500]}...", file=sys.stderr)
     
     # Execute gemini CLI command with stdin input
-    # Method: Use stdin to pass prompt with @file syntax
-    # Format: echo "prompt" | gemini  or  gemini < input.txt
+    # Method: Use -e none, --output-format json, and stdin to pass prompt
+    # Format: echo "prompt" | gemini -e none -m <model> --output-format json
     # Set NODE_OPTIONS to increase heap size for Node.js (Gemini CLI is Node.js-based)
     # Automatically calculate heap size based on system memory
     env = os.environ.copy()
@@ -1015,14 +1067,14 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
                 time.sleep(5)  # Brief pause before retry (increased from 2s to 5s)
         
         try:
-            # Use stdin to pass prompt (tested and working)
-            print(f"[DEBUG] Executing: {gemini_cmd} -m {model} [stdin input with @file reference]", file=sys.stderr)
+            # Use stdin with -e none and --output-format json
+            print(f"[DEBUG] Executing: {gemini_cmd} -e none -m {model} --output-format json [stdin input with @file reference]", file=sys.stderr)
             print(f"[INFO] Waiting for Gemini response (timeout: {GEMINI_TIMEOUT_SEC}s)...", file=sys.stderr)
             
-            # Use subprocess.run() with stdin input
-            # This method was confirmed to work in test_gemini_cli.py
+            # Use subprocess.run() with -e none, --output-format json, and stdin input
+            # This ensures stdout gets clean JSON output without TUI or extension interference
             cp = run(
-                [gemini_cmd, "-m", model],
+                [gemini_cmd, "-e", "none", "-m", model, "--output-format", "json"],
                 check=True,
                 capture=True,
                 text=True,
@@ -1031,6 +1083,32 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
                 timeout=GEMINI_TIMEOUT_SEC,
             )
             result = (cp.stdout or "").strip()
+            
+            # When using --output-format json, Gemini CLI returns JSON with result in a field
+            # Try to parse JSON first, then extract the actual content
+            try:
+                json_result = json.loads(result)
+                # Gemini CLI JSON format typically has the content in various possible fields
+                # Try common field names: "text", "content", "output", "result"
+                if isinstance(json_result, dict):
+                    for field in ["text", "content", "output", "result", "response"]:
+                        if field in json_result:
+                            result = json_result[field]
+                            print(f"[DEBUG] Extracted content from JSON field '{field}'", file=sys.stderr)
+                            break
+                    else:
+                        # If no known field found, check if there's a single key-value pair
+                        if len(json_result) == 1:
+                            result = list(json_result.values())[0]
+                            print(f"[DEBUG] Extracted content from single JSON field", file=sys.stderr)
+            except json.JSONDecodeError:
+                # Not JSON format or parsing failed - use result as-is
+                print(f"[DEBUG] Result is not JSON format, using as-is", file=sys.stderr)
+                pass
+            
+            # Convert result to string if it's not already
+            if not isinstance(result, str):
+                result = str(result)
             
             # Debug: Log result preview
             print(f"[DEBUG] Raw result length: {len(result)} chars", file=sys.stderr)
@@ -1189,7 +1267,7 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
             
             error_msg = (
                 f"Gemini CLI execution failed.\n"
-                f"Command: {gemini_cmd} -m {model} \"@{video_file_abs} ...\"\n"
+                f"Command: {gemini_cmd} -e none -m {model} --output-format json [stdin input]\n"
                 f"Return code: {e.returncode}\n"
                 f"Video file: {video_file_abs}\n"
             )
@@ -1240,6 +1318,54 @@ def to_iso_jst_now() -> str:
     return dt.datetime.now(tz=jst).strftime("%Y-%m-%d %H:%M:%S JST")
 
 
+def format_json_summary_to_markdown(json_summary: str) -> str:
+    """
+    Convert JSON format summary to Markdown format for reports.
+    
+    Args:
+        json_summary: JSON string containing summary, key_points, conclusion, recommended_action
+    
+    Returns:
+        Markdown formatted string
+    """
+    try:
+        data = json.loads(json_summary)
+        
+        lines = []
+        lines.append("## 要約")
+        lines.append("")
+        lines.append(data.get("summary", "（要約なし）"))
+        lines.append("")
+        
+        lines.append("## 要点")
+        lines.append("")
+        key_points = data.get("key_points", [])
+        if key_points:
+            for point in key_points:
+                lines.append(f"- {point}")
+        else:
+            lines.append("（要点なし）")
+        lines.append("")
+        
+        lines.append("## 主張・結論")
+        lines.append("")
+        lines.append(data.get("conclusion", "（結論なし）"))
+        lines.append("")
+        
+        lines.append("## 推奨アクション")
+        lines.append("")
+        lines.append(data.get("recommended_action", "（推奨アクションなし）"))
+        
+        return "\n".join(lines)
+    except json.JSONDecodeError as e:
+        print(f"[WARNING] Failed to parse JSON summary: {e}", file=sys.stderr)
+        # Return as-is if not valid JSON
+        return json_summary
+    except Exception as e:
+        print(f"[WARNING] Failed to format JSON summary: {e}", file=sys.stderr)
+        return json_summary
+
+
 def generate_individual_report(
     video_data: dict,
     channel_url: str,
@@ -1284,7 +1410,9 @@ def generate_individual_report(
     report_lines.append("## 要約")
     report_lines.append("")
     if video_data.get("summary"):
-        report_lines.append(video_data["summary"])
+        # Convert JSON format to Markdown if needed
+        markdown_summary = format_json_summary_to_markdown(video_data["summary"])
+        report_lines.append(markdown_summary)
     else:
         report_lines.append("（要約なし）")
         if video_data.get("file"):
@@ -1354,7 +1482,9 @@ def merge_individual_reports(
             report_lines.append(f'- 解析に使ったファイル: `{r["file"]}`')
         report_lines.append("")
         if r.get("summary"):
-            report_lines.append(r["summary"])
+            # Convert JSON format to Markdown if needed
+            markdown_summary = format_json_summary_to_markdown(r["summary"])
+            report_lines.append(markdown_summary)
         else:
             report_lines.append("（要約なし）")
             if r.get("file"):
