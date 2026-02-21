@@ -1,0 +1,139 @@
+{
+  "generated_at": "2026-02-21T09:07:36+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/ubie_dev/articles/6b23a74187766b",
+      "title": "\"世界変わる\"——非エンジニアでもできる、 Claude Code による n8n ワークフロー開発",
+      "date": "2026-02-20",
+      "executive_summary": [
+        "Ubie が Claude Code と n8n で非エンジニアの自動化を進めた事例を説明。",
+        "自然言語で業務フローを説明するだけでワークフロー生成が可能になった。",
+        "n8n は多様なサービスをつなぐワークフローだが習熟が必要と指摘。",
+        "AI による生成は人間の確認・修正前提の体験設計になっている。",
+        "n8n の方言や誤りポイントへの対策としてプロンプト群やリポジトリを整備。",
+        "n8n-cli などの CLI/CI 基盤で運用を支える。",
+        "自動化だけでなく業務可視化という副次的価値が生まれた。"
+      ],
+      "key_findings": [
+        {
+          "point": "n8n はサービス連携で業務を自動化するワークフローシステムだが習熟が必要。",
+          "footnote": "「n8n は、さまざまなサービスを『つなぐ』ことで業務を自動化する AI ワークフローシステムです。」"
+        },
+        {
+          "point": "自然言語の説明だけでワークフローが自動生成される体験を実現した。",
+          "footnote": "「自然言語で業務フローを説明するだけで、ワークフローがシュッと自動生成」"
+        },
+        {
+          "point": "AI が n8n 定義へ変換し、人間が確認・修正する運用を採用した。",
+          "footnote": "「AI がそれを n8n のワークフロー定義に変換する。人間はその結果を確認し、必要に応じて修正を指示する。」"
+        },
+        {
+          "point": "AI に頼むだけでは正しいワークフローにならないため、品質担保が課題。",
+          "footnote": "「AI に『n8n ワークフローを作って』と頼むだけでは、正しいワークフローは生成されません。」"
+        },
+        {
+          "point": "社内的なお作法やクセを含むプロンプト群を整備した。",
+          "footnote": "「n8n のワークフローの開発のクセや社内的なお作法を含んだプロンプト群」"
+        },
+        {
+          "point": "n8n-cli によりワークフロー操作をローカルで実行できるようにした。",
+          "footnote": "「n8nのワークフロー操作を手元から実行するための CLI」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/ubie_dev/articles/6b23a74187766b"
+      ],
+      "retrieved_at": "2026-02-21T09:07:36+09:00"
+    },
+    {
+      "url": "https://juno-labs.com/blogs/every-company-building-your-ai-assistant-is-an-ad-company",
+      "title": "Every company building your AI assistant is now an ad company",
+      "date": "2026-02-20",
+      "executive_summary": [
+        "AI アシスタント企業は広告収益に依存する構造問題を指摘。",
+        "常時オンの AI はウェイクワード前提を超えて継続的に文脈を蓄積する必要がある。",
+        "音声だけでなく視覚・プレゼンス検知・ウェアラブルへ拡張すると述べる。",
+        "方針よりもアーキテクチャがプライバシーを保証すると強調。",
+        "ローカル推論ならデータが物理的に外に出ない設計になる。",
+        "エッジ推論スタックは十分に成熟し、家庭内で完結可能と主張。",
+        "データではなくハード/ソフト販売モデルへの転換を促す。"
+      ],
+      "key_findings": [
+        {
+          "point": "AI アシスタント企業は広告で資金調達していると断言する。",
+          "footnote": "“Every single company building AI assistants is now funded by advertising.”"
+        },
+        {
+          "point": "常時オンの支援には継続的な文脈の蓄積が不可欠だと述べる。",
+          "footnote": "“The AI has to be present in the room, continuously, accumulating context”"
+        },
+        {
+          "point": "次世代の AI は音声だけでなく視覚やプレゼンス検知に広がる。",
+          "footnote": "“Not just audio — vision, presence detection, wearables, multi-room awareness.”"
+        },
+        {
+          "point": "プライバシーは方針ではなく設計で保証すべきだと主張する。",
+          "footnote": "“Policy is a promise. Architecture is a guarantee.”"
+        },
+        {
+          "point": "ローカル処理ならデータは物理的にネットワーク外へ出ない。",
+          "footnote": "“physically cannot leave the network”"
+        },
+        {
+          "point": "データではなくハード/ソフト販売に基づくビジネスモデルが必要。",
+          "footnote": "“There needs to be a business model based on selling the hardware and software, not the data”"
+        }
+      ],
+      "references": [
+        "https://juno-labs.com/blogs/every-company-building-your-ai-assistant-is-an-ad-company"
+      ],
+      "retrieved_at": "2026-02-21T09:07:36+09:00"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Feb/20/taalas/",
+      "title": "Taalas serves Llama 3.1 8B at 17,000 tokens/second",
+      "date": "2026-02-20T22:10:00",
+      "executive_summary": [
+        "Taalas が Llama 3.1 8B のカスタムハード実装を発表した。",
+        "推論速度は 17,000 tokens/second と紹介されている。",
+        "デモは高速すぎて動画よりスクリーンショットに見えると記述。",
+        "試用先として chatjimmy.ai が案内されている。",
+        "量子化は 3-bit と 6-bit の組み合わせだと説明。",
+        "次世代では 4-bit を使う予定だと述べる。",
+        "投稿時刻は 2026-02-20 の夜に記録されている。"
+      ],
+      "key_findings": [
+        {
+          "point": "Taalas は Llama 3.1 8B のカスタムハード実装を公開した。",
+          "footnote": "“a custom hardware implementation of the Llama 3.1 8B model”"
+        },
+        {
+          "point": "推論速度は 17,000 tokens/second と記載されている。",
+          "footnote": "“17,000 tokens/second”"
+        },
+        {
+          "point": "デモは速すぎて動画がスクリーンショットのように見えると述べる。",
+          "footnote": "“it's so fast it would look more like a screenshot.”"
+        },
+        {
+          "point": "chatjimmy.ai で試せると案内している。",
+          "footnote": "“You can try it out at chatjimmy.ai.”"
+        },
+        {
+          "point": "量子化は 3-bit と 6-bit を組み合わせた方式だと説明。",
+          "footnote": "“aggressively quantized, combining 3-bit and 6-bit parameters.”"
+        },
+        {
+          "point": "次世代は 4-bit を使う予定だと記載。",
+          "footnote": "“Their next generation will use 4-bit”"
+        }
+      ],
+      "references": [
+        "https://simonwillison.net/2026/Feb/20/taalas/"
+      ],
+      "retrieved_at": "2026-02-21T09:07:36+09:00"
+    }
+  ]
+}
