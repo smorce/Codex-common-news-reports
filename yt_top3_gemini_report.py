@@ -1112,7 +1112,11 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
             
             # Debug: Log result preview
             print(f"[DEBUG] Raw result length: {len(result)} chars", file=sys.stderr)
-            print(f"[DEBUG] Result preview:\n{result}", file=sys.stderr)
+            print(f"[DEBUG] Result repr (first 1000 chars): {repr(result[:1000])}", file=sys.stderr)
+            if len(result) <= 500:
+                print(f"[DEBUG] Full result:\n{result}", file=sys.stderr)
+            else:
+                print(f"[DEBUG] Result preview (first 500 chars):\n{result[:500]}", file=sys.stderr)
             
             # Log stderr if present (for debugging)
             if cp.stderr:
@@ -1121,8 +1125,11 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
             # Check if result is empty
             if not result or len(result.strip()) < 10:
                 stderr_info = f"\nstderr: {cp.stderr[:500]}" if cp.stderr else ""
+                # Show the actual content returned (with repr to see special characters)
+                result_repr = repr(result) if result else "(empty)"
                 raise RuntimeError(
-                    f"Gemini CLI returned empty or very short result (length: {len(result)})"
+                    f"Gemini CLI returned empty or very short result (length: {len(result)})\n"
+                    f"Actual content: {result_repr}"
                     f"{stderr_info}"
                 )
             
