@@ -924,9 +924,10 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
     Calls Gemini CLI with video file reference using @file syntax.
     Captures stdout as summary.
     
-    Important: Uses -e none and --output-format json to ensure clean JSON output.
+    Important: Uses --output-format json to ensure clean JSON output.
     Prompt is passed via stdin with tagged JSON format specification.
-    Format: echo "prompt" | gemini -e none -m <model> --output-format json
+    Format: echo "prompt" | gemini -m <model> --output-format json
+    Note: -e none is NOT used to allow video analysis extensions.
     
     Args:
         video_file: Path to video file
@@ -994,20 +995,13 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
         print(f"[INFO] Supported formats: {', '.join(supported_formats)}", file=sys.stderr)
     
     # Build prompt with @file reference for stdin
-    # Use -e none and --output-format json to ensure clean JSON output
+    # Use --output-format json to ensure clean JSON output
     # Use tagged JSON format specification for structured output
+    # Note: Removed -e none to allow video analysis extensions
     prompt_parts = [
-        f"@{video_file_abs}",
+        f"@{video_file_abs} を日本語で実践的な要約を生成してください。出力はJSON形式で提示してください。",
         "",
-        "### タスク",
-        "",
-        "1.上記の動画ファイルを視聴する 2.その内容を日本語で要約する 3.要約のみ出力し、要約以外の関係ないコメントや説明は一切含めないでください。",
-        "出力は3番のみください。",
-        "",
-        "### 最終出力形式",
-        "",
-        "以下のJSONスキーマに従って、日本語の要約を生成してください。",
-        "このJSON以外は**一切出力しないでください**。",
+        "### 出力形式",
         "",
         "<<<JSON_OUTPUT",
         "{",
@@ -1015,7 +1009,7 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
         '  "key_points": [',
         '    "ポイント1",',
         '    "ポイント2",',
-        '    "ポイント3"',
+        '    "ポイント3",',
         '  ],',
         '  "conclusion": "動画の核心メッセージを1〜2文で",',
         '  "recommended_action": "視聴者への具体的なアクション1つ"',
@@ -1033,8 +1027,9 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
     print(f"[DEBUG] Prompt preview (first 500 chars):\n{prompt[:500]}...", file=sys.stderr)
     
     # Execute gemini CLI command with stdin input
-    # Method: Use -e none, --output-format json, and stdin to pass prompt
-    # Format: echo "prompt" | gemini -e none -m <model> --output-format json
+    # Method: Use --output-format json and stdin to pass prompt
+    # Format: echo "prompt" | gemini -m <model> --output-format json
+    # Note: Removed -e none to allow video analysis extensions
     # Set NODE_OPTIONS to increase heap size for Node.js (Gemini CLI is Node.js-based)
     # Automatically calculate heap size based on system memory
     env = os.environ.copy()
@@ -1067,14 +1062,15 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
                 time.sleep(5)  # Brief pause before retry (increased from 2s to 5s)
         
         try:
-            # Use stdin with -e none and --output-format json
-            print(f"[DEBUG] Executing: {gemini_cmd} -e none -m {model} --output-format json [stdin input with @file reference]", file=sys.stderr)
+            # Use stdin with --output-format json (without -e none to allow video analysis)
+            # --output-format json にするとかなり不安定なので text にした
+            print(f"[DEBUG] Executing: {gemini_cmd} -m {model} --output-format text [stdin input with @file reference]", file=sys.stderr)
             print(f"[INFO] Waiting for Gemini response (timeout: {GEMINI_TIMEOUT_SEC}s)...", file=sys.stderr)
             
-            # Use subprocess.run() with -e none, --output-format json, and stdin input
-            # This ensures stdout gets clean JSON output without TUI or extension interference
+            # Use subprocess.run() with --output-format json and stdin input
+            # Note: Removed -e none to allow video analysis extensions
             cp = run(
-                [gemini_cmd, "-e", "none", "-m", model, "--output-format", "json"],
+                [gemini_cmd, "-m", model, "--output-format", "text"],
                 check=True,
                 capture=True,
                 text=True,
@@ -1274,7 +1270,7 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
             
             error_msg = (
                 f"Gemini CLI execution failed.\n"
-                f"Command: {gemini_cmd} -e none -m {model} --output-format json [stdin input]\n"
+                f"Command: {gemini_cmd} -m {model} --output-format json [stdin input]\n"
                 f"Return code: {e.returncode}\n"
                 f"Video file: {video_file_abs}\n"
             )
@@ -1398,7 +1394,7 @@ def generate_individual_report(
     
     now = to_iso_jst_now()
     report_lines = []
-    report_lines.append(f"# 動画要約レポート #{video_data['rank']}")
+    report_lines.append(f"# 動画要約レポート 第{video_data['rank']}位")
     report_lines.append("")
     report_lines.append(f"- 生成日時: {now}")
     report_lines.append(f"- チャンネルURL: {channel_url}")
@@ -1407,7 +1403,7 @@ def generate_individual_report(
     report_lines.append("")
     report_lines.append(f"## 動画情報")
     report_lines.append("")
-    report_lines.append(f"- 順位: #{video_data['rank']}")
+    report_lines.append(f"- 順位: 第{video_data['rank']}位")
     report_lines.append(f"- タイトル: {video_data['title']}")
     report_lines.append(f"- 公開日時: {video_data['published']}")
     report_lines.append(f"- URL: {video_data['link']}")
@@ -1481,7 +1477,7 @@ def merge_individual_reports(
     report_lines.append("## 各動画の要約")
     report_lines.append("")
     for r in results:
-        report_lines.append(f'### #{r["rank"]} {r["title"]}')
+        report_lines.append(f'### 第{r["rank"]}位 {r["title"]}')
         report_lines.append("")
         report_lines.append(f'- 公開日時: {r["published"]}')
         report_lines.append(f'- URL: {r["link"]}')
