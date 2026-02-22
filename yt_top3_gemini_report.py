@@ -999,17 +999,19 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
     # Use tagged JSON format specification for structured output
     # Note: Removed -e none to allow video analysis extensions
     prompt_parts = [
-        f"@{video_file_abs} を日本語で実践的な要約を生成してください。出力はJSON形式で提示してください。",
+        f"@{video_file_abs} を日本語で実践的なレポートを生成してください。 **動画の再生時間は出力しないでください。** 出力はJSON形式で提示してください。",
         "",
         "### 出力形式",
         "",
         "<<<JSON_OUTPUT",
         "{",
-        '  "summary": "動画の内容を簡潔に説明（100〜180字）",',
+        '  "summary": "動画の内容を説明（400〜500字）",',
         '  "key_points": [',
         '    "ポイント1",',
         '    "ポイント2",',
         '    "ポイント3",',
+        '    "ポイント4",',
+        '    "ポイント5",',
         '  ],',
         '  "conclusion": "動画の核心メッセージを1〜2文で",',
         '  "recommended_action": "視聴者への具体的なアクション1つ"',
@@ -1063,7 +1065,7 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
         
         try:
             # Use stdin with --output-format json (without -e none to allow video analysis)
-            # --output-format json にするとかなり不安定なので text にした
+            # --output-format json にするとかなり不安定(動画の長さしか返ってこない)なので text にした
             print(f"[DEBUG] Executing: {gemini_cmd} -m {model} --output-format text [stdin input with @file reference]", file=sys.stderr)
             print(f"[INFO] Waiting for Gemini response (timeout: {GEMINI_TIMEOUT_SEC}s)...", file=sys.stderr)
             
