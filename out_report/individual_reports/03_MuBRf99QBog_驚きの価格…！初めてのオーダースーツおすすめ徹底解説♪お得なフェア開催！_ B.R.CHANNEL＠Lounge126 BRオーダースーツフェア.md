@@ -1,6 +1,6 @@
 # 動画要約レポート 第3位
 
-- 生成日時: 2026-02-21 23:26:57 JST
+- 生成日時: 2026-02-22 18:45:55 JST
 - チャンネルURL: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
 - チャンネルID: UCUWtuyVjeMQygQiy3adHb1g
 - RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWtuyVjeMQygQiy3adHb1g
@@ -15,22 +15,16 @@
 
 ## 要約
 
-## 要約
+要約に失敗しました（実行時エラー）。
 
-B.R.CHANNELが開催する、初めての人にこそおすすめしたいオーダースーツフェアの全貌を徹底解説。ファッションディレクターの干場義雅氏を迎え、なぜ今オーダースーツが注目されているのか、その魅力と価値を語ります。動画では、オーダーの基本的な流れである生地選び、採寸、ディテール決定のプロセスを分かりやすく説明。特に、今回のフェアで提供されるスーツが、いかに驚異的なコストパフォーマンスを誇るかが強調されています。豊富な生地バリエーションの中から、自分の好みやライフスタイルに合った一着を作り上げる楽しさを伝えつつ、完成したスーツを使った具体的なコーディネート術も提案。オーダースーツに興味はあるけれど一歩踏み出せなかった、という人の背中を押してくれる内容です。
+エラー: RuntimeError: Gemini CLI returned empty or very short result (length: 5)
+Actual content: '20:41'
+stderr: Loaded cached credentials.
+Hook registry initialized with 0 hook entries
 
-## 要点
 
-- B.R.CHANNEL主催のオーダースーツフェアが開催決定。
-- 初めての人でも分かりやすい、オーダースーツの基本的な流れ（生地選び、採寸、デザイン）。
-- フェアで提供されるスーツの驚くべきコストパフォーマンスと高品質さ。
-- ファッションディレクター干場氏が語る、オーダースーツの魅力と着こなしの極意。
-- 豊富な生地バリエーションと、完成後の具体的なスタイリング提案。
+詳細: Gemini CLI returned empty or very short result (length: 5)
+Actual content: '20:41'
+stderr: Loaded cached credentials.
+Hook registry initialized with 0 hook entries
 
-## 主張・結論
-
-今回のフェアは、高品質なオーダースーツを驚きの価格で手に入れる絶好の機会であり、初心者こそ挑戦すべき企画です。
-
-## 推奨アクション
-
-オーダースーツフェアの詳細を公式サイトで確認し、予約を検討してみましょう。

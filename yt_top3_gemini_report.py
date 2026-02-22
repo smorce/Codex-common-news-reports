@@ -999,7 +999,7 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
     # Use tagged JSON format specification for structured output
     # Note: Removed -e none to allow video analysis extensions
     prompt_parts = [
-        f"@{video_file_abs} を日本語で実践的なレポートを生成してください。 **動画の再生時間は出力しないでください。** 出力はJSON形式で提示してください。",
+        f"@{video_file_abs} を日本語で実践的なレポートを生成してください。動画の再生時間は不要です。出力はJSON形式で提示してください。",
         "",
         "### 出力形式",
         "",

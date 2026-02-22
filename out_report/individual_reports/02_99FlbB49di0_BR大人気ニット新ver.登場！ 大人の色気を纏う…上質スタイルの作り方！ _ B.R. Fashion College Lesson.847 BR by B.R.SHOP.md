@@ -1,6 +1,6 @@
 # 動画要約レポート 第2位
 
-- 生成日時: 2026-02-21 23:19:30 JST
+- 生成日時: 2026-02-22 18:39:54 JST
 - チャンネルURL: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
 - チャンネルID: UCUWtuyVjeMQygQiy3adHb1g
 - RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWtuyVjeMQygQiy3adHb1g
@@ -18,13 +18,13 @@
 要約に失敗しました（実行時エラー）。
 
 エラー: RuntimeError: Gemini CLI returned empty or very short result (length: 5)
-Actual content: '14:21'
+Actual content: '17:21'
 stderr: Loaded cached credentials.
 Hook registry initialized with 0 hook entries
 
 
 詳細: Gemini CLI returned empty or very short result (length: 5)
-Actual content: '14:21'
+Actual content: '17:21'
 stderr: Loaded cached credentials.
 Hook registry initialized with 0 hook entries
 

@@ -1,6 +1,6 @@
 # 動画要約レポート 第1位
 
-- 生成日時: 2026-02-21 23:14:29 JST
+- 生成日時: 2026-02-22 18:55:56 JST
 - チャンネルURL: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
 - チャンネルID: UCUWtuyVjeMQygQiy3adHb1g
 - RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWtuyVjeMQygQiy3adHb1g
@@ -15,22 +15,16 @@
 
 ## 要約
 
-## 要約
+要約に失敗しました（実行時エラー）。
 
-初登場のイタリアブランド「イレブンティ」を特集し、その魅力である「優しさニュートラルコーデ」の作り方を解説。ベージュやライトグレーといった中間色を基調に、上質な素材感を活かしたスタイリングが特徴です。リラックス感のあるニットジャケットや美しいシルエットのパンツなど、大人の男性が取り入れるべきアイテムを紹介。これらのアイテムを組み合わせることで、優しく、知的で、かつ色気のある理想のモテスタイルが完成します。素材選びからサイジング、色合わせまで、細部にわたるこだわりが上品で洗練された印象を演出する秘訣です。
+エラー: RuntimeError: Gemini CLI returned empty or very short result (length: 5)
+Actual content: '25:49'
+stderr: Loaded cached credentials.
+Hook registry initialized with 0 hook entries
 
-## 要点
 
-- イタリアブランド「イレブンティ」が提案するのは、中間色を基調とした「優しさニュートラルコーデ」。
-- 上質な素材感とリラックスしたシルエットが、大人の余裕と色気を引き出す。
-- キーアイテムは、カーディガンのように羽織れるニットジャケットや、シルエットの美しいパンツ。
-- ベージュやライトグレーの色使いは、相手に優しく知的な印象を与える効果がある。
-- シンプルながらも計算されたコーディネートは、ビジネスから休日まで幅広いシーンで活躍する。
+詳細: Gemini CLI returned empty or very short result (length: 5)
+Actual content: '25:49'
+stderr: Loaded cached credentials.
+Hook registry initialized with 0 hook entries
 
-## 主張・結論
-
-イレブンティのアイテムを取り入れることで、上質な素材と中間色が織りなす、優しくも洗練された大人のスタイルを簡単に構築できます。
-
-## 推奨アクション
-
-まずは手持ちのアイテムに、上質なベージュのニットジャケットを一つ加えて、コーディネートの印象を柔らかく変えてみましょう。
