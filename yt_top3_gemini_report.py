@@ -1003,7 +1003,7 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
         "",
         "### あなたの出力に対する過去の私の指摘",
         "",
-        "- 動画の再生時間は出力しないでください。",
+        "- 動画の再生時間は出力しないでください。('14:21' みたいな出力は NG)",
         "",
         "### 出力形式",
         "",

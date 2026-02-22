@@ -1,6 +1,6 @@
 # 動画要約レポート 第3位
 
-- 生成日時: 2026-02-22 18:45:55 JST
+- 生成日時: 2026-02-22 19:58:53 JST
 - チャンネルURL: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
 - チャンネルID: UCUWtuyVjeMQygQiy3adHb1g
 - RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWtuyVjeMQygQiy3adHb1g
@@ -15,16 +15,22 @@
 
 ## 要約
 
-要約に失敗しました（実行時エラー）。
+## 要約
 
-エラー: RuntimeError: Gemini CLI returned empty or very short result (length: 5)
-Actual content: '20:41'
-stderr: Loaded cached credentials.
-Hook registry initialized with 0 hook entries
+オーダースーツに興味はあるものの、敷居が高いと感じている方へ向けた徹底解説動画。既製品との違いから、生地選び、採寸、デザインの決定に至るまで、初めてのオーダーで失敗しないためのポイントを分かりやすく紹介しています。特に、開催中のオーダーフェアを利用することで、驚きの価格で自分だけの一着を手に入れるチャンスがあることを強調。動画を通じて、オーダースーツがもたらすフィット感や満足感、そしてファッションの楽しさを伝え、多くの人がオーダーの世界へ一歩踏み出すきっかけを提供しています。
 
+## 要点
 
-詳細: Gemini CLI returned empty or very short result (length: 5)
-Actual content: '20:41'
-stderr: Loaded cached credentials.
-Hook registry initialized with 0 hook entries
+- オーダースーツの種類（パターンオーダー、イージーオーダー、フルオーダー）とそれぞれの特徴について解説。
+- 初心者でも安心な生地の選び方。定番の色柄や季節ごとのおすすめ素材を紹介。
+- 正確な採寸の重要性と、プロによるフィッティングの流れを実演。
+- B.R.SHOPで開催されるオーダースーツフェアの魅力と、その驚きのコストパフォーマンス。
+- 完成したスーツをより魅力的に見せるためのコーディネート術と着こなしのヒント。
 
+## 主張・結論
+
+オーダースーツは、フェアを活用すれば驚くほど身近な存在になります。この機会に、自分だけの完璧な一着を手に入れましょう。
+
+## 推奨アクション
+
+B.R.SHOPのオーダースーツフェアに足を運び、専門スタッフに相談しながら生地やデザインを実際に見てみましょう。
