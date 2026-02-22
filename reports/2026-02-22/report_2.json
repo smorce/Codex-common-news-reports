@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-02-22T09:09:50+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://github.com/xaskasdf/ntransformer",
+      "title": "GitHub - xaskasdf/ntransformer: High-efficiency LLM inference engine in C++/CUDA. Run Llam..",
+      "date": null,
+      "executive_summary": [
+        "C++/CUDAで動く高効率LLM推論エンジンの紹介。",
+        "Llama 70BをRTX 3090で動かすことを謳う。",
+        "VRAM経由のストリーミングでモデルを供給する。",
+        "NVMeを直接読み、CPUを介さず動作する。",
+        "アダプティブキャッシュは3段階構成。",
+        "70Bモデルで最大33倍の高速化をうたう。",
+        "GitHub上で公開されているリポジトリ。"
+      ],
+      "key_findings": [
+        {
+          "point": "C++/CUDAの推論エンジンでLLMを実行する。",
+          "footnote": "高効率C++/CUDA推論エンジンでLLMを実行。"
+        },
+        {
+          "point": "VRAM経由のストリーミングとNVMe直読でCPUを介さない。",
+          "footnote": "VRAM経由のストリーミングとNVMe直読でCPUを介さず動作。"
+        },
+        {
+          "point": "3段階のアダプティブキャッシュを採用する。",
+          "footnote": "3段階アダプティブキャッシュで70Bを最大33倍高速化。"
+        },
+        {
+          "point": "70Bモデルの高速化を最大33倍とする。",
+          "footnote": "3段階アダプティブキャッシュで70Bを最大33倍高速化。"
+        },
+        {
+          "point": "Llama 70BをRTX 3090で実行すると説明されている。",
+          "footnote": "Run Llama 70B on RTX 3090."
+        }
+      ],
+      "references": [
+        "https://github.com/xaskasdf/ntransformer"
+      ],
+      "retrieved_at": "2026-02-22T09:09:50+09:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/",
+      "title": "Sam Altman would like remind you that humans use a lot of energy, too | TechCrunch",
+      "date": null,
+      "executive_summary": [
+        "Sam AltmanがAIの環境影響について語った話。",
+        "インドのイベントでの発言が中心。",
+        "AIの水使用に関する批判は虚偽と指摘。",
+        "蒸発冷却は使われていないと述べた。",
+        "総エネルギー消費への懸念は妥当とした。",
+        "原子力・風力・太陽光への転換を求めた。",
+        "人間も多くのエネルギーを使うという文脈。"
+      ],
+      "key_findings": [
+        {
+          "point": "インドのイベントでAIの環境影響に言及した。",
+          "footnote": "インドのイベントでAIの環境影響について語った。"
+        },
+        {
+          "point": "AIの水使用に関する批判は虚偽とした。",
+          "footnote": "水の使用は虚偽とされ、蒸発冷却は使われずと指摘。"
+        },
+        {
+          "point": "蒸発冷却は使われていないと述べた。",
+          "footnote": "水の使用は虚偽とされ、蒸発冷却は使われずと指摘。"
+        },
+        {
+          "point": "総エネルギー消費への懸念は妥当とした。",
+          "footnote": "総エネルギー消費の懸念は妥当で、原子力・風力・太陽光へ転換を求めた。"
+        },
+        {
+          "point": "原子力・風力・太陽光への転換を求めた。",
+          "footnote": "総エネルギー消費の懸念は妥当で、原子力・風力・太陽光へ転換を求めた。"
+        }
+      ],
+      "references": [
+        "https://techcrunch.com/2026/02/21/sam-altman-would-like-remind-you-that-humans-use-a-lot-of-energy-too/"
+      ],
+      "retrieved_at": "2026-02-22T09:09:50+09:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/",
+      "title": "OpenAI debated calling police about suspected Canadian shooter's chats | TechCrunch",
+      "date": null,
+      "executive_summary": [
+        "OpenAIが警察通報を検討したとする報道。",
+        "カナダの射手とされる人物のチャットが対象。",
+        "18歳の射手が会話AIを使ったと報じられた。",
+        "会話は監視ツールでフラグされた。",
+        "2025年6月に利用禁止にされた。",
+        "危機時は988へという案内が示された。",
+        "銃乱射を模したゲーム作成と銃情報投稿が言及された。"
+      ],
+      "key_findings": [
+        {
+          "point": "OpenAIが警察通報を検討したと報じられた。",
+          "footnote": "OpenAI debated calling police about suspected Canadian shooter's chats | TechCrunch"
+        },
+        {
+          "point": "18歳の射手が会話AIを使い組織を揺さぶったとされた。",
+          "footnote": "18歳の射手が会話AIを使い組織を揺さぶったと報じられた"
+        },
+        {
+          "point": "会話は監視ツールでフラグされた。",
+          "footnote": "会話は監視ツールでフラグされ、2025年6月に利用禁止に"
+        },
+        {
+          "point": "2025年6月に利用禁止にされた。",
+          "footnote": "会話は監視ツールでフラグされ、2025年6月に利用禁止に"
+        },
+        {
+          "point": "危機時は988へ、銃乱射を模したゲーム作成と銃情報投稿が言及された。",
+          "footnote": "危機時は988へ、銃乱射を模したゲームを作成し銃情報を投稿"
+        }
+      ],
+      "references": [
+        "https://techcrunch.com/2026/02/21/openai-debated-calling-police-about-suspected-canadian-shooters-chats/"
+      ],
+      "retrieved_at": "2026-02-22T09:09:50+09:00"
+    }
+  ]
+}
