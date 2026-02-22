@@ -999,7 +999,11 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
     # Use tagged JSON format specification for structured output
     # Note: Removed -e none to allow video analysis extensions
     prompt_parts = [
-        f"@{video_file_abs} を日本語で実践的なレポートを生成してください。動画の再生時間は出力しないでください。出力はJSON形式で提示してください。",
+        f"@{video_file_abs} を日本語で実践的なレポートを生成してください。出力はJSON形式で提示してください。",
+        "",
+        "### あなたの出力に対する過去の私の指摘",
+        "",
+        "- 動画の再生時間は出力しないでください。",
         "",
         "### 出力形式",
         "",
@@ -1363,12 +1367,15 @@ def format_json_summary_to_markdown(json_summary: str) -> str:
         
         return "\n".join(lines)
     except json.JSONDecodeError as e:
-        print(f"[WARNING] Failed to parse JSON summary: {e}", file=sys.stderr)
-        # Return as-is if not valid JSON
-        return json_summary
+        warning_msg = f"[WARNING] Failed to parse JSON summary: {e}"
+        print(warning_msg, file=sys.stderr)
+        # レポートにも警告を含めて返す（エラー内容が report.md に記載されるように）
+        return f"{warning_msg}\n\n{json_summary}"
     except Exception as e:
-        print(f"[WARNING] Failed to format JSON summary: {e}", file=sys.stderr)
-        return json_summary
+        warning_msg = f"[WARNING] Failed to format JSON summary: {e}"
+        print(warning_msg, file=sys.stderr)
+        # レポートにも警告を含めて返す
+        return f"{warning_msg}\n\n{json_summary}"
 
 
 def generate_individual_report(
