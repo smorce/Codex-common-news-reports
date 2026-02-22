@@ -1,6 +1,6 @@
 # YouTube 最新Top1 要約レポート
 
-- 生成日時: 2026-02-22 18:55:56 JST
+- 生成日時: 2026-02-22 19:25:35 JST
 - チャンネルURL: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
 - チャンネルID: UCUWtuyVjeMQygQiy3adHb1g
 - RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWtuyVjeMQygQiy3adHb1g
@@ -19,16 +19,22 @@
 - URL: https://www.youtube.com/watch?v=VJF9oHytdP0
 - 解析に使ったファイル: `out_report\mp4\01_VJF9oHytdP0_初登場！理想のモテスタイルが叶う優しさニュートラルコーデの作り方 _ B.R. Fashion College Lesson.848 イレブンティ.mp4`
 
-要約に失敗しました（実行時エラー）。
+## 要約
 
-エラー: RuntimeError: Gemini CLI returned empty or very short result (length: 5)
-Actual content: '25:49'
-stderr: Loaded cached credentials.
-Hook registry initialized with 0 hook entries
+B.R. Fashion Collegeのレッスン848では、イタリアの人気ブランド「イレブンティ」を初特集。テーマは「優しさニュートラルコーデ」。ベージュやグレー、白といった中間色を基調に、知的で品のある大人のモテスタイルを提案します。イレブンティの強みである上質な素材感と、リラックスした着心地を活かしたスタイリングが特徴です。具体的なアイテムとして、アイコンであるジャージージャケットや上質なニット、美しいシルエットのパンツなどが登場。これらのアイテムを組み合わせ、異素材をミックスすることで、シンプルながらも深みのあるコーディネートを完成させる方法を、戸賀編集長と寺田さんが分かりやすく解説します。
 
+## 要点
 
-詳細: Gemini CLI returned empty or very short result (length: 5)
-Actual content: '25:49'
-stderr: Loaded cached credentials.
-Hook registry initialized with 0 hook entries
+- ニュートラルカラーは知的で優しい印象を与え、大人スタイルに欠かせない。
+- イレブンティは上質な素材と着心地の良さが魅力で、リラックスしたエレガンスを表現できる。
+- ジャージージャケットは、カーディガンのように羽織れる快適さと、きちんと感を両立する万能アイテム。
+- 同系色でまとめる「トーンオントーン」コーデは、素材感の違いでメリハリをつけるのがお洒落のコツ。
+- シンプルなコーディネートこそ、シルエットや細部のディテールにこだわることで、洗練された印象になる。
 
+## 主張・結論
+
+イレブンティが提案するニュートラルカラーのコーディネートは、上質な素材と計算されたシルエットにより、大人の男性に品格と余裕をもたらします。無理なくお洒落に見える「優しさ」が、現代のモテスタイルに繋がります。
+
+## 推奨アクション
+
+まずは手持ちのアイテムに、イレブンティの上質なニットやカットソーを1点取り入れて、素材感の違いを活かしたコーディネートを試してみる。
