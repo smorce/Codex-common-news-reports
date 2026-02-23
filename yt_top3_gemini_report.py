@@ -1124,16 +1124,24 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
             if cp.stderr:
                 print(f"[DEBUG] stderr output:\n{cp.stderr[:500]}...", file=sys.stderr)
             
-            # Check if result is empty
+            # Check if result is empty or very short (likely an error)
             if not result or len(result.strip()) < 10:
                 stderr_info = f"\nstderr: {cp.stderr[:500]}" if cp.stderr else ""
                 # Show the actual content returned (with repr to see special characters)
                 result_repr = repr(result) if result else "(empty)"
-                raise RuntimeError(
+                error_msg = (
                     f"Gemini CLI returned empty or very short result (length: {len(result)})\n"
                     f"Actual content: {result_repr}"
                     f"{stderr_info}"
                 )
+                last_error = error_msg
+                
+                if attempt < retry_count:
+                    print(f"[WARNING] {error_msg}", file=sys.stderr)
+                    print(f"[INFO] Retrying... ({attempt + 1}/{retry_count})", file=sys.stderr)
+                    continue
+                else:
+                    raise RuntimeError(error_msg)
             
             # Check for HTTP errors (429 rate limit, etc.) in stderr
             stderr_text = (cp.stderr or "").strip()
