@@ -891,6 +891,8 @@ class CodexDailyRunner:
     # GeminiCLI（YouTube要約）の出力フォルダ名・コピー先ファイル名
     GEMINI_YOUTUBE_OUTPUT_DIR = "Gemini_YouTube_Summary_Report"
     GEMINI_YOUTUBE_REPORT_COPY_NAME = "gemini_youtube_report.md"
+    # レポート本文がこの文字数未満ならリトライ対象（RetryHandler で最大3回リトライ）
+    GEMINI_REPORT_MIN_LENGTH = 10
 
     def _gemini_report_usable(self, src_report: Path) -> bool:
         """Gemini の report.md が存在し、中身が有効そうか（タイムアウト後でも生成済みの可能性）を判定する。"""
@@ -987,6 +989,15 @@ class CodexDailyRunner:
                     raise FileNotFoundError(last_error_message)
                 if not _is_fresh_report(src_report):
                     last_error_message = f"Gemini report was not updated in this run: {src_report}"
+                    raise RuntimeError(last_error_message)
+
+                report_text = src_report.read_text(encoding="utf-8", errors="replace")
+                if len(report_text.strip()) < self.GEMINI_REPORT_MIN_LENGTH:
+                    last_error_message = (
+                        f"Gemini report content too short (length < {self.GEMINI_REPORT_MIN_LENGTH}). "
+                        "Content limit not met."
+                    )
+                    last_error_detail = f"Content length: {len(report_text.strip())}"
                     raise RuntimeError(last_error_message)
 
                 dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
