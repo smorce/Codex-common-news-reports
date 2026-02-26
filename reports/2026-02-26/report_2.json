@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-02-26T10:07:09+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kazuma_horiike/articles/a437a4c32cfaf2",
+      "title": "AIに「ダウンロードして」と言うだけ。動画保存ツールを作った。",
+      "date": "2026-02-23",
+      "executive_summary": [
+        "AIに「ダウンロードして」と言うだけで動画保存を行うツールの紹介記事。",
+        "ツールはyt-dlpの操作をAI経由で簡単化するラッパーであると明記。",
+        "動画URLを貼り付けて「ダウンロードして」と指示するだけの操作性を強調。",
+        "インタラクティブモードの実行手順が示されている。",
+        "英語で使うための--langオプション例が提示されている。",
+        "Claude Code向けプラグインの案内があり、利用者に試用を促す。",
+        "利用規約・著作権への注意喚起があり、自己責任での利用を求めている。"
+      ],
+      "key_findings": [
+        {
+          "point": "本ツールはyt-dlpのコマンド操作をAI経由で簡単にするラッパーとして位置付けられている。",
+          "footnote": "「本ツールは yt-dlp のコマンド操作を AI 経由で簡単にすることを目的としたラッパー」"
+        },
+        {
+          "point": "動画のURLを貼って「ダウンロードして」と指示するだけで利用できると説明している。",
+          "footnote": "「あとは動画の URL を貼って「ダウンロードして」と言うだけです。」"
+        },
+        {
+          "point": "利用規約や著作権法に抵触する可能性があるため、自己責任での利用を求めている。",
+          "footnote": "「動画のダウンロードは、対象サイトの利用規約や著作権法に抵触する場合があります。...自己責任のもとでご使用ください。」"
+        },
+        {
+          "point": "Claude Code利用者向けにプラグインの試用を案内している。",
+          "footnote": "「Claude Code ユーザーなら、プラグインも試してみてください。」"
+        },
+        {
+          "point": "英語モードなど言語切替の実行例が示されている。",
+          "footnote": "「# 英語で試す」「ytdl --lang en」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kazuma_horiike/articles/a437a4c32cfaf2"
+      ],
+      "retrieved_at": "2026-02-26T10:07:09+09:00"
+    },
+    {
+      "url": "https://vibrantlabs.com/blog/pa-bench",
+      "title": "PA Bench: Evaluating Web Agents on Real World Personal Assistant Workflows",
+      "date": "2026-02-16",
+      "executive_summary": [
+        "個人アシスタント型の長期ワークフローを評価するPA Benchを提案。",
+        "既存ベンチマークは単一アプリの短いタスクに偏っていると指摘。",
+        "実世界のタスクは複数アプリを横断し、文脈理解と連携行動が必要と説明。",
+        "メールとカレンダーのシミュレーション環境で評価する設計。",
+        "書き込み操作を含むため、再現性と検証性を重視した評価方法を採用。",
+        "基盤世界の生成とシナリオ生成の二段階でデータとタスクを構築。",
+        "長期・多アプリのベンチマーク拡張を今後の計画として示している。"
+      ],
+      "key_findings": [
+        {
+          "point": "既存のベンチマークは単一アプリの孤立タスクが中心で、実運用の個人アシスタント利用を反映しないと述べている。",
+          "footnote": "「Most existing benchmarks for web or computer-use agents focus on isolated, single-application tasks... they do not reflect how humans actually use personal assistant agents」"
+        },
+        {
+          "point": "PA Benchは複数Webアプリにまたがる長期ワークフローを評価するために設計されたと明示している。",
+          "footnote": "「we introduce PA Bench, a benchmark designed to evaluate the ability of frontier computer-use agents to complete realistic, long-horizon personal assistant workflows involving multiple web applications」"
+        },
+        {
+          "point": "各タスクはメールとカレンダー両方のアプリ操作を必要とする設計である。",
+          "footnote": "「each task requires the agent to interact with both email and calendar applications in order to complete it successfully」"
+        },
+        {
+          "point": "シミュレーション環境での実行により再現性と検証性を確保し、バックエンド状態をJSONで検証できると説明している。",
+          "footnote": "「running them in simulations... enables more reproducible and verifiable evaluations... backend state... stored as a structured JSON file」"
+        },
+        {
+          "point": "データ生成は「基盤世界の生成」と「シナリオ生成・タスク変種作成」の二段階で行うと述べている。",
+          "footnote": "「two main steps」「Generating coherent base world states」「Creating task scenarios and generating task variants」"
+        }
+      ],
+      "references": [
+        "https://vibrantlabs.com/blog/pa-bench"
+      ],
+      "retrieved_at": "2026-02-26T10:07:09+09:00"
+    },
+    {
+      "url": "https://note.com/npaka/n/n8476e43bcd94",
+      "title": "世界モデルとは何か - Google が描く Project Genie の世界",
+      "date": "2026-02-26T07:14:00+09:00",
+      "executive_summary": [
+        "「世界モデル」と「Project Genie」を概説する日本語まとめ記事。",
+        "AIは従来の出力型進化から次の段階へ進むという見立てを示す。",
+        "世界モデルは世界を理解・操作・シミュレーションするAIとして位置付け。",
+        "世界の状態理解、変化予測、リアルタイム更新を要素として列挙。",
+        "Project Genieは米国のGoogle AI Ultra加入者向け提供と記載。",
+        "従来のLLM・画像・動画モデルの役割との差異を整理。",
+        "内部シミュレーターの重要性を強調し、思考の比喩として説明。"
+      ],
+      "key_findings": [
+        {
+          "point": "記事は「世界モデル」と「Project Genie」をまとめた内容であると明示している。",
+          "footnote": "「「世界モデル」と「Project Genie」についてまとめました。」"
+        },
+        {
+          "point": "世界モデルは世界そのものを理解し、動かし、シミュレーションするAIだと説明している。",
+          "footnote": "「世界そのものを理解し、動かし、シミュレーションするAIです。」"
+        },
+        {
+          "point": "世界モデルの要素として、状態理解・変化予測・リアルタイム更新を挙げている。",
+          "footnote": "「・世界の状態を理解する」「・行動によってどう変化するかを予測する」「・ユーザーの操作に応じてリアルタイムに更新する」"
+        },
+        {
+          "point": "Project Genieは米国内のGoogle AI Ultra加入者が利用可能で、今後拡大予定と述べている。",
+          "footnote": "「「Project Genie」は 現在、米国内のGoogle AI Ultra加入者が利用可能で、今後さらに拡大する予定です。」"
+        },
+        {
+          "point": "内部シミュレーターの重要性を強調している。",
+          "footnote": "「内部シミュレーターの存在は極めて重要」"
+        }
+      ],
+      "references": [
+        "https://note.com/npaka/n/n8476e43bcd94"
+      ],
+      "retrieved_at": "2026-02-26T10:07:09+09:00"
+    }
+  ]
+}

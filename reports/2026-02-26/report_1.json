@@ -1,0 +1,194 @@
+{
+  "generated_at": "2026-02-26T09:57:31.2189267+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/0a8c3645aa39a3",
+      "title": "Alibaba Cloud 「Coding Plan」を試す",
+      "date": "2026-02-26T00:05:00+09:00",
+      "executive_summary": [
+        "Alibaba Cloud Model Studioの「コーディングプラン」はAIコーディング向けの月額サブスク。",
+        "Qwen CodeやClaude Codeなどのコーディングツールから利用する前提。",
+        "対応モデルにQwen系とMiniMax/GLM/Kimiなどのサードパーティが含まれる。",
+        "ライト$10/月とプロ$50/月で、月間リクエスト上限が明示されている。",
+        "APIでの自動利用は不可で、コーディングツール限定の利用。",
+        "上限到達後の従量課金・クレジット追加は不可。",
+        "契約には決済手段登録と本人確認が必要と書かれている。",
+        "Model Studioのデータ利用・暗号化に関する説明があり、同意なしの学習利用はしないと明記。"
+      ],
+      "key_findings": [
+        {
+          "point": "コーディングプランはModel StudioのAIコーディング向けサブスクリプション。",
+          "footnote": "「コーディングプラン」は、Alibaba Cloud Model Studioが提供するAIコーディングサービスのサブスクリプションプランです。"
+        },
+        {
+          "point": "Qwen系とサードパーティモデルが利用可能。",
+          "footnote": "qwen3.5-plus、qwen3-max-2026-01-23、qwen3-coder-next、qwen3-coder-plus、MiniMax-M2.5、glm-5、glm-4.7、kimi-k2.5"
+        },
+        {
+          "point": "月間最大90,000リクエストの上限が提示されている。",
+          "footnote": "月間最大90,000リクエストまで対応可能"
+        },
+        {
+          "point": "対応ツールはQwen Code/Claude Code/Cline/OpenClawなど。",
+          "footnote": "対応ツール: Qwen Code、Claude Code、Cline、OpenClawに対応しています。"
+        },
+        {
+          "point": "ライトプランは$10/月。",
+          "footnote": "$10/月"
+        },
+        {
+          "point": "プロプランは$50/月。",
+          "footnote": "$50/月"
+        },
+        {
+          "point": "API利用は不可でツール経由の利用前提。",
+          "footnote": "API利用は不可"
+        },
+        {
+          "point": "上限到達後の追加課金はできない。",
+          "footnote": "使用量を使い切っても、従量課金やクレジットでの追加はできない。"
+        },
+        {
+          "point": "同意がない限り業務データは学習に使われないと明記。",
+          "footnote": "お客様が特に同意を提供されない限り、Alibaba Cloud Model Studioではお客様の業務上のデータをモデルの開発・改善に使用することはありません"
+        },
+        {
+          "point": "アカウント作成時に決済手段の登録が必須。",
+          "footnote": "決済手段の登録はアカウント作成時に必須（クレカ or PayPal）"
+        },
+        {
+          "point": "本人確認資料の提出が必須と記載。",
+          "footnote": "本人確認資料の提出が必須（パスポート or 運転免許証。審査が行われる様子。）"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/0a8c3645aa39a3"
+      ],
+      "retrieved_at": "2026-02-26T09:57:31.2189267+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/d286fc3299f8c1",
+      "title": "「LFM2-24B-A2B」を試す",
+      "date": "2026-02-25T17:23:00+09:00",
+      "executive_summary": [
+        "Liquid AIのLFM2-24B-A2Bリリース情報を試したメモ。",
+        "総パラメータ24Bで、トークンあたりアクティブ2.3BのMoE構成。",
+        "高速・メモリ効率設計にMoEを組み合わせたと説明。",
+        "LFM2-350Mから24Bまでのファミリー拡張で品質向上を主張。",
+        "32GB RAMに収まる設計でコンシューマー機での実行を想定。",
+        "深さ増加やエキスパート倍増などスケーリング詳細が示される。",
+        "アクティブパラメータ増加は約1.5倍と記載。",
+        "著者の印象では日本語自体は問題ないが知識面は限定的。"
+      ],
+      "key_findings": [
+        {
+          "point": "LFM2-24B-A2Bが最大モデルとしてリリースされた。",
+          "footnote": "本日、当社最大のLFM2モデル「LFM2-24B-A2B」をリリースします"
+        },
+        {
+          "point": "総パラメータは24B。",
+          "footnote": "総パラメータ数24B"
+        },
+        {
+          "point": "トークンあたりアクティブ2.3B。",
+          "footnote": "トークンあたりアクティブ2.3B"
+        },
+        {
+          "point": "MoEにより実行ごとの活性パラメータは2.3Bに抑えられる。",
+          "footnote": "Mixture of Experts構成を組み合わせることで、実行ごとにわずか2.3Bのパラメータのみが活性化します。"
+        },
+        {
+          "point": "LFM2ファミリーは350Mから24Bまで拡張された。",
+          "footnote": "LFM2ファミリーはほぼ2桁の規模に広がりました：LFM2-350MからLFM2-24B-A2Bまで。"
+        },
+        {
+          "point": "32GB RAMでコンシューマー機での実行を想定。",
+          "footnote": "32 GBのRAMに収まるよう設計されており、統合グラフィックスプロセッサ（iGPU）および専用ニューラル処理ユニット（NPU）を搭載したコンシューマー向けラップトップやデスクトップで実行可能にしています。"
+        },
+        {
+          "point": "24→40層とエキスパート32→64でスケーリング。",
+          "footnote": "LFM2-24B-A2B を深くする（24→40 層）ことでスケーリングし、MoE ブロックごとにエキスパートを倍増（32→64）"
+        },
+        {
+          "point": "アクティブパラメータは1.5B→2.3Bに増加。",
+          "footnote": "アクティブパラメータ数は約 1.5 倍に増加（1.5B→2.3B）"
+        },
+        {
+          "point": "日本語の知識は十分でないとの印象が示されている。",
+          "footnote": "日本語自体は問題ないのだけど、24Bだけど日本・日本語の知識はそこまでないかなぁ。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/d286fc3299f8c1"
+      ],
+      "retrieved_at": "2026-02-26T09:57:31.2189267+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/1551c3bd980c15",
+      "title": "メモ: Dockerのネットワークについて（iptablesとか）",
+      "date": "2026-02-25T12:40:00+09:00",
+      "executive_summary": [
+        "OpenClawを安全に試すためDockerとiptables周りを整理したメモ。",
+        "ホストOSはUbuntu 24.04を想定。",
+        "nftablesより情報量の多いiptablesでまず理解する方針。",
+        "filter/natテーブルと各チェーンの役割、パケット経路を整理。",
+        "ufw/iptables/nftはいずれもnf_tablesに収束する関係を解説。",
+        "ツール併用は非推奨で、混在するとルールが見えにくいと注意。",
+        "Docker導入でdocker0やvethが増え、iptablesチェーンが追加される。",
+        "OpenClaw向けにDOCKER-USERで通信制限を入れる案を提示。"
+      ],
+      "key_findings": [
+        {
+          "point": "OpenClawを安全に試すためにネットワーク制御を検討している。",
+          "footnote": "OpenClaw的なものを安全に試したい、ということで、VMやDockerを駆使しつつ、かつネットワークも制御して、ということを考えた。"
+        },
+        {
+          "point": "ホストOSはUbuntu 24.04を前提としている。",
+          "footnote": "なお、ホストOSは Ubuntu-24.04 を想定。"
+        },
+        {
+          "point": "当面はiptablesで理解を進める方針。",
+          "footnote": "iptables のほうが情報量が多いので、一旦そちらで。"
+        },
+        {
+          "point": "filterテーブルはパケットの許可/拒否を判断する。",
+          "footnote": "filterテーブル: パケットの許可/拒否を判断"
+        },
+        {
+          "point": "natテーブルはアドレス変換を行う。",
+          "footnote": "natテーブル: アドレス変換"
+        },
+        {
+          "point": "ufw/iptables/nftはnf_tablesを操作する関係にある。",
+          "footnote": "ufw / iptables / nft はすべて最終的にカーネル内の nf_tables を操作する。Ubuntu 24.04 では iptables コマンドの実体は iptables-nft（nf_tables バックエンド）。"
+        },
+        {
+          "point": "ツールの併用は避けて統一するのが望ましい。",
+          "footnote": "ツールの併用には注意が必要。統一するのが望ましい。"
+        },
+        {
+          "point": "Docker導入でdocker0ブリッジが追加される。",
+          "footnote": "docker0 のブリッジが追加される。"
+        },
+        {
+          "point": "Dockerのフィルタを追加するならDOCKER-USERが推奨されている。",
+          "footnote": "DOCKER-USER にルールを追加すればいいみたい。"
+        },
+        {
+          "point": "OpenClawコンテナからLiteLLMコンテナへのアクセスは許可する案。",
+          "footnote": "OpenClaw コンテナから LiteLLMコンテナへのアクセスを許可"
+        },
+        {
+          "point": "OpenClawコンテナからLAN内へのアクセスは拒否する案。",
+          "footnote": "OpenClaw コンテナから LANへのアクセスを拒否"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/1551c3bd980c15"
+      ],
+      "retrieved_at": "2026-02-26T09:57:31.2189267+09:00"
+    }
+  ]
+}
