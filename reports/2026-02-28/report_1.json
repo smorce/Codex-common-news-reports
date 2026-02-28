@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-02-28T09:37:22.7545935+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/1cbf49fe21d171",
+      "title": "「Qwen3 Voice Embedding」を試す",
+      "date": "2026-02-27T18:22:00+09:00",
+      "executive_summary": [
+        "Qwen3-Voice-Embeddingの紹介と簡単な検証メモ。",
+        "音声から話者の特徴ベクトルを抽出する用途を想定。",
+        "話者検証や音声生体認証、音声UIでのユーザー識別に触れている。",
+        "モデルはECAPA-TDNN系で0.6Bパラメータと記載。",
+        "12kHz音声対応でONNX変換済みの実運用志向。",
+        "話者認証の評価指標EERを使って検証を試みている。",
+        "検証結果のEERが高く、話者認証用途には不向きという結論。"
+      ],
+      "key_findings": [
+        {
+          "point": "話者検証・音声生体認証・音声でのユーザー認識に適したモデルとして紹介されている。",
+          "footnote": "「話者検証システム、音声生体認証、または音声でユーザーを認識するスマートアシスタントを構築するのに最適」"
+        },
+        {
+          "point": "ECAPA-TDNNアーキテクチャで0.6Bパラメータ、12kHz音声処理、ONNX変換済みと説明されている。",
+          "footnote": "「ECAPA-TDNNアーキテクチャを基盤とし、6億パラメータ…12kHzのオーディオを処理し…ONNX形式に変換」"
+        },
+        {
+          "point": "話者認証の指標EERで評価する流れを整理している。",
+          "footnote": "「話者認証を評価する指標として『EER』（Equal Error Rate）」"
+        },
+        {
+          "point": "検証結果のEERが41.16%と高く、性能は実用的でないと判断している。",
+          "footnote": "「EER: 41.16%」「ほぼ使い物にならない数字です」"
+        },
+        {
+          "point": "このモデルはTTSの声クローン用に訓練されたもので、話者同一判定能力は弱いと結論づけている。",
+          "footnote": "「このモデルはTTSの声クローン用に訓練されたもの」「『この2人は同一人物か？』を判別する能力は持っていなかった」"
+        },
+        {
+          "point": "話者認証には専用モデルへの切り替えを推奨し、具体例を挙げている。",
+          "footnote": "「SpeechBrain の ECAPA-TDNN」「WeSpeaker / 3D-Speaker」「pyannote.audio」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/1cbf49fe21d171"
+      ],
+      "retrieved_at": "2026-02-28T09:37:22.7545935+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/c6a3b110b5141b",
+      "title": "LiveKitメモ: \"Prompting voice agents to sound more realistic\"（音声エージェントをより人間らしく自然な発話にさせるためのプロンプト手法）",
+      "date": "2026-02-27T16:09:00+09:00",
+      "executive_summary": [
+        "音声エージェントが機械的に聞こえる原因を整理したメモ。",
+        "遅さではなく、書き言葉を読み上げることが原因と指摘。",
+        "STT→LLM→TTSのカスケードでも人間らしさは改善可能とする。",
+        "フィラーや間、笑いなどの非流暢性が重要と述べる。",
+        "プロンプトは抽象的でなく具体例を多用すべきと主張。",
+        "SSMLのポーズや感情タグは制約条件として扱うべきと整理。",
+        "性格は形容詞ではなく観察可能な発話行動で定義する。",
+        "繰り返しと冗長性が人間らしさの再現に効くという結論。"
+      ],
+      "key_findings": [
+        {
+          "point": "機械的に聞こえる主因は速度ではなく、書き言葉を読み上げてしまうことだと述べている。",
+          "footnote": "「ロボットっぽく聞こえるのは、遅いからではありません。…文章を書いて、それを声に出して読むから」"
+        },
+        {
+          "point": "人間らしさのためにフィラー、間、笑いなどの非流暢性を加えるべきとされる。",
+          "footnote": "「『えー』や『うん』といった間投詞、本物のポーズ、さらには笑いのタグを追加」"
+        },
+        {
+          "point": "カスケード型パイプラインでも改善可能で、問題は話し言葉になっていない点だと整理している。",
+          "footnote": "「カスケード型パイプラインでも…問題は…『書き言葉を単純に読み上げた』ものになりやすい」"
+        },
+        {
+          "point": "「会話的に話す」程度の指示では不足で、具体的かつ明確なプロンプトが必要とされる。",
+          "footnote": "「単に『会話的に話してください』では足りない」「明確で具体的な指示が必要」"
+        },
+        {
+          "point": "SSMLのポーズなど、タイミング制御の具体例を示すことで自然さが向上すると述べている。",
+          "footnote": "「SSMLに対応しているTTSエンジンの場合…SSMLタグを含めた具体例を列挙」"
+        },
+        {
+          "point": "感情タグは装飾ではなく制約条件として扱い、穏やかな感情の方が自然になりやすいとする。",
+          "footnote": "「感情タグは装飾要素ではなく、制約条件として扱う」「『穏やか』系のタグ…人間らしい音声になる傾向」"
+        },
+        {
+          "point": "性格は形容詞ではなく、実際に発話できる行動パターンで定義すべきと整理している。",
+          "footnote": "「性格特性は形容詞ではなく、音声として表現できる行動として記述」"
+        },
+        {
+          "point": "同じルールを複数箇所で繰り返す冗長性が重要だとまとめている。",
+          "footnote": "「同じルールを複数のセクションで繰り返し強調」「繰り返しが重要」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/c6a3b110b5141b",
+        "https://blog.livekit.io/prompting-voice-agents-to-sound-more-realistic/"
+      ],
+      "retrieved_at": "2026-02-28T09:37:22.7545935+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/3bda177e7b6d92",
+      "title": "OpenAI「Agents SDK」⑫ シェルツール＆スキル（＋ホスト型ツール）",
+      "date": "2026-02-27T00:45:00+09:00",
+      "executive_summary": [
+        "Agents SDKで追加されたホスト型シェルツールとスキルの検証メモ。",
+        "ホスト型ツールはResponses API前提で利用する点を強調。",
+        "ツールタイプが5種類あることを整理している。",
+        "ホスト型ツールの種類と注意点、コスト面を列挙。",
+        "ShellToolの位置づけとLocalShellToolの古さに触れている。",
+        "ホスト型環境での制約（承認フロー等）が注意点として挙げられている。",
+        "利便性は高いが、モデルやAPIの制約・費用を踏まえて判断すべきという結論。"
+      ],
+      "key_findings": [
+        {
+          "point": "Agents SDKがサポートするツールは5種類だと整理されている。",
+          "footnote": "「Agents SDKでは、以下の5つのタイプのツールをサポート」"
+        },
+        {
+          "point": "ホスト型ツールはOpenAIがマネージドで提供し、Responses API前提で使うと記載。",
+          "footnote": "「ホスト型ツール: OpenAIがマネージドで提供」「Responses APIでの利用が前提」"
+        },
+        {
+          "point": "Chat Completions APIや他プロバイダーモデルでは使えない可能性があると注意している。",
+          "footnote": "「Chat Completions APIを使用している場合は使えない可能性」「他のプロバイダーモデルも使えるが、その場合には使えない可能性」"
+        },
+        {
+          "point": "ホスト型ツールの具体例としてWebSearchやFileSearchなどが列挙されている。",
+          "footnote": "「WebSearchTool」「FileSearchTool」「CodeInterpreterTool」「HostedMCPTool」「ImageGenerationTool」"
+        },
+        {
+          "point": "ShellToolはローカルとホスト型の両方で使える共通ツールとして位置づけられている。",
+          "footnote": "「ShellTool: ローカルでのシェル実行、及び、ホスト型コンテナによるシェル実行」"
+        },
+        {
+          "point": "LocalShellToolは古く、今はShellToolが推奨という見解が述べられている。",
+          "footnote": "「LocalShellTool…今でもあるが…『Outdated』…今なら…ShellToolを使うのが良い」"
+        },
+        {
+          "point": "ホスト型環境ではShellToolのexecutorや承認設定を避けるべきという注意がある。",
+          "footnote": "「ホストされる環境では、ShellTool に executor、needs_approval、on_approval を設定しないでください」"
+        },
+        {
+          "point": "ホスト型ツールは実装が楽だが、コストや制約とのトレードオフがあるとまとめている。",
+          "footnote": "「ホスト型ツールを使うことで実装がかなり楽」「別途コストも発生する」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/3bda177e7b6d92",
+        "https://openai.github.io/openai-agents-python/ja/tools/#_4",
+        "https://developers.openai.com/api/docs/guides/tools-local-shell"
+      ],
+      "retrieved_at": "2026-02-28T09:37:22.7545935+09:00"
+    }
+  ]
+}
