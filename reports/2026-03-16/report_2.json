@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-03-16T09:09:19+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://gigazine.net/news/20260315-denchclaw-local-ai-crm/",
+      "title": "無料でローカル動作するAI顧客管理ツール「DenchClaw」は自然言語でデータベースを扱えて見込み客への連絡も自動化可能",
+      "date": "2026-03-15T22:15:00+09:00",
+      "executive_summary": [
+        "ローカル環境で動くAI CRM「DenchClaw」を紹介する記事。",
+        "クラウドに顧客データを置きたくない需要に応える設計が強調されている。",
+        "OpenClawを基盤にした無料のAI CRMとして位置付けられる。",
+        "自然言語でCRMデータベースを操作し、SQLへ変換して問い合わせる仕組みがある。",
+        "LinkedInやメールを使った見込み客探索・連絡の自動化を想定。",
+        "複数サービス連携で連絡先やドキュメントを一元化できる。",
+        "営業パイプラインの可視化やリード情報補完まで扱えると説明される。"
+      ],
+      "key_findings": [
+        {
+          "point": "クラウドに顧客データを預けたくない層向けに、ローカル動作型AI CRMとして設計されている。",
+          "footnote": "「顧客データはクラウドに預けたくないが、AIで整理や営業作業は自動化したい」というニーズを狙ったローカル動作型のAI CRM"
+        },
+        {
+          "point": "OpenClawをベースにした無料のAI CRMとして提供されている。",
+          "footnote": "DenchClawはOpenClawをベースに作られた無料のAI CRM"
+        },
+        {
+          "point": "自然言語でのDB操作と、LinkedIn・メールを使った連絡自動化に対応する。",
+          "footnote": "自然言語によるデータベース操作やLinkedIn・メールを使った見込み客への連絡の自動化に対応"
+        },
+        {
+          "point": "Google DriveやNotion、Salesforceなど複数サービスと連携し、情報を統合できる。",
+          "footnote": "Google DriveやNotion、Salesforce、HubSpot、Gmail、Calendar、Slack、LinkedInなどのサービスと連携"
+        },
+        {
+          "point": "英語で質問するとSQLに変換してDuckDBへ問い合わせる例が示されている。",
+          "footnote": "簡単な英語で質問するとDenchClawがそれをSQLに変換してDuckDBへ問い合わせ"
+        },
+        {
+          "point": "LinkedInでの見込み客探索から連絡先補完、メッセージ作成・送信までを一括で処理できる。",
+          "footnote": "LinkedInを使った見込み客探しから連絡先情報の補完、メッセージの作成や送信までまとめて処理"
+        }
+      ],
+      "references": [
+        "https://gigazine.net/news/20260315-denchclaw-local-ai-crm/"
+      ],
+      "retrieved_at": "2026-03-16T09:09:19+09:00"
+    },
+    {
+      "url": "https://stopsloppypasta.ai/",
+      "title": "Stop Sloppypasta: Don't paste raw LLM output at people",
+      "date": null,
+      "executive_summary": [
+        "未検証のLLM出力をそのまま貼り付ける行為を「sloppypasta」と定義して批判するエッセイ。",
+        "受け手に検証や要約の負担を押し付けるため失礼だと説明する。",
+        "具体例を挙げ、会話の流れを壊したり無関係な長文を投下する問題を示す。",
+        "送信者と受信者の労力が非対称になることが主要な害として描かれる。",
+        "「読む・検証する・要約する・開示する」などの簡潔なガイドラインを提示。",
+        "AI出力が古い・誤りを含む可能性がある点を強調する。",
+        "AIは生産性向上に使うべきだが、他者の負担にすべきではないと結ぶ。"
+      ],
+      "key_findings": [
+        {
+          "point": "sloppypastaは未読・未検証のLLM出力をそのまま貼り付ける行為として定義される。",
+          "footnote": "Verbatim LLM output copy-pasted at someone, unread, unrefined, and unrequested."
+        },
+        {
+          "point": "送信者が検討していないテキストを送ることは受信者に追加作業を要求し、失礼とされる。",
+          "footnote": "they are asking you to do work they chose not to do. The asymmetric effort makes it rude."
+        },
+        {
+          "point": "チャットボットに聞いてそのまま転送する行為は検証や批判的レビューが欠けると指摘。",
+          "footnote": "They asked a chatbot and forwarded its response to you verbatim without validation or critical review."
+        },
+        {
+          "point": "「Read」「Verify」「Distill」「Disclose」「Share only when requested」「Share as a link」の簡易指針が示される。",
+          "footnote": "Read. / Verify. / Distill. / Disclose. / Share only when requested. / Share as a link."
+        },
+        {
+          "point": "LLMは古い知識や誤情報を生成しうるため、事実確認が必要とされる。",
+          "footnote": "LLMs are trained to \"be helpful\", and will produce outdated facts, wrong figures, and plausible nonsense"
+        },
+        {
+          "point": "AI利用の開示は信頼を回復し、受信者が何を検証済みか判断できるようにする。",
+          "footnote": "Disclosure restores the trust signals that sloppypasta destroys"
+        }
+      ],
+      "references": [
+        "https://stopsloppypasta.ai/"
+      ],
+      "retrieved_at": "2026-03-16T09:09:19+09:00"
+    },
+    {
+      "url": "https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/",
+      "title": "What is agentic engineering? - Agentic Engineering Patterns - Simon Willison's Weblog",
+      "date": "2026-03-15",
+      "executive_summary": [
+        "「agentic engineering」をコーディングエージェント支援でのソフト開発と定義する。",
+        "コーディングエージェントはコードを書くだけでなく実行できる点が重要とされる。",
+        "エージェントはツールをループで回して目標達成を目指すという定義を示す。",
+        "コード実行能力が、実用的な反復改善を可能にする中核だと述べる。",
+        "人間の役割は何を作るべきかの判断や、要件に合う選択肢の探索にある。",
+        "道具の提供、問題定義、検証と反復が成功の鍵と説明する。",
+        "ガイドは進化中で、章の追加・更新を続けると明記する。"
+      ],
+      "key_findings": [
+        {
+          "point": "agentic engineeringはコーディングエージェント支援での開発実践を指す。",
+          "footnote": "the practice of developing software with the assistance of coding agents."
+        },
+        {
+          "point": "コーディングエージェントはコードを書くだけでなく実行もできる。",
+          "footnote": "agents that can both write and execute code."
+        },
+        {
+          "point": "エージェントはツールをループで回してゴールに到達するという定義を提示。",
+          "footnote": "Agents run tools in a loop to achieve a goal"
+        },
+        {
+          "point": "コード実行がagentic engineeringを成立させる決定的な能力だと強調する。",
+          "footnote": "Code execution is the defining capability that makes agentic engineering possible."
+        },
+        {
+          "point": "人間は何を書くべきかを判断し、トレードオフを見極める役割を担う。",
+          "footnote": "The craft has always been figuring out what code to write."
+        },
+        {
+          "point": "ツール提供、適切な問題定義、検証と反復で信頼性を高める必要がある。",
+          "footnote": "provide our coding agents with the tools they need... specify those problems... verify and iterate"
+        },
+        {
+          "point": "指示やツールを更新すれば、コーディングエージェントは学習を反映できる。",
+          "footnote": "coding agents can, provided we deliberately update our instructions and tool harnesses"
+        }
+      ],
+      "references": [
+        "https://simonwillison.net/guides/agentic-engineering-patterns/what-is-agentic-engineering/"
+      ],
+      "retrieved_at": "2026-03-16T09:09:19+09:00"
+    }
+  ]
+}

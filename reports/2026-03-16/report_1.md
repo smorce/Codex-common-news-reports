@@ -1,0 +1,103 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-03-16T09:01:50+09:00
+- Articles: 3
+
+## 「InternVL-U」を試す
+- Date: 2026-03-14T00:55:00+09:00
+
+### Executive Summary
+- InternVL-Uは4Bの統一マルチモーダルモデルとして、推論・生成・編集を一体化する構想が示されている。
+- 統一コンテキストモデリングとモダリティ別モジュール、視覚表現の分離で性能効率の両立を狙う。
+- オープンソースで実用的なマルチモーダル知能向けに設計されている。
+- 統一コア＋周辺モジュールという設計で、理解と生成の表現を分ける点が強調されている。
+- テキストレンダリング、科学的推論、空間的に条件が厳しい生成・編集が主要なターゲットとして挙げられている。
+- Pipelineのモード切替で理解・生成・編集を統一的に扱う手順が紹介されている。
+- 筆者は小規模サイズの面白さを評価しつつ、4Bで日本語を普通に使うには足りない可能性に言及している。
+
+### Key Findings
+- 4B規模で推論・生成・編集を単一フレームワークに統合した統一マルチモーダルモデルとして紹介されている。 [^]
+  - Footnote: 「軽量な4B統一マルチモーダルモデルで、推論、生成、編集を統一フレームワークに統合します。」
+- 統一コンテキストモデリング等の設計で、より大規模な統一ベースラインを上回る性能効率をうたう。 [^]
+  - Footnote: 「統一コンテキストモデリング、モダリティ固有のモジュール設計、デカップルされた視覚表現に基づいて構築され、InternVL-Uは、テキストレンダリング、科学的推論、空間的に接地された生成と編集といった挑戦的なタスクで、3倍以上の規模の統一ベースラインを一貫して上回る、強力な性能-効率のトレードオフを実現します。」
+- オープンソースで実用的なマルチモーダル知能を志向している。 [^]
+  - Footnote: 「オープンソースで、効率的かつ実際的なマルチモーダル知能向けに設計されています。」
+- 統一コア＋モダリティ別モジュールという設計思想が明示されている。 [^]
+  - Footnote: 「Unified yet modular（中枢は統一、周りはモジュール）」
+- 高セマンティック密度タスクとして、テキストレンダリングや科学的推論、空間的に条件が厳しい生成・編集が列挙されている。 [^]
+  - Footnote: 「テキストレンダリング・テキスト編集」「科学的推論（scientific reasoning）」「空間的に条件が厳しい生成・編集（spatially grounded generation/editing）」
+- Reasoningを入れると生成時間が伸びると記載されている。 [^]
+  - Footnote: 「Reasoningが行われる分、ちょっと生成時間は長くなるみたい。」
+
+### References
+- https://zenn.dev/kun432/scraps/89e873b7670fb2
+- https://github.com/OpenGVLab/InternVL-U
+- https://huggingface.co/InternVL-U/InternVL-U
+- https://arxiv.org/pdf/2603.09877
+
+## 「ibm-granite/granite-4.0-1b-speech」を試す
+- Date: 2026-03-12T23:17:00+09:00
+
+### Executive Summary
+- Granite-4.0-1b-speechは多言語ASR/AST向けのコンパクトな音声言語モデルとして説明されている。
+- 公開コーパスと、日本語ASR・キーワード重視ASR・音声翻訳向け合成データで学習したとされる。
+- 英語/仏語/独語/西語/葡語/日本語の入力対応や、英語ASR精度・推論速度の改善などが追加点として挙げられる。
+- HuggingFace Open ASRリーダーボードで平均WER 5.52、RTFx 280.02が示されている。
+- リリース日は2026-03-06で、Apache 2.0ライセンスと明記されている。
+- 筆者の実験では英語サンプルは短時間で出力された一方、日本語の長い音声はループ出力になった。
+- まとめでは、パラメータの推奨がなく調整しても改善が乏しく、句読点が出ない点も課題とされている。
+
+### Key Findings
+- 多言語ASR/AST向けに設計されたコンパクトな音声言語モデルと明記されている。 [^]
+  - Footnote: 「Granite-4.0-1b-speech は、コンパクトで効率的な音声言語モデルであり、多言語対応の自動音声認識（ASR）と双方向自動音声翻訳（AST）に特化して設計されています。」
+- 公開コーパスと日本語ASR/キーワード重視ASR/音声翻訳向け合成データで学習したと説明されている。 [^]
+  - Footnote: 「本モデルは、ASR および AST 向けの多様な公開コーパス群、および日本語 ASR、キーワード重視型 ASR、音声翻訳をサポートするために特別に作成された合成データセットを用いて学習されています。」
+- 英語・仏語・独語・西語・葡語・日本語の多言語音声入力に対応する。 [^]
+  - Footnote: 「英語、フランス語、ドイツ語、スペイン語、ポルトガル語、日本語の多言語音声入力に対応」
+- リソース制約デバイス向けに2Bモデルの半分のパラメータ数を実現したとされる。 [^]
+  - Footnote: 「リソース制約のあるデバイスでも動作可能なよう、granite-speech-3.3-2b の半分のパラメータ数を実現」
+- Open ASRリーダーボードで平均WER 5.52、RTFx 280.02の値が掲示されている。 [^]
+  - Footnote: 「平均WER」「5.52」「RTFx」「280.02」
+- 筆者の日本語試行では出力がループしたと記録されている。 [^]
+  - Footnote: 「うーん、出力がループしてしまっている・・・」
+
+### References
+- https://zenn.dev/kun432/scraps/1a1f9362662e9d
+- https://huggingface.co/ibm-granite/granite-4.0-1b-speech
+- https://huggingface.co/ibm-granite/granite-4.0-1b-base
+- https://huggingface.co/spaces/hf-audio/open_asr_leaderboard
+- https://arxiv.org/abs/2505.08699
+
+## 音声を音素に変換する「Wav2Vec2Phoneme」 を試す
+- Date: 2026-03-11T00:29:00+09:00
+
+### Executive Summary
+- Wav2Vec2Phonemeを用いて音声から音素（phoneme）への変換を試している。
+- phoneとphonemeの違いを整理し、phoneは言語非依存の実際の音、phonemeは言語で意味を分ける抽象単位と説明している。
+- 論文では多言語wav2vec 2.0のファインチューニングにより未知言語のゼロショット音素認識を目指すと要約されている。
+- モデルはデフォルトで音素列を出力し、単語列化には辞書と言語モデルが必要とされる。
+- 公開モデルは約30件で、Facebook系や日本語向けモデルも紹介されている。
+- 実験では英語・日本語ともIPA風の列が出るが、espeak-ngとの比較では参考程度と述べられている。
+- 日本語の長め音声では冒頭や途中が抜けやすく、短い区間では改善するなど精度面の課題が示唆されている。
+
+### Key Findings
+- phoneとphonemeは別概念であり、使い分けの基準は言語依存性にあると整理している。 [^]
+  - Footnote: 「phone と phoneme は違う」「phoneme は言語に依存するが、phoneは基本的に依存しない」
+- phoneは実際の音の単位、phonemeは言語の区別に使う抽象単位として説明されている。 [^]
+  - Footnote: 「音声の細かい音の単位（phone）」「言語の区別に使う抽象的な単位が 音素（phoneme）」
+- Wav2Vec2Phonemeはゼロショット多言語音素認識の論文で提案されたと明記されている。 [^]
+  - Footnote: 「Wav2Vec2Phonemeモデルは、Qianton Xu、Alexei Baevski、Michael Auliによって論文『シンプルで効果的なゼロショット多言語音素認識』（Xu et al., 2021）において提案されました。」
+- デフォルト出力は音素列で、単語列化には辞書と言語モデルが必要とされる。 [^]
+  - Footnote: 「デフォルトでは、このモデルは音素の連続列を出力します。これらの音素を単語列に変換するには、辞書と言語モデルを使用する必要があります。」
+- 公開モデルは30個ほどと記載されている。 [^]
+  - Footnote: 「公開されているモデルは30個ほどある。」
+- 日本語音声では冒頭や途中が欠けやすく、短く切ると改善したと報告されている。 [^]
+  - Footnote: 「冒頭とあと途中が抜けているような感がある。」「例えばこうすると認識が改善された。」
+
+### References
+- https://zenn.dev/kun432/scraps/6bef4ce2d17200
+- https://huggingface.co/docs/transformers/model_doc/wav2vec2_phoneme
+- https://huggingface.co/papers/2109.11680
+- https://huggingface.co/models?other=phoneme-recognition
+- https://huggingface.co/facebook/wav2vec2-lv-60-espeak-cv-ft
+- https://huggingface.co/prj-beatrice/japanese-hubert-base-phoneme-ctc-v4
