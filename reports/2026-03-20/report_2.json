@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-03-20T10:51:18.4174542+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://gigazine.net/news/20260319-nightingale/",
+      "title": "無料でどんな音楽ファイルでもカラオケにできる「Nightingale」、ボーカルと曲を分離し単語ごとに同期された歌詞を生成してハイライト表示可能で動画にも対応",
+      "date": "2026-03-19T20:00:00+09:00",
+      "executive_summary": [
+        "Nightingaleは音楽ライブラリからカラオケを生成するアプリとして紹介されている。",
+        "ボーカル分離と歌詞の自動生成を組み合わせ、単語単位で同期表示できる。",
+        "採点やプロフィール別スコア管理など、遊びの機能も備える。",
+        "背景映像の描画や元動画の同期再生など、映像演出にも対応する。",
+        "Windows・macOS・Linux向けに無料で提供され、初回起動で必要コンポーネントを取得する。",
+        "CUDAやCoreMLによるアクセラレーションに対応し、推奨GPU環境で高速化される。",
+        "オープンソースで公開され、ソースコードはGitHubで入手可能とされる。"
+      ],
+      "key_findings": [
+        {
+          "point": "ニューラルネットワークを使って音楽ライブラリからカラオケを生成するアプリだ。",
+          "footnote": "「Nightingaleは、ニューラルネットワークを活用して音楽ライブラリからカラオケを生成するアプリです。」"
+        },
+        {
+          "point": "UVRやDemucsでボーカル分離し、WhisperXで単語単位の歌詞タイムスタンプを自動生成する。",
+          "footnote": "「Ultimate Vocal Remover(UVR)のKaraokeモデルやDemucsを用いてボーカルを分離し、WhisperXによって単語単位のタイムスタンプを持つ歌詞を自動的に書き起こす」"
+        },
+        {
+          "point": "リアルタイム音程検出のスコア表示や4KアダプティブUIなど実用的機能を多数搭載する。",
+          "footnote": "「リアルタイムの音程検出によるスコア表示や、プロフィールごとのスコア管理、ゲームパッドによる操作、4K解像度に対応したアダプティブUIなど、実用的な機能を多数搭載」"
+        },
+        {
+          "point": "背景映像はGPUシェーダーやPixabay動画、元動画の再生に対応する。",
+          "footnote": "「背景にはGPUシェーダーによるアニメーションやPixabayの動画、あるいは元となる動画ファイルをそのまま再生することができ」"
+        },
+        {
+          "point": "CUDAやCoreMLで解析を高速化し、推奨GPUなら1曲2〜5分、CPUのみだと10〜20分とされる。",
+          "footnote": "「解析処理はNVIDIAのGPUによるCUDA加速やApple SiliconのCoreMLに対応」および「1曲あたりの解析時間は推奨ハードウェア環境であれば2分から5分程度、CPUのみで処理を行う場合は10分から20分ほど。」"
+        }
+      ],
+      "references": [
+        "https://gigazine.net/news/20260319-nightingale/"
+      ],
+      "retrieved_at": "2026-03-20T10:51:18.4174542+09:00"
+    },
+    {
+      "url": "https://pc.watch.impress.co.jp/docs/news/2094741.html",
+      "title": "IT革命をスキップし直接AIの波へ。NVIDIAフアンCEOが語る日本の勝機",
+      "date": "2026-03-19T12:28:00+09:00",
+      "executive_summary": [
+        "GTC 2026の記者向け質疑応答でジェンスン・フアン氏が新製品や戦略に言及した。",
+        "NVIDIAの歴史とCUDAの20周年が改めて説明されている。",
+        "GPUとCUDAがAI学習を加速し、データセンター規模へ拡大した経緯を述べる。",
+        "FY2026の売上高と前年比成長率が示され、事業拡大の勢いを強調している。",
+        "推論市場での戦略やNVL72/NVFP4/Dynamoの展開を説明している。",
+        "データセンター向けでフルスタック提供とクラウド上位顧客の比率を示した。",
+        "AIエージェントやOpenClawに触れ、IT革命を飛び越える議論を展開した。"
+      ],
+      "key_findings": [
+        {
+          "point": "GTC 2026の会期2日目にフアン氏の質疑応答が実施された。",
+          "footnote": "「GTC 2026を、3月15日～3月19日(現地時間)で開催」「会期2日目となる3月16日には、CEOのジェンスン・フアン氏による質疑応答が行なわれ」"
+        },
+        {
+          "point": "CUDAは2006年リリースで、2026年は20周年と明記されている。",
+          "footnote": "「2006年に正式にリリースした。このため、2026年はCUDAのリリース以来20周年の記念の年」"
+        },
+        {
+          "point": "FY2026の売上高は2,159億ドルで、前年比65%増とされる。",
+          "footnote": "「会計年度2026年度(FY2026)の売上高は2,159億ドルと、前年比65%の売上高アップ」"
+        },
+        {
+          "point": "推論市場で2025年に大規模投資を決め、NVL72やNVFP4、Dynamoを発表したと述べている。",
+          "footnote": "「我々は2025年に推論に大規模なリソースを投入すると決め、NVL72やNVFP4、Dynamoなどのソリューションを昨年(2025年)のGTCで発表」"
+        },
+        {
+          "point": "データセンター向けビジネスの60%がトップ5クラウド事業者向けとされる。",
+          "footnote": "「我々のデータセンター向けビジネスのうち60%はトップ5のクラウドサービス事業者向けのビジネスが締めている。」"
+        }
+      ],
+      "references": [
+        "https://pc.watch.impress.co.jp/docs/news/2094741.html"
+      ],
+      "retrieved_at": "2026-03-20T10:51:18.4174542+09:00"
+    },
+    {
+      "url": "https://aicode.swerdlow.dev/",
+      "title": "AI Code",
+      "date": null,
+      "executive_summary": [
+        "AIコード時代に意図的にコードベースを形作るべきだという宣言文である。",
+        "良い設計の基本として「Semantic Functions」を中心概念に置く。",
+        "副作用の少なさと最小の正確さを優先する方針を示している。",
+        "複雑な処理は「Pragmatic Functions」でラップして整理すべきと述べる。",
+        "データモデルは誤った状態を表現できない形にすべきだと主張する。",
+        "ブランド型を使って意味の異なるIDを混同しない設計を推奨する。",
+        "関数やモデルが肥大化する典型的な崩壊パターンに警鐘を鳴らしている。"
+      ],
+      "key_findings": [
+        {
+          "point": "AIが書くコードを意図的に整える必要があるという立場を示している。",
+          "footnote": "「Be intentional about how AI changes your codebase.」"
+        },
+        {
+          "point": "Semantic functionsは最小性と正確さを優先し、必要な入出力だけを取るべきとする。",
+          "footnote": "「a good semantic function should be as minimal as possible in order to prioritize correctness」"
+        },
+        {
+          "point": "Semantic functionsでは副作用を避け、自己記述的に分割することを推奨する。",
+          "footnote": "「Side effects are generally undesirable in semantic functions」"
+        },
+        {
+          "point": "Pragmatic functionsは複数のsemantic functionsを包む複雑プロセスで、統合テスト領域と位置づける。",
+          "footnote": "「Pragmatic functions should be used as wrappers around a series of semantic functions」"
+        },
+        {
+          "point": "モデルは誤った状態を不可能にし、形が同じ値はブランド型で区別すべきと述べる。",
+          "footnote": "「The shape of your data should make wrong states impossible」および「Brand types solve this by wrapping a primitive in a distinct type」"
+        }
+      ],
+      "references": [
+        "https://aicode.swerdlow.dev/"
+      ],
+      "retrieved_at": "2026-03-20T10:51:18.4174542+09:00"
+    }
+  ]
+}
