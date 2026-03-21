@@ -1,0 +1,156 @@
+{
+  "generated_at": "2026-03-21T09:04:54+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/571c5ab6af50a8",
+      "title": "「Unsloth Studio」を試す",
+      "date": "2026-03-20T23:10:00+09:00",
+      "executive_summary": [
+        "Unsloth StudioはLLMの学習・実行向けのオープンソースWeb UIとして紹介されている。",
+        "Mac/Windows/Linuxでローカル実行でき、Dockerなどでも利用可能とされる。",
+        "VRAM 70%削減と学習2倍速で500+モデル対応という性能面を強調。",
+        "GGUFやビジョン/音声/埋め込みなど多様なモデル形式に対応。",
+        "PDF/CSV/DOCXから自動でデータセット化する機能がある。",
+        "サンドボックスでコード実行し回答検証できる点で信頼性向上を狙う。",
+        "Unsloth Studioと既存のUnsloth Coreはライセンスが異なると整理。"
+      ],
+      "key_findings": [
+        {
+          "point": "ローカル実行のクロスプラットフォーム対応が明記されている。",
+          "footnote": "「Mac、Windows、Linux環境でローカルにモデルを実行可能」"
+        },
+        {
+          "point": "VRAM削減と学習高速化、対応モデル数の主張がある。",
+          "footnote": "「VRAM使用量を70%削減しながら、500種類以上のモデルを2倍の速度で学習可能」"
+        },
+        {
+          "point": "GGUFやビジョン/音声/埋め込みなど多様な形式をサポートするとされる。",
+          "footnote": "「GGUF形式をはじめ、ビジョンモデル、音声モデル、埋め込みモデルなど多様なモデル形式に対応」"
+        },
+        {
+          "point": "PDF/CSV/DOCXから自動でデータセット作成できる点が強調されている。",
+          "footnote": "「PDF、CSV、DOCXファイルから自動的にデータセットを作成」"
+        },
+        {
+          "point": "サンドボックス内でコード実行し、回答の検証に使えるとしている。",
+          "footnote": "「LLMがサンドボックス内でコードやプログラムを実行できる…回答の検証が可能」"
+        },
+        {
+          "point": "StudioとCoreでライセンスが異なると明記されている。",
+          "footnote": "「Unsloth Studio: AGPL-3.0」「Unsloth Core: Apache-2.0」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/571c5ab6af50a8",
+        "https://github.com/unslothai/unsloth",
+        "https://unsloth.ai/docs/new/studio"
+      ],
+      "retrieved_at": "2026-03-21T09:04:54+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/4272213e191766",
+      "title": "LiveKit \"Adaptive interruption handling\"",
+      "date": "2026-03-20T02:35:00+09:00",
+      "executive_summary": [
+        "LiveKitのAdaptive Interruption Handlingは音声エージェントの割り込み判定改善を狙う。",
+        "VADが相槌やノイズで誤停止する問題を課題として提示。",
+        "専用の音声モデルを訓練し、本当の割り込みとノイズを区別する。",
+        "最初の数百ミリ秒の波形を見て判定する仕組みを説明。",
+        "CNN+音声エンコーダで話し始めの特徴を捉えるとされる。",
+        "ベンチマークで高いprecision/recallや検出速度改善を主張。",
+        "LiveKit Agentsの最新版ではデフォルト有効でCloudでも使える。"
+      ],
+      "key_findings": [
+        {
+          "point": "VADは相槌やくしゃみなどで誤停止する課題があると述べている。",
+          "footnote": "「VADは感度が高すぎます — 笑い声、『うんうん』、あるいは、くしゃみで、エージェントが止まってしまうべきではありません。」"
+        },
+        {
+          "point": "適応型割り込み処理のためのオーディオモデルを訓練したと記載。",
+          "footnote": "「適応型割り込み処理（adaptive interruption handling）のためのオーディオモデルを訓練しました。」"
+        },
+        {
+          "point": "最初の数百ミリ秒の波形をチェックして割り込みか否か判断する。",
+          "footnote": "「モデルが『最初の数百ミリ秒』の波形をチェックする。」"
+        },
+        {
+          "point": "ベンチマークとして500ms重なりで86% precision/100% recallを提示。",
+          "footnote": "「86% precision / 100% recall（500ms 重なったスピーチで）」"
+        },
+        {
+          "point": "VADの誤認識のうち51%を弾けるとされる。",
+          "footnote": "「VAD が『割り込みだ』と誤認識しちゃうケースのうち、51% を弾いてくれる」"
+        },
+        {
+          "point": "推論時間は30ms以下、判定までの音声中央値216msと説明。",
+          "footnote": "「推論時間は 30ms 以下、割り込みとして判定するまでの音声は中央値 216ms」"
+        },
+        {
+          "point": "LiveKit Agentsの特定バージョン以降でデフォルト有効と明記。",
+          "footnote": "「Python Agents v1.5.0+」「TypeScript Agents v1.2.0+」「Adaptive Interruption Handling は デフォルトで有効」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/4272213e191766",
+        "https://livekit.com/blog/adaptive-interruption-handling"
+      ],
+      "retrieved_at": "2026-03-21T09:04:54+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/0185eb735c3eca",
+      "title": "「Mengram」を試す",
+      "date": "2026-03-19T21:07:00+09:00",
+      "executive_summary": [
+        "MengramはAI向けの人間の脳型メモリAPIとして紹介されている。",
+        "意味記憶・エピソード記憶・手続き記憶の3種類を扱う点を強調。",
+        "add()で会話を投入すると自動分類・抽出する仕組み。",
+        "search_allで3種の記憶を一括検索し、get_profileでシステムプロンプト生成。",
+        "RAGの配線をAPIで置き換える位置づけとして説明。",
+        "各種エージェント/フレームワーク連携やCLIインポートも言及。",
+        "料金プランやセルフホスト、ライセンスへの言及と所感がある。"
+      ],
+      "key_findings": [
+        {
+          "point": "意味・エピソード・手続きの3種類の記憶をサポートすると記載。",
+          "footnote": "「意味記憶、エピソード記憶、手続き記憶の3種類の記憶形式をサポート。」"
+        },
+        {
+          "point": "RAGパイプラインを1回のAPIコールで置き換え可能と述べている。",
+          "footnote": "「RAGパイプラインを1回のAPIコールで置き換えることが可能」"
+        },
+        {
+          "point": "add()で会話やテキストを投入し、事実/出来事/手順を自動抽出する。",
+          "footnote": "「add() で会話やテキストを突っ込むと…『事実』『出来事』『手順』って分類してくれる。」"
+        },
+        {
+          "point": "search_allで3種メモリをまとめて検索できると説明。",
+          "footnote": "「search_all() で『Semantic / Episodic / Procedural をまとめて検索』できる。」"
+        },
+        {
+          "point": "get_profileでシステムプロンプトとして使えるプロフィールを生成。",
+          "footnote": "「get_profile() でユーザーのプロフィール的なシステムプロンプトを作ったりできる」"
+        },
+        {
+          "point": "CrewAI/LangChain/n8n/OpenClawなど連携ツールが用意されている。",
+          "footnote": "「CrewAI 用のツールセット…LangChain 用…n8n 用…OpenClaw プラグイン」"
+        },
+        {
+          "point": "料金プランとしてFree/Starter/Pro/Business/Enterpriseが提示されている。",
+          "footnote": "「Free…Starter ($5)…Pro ($19)…Business ($99)…Enterprise」"
+        },
+        {
+          "point": "ライセンスはApache-2.0と明記されている。",
+          "footnote": "「ライセンスは Apache-2.0」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/0185eb735c3eca",
+        "https://mengram.io/",
+        "https://docs.mengram.io/claude-code"
+      ],
+      "retrieved_at": "2026-03-21T09:04:54+09:00"
+    }
+  ]
+}
