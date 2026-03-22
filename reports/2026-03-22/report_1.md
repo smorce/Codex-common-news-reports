@@ -1,0 +1,85 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-03-22T09:19:56.1144933+09:00
+- Articles: 3
+
+## Python で GPS（GNSS）
+- Date: 2026-03-21T23:44:00+09:00
+
+### Executive Summary
+- USB接続のGNSSレシーバーを入手して試行している。
+- GPSとGNSSの違いを整理し、GNSSが総称でGPSは一部と説明している。
+- 実験環境はUbuntu 22.04とRaspberry Pi 4Bである。
+- lsusbでUSBシリアルとして認識されることを確認している。
+- gpsdとgpsd-clientsを導入し設定ファイルを修正している。
+- cgpsで接続したが位置データが取得できなかった。
+- NMEAらしきデータは見えるため、受信環境の改善を示唆している。
+
+### Key Findings
+- GPSはGNSSの一部であり、GNSSが衛星測位の総称だと説明している。 [^]
+  - Footnote: 「GNSS は、人工衛星を使って位置・時刻を知る仕組み全体の名前です。」「GPS は、その中のひとつ」
+- 検証環境はUbuntu 22.04とRaspberry Pi 4BでUSB接続としている。 [^]
+  - Footnote: 「環境は、Ubuntu-22.04＋Raspberry Pi 4B。」「USBで接続。lsusb で確認。」
+- USBシリアルデバイスは /dev/ttyUSB0 として認識されている。 [^]
+  - Footnote: 「デバイスファイルは以下。 /dev/ttyUSB*」「/dev/ttyUSB0」
+- gpsd/gpsd-clientsを導入し、/etc/default/gpsd を設定している。 [^]
+  - Footnote: 「で、これを使うには gpsd / gpsd-clients を使用する。」「gpsdの設定ファイルを修正 /etc/default/gpsd」
+- cgpsでは取得できないが、sttyでNMEAらしきデータが見えるため受信環境を疑っている。 [^]
+  - Footnote: 「cgps というクライアントで接続」「何も取れていない。」「stty -F /dev/ttyUSB0 4800 でモニターしてみると一応NMEA形式のデータ？が流れているようには見える」
+
+### References
+- https://zenn.dev/kun432/scraps/5da82eaa88ee7e
+
+## LiveKit Agentsの「Tasks」を試す
+- Date: 2026-03-21T22:03:00+09:00
+
+### Executive Summary
+- LiveKit AgentsのTasksとTaskGroupの概要を整理している。
+- タスクは再利用可能な目的単位で、所定形式の結果を返すと説明している。
+- TaskGroupは順序付きタスクを実行し、必要に応じて戻れると述べている。
+- 使用例として同意取得、構造化データ収集、段階的質問などを挙げている。
+- Mac上でサンプルのエージェントを用意し、uvで環境構築している。
+- OpenAIのSTT/LLM/TTSを組み合わせた構成で試している。
+- タスク追加の基本パターンとビルトインタスクの存在に触れている。
+
+### Key Findings
+- タスクは再利用可能な単位で、目的達成までセッションを制御し結果を返すと説明している。 [^]
+  - Footnote: 「タスクとは、特定の目的を達成するための集中型で再利用可能な単位であり、所定の形式で結果を返します。エージェント内で動作し、目的が達成されるまでセッションを制御します。」
+- TaskGroupは順序付きタスクを実行し、結果を要約して返す仕組みだとしている。 [^]
+  - Footnote: 「タスクグループは順序付けられたタスクのシーケンスを実行し」「グループの処理が完了すると、要約された結果がタスクを開始したエージェントに返されます。」
+- 想定ユースケースとして録音同意、構造化データ収集、段階質問などが挙げられている。 [^]
+  - Footnote: 「通話開始時に録音同意を取得」「住所や支払い情報などの構造化データの収集」「一連の質問を段階的に進めていく方法」
+- Macでuvを使い、LiveKit Agents関連パッケージとOpenAI連携を導入している。 [^]
+  - Footnote: 「uv で Python仮想環境を作成。」「livekit-agents[openai,silero,turn-detector]」「エージェントのASR・LLM・TTSは 全てOpenAIを使用することとする。」
+- タスク実装の基本パターンとしてAgentTask継承、on_enter、function_tool、completeを示している。 [^]
+  - Footnote: 「AgentTask クラスのサブクラスとしてタスクを定義」「on_enter() メソッドで開始時の処理」「@function_tool で タスクに必要なツールを定義」「complete(result) で結果を返す」
+
+### References
+- https://zenn.dev/kun432/scraps/5905c360a353dc
+
+## 「Unsloth Studio」を試す
+- Date: 2026-03-21T03:28:00+09:00
+
+### Executive Summary
+- Unsloth StudioはLLMの学習と実行向けのオープンソースWeb UIだと紹介している。
+- ローカルでの実行、VRAM削減、高速学習などの特徴を列挙している。
+- 多様なモデル形式と自動データセット作成に対応すると述べている。
+- サンドボックスでのコード実行により回答の信頼性向上をうたっている。
+- Unsloth StudioとUnsloth Coreの違いとライセンス差を説明している。
+- 対応環境と学習時のGPU要件を整理している。
+- Macでのインストールと起動、モデル選択までの流れを試している。
+
+### Key Findings
+- Web UIとしてローカル実行や高速学習、複数形式対応などの特徴が列挙されている。 [^]
+  - Footnote: 「LLMの学習と実行を行うための新しいオープンソースWeb UI」「VRAM使用量を70%削減しながら、500種類以上のモデルを2倍の速度で学習可能」「GGUF形式をはじめ、ビジョンモデル、音声モデル、埋め込みモデルなど多様なモデル形式に対応」
+- PDF/CSV/DOCXなどからデータセットを自動作成できるとしている。 [^]
+  - Footnote: 「PDF、CSV、DOCXファイルから自動的にデータセットを作成」
+- サンドボックスでのコード実行により、回答の検証や信頼性向上を示している。 [^]
+  - Footnote: 「LLMがサンドボックス内でコードやプログラムを実行できる」「これにより、モデルからの回答がより信頼性と正確性を持つ」
+- Unsloth StudioとUnsloth Coreは別で、ライセンスが異なると記載している。 [^]
+  - Footnote: 「Unsloth Studio: AGPL-3.0」「Unsloth Core: Apache-2.0」
+- 対応環境と学習要件として、NVIDIA/Intel GPUが必要でMLX/AMDは今後対応とする。 [^]
+  - Footnote: 「サポート環境は以下の通り Mac / Linux / Windows（WSL / PowerShell） / Docker」「学習については現時点では NVIDIA / Intel GPU環境が必要」「MLXとAMDでの学習は今後対応予定」
+
+### References
+- https://zenn.dev/kun432/scraps/571c5ab6af50a8
