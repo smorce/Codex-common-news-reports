@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-03-25T09:06:15+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/1209c2ad491647",
+      "title": "OpenClawクローン「nanobot」を試す",
+      "date": "2026-03-25T02:37:00+09:00",
+      "executive_summary": [
+        "OpenClaw流行時に、セキュリティ面も含めてクローン調査を始めた。",
+        "判断のためにまず本家OpenClawを試す方針を取った。",
+        "OpenClawは規模が大きく、追従やメンテが大変という所感。",
+        "TypeScript製である点もネックとして挙げている。",
+        "軽量なPython製クローンとして「nanobot」を試用対象に選定。",
+        "nanobotの開発元HKUDSはLightRAGの開発元でもあると記述。",
+        "CLIリファレンスが提示され、主要コマンド群が列挙されている。",
+        "スクラップ内には関連スクラップへのリンクも埋め込まれている。"
+      ],
+      "key_findings": [
+        {
+          "point": "OpenClaw流行とセキュリティ議論を受け、クローン調査を開始。",
+          "footnote": "「OpenClawが流行りだした頃に、セキュリティなどの話もあって、OpenClawクローンなプロジェクトを色々調べた。」"
+        },
+        {
+          "point": "本家OpenClawを先に試す判断を明記。",
+          "footnote": "「本家を一度試してから判断するほうがいいかな、ということでOpenClawを試した。」"
+        },
+        {
+          "point": "OpenClawは大きすぎてキャッチアップやメンテが大変との評価。",
+          "footnote": "「OpenClawはちょっと大きすぎてキャッチアップするのもメンテするのも大変、という感じ。」"
+        },
+        {
+          "point": "TypeScript製で慣れていない点がネック。",
+          "footnote": "「自分があまり慣れていないTypeScript製っていうのもネック。」"
+        },
+        {
+          "point": "Python製で軽量を謳うnanobotを試す方針。",
+          "footnote": "「Python製でかつ軽量を謳っている「nanobot」を試してみる。」"
+        },
+        {
+          "point": "nanobot開発元HKUDSはLightRAGの開発元でもあると説明。",
+          "footnote": "「nanobotの開発元である「HKUDS」...過去に試したGraphRAGの軽量な実装「LightRAG」の開発元でもある。」"
+        },
+        {
+          "point": "CLIの主要コマンドとしてonboard等が示されている。",
+          "footnote": "「onboard   Initialize nanobot configuration and workspace.」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/1209c2ad491647"
+      ],
+      "retrieved_at": "2026-03-25T09:06:15+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/b2d78204db29d6",
+      "title": "音素変換の実装いろいろ",
+      "date": "2026-03-24T12:33:00+09:00",
+      "executive_summary": [
+        "音素変換に関する実装のインデックス的まとめとして作成。",
+        "「音声から音素」「テキストから音素」の2カテゴリを明示。",
+        "各カテゴリに関連スクラップや外部リンクが並ぶ。",
+        "VoPhoなど過去に試したものを再掲している。",
+        "Wav2Vec2Phonemeなど音声→音素系の参照も含む。",
+        "筆者は試したことを忘れていた旨を追記。",
+        "新しいものを見つけたら更新する方針を明記。"
+      ],
+      "key_findings": [
+        {
+          "point": "音素変換実装のインデックスとしての位置づけ。",
+          "footnote": "「音素への変換に関する実装、過去いろいろ試しているので、インデックス的まとめ」"
+        },
+        {
+          "point": "カテゴリとして「音声から音素」を明示。",
+          "footnote": "「音声から音素」"
+        },
+        {
+          "point": "カテゴリとして「テキストから音素」を明示。",
+          "footnote": "「テキストから音素」"
+        },
+        {
+          "point": "VoPhoは過去に試したが忘れていた旨を記載。",
+          "footnote": "「すっかり試したことを忘れていた」"
+        },
+        {
+          "point": "新規発見や試行があれば更新する方針。",
+          "footnote": "「違うものを見つけたり、試したりしたら更新する。」"
+        },
+        {
+          "point": "VoPhoが具体的な項目として列挙されている。",
+          "footnote": "「VoPho」"
+        },
+        {
+          "point": "Wav2Vec2Phonemeが具体的な項目として列挙されている。",
+          "footnote": "「Wav2Vec2Phoneme」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/b2d78204db29d6"
+      ],
+      "retrieved_at": "2026-03-25T09:06:15+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/3defcac3187b64",
+      "title": "LiveKit サーバ を Linux にインストールする",
+      "date": "2026-03-24T02:57:00+09:00",
+      "executive_summary": [
+        "MacではHomebrewで容易に導入できるが、Agents同時稼働でリソースが必要。",
+        "SFU自体は重くなく、主にAgentsがリソースを消費すると述べる。",
+        "余裕のあるLinuxサーバ（Ubuntu-22.04+RTX4090）で動かす方針。",
+        "Agents側でVADやターンテイキングモデルも動かす前提を示す。",
+        "セルフホストのドキュメント参照とOS別インストール可を明記。",
+        "Linuxはcurlのワンライナーでインストール可能。",
+        "スクリプトはGitHub Releasesから最新TARを取得し/usr/local/binに導入。",
+        "INSTALL_PATHでパス変更でき、/opt/livekit/bin例を提示。",
+        "インストール結果としてlivekit 1.10.0やバイナリ配置を確認。",
+        "開発用--devは固定キーになるため本番不可、--config運用推奨。"
+      ],
+      "key_findings": [
+        {
+          "point": "MacはHomebrewで簡単だが、Agents同時稼働でリソースを要求。",
+          "footnote": "「Mac の場合は Homebrew で簡単にインストールできて便利なのだけど、Agentsなども同時に動かすとなると、それなりにリソースを要求される」"
+        },
+        {
+          "point": "SFU自体よりもAgentsがリソース消費の主因と推測。",
+          "footnote": "「実際には、SFU自体はそうでもなくて、Agents がリソースを消費するのだと思う。」"
+        },
+        {
+          "point": "Ubuntu-22.04+RTX4090のLinuxサーバで動かす方針。",
+          "footnote": "「リソースに余裕のある Linux サーバ（Ubuntu-22.04+RTX4090） があるので、そちらで動かすことにする。」"
+        },
+        {
+          "point": "AgentsでVADやターンテイキングモデルを動かす前提。",
+          "footnote": "「AgentsではVADやターンテイキングモデルなども動かしたりするので、おそらくそちらのほうが有利なはず。」"
+        },
+        {
+          "point": "セルフホストのドキュメントがあり、Mac/Linux/Windowsに対応。",
+          "footnote": "「セルフホストのドキュメントはこちら。Mac / Linux / Windows でインストールできる。」"
+        },
+        {
+          "point": "Linuxはcurlのワンライナーでインストール可能。",
+          "footnote": "「Linux の場合は、curlでワンライナーでインストールできる。」"
+        },
+        {
+          "point": "インストールスクリプトはGitHub Releasesから最新TARを取得し/usr/local/binに入れる。",
+          "footnote": "「GitHub レポジトリの Releases から 最新バージョンのTAR アーカイブを持ってきて、デフォルトだと /usr/local/bin にインストールされる様子。」"
+        },
+        {
+          "point": "INSTALL_PATHでインストール先を変更可能で、/opt/livekit/binの例が示される。",
+          "footnote": "「INSTALL_PATH で指定できるようなので、例えばこんな感じで指定すれば他の場所にインストールできる」"
+        },
+        {
+          "point": "インストール結果としてlivekit 1.10.0が導入される例を示す。",
+          "footnote": "「Installing livekit 1.10.0」"
+        },
+        {
+          "point": "--devは開発・検証用で固定キーになるため本番では使わない。",
+          "footnote": "「--dev は開発時や検証時のモードで、APIキーやAPIシークレットが固定になる。当然本番環境などでは使用しない。」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/3defcac3187b64"
+      ],
+      "retrieved_at": "2026-03-25T09:06:15+09:00"
+    }
+  ]
+}
