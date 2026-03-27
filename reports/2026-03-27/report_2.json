@@ -1,0 +1,135 @@
+{
+  "generated_at": "2026-03-27T10:19:46+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://codezine.jp/article/detail/23665",
+      "title": "Claude CodeとDevinをFour Keysで検証——NTTドコモビジネスが3カ月のコーディングエージェント..",
+      "date": null,
+      "executive_summary": [
+        "記事はClaude CodeとDevinの導入をFour Keysで検証する内容。",
+        "NTTドコモビジネスの3カ月の導入結果を扱う。",
+        "定量評価の重要性と全社展開の検証に触れる。",
+        "新たなコーディングエージェント導入でデプロイ頻度が2.4倍。",
+        "リードタイムは15.6時間短縮した。",
+        "一方で効果には個人差があると示す。",
+        "導入の検証内容をまとめる。"
+      ],
+      "key_findings": [
+        {
+          "point": "Four Keysでの検証を主題としている。",
+          "footnote": "「Claude CodeとDevinをFour Keysで検証」"
+        },
+        {
+          "point": "3カ月のコーディングエージェント導入が対象。",
+          "footnote": "「3カ月のコーディングエージェント」"
+        },
+        {
+          "point": "定量評価の重要性と全社展開の検証に言及。",
+          "footnote": "「定量評価の重要性と全社展開の検証を伝える。」"
+        },
+        {
+          "point": "デプロイ頻度が2.4倍になった。",
+          "footnote": "「デプロイ頻度が2.4倍に。」"
+        },
+        {
+          "point": "リードタイムは15.6時間短縮。",
+          "footnote": "「リードタイムは15.6時間短縮する」"
+        },
+        {
+          "point": "効果には個人差がある。",
+          "footnote": "「効果は個人差がある。」"
+        }
+      ],
+      "references": [
+        "https://codezine.jp/article/detail/23665"
+      ],
+      "retrieved_at": "2026-03-27T10:19:46+09:00"
+    },
+    {
+      "url": "https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/",
+      "title": "Wikipedia cracks down on the use of AI in article writing | TechCrunch",
+      "date": null,
+      "executive_summary": [
+        "WikipediaのAI利用に関する編集方針変更を扱う。",
+        "編集・メディア領域のAI利用方針が新しく定められた。",
+        "編集者によるAI生成テキストの使用は禁止となった。",
+        "記事内容の生成・改稿にLLM使用は禁止とされる。",
+        "一方でサイト全体の排除はしていない。",
+        "方針の対象範囲と禁止事項が明示される。",
+        "編集プロセスでのAI活用の線引きを示す。"
+      ],
+      "key_findings": [
+        {
+          "point": "編集・メディア領域のAI利用方針が新しく定められた。",
+          "footnote": "「編集・メディア領域のAI利用方針が新しく定められた。」"
+        },
+        {
+          "point": "編集者によるAI生成テキストの使用は禁止。",
+          "footnote": "「編集者によるAI生成テキストの使用は禁止となった。」"
+        },
+        {
+          "point": "記事内容の生成・改稿にLLM使用は禁止。",
+          "footnote": "「記事内容の生成・改稿にはLLMsの使用は禁止」"
+        },
+        {
+          "point": "サイト全体を排除する方針ではない。",
+          "footnote": "「サイト全体の排除はしていない。」"
+        },
+        {
+          "point": "AI利用の線引きを明確化する記事構成。",
+          "footnote": "「AI利用方針が新しく定められた。」"
+        }
+      ],
+      "references": [
+        "https://techcrunch.com/2026/03/26/wikipedia-cracks-down-on-the-use-of-ai-in-article-writing/"
+      ],
+      "retrieved_at": "2026-03-27T10:19:46+09:00"
+    },
+    {
+      "url": "https://ainewsdev.substack.com/p/weekly-ai-news-2026-03-27",
+      "title": "Weekly AI News #2026-03-27 - by hotchpotch - Weekly AI News",
+      "date": null,
+      "executive_summary": [
+        "Weekly AI News #2026-03-27のまとめ。",
+        "生成AIの動向を広く総括する。",
+        "主要トレンドを拾う構成。",
+        "自動運用設計と安全性強化の動向に触れる。",
+        "長尺化とセクション制御の動向を扱う。",
+        "日本語最適化と国内展開に触れる。",
+        "現場運用の実践知を整理する。"
+      ],
+      "key_findings": [
+        {
+          "point": "生成AIの動向を広く総括している。",
+          "footnote": "「生成AIの動向を広く総括し、主要トレンドを拾う。」"
+        },
+        {
+          "point": "主要トレンドを拾う構成。",
+          "footnote": "「主要トレンドを拾う。」"
+        },
+        {
+          "point": "自動運用設計と安全性強化の動向に触れる。",
+          "footnote": "「自動運用設計と安全性強化、長尺化とセクション制御の動向。」"
+        },
+        {
+          "point": "長尺化とセクション制御の動向を扱う。",
+          "footnote": "「長尺化とセクション制御の動向。」"
+        },
+        {
+          "point": "日本語最適化と国内展開に触れる。",
+          "footnote": "「日本語最適化と国内展開、現場運用の実践知を整理。」"
+        },
+        {
+          "point": "現場運用の実践知を整理している。",
+          "footnote": "「現場運用の実践知を整理。」"
+        }
+      ],
+      "references": [
+        "https://ainewsdev.substack.com/p/weekly-ai-news-2026-03-27"
+      ],
+      "retrieved_at": "2026-03-27T10:19:46+09:00"
+    }
+  ]
+}
