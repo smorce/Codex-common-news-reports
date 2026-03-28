@@ -4,3 +4,16 @@
 [mcp_servers."chrome-devtools"]
 command = "npx"
 args = ["-y", "chrome-devtools-mcp@latest", "--headless=true"]
+
+
+# [mcp_servers.chrome-devtools]
+# command = "cmd"
+# args = [
+#   "/c",
+#   "npx",
+#   "-y",
+#   "chrome-devtools-mcp@latest",
+#   "--autoConnect",
+# ]
+# env = { SystemRoot = "C:\\Windows", PROGRAMFILES = "C:\\Program Files" }
+# startup_timeout_ms = 20000

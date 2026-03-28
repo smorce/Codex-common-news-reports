@@ -919,7 +919,103 @@ def clean_gemini_output(result: str) -> str:
     return result
 
 
-def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "gemini-2.5-pro", retry_count: int = 2) -> str:
+def run_gemini_cli_with_timeout(
+    cmd: list[str],
+    prompt: str,
+    env: dict[str, str],
+    timeout_sec: float,
+) -> subprocess.CompletedProcess:
+    """
+    Gemini CLI を起動する。stderr は逐次ターミナルへ転送しつつバッファにも蓄える（capture=True だと完了まで何も見えない問題の回避）。
+    長時間かかる動画解析では 90 秒ごとに経過ログを出す。
+    """
+    proc = subprocess.Popen(
+        cmd,
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        env=env,
+    )
+    stderr_chunks: list[str] = []
+    stdout_data: list[str] = []
+
+    def read_stderr() -> None:
+        try:
+            for line in iter(proc.stderr.readline, ""):
+                stderr_chunks.append(line)
+                sys.stderr.write(line)
+                sys.stderr.flush()
+        except Exception:
+            pass
+
+    def read_stdout() -> None:
+        try:
+            stdout_data.append(proc.stdout.read())
+        except Exception:
+            pass
+
+    t_err = threading.Thread(target=read_stderr, daemon=True)
+    t_out = threading.Thread(target=read_stdout, daemon=True)
+    t_err.start()
+    t_out.start()
+
+    try:
+        proc.stdin.write(prompt)
+    finally:
+        proc.stdin.close()
+
+    stop_hb = threading.Event()
+
+    def heartbeat() -> None:
+        start = time.monotonic()
+        while not stop_hb.is_set():
+            if stop_hb.wait(90):
+                break
+            if proc.poll() is not None:
+                break
+            elapsed = int(time.monotonic() - start)
+            print(
+                f"[INFO] Gemini CLI still running (elapsed {elapsed}s / {int(timeout_sec)}s). "
+                "Long videos and gemini often need 10–30 minutes; stderr above shows CLI activity.",
+                file=sys.stderr,
+            )
+
+    hb = threading.Thread(target=heartbeat, daemon=True)
+    hb.start()
+
+    try:
+        retcode = proc.wait(timeout=timeout_sec)
+    except subprocess.TimeoutExpired:
+        stop_hb.set()
+        proc.kill()
+        try:
+            proc.wait(timeout=30)
+        except Exception:
+            pass
+        raise subprocess.TimeoutExpired(cmd, timeout_sec) from None
+    finally:
+        stop_hb.set()
+
+    t_out.join(timeout=60)
+    stderr_text = "".join(stderr_chunks)
+    stdout = stdout_data[0] if stdout_data else ""
+
+    if retcode != 0:
+        raise subprocess.CalledProcessError(retcode, cmd, output=stdout, stderr=stderr_text)
+
+    return subprocess.CompletedProcess(cmd, retcode, stdout=stdout, stderr=stderr_text)
+
+
+def gemini_summarize_video(
+    video_file: Path,
+    extra_prompt: str,
+    model: str = "gemini-2.5-flash",  # デフォルトモデル
+    retry_count: int = 2,
+    timeout_sec: int | None = None,
+) -> str:
     """
     Calls Gemini CLI with video file reference using @file syntax.
     Captures stdout as summary.
@@ -934,7 +1030,11 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
         extra_prompt: Additional instructions
         model: Gemini model to use (default: gemini-2.5-pro)
         retry_count: Number of retries on quality validation failure
+        timeout_sec: CLI 全体のタイムアウト秒。None のとき環境変数 GEMINI_TIMEOUT_SEC または 900
     """
+    if timeout_sec is None:
+        timeout_sec = int(os.environ.get("GEMINI_TIMEOUT_SEC", "900"))
+
     # Verify video file exists
     if not video_file.exists():
         raise FileNotFoundError(f"Video file not found: {video_file}")
@@ -1051,10 +1151,6 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
         else:
             env["NODE_OPTIONS"] = f"--max-old-space-size={heap_size_mb}"
     
-    # Timeout for Gemini CLI execution (8 minutes = 500 seconds)
-    # Reduced from 5 minutes to fail faster if there's an issue
-    GEMINI_TIMEOUT_SEC = 500
-    
     last_error = None
     for attempt in range(retry_count + 1):
         if attempt > 0:
@@ -1071,18 +1167,13 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
             # Use stdin with --output-format json (without -e none to allow video analysis)
             # --output-format json にするとかなり不安定(動画の長さしか返ってこない)なので text にした
             print(f"[DEBUG] Executing: {gemini_cmd} -m {model} --output-format text [stdin input with @file reference]", file=sys.stderr)
-            print(f"[INFO] Waiting for Gemini response (timeout: {GEMINI_TIMEOUT_SEC}s)...", file=sys.stderr)
+            print(f"[INFO] Waiting for Gemini response (timeout: {timeout_sec}s). stderr is streamed below.", file=sys.stderr)
             
-            # Use subprocess.run() with --output-format json and stdin input
-            # Note: Removed -e none to allow video analysis extensions
-            cp = run(
+            cp = run_gemini_cli_with_timeout(
                 [gemini_cmd, "-m", model, "--output-format", "text"],
-                check=True,
-                capture=True,
-                text=True,
-                stdin=prompt,
-                env=env,
-                timeout=GEMINI_TIMEOUT_SEC,
+                prompt,
+                env,
+                float(timeout_sec),
             )
             result = (cp.stdout or "").strip()
             
@@ -1308,7 +1399,7 @@ def gemini_summarize_video(video_file: Path, extra_prompt: str, model: str = "ge
             else:
                 raise RuntimeError(error_msg) from e
         except subprocess.TimeoutExpired as e:
-            error_msg = f"Gemini CLI timed out after {GEMINI_TIMEOUT_SEC} seconds"
+            error_msg = f"Gemini CLI timed out after {timeout_sec} seconds"
             last_error = error_msg
             
             if attempt < retry_count:
@@ -1533,6 +1624,13 @@ Examples:
     ap.add_argument("-o", "--outdir", default="yt_top3_report", help="Output directory (default: yt_top3_report)")
     ap.add_argument("-n", "--num-videos", type=int, default=3, help="Number of videos to retrieve and summarize (default: 3)")
     ap.add_argument("-m", "--model", default="gemini-2.5-pro", help="使用するGeminiモデル（デフォルト: gemini-2.5-pro）")
+    ap.add_argument(
+        "--gemini-timeout",
+        type=int,
+        default=None,
+        metavar="SEC",
+        help="Gemini CLI のタイムアウト秒（未指定時は環境変数 GEMINI_TIMEOUT_SEC または 900）。長い動画は 1800 以上を推奨",
+    )
     ap.add_argument("--keep-mp4", action="store_true", help="Keep downloaded MP4 files after processing (default: delete)")
     ap.add_argument("--no-download", action="store_true", help="Skip downloading and summarization (debug RSS only)")
     ap.add_argument("--extra-prompt", default="", help="Extra instructions appended to Gemini prompt (optional)")
@@ -1667,7 +1765,9 @@ Examples:
                     raise FileNotFoundError(f"Downloaded file does not exist: {mp4}")
                 
                 print(f"[INFO] Summarizing via Gemini CLI: {mp4.name} (size: {mp4.stat().st_size / (1024*1024):.2f} MB)", file=sys.stderr)
-                r["summary"] = gemini_summarize_video(mp4, args.extra_prompt, model=args.model)
+                r["summary"] = gemini_summarize_video(
+                    mp4, args.extra_prompt, model=args.model, timeout_sec=args.gemini_timeout
+                )
                 
                 # Verify summary was actually generated
                 if not r["summary"] or len(r["summary"].strip()) < 10:
@@ -1724,7 +1824,13 @@ Examples:
                 except Exception as report_error:
                     print(f"[WARNING] Failed to generate individual report: {report_error}", file=sys.stderr)
             except subprocess.TimeoutExpired as e:
-                error_msg = f"要約に失敗しました（タイムアウト）。\n\n動画の処理に時間がかかりすぎました（{e.timeout}秒超過）。\n動画ファイルが大きすぎるか、Gemini CLIの応答が遅い可能性があります。"
+                error_msg = (
+                    f"要約に失敗しました（タイムアウト）。\n\n"
+                    f"動画の処理が {e.timeout} 秒以内に終わりませんでした。\n"
+                    f"長尺動画や gemini-2.5-pro ではそれ以上かかることがあります。\n"
+                    f"対処: `--gemini-timeout 1800` や環境変数 `GEMINI_TIMEOUT_SEC=1800` で上限を延ばすか、"
+                    f"軽いモデル（例: gemini-2.0-flash）を `-m` で試してください。"
+                )
                 r["summary"] = error_msg
                 print(f"[ERROR] #{r['rank']}: {error_msg}", file=sys.stderr)
                 # Generate individual report even on error

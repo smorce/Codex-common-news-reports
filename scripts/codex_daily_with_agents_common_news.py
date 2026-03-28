@@ -936,7 +936,7 @@ class CodexDailyRunner:
         一時的な失敗は RetryHandler でリトライ。最終的に失敗した場合はエラー内容を同パスに書き出し、Git push に含める。
 
         n: TOP N 件の BRチャンネル の動画を要約
-        要約モデル：gemini-2.5-pro。これが安定していて良い。
+        要約モデル：gemini-2.5-pro が安定していて良かったが、ウルトラを解約してレートリミットエラーが出るようになったため、gemini-2.5-flash に変更。
         """
         gemini_cmd = [
             "uv", "run", "--link-mode=copy", "yt_top3_gemini_report.py",
