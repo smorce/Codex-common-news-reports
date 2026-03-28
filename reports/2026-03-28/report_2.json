@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-03-28T09:03:22+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://victoriaritvo.com/blog/robust-semantle-solver/",
+      "title": "Solving Semantle With the Wrong Embeddings",
+      "date": "2026-03-16",
+      "executive_summary": [
+        "Semantleのスコアの相対順位だけを使う解法を提案している。",
+        "モデルの埋め込みやコサイン類似度の数値は不要とする。",
+        "順位比較は埋め込み空間の半空間制約として扱える。",
+        "制約を積み重ねて候補を絞るアルゴリズムを説明した。",
+        "同一モデル前提なら10〜15回程度で解けると述べる。",
+        "異なる埋め込み同士ではハード制約が破綻するため確率的更新へ切替。",
+        "確率版は100〜200回で到達し、人間の推論に近いと結論づける。"
+      ],
+      "key_findings": [
+        {
+          "point": "順位比較は半空間制約となり、候補領域を大きく削れる。",
+          "footnote": "Each ordered comparison of two guesses immediately lets us eliminate roughly half of the embedding sphere."
+        },
+        {
+          "point": "数値の類似度を使わなくても10〜15回程度で解けると報告。",
+          "footnote": "this solver finds the answer in about 10-15 guesses."
+        },
+        {
+          "point": "別モデルではハード制約がターゲットを除外し得る。",
+          "footnote": "hard-constraint approach above doesn’t work here... the solver will eliminate the target."
+        },
+        {
+          "point": "ターゲットを除外しない確率的更新方式へ移行した。",
+          "footnote": "switched from a hard binary constraint to a probabilistic approach where no words are ever eliminated."
+        },
+        {
+          "point": "確率版は100〜200回で到達するとしている。",
+          "footnote": "takes between 100-200 guesses to find the target this way."
+        }
+      ],
+      "references": [
+        "https://victoriaritvo.com/blog/robust-semantle-solver/"
+      ],
+      "retrieved_at": "2026-03-28T09:03:22+09:00"
+    },
+    {
+      "url": "https://qiita.com/kai_kou/items/a411215806322af68a73",
+      "title": "Google TurboQuant入門 — KVキャッシュ3ビット圧縮でLLM推論を8倍高速化",
+      "date": "2026-03-26",
+      "executive_summary": [
+        "KVキャッシュのメモリが推論コストのボトルネックと説明する。",
+        "TurboQuantは3ビット圧縮で精度損失ゼロを掲げる。",
+        "PolarQuantとQJLの2段階アルゴリズムを解説している。",
+        "再学習不要で既存モデルに適用できる点を強調。",
+        "H100でメモリ6倍削減・最大8倍高速化と紹介。",
+        "LongBench等の長文ベンチで劣化なしと記載。",
+        "MITライセンスのコミュニティ実装が公開済み。"
+      ],
+      "key_findings": [
+        {
+          "point": "3ビット圧縮で精度損失ゼロ、メモリ6倍削減・最大8倍高速化と説明。",
+          "footnote": "3ビットに圧縮しながら精度損失ゼロを実現し、メモリ使用量を6倍削減、NVIDIA H100上で注意機構の計算を最大8倍高速化"
+        },
+        {
+          "point": "TurboQuantはPolarQuantとQJLの2段階で構成される。",
+          "footnote": "TurboQuantはPolarQuant（極座標変換+Lloyd-Max量子化）とQJL（1ビット誤差補正）の2段階でKVキャッシュを3ビットに圧縮"
+        },
+        {
+          "point": "再学習やファインチューニングは不要と明記。",
+          "footnote": "モデルの再学習やファインチューニングが一切不要"
+        },
+        {
+          "point": "長文ベンチ全体で精度劣化が観測されなかったとする。",
+          "footnote": "これらのベンチマーク全体で精度劣化が観測されなかった"
+        },
+        {
+          "point": "コミュニティのPyTorch実装がMITライセンスで公開済み。",
+          "footnote": "コミュニティによるPyTorch実装がMITライセンスで公開"
+        }
+      ],
+      "references": [
+        "https://qiita.com/kai_kou/items/a411215806322af68a73"
+      ],
+      "retrieved_at": "2026-03-28T09:03:22+09:00"
+    },
+    {
+      "url": "https://gigazine.net/news/20260327-ai-roundtable/",
+      "title": "200種以上のAIから最大50種を選んで同じ質問に回答＆6種のAI同士で議論させて結論を導きだせる「AI Roundtable」 - GIGAZINE",
+      "date": "2026-03-27T19:00:00+09:00",
+      "executive_summary": [
+        "Opper AIのAI Roundtableは多数のモデル比較と議論を提供する。",
+        "200種類以上から最大50モデルで同一質問を投票形式で評価可能。",
+        "討論モードは最大6モデルで議論し結論を収束させる。",
+        "各モデルの回答要約や強い意見の抜粋が表示される。",
+        "洗車テスト例では投票で意見が割れ、討論後に車派へ収束。",
+        "結果はPNGで共有でき、投票理由やモデル決定も確認できる。",
+        "セッションは既定で非公開で、一般ユーザーは無料利用可能と説明。"
+      ],
+      "key_findings": [
+        {
+          "point": "AI Roundtableは200種類以上のAIから最大50種を選んで投票でき、討論ラウンドも可能。",
+          "footnote": "200種類以上のAIモデルから最大50種類を選んで同じ質問をし...討論ラウンドを実施することもできます。"
+        },
+        {
+          "point": "投票モードではAIモデルが213種類あり最大50モデルまで追加可能。",
+          "footnote": "AIモデルは213種類あり、投票モードでは最大50モデルまで追加できます。"
+        },
+        {
+          "point": "Debateモードは選択できるAIモデルが6つまで。",
+          "footnote": "Debateモードの場合、選択できるAIモデルは6つまでです。"
+        },
+        {
+          "point": "洗車テスト例で10モデル中5モデルが「歩いていく」と誤答。",
+          "footnote": "今回選択した10種のAIモデルのうち5種は...「歩いていく」と間違った回答をしています。"
+        },
+        {
+          "point": "討論後は全てのモデルが「車で行く」と結論付けた。",
+          "footnote": "討論が行われ...最終的に全てのモデルが「車で行く」と結論付けています。"
+        }
+      ],
+      "references": [
+        "https://gigazine.net/news/20260327-ai-roundtable/"
+      ],
+      "retrieved_at": "2026-03-28T09:03:22+09:00"
+    }
+  ]
+}
