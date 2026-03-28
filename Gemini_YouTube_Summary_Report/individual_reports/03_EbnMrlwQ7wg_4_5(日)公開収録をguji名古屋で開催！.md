@@ -1,6 +1,6 @@
 # 動画要約レポート 第3位
 
-- 生成日時: 2026-03-28 09:39:28 JST
+- 生成日時: 2026-03-28 11:39:49 JST
 - チャンネルURL: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
 - チャンネルID: UCUWtuyVjeMQygQiy3adHb1g
 - RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWtuyVjeMQygQiy3adHb1g
@@ -33,7 +33,7 @@ Hook registry initialized with 0 hook entries
 Attempt 1 failed: You have exhausted your capacity on this model.. Retrying after 10000ms...
 Attempt 2 failed: You have exhausted your capacity on this model.. Retrying after 10000ms...
 Attempt 3 failed: You have exhausted your capacity on this model.. Max attempts reached
-Error when talking to Gemini API Full report available at: C:\Users\kbpsh\AppData\Local\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-03-28T00-39-27-954Z.json RetryableQuotaError: You have exhausted your capacity on this model.
+Error when talking to Gemini API Full report available at: C:\Users\kbpsh\AppData\Local\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-03-28T02-39-49-686Z.json RetryableQuotaError: You have exhausted your capacity on this model.
     at classifyGoogleError (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/googleQuotaErrors.js:211:28)
     at retryWithBackoff (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/retry.js:131:37)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
@@ -68,7 +68,7 @@ Hook registry initialized with 0 hook entries
 Attempt 1 failed: You have exhausted your capacity on this model.. Retrying after 10000ms...
 Attempt 2 failed: You have exhausted your capacity on this model.. Retrying after 10000ms...
 Attempt 3 failed: You have exhausted your capacity on this model.. Max attempts reached
-Error when talking to Gemini API Full report available at: C:\Users\kbpsh\AppData\Local\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-03-28T00-39-27-954Z.json RetryableQuotaError: You have exhausted your capacity on this model.
+Error when talking to Gemini API Full report available at: C:\Users\kbpsh\AppData\Local\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-03-28T02-39-49-686Z.json RetryableQuotaError: You have exhausted your capacity on this model.
     at classifyGoogleError (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/googleQuotaErrors.js:211:28)
     at retryWithBackoff (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/retry.js:131:37)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
