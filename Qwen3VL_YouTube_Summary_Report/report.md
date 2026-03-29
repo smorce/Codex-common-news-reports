@@ -1,214 +1,69 @@
-# YouTube 最新Top3 要約レポート
+# Qwen3-VL 動画要約レポート
 
-- 生成日時: 2026-03-29 10:55:21 JST
-- チャンネルURL: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
-- チャンネルID: UCUWtuyVjeMQygQiy3adHb1g
-- RSS: https://www.youtube.com/feeds/videos.xml?channel_id=UCUWtuyVjeMQygQiy3adHb1g
+- 生成日時: 2026-03-29T18:01:37.469983+09:00
+- チャンネル: https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g
+- モデル: `Qwen/Qwen3-VL-4B-Instruct`
+- 本数: 3
 
-## 一覧
+## 1. やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪
 
-|順位|公開日時|タイトル|URL|
-|---:|---|---|---|
-|1|2026-03-28T11:00:00+00:00|やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪|https://www.youtube.com/watch?v=wDQvCwbAYXc|
-|2|2026-03-27T11:00:00+00:00|もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術   B.R. Fashion College Lesson.863 ベルウィッチ|https://www.youtube.com/watch?v=v76QPTPv7p0|
-|3|2026-03-26T11:00:00+00:00|差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！  B.R. Fashion College Lesson.862 アスペジ|https://www.youtube.com/watch?v=CMZPKs42Y78|
+- **URL**: https://www.youtube.com/watch?v=wDQvCwbAYXc
 
-## 各動画の要約
+### 要約
 
-### 第1位 やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪
-
-- 公開日時: 2026-03-28T11:00:00+00:00
-- URL: https://www.youtube.com/watch?v=wDQvCwbAYXc
-- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_wDQvCwbAYXc_やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪.mp4`
-
-[WARNING] Failed to parse JSON summary: Expecting value: line 1 column 1 (char 0)
-
-要約に失敗しました（実行時エラー）。
-
-エラー: RuntimeError: Gemini CLI timed out after 900 seconds
-
-詳細: Gemini CLI timed out after 900 seconds
-
-### 第2位 もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 | B.R. Fashion College Lesson.863 ベルウィッチ
-
-- 公開日時: 2026-03-27T11:00:00+00:00
-- URL: https://www.youtube.com/watch?v=v76QPTPv7p0
-- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4`
-
-[WARNING] Failed to parse JSON summary: Expecting value: line 1 column 1 (char 0)
-
-要約に失敗しました（実行時エラー）。
-
-エラー: RuntimeError: Gemini CLI execution failed.
-Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
-Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4
-
-⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
-解決方法: しばらく待ってから再試行してください
-
-Error output (stderr):
-Loaded cached credentials.
-Attempt 1 failed: You have exhausted your capacity on this model.. Retrying after 11346ms...
-Attempt 2 failed: You have exhausted your capacity on this model.. Retrying after 20422ms...
-Attempt 3 failed: You have exhausted your capacity on this model.. Retrying after 31068ms...
-Attempt 4 failed: You have exhausted your capacity on this model.. Retrying after 32629ms...
-Attempt 5 failed: You have exhausted your capacity on this model.. Retrying after 35514ms...
-Attempt 6 failed: You have exhausted your capacity on this model.. Retrying after 33868ms...
-Attempt 7 failed: You have exhausted your capacity on this model.. Retrying after 32761ms...
-Attempt 8 failed: You have exhausted your capacity on this model.. Retrying after 32026ms...
-Attempt 9 failed: You have exhausted your capacity on this model.. Retrying after 33217ms...
-Attempt 10 failed: You have exhausted your capacity on this model.. Max attempts reached
-Error when talking to Gemini API Full report available at: C:\Users\kbpsh\AppData\Local\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-03-29T01-36-39-027Z.json RetryableQuotaError: You have exhausted your capacity on this model.
-    at classifyGoogleError (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/googleQuotaErrors.js:249:28)
-    at retryWithBackoff (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/retry.js:190:37)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async GeminiChat.makeApiCallAndProcessStream (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/geminiChat.js:453:32)
-    at async GeminiChat.streamWithRetries (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/geminiChat.js:267:40)
-    at async Turn.run (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/turn.js:71:30)
-    at async GeminiClient.processTurn (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/client.js:494:26)
-    at async GeminiClient.sendMessageStream (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/client.js:613:20)
-    at async file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/dist/src/nonInteractiveCli.js:195:34
-    at async main (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/dist/src/gemini.js:452:9) {
-  cause: {
-    code: 429,
-    message: 'You have exhausted your capacity on this model.',
-    details: [ [Object], [Object] ]
-  },
-  retryDelayMs: 10000
+{
+  "summary": "この動画では、日本のファッション店舗で男性と女性が服装選びに悩む様子が描かれています。二人は店内を歩きながら、靴やシャツ、ジャケットなど様々なアイテムを試着し、互いに意見を交わしながら選定しています。特に、白いスニーカーとグレーのシャツが注目され、その組み合わせが「オーバーオール」スタイルとして紹介されています。また、店員との対話も交えられ、商品の特徴や価格について詳しく説明されており、視聴者は実際に購入する際の参考になる情報が得られます。最後には、二人が選んだ服をモデルに着用した写真も紹介され、完成度の高いコーディネートが示されています。",
+  "key_points": [
+    "男性と女性が店内で服装選びを行い、互いに意見を交換しながら選定している。",
+    "白いスニーカーとグレーのシャツが中心となり、「オーバーオール」スタイルとして紹介されている。",
+    "店員との対話もあり、商品の特徴や価格について詳しく説明されている。",
+    "最終的に選んだ服をモデルに着用した写真も紹介されており、完成度の高いコーディネートが示されている。",
+    "視聴者は実際に購入する際に参考にすることができる具体的な情報を提供されている。"
+  ],
+  "conclusion": "この動画は、日常のファッション選びにおける具体的なアドバイスと、完璧なコーディネートの例を示しており、視聴者が自らのファッションセンスを磨くのに役立つ内容です。",
+  "recommended_action": "自分に合った服装を選ぶ際、まずは自分のスタイルや状況に合うアイテムを選んでみてください。"
 }
-An unexpected critical error occurred:[object Object]
 
+---
 
-詳細: Gemini CLI execution failed.
-Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
-Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4
+## 2. もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 | B.R. Fashion College Lesson.863 ベルウィッチ
 
-⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
-解決方法: しばらく待ってから再試行してください
+- **URL**: https://www.youtube.com/watch?v=v76QPTPv7p0
 
-Error output (stderr):
-Loaded cached credentials.
-Attempt 1 failed: You have exhausted your capacity on this model.. Retrying after 11346ms...
-Attempt 2 failed: You have exhausted your capacity on this model.. Retrying after 20422ms...
-Attempt 3 failed: You have exhausted your capacity on this model.. Retrying after 31068ms...
-Attempt 4 failed: You have exhausted your capacity on this model.. Retrying after 32629ms...
-Attempt 5 failed: You have exhausted your capacity on this model.. Retrying after 35514ms...
-Attempt 6 failed: You have exhausted your capacity on this model.. Retrying after 33868ms...
-Attempt 7 failed: You have exhausted your capacity on this model.. Retrying after 32761ms...
-Attempt 8 failed: You have exhausted your capacity on this model.. Retrying after 32026ms...
-Attempt 9 failed: You have exhausted your capacity on this model.. Retrying after 33217ms...
-Attempt 10 failed: You have exhausted your capacity on this model.. Max attempts reached
-Error when talking to Gemini API Full report available at: C:\Users\kbpsh\AppData\Local\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-03-29T01-36-39-027Z.json RetryableQuotaError: You have exhausted your capacity on this model.
-    at classifyGoogleError (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/googleQuotaErrors.js:249:28)
-    at retryWithBackoff (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/retry.js:190:37)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async GeminiChat.makeApiCallAndProcessStream (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/geminiChat.js:453:32)
-    at async GeminiChat.streamWithRetries (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/geminiChat.js:267:40)
-    at async Turn.run (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/turn.js:71:30)
-    at async GeminiClient.processTurn (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/client.js:494:26)
-    at async GeminiClient.sendMessageStream (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/client.js:613:20)
-    at async file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/dist/src/nonInteractiveCli.js:195:34
-    at async main (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/dist/src/gemini.js:452:9) {
-  cause: {
-    code: 429,
-    message: 'You have exhausted your capacity on this model.',
-    details: [ [Object], [Object] ]
-  },
-  retryDelayMs: 10000
+### 要約
+
+{
+  "summary": "この動画は、BERWICHブランドの2023年秋冬コレクションを紹介するもので、男性と女性のスタジオでの対話を中心に、最新のファッションアイテムやその特徴について詳しく解説しています。まず、スカーフやパンツなどの衣類が展示され、それぞれのデザインや素材、価格が紹介されています。また、モデルが実際に着用してみるシーンもあり、着こなしの工夫やスタイルの提案も行われています。さらに、コーディネートのアイデアや、日常使いに適したアイテムの選び方など、実用性を重視した内容となっています。",
+  "key_points": [
+    "BERWICHの2023年秋冬コレクションには、SCOTCHコンプトンシリーズやBERTOシリーズなど、多様なアイテムが含まれており、それぞれ異なるデザインと機能性を持っています。",
+    "動画では、各アイテムの特徴や価格、そして着用時の効果について、具体的な例を交えて説明されており、視聴者が自ら選ぶ際の参考になります。",
+    "モデルによる実際の着用シーンが紹介され、着こなしのバランスや季節感を活かす方法が示されています。",
+    "また、コーディネートのアイデアや、日常での活用法についても触れられており、実践的な情報が提供されています。",
+    "最後には、視聴者が自分に合ったアイテムを選ぶためのヒントや、今後のトレンドを見据えた選択肢も紹介されています。"
+  ],
+  "conclusion": "BERWICHの2023年秋冬コレクションは、機能性とデザインの両立を目指しており、現代のライフスタイルに合わせた実用的かつスタイリッシュなアイテムが揃っています。",
+  "recommended_action": "自身のスタイルや生活スタイルに合ったアイテムを選んで、実際に試着してみてください。"
 }
-An unexpected critical error occurred:[object Object]
 
+---
 
-### 第3位 差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！| B.R. Fashion College Lesson.862 アスペジ
+## 3. 差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！| B.R. Fashion College Lesson.862 アスペジ
 
-- 公開日時: 2026-03-26T11:00:00+00:00
-- URL: https://www.youtube.com/watch?v=CMZPKs42Y78
-- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4`
+- **URL**: https://www.youtube.com/watch?v=CMZPKs42Y78
 
-[WARNING] Failed to parse JSON summary: Expecting value: line 1 column 1 (char 0)
+### 要約
 
-要約に失敗しました（実行時エラー）。
-
-エラー: RuntimeError: Gemini CLI execution failed.
-Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
-Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
-
-⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
-解決方法: しばらく待ってから再試行してください
-
-Error output (stderr):
-Loaded cached credentials.
-Attempt 1 failed: You have exhausted your capacity on this model.. Retrying after 10885ms...
-Attempt 2 failed: You have exhausted your capacity on this model.. Retrying after 23021ms...
-Attempt 3 failed: You have exhausted your capacity on this model.. Retrying after 33995ms...
-Attempt 4 failed: You have exhausted your capacity on this model.. Retrying after 33283ms...
-Attempt 5 failed: You have exhausted your capacity on this model.. Retrying after 33439ms...
-Attempt 6 failed: You have exhausted your capacity on this model.. Retrying after 31759ms...
-Attempt 7 failed: You have exhausted your capacity on this model.. Retrying after 32711ms...
-Attempt 8 failed: You have exhausted your capacity on this model.. Retrying after 31383ms...
-Attempt 9 failed: You have exhausted your capacity on this model.. Retrying after 34727ms...
-Attempt 10 failed: You have exhausted your capacity on this model.. Max attempts reached
-Error when talking to Gemini API Full report available at: C:\Users\kbpsh\AppData\Local\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-03-29T01-55-20-928Z.json RetryableQuotaError: You have exhausted your capacity on this model.
-    at classifyGoogleError (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/googleQuotaErrors.js:249:28)
-    at retryWithBackoff (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/retry.js:190:37)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async GeminiChat.makeApiCallAndProcessStream (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/geminiChat.js:453:32)
-    at async GeminiChat.streamWithRetries (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/geminiChat.js:267:40)
-    at async Turn.run (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/turn.js:71:30)
-    at async GeminiClient.processTurn (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/client.js:494:26)
-    at async GeminiClient.sendMessageStream (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/client.js:613:20)
-    at async file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/dist/src/nonInteractiveCli.js:195:34
-    at async main (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/dist/src/gemini.js:452:9) {
-  cause: {
-    code: 429,
-    message: 'You have exhausted your capacity on this model.',
-    details: [ [Object], [Object] ]
-  },
-  retryDelayMs: 10000
+{
+  "summary": "この動画では、ファッション関連の専門家が店舗内でのコーディネートやアイテム選びについて詳しく解説しています。女性のスタジオマネージャーが中心となって、男性スタッフと協力して、季節感のある衣装の特徴や使い方を紹介します。例えば、ミントグリーンのジャケットやベージュのコットンシャツなど、それぞれの色合いや素材の特徴について、着用シーンや季節に合わせた選択方法を具体的に示します。また、スタイリストが「スカーフ」や「パンツ」などの小物との組み合わせも紹介し、実際のコーディネート例を提示することで、視聴者が自分自身で試せるよう工夫されています。さらに、トレンドの変化や過去の流行を取り入れながら、今後の流行予測も含めた総合的なアドバイスが提供されます。",
+  "key_points": [
+    "衣類の色や素材、デザインから、どのようなシーンで活用できるかを具体的に説明",
+    "小物（スカーフ、パンツ）との組み合わせで、より洗練されたコーディネートを提案",
+    "過去の流行や現在のトレンドを踏まえた未来の流行予測を含む",
+    "視聴者が実際に試せるような具体的なコーディネート例を紹介",
+    "衣類選びの基本原則として、「シーズン別」「場面別」の選択基準を提示"
+  ],
+  "conclusion": "ファッション選びには、季節や状況に応じた適切なアイテムの選択が重要です。",
+  "recommended_action": "自分のライフスタイルや季節に合わせて、動画で紹介されているアイテムを実際に試してみてください。"
 }
-An unexpected critical error occurred:[object Object]
 
-
-詳細: Gemini CLI execution failed.
-Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
-Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
-
-⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
-解決方法: しばらく待ってから再試行してください
-
-Error output (stderr):
-Loaded cached credentials.
-Attempt 1 failed: You have exhausted your capacity on this model.. Retrying after 10885ms...
-Attempt 2 failed: You have exhausted your capacity on this model.. Retrying after 23021ms...
-Attempt 3 failed: You have exhausted your capacity on this model.. Retrying after 33995ms...
-Attempt 4 failed: You have exhausted your capacity on this model.. Retrying after 33283ms...
-Attempt 5 failed: You have exhausted your capacity on this model.. Retrying after 33439ms...
-Attempt 6 failed: You have exhausted your capacity on this model.. Retrying after 31759ms...
-Attempt 7 failed: You have exhausted your capacity on this model.. Retrying after 32711ms...
-Attempt 8 failed: You have exhausted your capacity on this model.. Retrying after 31383ms...
-Attempt 9 failed: You have exhausted your capacity on this model.. Retrying after 34727ms...
-Attempt 10 failed: You have exhausted your capacity on this model.. Max attempts reached
-Error when talking to Gemini API Full report available at: C:\Users\kbpsh\AppData\Local\Temp\gemini-client-error-Turn.run-sendMessageStream-2026-03-29T01-55-20-928Z.json RetryableQuotaError: You have exhausted your capacity on this model.
-    at classifyGoogleError (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/googleQuotaErrors.js:249:28)
-    at retryWithBackoff (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/utils/retry.js:190:37)
-    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
-    at async GeminiChat.makeApiCallAndProcessStream (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/geminiChat.js:453:32)
-    at async GeminiChat.streamWithRetries (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/geminiChat.js:267:40)
-    at async Turn.run (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/turn.js:71:30)
-    at async GeminiClient.processTurn (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/client.js:494:26)
-    at async GeminiClient.sendMessageStream (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/node_modules/@google/gemini-cli-core/dist/src/core/client.js:613:20)
-    at async file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/dist/src/nonInteractiveCli.js:195:34
-    at async main (file:///C:/Users/kbpsh/AppData/Roaming/npm/node_modules/@google/gemini-cli/dist/src/gemini.js:452:9) {
-  cause: {
-    code: 429,
-    message: 'You have exhausted your capacity on this model.',
-    details: [ [Object], [Object] ]
-  },
-  retryDelayMs: 10000
-}
-An unexpected critical error occurred:[object Object]
-
+---
