@@ -396,12 +396,12 @@ def infer_one_video(
     user_prompt: str,
     *,
     print_budget: bool = True,
-    max_new_tokens: int = DEFAULT_MAX_NEW_TOKENS,
     do_sample: bool = True,
     top_p: float = 0.8,
     top_k: int = 20,
     temperature: float = 0.7,
     repetition_penalty: float = 1.1,
+    max_new_tokens: int = DEFAULT_MAX_NEW_TOKENS,
 ) -> tuple[str, VideoBudget]:
     """既にロード済みの model / processor で1本推論する。"""
     import torch
