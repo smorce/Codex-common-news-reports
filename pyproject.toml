@@ -5,11 +5,27 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "accelerate>=1.13.0",
     "feedparser>=6.0.12",
     "imageio-ffmpeg>=0.6.0",
     "moviepy>=2.2.1",
+    "qwen-vl-utils[decord]>=0.0.14",
     "requests>=2.32.5",
     "rich>=14.3.2",
     "toml>=0.10.2",
+    "tzdata>=2025.1",
+    "torch",
+    "torchvision",
+    "transformers>=4.57.0",
     "yt-dlp[default]>=2026.2.4",
 ]
+
+# GPU 用 PyTorch（CUDA 12.4）。torch のみこのインデックスから取得する（explicit）。
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
+torchvision = { index = "pytorch-cu124" }
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true

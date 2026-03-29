@@ -179,6 +179,9 @@ cython_debug/
 frontend/node_modules/
 
 # 追加
+# Qwen3-VL ダウンロード済み動画キャッシュ
+qwen3_vl_cache/
+
 github_token.txt
 vertex-ai-gemini.json
 .chainlit/
