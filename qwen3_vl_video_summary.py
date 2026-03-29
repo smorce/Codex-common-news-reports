@@ -397,6 +397,11 @@ def infer_one_video(
     *,
     print_budget: bool = True,
     max_new_tokens: int = DEFAULT_MAX_NEW_TOKENS,
+    do_sample: bool = True,
+    top_p: float = 0.8,
+    top_k: int = 20,
+    temperature: float = 0.7,
+    repetition_penalty: float = 1.1,
 ) -> tuple[str, VideoBudget]:
     """既にロード済みの model / processor で1本推論する。"""
     import torch
@@ -448,6 +453,11 @@ def infer_one_video(
 
     generated_ids = model.generate(
         **inputs,
+        do_sample=do_sample,
+        top_p=top_p,
+        top_k=top_k,
+        temperature=temperature,
+        repetition_penalty=repetition_penalty,
         max_new_tokens=max_new_tokens,
     )
 
