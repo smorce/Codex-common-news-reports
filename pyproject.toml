@@ -18,6 +18,7 @@ dependencies = [
     "torchvision",
     "transformers>=4.57.0",
     "yt-dlp[default]>=2026.2.4",
+    "fast-bunkai>=0.1.1",
 ]
 
 # GPU 用 PyTorch（CUDA 12.4）。torch のみこのインデックスから取得する（explicit）。
