@@ -11,7 +11,7 @@
 - タイトル: 快適すぎる！涼しさも品格も手に入る春夏の大人スタイル最適解！| B.R. Fashion College Lesson.861  モーヴ
 - 公開日時: 2026-03-25T11:00:00+00:00
 - URL: https://www.youtube.com/watch?v=-hBD4FPj8So
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_-hBD4FPj8So_快適すぎる！涼しさも品格も手に入る春夏の大人スタイル最適解！_ B.R. Fashion College Lesson.861 モーヴ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_-hBD4FPj8So_快適すぎる！涼しさも品格も手に入る春夏の大人スタイル最適解！_ B.R. Fashion College Lesson.861 モーヴ.mp4`
 
 ## 要約
 

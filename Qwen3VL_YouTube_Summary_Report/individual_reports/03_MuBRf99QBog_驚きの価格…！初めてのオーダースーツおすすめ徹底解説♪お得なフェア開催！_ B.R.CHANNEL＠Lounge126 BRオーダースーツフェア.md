@@ -11,7 +11,7 @@
 - タイトル: 驚きの価格…！初めてのオーダースーツおすすめ徹底解説♪お得なフェア開催！| B.R.CHANNEL＠Lounge126 BRオーダースーツフェア
 - 公開日時: 2026-02-18T11:00:38+00:00
 - URL: https://www.youtube.com/watch?v=MuBRf99QBog
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_MuBRf99QBog_驚きの価格…！初めてのオーダースーツおすすめ徹底解説♪お得なフェア開催！_ B.R.CHANNEL＠Lounge126 BRオーダースーツフェア.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_MuBRf99QBog_驚きの価格…！初めてのオーダースーツおすすめ徹底解説♪お得なフェア開催！_ B.R.CHANNEL＠Lounge126 BRオーダースーツフェア.mp4`
 
 ## 要約
 

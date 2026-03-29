@@ -11,7 +11,7 @@
 - タイトル: 大人の新感覚レザーブルゾンで最旬コーデ！周りと差がつくスタイルの秘密 | B.R. Fashion College Lesson.846 BR別注エンメティ BR_MILO
 - 公開日時: 2026-02-12T11:00:54+00:00
 - URL: https://www.youtube.com/watch?v=XAKUtu0EhEc
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_XAKUtu0EhEc_大人の新感覚レザーブルゾンで最旬コーデ！周りと差がつくスタイルの秘密 _ B.R. Fashion College Lesson.846 BR別注エンメティ BR_MILO.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_XAKUtu0EhEc_大人の新感覚レザーブルゾンで最旬コーデ！周りと差がつくスタイルの秘密 _ B.R. Fashion College Lesson.846 BR別注エンメティ BR_MILO.mp4`
 
 ## 要約
 

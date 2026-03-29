@@ -11,7 +11,7 @@
 - タイトル: 女子目線で選ぶ！春のモテレザーでオシャレ度もUP⤴︎な着こなし3選♪Press Room 110
 - 公開日時: 2026-03-13T11:00:09+00:00
 - URL: https://www.youtube.com/watch?v=4Q-LWU_1uUk
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_4Q-LWU_1uUk_女子目線で選ぶ！春のモテレザーでオシャレ度もUP⤴︎な着こなし3選♪Press Room 110.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_4Q-LWU_1uUk_女子目線で選ぶ！春のモテレザーでオシャレ度もUP⤴︎な着こなし3選♪Press Room 110.mp4`
 
 ## 要約
 

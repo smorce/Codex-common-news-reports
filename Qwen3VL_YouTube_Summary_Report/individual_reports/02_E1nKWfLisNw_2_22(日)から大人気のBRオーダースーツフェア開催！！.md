@@ -11,7 +11,7 @@
 - タイトル: 2/22(日)から大人気のBRオーダースーツフェア開催！！
 - 公開日時: 2026-02-09T11:31:04+00:00
 - URL: https://www.youtube.com/shorts/E1nKWfLisNw
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_E1nKWfLisNw_2_22(日)から大人気のBRオーダースーツフェア開催！！.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_E1nKWfLisNw_2_22(日)から大人気のBRオーダースーツフェア開催！！.mp4`
 
 ## 要約
 

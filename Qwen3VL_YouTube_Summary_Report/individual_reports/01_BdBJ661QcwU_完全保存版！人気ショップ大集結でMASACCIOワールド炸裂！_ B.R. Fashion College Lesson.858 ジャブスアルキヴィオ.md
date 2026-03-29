@@ -11,7 +11,7 @@
 - タイトル: 完全保存版！人気ショップ大集結でMASACCIOワールド炸裂！| B.R. Fashion College Lesson.858 ジャブスアルキヴィオ
 - 公開日時: 2026-03-20T11:00:20+00:00
 - URL: https://www.youtube.com/watch?v=BdBJ661QcwU
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_BdBJ661QcwU_完全保存版！人気ショップ大集結でMASACCIOワールド炸裂！_ B.R. Fashion College Lesson.858 ジャブスアルキヴィオ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_BdBJ661QcwU_完全保存版！人気ショップ大集結でMASACCIOワールド炸裂！_ B.R. Fashion College Lesson.858 ジャブスアルキヴィオ.mp4`
 
 ## 要約
 

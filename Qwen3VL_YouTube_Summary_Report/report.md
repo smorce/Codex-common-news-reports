@@ -19,7 +19,7 @@
 
 - 公開日時: 2026-03-28T11:00:00+00:00
 - URL: https://www.youtube.com/watch?v=wDQvCwbAYXc
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_wDQvCwbAYXc_やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_wDQvCwbAYXc_やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪.mp4`
 
 [WARNING] Failed to parse JSON summary: Expecting value: line 1 column 1 (char 0)
 
@@ -33,7 +33,7 @@
 
 - 公開日時: 2026-03-27T11:00:00+00:00
 - URL: https://www.youtube.com/watch?v=v76QPTPv7p0
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4`
 
 [WARNING] Failed to parse JSON summary: Expecting value: line 1 column 1 (char 0)
 
@@ -42,7 +42,7 @@
 エラー: RuntimeError: Gemini CLI execution failed.
 Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
 Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Gemini_YouTube_Summary_Report/mp4/02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4
+Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4
 
 ⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
 解決方法: しばらく待ってから再試行してください
@@ -83,7 +83,7 @@ An unexpected critical error occurred:[object Object]
 詳細: Gemini CLI execution failed.
 Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
 Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Gemini_YouTube_Summary_Report/mp4/02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4
+Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/02_v76QPTPv7p0_もはや大人の鉄板パンツ！穿くだけでこなれ感な上級着こなし術 _ B.R. Fashion College Lesson.863 ベルウィッチ.mp4
 
 ⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
 解決方法: しばらく待ってから再試行してください
@@ -125,7 +125,7 @@ An unexpected critical error occurred:[object Object]
 
 - 公開日時: 2026-03-26T11:00:00+00:00
 - URL: https://www.youtube.com/watch?v=CMZPKs42Y78
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4`
 
 [WARNING] Failed to parse JSON summary: Expecting value: line 1 column 1 (char 0)
 
@@ -134,7 +134,7 @@ An unexpected critical error occurred:[object Object]
 エラー: RuntimeError: Gemini CLI execution failed.
 Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
 Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Gemini_YouTube_Summary_Report/mp4/03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
+Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
 
 ⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
 解決方法: しばらく待ってから再試行してください
@@ -175,7 +175,7 @@ An unexpected critical error occurred:[object Object]
 詳細: Gemini CLI execution failed.
 Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
 Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Gemini_YouTube_Summary_Report/mp4/03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
+Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/03_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
 
 ⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
 解決方法: しばらく待ってから再試行してください

@@ -11,7 +11,7 @@
 - タイトル: 大人の余裕感を作る！今着こなしたい最新シャツ×ジャケットスタイル | B.R. Fashion College Lesson.856 ガリポリ
 - 公開日時: 2026-03-18T11:01:28+00:00
 - URL: https://www.youtube.com/watch?v=qc-GT8GGrEw
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_qc-GT8GGrEw_大人の余裕感を作る！今着こなしたい最新シャツ×ジャケットスタイル _ B.R. Fashion College Lesson.856 ガリポリ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_qc-GT8GGrEw_大人の余裕感を作る！今着こなしたい最新シャツ×ジャケットスタイル _ B.R. Fashion College Lesson.856 ガリポリ.mp4`
 
 ## 要約
 

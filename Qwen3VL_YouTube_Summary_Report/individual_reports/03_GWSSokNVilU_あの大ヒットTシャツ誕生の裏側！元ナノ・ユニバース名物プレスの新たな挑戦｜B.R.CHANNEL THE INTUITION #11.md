@@ -11,7 +11,7 @@
 - タイトル: あの大ヒットTシャツ誕生の裏側！元ナノ・ユニバース名物プレスの新たな挑戦｜B.R.CHANNEL THE INTUITION #11
 - 公開日時: 2026-03-22T11:00:21+00:00
 - URL: https://www.youtube.com/watch?v=GWSSokNVilU
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_GWSSokNVilU_あの大ヒットTシャツ誕生の裏側！元ナノ・ユニバース名物プレスの新たな挑戦｜B.R.CHANNEL THE INTUITION #11.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_GWSSokNVilU_あの大ヒットTシャツ誕生の裏側！元ナノ・ユニバース名物プレスの新たな挑戦｜B.R.CHANNEL THE INTUITION #11.mp4`
 
 ## 要約
 

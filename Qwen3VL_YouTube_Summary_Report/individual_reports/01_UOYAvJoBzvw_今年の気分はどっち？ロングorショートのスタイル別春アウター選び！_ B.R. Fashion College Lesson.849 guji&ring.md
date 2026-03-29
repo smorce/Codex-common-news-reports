@@ -11,7 +11,7 @@
 - タイトル: 今年の気分はどっち？ロングorショートのスタイル別春アウター選び！| B.R. Fashion College Lesson.849 guji&ring
 - 公開日時: 2026-02-24T11:00:58+00:00
 - URL: https://www.youtube.com/watch?v=UOYAvJoBzvw
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_UOYAvJoBzvw_今年の気分はどっち？ロングorショートのスタイル別春アウター選び！_ B.R. Fashion College Lesson.849 guji&ring.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_UOYAvJoBzvw_今年の気分はどっち？ロングorショートのスタイル別春アウター選び！_ B.R. Fashion College Lesson.849 guji&ring.mp4`
 
 ## 要約
 

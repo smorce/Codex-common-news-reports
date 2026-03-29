@@ -11,7 +11,7 @@
 - タイトル: 日本のファクトリーを一流ブランドへ！パリのGUCCIで経験を積み、アパレル業界の“常識”を壊す！｜B.R.CHANNEL THE INTUITION #8
 - 公開日時: 2026-02-08T11:01:12+00:00
 - URL: https://www.youtube.com/watch?v=hS6tOAaMfLw
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_hS6tOAaMfLw_日本のファクトリーを一流ブランドへ！パリのGUCCIで経験を積み、アパレル業界の“常識”を壊す！｜B.R.CHANNEL THE INTUITION #8.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_hS6tOAaMfLw_日本のファクトリーを一流ブランドへ！パリのGUCCIで経験を積み、アパレル業界の“常識”を壊す！｜B.R.CHANNEL THE INTUITION #8.mp4`
 
 ## 要約
 

@@ -11,7 +11,7 @@
 - タイトル: 女子モテな今どきシャツスタイル提案♪爽やかに着こなす！BRコラボシャツ登場 Press Room 109
 - 公開日時: 2026-02-14T11:00:29+00:00
 - URL: https://www.youtube.com/watch?v=tIGskk3rO_8
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_tIGskk3rO_8_女子モテな今どきシャツスタイル提案♪爽やかに着こなす！BRコラボシャツ登場 Press Room 109.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_tIGskk3rO_8_女子モテな今どきシャツスタイル提案♪爽やかに着こなす！BRコラボシャツ登場 Press Room 109.mp4`
 
 ## 要約
 

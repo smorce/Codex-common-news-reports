@@ -11,7 +11,7 @@
 - タイトル: もりち・干場がガチ検証！快眠をつくる話題の枕でオシャレのための姿勢作り！| B.R. Fashion College Lesson.854 ブレインスリープ
 - 公開日時: 2026-03-16T11:01:09+00:00
 - URL: https://www.youtube.com/watch?v=dgpJsyaBpPg
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_dgpJsyaBpPg_もりち・干場がガチ検証！快眠をつくる話題の枕でオシャレのための姿勢作り！_ B.R. Fashion College Lesson.854 ブレインスリープ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_dgpJsyaBpPg_もりち・干場がガチ検証！快眠をつくる話題の枕でオシャレのための姿勢作り！_ B.R. Fashion College Lesson.854 ブレインスリープ.mp4`
 
 ## 要約
 

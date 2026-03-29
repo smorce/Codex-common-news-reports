@@ -11,7 +11,7 @@
 - タイトル: これを見れば分かる！大人リラックスの正解は？最新トータルコーデ | B.R. Fashion College Lesson.850 ボリオリ
 - 公開日時: 2026-03-05T11:01:24+00:00
 - URL: https://www.youtube.com/watch?v=wfkZIFsMsho
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_wfkZIFsMsho_これを見れば分かる！大人リラックスの正解は？最新トータルコーデ _ B.R. Fashion College Lesson.850 ボリオリ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_wfkZIFsMsho_これを見れば分かる！大人リラックスの正解は？最新トータルコーデ _ B.R. Fashion College Lesson.850 ボリオリ.mp4`
 
 ## 要約
 

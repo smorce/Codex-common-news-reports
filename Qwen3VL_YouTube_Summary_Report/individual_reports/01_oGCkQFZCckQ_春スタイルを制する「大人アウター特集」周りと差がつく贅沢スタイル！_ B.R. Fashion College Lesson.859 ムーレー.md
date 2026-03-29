@@ -11,7 +11,7 @@
 - タイトル: 春スタイルを制する「大人アウター特集」周りと差がつく贅沢スタイル！| B.R. Fashion College Lesson.859 ムーレー
 - 公開日時: 2026-03-23T11:01:19+00:00
 - URL: https://www.youtube.com/watch?v=oGCkQFZCckQ
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_oGCkQFZCckQ_春スタイルを制する「大人アウター特集」周りと差がつく贅沢スタイル！_ B.R. Fashion College Lesson.859 ムーレー.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_oGCkQFZCckQ_春スタイルを制する「大人アウター特集」周りと差がつく贅沢スタイル！_ B.R. Fashion College Lesson.859 ムーレー.mp4`
 
 ## 要約
 

@@ -11,7 +11,7 @@
 - タイトル: BR×ガリポリカミチェリア コラボリネンシャツ発売 サイズレビューLIVE配信
 - 公開日時: 2026-02-16T10:52:56+00:00
 - URL: https://www.youtube.com/watch?v=wcCTSBq-6Oo
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_wcCTSBq-6Oo_BR×ガリポリカミチェリア コラボリネンシャツ発売 サイズレビューLIVE配信.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_wcCTSBq-6Oo_BR×ガリポリカミチェリア コラボリネンシャツ発売 サイズレビューLIVE配信.mp4`
 
 ## 要約
 

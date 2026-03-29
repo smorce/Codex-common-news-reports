@@ -11,7 +11,7 @@
 - タイトル: 圧倒的な品格！春夏の主役コーデは？一流が認める大人の着こなし | B.R. Fashion College Lesson.851 ラルディーニ
 - 公開日時: 2026-03-10T11:00:45+00:00
 - URL: https://www.youtube.com/watch?v=RM1bpjSqYOU
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_RM1bpjSqYOU_圧倒的な品格！春夏の主役コーデは？一流が認める大人の着こなし _ B.R. Fashion College Lesson.851 ラルディーニ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_RM1bpjSqYOU_圧倒的な品格！春夏の主役コーデは？一流が認める大人の着こなし _ B.R. Fashion College Lesson.851 ラルディーニ.mp4`
 
 ## 要約
 

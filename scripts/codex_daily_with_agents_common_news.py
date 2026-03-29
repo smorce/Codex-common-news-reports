@@ -42,6 +42,10 @@ LLM_RETRY_BASE_DELAY = float(os.getenv("LLM_RETRY_BASE_DELAY", "10.0"))
 LLM_RETRY_MAX_DELAY = float(os.getenv("LLM_RETRY_MAX_DELAY", "120.0"))
 LLM_RETRY_STATUS_CODES = [429, 500, 502, 503, 504]
 
+# qwen3_vl_video_summary 全体の subprocess タイムアウト（秒）
+# 目安: 動画あたり推論は長くて約5分×3本 + ダウンロード + 初回モデル読み込み（環境で上書き可）
+QWEN_YOUTUBE_TIMEOUT_SEC = int(os.getenv("QWEN_YOUTUBE_TIMEOUT_SEC", "2400"))
+
 
 class RetryHandler:
     """
@@ -345,14 +349,14 @@ class CodexDailyRunner:
         else:
             self.log(f"WARNING: AGENTS_3.md not found, skipping: {self.agents_3_file}")
 
-        # 4) GeminiCLI（YouTube要約）を実行し、report.md を YYYY-MM-DD にコピー
+        # 4) Qwen3-VL（YouTube要約）を実行し、report.md を YYYY-MM-DD にコピー
         try:
-            self.log("Running GeminiCLI (yt_top3_gemini_report) → gemini_youtube_report.md ...")
-            self.run_gemini_youtube_report(output_dir, date_dir)
+            self.log("Running Qwen3-VL (qwen3_vl_video_summary) → qwen3vl_youtube_report.md ...")
+            self.run_qwen_youtube_report(output_dir, date_dir)
         except Exception as e:
-            self.log_failure("GeminiCLI (run_gemini_youtube_report)", e, failed_steps)
+            self.log_failure("Qwen3-VL (run_qwen_youtube_report)", e, failed_steps)
 
-        # Git操作（出力物・scripts・Gemini_YouTube_Summary_Report をコミット）
+        # Git操作（出力物・scripts・Qwen3VL_YouTube_Summary_Report をコミット）
         try:
             self.git_operations(output_dir, date_dir)
         except Exception as e:
@@ -362,9 +366,9 @@ class CodexDailyRunner:
         except Exception as e:
             self.log_failure("git_operations(scripts)", e, failed_steps)
         try:
-            self.git_operations(self.repo_path / "Gemini_YouTube_Summary_Report", date_dir)
+            self.git_operations(self.repo_path / "Qwen3VL_YouTube_Summary_Report", date_dir)
         except Exception as e:
-            self.log_failure("git_operations(Gemini_YouTube_Summary_Report)", e, failed_steps)
+            self.log_failure("git_operations(Qwen3VL_YouTube_Summary_Report)", e, failed_steps)
 
         if failed_steps:
             self.log("=== Failed steps summary (see tracebacks above in this log) ===")
@@ -888,14 +892,14 @@ class CodexDailyRunner:
         except Exception as e:
             raise RuntimeError(f"Git operation error: {e}")
 
-    # GeminiCLI（YouTube要約）の出力フォルダ名・コピー先ファイル名
-    GEMINI_YOUTUBE_OUTPUT_DIR = "Gemini_YouTube_Summary_Report"
-    GEMINI_YOUTUBE_REPORT_COPY_NAME = "gemini_youtube_report.md"
+    # YouTube 動画要約（Qwen3-VL）の作業ディレクトリ・日次コピー先ファイル名
+    QWEN3VL_YOUTUBE_OUTPUT_DIR = "Qwen3VL_YouTube_Summary_Report"
+    QWEN3VL_YOUTUBE_REPORT_COPY_NAME = "qwen3vl_youtube_report.md"
     # レポート本文がこの文字数未満ならリトライ対象（RetryHandler で最大3回リトライ）
-    GEMINI_REPORT_MIN_LENGTH = 10
+    YOUTUBE_SUMMARY_REPORT_MIN_LENGTH = 10
 
-    def _gemini_report_usable(self, src_report: Path) -> bool:
-        """Gemini の report.md が存在し、中身が有効そうか（タイムアウト後でも生成済みの可能性）を判定する。"""
+    def _youtube_summary_report_usable(self, src_report: Path) -> bool:
+        """report.md が存在し、中身が有効そうか（タイムアウト後でも生成済みの可能性）を判定する。"""
         if not src_report.is_file():
             return False
         try:
@@ -904,19 +908,20 @@ class CodexDailyRunner:
                 return False
             # 完成したレポートに含まれるキーワードがどれかあれば有効とみなす
             return any(
-                k in text for k in ("YouTube", "要約", "一覧", "生成日時")
+                k in text
+                for k in ("YouTube", "要約", "一覧", "生成日時", "Qwen3-VL", "**URL**")
             )
         except Exception:
             return False
 
-    def _write_gemini_error_report(
+    def _write_youtube_summary_error_report(
         self, output_dir: Path, error_message: str, error_detail: str = ""
     ) -> None:
-        """失敗時に reports/YYYY-MM-DD/gemini_youtube_report.md にエラー内容を書き出す（Git push に含まれる）。"""
-        dest = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
+        """失敗時に reports/YYYY-MM-DD/qwen3vl_youtube_report.md にエラー内容を書き出す（Git push に含まれる）。"""
+        dest = output_dir / self.QWEN3VL_YOUTUBE_REPORT_COPY_NAME
         utc_now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         lines = [
-            "# Gemini YouTube Report (Error)",
+            "# YouTube Video Summary Report (Error)",
             "",
             f"- Generated at: {utc_now}",
             "- Status: Failed",
@@ -930,28 +935,38 @@ class CodexDailyRunner:
         dest.write_text("\n".join(lines), encoding="utf-8")
         self.log(f"Wrote error report to {dest}")
 
-    def run_gemini_youtube_report(self, output_dir: Path, date_dir: str) -> None:
+    def run_qwen_youtube_report(self, output_dir: Path, date_dir: str) -> None:
         """
-        yt_top3_gemini_report.py を実行し、成功時に report.md を YYYY-MM-DD フォルダにコピーする。
+        qwen3_vl_video_summary.py を実行し、成功時に report.md を YYYY-MM-DD フォルダにコピーする。
         一時的な失敗は RetryHandler でリトライ。最終的に失敗した場合はエラー内容を同パスに書き出し、Git push に含める。
 
-        n: TOP N 件の BRチャンネル の動画を要約
-        要約モデル：gemini-2.5-pro が安定していて良かったが、ウルトラを解約してレートリミットエラーが出るようになったため、gemini-2.5-flash に変更。
+        チャンネルは BR 向けの既定 URL。本数は 3（従来の yt_top3 と同じ）。
         """
-        gemini_cmd = [
-            "uv", "run", "--link-mode=copy", "yt_top3_gemini_report.py",
-            "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g",
-            "-o", self.GEMINI_YOUTUBE_OUTPUT_DIR,
-            "-n", "3",
+        channel_url = "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g"
+        out_md = f"{self.QWEN3VL_YOUTUBE_OUTPUT_DIR}/report.md"
+        download_dir = f"{self.QWEN3VL_YOUTUBE_OUTPUT_DIR}/qwen_downloads"
+        qwen_cmd = [
+            "uv",
+            "run",
+            "--link-mode=copy",
+            "qwen3_vl_video_summary.py",
+            "--channel-url",
+            channel_url,
+            "-n",
+            "3",
+            "-o",
+            out_md,
+            "--download-dir",
+            download_dir,
         ]
         # 上書き運用：出力ディレクトリは削除しない（OneDrive/Windows でアクセス拒否が起きやすいため）。
         # ただし、失敗時のフォールバックで「前回の report.md」を誤ってコピーしないよう、
         # 今回実行で report.md が更新されたか（mtime）をチェックする。
-        self.log(f"Running GeminiCLI: {' '.join(gemini_cmd)}")
+        self.log(f"Running Qwen3-VL: {' '.join(qwen_cmd)} (timeout={QWEN_YOUTUBE_TIMEOUT_SEC}s)")
         attempt = 0
         last_error_message = ""
         last_error_detail = ""
-        src_report = self.repo_path / self.GEMINI_YOUTUBE_OUTPUT_DIR / "report.md"
+        src_report = self.repo_path / self.QWEN3VL_YOUTUBE_OUTPUT_DIR / "report.md"
         run_started_at = time.time()
         prev_report_mtime = src_report.stat().st_mtime if src_report.exists() else None
 
@@ -970,61 +985,61 @@ class CodexDailyRunner:
         while True:
             try:
                 result = subprocess.run(
-                    gemini_cmd,
+                    qwen_cmd,
                     cwd=str(self.repo_path),
                     capture_output=True,
                     text=True,
                     encoding="utf-8",
                     errors="replace",
-                    timeout=1200,
+                    timeout=QWEN_YOUTUBE_TIMEOUT_SEC,
                 )
                 if result.returncode != 0:
                     err_snippet = (result.stderr or result.stdout or "")[-2000:]
-                    last_error_message = f"GeminiCLI exited with code {result.returncode}."
+                    last_error_message = f"qwen3_vl_video_summary exited with code {result.returncode}."
                     last_error_detail = err_snippet
                     raise RuntimeError(f"{last_error_message} {err_snippet}")
 
                 if not src_report.exists():
-                    last_error_message = f"Gemini report not found: {src_report}"
+                    last_error_message = f"YouTube summary report not found: {src_report}"
                     raise FileNotFoundError(last_error_message)
                 if not _is_fresh_report(src_report):
-                    last_error_message = f"Gemini report was not updated in this run: {src_report}"
+                    last_error_message = f"YouTube summary report was not updated in this run: {src_report}"
                     raise RuntimeError(last_error_message)
 
                 report_text = src_report.read_text(encoding="utf-8", errors="replace")
-                if len(report_text.strip()) < self.GEMINI_REPORT_MIN_LENGTH:
+                if len(report_text.strip()) < self.YOUTUBE_SUMMARY_REPORT_MIN_LENGTH:
                     last_error_message = (
-                        f"Gemini report content too short (length < {self.GEMINI_REPORT_MIN_LENGTH}). "
+                        f"YouTube summary report content too short (length < {self.YOUTUBE_SUMMARY_REPORT_MIN_LENGTH}). "
                         "Content limit not met."
                     )
                     last_error_detail = f"Content length: {len(report_text.strip())}"
                     raise RuntimeError(last_error_message)
 
-                dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
+                dest_report = output_dir / self.QWEN3VL_YOUTUBE_REPORT_COPY_NAME
                 shutil.copy2(src_report, dest_report)
-                self.log(f"Copied Gemini report to {dest_report}")
+                self.log(f"Copied YouTube summary report to {dest_report}")
                 return
 
             except subprocess.TimeoutExpired as e:
-                last_error_message = "GeminiCLI timed out."
+                last_error_message = "qwen3_vl_video_summary timed out."
                 last_error_detail = str(e)
                 if not self.retry_handler.should_retry(e, attempt):
-                    if _is_fresh_report(src_report) and self._gemini_report_usable(src_report):
-                        dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
+                    if _is_fresh_report(src_report) and self._youtube_summary_report_usable(src_report):
+                        dest_report = output_dir / self.QWEN3VL_YOUTUBE_REPORT_COPY_NAME
                         shutil.copy2(src_report, dest_report)
                         self.log(
-                            "GeminiCLI timed out but report.md was present and valid. "
+                            "qwen3_vl_video_summary timed out but report.md was present and valid. "
                             f"Copied to {dest_report} and continuing."
                         )
                         return
-                    self.log("GeminiCLI timed out. Writing error report and continuing.")
-                    self._write_gemini_error_report(
+                    self.log("qwen3_vl_video_summary timed out. Writing error report and continuing.")
+                    self._write_youtube_summary_error_report(
                         output_dir, last_error_message, last_error_detail
                     )
                     return
                 delay = self.retry_handler.get_delay(attempt)
                 self.log(
-                    f"GeminiCLI timed out. Retrying (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
+                    f"qwen3_vl_video_summary timed out. Retrying (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
                     f"Waiting {delay:.1f}s..."
                 )
                 time.sleep(delay)
@@ -1032,34 +1047,34 @@ class CodexDailyRunner:
             except (RuntimeError, FileNotFoundError) as e:
                 if not last_error_message:
                     last_error_message = str(e)
-                self.log(f"GeminiCLI error: {e}")
+                self.log(f"qwen3_vl_video_summary error: {e}")
                 if not self.retry_handler.should_retry(e, attempt):
-                    if _is_fresh_report(src_report) and self._gemini_report_usable(src_report):
-                        dest_report = output_dir / self.GEMINI_YOUTUBE_REPORT_COPY_NAME
+                    if _is_fresh_report(src_report) and self._youtube_summary_report_usable(src_report):
+                        dest_report = output_dir / self.QWEN3VL_YOUTUBE_REPORT_COPY_NAME
                         shutil.copy2(src_report, dest_report)
                         self.log(
-                            "GeminiCLI failed but report.md was present and valid. "
+                            "qwen3_vl_video_summary failed but report.md was present and valid. "
                             f"Copied to {dest_report} and continuing."
                         )
                         return
                     self.log(
                         "Skipping copy (non-retryable or max retries). Writing error report and continuing."
                     )
-                    self._write_gemini_error_report(
+                    self._write_youtube_summary_error_report(
                         output_dir, last_error_message, last_error_detail
                     )
                     return
                 delay = self.retry_handler.get_delay(attempt)
                 self.log(
-                    f"Retrying GeminiCLI (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
+                    f"Retrying qwen3_vl_video_summary (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
                     f"Waiting {delay:.1f}s..."
                 )
                 time.sleep(delay)
                 attempt += 1
             except Exception as e:
-                self.log(f"GeminiCLI unexpected error (continuing): {e}")
+                self.log(f"qwen3_vl_video_summary unexpected error (continuing): {e}")
                 cause = getattr(e, "__cause__", None)
-                self._write_gemini_error_report(
+                self._write_youtube_summary_error_report(
                     output_dir, str(e), str(cause) if cause else ""
                 )
                 return

@@ -11,7 +11,7 @@
 - タイトル: 手が届く価格で話題！人気ショップ激推しの春アウタースタイル！| B.R. Fashion College Lesson.845 モンテコーレ
 - 公開日時: 2026-02-10T11:00:15+00:00
 - URL: https://www.youtube.com/watch?v=8UzYR9xk6Q8
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_8UzYR9xk6Q8_手が届く価格で話題！人気ショップ激推しの春アウタースタイル！_ B.R. Fashion College Lesson.845 モンテコーレ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_8UzYR9xk6Q8_手が届く価格で話題！人気ショップ激推しの春アウタースタイル！_ B.R. Fashion College Lesson.845 モンテコーレ.mp4`
 
 ## 要約
 

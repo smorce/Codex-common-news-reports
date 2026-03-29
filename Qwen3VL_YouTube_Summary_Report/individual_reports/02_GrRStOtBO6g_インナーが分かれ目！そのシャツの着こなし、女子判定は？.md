@@ -11,7 +11,7 @@
 - タイトル: インナーが分かれ目！そのシャツの着こなし、女子判定は？
 - 公開日時: 2026-03-21T11:00:24+00:00
 - URL: https://www.youtube.com/watch?v=GrRStOtBO6g
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_GrRStOtBO6g_インナーが分かれ目！そのシャツの着こなし、女子判定は？.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_GrRStOtBO6g_インナーが分かれ目！そのシャツの着こなし、女子判定は？.mp4`
 
 ## 要約
 

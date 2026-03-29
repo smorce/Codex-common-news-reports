@@ -11,7 +11,7 @@
 - タイトル: Z世代的！色選びの正解は？大人ほど派手色が似合う説は本当なのか
 - 公開日時: 2026-02-27T11:00:27+00:00
 - URL: https://www.youtube.com/watch?v=-i_0-Ap-gDk
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_-i_0-Ap-gDk_Z世代的！色選びの正解は？大人ほど派手色が似合う説は本当なのか.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_-i_0-Ap-gDk_Z世代的！色選びの正解は？大人ほど派手色が似合う説は本当なのか.mp4`
 
 ## 要約
 

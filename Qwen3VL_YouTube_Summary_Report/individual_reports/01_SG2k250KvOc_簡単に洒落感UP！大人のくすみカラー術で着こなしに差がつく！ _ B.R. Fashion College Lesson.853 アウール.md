@@ -11,7 +11,7 @@
 - タイトル: 簡単に洒落感UP！大人のくすみカラー術で着こなしに差がつく！ | B.R. Fashion College Lesson.853 アウール
 - 公開日時: 2026-03-12T11:00:50+00:00
 - URL: https://www.youtube.com/watch?v=SG2k250KvOc
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_SG2k250KvOc_簡単に洒落感UP！大人のくすみカラー術で着こなしに差がつく！ _ B.R. Fashion College Lesson.853 アウール.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_SG2k250KvOc_簡単に洒落感UP！大人のくすみカラー術で着こなしに差がつく！ _ B.R. Fashion College Lesson.853 アウール.mp4`
 
 ## 要約
 

@@ -11,7 +11,7 @@
 - タイトル: やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪
 - 公開日時: 2026-03-28T11:00:00+00:00
 - URL: https://www.youtube.com/watch?v=wDQvCwbAYXc
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_wDQvCwbAYXc_やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_wDQvCwbAYXc_やっぱりスニーカーはこれが推し！圧倒的上品な白スニでコーデ組んでみた♪.mp4`
 
 ## 要約
 

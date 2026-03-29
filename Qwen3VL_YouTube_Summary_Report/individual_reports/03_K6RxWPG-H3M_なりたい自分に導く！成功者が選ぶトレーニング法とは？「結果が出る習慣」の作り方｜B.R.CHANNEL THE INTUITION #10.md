@@ -11,7 +11,7 @@
 - タイトル: なりたい自分に導く！成功者が選ぶトレーニング法とは？「結果が出る習慣」の作り方｜B.R.CHANNEL THE INTUITION #10
 - 公開日時: 2026-03-08T11:00:29+00:00
 - URL: https://www.youtube.com/watch?v=K6RxWPG-H3M
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_K6RxWPG-H3M_なりたい自分に導く！成功者が選ぶトレーニング法とは？「結果が出る習慣」の作り方｜B.R.CHANNEL THE INTUITION #10.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_K6RxWPG-H3M_なりたい自分に導く！成功者が選ぶトレーニング法とは？「結果が出る習慣」の作り方｜B.R.CHANNEL THE INTUITION #10.mp4`
 
 ## 要約
 

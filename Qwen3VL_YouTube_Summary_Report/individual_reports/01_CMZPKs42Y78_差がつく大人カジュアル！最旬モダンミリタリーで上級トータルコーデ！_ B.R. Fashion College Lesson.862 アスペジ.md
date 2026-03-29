@@ -11,7 +11,7 @@
 - タイトル: 差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！| B.R. Fashion College Lesson.862 アスペジ
 - 公開日時: 2026-03-26T11:00:00+00:00
 - URL: https://www.youtube.com/watch?v=CMZPKs42Y78
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4`
 
 ## 要約
 
@@ -22,7 +22,7 @@
 エラー: RuntimeError: Gemini CLI execution failed.
 Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
 Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Gemini_YouTube_Summary_Report/mp4/01_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
+Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/01_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
 
 ⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
 解決方法: しばらく待ってから再試行してください
@@ -57,7 +57,7 @@ An unexpected critical error occurred:[object Object]
 詳細: Gemini CLI execution failed.
 Command: C:\Users\kbpsh\AppData\Roaming\npm\gemini.CMD -m gemini-2.5-pro --output-format json [stdin input]
 Return code: 1
-Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Gemini_YouTube_Summary_Report/mp4/01_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
+Video file: C:/Users/kbpsh/OneDrive/development/project/Codex_common_news_reports/Qwen3VL_YouTube_Summary_Report/mp4/01_CMZPKs42Y78_差がつく大人カジュアル！最旬モダンミリタリーで上級トータルコーデ！_ B.R. Fashion College Lesson.862 アスペジ.mp4
 
 ⚠️ レート制限またはクォータ制限の可能性があります（429エラー）
 解決方法: しばらく待ってから再試行してください

@@ -11,7 +11,7 @@
 - タイトル: 春夏オトナのニット革命！注目のブランドで上品×涼しげニットTの着こなし | B.R. Fashion College Lesson.855 フィリッポ デ ローレンティス
 - 公開日時: 2026-03-17T11:01:13+00:00
 - URL: https://www.youtube.com/watch?v=i6P7AgxY6rM
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_i6P7AgxY6rM_春夏オトナのニット革命！注目のブランドで上品×涼しげニットTの着こなし _ B.R. Fashion College Lesson.855 フィリッポ デ ローレンティス.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_i6P7AgxY6rM_春夏オトナのニット革命！注目のブランドで上品×涼しげニットTの着こなし _ B.R. Fashion College Lesson.855 フィリッポ デ ローレンティス.mp4`
 
 ## 要約
 

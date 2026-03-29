@@ -11,7 +11,7 @@
 - タイトル: BR大人気ニット新ver.登場！ 大人の色気を纏う…上質スタイルの作り方！ | B.R. Fashion College Lesson.847 BR by B.R.SHOP
 - 公開日時: 2026-02-19T11:00:12+00:00
 - URL: https://www.youtube.com/watch?v=99FlbB49di0
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_99FlbB49di0_BR大人気ニット新ver.登場！ 大人の色気を纏う…上質スタイルの作り方！ _ B.R. Fashion College Lesson.847 BR by B.R.SHOP.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_99FlbB49di0_BR大人気ニット新ver.登場！ 大人の色気を纏う…上質スタイルの作り方！ _ B.R. Fashion College Lesson.847 BR by B.R.SHOP.mp4`
 
 ## 要約
 

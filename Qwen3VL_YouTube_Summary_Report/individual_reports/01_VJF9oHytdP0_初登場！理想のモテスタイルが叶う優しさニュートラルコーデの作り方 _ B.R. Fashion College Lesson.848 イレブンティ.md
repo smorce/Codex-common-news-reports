@@ -11,7 +11,7 @@
 - タイトル: 初登場！理想のモテスタイルが叶う優しさニュートラルコーデの作り方 | B.R. Fashion College Lesson.848 イレブンティ
 - 公開日時: 2026-02-20T11:01:01+00:00
 - URL: https://www.youtube.com/watch?v=VJF9oHytdP0
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\01_VJF9oHytdP0_初登場！理想のモテスタイルが叶う優しさニュートラルコーデの作り方 _ B.R. Fashion College Lesson.848 イレブンティ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\01_VJF9oHytdP0_初登場！理想のモテスタイルが叶う優しさニュートラルコーデの作り方 _ B.R. Fashion College Lesson.848 イレブンティ.mp4`
 
 ## 要約
 

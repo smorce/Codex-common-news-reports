@@ -11,7 +11,7 @@
 - タイトル: 大人の鉄板パンツ！新作ジャブス最旬コーデ5選で着こなしの幅が広がる！| B.R. Fashion College Lesson.860 ジャブスアルキヴィオ
 - 公開日時: 2026-03-24T11:01:37+00:00
 - URL: https://www.youtube.com/watch?v=silOJB8pYiE
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_silOJB8pYiE_大人の鉄板パンツ！新作ジャブス最旬コーデ5選で着こなしの幅が広がる！_ B.R. Fashion College Lesson.860 ジャブスアルキヴィオ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_silOJB8pYiE_大人の鉄板パンツ！新作ジャブス最旬コーデ5選で着こなしの幅が広がる！_ B.R. Fashion College Lesson.860 ジャブスアルキヴィオ.mp4`
 
 ## 要約
 

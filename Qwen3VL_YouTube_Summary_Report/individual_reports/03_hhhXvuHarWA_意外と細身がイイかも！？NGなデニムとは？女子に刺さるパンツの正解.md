@@ -11,7 +11,7 @@
 - タイトル: 意外と細身がイイかも！？NGなデニムとは？女子に刺さるパンツの正解
 - 公開日時: 2026-02-13T11:01:18+00:00
 - URL: https://www.youtube.com/watch?v=hhhXvuHarWA
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_hhhXvuHarWA_意外と細身がイイかも！？NGなデニムとは？女子に刺さるパンツの正解.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_hhhXvuHarWA_意外と細身がイイかも！？NGなデニムとは？女子に刺さるパンツの正解.mp4`
 
 ## 要約
 

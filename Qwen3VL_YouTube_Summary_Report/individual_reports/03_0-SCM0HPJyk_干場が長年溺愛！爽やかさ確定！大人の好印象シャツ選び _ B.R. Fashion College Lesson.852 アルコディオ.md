@@ -11,7 +11,7 @@
 - タイトル: 干場が長年溺愛！爽やかさ確定！大人の好印象シャツ選び | B.R. Fashion College Lesson.852 アルコディオ
 - 公開日時: 2026-03-11T11:00:02+00:00
 - URL: https://www.youtube.com/watch?v=0-SCM0HPJyk
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_0-SCM0HPJyk_干場が長年溺愛！爽やかさ確定！大人の好印象シャツ選び _ B.R. Fashion College Lesson.852 アルコディオ.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_0-SCM0HPJyk_干場が長年溺愛！爽やかさ確定！大人の好印象シャツ選び _ B.R. Fashion College Lesson.852 アルコディオ.mp4`
 
 ## 要約
 

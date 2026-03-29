@@ -11,7 +11,7 @@
 - タイトル: AIでファッション戦略！？店舗売上を予測する時代、日本は世界に敵うのか？｜B.R.CHANNEL THE INTUITION #9
 - 公開日時: 2026-02-22T11:00:04+00:00
 - URL: https://www.youtube.com/watch?v=3QMNfhlkYRA
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\02_3QMNfhlkYRA_AIでファッション戦略！？店舗売上を予測する時代、日本は世界に敵うのか？｜B.R.CHANNEL THE INTUITION #9.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\02_3QMNfhlkYRA_AIでファッション戦略！？店舗売上を予測する時代、日本は世界に敵うのか？｜B.R.CHANNEL THE INTUITION #9.mp4`
 
 ## 要約
 

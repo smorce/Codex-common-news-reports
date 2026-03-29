@@ -11,7 +11,7 @@
 - タイトル: 首元で印象アップ♪マフラー＆ストールで女子モテ2月コーデ！Press Room 108
 - 公開日時: 2026-02-11T11:00:06+00:00
 - URL: https://www.youtube.com/watch?v=4aDfIZJdj9Y
-- 解析に使ったファイル: `Gemini_YouTube_Summary_Report\mp4\03_4aDfIZJdj9Y_首元で印象アップ♪マフラー＆ストールで女子モテ2月コーデ！Press Room 108.mp4`
+- 解析に使ったファイル: `Qwen3VL_YouTube_Summary_Report\mp4\03_4aDfIZJdj9Y_首元で印象アップ♪マフラー＆ストールで女子モテ2月コーデ！Press Room 108.mp4`
 
 ## 要約
 
