@@ -38,6 +38,7 @@ from urllib.parse import parse_qs, urlparse
 from zoneinfo import ZoneInfo
 
 import feedparser
+import requests
 
 
 # ----------------------------------
@@ -83,6 +84,97 @@ PIXEL_BASE = 32 * 32
 VRAM_24G_MAX_PIXELS_PER_FRAME = 22 * PIXEL_BASE
 VRAM_24G_TOTAL_PIXELS_CAP = 3000 * PIXEL_BASE
 VRAM_24G_FPS_CAP = 0.25
+
+# YouTube RSS: feedparser に URL を直渡しすると User-Agent が弱く、空レスになることがある
+RSS_REQUEST_TIMEOUT_SEC = 30
+RSS_RETRY_MAX = 3
+RSS_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+)
+
+
+def fetch_youtube_rss_feed(rss_url: str) -> bytes:
+    """
+    YouTube チャンネル RSS を HTTP で取得する。
+    feedparser.parse(URL) の内部取得では 403 や空ボディになりやすいため、ブラウザ相当のヘッダで取る。
+    """
+    last_exc: BaseException | None = None
+    for attempt in range(1, RSS_RETRY_MAX + 1):
+        try:
+            r = requests.get(
+                rss_url,
+                timeout=RSS_REQUEST_TIMEOUT_SEC,
+                headers={
+                    "User-Agent": RSS_USER_AGENT,
+                    "Accept": "application/xml, text/xml, application/rss+xml, */*;q=0.9",
+                    "Accept-Language": "en-US,en;q=0.9",
+                },
+            )
+            r.raise_for_status()
+            if not r.content:
+                raise RuntimeError("Empty RSS response body")
+            return r.content
+        except Exception as e:
+            last_exc = e
+            if attempt < RSS_RETRY_MAX:
+                time.sleep(1.0 * attempt)
+    raise RuntimeError(
+        f"Failed to fetch RSS after {RSS_RETRY_MAX} attempts: {rss_url!r}"
+    ) from last_exc
+
+
+def _channel_videos_page_url(channel_url: str) -> str:
+    """チャンネルページ URL に /videos を付けてアップロード一覧用の URL にする。"""
+    u = channel_url.strip().rstrip("/")
+    if u.endswith("/videos"):
+        return u
+    return f"{u}/videos"
+
+
+def get_latest_video_urls_via_ytdlp(channel_url: str, n: int) -> list[tuple[str, str]]:
+    """
+    RSS が 404 や空になる場合の代替: yt-dlp のフラットプレイリストで最新 n 本を取得する。
+    （プロジェクト前提どおり yt-dlp が利用可能であること。）
+    """
+    if n < 1:
+        raise ValueError("n must be >= 1")
+    page = _channel_videos_page_url(channel_url)
+    cp = run(
+        [
+            "yt-dlp",
+            "--no-warnings",
+            "--quiet",
+            "--flat-playlist",
+            "--print",
+            "%(title)s\t%(url)s",
+            "--playlist-items",
+            f"1:{n}",
+            page,
+        ],
+        check=False,
+        capture=True,
+        text=True,
+    )
+    if cp.returncode != 0:
+        err = (cp.stderr or "").strip() or (cp.stdout or "").strip() or "(no output)"
+        raise RuntimeError(f"yt-dlp flat-playlist failed (exit {cp.returncode}): {err}")
+
+    out: list[tuple[str, str]] = []
+    for line in (cp.stdout or "").splitlines():
+        line = line.strip()
+        if not line or "\t" not in line:
+            continue
+        title, url = line.split("\t", 1)
+        title = title.strip()
+        url = url.strip()
+        if url.startswith("http"):
+            out.append((url, title))
+    if len(out) < n:
+        raise RuntimeError(
+            f"yt-dlp returned only {len(out)} video(s), need {n}: {page!r}"
+        )
+    return out[:n]
 
 
 def run(
@@ -248,20 +340,36 @@ def get_latest_video_urls_from_channel(channel_url: str, n: int = 1) -> list[tup
             "(expected .../channel/UC...)"
         )
     rss = rss_url_for_channel_id(cid)
-    feed = feedparser.parse(rss)
-    if getattr(feed, "bozo", False) and not feed.entries:
-        raise RuntimeError(f"RSS parse failed or empty: {rss}")
-    out: list[tuple[str, str]] = []
-    for e in feed.entries[:n]:
-        link = (getattr(e, "link", None) or "").strip()
-        title = (getattr(e, "title", None) or "").strip()
-        if link:
-            out.append((link, title))
-    if len(out) < n:
-        raise RuntimeError(
-            f"Not enough videos in RSS (wanted {n}, got {len(out)}): {rss}"
+    feed = None
+    try:
+        raw = fetch_youtube_rss_feed(rss)
+        feed = feedparser.parse(raw)
+    except RuntimeError as e:
+        print(f"[WARNING] RSS fetch failed; falling back to yt-dlp: {e}", file=sys.stderr)
+
+    if feed is not None and feed.entries:
+        out: list[tuple[str, str]] = []
+        for e in feed.entries[:n]:
+            link = (getattr(e, "link", None) or "").strip()
+            title = (getattr(e, "title", None) or "").strip()
+            if link:
+                out.append((link, title))
+        if len(out) >= n:
+            return out[:n]
+        print(
+            f"[WARNING] RSS had only {len(out)} usable entries (need {n}); "
+            "falling back to yt-dlp.",
+            file=sys.stderr,
         )
-    return out
+    elif feed is not None:
+        bozo_ex = getattr(feed, "bozo_exception", None)
+        print(
+            f"[WARNING] RSS had no entries (bozo={getattr(feed, 'bozo', None)!r}, "
+            f"bozo_exception={bozo_ex!r}); falling back to yt-dlp.",
+            file=sys.stderr,
+        )
+
+    return get_latest_video_urls_via_ytdlp(channel_url, n)
 
 
 def video_id_from_watch_url(url: str) -> str | None:
