@@ -40,7 +40,9 @@ from zoneinfo import ZoneInfo
 import feedparser
 
 
-
+# ----------------------------------
+# 設定値
+# ----------------------------------
 MODEL_NAME = "Qwen/Qwen3-VL-4B-Instruct"
 
 DEFAULT_CHANNEL_URL = "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g"
@@ -52,7 +54,7 @@ DEFAULT_NUM_VIDEOS = 3
 DEFAULT_MAX_NEW_TOKENS = 2048
 
 PROMPT_DEFAULT = (
-    "日本語で実践的なレポートを生成してください。「例えば…」を使い極力具体的な回答にしてください。出力はJSON形式で提示してください。",
+    "日本語で実践的なレポートを生成してください。「例えば…」や固有名詞を使い極力具体的な回答にしてください。出力はJSON形式で提示してください。",
     "",
     "### 出力形式",
     "",
