@@ -37,6 +37,50 @@ from zoneinfo import ZoneInfo
 
 import feedparser
 
+
+
+MODEL_NAME = "Qwen/Qwen3-VL-4B-Instruct"
+
+DEFAULT_CHANNEL_URL = "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g"
+
+# RSS から取得して要約する本数の既定値（チャンネルモード）
+DEFAULT_NUM_VIDEOS = 3
+
+# 要約が途中で切れないよう、新規生成トークン上限を十分に取る（旧 256 では日本語長文が不足しがち）
+DEFAULT_MAX_NEW_TOKENS = 2048
+
+PROMPT_DEFAULT = (
+    "日本語で実践的なレポートを生成してください。「例えば…」を使い極力具体的な回答にしてください。出力はJSON形式で提示してください。",
+    "",
+    "### 出力形式",
+    "",
+    "<<<JSON_OUTPUT",
+    "{",
+    '  "summary": "動画の内容を説明（400〜500字）",',
+    '  "key_points": [',
+    '    "ポイント1",',
+    '    "ポイント2",',
+    '    "ポイント3",',
+    '    "ポイント4",',
+    '    "ポイント5",',
+    '  ],',
+    '  "conclusion": "動画の核心メッセージを1〜2文で",',
+    '  "recommended_action": "視聴者への具体的なアクション1つ"',
+    "}",
+    "JSON_OUTPUT>>>",
+)
+
+# Qwen3-VL README では total_pixels は 24576 * 32 * 32 未満を推奨
+QWEN3_VL_TOTAL_PIXELS_RECOMMENDED_MAX = 24576 * 32 * 32
+PIXEL_BASE = 32 * 32
+
+# 24GB 級 VRAM で長尺動画時に OOM しにくいよう、qwen_vl_utils の警告に合わせて上限制御
+# （「max_pixels exceeds limit」のログを避けるため、おおよそ 22 * (32*32) 相当に抑える）
+VRAM_24G_MAX_PIXELS_PER_FRAME = 22 * PIXEL_BASE
+VRAM_24G_TOTAL_PIXELS_CAP = 3000 * PIXEL_BASE
+VRAM_24G_FPS_CAP = 0.25
+
+
 def run(
     cmd: list[str],
     *,
@@ -263,48 +307,6 @@ def sanitize_filename_part(s: str, max_len: int = 80) -> str:
     if len(s) > max_len:
         s = s[:max_len]
     return s or "video"
-
-
-MODEL_NAME = "Qwen/Qwen3-VL-4B-Instruct"
-
-DEFAULT_CHANNEL_URL = "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g"
-
-# RSS から取得して要約する本数の既定値（チャンネルモード）
-DEFAULT_NUM_VIDEOS = 3
-
-# 要約が途中で切れないよう、新規生成トークン上限を十分に取る（旧 256 では日本語長文が不足しがち）
-DEFAULT_MAX_NEW_TOKENS = 2048
-
-PROMPT_DEFAULT = (
-    "日本語で極力具体的な実践的なレポートを生成してください。出力はJSON形式で提示してください。",
-    "",
-    "### 出力形式",
-    "",
-    "<<<JSON_OUTPUT",
-    "{",
-    '  "summary": "動画の内容を説明（400〜500字）",',
-    '  "key_points": [',
-    '    "ポイント1",',
-    '    "ポイント2",',
-    '    "ポイント3",',
-    '    "ポイント4",',
-    '    "ポイント5",',
-    '  ],',
-    '  "conclusion": "動画の核心メッセージを1〜2文で",',
-    '  "recommended_action": "視聴者への具体的なアクション1つ"',
-    "}",
-    "JSON_OUTPUT>>>",
-)
-
-# Qwen3-VL README では total_pixels は 24576 * 32 * 32 未満を推奨
-QWEN3_VL_TOTAL_PIXELS_RECOMMENDED_MAX = 24576 * 32 * 32
-PIXEL_BASE = 32 * 32
-
-# 24GB 級 VRAM で長尺動画時に OOM しにくいよう、qwen_vl_utils の警告に合わせて上限制御
-# （「max_pixels exceeds limit」のログを避けるため、おおよそ 22 * (32*32) 相当に抑える）
-VRAM_24G_MAX_PIXELS_PER_FRAME = 22 * PIXEL_BASE
-VRAM_24G_TOTAL_PIXELS_CAP = 3000 * PIXEL_BASE
-VRAM_24G_FPS_CAP = 0.25
 
 
 @dataclass
