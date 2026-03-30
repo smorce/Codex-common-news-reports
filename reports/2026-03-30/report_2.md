@@ -1,0 +1,99 @@
+# AI Common Report (https://ai-news.dev/)
+
+- Generated at: 2026-03-30T09:02:47+09:00
+- Articles: 3
+
+## Prompt→Context→Harness、全部やった。要件だけ渡す、変わっても壊れない。整合性駆動開発CoDD爆誕
+- Date: 2026-03-29
+
+### Executive Summary
+- AI開発の方法論はプロンプト→コンテキスト→ハーネスへ変遷したと整理している。
+- 三つを通過した先に「整合性維持」という未解決の課題があったと述べる。
+- その課題を解くためのツールとしてCoDDを提示し、codd-devとして公開した。
+- LMS案件で要件と制約だけを渡し、設計書18本・全コード・全テストをAI生成したと報告。
+- 設計判断が途中で変わっても破綻しなかった点を強調する。
+- CoDDはハーネスエンジニアリング内でAI成果物の整合性維持を担う位置づけ。
+- Spec KitやOpenSpecが開始方法に答えるのに対し、CoDDは変更時の継続を扱うと説明。
+
+### Key Findings
+- AI開発手法はプロンプト→コンテキスト→ハーネスの順で変遷したと整理している。 [^]
+  - Footnote: AI開発の方法論がこの2年で3回変わった。プロンプトエンジニアリング、コンテキストエンジニアリング、ハーネスエンジニアリング。
+- CoDDツールを公開し、LMS案件で要件・制約だけから設計書18本と全コード・全テストをAI生成した。 [^]
+  - Footnote: pip install codd-dev で公開した。結果、クライアント案件のLMSで要件と制約だけ渡して、設計書18本・全コード・全テストをAIに生成させた。
+- 設計判断の変更があってもシステムが壊れなかったと報告している。 [^]
+  - Footnote: 途中で設計判断が変わっても、壊れなかった。
+- CoDDはハーネス内の「整合性維持」レイヤーを担うと位置づける。 [^]
+  - Footnote: CoDDはハーネスエンジニアリングの一部だ。ハーネスの中で、まだ誰も手を付けていなかった「整合性維持」というレイヤーを担う。
+- 仕様駆動ツールが開始方法を教えるのに対し、CoDDは変更時の継続を解くと説明する。 [^]
+  - Footnote: 仕様駆動のツールは「最初にどう作るか」を教えてくれる。CoDDは「途中で変わった時にどうするか」を解く。
+- Spec Kit/OpenSpecが開始に答えるなら、CoDDは変更時に進め続ける方法に答えると述べる。 [^]
+  - Footnote: Spec KitやOpenSpecが "how do I start?" に答えるなら、CoDDは "how do I keep going when things change?" に答える。
+- CoDDの基盤は要件を構造化し言語化する力だと主張している。 [^]
+  - Footnote: CoDDの根底にあるのは「要件を構造化して言語化する力」だ。
+
+### References
+- https://zenn.dev/shio_shoppaize/articles/shogun-codd-coherence
+
+## 楽天が方針転換？　「Rakuten AI 3.0はDeepSeekベース」と認める
+- Date: 2026-03-29T19:59+09:00
+
+### Executive Summary
+- Rakuten AI 3.0のベースがDeepSeekではないかという指摘がSNSで炎上した経緯を整理。
+- 楽天は当初ベースモデルを非開示としていたが、その後DeepSeek採用を認めた。
+- Rakuten AIは既存のオープンモデルを日本語に最適化する形で開発されると説明。
+- 初期はMistral AIモデルをベースとして公表していた点が比較される。
+- リポジトリ内容や著作権表示からDeepSeekベースとの指摘が広がったと記す。
+- 3月27日に広報がDeepSeekオープンモデル採用と回答したと報告。
+- オープンソース重要性と国内企業の学習環境への貢献を理由として挙げている。
+
+### Key Findings
+- 3月17日の発表後、DeepSeekベースとの指摘が相次ぎSNSで炎上した。 [^]
+  - Footnote: 楽天グループが3月17日に発表した「Rakuten AI 3.0」が、実際には中国製のDeepSeekをベースにしているとの指摘が相次ぎ、SNSで「炎上」する騒ぎがありました。
+- 当初はベースモデルを非開示としつつ、後にDeepSeekであることを認めた。 [^]
+  - Footnote: 当初、楽天はベースモデルについて非開示としていたようですが、後になってDeepSeekであることを認めています。
+- Rakuten AIは既存オープンモデルをベースに日本語最適化して開発される。 [^]
+  - Footnote: 既存のオープンモデルをベースに日本語に最適化する形で開発されています。
+- 初期版はMistral AIを公表していたのに対し、3.0は詳細を伏せていた。 [^]
+  - Footnote: 初期のバージョンでは仏Mistral AI社のモデルがベースと公表していたのに対し、Rakuten AI 3.0では「オープンソースコミュニティ上の最良なモデル」と詳細を伏せていた
+- リポジトリのDeepSeek著作権表示がベース推測の根拠になった。 [^]
+  - Footnote: Rakuten AI 3.0のリポジトリに存在するDeepSeekの著作権表示。
+- 3月27日に広報がDeepSeekオープンモデル採用と回答した。 [^]
+  - Footnote: 3月27日になって広報から「Rakuten AI 3.0においてはDeepSeekのオープンモデルを採用した」との回答がありました。
+- 回答理由としてOSS重要性と国内企業の学習環境づくりへの貢献を挙げた。 [^]
+  - Footnote: AIのオープンソースの重要性の認識に加え、AIコミュニティおよび、日本の全企業が最新AI技術を習得し、独自のインテリジェンスを構築できる環境づくりへの貢献を目指す総合的な判断
+
+### References
+- https://news.yahoo.co.jp/expert/articles/d014ddc69f3bbec265b5e5f74efca652937a8ba7
+
+## HashiCorp Agent Skills terraform-search-importで既存リソースをインポートしてみた(Claude Code × Terraform)
+- Date: 2026-03-29
+
+### Executive Summary
+- HashiCorp Agent Skillsのterraform-search-importで既存リソースを検出しTerraformに取り込む手順を紹介。
+- Claude CodeでCloudWatch Logsのロググループを検出してインポートする実験を行う。
+- Agent SkillsはTerraform操作を効率化する公式スキル集と説明。
+- terraform-search-importはTerraform 1.14のterraform queryを用いてリソース検出を行う。
+- .tfquery.hclにクエリを定義し宣言的に検出する流れを示す。
+- planで10件のインポートを確認し、applyで10件完了したと報告。
+- 手動のterraform importより効率化でき、初心者でも移行に取り組みやすいと結論づける。
+
+### Key Findings
+- 既存リソース検出からTerraformインポートまでを行うterraform-search-importがある。 [^]
+  - Footnote: 既存クラウドリソースの検出からTerraformインポートまでを行う terraform-search-import というスキルがあります。
+- Claude CodeでCloudWatch Logsのロググループを検出しインポートした。 [^]
+  - Footnote: AWS CLIで作成したAmazon CloudWatch Logsのロググループを検出し、Terraform管理下にインポートしてみます。
+- Agent SkillsはAIエージェントのTerraform操作を効率化する公式スキル集。 [^]
+  - Footnote: HashiCorp Agent Skillsは、AIエージェント（Claude Code等）がTerraformの操作を効率的に行うための公式スキル集です。
+- terraform-search-importはTerraform 1.14のterraform queryでリソース検出を行う。 [^]
+  - Footnote: Terraform 1.14で追加された terraform query コマンドを活用し、既存のクラウドリソースを宣言的に検出してTerraform管理下にインポートするスキルです。
+- 主な用途に、手動作成リソースの取り込みや棚卸し・監査が挙がる。 [^]
+  - Footnote: 手動で作成したリソースをTerraform管理下に取り込む
+- 計画段階で10件のインポートが示された。 [^]
+  - Footnote: Plan: 10 to import, 0 to add, 0 to change, 0 to destroy.
+- 適用結果として10件のインポート完了が示された。 [^]
+  - Footnote: Apply complete! Resources: 10 imported, 0 added, 0 changed, 0 destroyed.
+- Claude Codeに依頼するだけでサポート確認からコード生成まで実行できると述べる。 [^]
+  - Footnote: Claude Codeにインポートしたい旨を伝えるだけで、サポート状況の確認からクエリ作成、コード生成までを一連の流れで実行してくれます。
+
+### References
+- https://dev.classmethod.jp/articles/terraform-search-import-skill-claude-code/
