@@ -25,10 +25,12 @@ yt-dlp でダウンロードして要約、Markdown レポートに保存する�
 """
 
 import argparse
+import gc
 import json
 import re
 import subprocess
 import sys
+import time
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -168,6 +170,49 @@ def download_mp4_simple(video_url: str, out_path: Path) -> Path:
 
     print(f"[INFO] Downloaded: {mp4} ({mp4.stat().st_size / (1024 * 1024):.2f} MB)", file=sys.stderr)
     return mp4
+
+
+def delete_downloaded_video_permanently(video_path: Path) -> None:
+    """
+    要約用にダウンロードした動画を完全削除する。
+    pathlib.Path.unlink() はゴミ箱を使わずファイルを消す（Windows でも $Recycle.Bin には入らない）。
+    同じ stem の副次ファイル（例: yt-dlp の残骸）も可能な範囲で削除する。
+    """
+    video_path = video_path.resolve()
+    stem = video_path.stem
+    parent = video_path.parent
+    candidates = sorted(parent.glob(f"{stem}.*"))
+
+    for attempt in range(3):
+        gc.collect()
+        try:
+            import torch
+
+            if torch.cuda.is_available():
+                torch.cuda.empty_cache()
+        except Exception:
+            pass
+
+        failed: list[Path] = []
+        for p in candidates:
+            if not p.exists():
+                continue
+            try:
+                p.unlink()
+            except PermissionError:
+                failed.append(p)
+            except OSError as e:
+                print(f"[WARNING] Failed to delete file {p}: {e}", file=sys.stderr)
+
+        if not failed:
+            return
+        candidates = failed
+        if attempt < 2:
+            time.sleep(0.5)
+
+    for p in candidates:
+        if p.exists():
+            print(f"[WARNING] Could not delete (file may be in use): {p}", file=sys.stderr)
 
 
 def local_path_for_qwen_video(local_path: Path) -> str:
@@ -737,29 +782,32 @@ def main() -> None:
         mp4_path = download_mp4_simple(video_url, out_base)
         video_uri = local_path_for_qwen_video(mp4_path)
 
-        if args.dry_run:
-            print("\n=== dry-run: skip model inference ===")
-            print(f"video_uri: {video_uri}")
-            return
+        try:
+            if args.dry_run:
+                print("\n=== dry-run: skip model inference ===")
+                print(f"video_uri: {video_uri}")
+                return
 
-        summary, _budget = generate_video_summary(
-            model_name=args.model,
-            video_uri=video_uri,
-            user_prompt=args.prompt,
-            max_new_tokens=args.max_new_tokens,
-        )
-        print("\n=== Summary ===")
-        print(summary)
-        vid = video_id_from_watch_url(video_url) or "video"
-        out = args.output or default_report_path()
-        write_markdown_report(
-            out,
-            channel_url="(single URL)",
-            model_name=args.model,
-            entries=[(video_url, vid, summary)],
-            generated_at_iso=generated_at,
-        )
-        print(f"\n[INFO] Report written: {out}", file=sys.stderr)
+            summary, _budget = generate_video_summary(
+                model_name=args.model,
+                video_uri=video_uri,
+                user_prompt=args.prompt,
+                max_new_tokens=args.max_new_tokens,
+            )
+            print("\n=== Summary ===")
+            print(summary)
+            vid = video_id_from_watch_url(video_url) or "video"
+            out = args.output or default_report_path()
+            write_markdown_report(
+                out,
+                channel_url="(single URL)",
+                model_name=args.model,
+                entries=[(video_url, vid, summary)],
+                generated_at_iso=generated_at,
+            )
+            print(f"\n[INFO] Report written: {out}", file=sys.stderr)
+        finally:
+            delete_downloaded_video_permanently(mp4_path)
         return
 
     # --- チャンネル RSS: 複数本 ---
@@ -787,20 +835,23 @@ def main() -> None:
         mp4_path = download_mp4_simple(video_url, out_base)
         video_uri = local_path_for_qwen_video(mp4_path)
 
-        print(f"[INFO] ({i + 1}/{len(pairs)}) Summarizing…", file=sys.stderr)
-        summary, _budget = infer_one_video(
-            model,
-            processor,
-            video_uri,
-            args.prompt,
-            print_budget=(i == 0),
-            max_new_tokens=args.max_new_tokens,
-        )
-        report_entries.append((video_url, title, summary))
-        torch.cuda.empty_cache()
+        try:
+            print(f"[INFO] ({i + 1}/{len(pairs)}) Summarizing…", file=sys.stderr)
+            summary, _budget = infer_one_video(
+                model,
+                processor,
+                video_uri,
+                args.prompt,
+                print_budget=(i == 0),
+                max_new_tokens=args.max_new_tokens,
+            )
+            report_entries.append((video_url, title, summary))
+            torch.cuda.empty_cache()
 
-        print(f"\n=== Summary {i + 1}/{len(pairs)} ===")
-        print(summary)
+            print(f"\n=== Summary {i + 1}/{len(pairs)} ===")
+            print(summary)
+        finally:
+            delete_downloaded_video_permanently(mp4_path)
 
     out = args.output or default_report_path()
     write_markdown_report(
