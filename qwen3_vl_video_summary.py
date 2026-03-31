@@ -44,7 +44,8 @@ import requests
 # ----------------------------------
 # 設定値
 # ----------------------------------
-MODEL_NAME = "Qwen/Qwen3-VL-4B-Instruct"
+# MODEL_NAME = "Qwen/Qwen3-VL-4B-Instruct"
+MODEL_NAME = "ricoh-ai/Qwen-3-VL-Ricoh-8B-20260227"
 
 DEFAULT_CHANNEL_URL = "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g"
 
@@ -79,10 +80,13 @@ PROMPT_DEFAULT = (
 QWEN3_VL_TOTAL_PIXELS_RECOMMENDED_MAX = 24576 * 32 * 32
 PIXEL_BASE = 32 * 32
 
-# 24GB 級 VRAM で長尺動画時に OOM しにくいよう、qwen_vl_utils の警告に合わせて上限制御
-# （「max_pixels exceeds limit」のログを避けるため、おおよそ 22 * (32*32) 相当に抑える）
+# 24GB 級 VRAM で長尺動画時に OOM しにくいよう上限制御
+# qwen_vl_utils.fetch_video は max_pixels を total_pixels/nframes*2 以下にクランプする。
+# 長尺で nframes が数百になると注意メモリが膨らみ 8B でも OOM しやすいため、max_frames でフレーム数を明示上限する。
+# （qwen_vl_utils: FRAME_FACTOR=2 のため偶数にする）
+VRAM_24G_MAX_FRAMES = 96
 VRAM_24G_MAX_PIXELS_PER_FRAME = 22 * PIXEL_BASE
-VRAM_24G_TOTAL_PIXELS_CAP = 3000 * PIXEL_BASE
+VRAM_24G_TOTAL_PIXELS_CAP = 2500 * PIXEL_BASE
 VRAM_24G_FPS_CAP = 0.25
 
 # YouTube RSS: feedparser に URL を直渡しすると User-Agent が弱く、空レスになることがある
@@ -474,6 +478,7 @@ class VideoBudget:
     free_gb: float
     total_gb: float
     free_ratio: float
+    max_frames: int | None = None
 
 
 def round_to_multiple(value: int, base: int) -> int:
@@ -557,6 +562,7 @@ def choose_video_budget_for_rtx4090(
         free_gb=free_gb,
         total_gb=total_gb,
         free_ratio=free_ratio,
+        max_frames=None,
     )
 
 
@@ -582,22 +588,26 @@ def clamp_budget_for_single_gpu_24gb(budget: VideoBudget) -> VideoBudget:
         free_gb=budget.free_gb,
         total_gb=budget.total_gb,
         free_ratio=budget.free_ratio,
+        max_frames=VRAM_24G_MAX_FRAMES,
     )
 
 
 def build_messages(video_uri: str, user_prompt: str, budget: VideoBudget):
+    video_ele: dict = {
+        "type": "video",
+        "video": video_uri,
+        "fps": budget.fps,
+        "min_pixels": budget.min_pixels,
+        "max_pixels": budget.max_pixels,
+        "total_pixels": budget.total_pixels,
+    }
+    if budget.max_frames is not None:
+        video_ele["max_frames"] = budget.max_frames
     return [
         {
             "role": "user",
             "content": [
-                {
-                    "type": "video",
-                    "video": video_uri,
-                    "fps": budget.fps,
-                    "min_pixels": budget.min_pixels,
-                    "max_pixels": budget.max_pixels,
-                    "total_pixels": budget.total_pixels,
-                },
+                video_ele,
                 {
                     "type": "text",
                     "text": user_prompt,
@@ -649,6 +659,8 @@ def infer_one_video(
         print(f"min_pixels   : {budget.min_pixels}")
         print(f"max_pixels   : {budget.max_pixels}")
         print(f"total_pixels : {budget.total_pixels}")
+        if budget.max_frames is not None:
+            print(f"max_frames   : {budget.max_frames}")
 
     messages = build_messages(video_uri, user_prompt, budget)
 
@@ -701,6 +713,10 @@ def infer_one_video(
         skip_special_tokens=True,
         clean_up_tokenization_spaces=False,
     )
+
+    del inputs, generated_ids, generated_ids_trimmed
+    gc.collect()
+    torch.cuda.empty_cache()
 
     return output_text[0], budget
 
