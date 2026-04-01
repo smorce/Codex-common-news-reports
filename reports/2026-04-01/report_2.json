@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-04-01T09:52:41.8378344+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://about.mercari.com/ai-policy/",
+      "title": "メルカリグループ AI活用基本ポリシー | 株式会社メルカリ",
+      "date": null,
+      "executive_summary": [
+        "AIの可能性を最大限に引き出し、リスク管理とイノベーションの両立を目的とする基本方針を示している。",
+        "ミッション達成のためにAIを活用し、社会やステークホルダーへの影響リスクに向き合う姿勢を明記している。",
+        "人間中心のAI社会原則を参照し、多様な人々の可能性を広げる活用を掲げる。",
+        "包摂性と公平性の確保を重視し、利用者への影響に配慮する方針を示す。",
+        "他者の権利侵害を防ぐための対策や、生成物の確認体制など適法・倫理的利用を求める。",
+        "AIシステムの機能・利用データ・出力精度やリスクを説明し、透明性と説明責任を高める。",
+        "技術進展や法規の変化を踏まえ、ポリシーとAIガバナンスを定期的に見直す。"
+      ],
+      "key_findings": [
+        {
+          "point": "AI活用の目的は、可能性の最大化とリスク管理の両立である。",
+          "footnote": "「AIの可能性を最大限に引き出し、AI活用に伴うリスク管理とイノベーションを両立」"
+        },
+        {
+          "point": "AIはミッション達成を加速させる重要な役割として位置付けられている。",
+          "footnote": "「ミッション達成を加速させる上で、ますます重要な役割を担う」"
+        },
+        {
+          "point": "人間中心のAI社会原則に基づいた活用を掲げている。",
+          "footnote": "「人間中心のAI社会原則」"
+        },
+        {
+          "point": "他者の権利侵害を避けるための対策と、生成物の確認体制を求めている。",
+          "footnote": "「他者の権利を侵害しないよう必要な対策」および「社内の確認体制を整備し、適法かつ倫理的な利用を徹底」"
+        },
+        {
+          "point": "AIシステムの機能や利用データ、出力精度や潜在的リスクを説明する方針を示す。",
+          "footnote": "「AIシステムの機能、利用データ、その出力結果の精度や潜在的リスクについて...適切に説明」"
+        },
+        {
+          "point": "AI技術や法規の変化を踏まえ、ポリシーとガバナンスを定期的に見直す。",
+          "footnote": "「AI技術の急速な進展、関連法規や社会規範の変化...定期的に見直し」"
+        }
+      ],
+      "references": [
+        "https://about.mercari.com/ai-policy/"
+      ],
+      "retrieved_at": "2026-04-01T09:52:41.8378344+09:00"
+    },
+    {
+      "url": "https://www.lifehacker.jp/article/2603-gave-local-llm-access-to-files-replaced-three-apps/",
+      "title": "ローカルAIを活用したら、大量のサブスクが解約できたぞ！",
+      "date": "2026-03-31",
+      "executive_summary": [
+        "ローカルLLMの活用で、検索や要約などのサブスク依存を減らせると紹介している。",
+        "ファイルへのアクセス権付与は難しそうだが、実際はシンプルだと述べる。",
+        "RAGを用いてファイルを小さな塊に分割し、ベクトル埋め込みとして保存する。",
+        "質問時は関連部分だけを検索し、ファイルはPC外に出さずに回答できる。",
+        "GPT4AllのLocalDocsでフォルダ指定の自動インデックス作成が可能とする。",
+        "AnythingLLMはPDFやWordなどを処理でき、プロジェクト別ワークスペースを作れる。",
+        "OllamaでLLaMA 3の3B量子化モデルを動かし、必要に応じて8B/13Bも検討できる。"
+      ],
+      "key_findings": [
+        {
+          "point": "ローカルLLMがあれば、作業を簡単かつ効率的にできると示している。",
+          "footnote": "「ローカルLLMさえあれば、より簡単に、より効率的に作業することができる」"
+        },
+        {
+          "point": "RAGを使い、ファイルを小さな塊に分割してベクトル埋め込みに変換する。",
+          "footnote": "「RAG...ファイルを小さな塊に分割して...『ベクトル埋め込み』に変換」"
+        },
+        {
+          "point": "質問時は関連部分のみ検索し、ファイルはPC外に出ない。",
+          "footnote": "「もっとも関連性の高い部分だけを検索」「ファイルが自身のPCの外に出ることなく」"
+        },
+        {
+          "point": "GPT4AllのLocalDocsはフォルダ指定で自動インデックス作成を行う。",
+          "footnote": "「GPT4Allの『LocalDocs』...フォルダを指定するだけで自動的にファイルのインデックス作成」"
+        },
+        {
+          "point": "AnythingLLMはPDFやWord、TXT、CSVを処理し、ワークスペースを構築できる。",
+          "footnote": "「PDF、Word、TXT、CSVファイルを処理でき、プロジェクトごとに別々のワークスペースを構築」"
+        },
+        {
+          "point": "完全オフラインで動作し、必要条件は十分な処理能力である。",
+          "footnote": "「どちらのツールも完全にオフラインで動作し、唯一の条件は...十分な処理能力」"
+        },
+        {
+          "point": "OllamaでLLaMA 3の3B量子化モデルを動かし、必要なら8B/13Bも検討できる。",
+          "footnote": "「Ollamaを使ってLLaMA 3の3B量子化モデル」「8Bや13Bのモデルに挑戦」"
+        }
+      ],
+      "references": [
+        "https://www.lifehacker.jp/article/2603-gave-local-llm-access-to-files-replaced-three-apps/"
+      ],
+      "retrieved_at": "2026-04-01T09:52:41.8378344+09:00"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Mar/31/llm-all-models-async/",
+      "title": "Release: llm-all-models-async 0.1",
+      "date": "2026-03-31T20:52:00",
+      "executive_summary": [
+        "LLMプラグインは同期モデルと非同期モデルの両方を定義できると説明している。",
+        "非同期版はAPIバックエンドで一般的で、同期版はプラグイン内で直接実行する傾向がある。",
+        "著者のllm-mrchatterboxは同期のみで、Datasetteの機能では非同期が必要だった。",
+        "同期モデルをスレッドプールで非同期化するプラグインを作成した。",
+        "そのためにLLM本体に追加のプラグインフック機構が必要になった。",
+        "新フックはLLM 0.30で公開されたと記している。",
+        "リリースはllm-all-models-async 0.1として公開されている。"
+      ],
+      "key_findings": [
+        {
+          "point": "LLMプラグインは同期と非同期のモデルを定義できる。",
+          "footnote": "「LLM plugins can define new models in both sync and async varieties」"
+        },
+        {
+          "point": "非同期はAPIモデルで一般的、同期はプラグイン内で直接実行される。",
+          "footnote": "「async variants are most common for API-backed models」「sync variants tend to be things that run the model directly within the plugin」"
+        },
+        {
+          "point": "Datasetteは非同期モデルのみ利用できるため、同期専用プラグインでは不都合がある。",
+          "footnote": "「Datasette can only use async models」"
+        },
+        {
+          "point": "同期モデルをスレッドプールで非同期化するプラグインを作成した。",
+          "footnote": "「turns sync models into async models using a thread pool」"
+        },
+        {
+          "point": "この対応にはLLM本体の新しいプラグインフックが必要だった。",
+          "footnote": "「ended up needing an extra plugin hook mechanism in LLM itself」"
+        },
+        {
+          "point": "新フックはLLM 0.30で提供された。",
+          "footnote": "「shipped just now in LLM 0.30」"
+        }
+      ],
+      "references": [
+        "https://simonwillison.net/2026/Mar/31/llm-all-models-async/"
+      ],
+      "retrieved_at": "2026-04-01T09:52:41.8378344+09:00"
+    }
+  ]
+}
