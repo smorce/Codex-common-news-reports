@@ -42,9 +42,15 @@ LLM_RETRY_BASE_DELAY = float(os.getenv("LLM_RETRY_BASE_DELAY", "10.0"))
 LLM_RETRY_MAX_DELAY = float(os.getenv("LLM_RETRY_MAX_DELAY", "120.0"))
 LLM_RETRY_STATUS_CODES = [429, 500, 502, 503, 504]
 
-# qwen3_vl_video_summary 全体の subprocess タイムアウト（秒）
+# gemma4_e2b_video_summary.py 全体の subprocess タイムアウト（秒）
 # 目安: 動画あたり推論は長くて約5分×3本 + ダウンロード + 初回モデル読み込み（環境で上書き可）
-QWEN_YOUTUBE_TIMEOUT_SEC = int(os.getenv("QWEN_YOUTUBE_TIMEOUT_SEC", "2400"))
+# GEMMA4_VIDEO_SUMMARY_TIMEOUT_SEC を優先。未設定時は従来の QWEN_YOUTUBE_TIMEOUT_SEC も参照。
+GEMMA4_VIDEO_SUMMARY_TIMEOUT_SEC = int(
+    os.getenv(
+        "GEMMA4_VIDEO_SUMMARY_TIMEOUT_SEC",
+        os.getenv("QWEN_YOUTUBE_TIMEOUT_SEC", "2400"),
+    )
+)
 
 
 class RetryHandler:
@@ -349,14 +355,17 @@ class CodexDailyRunner:
         else:
             self.log(f"WARNING: AGENTS_3.md not found, skipping: {self.agents_3_file}")
 
-        # 4) Qwen3-VL（YouTube要約）を実行し、report.md を YYYY-MM-DD にコピー
+        # 4) Gemma 4 E2B（YouTube要約）を実行し、集約 MD を YYYY-MM-DD にコピー
         try:
-            self.log("Running Qwen3-VL (qwen3_vl_video_summary) → qwen3vl_youtube_report.md ...")
-            self.run_qwen_youtube_report(output_dir, date_dir)
+            self.log(
+                "Running Gemma 4 E2B (gemma4_e2b_video_summary.py) → "
+                f"{self.GEMMA4_YOUTUBE_REPORT_COPY_NAME} ..."
+            )
+            self.run_gemma4_youtube_report(output_dir, date_dir)
         except Exception as e:
-            self.log_failure("Qwen3-VL (run_qwen_youtube_report)", e, failed_steps)
+            self.log_failure("Gemma4 E2B (run_gemma4_youtube_report)", e, failed_steps)
 
-        # Git操作（出力物・scripts・Qwen3VL_YouTube_Summary_Report をコミット）
+        # Git操作（出力物・scripts・gemma4_reports をコミット）
         try:
             self.git_operations(output_dir, date_dir)
         except Exception as e:
@@ -366,9 +375,9 @@ class CodexDailyRunner:
         except Exception as e:
             self.log_failure("git_operations(scripts)", e, failed_steps)
         try:
-            self.git_operations(self.repo_path / "Qwen3VL_YouTube_Summary_Report", date_dir)
+            self.git_operations(self.repo_path / "gemma4_reports", date_dir)
         except Exception as e:
-            self.log_failure("git_operations(Qwen3VL_YouTube_Summary_Report)", e, failed_steps)
+            self.log_failure("git_operations(gemma4_reports)", e, failed_steps)
 
         if failed_steps:
             self.log("=== Failed steps summary (see tracebacks above in this log) ===")
@@ -892,14 +901,15 @@ class CodexDailyRunner:
         except Exception as e:
             raise RuntimeError(f"Git operation error: {e}")
 
-    # YouTube 動画要約（Qwen3-VL）の作業ディレクトリ・日次コピー先ファイル名
-    QWEN3VL_YOUTUBE_OUTPUT_DIR = "Qwen3VL_YouTube_Summary_Report"
-    QWEN3VL_YOUTUBE_REPORT_COPY_NAME = "qwen3vl_youtube_report.md"
+    # YouTube 動画要約（Gemma 4 E2B）の作業ディレクトリ・日次コピー先ファイル名
+    GEMMA4_REPORTS_DIR = "gemma4_reports"
+    GEMMA4_DOWNLOAD_DIR = "gemma4_cache"
+    GEMMA4_YOUTUBE_REPORT_COPY_NAME = "gemma4_youtube_report.md"
     # レポート本文がこの文字数未満ならリトライ対象（RetryHandler で最大3回リトライ）
     YOUTUBE_SUMMARY_REPORT_MIN_LENGTH = 10
 
     def _youtube_summary_report_usable(self, src_report: Path) -> bool:
-        """report.md が存在し、中身が有効そうか（タイムアウト後でも生成済みの可能性）を判定する。"""
+        """動画要約の Markdown が存在し、中身が有効そうか（タイムアウト後でも生成済みの可能性）を判定する。"""
         if not src_report.is_file():
             return False
         try:
@@ -909,7 +919,7 @@ class CodexDailyRunner:
             # 完成したレポートに含まれるキーワードがどれかあれば有効とみなす
             return any(
                 k in text
-                for k in ("YouTube", "要約", "一覧", "生成日時", "Qwen3-VL", "**URL**")
+                for k in ("YouTube", "要約", "一覧", "生成日時", "Gemma", "**URL**")
             )
         except Exception:
             return False
@@ -917,8 +927,8 @@ class CodexDailyRunner:
     def _write_youtube_summary_error_report(
         self, output_dir: Path, error_message: str, error_detail: str = ""
     ) -> None:
-        """失敗時に reports/YYYY-MM-DD/qwen3vl_youtube_report.md にエラー内容を書き出す（Git push に含まれる）。"""
-        dest = output_dir / self.QWEN3VL_YOUTUBE_REPORT_COPY_NAME
+        """失敗時に reports/YYYY-MM-DD/gemma4_youtube_report.md にエラー内容を書き出す（Git push に含まれる）。"""
+        dest = output_dir / self.GEMMA4_YOUTUBE_REPORT_COPY_NAME
         utc_now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         lines = [
             "# YouTube Video Summary Report (Error)",
@@ -935,21 +945,21 @@ class CodexDailyRunner:
         dest.write_text("\n".join(lines), encoding="utf-8")
         self.log(f"Wrote error report to {dest}")
 
-    def run_qwen_youtube_report(self, output_dir: Path, date_dir: str) -> None:
+    def run_gemma4_youtube_report(self, output_dir: Path, date_dir: str) -> None:
         """
-        qwen3_vl_video_summary.py を実行し、成功時に report.md を YYYY-MM-DD フォルダにコピーする。
+        gemma4_e2b_video_summary.py を実行し、成功時に集約 Markdown を YYYY-MM-DD フォルダにコピーする。
         一時的な失敗は RetryHandler でリトライ。最終的に失敗した場合はエラー内容を同パスに書き出し、Git push に含める。
 
         チャンネルは BR 向けの既定 URL。本数は 3（従来の yt_top3 と同じ）。
         """
         channel_url = "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g"
-        out_md = f"{self.QWEN3VL_YOUTUBE_OUTPUT_DIR}/report.md"
-        download_dir = f"{self.QWEN3VL_YOUTUBE_OUTPUT_DIR}/qwen_downloads"
-        qwen_cmd = [
+        out_md = f"{self.GEMMA4_REPORTS_DIR}/{date_dir}_gemma4_summary.md"
+        download_dir = self.GEMMA4_DOWNLOAD_DIR
+        gemma_cmd = [
             "uv",
             "run",
             "--link-mode=copy",
-            "qwen3_vl_video_summary.py",
+            "gemma4_e2b_video_summary.py",
             "--channel-url",
             channel_url,
             "-n",
@@ -960,13 +970,15 @@ class CodexDailyRunner:
             download_dir,
         ]
         # 上書き運用：出力ディレクトリは削除しない（OneDrive/Windows でアクセス拒否が起きやすいため）。
-        # ただし、失敗時のフォールバックで「前回の report.md」を誤ってコピーしないよう、
-        # 今回実行で report.md が更新されたか（mtime）をチェックする。
-        self.log(f"Running Qwen3-VL: {' '.join(qwen_cmd)} (timeout={QWEN_YOUTUBE_TIMEOUT_SEC}s)")
+        # ただし、失敗時のフォールバックで「前回の集約 MD」を誤ってコピーしないよう、
+        # 今回実行でファイルが更新されたか（mtime）をチェックする。
+        self.log(
+            f"Running Gemma4 E2B: {' '.join(gemma_cmd)} (timeout={GEMMA4_VIDEO_SUMMARY_TIMEOUT_SEC}s)"
+        )
         attempt = 0
         last_error_message = ""
         last_error_detail = ""
-        src_report = self.repo_path / self.QWEN3VL_YOUTUBE_OUTPUT_DIR / "report.md"
+        src_report = self.repo_path / out_md
         run_started_at = time.time()
         prev_report_mtime = src_report.stat().st_mtime if src_report.exists() else None
 
@@ -985,17 +997,19 @@ class CodexDailyRunner:
         while True:
             try:
                 result = subprocess.run(
-                    qwen_cmd,
+                    gemma_cmd,
                     cwd=str(self.repo_path),
                     capture_output=True,
                     text=True,
                     encoding="utf-8",
                     errors="replace",
-                    timeout=QWEN_YOUTUBE_TIMEOUT_SEC,
+                    timeout=GEMMA4_VIDEO_SUMMARY_TIMEOUT_SEC,
                 )
                 if result.returncode != 0:
                     err_snippet = (result.stderr or result.stdout or "")[-2000:]
-                    last_error_message = f"qwen3_vl_video_summary exited with code {result.returncode}."
+                    last_error_message = (
+                        f"gemma4_e2b_video_summary.py exited with code {result.returncode}."
+                    )
                     last_error_detail = err_snippet
                     raise RuntimeError(f"{last_error_message} {err_snippet}")
 
@@ -1015,31 +1029,33 @@ class CodexDailyRunner:
                     last_error_detail = f"Content length: {len(report_text.strip())}"
                     raise RuntimeError(last_error_message)
 
-                dest_report = output_dir / self.QWEN3VL_YOUTUBE_REPORT_COPY_NAME
+                dest_report = output_dir / self.GEMMA4_YOUTUBE_REPORT_COPY_NAME
                 shutil.copy2(src_report, dest_report)
                 self.log(f"Copied YouTube summary report to {dest_report}")
                 return
 
             except subprocess.TimeoutExpired as e:
-                last_error_message = "qwen3_vl_video_summary timed out."
+                last_error_message = "gemma4_e2b_video_summary.py timed out."
                 last_error_detail = str(e)
                 if not self.retry_handler.should_retry(e, attempt):
                     if _is_fresh_report(src_report) and self._youtube_summary_report_usable(src_report):
-                        dest_report = output_dir / self.QWEN3VL_YOUTUBE_REPORT_COPY_NAME
+                        dest_report = output_dir / self.GEMMA4_YOUTUBE_REPORT_COPY_NAME
                         shutil.copy2(src_report, dest_report)
                         self.log(
-                            "qwen3_vl_video_summary timed out but report.md was present and valid. "
+                            "gemma4_e2b_video_summary.py timed out but summary markdown was present and valid. "
                             f"Copied to {dest_report} and continuing."
                         )
                         return
-                    self.log("qwen3_vl_video_summary timed out. Writing error report and continuing.")
+                    self.log(
+                        "gemma4_e2b_video_summary.py timed out. Writing error report and continuing."
+                    )
                     self._write_youtube_summary_error_report(
                         output_dir, last_error_message, last_error_detail
                     )
                     return
                 delay = self.retry_handler.get_delay(attempt)
                 self.log(
-                    f"qwen3_vl_video_summary timed out. Retrying (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
+                    f"gemma4_e2b_video_summary.py timed out. Retrying (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
                     f"Waiting {delay:.1f}s..."
                 )
                 time.sleep(delay)
@@ -1047,13 +1063,13 @@ class CodexDailyRunner:
             except (RuntimeError, FileNotFoundError) as e:
                 if not last_error_message:
                     last_error_message = str(e)
-                self.log(f"qwen3_vl_video_summary error: {e}")
+                self.log(f"gemma4_e2b_video_summary.py error: {e}")
                 if not self.retry_handler.should_retry(e, attempt):
                     if _is_fresh_report(src_report) and self._youtube_summary_report_usable(src_report):
-                        dest_report = output_dir / self.QWEN3VL_YOUTUBE_REPORT_COPY_NAME
+                        dest_report = output_dir / self.GEMMA4_YOUTUBE_REPORT_COPY_NAME
                         shutil.copy2(src_report, dest_report)
                         self.log(
-                            "qwen3_vl_video_summary failed but report.md was present and valid. "
+                            "gemma4_e2b_video_summary.py failed but summary markdown was present and valid. "
                             f"Copied to {dest_report} and continuing."
                         )
                         return
@@ -1066,13 +1082,13 @@ class CodexDailyRunner:
                     return
                 delay = self.retry_handler.get_delay(attempt)
                 self.log(
-                    f"Retrying qwen3_vl_video_summary (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
+                    f"Retrying gemma4_e2b_video_summary.py (attempt {attempt + 1}/{self.retry_handler.max_retries}). "
                     f"Waiting {delay:.1f}s..."
                 )
                 time.sleep(delay)
                 attempt += 1
             except Exception as e:
-                self.log(f"qwen3_vl_video_summary unexpected error (continuing): {e}")
+                self.log(f"gemma4_e2b_video_summary.py unexpected error (continuing): {e}")
                 cause = getattr(e, "__cause__", None)
                 self._write_youtube_summary_error_report(
                     output_dir, str(e), str(cause) if cause else ""
