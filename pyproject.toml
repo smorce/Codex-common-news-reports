@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "accelerate>=1.13.0",
+    "decord>=0.6.0",
     "feedparser>=6.0.12",
     "imageio-ffmpeg>=0.6.0",
     "moviepy>=2.2.1",
@@ -16,17 +17,19 @@ dependencies = [
     "tzdata>=2025.1",
     "torch",
     "torchvision",
-    "transformers>=4.57.0",
+    "transformers>=5.5.0",
     "yt-dlp[default]>=2026.2.4",
     "fast-bunkai>=0.1.1",
 ]
 
-# GPU 用 PyTorch（CUDA 12.4）。torch のみこのインデックスから取得する（explicit）。
+# ドライバ 528.24 は nvidia-smi で CUDA 12.0 まで。プロジェクトは cu124 の PyTorch を使っており、バンドルされた CUDA 12.4 ランタイムがドライバより新しく、cublas64_12.dll の WinError 1114 の典型原因になります。システムの CUDA Toolkit を変えずに GPU を使うには、PyTorch をドライバと整合する CUDA 付きホイール（例: cu118）に切り替えるのが有効です。
+# GPU 用 PyTorch（CUDA 11.8 同梱ホイール）。システムの CUDA Toolkit を変えずに、ドライバ 528 台でも GPU 利用しやすい。
+# cu124 はドライバが新しめ必須のため、古いドライバでは cublas の WinError 1114 になりやすい。
 [tool.uv.sources]
-torch = { index = "pytorch-cu124" }
-torchvision = { index = "pytorch-cu124" }
+torch = { index = "pytorch-cu118" }
+torchvision = { index = "pytorch-cu118" }
 
 [[tool.uv.index]]
-name = "pytorch-cu124"
-url = "https://download.pytorch.org/whl/cu124"
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
 explicit = true
