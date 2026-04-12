@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-04-12T09:01:50+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/90e870e03d4643",
+      "title": "「Nix」を試す ② Zero to Nix",
+      "date": "2026-04-12T01:58:00+09:00",
+      "executive_summary": [
+        "前回の公式チュートリアルの続きとして学習を継続している。",
+        "次の教材として英語の「Zero to Nix」チュートリアルを選択した。",
+        "チュートリアルはDeterminate Nixインストーラ前提で進める方針を確認。",
+        "公式インストーラとの違いやダウンストリーム関係を整理している。",
+        "Ubuntu 24.04（Proxmox上）でインストール手順を実行。",
+        "Determinate Nixインストール後にバージョン確認を実施。",
+        "`nix run`で`ponysay`を実行し、Nix CLIの動きが解説されている。",
+        "Nixの概念（flake参照やNixストア等）は今後掘り下げると述べている。"
+      ],
+      "key_findings": [
+        {
+          "point": "次に進める教材として「Zero to Nix」を選んだ。",
+          "footnote": "とりあえずこれを進めてみようかと思う。"
+        },
+        {
+          "point": "このチュートリアルはDeterminate Nixインストーラを前提としている。",
+          "footnote": "このチュートリアルはDeterminate Nixインストーラーが前提のようなので、それに従うこととする。"
+        },
+        {
+          "point": "Determinate NixはNixプロジェクトのダウンストリームであると整理している。",
+          "footnote": "Nix プロジェクトのダウンストリームディストリビューション"
+        },
+        {
+          "point": "公式インストーラは /nix 作成やユーザー作成など複数の変更が必要と記載されている。",
+          "footnote": "Nixを正しく動作させるためには、新しい \"/nix\" ディレクトリの作成、シェルプロファイルの設定、複数のシステムユーザーとグループの作成など"
+        },
+        {
+          "point": "Determinate Nixのインストーラをcurlで実行する手順を採用した。",
+          "footnote": "https://install.determinate.systems/nix"
+        },
+        {
+          "point": "インストール後のバージョンはDeterminate Nix 3.17.3である。",
+          "footnote": "nix (Determinate Nix 3.17.3) 2.33.3"
+        },
+        {
+          "point": "nix runでponysayを実行する例を試している。",
+          "footnote": "nix run \"https://flakehub.com/f/NixOS/nixpkgs/*#ponysay\""
+        },
+        {
+          "point": "Nix CLIがflake参照でコード取得し、ビルドしてNixストアに保存する流れが説明されている。",
+          "footnote": "flake参照 を使用してNixコードを取得し、ponysay パッケージをビルドし、その結果を Nixストア に保存しました。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/90e870e03d4643"
+      ],
+      "retrieved_at": "2026-04-12T09:01:50+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/7df1c9aa2dd3ba",
+      "title": "CodeDeploy で GitHubレポジトリのアプリをEC2にデプロイする",
+      "date": "2026-04-11T22:42:00+09:00",
+      "executive_summary": [
+        "CodeDeployでGitHubレポジトリのアプリをEC2へデプロイする流れを学習。",
+        "Getting StartedはIAM準備中心で、実デプロイはチュートリアルが本命と判断。",
+        "GitHubデプロイのチュートリアルを選び、Terraformのサンプルで基盤を作成。",
+        "CodeDeploy用サービスロールとEC2インスタンスプロファイルを準備。",
+        "コンソールでアプリケーションとデプロイグループを作成し、タグで対象EC2を指定。",
+        "GitHub連携を行い、コミットIDを指定してデプロイを実行。",
+        "デプロイ完了後、イベント確認やWeb表示で成果を確認。",
+        "削除時のトークン扱いや自動デプロイ手段（CodePipeline等）を検討。"
+      ],
+      "key_findings": [
+        {
+          "point": "Getting StartedはIAM準備が中心で、実デプロイはチュートリアル側にあると判断している。",
+          "footnote": "Getting Startedセクション、IAMユーザやIAMロールなどの設定の準備という側面が強くて、実際のデプロイについては以下のチュートリアル"
+        },
+        {
+          "point": "チュートリアルのテーマにGitHubからEC2へデプロイが含まれている。",
+          "footnote": "EC2インスタンスにGitHubからアプリをデプロイ"
+        },
+        {
+          "point": "Terraformで事前に環境を構築する方針を取っている。",
+          "footnote": "terraform apply して環境を構築しておく。"
+        },
+        {
+          "point": "EC2向けのCodeDeployサービスロールとしてAWSCodeDeployRoleを利用するとしている。",
+          "footnote": "EC2の場合は \"AWSCodeDeployRole\" を使用する。"
+        },
+        {
+          "point": "EC2インスタンスプロファイルにはS3やSystems Manager向けの権限も付与している。",
+          "footnote": "EC2 用インスタンスプロファイルにはそれらに必要な権限も付けている。"
+        },
+        {
+          "point": "GitHubリビジョン指定は先頭10文字のコミットIDで、7文字は不可としている。",
+          "footnote": "コミットIDはフルだと40文字になるが、その先頭10文字で良いみたい。ただしGitHubで表示されるような7文字ぐらいの短いコミットIDは使用できない"
+        },
+        {
+          "point": "GitHub連携トークンは管理画面で削除できず、AWS CLIで削除する必要があると述べている。",
+          "footnote": "GitHub連携した際のトークンだけは残るようで、これは管理画面からは削除できない様子。AWS CLIで消すことになりそう。"
+        },
+        {
+          "point": "GitHub OAuthトークンの上限が10個である点に注意が必要としている。",
+          "footnote": "GitHub OAuthトークンの最大数は10個らしくて、11個目を足すと最初の1つが消えるらしい。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/7df1c9aa2dd3ba"
+      ],
+      "retrieved_at": "2026-04-12T09:01:50+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/58b40bf359e4bb",
+      "title": "git cherry-pick を試す",
+      "date": "2026-04-09T16:43:00+09:00",
+      "executive_summary": [
+        "git cherry-pick の公式ドキュメントを翻訳しながら理解を整理。",
+        "cherry-pickは既存コミットの変更を新規コミットとして適用する操作と説明。",
+        "実行にはクリーンな作業ツリーが必要で、競合時の挙動も記述。",
+        "主要オプション（-x, -m, --no-commit, --abort等）の意味を要約。",
+        "例としてHTMLを変更する複数コミットを作り、特定コミットだけをmainに適用。",
+        "cherry-pick後のコミットは内容同一でも別コミットになる点を確認。",
+        "PRでマージした場合の履歴の見え方も確認。",
+        "基本は小さなブランチを頻繁にマージするが、cherry-pickが必要な場面もあると結論。"
+      ],
+      "key_findings": [
+        {
+          "point": "cherry-pickは既存コミットの変更を新しいコミットとして記録する操作で、作業ツリーはクリーンである必要がある。",
+          "footnote": "既存のコミットで導入された変更を適用し、新しいコミットとして記録します。ただし、作業ツリーはクリーンな状態"
+        },
+        {
+          "point": "競合が発生した場合、CHERRY_PICK_HEADが設定される。",
+          "footnote": "CHERRY_PICK_HEAD 参照は、適用が困難な変更を導入したコミットを指すように設定されます。"
+        },
+        {
+          "point": "競合時には通常の競合マーカーが作業ツリーに記録される。",
+          "footnote": "作業ツリーのファイルには、通常の競合マーカー \"<<<<<<<\""
+        },
+        {
+          "point": "-xオプションは元コミットからのチェリーピックであることを明示する行を追加する。",
+          "footnote": "元のコミットメッセージの末尾に 「（コミット…​からチェリーピックされました）」という行を追加"
+        },
+        {
+          "point": "マージコミットのチェリーピックにはmainline指定が必要になる。",
+          "footnote": "マージコミットをチェリーピックすることはできません。"
+        },
+        {
+          "point": "例として特定コミットをmainへ適用する操作が示されている。",
+          "footnote": "git cherry-pick 85f048e"
+        },
+        {
+          "point": "cherry-pick後のmainには別のコミットIDで反映される。",
+          "footnote": "256103b (HEAD -> main) Fix button color"
+        },
+        {
+          "point": "cherry-pick元と先のコミットは内容同一でも別コミットになると述べている。",
+          "footnote": "cherry-pick 元 と cherry-pick 先のコミットは、内容は同じだが別のコミットとなっている。"
+        },
+        {
+          "point": "運用としては小さなブランチを頻繁にマージするのが基本だと述べている。",
+          "footnote": "基本はブランチを「細かく」作って「頻繁」にマージするのが正解だと思う。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/58b40bf359e4bb"
+      ],
+      "retrieved_at": "2026-04-12T09:01:50+09:00"
+    }
+  ]
+}
