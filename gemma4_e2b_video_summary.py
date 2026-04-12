@@ -73,21 +73,34 @@ DEFAULT_FRAME_SAMPLING = "uniform"
 DEFAULT_FRAMES_PER_WINDOW = 8
 DEFAULT_WINDOW_MAX_NEW_TOKENS = 384
 
-PROMPT_DEFAULT = """日本語で実践的なレポートを生成してください。固有名詞や具体例をできるだけ入れてください。出力はJSON形式にしてください。
+PROMPT_DEFAULT = """あなたはファッション動画の編集者です。日本語で、視聴者が明日のコーデに転写できる密度のレポートを出してください。出力は JSON のみ（前後に説明文やコードフェンスを付けない）。
 
-### 出力形式
+### 絶対ルール（ぼんやり要約の禁止）
+- 「洗練された」「おしゃれ」「トレンドを取り入れた」など、**根拠のない形容詞だけ**の文は書かない。必ず **品目・色・シルエット・素材・仕立て・合わせる別アイテム** のいずれかを同じ文に含める。
+- 動画や発言に**出てこない**情報は捏造しない。推測は「動画内の根拠が乏しい」と明記するか、該当フィールドは null にする。
+- 店員・モデルの台詞は、可能な範囲で **短い引用（10〜40字）** か **言い換え＋何について言っているか** をセットにする。紹介文だけで終わらせない。
+
+### 具体性の必須要素（summary・各配列に反映）
+1. **アイテム単位**: 例「白パーカ」「畦編みニット」「テーパードパンツ」など、画面・セリフで特定できる呼び方を使う。
+2. **素材・縫製**: 言及があれば繊維（コットン／ウール混など）、ゲージ・編地、ステッチ・襟型・袖丈など**言われたこと**を書く。無言及なら null や「素材の明示なし」と書く。
+3. **コーディネート**: 足元（スニーカーの色・厚底／薄底・紐の有無など）、バッグ・帽子・アウターの重ね方など、**動画で見えた／言及された**合わせ方を書く。
+4. **季節・シーン**: 4月の花見・花粉・朝晩の寒暖差など、**動画やタイトル・セリフに依拠できる範囲**で「脱ぎ着」「レイヤー」「汚れにくい色」など実用提案に落とす。依拠できない場合は null。
+5. **ライフスタイルとトレンドの接続**: 単なる商品説明で終わらせ、「どんな生活シーン（通勤・休日・屋外）で」「どんな雰囲気のトレンド語彙が、どのディテールに対応するか」を**具体アイテムで**結ぶ。
+
+### 出力形式（キー名は厳守）
 <<<JSON_OUTPUT
 {
-  "summary": "動画の内容を説明（400〜500字）",
+  "summary": "動画全体を400〜550字で。上記ルールを満たす具体名詞を多く含め、抽象語だけの段落にしない",
   "key_points": [
-    "ポイント1",
-    "ポイント2",
-    "ポイント3",
-    "ポイント4",
-    "ポイント5"
+    "各項目は一文で具体名詞を含む。可能なら括弧で根拠（画面の何／誰のどんな発言）を付ける。合計8〜10個"
   ],
-  "conclusion": "動画の核心メッセージを1〜2文で",
-  "recommended_action": "視聴者への具体的なアクション1つ"
+  "item_material_stitching_coordination": [
+    "品目＋色・素材・縫製・ディテールのうち動画で触れられたもの＋スニーカー等との合わせ方。5〜12行。該当が乏しければ少なくてよいが、空配列は避け根拠を書く"
+  ],
+  "seasonal_practical_styling": "季節テーマに基づく実用提案（レイヤー・色・汚れ・温度差など）。依拠不可なら null",
+  "staff_model_lifestyle_trend": "店員／モデルの提案を、生活文脈とトレンドの両方で具体アイテムに接続した段落（120〜220字）。足りなければ null",
+  "conclusion": "動画の核心を1〜2文。抽象語禁止ルールを守る",
+  "recommended_action": "視聴者が明日試せる一手（例：手持ちの〇色スニーカーにこのパンツ丈を合わせる）。曖昧な「参考に」は禁止"
 }
 JSON_OUTPUT>>>
 """
@@ -457,12 +470,30 @@ def try_parse_json_summary_object(raw: str) -> dict | None:
 
 
 def format_json_summary_to_markdown(data: dict) -> str:
-    """summary / key_points / conclusion / recommended_action を読みやすい Markdown にする。"""
+    """summary ほか JSON フィールドを読みやすい Markdown にする。"""
     lines: list[str] = []
 
     summary = data.get("summary")
     if summary is not None and str(summary).strip():
         lines.extend(["#### 概要", "", str(summary).strip(), ""])
+
+    items_coord = data.get("item_material_stitching_coordination")
+    if items_coord is not None and not (isinstance(items_coord, list) and len(items_coord) == 0):
+        lines.extend(["#### 品目・素材・縫製・コーディネート", ""])
+        if isinstance(items_coord, list):
+            for row in items_coord:
+                lines.append(f"- {row}")
+        else:
+            lines.append(f"- {items_coord}")
+        lines.append("")
+
+    seasonal = data.get("seasonal_practical_styling")
+    if seasonal is not None and str(seasonal).strip() and str(seasonal).strip().lower() != "null":
+        lines.extend(["#### 季節・シーン別の実用スタイリング", "", str(seasonal).strip(), ""])
+
+    lifestyle = data.get("staff_model_lifestyle_trend")
+    if lifestyle is not None and str(lifestyle).strip() and str(lifestyle).strip().lower() != "null":
+        lines.extend(["#### ライフスタイル・トレンドの接続", "", str(lifestyle).strip(), ""])
 
     key_points = data.get("key_points")
     if key_points is not None:
@@ -826,7 +857,9 @@ def build_frame_messages(frame_paths: list[Path], user_prompt: str) -> list[dict
             "type": "text",
             "text": (
                 "以下は同一動画から時系列順に、動画全体をカバーするよう抽出したフレームです。"
-                "動画全体の流れとして理解して要約してください。\n\n"
+                "動画全体の流れとして理解して要約してください。"
+                "ファッション内容では品目・色・素材・足元の合わせを、画面と整合する形で必ず書き分ける。"
+                "根拠のない形容詞だけの文は避ける。\n\n"
                 f"{user_prompt}"
             ),
         }
@@ -874,18 +907,19 @@ def build_window_messages(
 推定時刻範囲: {format_seconds_label(start_sec)} から {format_seconds_label(end_sec)}
 
 この区間だけを見て、場面の流れ、話題、見た目の変化、重要な出来事を簡潔に整理してください。
+服装・小物がある場合は色・シルエット・素材らしさが分かる語を必ず入れる。抽象語だけの箇条書きは禁止。
 出力は JSON だけにしてください。
 
 <<<JSON_OUTPUT
 {{
-  "window_summary": "この区間で何が起きているかを 120〜220 字で",
+  "window_summary": "この区間で何が起きているかを 120〜220 字で。着用アイテムや合わせが分かる具体語を含める",
   "important_points": [
-    "重要点1",
+    "セリフ・テロップ・見た目から取れる具体事実（品名・色・素材の言及など）。各1文",
     "重要点2",
     "重要点3"
   ],
   "visual_changes": [
-    "画面や場面の変化1",
+    "画面や場面の変化（人物・陳列・テロップの切り替えなど）を具体語で",
     "画面や場面の変化2"
   ]
 }}
@@ -917,6 +951,8 @@ def build_final_aggregation_prompt(
     lines.extend(
         [
             "上の区間メモを統合して、重複や矛盾を整理し、動画全体として一貫した最終要約を作ってください。",
+            "統合時も、区間メモに出ていた品目名・色・素材・コーデの具体語を落とさない。",
+            "動画に無い情報の補完や一般論への逃げ（例：単に「トレンド」「おしゃれ」）は禁止。",
             "出力形式は次の指示に厳密に従ってください。",
             "",
             user_prompt,
