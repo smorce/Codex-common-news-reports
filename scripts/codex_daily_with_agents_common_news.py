@@ -19,6 +19,7 @@ except Exception:
     pass
 
 
+import importlib.util
 import random
 import subprocess
 import tempfile
@@ -51,6 +52,36 @@ GEMMA4_VIDEO_SUMMARY_TIMEOUT_SEC = int(
         os.getenv("QWEN_YOUTUBE_TIMEOUT_SEC", "2400"),
     )
 )
+
+# gemma4_e2b_video_summary.PROMPT_DEFAULT を subprocess に渡すための遅延キャッシュ
+_GEMMA4_PROMPT_DEFAULT_CACHE: str | None = None
+
+
+def _load_gemma4_video_summary_prompt_default() -> str:
+    """
+    gemma4_e2b_video_summary.py の PROMPT_DEFAULT を単一ソースとして読み込む。
+    （sys.path を汚さず、torch 等の重い依存はこのモジュールの先頭では import されない）
+    """
+    global _GEMMA4_PROMPT_DEFAULT_CACHE
+    if _GEMMA4_PROMPT_DEFAULT_CACHE is not None:
+        return _GEMMA4_PROMPT_DEFAULT_CACHE
+    root = Path(__file__).resolve().parent.parent
+    path = root / "gemma4_e2b_video_summary.py"
+    spec = importlib.util.spec_from_file_location(
+        "_gemma4_e2b_video_summary_prompt_loader",
+        path,
+    )
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Cannot load spec for {path}")
+    mod = importlib.util.module_from_spec(spec)
+    # dataclasses 等が __module__ 参照で sys.modules を見るため事前登録
+    sys.modules[spec.name] = mod
+    spec.loader.exec_module(mod)
+    prompt = getattr(mod, "PROMPT_DEFAULT", "")
+    if not isinstance(prompt, str) or not prompt.strip():
+        raise RuntimeError("gemma4_e2b_video_summary.PROMPT_DEFAULT is missing or empty")
+    _GEMMA4_PROMPT_DEFAULT_CACHE = prompt
+    return _GEMMA4_PROMPT_DEFAULT_CACHE
 
 
 class RetryHandler:
@@ -919,7 +950,18 @@ class CodexDailyRunner:
             # 完成したレポートに含まれるキーワードがどれかあれば有効とみなす
             return any(
                 k in text
-                for k in ("YouTube", "要約", "一覧", "生成日時", "Gemma", "**URL**")
+                for k in (
+                    "YouTube",
+                    "要約",
+                    "一覧",
+                    "生成日時",
+                    "Gemma",
+                    "**URL**",
+                    # gemma4 拡張 JSON → Markdown（品目・季節・ライフスタイル欄）
+                    "品目・素材・縫製・コーディネート",
+                    "季節・シーン別の実用スタイリング",
+                    "ライフスタイル・トレンドの接続",
+                )
             )
         except Exception:
             return False
@@ -969,6 +1011,15 @@ class CodexDailyRunner:
             "--download-dir",
             download_dir,
         ]
+        try:
+            gemma_cmd.extend(
+                ["--prompt", _load_gemma4_video_summary_prompt_default()]
+            )
+        except Exception as e:
+            self.log(
+                f"Warning: could not load gemma4 PROMPT_DEFAULT; "
+                f"using script built-in default. ({e})"
+            )
         # 上書き運用：出力ディレクトリは削除しない（OneDrive/Windows でアクセス拒否が起きやすいため）。
         # ただし、失敗時のフォールバックで「前回の集約 MD」を誤ってコピーしないよう、
         # 今回実行でファイルが更新されたか（mtime）をチェックする。
