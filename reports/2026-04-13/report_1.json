@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-04-13T09:09:22+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/76cd9b1cceaa97",
+      "title": "CodeDeploy で GitHubレポジトリのアプリをAutoScalingのEC2にデプロイする",
+      "date": null,
+      "executive_summary": [
+        "EC2単体ではなくALB＋AutoScaling構成でCodeDeployを試す位置づけ。",
+        "前回のEC2単体デプロイを踏まえ、AutoScalingでも同様に検証する流れ。",
+        "公式チュートリアルを参照しながら手順を進めている。",
+        "AutoScalingでは起動テンプレートから新規インスタンスが起動される前提を指摘。",
+        "CodeDeployは稼働中と今後起動するインスタンスの両方にデプロイ可能である必要がある。",
+        "追加のIAM権限として`ec2:RunInstances`等が必要と整理。",
+        "デプロイは約6分で完了し、ALBのトラフィック制御が動作したと推測。"
+      ],
+      "key_findings": [
+        {
+          "point": "AutoScaling構成で試すのは、実運用ではALB＋AutoScalingが一般的という判断から。",
+          "footnote": "「上記は単体のEC2だが実際にやる場合はALB＋AutoScalingにするほうが一般的だろう、ということで、AutoScalingでも試してみる。」"
+        },
+        {
+          "point": "AutoScalingでは起動テンプレートから新しいEC2インスタンスが起動する前提になる。",
+          "footnote": "「Auto Scaling の場合は、起動テンプレートから新しい EC2インスタンスが起動することを前提になる。」"
+        },
+        {
+          "point": "CodeDeployは稼働中だけでなく今後起動するインスタンスにもデプロイできる必要がある。",
+          "footnote": "「現在稼働しているインスタンスだけでなく、今後起動するインスタンスの両方に対して、デプロイできる必要がある。」"
+        },
+        {
+          "point": "CodeDeployのサービスロールには`ec2:RunInstances`/`ec2:CreateTags`/`iam:PassRole`の追加権限が必要。",
+          "footnote": "「CodeDeployのサービスロールには、以下の権限が追加で必要になる。 ec2:RunInstances / ec2:CreateTags / iam:PassRole」"
+        },
+        {
+          "point": "ALBのロードバランシングを有効化してターゲットグループを選ぶと、デプロイ中のトラフィック遮断が行われる。",
+          "footnote": "「Load balancerで『ロードバランシングを有効にする』、ロードバランサータイプで『ALB』にチェックを入れて、該当のターゲットグループを選択。これでデプロイ中にインスタンスとのトラフィックを止めてくれる。」"
+        },
+        {
+          "point": "デプロイは約6分で完了し、BlockTraffic/AllowTrafficがロードバランシング有効化時の動きと推測している。",
+          "footnote": "「6分ほどかかったが、デプロイできた。BlockTraffic / AllowTraffic ってのが上のロードバランシングを有効にした場合の動きなのだと思う。」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/76cd9b1cceaa97",
+        "https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-auto-scaling-group.html",
+        "https://github.com/kun432/terraform-codedeploy-sample/tree/autoscaling"
+      ],
+      "retrieved_at": "2026-04-13T09:09:22+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/90e870e03d4643",
+      "title": "「Nix」を試す ② Zero to Nix（挫折した）",
+      "date": null,
+      "executive_summary": [
+        "前回の公式チュートリアルの触りを試した続編。",
+        "Nix言語や内部構造より、まず使い方に慣れたいという意向。",
+        "英語のチュートリアルが目的に合いそうと判断。",
+        "Zero to Nixのチュートリアルを進めてみる方針。",
+        "チュートリアルは公式ではなくDeterminate Nixインストーラを前提にしている。",
+        "用語説明が少なく理解が追いつかないと感じている。",
+        "結果としてこのチュートリアルは中断し、他の資料を読む予定。"
+      ],
+      "key_findings": [
+        {
+          "point": "前回は公式ドキュメントのチュートリアルの触りを試した。",
+          "footnote": "「前回とりあえず公式ドキュメントのチュートリアルの触りを試した。」"
+        },
+        {
+          "point": "次のステップはNix言語や内部構造ではなく、まず使い方に慣れることを重視している。",
+          "footnote": "「Nix言語とか内部構造とかに進んでもいいのだけど、もうしばらく使い方に慣れたい。」"
+        },
+        {
+          "point": "目的に合いそうな英語チュートリアルとしてZero to Nixを選定した。",
+          "footnote": "「英語のチュートリアル記事が良さそうな事が書いてあった。」「とりあえずこれを進めてみようかと思う。」"
+        },
+        {
+          "point": "Zero to Nixは公式インストーラではなくDeterminate Nixインストーラを使う前提。",
+          "footnote": "「このチュートリアルは、Nix公式のインストーラではなく、Determinate Systemsというところが作成した Determinate Nixインストーラを使うことになっている。」"
+        },
+        {
+          "point": "Determinate NixはNixプロジェクトのダウンストリームで、遅延ツリーや並列評価など追加機能があると説明されている。",
+          "footnote": "「Nix プロジェクトのダウンストリームディストリビューションです。このディストリビューションでは、遅延ツリー、並列評価、ネイティブLinuxビルダー など、アップストリーム版にはない多彩な機能を利用できます。」"
+        },
+        {
+          "point": "用語説明が不足して理解が追いつかず、チュートリアル継続に迷いが生じている。",
+          "footnote": "「いろいろな用語が出てくるが、説明なく進むので、正直理解が追いつかない。」"
+        },
+        {
+          "point": "最終的に今回のチュートリアルはやめて、他の日本語/公式資料を読む方針に切り替えた。",
+          "footnote": "「とりあえず今回のチュートリアルはやめた。上の記事や日本語のチュートリアル、あとは公式の記事をもう少し読んでみるつもり。」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/90e870e03d4643",
+        "https://zero-to-nix.com/",
+        "https://docs.determinate.systems/determinate-nix"
+      ],
+      "retrieved_at": "2026-04-13T09:09:22+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/7df1c9aa2dd3ba",
+      "title": "CodeDeploy で GitHubレポジトリのアプリをEC2にデプロイする",
+      "date": null,
+      "executive_summary": [
+        "CodeDeploy未経験のため、流れ把握を目的に実施した記録。",
+        "公式のGetting Startedを確認するところから始めている。",
+        "Getting StartedはIAM準備が中心で、実デプロイはチュートリアル側にあると判断。",
+        "チュートリアルのテーマ一覧を整理し、GitHubデプロイの題材に注目。",
+        "GitHub連携はGUI前提に見え、Terraform対応に課題があると感じている。",
+        "CodeConnectionsを調べるがCodeDeploy対応が見当たらず戸惑い。",
+        "結論としてCodePipelineの利用が必要になりそうと推測している。"
+      ],
+      "key_findings": [
+        {
+          "point": "未経験のため、手順の流れを押さえる目的で実施している。",
+          "footnote": "「やったことないので、流れを押さえるためにやる。」"
+        },
+        {
+          "point": "Getting StartedはIAM準備色が強く、実デプロイはチュートリアルに位置付けられていると見ている。",
+          "footnote": "「Getting Startedセクション、IAMユーザやIAMロールなどの設定の準備という側面が強くて、実際のデプロイについては以下のチュートリアルのほうになってるように思える。」"
+        },
+        {
+          "point": "チュートリアルのテーマとしてWordPress/Hello World/オンプレ/Auto Scaling/GitHub/ECS/SAMなどが列挙されている。",
+          "footnote": "「EC2インスタンス（Linux）に WordPress をデプロイ」「EC2インスタンス（Windows Server）に \"Hello, World!\" アプリをデプロイ」「オンプレミスのサーバにアプリをデプロイ」「オートスケーリンググループにアプリをデプロイ」「EC2インスタンスにGitHubからアプリをデプロイ」「Amazon ECSにアプリをデプロイ」「AWS SAMと組み合わせて、Lambda関数をデプロイ」"
+        },
+        {
+          "point": "GitHub連携はGUI前提に見え、AWS CLIにも作成系コマンドがなくTerraformからの作成は難しそうと判断。",
+          "footnote": "「GitHubとの連携を設定するところはGUI前提っぽくなっている」「create-* みたいなのはないので、あらかじめ作っといて、Terraformからは参照だけさせるみたいなのはできなさそう。」"
+        },
+        {
+          "point": "代替案としてCodePipelineやGitHub Actions+OIDCを挙げ、CodeConnectionsも検討している。",
+          "footnote": "「となると、やっぱり CodePipeline / GitHub Actions + OIDC になるのかなー？と思って調べてみると、CodeConnections ってのがあるらしい。」"
+        },
+        {
+          "point": "CodeConnectionsはCodeDeploy対応が見当たらず、CodePipelineが必要になりそうと結論づけている。",
+          "footnote": "「CodeConnections が使えるサービスに CodeDeploy が書いてない。」「この場合はCodePiplelineを使う必要がありそう。」"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/7df1c9aa2dd3ba",
+        "https://docs.aws.amazon.com/codedeploy/latest/userguide/getting-started-codedeploy.html",
+        "https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials.html",
+        "https://aws.amazon.com/jp/training/digital/"
+      ],
+      "retrieved_at": "2026-04-13T09:09:22+09:00"
+    }
+  ]
+}
