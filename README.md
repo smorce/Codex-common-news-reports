@@ -41,7 +41,7 @@ $raw  = Get-Content $path -Raw -Encoding utf8
 
 
 # コモンニュースを取得したい場合は以下を実行するだけ。AGENTS.md の指示が動き出す。勝手にブラウザが開く。
-codex -m gpt-5.1-codex-mini --yolo -c model_reasoning_effort="high" --search "$@"
+codex -m gpt-5.4-codex-mini --yolo -c model_reasoning_effort="high" --search "$@"
 →あとは、マークダウンにまとめてGitHubにPUSHすれば携帯からも見られるようになる。
 みたいサイトはドンドン追加すれば良い。政治・芸能・科学・アメリカ など。
 
