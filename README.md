@@ -9,6 +9,8 @@ uv add -r requirements.txt --link-mode=copy
 グローバルの config.toml は使わないようにした。
 
 
+model: gpt-5.4-mini に変更した。
+
 
 
 # BRチャンネルの動画をダウンロードして最新 TOP N の動画をGeminiCLIで要約してレポートする。mp4は削除。
