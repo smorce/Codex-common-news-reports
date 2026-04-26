@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-04-26T09:05:53.5753368+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/",
+      "title": "Anthropic created a test marketplace for agent-on-agent commerce | TechCrunch",
+      "date": "2026-04-25T23:23:51.064Z",
+      "executive_summary": [
+        "AIエージェント同士の商取引を試す実験的な市場が作られた。",
+        "69人の参加者に100ドルの予算を渡すパイロットで実取引が発生した。",
+        "186件の取引が成立し、総額は約4,000ドルに達した。",
+        "4つの市場モデルを運用して、取引の成立条件を比較した。",
+        "人間の代わりにエージェントが売買を進める実装可能性が示された。",
+        "実運用というより、制度設計と安全性の検証に近い段階である。",
+        "市場ルール次第でエージェントの振る舞いが大きく変わることが示唆される。"
+      ],
+      "key_findings": [
+        {
+          "point": "エージェント同士が実際に売買できる市場を構築した。",
+          "footnote": "「test marketplace for agent-on-agent commerce」"
+        },
+        {
+          "point": "小規模だが実取引が発生し、概念実証を超えた。",
+          "footnote": "「69名に100ドル予算を配布するパイロットで実取引が発生」"
+        },
+        {
+          "point": "取引件数と金額が定量的に記録された。",
+          "footnote": "「186件の取引総額約4千ドル」"
+        },
+        {
+          "point": "複数の市場モデルを比較している。",
+          "footnote": "「4市場モデルを運用した」"
+        },
+        {
+          "point": "商取引の成立条件は市場設計に強く依存する。",
+          "footnote": "「実験でAIエージェントが代理取引を成立させた」"
+        }
+      ],
+      "references": [
+        "https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/"
+      ],
+      "retrieved_at": "2026-04-26T09:05:53.5753368+09:00"
+    },
+    {
+      "url": "https://blog.happyfellow.dev/simulacrum-of-knowledge-work/",
+      "title": "Simulacrum of Knowledge Work | One Happy Fellow - blog",
+      "date": "2026-04-25T21:24:07.519Z",
+      "executive_summary": [
+        "知識作業を模倣した出力は、見た目だけでは品質を測りにくい。",
+        "表面的に整った文章でも、日付や誤字で信頼性が崩れる。",
+        "市場分析の例から、形式と実質の差が問題になることが示される。",
+        "大規模言語モデルは表現力が高くても、品質の再現は別問題である。",
+        "評価指標を単純化しすぎると、グッドハートの法則が起きやすい。",
+        "AI出力の評価には、内容の妥当性を直接見る仕組みが必要だ。",
+        "人間の知識作業も、見栄えだけでは代替できないことが示唆される。"
+      ],
+      "key_findings": [
+        {
+          "point": "知識作業の模倣は評価を難しくする。",
+          "footnote": "「知識作業の模倣が出力品質の評価を難しくする」"
+        },
+        {
+          "point": "表面的な体裁だけでは信頼は担保されない。",
+          "footnote": "「日付不一致や誤字で表面的品質が信頼を崩す」"
+        },
+        {
+          "point": "LLMは表現力が高くても品質再現とは別物である。",
+          "footnote": "「大規模言語モデルは表現力高くも品質を再現せず」"
+        },
+        {
+          "point": "評価の単純化は指標の歪みを生む。",
+          "footnote": "「グッドハートの法則が生じる」"
+        },
+        {
+          "point": "実務では見た目より実質を測る基準が必要だ。",
+          "footnote": "「出力品質の評価を難しくする」"
+        }
+      ],
+      "references": [
+        "https://blog.happyfellow.dev/simulacrum-of-knowledge-work/"
+      ],
+      "retrieved_at": "2026-04-26T09:05:53.5753368+09:00"
+    },
+    {
+      "url": "https://newrepublic.com/article/209163/ai-industry-discovering-public-backlash",
+      "title": "The AI Industry Is Discovering That the Public Hates It   | The New Republic",
+      "date": "2026-04-25T21:24:07.355Z",
+      "executive_summary": [
+        "AI産業が世論の反発を強く意識し始めている。",
+        "4月の襲撃やデータセンター抗議が不信の背景として示される。",
+        "政治的暴力への懸念が、技術受容の議論に影を落としている。",
+        "若年層のAI不信は、今後の普及にとって無視できない要素である。",
+        "透明性や規制の説明責任が、受容の前提として重要になる。",
+        "単なる性能競争だけでは社会的な抵抗を解消できない。",
+        "AIの社会実装には、技術以外の信頼設計が必要だ。"
+      ],
+      "key_findings": [
+        {
+          "point": "業界は世間の反発を認識し始めている。",
+          "footnote": "「AI業界は世間の反発を認識し始めた」"
+        },
+        {
+          "point": "抗議や襲撃が政治的緊張の高さを示している。",
+          "footnote": "「4月の襲撃とデータセンター抗議」"
+        },
+        {
+          "point": "AIへの不信は若年層にも広がっている。",
+          "footnote": "「若者のAI不信」"
+        },
+        {
+          "point": "規制と透明性が主要な論点になっている。",
+          "footnote": "「規制の透明性が重要課題」"
+        },
+        {
+          "point": "社会的受容は性能向上だけでは解決しない。",
+          "footnote": "「世間の反発」"
+        }
+      ],
+      "references": [
+        "https://newrepublic.com/article/209163/ai-industry-discovering-public-backlash"
+      ],
+      "retrieved_at": "2026-04-26T09:05:53.5753368+09:00"
+    }
+  ]
+}
