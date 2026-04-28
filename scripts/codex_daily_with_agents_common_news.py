@@ -44,7 +44,7 @@ LLM_RETRY_MAX_DELAY = float(os.getenv("LLM_RETRY_MAX_DELAY", "120.0"))
 LLM_RETRY_STATUS_CODES = [429, 500, 502, 503, 504]
 
 # Codex CLI のモデル（環境変数 CODEX_MODEL で上書き可。ChatGPT 連携では codex 系が未対応のことがある）
-CODEX_MODEL = os.getenv("CODEX_MODEL", "gpt-5.4-mini")
+CODEX_MODEL = os.getenv("CODEX_MODEL", "gpt-5.5")
 
 # gemma4_e2b_video_summary.py 全体の subprocess タイムアウト（秒）
 # 目安: 動画あたり推論は長くて約5分×3本 + ダウンロード + 初回モデル読み込み（環境で上書き可）
@@ -587,7 +587,7 @@ class CodexDailyRunner:
             pass
         # #endregion
         try:
-            self.console.print(Panel.fit(f"Codex CLI: [bold]{codex_cmd}[/]\nProject config: [yellow]{local_config_path}[/] (headless MCP)\nModel: [cyan]{CODEX_MODEL}[/]\nMode: [cyan]exec --yolo -c model_reasoning_effort=\"medium\"[/]", title="Codex Runner", border_style="blue"))
+            self.console.print(Panel.fit(f"Codex CLI: [bold]{codex_cmd}[/]\nProject config: [yellow]{local_config_path}[/] (headless MCP)\nModel: [cyan]{CODEX_MODEL}[/]\nMode: [cyan]exec --yolo -c model_reasoning_effort=\"low\"[/]", title="Codex Runner", border_style="blue"))
         except Exception:
             pass
         
@@ -595,12 +595,12 @@ class CodexDailyRunner:
             # codex exec --yolo コマンドを実行（ストリーミング表示）
             # Windows では codex コマンドを shell=True で実行
             # CODEX_HOME を明示的に設定してホームディレクトリの検出を助ける
-            # モデルは CODEX_MODEL（既定: gpt-5.4-mini）
+            # モデルは CODEX_MODEL（既定: gpt-5.5）
             # config.toml に [text] verbosity = "medium" を設定済みのため、それを利用
             cmd_list = [
                 "codex", "exec", "--yolo",
                 "-m", CODEX_MODEL,
-                "-c", "model_reasoning_effort=medium",
+                "-c", "model_reasoning_effort=low",
                 "-c", 'text.verbosity="medium"'
             ]
             # #region agent log
@@ -855,7 +855,7 @@ class CodexDailyRunner:
                     [
                         codex_cmd, 'exec', '--yolo',
                         '-m', CODEX_MODEL,
-                        '-c', 'model_reasoning_effort=medium',
+                        '-c', 'model_reasoning_effort=low',
                         '-c', 'text.verbosity="medium"'
                     ],
                     f"Codex failed. See {err_file}. stderr excerpt: {err_snippet}"
