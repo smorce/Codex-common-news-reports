@@ -1,0 +1,113 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-05-07T09:03:07+09:00
+- Articles: 3
+
+## Inworld TTS を試す
+- Date: 2026-05-06T15:08:30+00:00
+
+### Executive Summary
+- Inworld の Realtime TTS-2 を中心に、製品概要、料金、API 利用、実測結果を確認している。
+- Realtime TTS-2 は会話文脈、感情、トーン、ペーシングを理解し、自然言語で発話を制御できる点を特徴としている。
+- TTS-2 は 100 以上の言語対応、音声アイデンティティ保持、ボイスクローン、ゼロデータ保持などを掲げている。
+- Inworld は TTS 以外にも STT、S2S、モデルルーティング、GPU レンタルに近いサービスも提供していると整理されている。
+- 料金は Realtime TTS-2 がオンデマンドで $35/100万文字、Realtime TTS 1.5 Mini は低遅延・低価格寄りとして比較されている。
+- 筆者は Colaboratory で inworld-tts SDK を使い、ストリーミング生成の TTFB と RTF を計測している。
+- 実測では TTFB が 0.398 秒、RTF が 0.171 と出たが、音声に一定間隔のノイズがあることを確認している。
+- チャンクの先頭が RIFF/WAVE であるため、raw PCM ではなく個別 WAV のように返っている可能性を疑っている。
+- Quickstart は初回利用者の離脱点になりやすいため、常に正しく動く状態を維持すべきだという所感で締めている。
+
+### Key Findings
+- Realtime TTS-2 はリアルタイム会話向けの次世代音声モデルとして紹介されている。 [^]
+  - Footnote: 記事冒頭で「リアルタイムTTS-2の紹介。これは、リアルタイム会話のために構築された次世代の音声モデルです。」と説明している。
+- TTS-2 は 100 以上の言語で話者の声の一貫性を保てることを特徴にしている。 [^]
+  - Footnote: 記事では「100以上の言語で一貫した音声アイデンティティを保持」と記載している。
+- Inworld の TTS モデルは TTS-2、1.5 Max、1.5 Mini の 3 種類として整理されている。 [^]
+  - Footnote: 製品・サービスの節に「TTSについては以下の3つのモデルがある」として 3 モデルの比較表が掲載されている。
+- オンデマンド価格では Realtime TTS-2 が $35/100万文字、1.5 Max が $25/100万文字、1.5 Mini が $15/100万文字とされている。 [^]
+  - Footnote: 比較表の価格行に「$35/100万文字」「$25/100万文字」「$15/100万文字」と記載されている。
+- 公式ドキュメント上の TTS-2 はプレビュー版のフラッグシップモデルとして扱われている。 [^]
+  - Footnote: Get Started のまとめで「Realtime TTS-2 最も表現力豊かなInworldの最新フラグシップモデル。現在プレビュー版。」とある。
+- 筆者は $10 を課金し、API キーを発行して API 経由の検証を行っている。 [^]
+  - Footnote: Quickstart 節で「今回は$10だけ課金してみる」「ではAPIキーを発行する」と記載している。
+- Python SDK のストリーミング検証では TTFB 0.398 秒、RTF 0.171 が観測されている。 [^]
+  - Footnote: 実行出力に「TTFB: 0.398 sec」「RTF: 0.171」と記載されている。
+- 返却チャンクが WAV ヘッダーを含むため、期待した raw LINEAR16 PCM ではない可能性がある。 [^]
+  - Footnote: 筆者は「raw LINEAR16 PCM かなと思いきや、WAVで返ってきてる」と述べ、各チャンクの head が RIFF/WAVE である出力を掲載している。
+
+### References
+- https://zenn.dev/kun432/scraps/84bf4c2e8f9b57
+
+## Gemma 4 の Multi-Token Prediction (MTP) drafters を試す
+- Date: 2026-05-06T12:50:29+00:00
+
+### Executive Summary
+- Gemma 4 向け Multi-Token Prediction drafters による推論高速化を、公式ブログと Transformers 実装をもとに試している。
+- MTP ドラフターは小型で効率的な補助モデルとして、メインの Gemma 4 と並行して複数トークンを先読みする。
+- 仕組みは speculative decoding と連動し、ドラフトモデルが候補を出し、ターゲットモデルがまとめて検証する流れとして説明されている。
+- Google は最大 3 倍高速化しつつ、出力品質や推論ロジックを劣化させないと紹介している。
+- MTP ドラフターは Gemma 4 と同じ Apache 2.0 ライセンスで提供され、Hugging Face や Kaggle から重みを取得できる。
+- 筆者は Colaboratory の L4 ランタイムで Gemma 4 E4B と assistant モデルをロードし、Transformers で MTP 推論を試した。
+- MTP を有効にする操作は `generate()` に `assistant_model` を渡すだけと整理されている。
+- ドラフトトークン数にはトレードオフがあり、Transformers の heuristic スケジュールで動的に調整できる点を確認している。
+- まとめでは、実測比較は未実施のため高速化は公式情報ベースであり、MTP と Speculative Decoding は別概念として理解すべきだとしている。
+
+### Key Findings
+- Gemma 4 の MTP ドラフターは最大 3 倍高速化を狙う仕組みとして紹介されている。 [^]
+  - Footnote: 記事冒頭に「Gemma 4 のワークフローを最大 3 倍高速化」と記載されている。
+- 標準的な LLM 推論の主な制約はメモリ帯域幅だと説明されている。 [^]
+  - Footnote: 記事では「標準的な LLM 推論は本質的にメモリ帯域幅に制限」と述べている。
+- ドラフターはターゲットモデルと並行して動く小型・高効率モデルとして位置づけられている。 [^]
+  - Footnote: 本文に「ターゲット（またはメイン）のGemma 4モデルと並行して動作する、小型で超効率的なモデル」とある。
+- 利用可能なランタイムとして Transformers、MLX、vLLM、SGLang、Ollama が挙げられている。 [^]
+  - Footnote: 公式ブログまとめの箇所で「Transformers」「MLX」「vLLM」「SGLang」「Ollama」が列挙されている。
+- Transformers ではターゲットモデルとアシスタントモデルの 2 つをロードする必要がある。 [^]
+  - Footnote: 試行手順で「MTPを使うには2つのモデルをロードする必要がある」と説明している。
+- Gemma 4 E4B の検証では VRAM 消費が約 15.7GB と報告されている。 [^]
+  - Footnote: 筆者は NVIDIA-SMI 出力の後に「VRAM消費は15.7GB程度」と記載している。
+- MTP 推論は `assistant_model=assistant_model` を `generate()` に渡すだけで有効化できる。 [^]
+  - Footnote: コード説明で「MTPを有効にするには `assistant_model=assistant_model` を `model.generate` に渡すだけ」とある。
+- ドラフトトークン数は採用率と無駄な計算のバランスを見て調整する必要がある。 [^]
+  - Footnote: 記事では「多ければ良いというわけではなく、設定する値によってトレードオフが発生する」と説明している。
+- 筆者は MTP と Speculative Decoding を同一視せず、前者は内部構造、後者は推論手法として区別している。 [^]
+  - Footnote: まとめで「Speculative Decoding と MTP は別のものだと思う」と記載している。
+
+### References
+- https://zenn.dev/kun432/scraps/5c3bfbce11098f
+
+## llama.cpp の Speculative Decoding を試す
+- Date: 2026-05-05T17:43:13+00:00
+
+### Executive Summary
+- llama.cpp における Speculative Decoding の概念、MTP との違い、複数実装、実際の起動方法を整理している。
+- Speculative Decoding は小さい高速モデルが複数トークンを先読みし、大きいモデルがまとめて検証することで生成を速くする手法として説明されている。
+- 品質を保つ理由は、大きいモデルが最終チェックを行い、誤ったドラフト以降を破棄するためだと整理されている。
+- MTP は複数トークンを予測する学習・構造であり、Speculative Decoding のドラフト生成に使えるが同義ではないと説明している。
+- llama.cpp は draft model 方式だけでなく、ngram-cache、ngram-simple、ngram-map、ngram-mod などモデル不要の方式もサポートしている。
+- n-gram 系は履歴や反復に依存するため、雑談よりコード修正、要約、長い文脈、reasoning の反復に向く可能性がある。
+- 筆者は Ubuntu 22.04 と RTX 4090 環境で llama.cpp を CUDA 有効でビルドし、llama-server で draft model 方式を試している。
+- Qwen3.5 27B を main、0.8B を draft とする構成で speculative decoding が初期化され、サーバが起動したことをログで確認している。
+- リクエスト時ログでは draft acceptance rate 0.94489、823 accepted / 871 generated が出ており、統計情報が確認できることも示している。
+
+### Key Findings
+- Speculative Decoding は小さいモデルの先読みと大きいモデルの検証で生成を高速化する。 [^]
+  - Footnote: 記事では「小さくて速いモデルに『たぶん次はこう続く』と先読みさせて、大きくて賢いモデルがそれをまとめてチェックする方法」と説明している。
+- ドラフトが正しければ複数トークンを一気に進められ、品質は本体モデルの検証で維持される。 [^]
+  - Footnote: 本文に「同じ結果を保ちながら、複数トークンを一気に進められます」とある。
+- 小さいモデルの予測が外れると効果が落ちるため、常に高速化するわけではない。 [^]
+  - Footnote: 記事では「小さいモデルが外しまくると…あまり速くなりません」と説明している。
+- MTP は Speculative Decoding そのものではなく、先読みを作る方法の一つとして整理されている。 [^]
+  - Footnote: 本文で「MTP = Speculative Decodingそのもの ではありません」「MTP = その『先読み』を作る方法の一つ」と記載している。
+- llama.cpp は draft model 方式と n-gram 系の複数方式をサポートしている。 [^]
+  - Footnote: llama.cpp ドキュメント抜粋で「複数の投機的デコーディング実装をサポート」とし、draft、ngram-cache、ngram-simple などを列挙している。
+- ngram-simple は追加モデル不要でオーバーヘッドが小さいが、過去に似た並びがないと効きにくい。 [^]
+  - Footnote: 比較表で ngram-simple のメリットを「追加モデル不要。オーバーヘッドが小さい」、デメリットを「過去に似た並びがないと効かない」としている。
+- 筆者は ngram-mod が共有プールを使うため比較的広いユースケースに使える可能性があると見ている。 [^]
+  - Footnote: 考察で「ngram-mod なら ユースケース広めに使える気がした」と述べている。
+- draft model 方式では main と draft の tokenizer/vocab 互換性が重要とされている。 [^]
+  - Footnote: 検証手順で「draftモデルとmainモデルで、tokenizer/vocabの互換性が必要」と記載している。
+- llama-server のログで speculative decoding の初期化と統計情報が確認できている。 [^]
+  - Footnote: ログに「speculative decoding context initialized」および「draft acceptance rate = 0.94489 ( 823 accepted / 871 generated)」が掲載されている。
+
+### References
+- https://zenn.dev/kun432/scraps/65bfaedf2939bd
