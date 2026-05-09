@@ -1,0 +1,91 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-05-09T09:23:55+09:00
+- Articles: 3
+
+## Hermes Agent 個人的セットアップメモ
+- Date: 2026-05-08T11:16:41+00:00
+
+### Executive Summary
+- Hermes Agent を本格利用するための個人セットアップメモである。
+- 主な対象は Web 検索バックエンドとしての SearXNG 導入である。
+- Docker Compose で SearXNG コンテナを起動する手順を示している。
+- SearXNG の検索結果を JSON 形式で返すため、settings.yml の formats に json を追加している。
+- curl で検索 API を確認し、results 件数が返れば動作確認完了としている。
+- Hermes 側では .env と config.yaml に SearXNG を反映する。
+- 追加で FireCrawl の API キー設定と extract_backend 指定もメモされている。
+
+### Key Findings
+- SearXNG は Docker Compose でローカルの 8888 番ポートに起動する構成になっている。 [^]
+  - Footnote: docker-compose.yml で image: searxng/searxng:latest、ports: "8888:8080"、SEARXNG_BASE_URL=http://localhost:8888/ が指定されている。
+- Hermes から検索結果を扱うため、SearXNG の出力形式に JSON を追加する必要がある。 [^]
+  - Footnote: settings.yml の search.formats に html と json を並べ、docker compose restart で反映する手順が記載されている。
+- 動作確認は SearXNG の search エンドポイントに format=json を付けて行う。 [^]
+  - Footnote: curl -s "http://localhost:8888/search?q=test&format=json" の結果から results 件数を表示し、20 results が出力例として示されている。
+- Hermes 側は環境変数と設定ファイルの両方で SearXNG を指定する。 [^]
+  - Footnote: ~/.hermes/.env に SEARXNG_URL=http://localhost:8888、config.yaml に search_backend: 'searxng' を設定している。
+- FireCrawl も抽出バックエンドとして利用候補に挙げられている。 [^]
+  - Footnote: FIRECRAWL_API_KEY を .env に入れ、config.yaml で extract_backend: firecrawl を指定する例が示されている。
+
+### References
+- https://zenn.dev/kun432/scraps/2e2e18104937ee
+
+## Hermes Agent ChangeLog
+- Date: 2026-05-08T03:25:56+00:00
+
+### Executive Summary
+- Hermes Agent の v0.6.0 以降の更新点を追った ChangeLog メモである。
+- 複数プロファイル、MCP サーバーモード、Docker コンテナなど運用面の強化が整理されている。
+- 推論プロバイダのフォールバックや API キーローテーションなど、可用性向上の機能が目立つ。
+- Slack、Telegram、Feishu、WeCom、Matrix など多様なゲートウェイ対応が拡張されている。
+- Web ダッシュボード、TUI、バックアップ、デバッグ共有など管理機能も増えている。
+- URL やレスポンスのシークレット検査、SSRF 防御、パストラバーサル防止などセキュリティ面の記述が多い。
+- 全体として、個人利用ツールから本番運用に近いエージェント基盤へ広がっている印象をまとめている。
+
+### Key Findings
+- v0.6.0 ではプロファイル機能により、1 つのインストールから複数の隔離された Hermes インスタンスを動かせる。 [^]
+  - Footnote: 各プロファイルは独立した設定、メモリ、セッション、スキル、ゲートウェイサービスを持つと説明されている。
+- Hermes は MCP サーバーモードを追加し、外部 MCP クライアントから会話やセッションにアクセスできる。 [^]
+  - Footnote: hermes mcp serve で Claude Desktop、Cursor、VS Code などから会話の閲覧、検索、添付ファイル管理ができると記載されている。
+- v0.7.0 ではメモリがプラグイン化され、サードパーティのメモリバックエンドを差し替え可能になった。 [^]
+  - Footnote: Honcho やベクターストア、自前 DB などがプロバイダ ABC を実装して登録できると説明されている。
+- v0.8.0 では長時間ジョブを扱うためのバックグラウンド完了通知が追加された。 [^]
+  - Footnote: 学習、テストスイート、デプロイ、ビルドのような長時間ジョブをポーリングなしで完了検知できるとある。
+- v0.9.0 ではローカル Web ダッシュボードが追加され、ブラウザから管理できるようになった。 [^]
+  - Footnote: 設定変更、セッション監視、スキル閲覧、ゲートウェイ管理を Web UI から行えると記載されている。
+- 複数バージョンにわたり、セキュリティ強化が継続的に入っている。 [^]
+  - Footnote: シークレット流出ブロック、SSRF 防御、tar 展開時のパストラバーサル防止、API サーバ認可強制、git 引数インジェクション防止が挙げられている。
+
+### References
+- https://zenn.dev/kun432/scraps/c8266049a4d9e1
+
+## Inworld TTS を試す ④ Best Practices
+- Date: 2026-05-07T13:58:03+00:00
+
+### Executive Summary
+- Inworld TTS のベストプラクティスを音声生成、レイテンシー、プロンプト、音声クローン、音声デザインに分けて整理している。
+- 自然な音声には用途に合った声の選択、句読点、強調、言語指定、テキスト正規化が重要とされる。
+- レイテンシー対策では WebSocket や HTTP のストリーミング、文単位の分割、keep-alive 再利用が挙げられている。
+- LLM で生成した文章を TTS に渡す場合、プロンプト側にも TTS 向けの指示を入れることが推奨されている。
+- 音声クローンでは録音環境、感情表現、サンプル長、音質、正規化などの条件が具体的に示されている。
+- 音声デザインでは年齢、性別、言語、アクセント、トーン、話速、品質を具体的に記述する必要がある。
+- 総評では、ドキュメント面の不満はありつつも、自然さ、速度、音声クローンと音声デザインの使いやすさを高く評価している。
+
+### Key Findings
+- 自然で高品質な音声生成には、用途と感情表現に合った音声選択が基本になる。 [^]
+  - Footnote: 記事では「求める感情表現・トーンに合った音声を選ぶこと」と記載されている。
+- 句読点や感嘆符は音声の間や強調に影響する。 [^]
+  - Footnote: 感嘆符で音声が強調され、句点・読点で自然な間が入り、文末にも句点を付与することを推奨している。
+- レイテンシー削減にはストリーミングと文単位の分割が有効とされている。 [^]
+  - Footnote: 最速は WebSocket ストリーミングで、HTTP ストリーミングも悪くなく、テキストを文単位で分割して TTS に渡すとある。
+- クライアントへの直接ストリーミングには JWT 認証が有効とされる。 [^]
+  - Footnote: JWT 認証を使用すればサーバーを介さずにクライアントへ直接ストリーミングでき、モバイルやブラウザアプリに最適と説明されている。
+- インスタント音声クローンでは短く高品質な音声クリップが推奨されている。 [^]
+  - Footnote: 音声クリップは 5〜15 秒以内、最低 22kHz のサンプリングレート・16 ビット深度、ノイズなし、音量正規化が推奨されている。
+- プロフェッショナル音声クローンでは録音仕様とサンプル量が明確に示されている。 [^]
+  - Footnote: WAV、48kHz、24ビット、リニアPCM、モノラル、最低 30 個で合計約 5 分、理想は 120 個で合計約 20 分と記載されている。
+- 音声デザインでは曖昧な説明を避け、属性を具体化することが推奨される。 [^]
+  - Footnote: 年齢、性別、言語、アクセント、ピッチ、速度、声色、トーン、感情などを詳細に記述するとある。
+
+### References
+- https://zenn.dev/kun432/scraps/4165106a14c38f
