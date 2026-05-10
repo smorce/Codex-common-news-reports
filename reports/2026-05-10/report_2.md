@@ -1,0 +1,94 @@
+# AI Common Report (https://ai-news.dev/)
+
+- Generated at: 2026-05-10T09:04:06.5249500+09:00
+- Articles: 3
+
+## ChatGPT Pro は高いので Codex + GitHub Copilot でお小遣いを守りたい #AI - Qiita
+- Date: 2026-05-06T23:21:12Z
+
+### Executive Summary
+- ChatGPT Pro を避けつつ Codex を使うための節約構成を紹介している。
+- 中心方針は Codex に実装を丸投げせず、指示とレビューに役割を絞ること。
+- 実装作業は GitHub Copilot CLI に寄せ、Codex のトークン消費を判断部分へ集中させる。
+- 事前調査や Issue 整理は ChatGPT と GitHub MCP で済ませる流れを推奨している。
+- 自宅 Mac mini を開発母艦にし、外出先の MacBook から Codex App のリモート接続で作業を継続する。
+- 有料契約は ChatGPT Plus と GitHub Copilot Pro の2つに絞り、月額約4,500円前後と説明している。
+- Plan モードを省くとかえって手戻りやトークン消費が増えるため、方針確認には使うべきだとしている。
+- Codex と Copilot 間の作業記憶は Markdown ファイルとして保存し、後続作業の文脈共有に使う提案もある。
+
+### Key Findings
+- Codex の役割を指示とレビューに限定し、実装は Copilot CLI に任せる構成が核になっている。 [^]
+  - Footnote: 記事本文に「Codex: 指示役、レビュー役、全体の取り回し」「GitHub Copilot CLI: 実装担当」と役割分担が明記されている。
+- Codex に全作業を任せるとレートリミット消費が大きいため、判断が必要な場面に利用を絞る狙いがある。 [^]
+  - Footnote: 本文では「Codex に全部やらせると大体 1〜2 回の反復で 5時間レートリミットを使い切ります」と説明している。
+- 料金面では ChatGPT Plus と GitHub Copilot Pro の組み合わせを節約構成として提示している。 [^]
+  - Footnote: 有料ライセンスとして「ChatGPT Plus ¥3,000/月」「GitHub Copilot Pro $10/月」「合計: ¥4,500円前後」と記載されている。
+- 作業前の調査、Issue 整理、方針検討は ChatGPT と MCP で進め、Codex 側の探索を減らす設計になっている。 [^]
+  - Footnote: 記事は「ChatGPT + GitHub MCP で事前調査や issue 整理をする」「Codex App に入る前に、出来るだけ方針と作業単位を整理」とまとめている。
+- Plan モードはトークン節約のためにも省略しない方がよいという実務上の主張がある。 [^]
+  - Footnote: 本文に「Plan を経由した方が結果としてゴールに達するまでのトークン消費は減る体感があります」とある。
+- 自宅 Mac mini を母艦にし、外出先からリモート接続することで環境構築の重複を避ける運用を提案している。 [^]
+  - Footnote: 記事では「外出先からは手元の MacBook の Codex App のリモート接続機能で自宅の Mac mini 上の Codex App に SSH 接続」と説明されている。
+
+### References
+- https://qiita.com/faunsu/items/f6edd279d32102e6f5a8
+
+## So you've heard these AI terms and nodded along; let's fix that | TechCrunch
+- Date: 2026-05-09T14:45:00-07:00
+
+### Executive Summary
+- TechCrunch による AI 用語集で、AI 分野の基礎概念を継続更新する記事として位置づけられている。
+- AGI、AI agent、API endpoint、chain of thought、coding agent などの語を実務者向けに説明している。
+- AGI は各社で定義が揺れており、専門家の間でも明確な合意がない概念として扱われている。
+- AI agent は複数の AI や外部サービスを使い、ユーザーの代わりに複数ステップのタスクを実行するものと説明される。
+- Coding agent はソフトウェア開発に特化し、コード作成、テスト、デバッグまで自律的に進める存在として整理されている。
+- Deep learning、neural network、LLM、inference、compute など、生成 AI を支える技術要素も平易に解説している。
+- Hallucination は AI が誤情報を生成する品質上の重大問題で、専門化モデルの必要性につながるとされる。
+- 記事全体は、AI ニュースを読む際に頻出語を理解するための参照資料として使える。
+
+### Key Findings
+- AI 用語は急速に増えており、記事は読者が LLM、RAG、RLHF などを理解するための生きた用語集として作られている。 [^]
+  - Footnote: 冒頭で「We update it regularly as the field evolves」と説明し、AI 分野の用語を整理する目的を示している。
+- AGI は OpenAI、Google DeepMind などで定義が異なり、統一的な意味が定まっていない。 [^]
+  - Footnote: AGI の項目では OpenAI CEO、OpenAI charter、Google DeepMind の定義を並べ、「experts」も混乱していると述べている。
+- AI agent は単なるチャットボットを超え、予約、経費処理、コード保守などの複数ステップ作業を担う概念として説明されている。 [^]
+  - Footnote: AI agent の項目に「filing expenses, booking tickets or a table at a restaurant, or even writing and maintaining code」と例示されている。
+- Chain-of-thought は問題を中間ステップに分解し、特に論理やコーディングで回答品質を高める手法として紹介されている。 [^]
+  - Footnote: 該当項目では「breaking down a problem into smaller, intermediate steps to improve the quality of the end result」と説明している。
+- Coding agent はコード提案にとどまらず、コードベース全体でバグ発見、テスト実行、修正まで行えるものとして扱われている。 [^]
+  - Footnote: Coding agents の項目では「write, test, and debug code autonomously」「operate across entire codebases」と述べている。
+- Hallucination は誤情報生成を指し、健康相談などでは実害につながる可能性がある重大な品質問題とされている。 [^]
+  - Footnote: Hallucination の項目に「generating information that is incorrect」「potentially dangerous consequences」と記載されている。
+
+### References
+- https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/
+
+## Perplexity AI、AIエージェントをMac上で自律動作させられるPersonal Computerに対応した新しい「Perplexity Mac」アプリを全Macユーザー向けに提供開始。 | AAPL Ch.
+- Date: 2026-05-08T09:29:03+09:00
+
+### Executive Summary
+- Perplexity AI が Personal Computer 対応の新しい Perplexity Mac アプリを全 Mac ユーザー向けに提供開始した。
+- Personal Computer は Mac または Mac mini 上で AI エージェントを自律動作させる機能として紹介されている。
+- ローカルファイル、ネイティブ Mac アプリ、Web、Perplexity の安全なサーバーをまたいでタスクを実行できる。
+- この機能は 2026年4月に一部の Perplexity Max ユーザーへロールアウトされていた。
+- 新アプリは Perplexity 公式サイトで配布され、Mac App Store 版 Perplexity for Mac は提供終了に向かう。
+- 既存の App Store 版を使っている場合は削除してから新アプリをセットアップするよう案内されている。
+- 利用には Perplexity Pro または Max サブスクリプションが必要とされる。
+- フルディスクアクセス、アクセシビリティ、画面収録の権限付与が必要で、権限管理が重要な導入ポイントになる。
+
+### Key Findings
+- Personal Computer 対応の新 Perplexity Mac アプリが全 Mac ユーザー向けに提供開始された。 [^]
+  - Footnote: 本文冒頭に「全てのMacユーザーにAIエージェントをMac上で自律動作させられる『Personal Computer』の提供を開始」とある。
+- Personal Computer は Mac 上のローカル資源と Web、Perplexity サーバーを横断してタスクを実行する。 [^]
+  - Footnote: 記事は「ローカルファイル、ネイティブのMacアプリ、ウェブ、そしてPerplexityの安全なサーバーにまたがってタスクを実行」と説明している。
+- 機能は当初、一部の Perplexity Max ユーザーにロールアウトされていた。 [^]
+  - Footnote: 本文では 2026年04月に「一部のPerplexity Maxユーザー向けにロールアウト」と経緯を記載している。
+- 新アプリの配布開始に伴い、Mac App Store 版 Perplexity for Mac は提供終了に向かう。 [^]
+  - Footnote: 記事に「Mac App Storeで配布されていた『Perplexity for Mac』アプリの提供が終了」とある。
+- AI エージェントに Mac 操作を許可するため、フルディスクアクセス、アクセシビリティ、画面収録の権限が必要になる。 [^]
+  - Footnote: 本文は起動時に「フルディスクアクセスとアクセシビリティ、画面収録の権限」を求めると説明している。
+- 利用には Perplexity Pro または Max のサブスクリプション登録が必要である。 [^]
+  - Footnote: 記事には「Personal Computerを利用するにはPerplexity ProまたはMaxサブスクリプションに登録する必要」と記載されている。
+
+### References
+- https://applech2.com/archives/20260508-perplexity-personal-computer-for-all-mac-user-hero.html
