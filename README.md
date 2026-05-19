@@ -12,6 +12,10 @@ uv add -r requirements.txt --link-mode=copy
 model: gpt-5.4-mini に変更した。
 
 
+# gemma4_e2b でBRチャンネルの動画を要約する
+uv run --link-mode=copy gemma4_e2b_video_summary.py -o gemma4_reports/test_summary.md -n 3
+
+
 
 # BRチャンネルの動画をダウンロードして最新 TOP N の動画をGeminiCLIで要約してレポートする。mp4は削除。
 uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g" -o out_report -n 5
