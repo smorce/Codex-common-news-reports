@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-05-21T09:01:41.8366558+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/91f1e0413c0a66",
+      "title": "「llama-benchy」を試す",
+      "date": null,
+      "executive_summary": [
+        "OpenAI互換LLMエンドポイント向けのベンチマークツール llama-benchy のREADME抜粋を紹介している。",
+        "llama.cpp専用の llama-bench では測れない推論エンジンを対象にできる点が主眼である。",
+        "異なるコンテキスト深度でプロンプト処理速度とトークン生成速度を測れる。",
+        "TTFR、推定プロンプト処理時間、エンドツーエンドTTFTなど複数の遅延指標を扱う。",
+        "HuggingFaceトークナイザーやProject Gutenbergの書籍を使い、トークン数や入力文を制御できる。",
+        "uvx、uv run、仮想環境、システムインストールなど複数の導入手順が示されている。",
+        "出力はMarkdown、JSON、CSVに対応し、時系列スループットも保存できる。",
+        "現在の制限として、評価対象は /v1/chat/completions のみとされている。"
+      ],
+      "key_findings": [
+        {
+          "point": "llama-benchy はOpenAI互換エンドポイントのベンチマークを llama-bench 風に出力するツールである。",
+          "footnote": "本文に「OpenAI互換LLMエンドポイント向けのベンチマークツール（llama-bench形式）」とある。"
+        },
+        {
+          "point": "背景には、llama-bench が llama.cpp 専用で他の推論エンジンに使えない課題がある。",
+          "footnote": "本文に「llama.cpp専用に設計されており、vllmやSGLangといった他の推論エンジンでは使用できません」とある。"
+        },
+        {
+          "point": "異なるコンテキスト深度でプロンプト処理速度と生成速度を測定できる。",
+          "footnote": "主な機能に「異なるコンテキスト深度におけるプロンプト処理速度（pp）とトークン生成速度（tg）を測定可能」とある。"
+        },
+        {
+          "point": "遅延指標としてTTFR、est_ppt、e2e_ttftを報告する。",
+          "footnote": "主な機能に「初回応答までの時間（データチャンク）（TTFR）、推定プロンプト処理時間（est_ppt）、およびエンドツーエンドのTTFTを報告」とある。"
+        },
+        {
+          "point": "複数回実行して平均値と標準偏差を出せるため、ばらつきを含む比較に使える。",
+          "footnote": "主な機能に「複数の反復処理（--runs）を実行可能で、平均値±標準偏差を報告」とある。"
+        },
+        {
+          "point": "結果保存はMarkdown、JSON、CSVに対応している。",
+          "footnote": "主な機能に「結果をMarkdown、JSON、またはCSV形式でファイルに保存可能」とある。"
+        },
+        {
+          "point": "評価対象エンドポイントには制限がある。",
+          "footnote": "現在の制限事項に「評価対象は/v1/chat/completionsエンドポイントのみ」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/91f1e0413c0a66"
+      ],
+      "retrieved_at": "2026-05-21T09:01:41.8366558+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/32e432d4803d32",
+      "title": "「aiperf」を試す",
+      "date": null,
+      "executive_summary": [
+        "AIPerf は生成AIモデルの性能測定を目的とする包括的なベンチマークツールとして紹介されている。",
+        "ZMQ通信を使う10サービス構成のマルチプロセスアーキテクチャが特徴である。",
+        "dashboard、simple、none の3種類のUIモードを持つ。",
+        "並行処理、リクエストレート、トレース再生など複数のベンチマークモードを備える。",
+        "OpenAI系APIに加え、NIM embeddings や rankings などにも対応する。",
+        "ShareGPT、AIMO、MMStar、ASRなど多様な公開データセットやカスタムデータセットを扱える。",
+        "負荷制御、到着パターン、ウォームアップ、キャンセル処理など実運用に近い条件設定が豊富である。",
+        "既知の問題として、高い同時接続数でのポート枯渇や無効設定時の停止などが挙げられている。"
+      ],
+      "key_findings": [
+        {
+          "point": "AIPerf は生成AIモデルの性能を測るベンチマークツールである。",
+          "footnote": "本文に「生成AIモデルの性能を測定する包括的なベンチマークツール」とある。"
+        },
+        {
+          "point": "詳細メトリクスとベンチマーク性能レポートの両方を提供する。",
+          "footnote": "本文に「コマンドライン表示による詳細なメトリクスと、詳細なベンチマーク性能レポートの両方を提供」とある。"
+        },
+        {
+          "point": "アーキテクチャはZMQ通信を採用した10サービス構成である。",
+          "footnote": "主な機能に「ZMQ通信を採用した10個のサービスで構成されるスケーラブルなマルチプロセスアーキテクチャ」とある。"
+        },
+        {
+          "point": "UIはリアルタイムTUI、進捗バー、ヘッドレスの3モードを選べる。",
+          "footnote": "主な機能に「3種類のUIモード：dashboard（リアルタイム操作可能なTUI）、simple（進捗バー表示）、none（ヘッドレスモード）」とある。"
+        },
+        {
+          "point": "OpenAI chat completions だけでなく、embeddings、audio、images など複数APIに対応する。",
+          "footnote": "対応APIに「OpenAI chat completions, completions, embeddings, audio, images」とある。"
+        },
+        {
+          "point": "公開データセットとカスタム形式データセットをサポートする。",
+          "footnote": "主な機能に「公開データセットのサポート：ShareGPTやカスタム形式データセットを含む」とある。"
+        },
+        {
+          "point": "負荷制御ではリクエストレートや最大同時リクエスト数を組み合わせられる。",
+          "footnote": "負荷制御に「最大同時リクエスト数を考慮したリクエストレート制御」とある。"
+        },
+        {
+          "point": "非常に高い同時接続数では環境側のポート枯渇に注意が必要である。",
+          "footnote": "既知の問題点に「非常に高い同時接続数設定（通常15,000件以上）では、一部のシステムでポート枯渇が発生」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/32e432d4803d32",
+        "https://github.com/ai-dynamo/aiperf"
+      ],
+      "retrieved_at": "2026-05-21T09:01:41.8366558+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/7e0becc836485f",
+      "title": "「Colima」を試す",
+      "date": null,
+      "executive_summary": [
+        "Colima はmacOSおよびLinux向けのコンテナランタイムとして紹介されている。",
+        "最小限の設定でコンテナ実行環境を利用できることが目的とされている。",
+        "Intel Mac、Apple Silicon、Linux に対応する。",
+        "直感的なCLI、自動ポートフォワード、ボリュームマウントなど基本機能を備える。",
+        "Docker、containerd、Incus など複数のランタイムに対応する。",
+        "DockerおよびcontainerdではオプションでKubernetesも利用可能とされている。",
+        "AIワークロード向けのGPUアクセラレーション対応コンテナも機能に含まれる。",
+        "裏側ではLimaでVMを立ち上げ、その中でコンテナを動かす構成だと筆者が補足している。"
+      ],
+      "key_findings": [
+        {
+          "point": "Colima はmacOSとLinuxで使えるコンテナランタイムである。",
+          "footnote": "本文に「macOS（およびLinux）向けの最小限の設定で動作するコンテナランタイム」とある。"
+        },
+        {
+          "point": "プロジェクトの目的はmacOSで最小限の設定によりコンテナランタイムを使えるようにすることにある。",
+          "footnote": "プロジェクトの目的に「macOS環境において、最小限の設定でコンテナランタイムを利用できるようにすること」とある。"
+        },
+        {
+          "point": "対応環境はIntel Mac、Apple Silicon、Linuxである。",
+          "footnote": "主な機能に「IntelプロセッサおよびApple Silicon搭載のmacOS、およびLinux環境に対応」とある。"
+        },
+        {
+          "point": "ポートフォワードとボリュームマウントを標準的な利便機能として備える。",
+          "footnote": "主な機能に「自動ポートフォワード機能」「ボリュームマウント機能」とある。"
+        },
+        {
+          "point": "複数インスタンスを同時に実行できる。",
+          "footnote": "主な機能に「複数インスタンスの同時実行」とある。"
+        },
+        {
+          "point": "Docker、Containerd、Incus の複数ランタイムをサポートする。",
+          "footnote": "主な機能に「Docker」「Containerd」「Incus」が列挙されている。"
+        },
+        {
+          "point": "Colima はLima上でコンテナを動かすという設計に由来する。",
+          "footnote": "名前の由来に「Colima」とは「Lima上でのコンテナ」を意味します」とある。"
+        },
+        {
+          "point": "筆者はREADME補足として、裏側でLimaを使いVM内でコンテナを動かす構成だと理解している。",
+          "footnote": "本文末に「裏ではLimaを使ってVMを立ち上げてそこでコンテナを動かすという感じみたい」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/7e0becc836485f",
+        "https://github.com/abiosoft/colima"
+      ],
+      "retrieved_at": "2026-05-21T09:01:41.8366558+09:00"
+    }
+  ]
+}
