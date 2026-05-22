@@ -1,0 +1,238 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-05-22T09:56:55+09:00
+- Articles: 9
+
+## 真相・ニュースの現場から：どうやって結びついた? 知人が語る容疑者7人の素顔 栃木強殺
+
+### Executive Summary
+- トップニュース枠で毎日新聞の記事として表示された。
+- 栃木の強盗殺人事件をめぐり、容疑者7人の関係性に焦点を当てている。
+- 見出しは、知人証言を通じて容疑者らの素顔を探る構成を示している。
+- 事件の背景として、複数人がどう結びついたかが主要論点になっている。
+- Google ニュース上では4時間前の記事として扱われていた。
+- 同じ事件について TBS、Yahoo!ニュース、NHK などの関連記事も並んでいた。
+- 詳細本文は提供元記事側で確認が必要だが、ニュース価値は事件の組織性と関係者像にある。
+
+### Key Findings
+- トップニュースの先頭記事として表示された。 [^]
+  - Footnote: Google ニュースの「トップニュース」欄に「毎日新聞」とともに掲載。
+- 記事の主題は栃木の強盗殺人事件である。 [^]
+  - Footnote: 見出しに「栃木強殺」と明記されている。
+- 容疑者7人の関係形成が焦点である。 [^]
+  - Footnote: 見出しに「どうやって結びついた?」「容疑者7人」とある。
+- 人的証言を使った背景解説型の記事とみられる。 [^]
+  - Footnote: 見出しに「知人が語る容疑者7人の素顔」とある。
+- 事件は複数媒体で継続的に報じられている。 [^]
+  - Footnote: 同一枠に TBS NEWS DIG、Yahoo!ニュース、NHKニュースの関連記事が表示された。
+
+### References
+- https://news.google.com/read/CBMiaEFVX3lxTFBacHpsdlkwODFhcmRoWmNpNW43MnJzc0tBRDF3UlVPOHVBVWxMTmpjYktTTmwzTmVFV05xT25XSk9IOVBDS1NZYmZFT0w0SkNkLUY4QjhZb2FWeGx6UmFJeXNRUmdHTk5j?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 横浜で乗用車など８台絡む玉突き、５人搬送 最初に追突した運転手が逃走か
+
+### Executive Summary
+- ローカルニュース枠でカナロコの記事として表示された。
+- 横浜で乗用車など8台が絡む玉突き事故が発生したと伝えている。
+- 事故により5人が搬送されたことが見出し上の主要情報である。
+- 最初に追突した運転手が逃走した可能性も示されている。
+- Google ニュース上では12時間前の記事として表示されていた。
+- 地域性が高く、横浜市周辺の交通安全・事故捜査に関わるニュースである。
+- 詳細本文は提供元での確認が必要だが、被害規模と逃走疑いが重要点である。
+
+### Key Findings
+- ローカルニュースとして横浜の事故が選ばれている。 [^]
+  - Footnote: 「ローカル ニュース」欄に「カナロコ」とともに表示。
+- 事故には複数車両が関与した。 [^]
+  - Footnote: 見出しに「乗用車など８台絡む玉突き」とある。
+- 人的被害が発生している。 [^]
+  - Footnote: 見出しに「５人搬送」と明記されている。
+- 捜査上の焦点は最初の追突車の運転手である。 [^]
+  - Footnote: 見出しに「最初に追突した運転手が逃走か」とある。
+- Google ニュース上では半日以内の地域ニュースとして扱われていた。 [^]
+  - Footnote: 記事時刻は「12 時間前」と表示された。
+
+### References
+- https://news.google.com/read/CBMibkFVX3lxTE43akZZTXVoRXZaRDNiN2ZGN25LLVU2SGdkRHZyaEQ0UUNwZy15TE1hbUd6R1Y2aG5NMTJlSk5Rd2ZFa28wc1A4N1lsMzJLZDdqWVoyVEdZLXNOUm9iSjF6TVZkc1JIMjhRWkRzNTdn?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 少年野球場に無許可建築 除却勧告
+
+### Executive Summary
+- おすすめ相当の枠として、ログイン不要で表示された「その他のニュース」から取得した。
+- Yahoo!ニュースの記事で、少年野球場の無許可建築が主題である。
+- 行政側が除却勧告を出したことが見出しの中心に置かれている。
+- 施設運営、建築確認、地域利用のルール遵守が論点になる可能性がある。
+- Google ニュース上では43分前の記事として表示されていた。
+- ログインしない状態では「あなたへのおすすめ」は個別化されず、代替として一般表示記事を採用した。
+- 詳細本文は提供元での確認が必要だが、無許可建築と行政対応が核心である。
+
+### Key Findings
+- ログイン不要で確認できる一般ニュースから選定した。 [^]
+  - Footnote: 「あなたへのおすすめ」はログイン誘導が表示され、「その他のニュース」に記事が表示された。
+- 問題の対象は少年野球場である。 [^]
+  - Footnote: 見出しに「少年野球場」とある。
+- 建築手続き上の問題が示されている。 [^]
+  - Footnote: 見出しに「無許可建築」と明記されている。
+- 行政措置として除却勧告が出ている。 [^]
+  - Footnote: 見出しに「除却勧告」とある。
+- 速報性の高い記事として表示された。 [^]
+  - Footnote: Google ニュース上の表示時刻は「43 分前」。
+
+### References
+- https://news.google.com/read/CBMiUEFVX3lxTE5lTmNJbTNYaEVlNk1TdjB1aFZERUl2Uk9qLV9jd0xLOXVqSEhSR1A5T0IxY2prYWF4UHoxLUlJcTdIbjBsMnZZTDc0VTdRU2Vl?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 死亡した抗議船の船長、同志社国際高から謝礼6回受領 国交省「有償性」確認
+
+### Executive Summary
+- トピック「日本」枠の関連記事として産経ニュースの記事を取得した。
+- 辺野古沖の抗議船転覆事故に関連し、死亡した船長の運航実態が焦点になっている。
+- 同志社国際高から謝礼を6回受け取っていた点が見出しで強調されている。
+- 国交省が有償性を確認したことから、無登録運航など法令面の論点が浮上している。
+- 同じ話題で朝日新聞、TBS、日本経済新聞の記事も並んでいた。
+- Google ニュース上では2時間前の記事として表示された。
+- 詳細本文は提供元での確認が必要だが、教育活動、運航契約、規制判断が主要論点である。
+
+### Key Findings
+- 日本トピック内で辺野古転覆事故関連の記事が上位表示された。 [^]
+  - Footnote: トピック「日本」周辺に同一テーマの記事が複数表示された。
+- 死亡した船長が記事の対象である。 [^]
+  - Footnote: 見出しに「死亡した抗議船の船長」とある。
+- 学校側から複数回の謝礼があったとされる。 [^]
+  - Footnote: 見出しに「同志社国際高から謝礼6回受領」と明記されている。
+- 国交省は有償性を確認したとされる。 [^]
+  - Footnote: 見出しに「国交省『有償性』確認」とある。
+- 関連報道では刑事告発や教育基本法の論点も並行して扱われている。 [^]
+  - Footnote: 同一画面に「刑事告発へ」「教育基本法に違反」などの関連記事が表示された。
+
+### References
+- https://news.google.com/read/CBMidkFVX3lxTFBkS01xaENZeW1uenNLajgtOVVzbUVZRmtTZjlFY2FkZU9wQi01bW5aTGVzMGdLbFJWZmVnaUxaaXk4RXJ1Y1kwMlJNN1hIMV9zZjdlNXJiOTZyVVVseVE3YXk3bnU5WGpSRnhDV1dQNnZ6M2FLUGc?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 織田裕二が車椅子に乗った刑事に！SPドラマ「ダブルエッジ」で主演、バディは小野花梨
+
+### Executive Summary
+- トピック「エンタメ」相当として、Google ニュース上のエンタメ系表示から取得した。
+- ナタリーの記事で、織田裕二がスペシャルドラマに主演する内容である。
+- 作品名は「ダブルエッジ」で、車椅子に乗った刑事役が紹介されている。
+- 共演・バディ役として小野花梨の名前が見出しに出ている。
+- Google ニュース上では4時間前の記事として表示された。
+- ドラマの設定と主演俳優の役柄がニュース価値の中心である。
+- 詳細本文は提供元での確認が必要だが、出演者、作品名、役柄が確認できる。
+
+### Key Findings
+- エンタメ記事としてドラマ出演情報を取得した。 [^]
+  - Footnote: Google ニュース上にナタリー提供の記事として表示された。
+- 主演は織田裕二である。 [^]
+  - Footnote: 見出しに「織田裕二が」「主演」とある。
+- 役柄は車椅子に乗った刑事とされる。 [^]
+  - Footnote: 見出しに「車椅子に乗った刑事に」とある。
+- 作品名はスペシャルドラマ「ダブルエッジ」である。 [^]
+  - Footnote: 見出しに「SPドラマ『ダブルエッジ』」とある。
+- 小野花梨がバディ役として紹介されている。 [^]
+  - Footnote: 見出しに「バディは小野花梨」とある。
+
+### References
+- https://news.google.com/read/CBMiS0FVX3lxTE1uTEtvSkF0Qnh0eHFiSFFmb0VUby1NenNCM0JYWl9VVzFyQUU5WndkS2VjRkUxNEZ1Y3QwSW5TdW5GSm9mZ2R5NnJyQQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ２２日の株式相場見通し＝続伸、ＮＹダウ最高値更新追い風に利食い売り圧力こなす
+
+### Executive Summary
+- トピック「ビジネス」相当として、株探の記事を取得した。
+- 記事は5月22日の株式相場見通しを扱っている。
+- 日本株は続伸が見込まれるという見立てが見出しに示されている。
+- NYダウの最高値更新が追い風として言及されている。
+- 一方で、利食い売り圧力をこなす展開も想定されている。
+- Google ニュース上では1時間前の記事として表示された。
+- 詳細本文は提供元での確認が必要だが、海外株高と利益確定売りのバランスが論点である。
+
+### Key Findings
+- ビジネス・市場系の記事として株式相場見通しを取得した。 [^]
+  - Footnote: Google ニュース上に「株探（かぶたん）」の記事として表示された。
+- 対象日は22日の相場である。 [^]
+  - Footnote: 見出しに「２２日の株式相場見通し」とある。
+- 市場の基調は続伸予想である。 [^]
+  - Footnote: 見出しに「続伸」と明記されている。
+- NYダウ最高値更新が材料視されている。 [^]
+  - Footnote: 見出しに「ＮＹダウ最高値更新追い風」とある。
+- 利益確定売りへの警戒も含まれている。 [^]
+  - Footnote: 見出しに「利食い売り圧力こなす」とある。
+
+### References
+- https://news.google.com/read/CBMiYEFVX3lxTE14b1hnN2dHdWxHdVBJemxXdzNoaUxlazE0SDJVZ1BHQmlBNWUzR0VLa2EtTDJ4NGd0UTBDaHVaZjVYVDl6Z3VaN0NManh0M2ZmMHdwRmkyR2VhRnp5TzFoUQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 『クラブ・エム・スター』、ペットで駆け抜ける新コンテンツ「ペットレース」スタート！宇宙サーキットなどを舞台にした新感覚レース＆記念イベント開催
+
+### Executive Summary
+- トピック「宇宙」相当として、Google ニュース上で宇宙を含む記事を取得した。
+- PR TIMESの記事で、ゲーム内新コンテンツ「ペットレース」の開始を伝えている。
+- 舞台の一つとして「宇宙サーキット」が見出しに含まれている。
+- 記事は宇宙科学ではなく、宇宙をテーマにしたエンタメ・ゲーム施策である。
+- 記念イベントの開催も同時に告知されている。
+- Google ニュース上では16時間前の記事として表示された。
+- 宇宙カテゴリとしては限定的な内容のため、本文確認時はテーマ性に注意が必要である。
+
+### Key Findings
+- 宇宙関連語を含む記事として取得した。 [^]
+  - Footnote: 見出しに「宇宙サーキット」とある。
+- 記事の提供元は PR TIMES である。 [^]
+  - Footnote: Google ニュース上に「PR TIMES」と表示された。
+- 対象は『クラブ・エム・スター』の新コンテンツである。 [^]
+  - Footnote: 見出しに「『クラブ・エム・スター』」とある。
+- 新コンテンツ名は「ペットレース」である。 [^]
+  - Footnote: 見出しに「新コンテンツ『ペットレース』スタート」とある。
+- 記念イベントも実施される。 [^]
+  - Footnote: 見出しに「記念イベント開催」とある。
+
+### References
+- https://news.google.com/read/CBMiakFVX3lxTE5HZ05NRlRLUDlRdWNJODZTVmYwVGxLOEc1SEFlNENEMlR2MjFsdlVfNzJ0NFZLbk1pMkR4UUptQm9UelZSNVNLTEIzWXVtSFVyYzZ2a3A2NjlQbmRGVXo3VnVVYU1JZmY3Q3c?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 「紙巻たばこより安全と…」 加熱式たばこ巡る厚労省調査結果に専門委員も驚き
+
+### Executive Summary
+- トピック「栄養」相当として、健康・生活リスクに近い記事を取得した。
+- 産経ニュースの記事で、加熱式たばこをめぐる厚労省調査結果を扱っている。
+- 紙巻たばこより安全だという認識に関する内容が見出しに示されている。
+- 専門委員も驚いたという表現から、調査結果が政策・啓発上の論点を含むことがうかがえる。
+- 栄養そのものではなく健康行動・公衆衛生領域の記事として扱う。
+- Google ニュース上では13時間前の記事として表示された。
+- 詳細本文は提供元での確認が必要だが、リスク認識と厚労省調査が主要点である。
+
+### Key Findings
+- 健康関連の記事として取得した。 [^]
+  - Footnote: 見出しに「加熱式たばこ」「厚労省調査結果」とある。
+- 加熱式たばこの安全性認識が論点である。 [^]
+  - Footnote: 見出しに「紙巻たばこより安全と…」とある。
+- 厚生労働省の調査結果が根拠になっている。 [^]
+  - Footnote: 見出しに「厚労省調査結果」と明記されている。
+- 専門委員の反応も記事の要素である。 [^]
+  - Footnote: 見出しに「専門委員も驚き」とある。
+- 栄養カテゴリに完全一致する記事はホーム表示内で確認できなかったため、健康関連として代替した。 [^]
+  - Footnote: Google ニュースの取得画面では「栄養」見出しの専用枠は表示されなかった。
+
+### References
+- https://news.google.com/read/CBMidkFVX3lxTE5ZTzhKRzlRNm5panF0RkM5UGhITG42TUJwS0hrTG42eDJ0c3dwZ0tsUEtaRzhBeXRQdXY1MmozenhvZDVUZnRyQ2hBVzlNeEh3bmR4RkpwbXJiRU5EMFNzczVhQkpQeENCLWo2LXFUV1l1NnpneWc?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 「公益通報」を問う：「この警視総監の下では働けぬ」法廷で証言の警部補、決意の退職
+
+### Executive Summary
+- 興味深いニュース枠から毎日新聞の記事を取得した。
+- 記事は公益通報をめぐる問題を扱っている。
+- 法廷で証言した警部補が退職を決意した経緯が見出しで示されている。
+- 「この警視総監の下では働けぬ」という強い言葉が、組織内の深刻な対立や不信を示唆する。
+- Google ニュース上では2日前の記事として表示された。
+- 記者名として遠藤浩二氏が表示されていた。
+- 詳細本文は提供元での確認が必要だが、公益通報制度、警察組織、証言者保護が主要論点である。
+
+### Key Findings
+- 興味深いニュース枠の記事として表示された。 [^]
+  - Footnote: 「興味深いニュース」「注目の記事と話題の記事」欄に掲載された。
+- 公益通報が中心テーマである。 [^]
+  - Footnote: 見出しに「『公益通報』を問う」とある。
+- 法廷証言を行った警部補が取り上げられている。 [^]
+  - Footnote: 見出しに「法廷で証言の警部補」とある。
+- 退職の決意が記事の重要な展開である。 [^]
+  - Footnote: 見出しに「決意の退職」と明記されている。
+- 記事には記者名情報が付いていた。 [^]
+  - Footnote: Google ニュース上に「記者/ライター: 遠藤浩二」と表示された。
+
+### References
+- https://news.google.com/read/CBMiaEFVX3lxTFAzeWl5LXpmXy0zNE13dkRmc1BCTG5oaDhNSFpaSnRUckw1MWQ0U0xwTlNzd0lzcjBXWVN3TkZFdWI2ZW03OEk1dEpUblo4dURSdC0zN1ZNcER1Nm1qR2diODVFOXAtQi1C?hl=ja&gl=JP&ceid=JP%3Aja

@@ -1,102 +1,109 @@
 # AI Common Report (https://ai-news.dev/)
 
-- Generated at: 2026-05-22T09:04:54.3968430+09:00
+- Generated at: 2026-05-22T09:54:46.4793246+09:00
 - Articles: 3
 
 ## 検索窓も25年ぶり刷新　Google検索トップに聞く「AIとエージェントと検索」の現在地 - Impress Watch
 - Date: 2026-05-22T00:01:00+09:00
 
 ### Executive Summary
-- Google I/O 2026で、Google検索のAI化が大きく進む方針が示された。
-- 検索窓は25年ぶりに刷新され、長文入力や画像を含むマルチモーダル検索を前提にする。
-- AIモードとAIによる概要は、通常検索からより自然に利用できる形へ統合されていく。
-- 背後のモデルはGemini 3.5 Flashへ更新され、精度と応答品質の向上が期待される。
-- Gemini Sparkにより、価格や予約可否などの変化を追跡するエージェント機能が検索に入る。
-- 検索結果には、Geminiが生成するインタラクティブな生成UIも追加される。
-- Googleは、AI検索でもソース確認や高品質なWeb情報への接続を重視すると説明している。
-- SEOについてはAI向けの特殊最適化より、人が読みたい専門性あるコンテンツが重要だとしている。
+- Google I/O 2026で、Google検索のAI化と検索窓刷新が大きな焦点になった。
+- 検索窓は長文入力や画像・PDFを含むマルチモーダル検索に対応する方向へ変わる。
+- AIモードとAIによる概要は、通常検索とより近い体験として統合されつつある。
+- AIモードの背後のモデルはGemini 3.5 Flashへ更新され、精度向上が期待される。
+- Gemini Sparkを使う情報エージェントが、価格や予約可能性などの変化を追跡する。
+- 生成UIにより、検索結果内で操作できる図版やウィジェットを自動生成する構想が示された。
+- GoogleはAI向け最適化よりも、人間が読みたい専門性あるコンテンツを重視すると説明した。
+- AI検索の消費電力については、クエリ内容に応じたモデル選択とインフラ最適化で対応する方針を示した。
 
 ### Key Findings
-- Google検索は長文・画像入力を標準的に扱う方向へ変わる。 [^]
-  - Footnote: 記事は「検索窓の仕様が25年ぶりに刷新され、AIでの『長文による検索』『画像を含めたマルチモーダルな検索』が基本」と説明している。
-- AIモードは通常検索からアクセスしやすくなり、検索体験の中心に近づく。 [^]
-  - Footnote: リード氏は、AIモードへ直接移行できるようにしつつ、大部分の人には通常の検索ボックスを拡張して使えるようにしたと述べている。
-- 検索AIの基盤モデルはGemini 3.5 Flashへ更新される。 [^]
-  - Footnote: 本文に「AIモードの背後で動くAIモデルも、最新のGemini 3.5 Flashに変更」とある。
-- 検索へのエージェント導入は、最新情報の継続追跡を省力化する狙いがある。 [^]
-  - Footnote: 記事では、毎日や毎時間確認する手間を減らすため、情報更新を追跡するインフォメーション・エージェントを導入すると説明している。
-- 生成UIは、検索結果内に対話的な図表や操作要素を作る。 [^]
-  - Footnote: 本文は、説明図にスライダーやスイッチが付き、それらを操作すると説明が変化する画面をGeminiが自動生成すると述べている。
-- GoogleはAI回答をWeb情報にグラウンディングし、リンク確認を重視している。 [^]
-  - Footnote: リード氏は、AIモデルをWeb上の高品質な事実情報に基づくよう調整し、積極的にリンクを配置すると説明している。
-- AI時代のコンテンツ戦略は、AI最適化より専門性と読者価値が軸になる。 [^]
-  - Footnote: 記事は、Googleが「AEOとは従来通りのSEOである」と述べ、AI特化の文章作成や最適化は不要としているとまとめている。
+- Google検索は25年ぶりに検索窓の仕様を大きく刷新する。 [^]
+  - Footnote: 記事は「検索窓の仕様が25年ぶりに刷新され」と説明している。
+- 新しい検索体験は長文入力とマルチモーダル入力を前提にする。 [^]
+  - Footnote: 記事は「長文による検索」「画像を含めたマルチモーダルな検索」が基本になると述べている。
+- AIモードの基盤モデルはGemini 3.5 Flashへ更新される。 [^]
+  - Footnote: 記事は「AIモードの背後で動くAIモデルも、最新のGemini 3.5 Flashに変更」と記載している。
+- 検索へのエージェント導入は、最新情報の継続監視という利用者課題に対応する。 [^]
+  - Footnote: リード氏は、毎日や毎時間確認する負担が大きいため、更新を追うエージェントを導入すると説明している。
+- 生成UIは検索結果内のインタラクティブ要素を自動生成する。 [^]
+  - Footnote: 記事は、説明図にスライダーやスイッチを付け、Geminiが背後で画面を自動生成すると説明している。
+- AI検索の信頼性はWeb情報へのグラウンディングとリンク提示で補う方針である。 [^]
+  - Footnote: リード氏は、Web上の高品質な情報に基づかせ、重要な場合はソースを確認できるようリンクを配置すると述べている。
+- GoogleはAI時代でも特別なAEOより価値ある情報を重視する。 [^]
+  - Footnote: 記事は「AIに選ばれる」のではなく「情報として紹介したい内容である」ことが重要だと整理している。
+- エネルギー効率は、質問に応じたモデルサイズ選択と世代更新による小型モデル活用で改善する。 [^]
+  - Footnote: リード氏は、簡単な質問には小さなモデルを使い、Gemini 3.5 Flashが以前の大きなモデルを上回る例を挙げている。
 
 ### References
 - https://www.watch.impress.co.jp/docs/topic/2110631.html
+- https://ai-news.dev/
 
 ## Spotify、AIでカバー・リミックス作成ツールを有料提供へ。UMGと提携 | テクノエッジ TechnoEdge
-- Date: 2026-05-22T06:30:02+09:00
+- Date: 2026-05-22T06:30:00+09:00
 
 ### Executive Summary
-- SpotifyとUniversal Music Groupは、AIカバー・リミックス作成ツールに関するライセンス契約を結んだ。
-- 新ツールはSpotify Premiumの有料アドオンとして提供される予定だ。
-- 対象は、ファンがアーティストや作詞作曲家の楽曲をもとにAIでカバーやリミックスを作る用途である。
-- 収益分配モデルは、同意、クレジット、報酬を三本柱に設計される。
-- 生成AIによる音楽権利侵害が問題視される中、権利者参加型の枠組みとして注目される。
-- Spotify側は、参加アーティストや作詞作曲家への同意・クレジット・報酬に基づく仕組みだと説明している。
-- UMG側は、アーティスト中心主義と責任あるAIに基づく取り組みだと位置づけている。
-- 価格、提供開始時期、参加アーティストの範囲は現時点で未発表である。
+- SpotifyとUniversal Music Groupは、AIカバーやリミックス作成に関するライセンス契約を結んだ。
+- 新ツールは、ファンがアーティストや作詞作曲家の楽曲をもとにAI生成物を作る用途を想定する。
+- 提供形態はSpotify Premium向けの有料アドオンとされている。
+- 単なる生成機能ではなく、同意・クレジット・報酬を柱にした収益分配モデルを掲げる。
+- 音楽業界で問題視されてきた生成AIの権利侵害への解決策の一つとして注目される。
+- Spotify側は参加アーティストや作詞作曲家への同意・クレジット・報酬に基づく仕組みだと説明した。
+- UMG側は、アーティスト中心主義と責任あるAIに基づく取り組みだと位置づけた。
+- 具体的な価格、開始時期、参加アーティストの範囲はまだ明らかにされていない。
 
 ### Key Findings
-- SpotifyとUMGは、AIカバー・リミックス作成のためのライセンス契約を締結した。 [^]
-  - Footnote: 本文は、SpotifyとUMGが録音音楽および音楽出版に関するライセンス契約を締結したと報じている。
-- ツールはSpotify Premium向けの有料アドオンとして展開される。 [^]
-  - Footnote: 記事には「この新ツールはSpotify Premiumの有料アドオンとして展開」と記載されている。
-- 権利者保護の中心は同意、クレジット、報酬である。 [^]
-  - Footnote: 本文は、アーティスト側の「同意」「クレジット」「報酬」を三本柱とした収益分配モデルを構築すると説明している。
-- 音楽生成AIの権利侵害問題に対する解決策の一つとして位置づけられている。 [^]
-  - Footnote: 記事は、生成AIをめぐる音楽業界での権利侵害が世界的に問題視され、今回の枠組みが解決策の一つとして注目されると述べている。
-- Spotifyは、ファンによるカバーやリミックスという難題に取り組む姿勢を示した。 [^]
-  - Footnote: Spotify共同CEOのAlex Norstrom氏は、ファンによるカバーやリミックスという難しい問題に取り組むと述べている。
-- UMGは、取り組みをアーティスト中心で責任あるAIに基づくものと評価している。 [^]
-  - Footnote: UMG会長兼CEOのSir Lucian Grainge氏は、このイニシアチブがアーティスト中心主義に根ざし、責任あるAIに基づくと述べている。
-- 価格や開始時期などの商用条件はまだ確定していない。 [^]
-  - Footnote: 記事は、具体的な価格や提供開始時期、参加アーティストや作詞作曲家の範囲は今後の発表待ちとしている。
+- SpotifyとUMGは録音音楽と音楽出版に関するライセンス契約を締結した。 [^]
+  - Footnote: 記事は「録音音楽および音楽出版に関するライセンス契約を締結」と記載している。
+- 新ツールはAIによるカバーやリミックス作成を対象にしている。 [^]
+  - Footnote: 記事は、ファンが楽曲をもとにAIでカバーやリミックスを作成できる新ツールと説明している。
+- 提供先はSpotify Premiumの有料アドオンである。 [^]
+  - Footnote: 記事は「Spotify Premiumの有料アドオンとして展開」と明記している。
+- 収益分配モデルは同意・クレジット・報酬を三本柱にする。 [^]
+  - Footnote: 記事は「同意（consent）」「クレジット（credit）」「報酬（compensation）」を三本柱としたモデルと説明している。
+- 生成AIの権利侵害問題への実務的な対応策として位置づけられている。 [^]
+  - Footnote: 記事は、音楽業界で権利侵害が問題視されてきた中で「解決策の一つとして注目」と述べている。
+- Spotify幹部は、ファンによるカバーやリミックスという難題に取り組むと述べた。 [^]
+  - Footnote: Alex Norstrom氏は、ファンによるカバーやリミックスという難しい問題に取り組むと説明している。
+- UMG幹部は、取り組みをアーティスト中心主義と責任あるAIに根ざすものと評価した。 [^]
+  - Footnote: Sir Lucian Grainge氏は、アーティスト中心主義と責任あるAIに基づく取り組みだと述べている。
+- 価格、開始時期、参加アーティストの詳細は未公表である。 [^]
+  - Footnote: 記事は、具体的な価格や提供開始時期、参加範囲の詳細は今後の発表待ちとしている。
 
 ### References
 - https://www.techno-edge.net/article/2026/05/22/5087.html
+- https://ai-news.dev/
 
 ## Amazon Nova Act is now HIPAA eligible | Artificial Intelligence
-- Date: 2026-05-21T14:22:28-08:00
+- Date: 2026-05-21T00:00:00+00:00
 
 ### Executive Summary
-- Amazon Nova ActがHIPAA Eligible Serviceとなり、医療・ライフサイエンス分野での利用範囲が広がった。
-- Nova Actは、ブラウザ上の反復的なUIワークフローを自律AIエージェントで自動化するAWSサービスである。
-- 対象には、請求処理、紹介調整、予約、保険確認、事前承認などの医療事務ワークフローが含まれる。
-- ePHIを扱う場合でも、AWS BAAを締結した環境でNova Actを利用できるようになった。
-- ただしHIPAA準拠の達成には、利用者側のIAM、KMS、CloudTrailなどの設定責任が残る。
-- Nova ActはStrands Agents、Amazon Bedrock AgentCore、CloudWatch、IAMと連携する。
-- 提供リージョンは米国東部バージニア北部リージョンとされている。
-- AWSは、導入前にWell-Architected Toolで設計レビューを行うことを推奨している。
+- AWSはAmazon Nova ActがHIPAA適格サービスになったと発表した。
+- 医療・ライフサイエンス領域では、請求処理や紹介調整など手作業のブラウザ業務が多い。
+- Nova Actは本番UIワークフローを自動化するAIエージェント群を構築・管理するAWSサービスである。
+- HIPAA適格化により、ePHIを伴う可能性がある医療ワークフローでも導入しやすくなる。
+- ただしAWS共有責任モデルの下で、利用者側がHIPAA準拠のための設定や統制を担う。
+- 利用開始にはAWS BAAの締結、HIPAAアカウント指定、セキュリティ設定確認が必要である。
+- IAM、KMS暗号化、CloudTrailログ、Well-Architected Toolによる設計レビューが推奨されている。
+- Nova Actは米国東部バージニア北部リージョンで提供され、Strands AgentsやBedrock AgentCoreなどと統合する。
 
 ### Key Findings
-- Nova ActはHIPAA eligible serviceとなり、ePHIを伴う医療ワークフロー自動化に使える。 [^]
-  - Footnote: 記事は「Amazon Nova Act now qualifies as a HIPAA eligible service」とし、ePHIに関連する複雑な医療ワークフローを自動化できると説明している。
-- Nova Actは本番UIワークフローを大規模に自動化するエージェント管理サービスである。 [^]
-  - Footnote: 本文は、Nova Actを「build and manage fleets of reliable AI agents for automating production UI workflows at scale」と説明している。
-- ブラウザ操作、フォーム入力、情報抽出、複数ステップ処理を自動化できる。 [^]
-  - Footnote: 記事は、モデルがWebサイトのナビゲーション、フォーム入力、情報抽出、複数ステップのワークフロー完了を行えると述べている。
-- 医療分野では事務負担削減、請求処理の迅速化、定型業務の一貫性向上が期待される。 [^]
-  - Footnote: 本文は、HCLS組織にとって行政負担の削減、claims turnaroundの高速化、routine processesの一貫実行につながると説明している。
-- HIPAA準拠はAWSとの共同責任で、利用者側の設定が不可欠である。 [^]
-  - Footnote: 記事は、AWSが基盤インフラのセキュリティを管理し、利用者はデプロイ内のHIPAA準拠管理設定に責任を持つと述べている。
-- 開始にはAWS BAA締結、HIPAAアカウント指定、セキュリティ設定確認が必要である。 [^]
-  - Footnote: Getting startedでは、AWS Management ConsoleでAWS BAAを実行し、アカウントをHIPAA accountとして指定する手順が示されている。
-- 必要なセキュリティ統制にはIAM、KMS暗号化、CloudTrailログが含まれる。 [^]
-  - Footnote: 本文は、IAM access policies、AWS KMS encryption、AWS CloudTrail loggingを含むセキュリティ統制の実装を求めている。
-- Nova Actは米国東部バージニア北部リージョンで提供される。 [^]
-  - Footnote: Things to knowには、Amazon Nova Act is available in the US East (N. Virginia) AWS Regionと記載されている。
+- Amazon Nova ActはHIPAA適格サービスとして利用可能になった。 [^]
+  - Footnote: 記事は「Amazon Nova Act now qualifies as a HIPAA eligible service」と述べている。
+- 対象となる主な課題は、医療機関の反復的なブラウザベース業務である。 [^]
+  - Footnote: 記事は、claims processingやreferral coordinationのような反復的・手作業のブラウザ業務を挙げている。
+- Nova Actは本番UIワークフローを大規模に自動化するエージェント群を構築・管理する。 [^]
+  - Footnote: 記事は、production UI workflowsを大規模に自動化するreliable AI agentsのfleetを構築・管理すると説明している。
+- ブラウザ操作、フォーム入力、情報抽出、複数ステップの作業実行が可能である。 [^]
+  - Footnote: 記事は、websitesのナビゲーション、formsの入力、informationの抽出、multi-step workflowsの完了を例示している。
+- ePHIを扱う場合でも、BAA締結済みのHIPAAアカウントで利用できる。 [^]
+  - Footnote: Things to knowでは、signed AWS BAAがあればNova ActでePHIを処理できると説明している。
+- HIPAA適格性は自動的な準拠を意味せず、利用者の設定責任が残る。 [^]
+  - Footnote: 記事は、HIPAA要件に合うよう設計されたサービスだが、具体的なコンプライアンス義務を満たす設定は利用者責任だと記載している。
+- 導入前にIAM、KMS、CloudTrailなどの統制を実装する必要がある。 [^]
+  - Footnote: Getting startedでは、IAM access policies、AWS KMS encryption、AWS CloudTrail loggingの実装が挙げられている。
+- Nova ActはStrands Agents、Amazon Bedrock AgentCore、CloudWatch、IAMと統合する。 [^]
+  - Footnote: Things to knowのIntegration欄に、これらの統合先が列挙されている。
 
 ### References
-- https://aws.amazon.com/blogs/machine-learning/amazon-nova-act-is-now-hipaa-eligible/
+- https://aws.amazon.com/jp/blogs/machine-learning/amazon-nova-act-is-now-hipaa-eligible/
+- https://ai-news.dev/

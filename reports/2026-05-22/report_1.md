@@ -1,104 +1,111 @@
 # AI Common Report (https://zenn.dev/kun432?tab=scraps)
 
-- Generated at: 2026-05-22T09:01:50.2845990+09:00
+- Generated at: 2026-05-22T09:52:04+09:00
 - Articles: 3
 
 ## Tencentの翻訳モデル「HY-MT2」
+- Date: 2026-05-21T16:59:42+00:00
 
 ### Executive Summary
-- Tencentが多言語翻訳モデルファミリーHy-MT2をオープンソース公開したことを紹介している。
-- モデルは1.8B、7B、30B-A3Bの3サイズで、33言語間の翻訳に対応する。
-- 1.8BモデルはAngelSlim 1.25ビット量子化により、ストレージ要件を440MBまで削減している。
-- 7Bと30B-A3Bは高速思考モードで一部オープンソースモデルを上回る性能と説明されている。
-- 翻訳指示追従評価用のIFMTBenchと、Hy-MT2-Translatorスキルも公開対象に含まれる。
-- 推論フレームワークはTransformers、vLLM、SGLang、llama.cppへの対応が示されている。
-- 筆者はライセンス制約が厳しく、オープンソースと呼ぶには微妙ではないかと懸念している。
-- 過去バージョンへの不満と比較し、30B-A3B追加による実用性を見極めたいという見方で締めている。
+- Tencent が多言語翻訳モデル Hy-MT2 を公開した内容を紹介している。
+- モデルは 1.8B、7B、30B-A3B の 3 サイズで、33 言語間の翻訳に対応する。
+- 1.8B は AngelSlim 1.25bit 量子化により 440MB まで小型化され、モバイルチップでの動作を意識している。
+- 7B と 30B-A3B は高速思考モードで他のオープンソースモデルを上回る性能と説明されている。
+- 翻訳指示追従を評価する IFMTBench や Hy-MT2-Translator スキルも公開対象に含まれる。
+- Transformers、vLLM、SGLang、llama.cpp など複数の推論環境での利用方法が示されている。
+- 一方で、EU での使用不可、商用利用制限、他モデル学習への使用禁止などライセンス制約が強い点を筆者は懸念している。
+- 筆者は過去バージョンに品質・速度面の不満があり、30B-A3B の追加で評価が変わるかを見極めたいとしている。
 
 ### Key Findings
-- Hy-MT2は翻訳向けの多言語モデルファミリーとして公開された。 [^]
-  - Footnote: 本文に「Hy-MT2は『高速思考』型の多言語翻訳モデルファミリー」とある。
-- 提供サイズは1.8B、7B、30B-A3Bの3種類である。 [^]
-  - Footnote: 記事では「1.8B、7B、30B-A3B（MoE）の3つのモデルサイズ」と説明している。
-- 対応言語は33言語とされ、翻訳指示にも対応する。 [^]
-  - Footnote: 本文に「33言語間の翻訳をサポートし、複数言語での翻訳指示を効果的に実行」と記載されている。
-- 1.8Bモデルは低ビット量子化でモバイル用途も意識されている。 [^]
-  - Footnote: 記事には「1.8Bモデルのストレージ要件をわずか440MBまで削減」とある。
-- IFMTBenchも同時にオープンソース公開される。 [^]
-  - Footnote: 本文で「翻訳における指示追従能力を評価するベンチマークツールIFMTBenchもオープンソースとして公開」と述べている。
-- 2026年5月21日に主要モデルとIFMTBenchが公開された。 [^]
-  - Footnote: 最新情報欄に「2026年5月21日 HuggingFaceおよびModelScopeにて...オープンソース公開」とある。
-- 利用可能なモデル配布形式にはFP8、GGUF、低ビットGGUFなどが含まれる。 [^]
-  - Footnote: モデル配布リンクには「Hy-MT2-1.8B-FP8」「Hy-MT2-1.8B-GGUF」「Hy-MT2-1.8B-1.25bit-GGUF」などが並ぶ。
-- 筆者はライセンス制約を実運用上の懸念として見ている。 [^]
-  - Footnote: 本文に「EUでは使用不可・商用利用は一定のMAU以下に限定・他モデルの学習には使用禁止」とある。
+- Hy-MT2 は 3 種類のモデルサイズを持つ翻訳モデルファミリーとして公開された。 [^]
+  - Footnote: 記事には「1.8B、7B、30B-A3B（MoE）の3つのモデルサイズを提供」と記載されている。
+- 対応言語数は 33 言語で、多言語間翻訳と多言語での指示実行を対象にしている。 [^]
+  - Footnote: 本文に「いずれも33言語間の翻訳をサポートし、複数言語での翻訳指示を効果的に実行」とある。
+- 1.8B モデルは低リソース端末向けに大幅な量子化が行われている。 [^]
+  - Footnote: 記事では「AngelSlim 1.25ビット超量子化技術」「1.8Bモデルのストレージ要件をわずか440MBまで削減」と説明されている。
+- 性能面では 7B と 30B-A3B が他のオープンソースモデルを上回るとされる。 [^]
+  - Footnote: 本文に「DeepSeek-V4-ProやKimi K2.6といったオープンソースモデルを凌駕」とある。
+- 評価・統合用の周辺成果物も同時に公開されている。 [^]
+  - Footnote: 記事は「IFMTBenchもオープンソースとして公開」「Hy-MT2-Translatorスキルを公開」と述べている。
+- モデル配布は HuggingFace と ModelScope を含み、複数の量子化形式が用意されている。 [^]
+  - Footnote: 配布表には Hy-MT2-1.8B、FP8、GGUF、2bit-GGUF、1.25bit-GGUF、7B、30B-A3B などが並ぶ。
+- 利用可能な推論フレームワークは幅広いが、llama.cpp では独自量子化カーネルが必要とされる。 [^]
+  - Footnote: 本文に「Transformers」「vLLM」「SGLang」「llama.cpp（独自の量子化カーネルが必要）」とある。
+- ライセンス制約が強く、筆者はオープンソースと呼ぶ妥当性に疑問を示している。 [^]
+  - Footnote: 記事では「EUでは使用不可・商用利用は一定のMAU以下に限定・他モデルの学習には使用禁止」とし、「オープンソースと言ってしまっていいのかは、ちょっと微妙」と述べている。
 
 ### References
 - https://zenn.dev/kun432/scraps/527e198418845c
 - https://github.com/Tencent-Hunyuan/Hy-MT2
 
 ## OpenAI Python SDK を aiohttp で使う
+- Date: 2026-05-21T16:44:51+00:00
 
 ### Executive Summary
-- OpenAI Python SDKのHTTPバックエンド差し替えによる速度差を、MacとRaspberry Pi 4Bで簡易比較している。
-- 標準のAsyncOpenAIではhttpxが使われ、RPiでは起動とTTFTが大きく遅くなることが確認された。
-- httpxのkeep-aliveを無効化した構成では、チャンク間隔の改善は見えるが決定的な高速化ではない。
-- aiohttpバックエンドは`openai[aiohttp]`を入れ、DefaultAioHttpClientを指定して利用できる。
-- aiohttpでもRPiのTTFTは一定程度改善したが、Python SDK全体の起動負荷は残っている。
-- SDKを使わずhttpxやaiohttp単体でも試し、結果のばらつきと測定条件の限界を確認している。
-- OpenAI Go SDKではRPi 4Bの起動がほぼゼロに近く、TTFTも大幅に短くなった。
-- 筆者は低リソース環境では、Python側の調整よりGo利用の方が速いという結論を示している。
+- OpenAI Python SDK の非同期通信バックエンドを比較し、低リソース環境での速度差を観察している。
+- 標準構成では Mac と Raspberry Pi 4B の起動時間や TTFT に大きな差が出た。
+- httpx の keep-alive を無効化する構成や aiohttp バックエンドを試し、ストリーミング時の指標を比較した。
+- aiohttp は利用可能だが、今回の単発計測では劇的な改善とは言い切れない結果だった。
+- SDK を使わず httpx と aiohttp 単体相当の構成も試し、チャンク間隔や TTFT を観察した。
+- OpenAI Go SDK では Raspberry Pi 4B の startup が 0.2ms、TTFT が 1045.8ms と大きく改善した。
+- 筆者は Raspberry Pi 4B では細かく調整するより Go を使う方が速いと結論づけている。
+- ただし、筆者自身も単発の雑な比較であり、厳密には複数回計測や統計処理が必要だと明記している。
 
 ### Key Findings
-- Raspberry PiではPython SDK利用時の起動オーバーヘッドが大きい。 [^]
-  - Footnote: 標準構成の結果で「Raspberry PI 4B startup: 3179.7 ms」と示されている。
-- 標準httpx構成ではRPiのTTFTがMacより大きく悪化した。 [^]
-  - Footnote: 標準構成ではMacのTTFTが793.6 ms、Raspberry Pi 4Bが8209.6 msと記録されている。
-- httpxのkeep-alive無効化はチャンク間隔には影響したが、劇的な改善ではなかった。 [^]
-  - Footnote: 筆者は結果後に「そんなに変わらないかな」とコメントしている。
-- OpenAI Python SDKはaiohttpバックエンドを指定できる。 [^]
-  - Footnote: 記事に「HTTPバックエンドとしてaiohttpを使用することも可能」とあり、`uv add "openai[aiohttp]"` が示されている。
-- aiohttp構成ではRPiのTTFTが標準構成より短くなった例がある。 [^]
-  - Footnote: aiohttpの結果では「Raspberry Pi 4B time to first chunk: 7449.6 ms」と掲載されている。
-- SDKなしの比較でも、httpxとaiohttpの差は測定条件によるばらつきがある。 [^]
-  - Footnote: 単体比較ではhttpx no keep-aliveとaiohttpの複数結果が並び、MacとRPiで異なる傾向が出ている。
-- Go SDKは低リソース環境で明確に有利な結果を示した。 [^]
-  - Footnote: OpenAI Go SDKのRPi 4B結果は「startup: 0.2 ms」「time to first chunk: 1045.8 ms」とある。
-- 筆者は厳密なベンチマークではなく大まかな傾向確認だと断っている。 [^]
-  - Footnote: 記事冒頭に「ちゃんと調べてない雑な比較なので参考にしないように」とある。
+- 標準の OpenAI Python SDK は Raspberry Pi 4B で起動と TTFT が遅くなった。 [^]
+  - Footnote: 標準構成の結果として Mac は startup 324.4ms、TTFT 793.6ms、Raspberry Pi 4B は startup 3179.7ms、TTFT 8209.6ms と示されている。
+- httpx の keep-alive 無効化では、Mac と Raspberry Pi のどちらも決定的な改善には見えない。 [^]
+  - Footnote: 筆者は httpx no keep-alive の後に「そんなに変わらないかな」と述べている。
+- OpenAI Python SDK は aiohttp を HTTP バックエンドとして使える。 [^]
+  - Footnote: 記事には「デフォルトでは、非同期クライアントはHTTPリクエストにhttpxを使用」「HTTPバックエンドとしてaiohttpを使用することも可能」とある。
+- aiohttp 版の導入は extra 指定で行う。 [^]
+  - Footnote: 本文に `uv add "openai[aiohttp]"` と、aiohttp 3.13.5 が追加された出力が示されている。
+- aiohttp バックエンドでも Raspberry Pi 4B の TTFT は秒単位で残った。 [^]
+  - Footnote: aiohttp の結果として RPI 4B は startup 2178.5ms、TTFT 6960.3ms と記録されている。
+- Go SDK は Raspberry Pi 4B で Python SDK より起動オーバーヘッドが非常に小さかった。 [^]
+  - Footnote: OpenAI Go SDK の RPi 4B 結果は startup 0.2ms、TTFT 1045.8ms と記載されている。
+- 筆者の実用的な結論は、Raspberry Pi 4B では Go を使う方が速いというものだった。 [^]
+  - Footnote: 記事末尾に「RPi 4Bの場合は何も考えずにGoを使ったほうが速い」とある。
+- 今回の比較は厳密なベンチマークではなく、傾向確認に留めている。 [^]
+  - Footnote: 筆者は「ちゃんとやるなら複数回実施して、平均・中間・最大・最小とかパーセンタイルで計測するのが良い」と述べている。
 
 ### References
 - https://zenn.dev/kun432/scraps/220122eee7ce36
 
 ## 「llama-benchy」を試す
+- Date: 2026-05-20T13:54:17+00:00
 
 ### Executive Summary
-- OpenAI互換LLMエンドポイント向けベンチマークツール`llama-benchy`のREADME内容を紹介している。
-- llama.cpp専用のllama-benchに似た統計を、vLLMやSGLangなど別エンジンでも測れることが狙いである。
-- プロンプト処理速度、トークン生成速度、TTFR、推定プロンプト処理時間、E2E TTFTなどを出力できる。
-- HuggingFaceトークナイザーによる正確なトークンカウントやProject Gutenberg由来のテキスト利用にも対応する。
-- uvx、uv run、仮想環境インストール、システムインストールなど複数の実行方法が示されている。
-- コンテキスト深度、プロンプト長、生成長、同時実行数を組み合わせて測定できる。
-- プレフィックスキャッシュ性能を測る2段階ベンチマークも用意されている。
-- 結果はMarkdown、JSON、CSVで保存でき、時系列データも追加保存できる。
+- OpenAI 互換 LLM エンドポイント向けベンチマークツール llama-benchy の README 内容を紹介している。
+- llama-bench 形式の統計を OpenAI 互換 API に対して出力できる点が中心的な特徴である。
+- llama.cpp 専用の llama-bench や vLLM の既存ベンチでは扱いにくい、異なるコンテキスト長での測定課題を補う狙いがある。
+- プロンプト処理速度、生成速度、TTFR、推定プロンプト処理時間、エンドツーエンド TTFT などを測定できる。
+- uvx、仮想環境、uv run、システムインストールなど複数の導入方法が示されている。
+- depth、pp、tg、concurrency を組み合わせ、コンテキスト深度や同時リクエスト時の挙動を測定できる。
+- JSON や CSV で結果保存でき、時系列データや Jupyter Notebook による追加分析にも対応している。
+- モックサーバーを使った統合テストが用意され、MIT ライセンスで公開されている。
 
 ### Key Findings
-- `llama-benchy`はOpenAI互換エンドポイントを対象にしたベンチマークツールである。 [^]
-  - Footnote: 本文に「OpenAI互換のLLMエンドポイントをベンチマーク」と記載されている。
-- llama-benchでは扱いにくい推論エンジンの測定を補う目的がある。 [^]
-  - Footnote: 記事では「llama.cpp専用に設計されており、vllmやSGLangといった他の推論エンジンでは使用できません」と説明している。
-- TTFTだけでなくTTFRや推定PPTも測る。 [^]
-  - Footnote: 主な機能に「初回応答までの時間（データチャンク）（TTFR）、推定プロンプト処理時間（est_ppt）、およびエンドツーエンドのTTFTを報告」とある。
-- 複数回実行して平均値と標準偏差を報告できる。 [^]
-  - Footnote: 機能一覧に「複数の反復処理（--runs）を実行可能で、平均値±標準偏差を報告」とある。
-- uvxを使えばインストール不要で実行できる。 [^]
-  - Footnote: インストール方法に「インストール不要でuvxを使用して実行」としてコマンド例が掲載されている。
-- プロンプト長、生成長、コンテキスト深度、同時実行数をパラメータ化できる。 [^]
-  - Footnote: 引数一覧に`--pp`、`--tg`、`--depth`、`--concurrency`が示されている。
-- プレフィックスキャッシュの影響を測定する専用オプションがある。 [^]
-  - Footnote: 本文に「--enable-prefix-cachingオプションを使用し...2段階のプロセスを実行」とある。
-- 結果保存形式はMarkdown、JSON、CSVに対応する。 [^]
-  - Footnote: 機能一覧と引数一覧に「結果をMarkdown、JSON、またはCSV形式でファイルに保存可能」とある。
+- llama-benchy は OpenAI 互換 LLM エンドポイントを llama-bench 風に測定するツールである。 [^]
+  - Footnote: 記事冒頭に「OpenAI互換LLMエンドポイント向けのベンチマークツール（llama-bench形式）」とある。
+- llama.cpp 専用の llama-bench では測れない推論エンジンも対象にできる。 [^]
+  - Footnote: 本文は llama-bench について「llama.cpp専用に設計されており、vllmやSGLangといった他の推論エンジンでは使用できません」と説明する。
+- 異なるコンテキスト深度で pp と tg を測定できることが主機能に含まれる。 [^]
+  - Footnote: 主な機能に「異なるコンテキスト深度におけるプロンプト処理速度（pp）とトークン生成速度（tg）を測定可能」と記載されている。
+- TTFR、推定プロンプト処理時間、e2e TTFT など、初期応答の分解指標を出力できる。 [^]
+  - Footnote: 記事では「初回応答までの時間（データチャンク）（TTFR）、推定プロンプト処理時間（est_ppt）、およびエンドツーエンドのTTFTを報告」とある。
+- HuggingFace トークナイザーにより正確なトークンカウントを行う。 [^]
+  - Footnote: 主な機能一覧に「HuggingFaceのトークナイザーを使用して正確なトークンカウントを算出」とある。
+- プレフィックスキャッシュ性能を専用オプションで測定できる。 [^]
+  - Footnote: 本文に「--enable-prefix-cachingオプションを使用し」「2段階のプロセスを実行してプレフィックスキャッシュの影響を測定」とある。
+- 同時リクエスト時の総スループットとリクエスト単位スループットを出力する。 [^]
+  - Footnote: 同時リクエスト処理性能の説明で「t/s（総計）」「t/s（リクエスト単位）」が示されている。
+- 結果保存形式は Markdown、JSON、CSV に対応し、詳細時系列も保存できる。 [^]
+  - Footnote: 引数一覧に `--format: 'md'、'json'、'csv'` と、`--save-total-throughput-timeseries`、`--save-all-throughput-timeseries` が記載されている。
+- GPU サーバーなしでロジック検証できるモックサーバーと統合テストが含まれる。 [^]
+  - Footnote: 開発セクションに「実際のGPUサーバーを必要とせずにllama-benchyのロジックを検証するためのモックサーバーと統合テストスイート」とある。
+- ライセンスは MIT と明記されている。 [^]
+  - Footnote: 記事末尾に「なお、ライセンスはMITライセンス」と記載されている。
 
 ### References
 - https://zenn.dev/kun432/scraps/91f1e0413c0a66
