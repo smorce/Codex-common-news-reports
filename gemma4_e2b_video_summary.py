@@ -44,6 +44,7 @@ import argparse
 import gc
 import json
 import math
+import os
 import re
 import shutil
 import subprocess
@@ -168,6 +169,14 @@ def run(
     if text and sys.platform == "win32":
         kwargs["encoding"] = "utf-8"
         kwargs["errors"] = "replace"
+        # yt-dlp などの子プロセスが Windows ロケール(cp932)ではなく
+        # UTF-8 で stdout に書き込むよう環境変数で強制する。
+        # これを入れないと、cp932 で書かれたバイト列を UTF-8 として
+        # デコードする際に日本語タイトルが文字化けする。
+        env = os.environ.copy()
+        env["PYTHONIOENCODING"] = "utf-8"
+        env["PYTHONUTF8"] = "1"
+        kwargs["env"] = env
     return subprocess.run(cmd, **kwargs)
 
 
@@ -267,8 +276,15 @@ def _warn_if_no_js_runtime() -> None:
 
 
 def _ytdlp_base_args() -> list[str]:
-    """yt-dlp 共通オプション（古いバージョン警告の抑制・JS ランタイム）。"""
-    args = ["--no-update", "--no-warnings"]
+    """yt-dlp 共通オプション（古いバージョン警告の抑制・JS ランタイム・言語固定）。"""
+    args = [
+        "--no-update",
+        "--no-warnings",
+        # YouTube が自動生成した英訳タイトルではなく、元の日本語メタデータを要求する。
+        # 指定しないとサーバ側ロケール判定で英訳が返ってくることがある。
+        "--extractor-args",
+        "youtube:lang=ja",
+    ]
     for runtime in _detect_js_runtimes():
         args.extend(["--js-runtimes", runtime])
     return args
