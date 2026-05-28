@@ -1,0 +1,179 @@
+{
+  "generated_at": "2026-05-28T09:03:37.3694938+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://www.itmedia.co.jp/news/articles/2605/27/news071.html",
+      "title": "「小説家になろう」、AI利用状況を報告必須に　未設定だと9月から投稿不可 - ITmedia NEWS",
+      "date": "2026-05-27T10:30:00+09:00",
+      "executive_summary": [
+        "小説家になろうは、作品創作におけるAI利用状況の設定を必須化する。",
+        "6月9日から投稿作品の編集画面にAI利用状況の項目を新設する。",
+        "未設定の作品は新規投稿できなくなる。",
+        "設定区分は直接使用、間接利用、補助的利用、不使用の4種類に分かれる。",
+        "直接使用と間接利用は作品情報などで第三者に表示される。",
+        "既存作品も9月1日以降、設定しないと投稿や編集が制限される。",
+        "虚偽設定や全編AI生成作品、本文欄へのプロンプト記載は禁止される。",
+        "狙いは商業化などでの認識ずれや不信、トラブルを減らすことにある。"
+      ],
+      "key_findings": [
+        {
+          "point": "AI利用状況の申告は任意ではなく必須化される。",
+          "footnote": "記事本文に「作品創作におけるAI利用状況の設定を必須化すると発表した」とある。"
+        },
+        {
+          "point": "新規投稿への影響は2026年6月9日から始まる。",
+          "footnote": "記事本文に「6月9日から投稿作品の編集画面に『AI利用状況』の項目を新設」とある。"
+        },
+        {
+          "point": "分類は4区分で、利用の深さに応じて分ける設計である。",
+          "footnote": "記事本文に「直接使用」「間接利用」「補助的利用」「不使用」の4種類とある。"
+        },
+        {
+          "point": "第三者への公開範囲は区分によって変わる。",
+          "footnote": "記事本文に「直接使用はキーワード欄」「間接利用は作品情報ページ」「補助的利用と不使用は第三者には非公開」とある。"
+        },
+        {
+          "point": "既存作品にも後日制限が適用される。",
+          "footnote": "記事本文に「既存作品は9月1日以降、AI利用状況を設定しないとエピソード投稿や作品情報の編集ができなくなる」とある。"
+        },
+        {
+          "point": "違反時は作品非公開やアカウント停止の可能性がある。",
+          "footnote": "記事本文に「違反した場合は作品の非公開化やアカウント停止などの対応をとる」とある。"
+        },
+        {
+          "point": "制度導入の背景には商業化時のリスク管理がある。",
+          "footnote": "記事本文に「特に商業化の場面では作者や企業がトラブルに巻き込まれる恐れがあるため」とある。"
+        }
+      ],
+      "references": [
+        "https://www.itmedia.co.jp/news/articles/2605/27/news071.html",
+        "https://ai-news.dev/"
+      ],
+      "retrieved_at": "2026-05-28T09:03:37.3694938+09:00"
+    },
+    {
+      "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+      "title": "Improving AI labels for viewers and creators - YouTube Blog",
+      "date": "2026-05-27T00:00:00Z",
+      "executive_summary": [
+        "YouTubeはAI生成・改変コンテンツのラベル表示を更新する。",
+        "狙いは視聴者とクリエイターにとって透明性を高めることにある。",
+        "フォトリアルで意味のあるAI改変・生成コンテンツはより目立つ場所に表示される。",
+        "長尺動画ではプレイヤー直下、説明欄の上にラベルが出る。",
+        "Shortsでは動画上のオーバーレイとしてラベルが表示される。",
+        "非現実的、アニメーション、軽微な改変の開示は拡張説明欄で確認できる。",
+        "2026年5月からAI生成コンテンツを識別する内部シグナルを展開する。",
+        "自動付与されたラベルは一部を除きYouTube Studioで修正できる。",
+        "ラベルだけでおすすめ表示や収益化可否が変わるわけではない。"
+      ],
+      "key_findings": [
+        {
+          "point": "YouTubeは2024年以降、クリエイター申告に基づくAI利用ラベルを運用してきた。",
+          "footnote": "記事本文に「since 2024, we've been labeling content when creators disclose they've used AI tools」とある。"
+        },
+        {
+          "point": "今回の更新はラベル表示の簡素化と視認性向上を目的にしている。",
+          "footnote": "記事本文に「make this process much simpler and more intuitive」とある。"
+        },
+        {
+          "point": "フォトリアルで意味のあるAI改変・生成コンテンツは主画面近くに表示される。",
+          "footnote": "記事本文に「more prominent position」とある。"
+        },
+        {
+          "point": "長尺動画とShortsでラベルの表示位置が異なる。",
+          "footnote": "記事本文に「For Long-form Videos... directly below the video player」「For Shorts... overlay on the video itself」とある。"
+        },
+        {
+          "point": "手動申告は引き続き求められるが、自動検出も追加される。",
+          "footnote": "記事本文に「we still require creators to manually disclose」「rolling out new internal signals」とある。"
+        },
+        {
+          "point": "申告がなくても、重大なフォトリアルAI利用が検出されればラベルが自動適用される。",
+          "footnote": "記事本文に「automatically apply a label」とある。"
+        },
+        {
+          "point": "誤検出時は原則としてクリエイターが開示状態を更新できる。",
+          "footnote": "記事本文に「they can update the disclosure status in YouTube Studio」とある。"
+        },
+        {
+          "point": "YouTube製AIツールやC2PAメタデータなど、一部の開示は恒久的に残る。",
+          "footnote": "記事本文に「disclosures will remain permanent」「YouTube’s own AI tools」「C2PA metadata」とある。"
+        },
+        {
+          "point": "開示ラベル単体は推薦や収益化に直接影響しない。",
+          "footnote": "記事本文に「a disclosure label alone does not change how a video is recommended or whether it’s eligible to earn money」とある。"
+        }
+      ],
+      "references": [
+        "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/",
+        "https://ai-news.dev/"
+      ],
+      "retrieved_at": "2026-05-28T09:03:37.3694938+09:00"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/machine-learning/process-financial-documents-using-amazon-bedrock-data-automation/",
+      "title": "Process financial documents using Amazon Bedrock Data Automation | Artificial Intelligence",
+      "date": "2026-05-27T00:00:00Z",
+      "executive_summary": [
+        "AWSはAmazon Bedrock Data Automationを使った金融文書処理の手法を紹介している。",
+        "対象は銀行明細、W-2、1099-B、ベンダー契約の4種類である。",
+        "BDAは単純なOCRを超え、文書の文脈やセクション間の関係を理解する。",
+        "抽出、検証、分析を自動化し、構造化された実用データを出力する。",
+        "ブループリントで文書種別、抽出項目、検証ルール、出力形式を定義する。",
+        "出力はJSON、CSV、生データ形式で利用できる。",
+        "銀行明細では取引データ、W-2では税務情報、1099-Bでは証券取引、契約では指定要素を抽出した。",
+        "視覚的根拠や信頼スコア、ハルシネーション低減も特徴として示されている。",
+        "本番利用ではGDPRなど適用法規と社内セキュリティ・法務基準への準拠確認が必要である。"
+      ],
+      "key_findings": [
+        {
+          "point": "金融機関の日常業務では多種多様な文書が大量に処理される。",
+          "footnote": "記事本文に「Financial institutions process thousands of documents daily」とある。"
+        },
+        {
+          "point": "BDAは抽出だけでなく検証と分析まで含む金融文書自動化を狙う。",
+          "footnote": "記事本文に「automating the extraction, validation, and analysis of data from financial documents」とある。"
+        },
+        {
+          "point": "BDAは文脈、セクション間関係、構造化データ、複数ソース検証を扱える。",
+          "footnote": "記事本文に「Understand document context」「Recognize relationships」「Extract structured」「Validate information」とある。"
+        },
+        {
+          "point": "カスタム抽出は説明可能性とハルシネーション対策を備える。",
+          "footnote": "記事本文に「visual grounding with confidence scores for explainability and built-in hallucination mitigation」とある。"
+        },
+        {
+          "point": "ブループリントは抽出処理の設定テンプレートとして機能する。",
+          "footnote": "記事本文に「A blueprint... is a configuration template that defines how data should be extracted」とある。"
+        },
+        {
+          "point": "検証対象は4つの代表的な金融文書に分かれる。",
+          "footnote": "記事本文に「bank statements, W-2 forms, 1099-B forms, and vendor contracts」とある。"
+        },
+        {
+          "point": "銀行明細では日付、金額、説明、参照番号などの取引データを会計ワークフローへ渡す用途を想定する。",
+          "footnote": "記事本文に「capture transaction data, including dates, amounts, descriptions, and reference numbers」とある。"
+        },
+        {
+          "point": "1099-BではTSLAを文脈に沿って一貫抽出できたことが検証点になっている。",
+          "footnote": "記事本文に「accurately identified and extracted ‘TSLA’ as the security descriptor」とある。"
+        },
+        {
+          "point": "出力形式は下流統合やレポーティングに合わせて選べる。",
+          "footnote": "記事本文に「Output is available in JSON, CSV, and raw data formats」とある。"
+        },
+        {
+          "point": "機密情報を含む本番運用では法規制と組織ルールの確認が必要である。",
+          "footnote": "記事本文に「follow your organization’s cybersecurity and legal guidelines」「including but not limited to GDPR」とある。"
+        }
+      ],
+      "references": [
+        "https://aws.amazon.com/blogs/machine-learning/process-financial-documents-using-amazon-bedrock-data-automation/",
+        "https://ai-news.dev/"
+      ],
+      "retrieved_at": "2026-05-28T09:03:37.3694938+09:00"
+    }
+  ]
+}
