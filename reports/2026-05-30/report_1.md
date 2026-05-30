@@ -1,0 +1,109 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-05-30T09:01:21.5369375+09:00
+- Articles: 3
+
+## Codex を試す、再び ⑤ CLI
+- Date: 2026-05-29T11:18:39+00:00
+
+### Executive Summary
+- Codex CLI の公式ドキュメントを読み直し、普段使いで未確認だった機能を整理している。
+- 対話モード、履歴再開、テーマ変更、コピー、キュー投入、履歴検索など TUI の基本操作が列挙されている。
+- Codex App Server を LAN 内リモートホストで試し、非ループバックの WebSocket では認証が必須であることを確認している。
+- リモート接続では ws:// の制約により、実運用では SSH トンネルで localhost に転送する形を試している。
+- モデル選択、機能フラグ、サブエージェント、画像入力・画像生成、レビュー、Web 検索など CLI 周辺機能を幅広く確認している。
+- codex exec や codex cloud も試し、非対話実行やクラウドタスク連携の実際の挙動を検証している。
+- まとめではリモート App Server の可能性、クラウド連携への物足りなさ、Ctrl+G や Esc 操作、--add-dir の有用性が挙げられている。
+
+### Key Findings
+- Codex CLI には対話型 TUI として、プロンプト、コードスニペット、スクリーンショット入力、計画確認、シンタックスハイライト表示などの機能がある。 [^]
+  - Footnote: 本文に「プロンプト・コードスニペット・スクリーンショットを入力可能」「変更前に何を行うか？の計画を説明させて」とある。
+- 会話履歴はローカルに保存され、resume サブコマンドで同一ディレクトリや任意セッション ID から再開できる。 [^]
+  - Footnote: 本文に「会話履歴はローカルに保存され、中断箇所から作業を再開できる」「codex resume <SESSION_ID>」とある。
+- Codex App Server を非ループバックで起動する場合、WebSocket 認証なしでは拒否される。 [^]
+  - Footnote: 出力例に「refusing to start non-loopback websocket listener 0.0.0.0:4500 without auth」とある。
+- リモート TUI 接続では、リモート認証トークンは wss:// またはループバック ws:// でのみ有効とされ、SSH トンネルが回避策になっている。 [^]
+  - Footnote: 本文に「--remote-auth-token-env requires a `wss://` or loopback `ws://` remote」「SSHでトンネルを張ることにする」とある。
+- 機能フラグは codex features list / enable / disable で確認・変更でき、設定は config.toml に保存される。 [^]
+  - Footnote: 本文に「codex features list」「codex features enable memories」「設定は ~/.codex/config.toml に記録される」とある。
+- サブエージェントは明示指示時のみ起動され、大規模タスクの並列処理に使えるがトークン消費は増える。 [^]
+  - Footnote: 本文に「サブエージェントを使えば、大規模なタスクを並列処理可能」「明示的に指示した場合のみ起動される」とある。
+- codex exec はスクリプト組み込み向けの非対話モードとして使え、標準出力には最終回答を取り出せる挙動が確認されている。 [^]
+  - Footnote: 本文に「codex execを使えば、スクリプトなどに組み込みが可能」「ファイルには最終回答だけが出力されていた」とある。
+- 筆者はリモート App Server を有望と見つつ、MCP 起動や Ctrl+C / Esc 周りに不安定さを感じている。 [^]
+  - Footnote: 本文に「リモートのCodex App Server に手元から繋げれるってのは良さそう」「ちょっと挙動がイマイチ安定していないような」とある。
+
+### References
+- https://zenn.dev/kun432/scraps/9c0c19b19abd76
+
+## メモ: DeepSWE
+- Date: 2026-05-29T04:29:16+00:00
+
+### Executive Summary
+- DeepSWE は、エージェント型コーディングベンチマークの新しい標準として紹介されている。
+- 既存ベンチマークの課題として、GitHub 由来タスクの記憶問題と、小規模すぎるタスクの瑣末さが指摘されている。
+- DeepSWE はゼロから構築した新規タスクを使い、短く自然なプロンプトでも広範な実装が必要になるよう設計されている。
+- 91 個の OSS リポジトリと 5 言語を対象にし、複数ファイルをまたぐ実務寄りの開発力を測る狙いがある。
+- 採点は外部から見た挙動を重視し、手書きの検証コードで偽陽性・偽陰性を減らす設計になっている。
+- 共通ハーネス mini-swe-agent により、モデル間比較でツールやプロンプト差の影響を抑える方針が説明されている。
+- 筆者は、公開タスクによる benchmaxxing の懸念を認めつつ、正解パッチ非公開や長期タスク設計で起きにくくしていると整理している。
+
+### Key Findings
+- DeepSWE は、日常開発で感じるモデル差をより現実的に反映するベンチマークとして位置づけられている。 [^]
+  - Footnote: 本文に「開発者が日常業務で経験する現実的な体験を反映しています」とある。
+- SWE-Bench 系の既存ベンチマークには、モデルが解答を見ている可能性とタスクが小規模という問題がある。 [^]
+  - Footnote: 本文に「記憶（モデルがすでに解決策を見ていること）と瑣末さ（ほとんどのタスクが小規模であること）」とある。
+- DeepSWE タスクは新規に作られ、短く自然な指示文に対して多くのコード変更を要求する。 [^]
+  - Footnote: 本文に「ゼロから構築」「プロンプトを意図的に短く自然に保ちつつ、解決に大幅に多くのコードを必要」とある。
+- タスクは 91 個の OSS リポジトリ、TypeScript、Go、Python、JavaScript、Rust の 5 言語にまたがる。 [^]
+  - Footnote: 本文に「91個のオープンソースリポジトリ」「TypeScript / Go / Python / JavaScript / Rustの5言語」とある。
+- DeepSWE は挙動ベースの検証を重視し、内部実装ではなくユーザー目線の期待結果で合否を判断する。 [^]
+  - Footnote: 本文に「主に外から見た挙動だけで合否を決める」「ユーザー目線の動きをテスト」とある。
+- 筆者のまとめでは、DeepSWE の偽陽性 0.3%、偽陰性 1.1% という低ノイズ性が強調されている。 [^]
+  - Footnote: 本文に「DeepSWE 偽陽性0.3%、偽陰性1.1%くらい」とある。
+- 評価は mini-swe-agent という共通ハーネス上で行われ、基本ツールは bash に揃えられている。 [^]
+  - Footnote: 本文に「全部のモデルは mini-swe-agent っていう共通ハーネス」「どのモデルも同じツールセット（基本は bash）」とある。
+- リーダーボードでは gpt-5.5 が 70% ±4% でトップとされ、モデル差が既存ベンチより大きく見えると説明されている。 [^]
+  - Footnote: 本文に「gpt-5.5 が 70% ±4% でトップ」「一番弱いモデルと一番強いモデルで約70ポイント差」とある。
+
+### References
+- https://zenn.dev/kun432/scraps/667c5ba2dfe9b0
+- http://deepswe.datacurve.ai/blog
+- https://github.com/datacurve-ai/deep-swe
+
+## 「LFM2.5-8B-A1B」を試す
+- Date: 2026-05-28T17:11:35+00:00
+
+### Executive Summary
+- LFM2.5-8B-A1B は、オンデバイスや軽量サーバー向けの 8B MoE モデルとして紹介されている。
+- 1.5B アクティブ、128K コンテキスト、38T トークン学習、大規模 RL、ツール呼び出し性能が主な訴求点になっている。
+- 前世代 LFM2-8B-A1B から、学習量、コンテキスト長、指示追従、ツール関連ベンチマークが大きく伸びたと説明されている。
+- スマートフォン、ラップトップ、PC、ロボット、軽量サーバーで、クラウドや API キーなしに動くエージェント用途が想定されている。
+- LocalCowork の例では、1 台のラップトップ上で 13 MCP サーバー、67 ツールを扱うデスクトップエージェントが示されている。
+- 実行スタックは llama.cpp、MLX、vLLM、SGLang、ONNX など広く、主要ハードウェアベンダーにも Day 0 対応するとされる。
+- 筆者は Colaboratory L4 上の Transformers 実行も試し、Flash Attention 2 有効時に VRAM 約 17.4GB を使ったと記録している。
+
+### Key Findings
+- LFM2.5-8B-A1B は、8B MoE で 1.5B アクティブ、128K コンテキストを持つオンデバイス向けモデルとして説明されている。 [^]
+  - Footnote: 本文に「8B MoE、1.5B アクティブ」「拡張された 128K コンテキスト」とある。
+- 前世代から学習トークン数は 12 兆から 38 兆に増え、コンテキスト長も 32K から 128K に伸びている。 [^]
+  - Footnote: 本文に「学習トークン数：12兆 → 38兆」「コンテキスト長：32,000トークン → 128,000トークン」とある。
+- 指示追従やツール関連ベンチでは、IFEval 79.44 から 91.84、Tau2Telecom 13.60 から 88.07 などの改善が示されている。 [^]
+  - Footnote: 本文に「IFEval：79.44 → 91.84」「Tau2Telecomスコア：13.60 → 88.07」とある。
+- 単一マシン上のエージェントループに向け、複雑な指示でのツール呼び出しチェーンや高速ディスパッチを重視している。 [^]
+  - Footnote: 本文に「単一のマシン上で完全なエージェントループ向け」「複雑な指示にわたるツール呼び出しのチェーン」とある。
+- LocalCowork のデモでは、クラウドなし・API キーなしで 13 MCP サーバー上の 67 ツールを扱う構成が紹介されている。 [^]
+  - Footnote: 本文に「13のMCPサーバー上で67のツール」「クラウドなし、APIキーなし」とある。
+- 推論スタックは llama.cpp、MLX、vLLM、SGLang、ハードウェアは AMD、Intel、Qualcomm、NVIDIA、Apple が挙げられている。 [^]
+  - Footnote: 本文に「推論: llama.cpp、MLX、vLLM、SGLang」「ハードウェア: AMD、intel、Qualcomm、nvidia、Apple」とある。
+- 筆者の Transformers 試行では、Flash Attention 2 を有効化し、Colaboratory L4 で VRAM 約 17.4GB を消費した。 [^]
+  - Footnote: 本文に「Flash Attention 2を有効化」「VRAM消費は17.4GBぐらい」とある。
+- LFM は独自ライセンスであり、利用時にはライセンス条件への注意が必要とされている。 [^]
+  - Footnote: 本文に「LFMは独自ライセンスなのでその点だけ注意」とある。
+
+### References
+- https://zenn.dev/kun432/scraps/2dacfa5b91fcef
+- http://liquid.ai/blog/lfm2-5-8b-a1b
+- https://huggingface.co/LiquidAI/LFM2.5-8B-A1B
+- http://docs.liquid.ai
+- http://playground.liquid.ai
