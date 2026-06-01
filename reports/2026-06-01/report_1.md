@@ -1,0 +1,93 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-06-01T09:01:02+09:00
+- Articles: 3
+
+## Codex を試す、再び ⑥ 設定
+- Date: 2026-05-31T13:07:15+00:00
+
+### Executive Summary
+- Codex の設定ファイルと設定優先順位を整理している。
+- ユーザー設定とプロジェクト設定を階層的に適用できる。
+- プロジェクト設定は信頼済みプロジェクトでのみ有効になる。
+- 承認ポリシー、サンドボックス、MCP、検索方式などを設定できる。
+- 管理者は requirements.toml で危険な設定を禁止できる。
+- 名前付きプロファイルは CLI の --profile で切り替えられる。
+- Codex v0.134.0 以降のプロファイル設定方式の変更点も説明している。
+
+### Key Findings
+- 個人用設定は ~/.codex/config.toml、プロジェクト設定は各フォルダの .codex/config.toml に配置できる。 [^]
+  - Footnote: 本文に「個人用デフォルト: ~/.codex/config.toml」「プロジェクトやサブフォルダ: それぞれのフォルダの .codex/config.toml」とある。
+- CLI オプションと --config が最優先で適用される。 [^]
+  - Footnote: 設定の優先順位一覧の先頭に「CLIオプションと--config」と記載されている。
+- 信頼されていないプロジェクトではプロジェクト固有設定、フック、ルールが無視される。 [^]
+  - Footnote: 本文に「プロジェクト固有（.codex/以下）の設定ファイル・フック・ルールは無視される」とある。
+- web_search は cached、live、disabled を選べる。 [^]
+  - Footnote: 一般的な設定オプション表に web_search の候補値として cached、live、disabled が列挙されている。
+- 管理者は requirements.toml で approval_policy や sandbox_mode に制約を設定できる。 [^]
+  - Footnote: 本文に approval_policy = "never" や sandbox_mode = "danger-full-access" を禁止する例がある。
+- プロファイルは ~/.codex/プロファイル名.config.toml に定義する。 [^]
+  - Footnote: 本文に「使い分けたいプロファイルごとに個別で TOMLファイル（~/.codex/プロファイル名.config.toml）を作成」とある。
+
+### References
+- https://zenn.dev/kun432/scraps/f0558ff03d03b0
+
+## Stable Diffusion WebUI Forge - Neo を試す
+- Date: 2026-05-30T18:34:16+00:00
+
+### Executive Summary
+- Stable Diffusion WebUI Forge - Neo の特徴と導入手順を試している。
+- Neo は従来の Forge 系 UI の操作感を保つ継続開発版として紹介されている。
+- Stability Matrix を使う方法と Neo を直接導入する方法を比較している。
+- リモート Ubuntu 環境では Neo の直接導入が適すると判断している。
+- uv で Python 環境を作り、起動スクリプトから Web UI を起動している。
+- 外部端末からアクセスするため --listen を追加している。
+- Anima モデル一式を配置し、画像生成を実行している。
+
+### Key Findings
+- Forge - Neo は AUTOMATIC1111 系 WebUI を基盤とし、最適化とユーザビリティを重視する。 [^]
+  - Footnote: README 抜粋として、Neo は Forge の latest バージョンの継続開発を目的とし、最適化とユーザビリティに重点を置くと記載されている。
+- Stability Matrix は複数 UI、モデル、プラグインをまとめて管理できる。 [^]
+  - Footnote: 本文で「いろいろなWeb UIをインストールできて、かつ、それらが使用するモデルやプラグインなどをまるっと管理できる統合インタフェース」と整理されている。
+- Neo は neo ブランチを指定してクローンできる。 [^]
+  - Footnote: 本文に git clone https://github.com/Haoming02/sd-webui-forge-classic sd-webui-forge-neo --branch neo とある。
+- uv を使って Python 3.13 の仮想環境を作成している。 [^]
+  - Footnote: 本文に uv venv venv --python 3.13 --seed とある。
+- リモートアクセスには --listen の追加が必要だった。 [^]
+  - Footnote: 本文に webui-user.sh の COMMANDLINE_ARGS を "--uv --listen" に変更し、ブラウザからアクセスできたとある。
+- 試用した Anima モデルは diffusion model、text encoder、VAE の 3 ファイルで構成される。 [^]
+  - Footnote: 本文に anima-base-v1.0.safetensors、qwen_3_06b_base.safetensors、qwen_image_vae.safetensors の配置先と取得コマンドが示されている。
+
+### References
+- https://zenn.dev/kun432/scraps/0f551d4a90c946
+
+## エージェント向けサンドボックス環境「NVIDIA OpenShell」を試す
+- Date: 2026-05-30T09:36:57+00:00
+
+### Executive Summary
+- NVIDIA OpenShell の概念、構成、Quickstart を確認している。
+- OpenShell は AI エージェントを制限付き環境で動かすオープンソースのランタイムである。
+- Gateway が制御プレーン、Supervisor がサンドボックス内の適用主体として動作する。
+- ファイル、ネットワーク、認証情報、推論経路をポリシーで制御できる。
+- ローカル環境と Kubernetes 環境の双方に展開できる。
+- Ubuntu VM に OpenShell を導入し、Claude Code 用サンドボックスを作成している。
+- 組織的な一元管理には利点がある一方、構成と運用の複雑さが課題になる。
+
+### Key Findings
+- OpenShell はカーネルレベルの分離と宣言型 YAML ポリシーを組み合わせる。 [^]
+  - Footnote: 概要の翻訳に「カーネルレベルの分離環境」「宣言型YAMLポリシーを組み合わせる」とある。
+- 中心コンポーネントは CLI、Gateway、Supervisor の 3 つである。 [^]
+  - Footnote: 動作原理の節に「以下の3つの安定したランタイムコンポーネントを中心に構築されています: CLI、Gateway、および Supervisor」とある。
+- Gateway は状態、ポリシー、設定、認証、推論構成などを管理する。 [^]
+  - Footnote: 本文でゲートウェイは API アクセス、状態管理、ポリシーおよび設定の配信、プロバイダーおよび推論構成などを管理すると説明されている。
+- Supervisor はプロセス、ファイルシステム、ネットワーク、認証情報、推論処理を制限する。 [^]
+  - Footnote: スーパーバイザー保護レイヤーの表に各責任範囲が列挙されている。
+- 推論トラフィックは https://inference.local を介してルーティングできる。 [^]
+  - Footnote: 主要コンポーネントの表で、管理対象の https://inference.local パスが認証情報を保持したままバックエンドへルーティングすると説明されている。
+- Ubuntu VM で v0.0.52 を導入し、Gateway 接続を確認している。 [^]
+  - Footnote: インストール出力に openshell_0.0.52-1_amd64.deb とあり、openshell status の結果は Status: Connected、Version: 0.0.52 となっている。
+- Claude Code サンドボックスは Docker コンテナとして起動し、削除時にコンテナも削除された。 [^]
+  - Footnote: 本文で docker ps に openshell-fragrant-gelding... が表示され、openshell sandbox delete 後に Docker コンテナも削除されたと報告されている。
+
+### References
+- https://zenn.dev/kun432/scraps/85a7f3640c0e57
