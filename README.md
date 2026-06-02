@@ -17,8 +17,13 @@ uv run --link-mode=copy gemma4_e2b_video_summary.py -o gemma4_reports/test_summa
 
 
 
+
+
+
+=====
+
 # BRチャンネルの動画をダウンロードして最新 TOP N の動画をGeminiCLIで要約してレポートする。mp4は削除。
-uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g" -o out_report -n 5
+【使っていない】uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g" -o out_report -n 5
 
 
 uv run --link-mode=copy yt_top3_gemini_report.py "https://www.youtube.com/channel/UCUWtuyVjeMQygQiy3adHb1g" -o out_report -n 5 --model gemini-3-flash-preview

@@ -1,0 +1,239 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-06-02T09:06:45.0054402+09:00
+- Articles: 9
+
+## イスラエル首相、ヒズボラの攻撃続けばベイルート空爆 トランプ氏に伝達
+
+### Executive Summary
+- TOPニュース枠から取得したReutersの記事。
+- イスラエル首相に関する外交・安全保障ニュース。
+- 見出しはヒズボラの攻撃継続を条件としている。
+- 条件が続く場合のベイルート空爆に言及している。
+- トランプ氏へ伝達したと報じている。
+- Google ニュースでは4時間前と表示された。
+- 本文未確認のため見出しを超える詳細は不明。
+
+### Key Findings
+- TOPニュース枠の記事である。 [^]
+  - Footnote: Google ニュースの「トップニュース」直下に表示。
+- 媒体はReuters。 [^]
+  - Footnote: 記事カードの媒体表示はReuters。
+- イスラエル首相が主語となっている。 [^]
+  - Footnote: 見出し冒頭は「イスラエル首相」。
+- 攻撃継続が条件として示される。 [^]
+  - Footnote: 見出しに「ヒズボラの攻撃続けば」。
+- ベイルート空爆への言及がある。 [^]
+  - Footnote: 見出しに「ベイルート空爆」。
+
+### References
+- https://news.google.com/read/CBMiggFBVV95cUxObzRXTURxZi11UXByN2Fjdjk2RHhTVTk2YWxWSVFpWnA4WUpDcEJEX2taSm9wVlQ5enRraFVzVTdVMGhtOUJ3Qk5BanJSVW5Ga2ROZnJESFl2anNfOVFFQzhYYUlOc3B6Y2VOVG53WmJ2MDNyS241MmZUVUU3ZV9ZMGRR?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 平和への祈り バラに託し 横浜・青葉で6、7日に祭り 運営・樋口さん、後継探す「メッセージを次代に伝えて」
+
+### Executive Summary
+- ローカルニュース枠から取得した東京新聞デジタルの記事。
+- 横浜・青葉で開催予定の祭りを扱う。
+- 開催日は6日と7日と見出しに示される。
+- 平和への祈りをバラに託す催しとして紹介される。
+- 運営に関わる樋口さんが後継者を探している。
+- 次代へのメッセージ継承が課題として示される。
+- Google ニュースでは1時間前と表示された。
+
+### Key Findings
+- ローカルニュース枠の記事である。 [^]
+  - Footnote: Google ニュースの「ローカル ニュース」内に表示。
+- 媒体は東京新聞デジタル。 [^]
+  - Footnote: 記事カードの媒体表示。
+- 横浜・青葉の祭りを扱う。 [^]
+  - Footnote: 見出しに「横浜・青葉で6、7日に祭り」。
+- 平和への祈りがテーマ。 [^]
+  - Footnote: 見出しに「平和への祈り バラに託し」。
+- 後継者探しが課題。 [^]
+  - Footnote: 見出しに「後継探す」。
+
+### References
+- https://news.google.com/read/CBMiU0FVX3lxTE1YQXFfLUs5RzJUVWV0R0tEbVlJRHE5bFFSdl9HRHNFTEtvakY4R2ZiWnVtc3hmNE5QbXZrRkdtMGc5NnNWNkxqOFBRaGJPYUVmZ2U4?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 松本潤「本当に楽しかった。ありがとう」嵐５人の乾杯ショット投稿　ラストライブ後、無人の東京ドームのステージで“打ち上げ”
+
+### Executive Summary
+- おすすめ相当の未ログイン表示枠から取得した記事。
+- 媒体はｄメニューニュース。
+- 松本潤さんの投稿を扱う。
+- 投稿には嵐5人の乾杯ショットが含まれる。
+- ラストライブ後の東京ドームが舞台とされる。
+- ステージ上での打ち上げとして紹介される。
+- Google ニュースでは3時間前と表示された。
+
+### Key Findings
+- 未ログインで表示されたおすすめ相当の記事。 [^]
+  - Footnote: 「あなたへのおすすめ」付近の未ログイン表示領域で確認。
+- 媒体はｄメニューニュース。 [^]
+  - Footnote: 記事カードの媒体表示。
+- 松本潤さんの投稿を扱う。 [^]
+  - Footnote: 見出し冒頭に松本潤さんの名前。
+- 嵐5人の乾杯ショットが投稿された。 [^]
+  - Footnote: 見出しに「嵐５人の乾杯ショット投稿」。
+- ラストライブ後の東京ドームで撮影された。 [^]
+  - Footnote: 見出しに「ラストライブ後、無人の東京ドーム」。
+
+### References
+- https://news.google.com/read/CBMijgFBVV95cUxPdUk0S2ZmcFFOektZcEtoTmdHeDNNTTlMTTlfTHo2cmhMa3ZEUmoyajZBRzdXb2J3ZENSZnppdkQxbUpXQnZPNVV3VVloblY4MGVGOGJOYVd3NEVWZS1YbTlpaGoteGpLelRHRXpKZFAybVhQV1o5M2NWd2dSUDNVNlJpNFFCU1VUMEZlRWxB?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 台風6号　荒天のピークはいつ?　九州～関東で大雨や暴風　交通機関への影響に注意(気象予報士 吉田　友海 2026年06月02日)
+- Date: 2026-06-02T00:00:00+09:00
+
+### Executive Summary
+- トピック_日本枠から取得したtenki.jpの記事。
+- 台風6号による荒天を扱う。
+- 九州から関東まで広い範囲が対象。
+- 大雨と暴風への警戒を促している。
+- 交通機関への影響にも注意が必要とされる。
+- 見出しに2026年6月2日の日付がある。
+- Google ニュースでは33分前と表示された。
+
+### Key Findings
+- トピック_日本枠の記事。 [^]
+  - Footnote: Google ニュースの「トピック」「日本」内に表示。
+- 媒体はtenki.jp。 [^]
+  - Footnote: 記事カードの媒体表示。
+- 台風6号を扱う。 [^]
+  - Footnote: 見出し冒頭に「台風6号」。
+- 対象範囲は九州から関東。 [^]
+  - Footnote: 見出しに「九州～関東」。
+- 交通影響への注意喚起がある。 [^]
+  - Footnote: 見出しに「交通機関への影響に注意」。
+
+### References
+- https://news.google.com/read/CBMia0FVX3lxTE1KamxnQ0daU19sN1VKSjY0MUNJaFRsbkdyWXFZNnItMXRxdDJjM2d4ZDNrZUI2ZHpHLWtMTUFmNENLakVMaElKX2hIU3ZEVTI0WlNSTzVnaUpMdFBKdGN1U01lSjhteWpadVFJ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 内田有紀＆寺西拓人Ｗ主演！年の差男女が静かに惹（ひ）かれあい、激しい恋へと導かれていくラブストーリー『ラストノート』
+
+### Executive Summary
+- トピック_エンタメ枠から取得しためざましmediaの記事。
+- 作品名は『ラストノート』。
+- 内田有紀さんと寺西拓人さんがダブル主演する。
+- 年齢差のある男女を描く。
+- 静かな引かれ合いから激しい恋へ進む物語とされる。
+- ラブストーリーとして紹介されている。
+- Google ニュースでは4時間前と表示された。
+
+### Key Findings
+- トピック_エンタメ枠の記事。 [^]
+  - Footnote: Google ニュースの「エンタメ」内に表示。
+- 媒体はめざましmedia。 [^]
+  - Footnote: 記事カードの媒体表示。
+- 内田有紀さんと寺西拓人さんが主演。 [^]
+  - Footnote: 見出しに「内田有紀＆寺西拓人Ｗ主演」。
+- 作品名は『ラストノート』。 [^]
+  - Footnote: 見出し末尾に作品名。
+- 年齢差のある男女の恋愛を描く。 [^]
+  - Footnote: 見出しに「年の差男女」。
+
+### References
+- https://news.google.com/read/CBMiU0FVX3lxTFBUaXNfZ0dZTWxmSGMxOE1XUkhaaFV1eWJHNWtGVGU1ZDJnMVA5NWVpTWVyc3pvSWpBbnF4aGRPOVN2YnRwbGFMRGVoUzhNOFIyZ0Fv?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 米国株式市場＝続伸、3指数が最高値更新 エヌビディア新半導体発表でハイテク高
+
+### Executive Summary
+- トピック_ビジネス枠から取得したReutersの記事。
+- 米国株式市場の続伸を扱う。
+- 3指数が最高値を更新したと報じる。
+- エヌビディアの新半導体発表が材料とされる。
+- ハイテク株高につながったと見出しは示す。
+- 市場動向を伝える記事。
+- Google ニュースでは2時間前と表示された。
+
+### Key Findings
+- トピック_ビジネス枠の記事。 [^]
+  - Footnote: Google ニュースの「ビジネス」内に表示。
+- 媒体はReuters。 [^]
+  - Footnote: 記事カードの媒体表示。
+- 米国株式市場は続伸。 [^]
+  - Footnote: 見出しに「米国株式市場＝続伸」。
+- 3指数が最高値を更新。 [^]
+  - Footnote: 見出しに「3指数が最高値更新」。
+- エヌビディアの新半導体発表が材料。 [^]
+  - Footnote: 見出しに「エヌビディア新半導体発表でハイテク高」。
+
+### References
+- https://news.google.com/read/CBMigAFBVV95cUxQd3dxa2xTSjFkR3d5UVluQkhFaTVGMmcwbU51QmRxc1VQdTVHc0VoQUI1cjhhbkZVbkdBY2hxZ3pZQ3dtRHZFSkFza3hTckhUaDRqa19CMWNETjlTZzFzdUFCWnBFU0pNZThfZlpSeTRINUtiNU9ldDBnSmxvNmxHMg?hl=ja&gl=JP&ceid=JP%3Aja
+
+## NASAの次世代宇宙コンピューターが、自律型探査の未来を拓く
+
+### Executive Summary
+- トピック_宇宙としてGoogle ニュース内検索から取得したWIRED.jpの記事。
+- NASAの次世代宇宙コンピューターを扱う。
+- 自律型探査への活用が主題。
+- 将来の宇宙探査への影響を示す見出し。
+- NASAの技術開発に関する記事。
+- Google ニュースでは1時間前と表示された。
+- 本文未確認のため仕様や計画の詳細は不明。
+
+### Key Findings
+- 宇宙検索で取得した記事。 [^]
+  - Footnote: Google ニュース内で「宇宙」を検索。
+- 媒体はWIRED.jp。 [^]
+  - Footnote: 記事カードの媒体表示。
+- NASAの技術を扱う。 [^]
+  - Footnote: 見出し冒頭に「NASA」。
+- 対象は次世代宇宙コンピューター。 [^]
+  - Footnote: 見出しに「次世代宇宙コンピューター」。
+- 自律型探査が主題。 [^]
+  - Footnote: 見出しに「自律型探査の未来」。
+
+### References
+- https://news.google.com/read/CBMiggFBVV95cUxOeEE3eG0zWGItbzdwcnV1dlZ1aERHdkRFUlNoR240UWZVeFBtYVRPbGhpQW1CYjJFc2xiR1BvUWl1ZzZWZUZ5am8taFF6ZVVxNU5ZN3B2bXNoc1cySV9LeVlhWXFDeHdJWVdKdnhzT3Rwa0JoaUpOZ3cyNlZpSFp4YUVR?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 妊産婦の栄養に「黒ごまラテ」 九鬼産業が四日市市へ寄贈 三重（伊勢新聞）
+
+### Executive Summary
+- トピック_栄養としてGoogle ニュース内検索から取得した記事。
+- 伊勢新聞の記事がYahoo!ニュース経由で表示された。
+- 妊産婦の栄養をテーマにする。
+- 黒ごまラテの寄贈を扱う。
+- 寄贈元は九鬼産業。
+- 寄贈先は四日市市と示される。
+- Google ニュースでは1時間前と表示された。
+
+### Key Findings
+- 栄養検索で取得した記事。 [^]
+  - Footnote: Google ニュース内で「栄養」を検索。
+- 妊産婦の栄養を扱う。 [^]
+  - Footnote: 見出しに「妊産婦の栄養に」。
+- 寄贈品は黒ごまラテ。 [^]
+  - Footnote: 見出しに「黒ごまラテ」。
+- 寄贈元は九鬼産業。 [^]
+  - Footnote: 見出しに「九鬼産業」。
+- 寄贈先は四日市市。 [^]
+  - Footnote: 見出しに「四日市市へ寄贈」。
+
+### References
+- https://news.google.com/read/CBMif0FVX3lxTE9PaEpiU2htQzlPZEVKbm5uRlBhRVMwSC01MVkxdDZGaTR0QUVLQnIzY3B3cTI5Z0FmZmRpdUFqVkFFdEd2cGJRalY1LU5hQVNLdUpwOS0xS3pHYV8yYVhkN2hIM2hwQWVsNXB0V2tHQmRwSEdZOVJwNW96UVVEWjA?hl=ja&gl=JP&ceid=JP%3Aja
+
+## キャスト・人物相関図 第１０週～ りんと直美は外科を離れ、内科で実習することに - 連続テレビ小説「風、薫る」人物紹介 - 風、薫る
+
+### Executive Summary
+- 興味深いニュース枠から取得したNHKの記事。
+- 連続テレビ小説「風、薫る」に関する人物紹介。
+- 第10週以降の内容を扱う。
+- りんと直美が外科を離れる展開が示される。
+- 2人は内科で実習することになる。
+- キャストと人物相関図を案内する記事。
+- Google ニュースでは8分前と表示された。
+
+### Key Findings
+- 興味深いニュース枠の記事。 [^]
+  - Footnote: Google ニュースの「興味深いニュース」内に表示。
+- 媒体はNHK。 [^]
+  - Footnote: 記事カードの媒体表示。
+- 連続テレビ小説「風、薫る」を扱う。 [^]
+  - Footnote: 見出しに作品名。
+- 第10週以降の人物紹介。 [^]
+  - Footnote: 見出しに「第１０週～」。
+- りんと直美は内科で実習する。 [^]
+  - Footnote: 見出しに「内科で実習することに」。
+
+### References
+- https://news.google.com/read/CBMid0FVX3lxTE5YYTdpNmc1V1E1SWNDQmI1RkRORmlDSG9vNTNqQlc4R1Ywek5ZbDRsdWotRzRnbXhxS0pKQTM5TmFVcjhBUDRyTzVSREFrV3hRMDloVjUtSExpSlB4UDNYdHdWX2VWRS1MWDFaOWNRRkMzTi0xZVln?hl=ja&gl=JP&ceid=JP%3Aja
