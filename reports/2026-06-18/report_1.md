@@ -1,0 +1,93 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-06-18T09:01:25.6642159+09:00
+- Articles: 3
+
+## 今更「tmux」を試す
+- Date: 2026-06-17T14:13:24+00:00
+
+### Executive Summary
+- 筆者は過去に screen を試したものの、端末分割やデタッチの必要性を強く感じず tmux を使ってこなかった。
+- 近年はコーディングエージェントの並列実行やログ共有の文脈で tmux の有用性を再認識している。
+- Claude Code に tmux ペイン番号を渡すと、ペイン内容を取得して文脈化できる点が便利だと評価している。
+- tmux はサーバー・クライアント方式で、ターミナル切断後もセッションを保持できる。
+- 基本構造はセッション、ウィンドウ、ペインの 3 階層で、複数の作業空間を管理できる。
+- Ubuntu 24.04 では apt で tmux 3.4 を導入し、分割、移動、デタッチ、再アタッチを確認している。
+- 別ユーザー間のセッション共有ではソケット指定だけでなく server-access によるアクセス許可も必要だと確認している。
+
+### Key Findings
+- tmux はコーディングエージェントにターミナル状態を渡す用途で有効性がある。 [^]
+  - Footnote: 記事では「Please take a look at tmux pane %187」というプロンプトで Claude Code が `tmux capture-pane -p -t %187` を使って内容を拾える例を紹介している。
+- tmux は端末の多重化だけでなく、切断後も作業状態を保持する永続セッションを提供する。 [^]
+  - Footnote: 本文に「ターミナルウィンドウを閉じたり、SSH接続が切れたりしても、セッションはサーバーで保持」とある。
+- tmux の基本モデルはセッション、ウィンドウ、ペインの 3 階層で理解できる。 [^]
+  - Footnote: 本文では「3段階の階層構造」「セッション → ウィンドウ → ペイン」と整理している。
+- Ubuntu 24.04 では `sudo apt install -y tmux` で導入し、検証環境では tmux 3.4 が入っている。 [^]
+  - Footnote: 記事中のコマンド出力として `tmux -V` の結果が `tmux 3.4` と示されている。
+- デフォルトのプレフィックスキーは Ctrl+b で、設定により Ctrl+a などへ変更できる。 [^]
+  - Footnote: 本文では `unbind C-b`, `set -g prefix C-a`, `bind C-a send-prefix` の `.tmux.conf` 例を示している。
+- 別 OS ユーザー間で共有する場合は、ソケットファイルとアクセス許可の扱いに注意が必要である。 [^]
+  - Footnote: 筆者は `tmux -S /tmp/shared.sock attach` で `access not allowed` を確認し、`tmux server-access -a hanako` が必要と記している。
+
+### References
+- https://zenn.dev/kun432/scraps/853948b9a72d69
+
+## コーディングエージェント用プロキシ「CLIProxyAPI」を試す
+- Date: 2026-06-15T13:39:03+00:00
+
+### Executive Summary
+- 筆者は GLM Coding Plan を Codex から使いたいという動機で CLIProxyAPI を検証している。
+- CLIProxyAPI は OpenAI、Gemini、Claude、Codex、Grok 互換の API インターフェースを提供するプロキシとして紹介されている。
+- OAuth 認証、ストリーミング、WebSocket、関数呼び出し、マルチモーダル入力、複数アカウント負荷分散に対応する。
+- Ubuntu 24.04 ではインストールスクリプトで 7.2.5 が導入され、systemd ユーザーサービスも作成された。
+- OpenCode Go や GLM Coding Plan は OpenAI 互換または Anthropic 互換の上流として設定できる可能性がある。
+- 設定例では OpenCode Go の Anthropic 互換モデルと OpenAI 互換モデルを分けて `config.yaml` に追記している。
+- デフォルトのサンプル API キーを残すと警告用サーバーになり、削除後に通常の API サーバーが起動した。
+
+### Key Findings
+- CLIProxyAPI は複数の CLI 系モデルや互換 API を統一的に扱うプロキシである。 [^]
+  - Footnote: README 抜粋として「OpenAI/Gemini/Claude/Codex/Grok 互換のAPIインターフェースを提供するCLI用プロキシサーバー」と記載されている。
+- Codex と Claude Code には OAuth 経由で対応すると説明されている。 [^]
+  - Footnote: 本文に「現在はOAuth経由でOpenAI Codex（GPTモデル）およびClaude Codeにも対応」とある。
+- インストールスクリプトは Linux 環境でバイナリ、設定ファイル、systemd ユーザーサービスを配置する。 [^]
+  - Footnote: 出力には `CLIProxyAPI_7.2.5_linux_amd64.tar.gz` の取得、`config.yaml` 作成、`cliproxyapi.service` 作成が記録されている。
+- GLM Coding Plan や OpenCode Go は互換 API として設定できそうだが、公認利用かは不明である。 [^]
+  - Footnote: 記事では「CLIProxyAPI 経由でのアクセスが公認された使い方になるかどうかは不明」と注意している。
+- OpenCode Go はモデルにより Anthropic 互換と OpenAI 互換を使い分ける必要がある。 [^]
+  - Footnote: 本文では「Qwen / Minimax は Anthropic互換」「GLM / Kimi / DeepSeek / MiMo は OpenAI互換」と整理している。
+- サンプル API キーを設定に残したままだと通常サーバーが無効化される。 [^]
+  - Footnote: 起動ログに `unsafe example API key configured` と `normal API server disabled` が出て、`your-api-key-3` 削除後に正常起動したと記している。
+
+### References
+- https://zenn.dev/kun432/scraps/71f4d8cdff3fb7
+
+## メモ: wakewordlab
+- Date: 2026-06-15T06:10:25+00:00
+
+### Executive Summary
+- この記事は wakewordlab という Python 向けオンデバイス・ウェイクワード検出機能のメモである。
+- wakewordlab は小型ハードウェアで常時動作させる低コストなウェイクワードエンジンとして設計されている。
+- Silero VAD によって音声フレームだけを推論対象にし、無音時の CPU 使用率と誤検知を抑える。
+- モデルサイズは openWakeWord パイプラインより大幅に小さく、記事では約 15 倍小さい出荷時モデルサイズが示されている。
+- Raspberry Pi 3 の比較では wakewordlab の CPU 負荷相当値が 15.3%、openWakeWord が 40.6% とされる。
+- HA Green 環境では openWakeWord が 26〜53% のコア負荷を占める一方、wakewordlab は 1〜2% 程度と説明されている。
+- 筆者は性能面を評価しつつ、カスタムウェイクワードの自前学習方法が公開されていない点を懸念している。
+
+### Key Findings
+- wakewordlab は Python 向けのオンデバイス型ウェイクワード検出機能である。 [^]
+  - Footnote: README 抜粋として「Python向けのデバイス内蔵型ウェイクワード検出機能」と説明されている。
+- Silero VAD による事前フィルタで、無音時の推論を避ける設計になっている。 [^]
+  - Footnote: 本文に「Silero VADによる事前フィルタを搭載」「音声フレームのみを対象に推論」とある。
+- モデルサイズは検証例で約 240 KB とされ、openWakeWord の約 3.5 MB よりかなり小さい。 [^]
+  - Footnote: 記事では wakewordlab `.wkw` が 244,541 バイト、openWakeWord パイプラインが 3,685,906 バイトと示されている。
+- Raspberry Pi 3 の単一コア比較では wakewordlab の計算負荷が openWakeWord より低い。 [^]
+  - Footnote: 表では wakewordlab が 48.1 MMAC/秒、152.7 ms、15.3% 負荷、openWakeWord が 530.3 MMAC/秒、405.7 ms、40.6% 負荷とされる。
+- Home Assistant Green では openWakeWord の常時処理が他の自動化処理や UI と CPU を競合しうる。 [^]
+  - Footnote: 本文に openWakeWord は HA Green で「26～53%」の Cortex-A55 コアを占有し、Zigbee やレコーダー、UI と競合するとある。
+- openWakeWord の主な重さは Google 音声埋め込みモデルを 80ms ごとに実行する構造にある。 [^]
+  - Footnote: 記事では「大規模な事前学習済みGoogle音声埋め込みモデル（4200万MACs）を80msごとの音声データ塊に対して実行」と説明している。
+- カスタムウェイクワードの学習方法が公開されていない可能性が、採用上の懸念として残る。 [^]
+  - Footnote: 筆者は「カスタムウェイクワードのトレーニングが自分でできないのであれば、ちょっと厳しい」と述べている。
+
+### References
+- https://zenn.dev/kun432/scraps/36e3840eaac24a
