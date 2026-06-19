@@ -1,0 +1,102 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-06-19T09:01:18.5657929+09:00
+- Articles: 3
+
+## 「worktrunk」を試す
+- Date: 2026-06-18T15:11:54+00:00
+
+### Executive Summary
+- Worktrunk は git worktree 管理を簡単にする CLI ツールとして紹介されている。
+- AI エージェントを並列実行する場面を主な利用シーンとしている。
+- ワークツリーの作成、切り替え、削除、一覧表示を短い wt コマンドで扱える。
+- フック、マージ支援、LLM コミットメッセージ生成など、並行作業向けの機能が多い。
+- PR チェックアウトやワークツリーごとの開発サーバーポート割り当ても扱える。
+- 筆者は現在 ghq と gwq を使っているが、別の選択肢として試している。
+- GitHub README と公式ドキュメントを起点に、ツールの位置づけと主要機能を整理している。
+
+### Key Findings
+- Worktrunk は git ワークツリー管理のための CLI ツールである。 [^]
+  - Footnote: 記事本文に「Worktrunkはgitワークツリー管理のためのCLIツール」と記載されている。
+- AI エージェントの並列実行を意識して設計されている。 [^]
+  - Footnote: 本文では「AIエージェントを並列実行するように設計されています」と説明されている。
+- 基本コマンドでワークツリー操作をブランチ操作に近い感覚へ寄せている。 [^]
+  - Footnote: 本文に「3つの基本コマンドを使えば、ワークツリーの操作がブランチの操作と同じくらい簡単」とある。
+- 通常の git worktree 操作ではブランチ名やパス指定が煩雑になりやすい。 [^]
+  - Footnote: 本文では「ブランチ名を3回も入力する必要があります」として `git worktree add -b feat ../repo.feat` などを例示している。
+- wt switch、wt remove、wt list などが主要な操作として示されている。 [^]
+  - Footnote: 表で「wt switch feat」「wt switch -c -x claude feat」「wt remove」「wt list」が通常の git 操作と比較されている。
+- フック、LLM コミットメッセージ生成、マージワークフローなどの自動化機能がある。 [^]
+  - Footnote: 本文の「ワークフロー自動化機能」に「フック機能」「LLMによるコミットメッセージ生成」「マージワークフロー」が列挙されている。
+- 筆者の動機は既存の ghq + gwq 以外の選択肢を試すことにある。 [^]
+  - Footnote: 筆者コメントに「現在 ghq + gwq を使っていて」「他のチョイスも試してみたい」とある。
+
+### References
+- https://zenn.dev/kun432/scraps/9cc5951727014e
+- https://github.com/max-sixty/worktrunk
+
+## 今更「tmux」を試す ②
+- Date: 2026-06-18T07:20:52+00:00
+
+### Executive Summary
+- 前回に続き、tmux の設定、キーバインド、ステータスバー、プラグインを試している。
+- 設定ファイルの優先度や `source-file` による再読込方法が整理されている。
+- TPM を使ったプラグイン導入と、tmux-sensible などの設定例が紹介されている。
+- tmux の外部スクリプトインターフェースにより、固定の開発環境を自動起動できる点が扱われている。
+- SSH 越しのセッション維持やリモートペアプログラミングにも触れている。
+- 最後に、Codex 用、gRPC サーバー用、gRPC クライアント用の 3 ペーン構成で試した結果がまとめられている。
+- 筆者は tmux をエージェントに与える道具として有用そうだと評価しつつ、凝った設定は避けたい姿勢を示している。
+
+### Key Findings
+- tmux 設定は複数の設定ファイル階層を持つ。 [^]
+  - Footnote: 本文ではユーザレベル、`$XDG_CONFIG_HOME/tmux/tmux.conf`、`~/.config/tmux/tmux.conf`、`/etc/tmux.conf` が挙げられている。
+- 既存セッションへ設定を反映するには再読込が必要になる。 [^]
+  - Footnote: 本文に「tmux source-file ~/.tmux.conf」またはコマンドラインモードで「source-file ~/.tmux.conf」を実行するとある。
+- キーバインドは設定ファイルで追加・削除・変更できる。 [^]
+  - Footnote: 本文に `bind r source-file ~/.tmux.conf`、`unbind C-b`、`set -g prefix C-a` などの例がある。
+- TPM により tmux プラグインを管理できる。 [^]
+  - Footnote: 本文に「tmuxにはプラグインがあり、プラグインを管理するためのマネージャー『TPM』も用意されている」とある。
+- tmux は外部からコマンドを実行でき、自動化に使える。 [^]
+  - Footnote: 本文に「tmux にはスクリプトインターフェースが用意されており、tmux の外部から tmux コマンドを直接実行できる」とある。
+- SSH 切断後もリモート上の tmux セッションは維持される。 [^]
+  - Footnote: 本文に「SSHが切断されても、セッションは維持され、再接続できる」と記載されている。
+- Codex と gRPC サーバー・クライアントを別ペーンで動かす実験が行われた。 [^]
+  - Footnote: まとめで「Codex用」「gRPCサーバ用」「gRPCクライアント用」の 3 つのペーンを用意したとある。
+- tmux はコーディングエージェントに道具として与える用途で有望と見られている。 [^]
+  - Footnote: 本文に「エージェントに道具として与えればそのあたりもよしなにやってくれて、結果的に人間側も確認しやすそう」とある。
+
+### References
+- https://zenn.dev/kun432/scraps/27b1c1a4c8501a
+
+## 今更「tmux」を試す ①
+- Date: 2026-06-17T14:13:24+00:00
+
+### Executive Summary
+- 筆者はこれまで tmux を使ってこなかった理由を振り返りつつ、改めて入門している。
+- コーディングエージェントの文脈で tmux ペーン情報を共有できる点に関心を持っている。
+- 公式 Getting Started に沿って Ubuntu 24.04 で tmux 3.4 を試している。
+- セッション、ウィンドウ、ペーンという tmux の階層構造を整理している。
+- 名前付きセッション、アタッチ、デタッチ、セッション共有などの基本操作を試している。
+- ウィンドウやペーンの分割、移動、リサイズ、同期、レイアウト切り替えも確認している。
+- コピーモードは便利だが、筆者には認知負荷が高い部分として残っている。
+
+### Key Findings
+- 筆者は tmux の端末多重化や仮想的な操作に以前は大きな利点を感じていなかった。 [^]
+  - Footnote: 本文に「端末の多重化は、タブ分割できるターミナルを使えば解決できる」「認知負荷が高くなる」とある。
+- コーディングエージェントで tmux ペーン内容を取得できる点が再評価のきっかけになっている。 [^]
+  - Footnote: 本文に「Please take a look at tmux pane %187」と投げると `tmux capture-pane -p -t %187` で拾ってくれるとある。
+- tmux はセッション、ウィンドウ、ペインの 3 階層で構成される。 [^]
+  - Footnote: 本文の tmux とは？ で「3段階の階層構造」「セッション → ウィンドウ → ペイン」と整理されている。
+- Ubuntu 24.04 では apt で導入し、tmux 3.4 が確認されている。 [^]
+  - Footnote: 本文に「今回は Ubuntu-24.04で試す」「sudo apt install -y tmux」「tmux 3.4」とある。
+- 名前付きセッションを作成してデタッチ・再アタッチできる。 [^]
+  - Footnote: Quickstart で `tmux new -s work`、`tmux ls`、`tmux attach -t work` が説明されている。
+- 異なる OS ユーザー間のセッション共有にはソケットとアクセス許可が必要になる。 [^]
+  - Footnote: 本文に `tmux -S /tmp/shared.sock`、`chmod 777 /tmp/shared.sock`、`tmux server-access -a hanako` が示されている。
+- ペーン同期により複数ペーンへ同じ入力を送れる。 [^]
+  - Footnote: 本文に「synchronize-panes で、すべてのペーンに対して、同じキー入力を行うことができる」とある。
+- コピーモードは筆者にとって慣れが必要な機能として残った。 [^]
+  - Footnote: 本文に「この仮想ウインドウ内のスクロールだったりコピペだったり、がとても苦手」とある。
+
+### References
+- https://zenn.dev/kun432/scraps/853948b9a72d69
