@@ -1,0 +1,104 @@
+# AI Common Report (https://ai-news.dev/)
+
+- Generated at: 2026-06-21T09:03:55+09:00
+- Articles: 3
+
+## Supermarket giant Tesco sues VMware, warns lack of support could disrupt food supply
+- Date: 2025-09-03T07:17:00Z
+
+### Executive Summary
+- Tesco は VMware ライセンスとサポート契約をめぐり、Broadcom と Computacenter を相手取って訴訟を起こした。
+- 争点は、永久ライセンスに対するサポート延長、アップグレード、セキュリティ更新の提供範囲にある。
+- Tesco は 2021 年に VMware 製品の永久ライセンスと Tanzu サブスクリプション、2026 年までのサポート契約を取得したと主張している。
+- Broadcom による VMware 買収後、永久ライセンス向けの単独サポート販売が停止され、サブスクリプション購入が求められていることが問題化した。
+- Tesco は VMware が店舗や業務システムを支える重要基盤であり、支援不足が英国とアイルランドの食品供給に影響し得ると警告している。
+- 訴状では約 40,000 のサーバーワークロードや店舗レジとの接続が VMware 上で動く例として示されている。
+- Tesco は各被告に対して少なくとも 1 億ポンドの損害賠償と利息を求めている。
+
+### Key Findings
+- 訴訟対象は Broadcom 傘下の VMware と reseller の Computacenter である。 [^]
+  - Footnote: 記事は Tesco が VMware ライセンス契約違反で Broadcom を訴え、Computacenter も共同被告にしたと述べている。
+- Tesco は 2026 年までのサポート契約に加え、4 年間の延長オプションがあったと主張している。 [^]
+  - Footnote: 本文には 2021 年 1 月に vSphere Foundation、Cloud Foundation、Tanzu 関連契約と 2026 年までのサポートを取得し、さらに 4 年延長の選択肢が合意されたとある。
+- Broadcom の新方針により、永久ライセンスの単独サポート購入が困難になったことが中核的な不満である。 [^]
+  - Footnote: 記事は Broadcom が永久ライセンス向けサポート販売を停止し、新サブスクリプション契約者にサポートを販売していると説明している。
+- Tesco は既に支払済みの仮想化ソフトに対して重複したサブスクリプション購入を強いられると主張している。 [^]
+  - Footnote: 訴状の引用として、Tesco は既所有のソフトに対して過大で膨らんだ価格を払わされ、重複するサブスクリプションライセンス購入が必要になると述べている。
+- Cloud Foundation 9 へのアップグレード権も争点になっている。 [^]
+  - Footnote: 本文は、契約上ソフトウェアアップグレードの資格があるが、Broadcom が永久ライセンスを Cloud Foundation 9 に更新させないと Tesco が主張していると記す。
+- Tesco の業務継続リスクは単なる IT 契約問題を超えると位置づけられている。 [^]
+  - Footnote: 訴状は VMware とそのサポートが Tesco の事業運営、耐障害性、英国とアイルランドの消費者への食品供給能力に不可欠だとしている。
+- VMware は Tesco の大規模な店舗・サーバー基盤を支えている。 [^]
+  - Footnote: 記事は約 40,000 のサーバーワークロードをホストし、店舗のレジなどに接続していると説明している。
+- 損害賠償請求額は少なくとも 1 億ポンド規模で、長期化すれば増える可能性がある。 [^]
+  - Footnote: 本文は Broadcom、VMware、Computacenter が少なくとも 1 億ポンドの損害と利息について責任を負うと Tesco が警告していると述べる。
+
+### References
+- https://www.theregister.com/software/2025/09/03/supermarket-giant-tesco-sues-vmware-for-breach-of-contract/1420651
+
+## Inference cost at scale with napkin math
+
+### Executive Summary
+- この記事は GPU と LLM 構造の大まかな知識から、推論のユーザーあたりコストを概算する方法を説明している。
+- 行列積、Attention、KV キャッシュを順に扱い、長い文脈を毎回再計算しないことが推論効率の鍵だと示している。
+- KV キャッシュにより、各 forward pass は履歴全体ではなく直近トークンだけを処理できるという単純化が可能になる。
+- NVIDIA B200 の例では、計算能力よりメモリ帯域が制約になりやすく、理論上は 331 ユーザー同時処理が最適点として導かれる。
+- ただし 32B モデルと 200k トークン文脈では KV キャッシュが巨大になり、GQA 後でもユーザーあたり約 26GB を消費すると見積もられる。
+- 現実には PagedAttention やユーザーのアイドル時間を考慮することで、1 GPU あたり数百ユーザーを支えられる可能性がある。
+- コスト面では、B200 を 4 万ドルで購入した場合、300 ユーザー運用ならライフタイムコストは 1 人あたり約 133 ドルと試算している。
+
+### Key Findings
+- 推論コストは GPU 仕様、モデル構造、同時利用者数から概算できる。 [^]
+  - Footnote: 冒頭で、ハードウェアとモデルアーキテクチャの基本知識があればユーザーあたりのドルコストを概算できると説明している。
+- 行列積の素朴なコストはメモリアクセスと浮動小数点演算の両面で大きい。 [^]
+  - Footnote: 記事は (N,d)*(d,M) の積について 2NMd のメモリアクセスと 2NMd の浮動小数点演算が必要だと整理している。
+- KV キャッシュは過去トークンの K/V を再利用し、履歴全体の再計算を避ける。 [^]
+  - Footnote: 本文は inference engines が K,V pairs を cache し、各 forward pass で直近に生成された単語だけを処理できると述べている。
+- KV キャッシュ導入後は、計算よりメモリ帯域が主要な制約になりやすい。 [^]
+  - Footnote: B200 は bytes をロードするより 562 倍速く crunch できるため、チップを活かすにはロード 1 byte あたり 562 計算が必要だと説明している。
+- 理論的には B200 で 331 ユーザー同時処理が投資効率の上限として導かれる。 [^]
+  - Footnote: 記事は 2B = 562 から B = 331 と計算し、単一 B200 GPU で 331 ユーザーを同時提供するのが理想だと述べる。
+- 32B モデルと 200k トークン文脈では KV キャッシュが VRAM を圧迫する。 [^]
+  - Footnote: 32GB のモデル重みに加え、GQA 前の KV cache size は 210GB、GQA 後でも chat sequence あたり約 26GB と見積もっている。
+- PagedAttention と会話のアイドル時間を考慮すると現実的な収容数は大きく伸びる。 [^]
+  - Footnote: 本文は vLLM の PagedAttention に触れ、中央値の利用状況次第で Blackwell チップあたり 40-60 ユーザー、さらに 80% idle time なら 300-800 ユーザーを支え得るとする。
+- 6 ユーザーを 100% duty cycle で処理しても、ユーザーあたり約 40 tokens/s を実現できると試算している。 [^]
+  - Footnote: 記事は 24ms ごとに B=6 tokens、1 秒で約 250 tokens、6 ユーザーで 1 人あたり約 40 tokens/s と計算している。
+- 購入時のコストは同時利用者数に強く依存する。 [^]
+  - Footnote: B200 を 40,000 ドルとし、6 ユーザーでは lifetime cost が約 6,000 ドル、300 ユーザーでは約 133 ドルと説明している。
+
+### References
+- https://injuly.in/blog/napkin-inference-cost/index.html
+
+## In the Weights is your new AI-centric vanity search
+- Date: 2026-06-20T12:41:00-07:00
+
+### Executive Summary
+- TechCrunch は、AI モデルが人物名をどの程度記憶しているかを測るサイト In the Weights を紹介している。
+- このサービスは、Google 検索よりも LLM が人をどう認識するかが重要になりつつあるという問題意識から作られた。
+- Thomas Dimson と Joey Flynn が開発し、複数の AI モデルに人物名を問い合わせて結果を集約する。
+- サイトは Grok、Gemini、GPT、Claude、Llama など複数モデルに質問し、説明をクラスタリングして強さスコアを付ける。
+- 記事では Anthony Ha の例としてスコア 641、上位 6% という結果が示されている。
+- 結果画面は、どのモデルがどの回答を返したかや、潜在的な幻覚も示す。
+- 開発者は今後、モデル間差、人物タイプごとの偏り、Wikipedia 記事が必要な人物の探索を深掘りする方針だ。
+
+### Key Findings
+- In the Weights は AI モデルの内部記憶を vanity search 的に可視化するサービスである。 [^]
+  - Footnote: 記事は、モデルの training と output を形づくる numerical parameters である weights に人物がどれだけ入っているかを測ると説明している。
+- サービスの前提は、従来の Web 検索が人物情報の唯一の基準ではなくなっているという見方である。 [^]
+  - Footnote: 本文は Google 検索の状況に加え、多くの人が chatbots から人物情報を知るようになっていると述べている。
+- 測定方法は複数モデルへの同一人物照会と結果のクラスタリングである。 [^]
+  - Footnote: 記事は “Who is <name>?” に近い質問で最大 10 件の説明と confidence を返させ、similar descriptions を cluster し strength score を割り当てると説明する。
+- 対象モデルは主要商用モデルからオープン系まで幅広い。 [^]
+  - Footnote: 本文には Grok、Gemini、multiple versions of GPT、Claude、Llama、lesser known models が含まれるとある。
+- スコアは比較可能な指標としてユーザーの関心を引いている。 [^]
+  - Footnote: 記事中で筆者は strength score 641、top 6% と表示され、同僚のスコアや leaderboard と比較したと述べている。
+- サービスはモデルの幻覚や曖昧な人物認識も見える化する。 [^]
+  - Footnote: 記事は GPT-5.4 Mini が Anthony Ha を initials A.H.A. の ambiguous name form とする例を潜在的 hallucination として挙げている。
+- 開発者は OpenAI 退職後の創作活動としてこのサイトを作った。 [^]
+  - Footnote: Dimson と Flynn は design startup Global Illumination の買収を通じて OpenAI に加わった後、OpenAI を離れて creative juices を取り戻すために作ったと説明されている。
+- 今後の分析対象はモデル差、バイアス、Wikipedia 記事の有無に広がる。 [^]
+  - Footnote: Dimson は同系列モデル間の差、モデルがどの種類の人に偏るか、Wikipedia 記事があるべきなのにない人物をさらに掘る予定だと述べている。
+
+### References
+- https://techcrunch.com/2026/06/20/in-the-weights-is-your-new-ai-centric-vanity-search/
