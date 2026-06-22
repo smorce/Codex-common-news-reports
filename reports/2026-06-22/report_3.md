@@ -1,0 +1,247 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-06-22T09:06:46+09:00
+- Articles: 9
+
+## 米イランが協議、ホルムズ封鎖とレバノン巡りトランプ氏態度硬化 イランも反発
+- Date: 2026-06-22T02:00:00+09:00
+
+### Executive Summary
+- トップニュースから、米国とイランの協議に関するReuters記事を取得した。
+- 見出しでは、ホルムズ海峡封鎖とレバノン情勢が協議上の焦点として示されている。
+- トランプ氏の態度硬化が報じられ、米側の圧力が強まっている構図である。
+- イラン側も反発しており、協議は緊張緩和だけでなく対立管理の局面にある。
+- 同じ話題について日本経済新聞やCNNなども関連記事を出していた。
+- Googleニュース上では記事時刻は7時間前と表示され、当日朝時点の主要国際ニュースである。
+- ログイン不要で確認できた範囲は、見出し、媒体、時刻、関連見出しに限られる。
+
+### Key Findings
+- 米イラン協議はホルムズ海峡をめぐる安全保障問題を含む。 [^]
+  - Footnote: Googleニュース見出しに「ホルムズ封鎖」と表示。
+- レバノン情勢も協議の争点として扱われている。 [^]
+  - Footnote: Googleニュース見出しに「レバノン巡り」と表示。
+- トランプ氏は対イラン姿勢を硬化させたと報じられている。 [^]
+  - Footnote: Googleニュース見出しに「トランプ氏態度硬化」と表示。
+- イラン側は米国側の姿勢に反発している。 [^]
+  - Footnote: Googleニュース見出しに「イランも反発」と表示。
+- 同一テーマの関連記事が複数媒体から出ている。 [^]
+  - Footnote: Googleニュース上に日本経済新聞、CNN、Yahoo!ニュースの関連見出しが並んでいた。
+
+### References
+- https://news.google.com/read/CBMiggFBVV95cUxNVlFBMDFPMUFkMTlwVDNpdmh5WGs3OU4wVVBHN19UT0ZOOGttWmlzTE5YXzRjUTJHLVFBSldZc2hkMGd0MWJoeGJSQUxaSlJtZnN4dFFUM1BWVlhZQ1BMMjQ2cklCVlU3ekRkaHp2T19VVnpFV2tGN1dial9ocDdxZHRB?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 横浜・瀬谷で「FLOWER Fes 2026 FINAL（フラワーフェス2026ファイナル）」の花火が本日打ち上がります
+- Date: 2026-06-21T11:00:00+09:00
+
+### Executive Summary
+- ローカルニュースから、横浜・瀬谷の花火イベント記事を取得した。
+- 記事は夜景FANによる地域イベント告知として表示されていた。
+- 見出しでは「FLOWER Fes 2026 FINAL」の花火が本日打ち上がるとされている。
+- 地域は横浜市瀬谷区で、Googleニュースのローカル欄に掲載されていた。
+- イベント名称にFINALとあり、同フェスの締めくくり企画である可能性が高い。
+- Googleニュース上の表示時刻は22時間前で、前日から当日にかけた案内である。
+- 本文詳細は未取得のため、開催時間や打ち上げ場所の詳細は不明として扱う。
+
+### Key Findings
+- 対象地域は横浜・瀬谷である。 [^]
+  - Footnote: Googleニュース見出しに「横浜・瀬谷で」と表示。
+- イベント名は「FLOWER Fes 2026 FINAL」である。 [^]
+  - Footnote: Googleニュース見出しにイベント名が表示。
+- 主な内容は花火の打ち上げである。 [^]
+  - Footnote: Googleニュース見出しに「花火が本日打ち上がります」と表示。
+- 媒体は夜景FANである。 [^]
+  - Footnote: Googleニュースの媒体表示が「夜景FAN」。
+- 掲載は約22時間前で、速報性よりイベント案内の性格が強い。 [^]
+  - Footnote: Googleニュース上に「22時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMijgFBVV95cUxObkppRDk0LUpkNzczc3VqbVliR1hDcFluRnRubzdJTnNnb0lncjNKY1luYUdhQXpRWno0ZGxwSVV2UlZ2X1A2ZXFNRjE4VWVZckxfbDdRQkdqQkRlUWxUV1lnb2xHUXYyX1NFelBvM2NXSTFIVFEwQUthZVh4SmhEQWx0OXZqZjB0ZWFfVmpB?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 画像 | 刺された娘の最期の言葉は「お母さん、ありがとう」…医師が母親に明かせなかった「致命傷を与えた相手」
+- Date: 2026-06-21T23:00:00+09:00
+
+### Executive Summary
+- おすすめ欄から、PRESIDENT Onlineの記事を取得した。
+- 見出しは、刺された娘の最期の言葉と医師が母親に伝えられなかった事実を扱っている。
+- 記事は事件や医療現場での説明困難性を含む重い内容と見られる。
+- Googleニュースでは記者名として飯野守男氏が表示されていた。
+- おすすめ欄にはログインを促す説明もあり、個人化領域の一部として表示されていた。
+- 表示時刻は10時間前で、当日朝時点では比較的新しい記事である。
+- センシティブな内容のため、本文未確認部分については推測を避ける。
+
+### Key Findings
+- 記事はPRESIDENT Onlineから配信されている。 [^]
+  - Footnote: Googleニュースの媒体表示が「PRESIDENT Online（プレジデントオンライン）」。
+- 主題は刺傷被害と家族への説明である。 [^]
+  - Footnote: Googleニュース見出しに「刺された娘」「医師が母親に明かせなかった」と表示。
+- 娘の言葉として「お母さん、ありがとう」が見出しに置かれている。 [^]
+  - Footnote: Googleニュース見出しに該当文言が表示。
+- 医師が伝えられなかった相手に関する情報が記事の焦点である。 [^]
+  - Footnote: Googleニュース見出しに「致命傷を与えた相手」と表示。
+- 記事には執筆者情報が表示されている。 [^]
+  - Footnote: Googleニュースに「記者/ライター: 飯野守男」と表示。
+
+### References
+- https://news.google.com/read/CBMiXkFVX3lxTFBMMGNtY1I2bDYyY25FcTNiX1c5d3BtelNuR0twTzBWOGhSOXVjVkxzNUMwYUpSYUVoeHZoTzVKYlgwTnZWUkxIZ2FKRkE0RkRCSlAyNGhSbHVxZGtibFE?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 台風7号は非常に強い勢力へ 25日には強い勢力で暴風域を伴い沖縄の南に 影響は(気象予報士 中川 裕美子)
+- Date: 2026-06-22T06:00:00+09:00
+
+### Executive Summary
+- トピック_日本から、tenki.jpの台風7号記事を取得した。
+- 見出しでは、台風7号が非常に強い勢力へ発達する見込みとされている。
+- 25日には強い勢力で暴風域を伴い、沖縄の南に進む可能性が示されている。
+- 沖縄方面への影響が主な注意点である。
+- 執筆者は気象予報士の中川裕美子氏と表示されていた。
+- Googleニュース上の表示は3時間前で、最新性の高い気象情報である。
+- 詳細な進路や警戒事項は本文未確認のため、見出しで確認できる範囲に限定した。
+
+### Key Findings
+- 台風7号は非常に強い勢力へ発達する見込みである。 [^]
+  - Footnote: Googleニュース見出しに「非常に強い勢力へ」と表示。
+- 25日には沖縄の南に進む可能性がある。 [^]
+  - Footnote: Googleニュース見出しに「25日には...沖縄の南に」と表示。
+- 暴風域を伴う可能性がある。 [^]
+  - Footnote: Googleニュース見出しに「暴風域を伴い」と表示。
+- 記事は気象予報士による解説記事である。 [^]
+  - Footnote: Googleニュース見出しに「気象予報士 中川 裕美子」と表示。
+- 日本トピック内で上位表示されていた。 [^]
+  - Footnote: Googleニュースの「トピック 日本」欄に掲載。
+
+### References
+- https://news.google.com/read/CBMibEFVX3lxTE9oTTNPa0NUNHJBRWY5bUFZZjlKWWZSa3hGNUdoVW9pMFhOYkNHTUYxTTBWRDZsdDI5NnFfeFlxakxHQmlvT2RFTzVjbnVGNEh1QXY1Y18wc0NaNGdkOVpVdndwMkEyb0dtTVYzUg?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 梅宮辰夫さんが最初のがん判明時に後悔したこと「なんて罪作りな…」 (2026年6月21日掲載)
+- Date: 2026-06-22T07:00:00+09:00
+
+### Executive Summary
+- トピック_エンタメから、ライブドアニュースの記事を取得した。
+- 記事は梅宮辰夫さんが最初にがんを知らされた時の後悔を扱っている。
+- 見出しには「なんて罪作りな…」という印象的な発言が引用されている。
+- 掲載日表記として2026年6月21日が見出しに含まれていた。
+- Googleニュース上では2時間前の記事として表示されていた。
+- エンタメ欄では、朝ドラやドラマ関連の記事と並んで掲載されていた。
+- 本文詳細は未取得のため、発言の文脈や病状の詳細は不明である。
+
+### Key Findings
+- 記事の人物は梅宮辰夫さんである。 [^]
+  - Footnote: Googleニュース見出しに「梅宮辰夫さん」と表示。
+- 主題は最初のがん判明時の後悔である。 [^]
+  - Footnote: Googleニュース見出しに「最初のがん判明時に後悔したこと」と表示。
+- 見出しは発言の一部を引用している。 [^]
+  - Footnote: Googleニュース見出しに「なんて罪作りな…」と表示。
+- 配信元はライブドアニュースである。 [^]
+  - Footnote: Googleニュースの媒体表示が「ライブドアニュース」。
+- エンタメトピックの上位記事として表示されていた。 [^]
+  - Footnote: Googleニュースの「エンタメ」欄に掲載。
+
+### References
+- https://news.google.com/read/CBMiXkFVX3lxTFBMMGNtY1I2bDYyY25FcTNiX1c5d3BtelNuR0twTzBWOGhSOXVjVkxzNUMwYUpSYUVoeHZoTzVKYlgwTnZWUkxIZ2FKRkE0RkRCSlAyNGhSbHVxZGtibFE?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 止まらぬ円安、再介入観測に市場緊張 効果限定的の見方が大勢…構造問題に切り込めるか
+- Date: 2026-06-21T22:00:00+09:00
+
+### Executive Summary
+- トピック_ビジネスから、産経ニュースの円安記事を取得した。
+- 見出しでは、円安が止まらず市場に緊張が広がっているとされている。
+- 為替介入の再実施観測が市場で意識されている。
+- 一方で、介入の効果は限定的との見方が大勢だと示されている。
+- 記事は円安の背景にある構造問題へ踏み込めるかを論点にしている。
+- Googleニュース上では11時間前の記事として表示されていた。
+- 詳細な為替水準や政策コメントは本文未確認のため、見出し範囲に限定する。
+
+### Key Findings
+- 円安が継続していることが主題である。 [^]
+  - Footnote: Googleニュース見出しに「止まらぬ円安」と表示。
+- 市場では再介入観測が出ている。 [^]
+  - Footnote: Googleニュース見出しに「再介入観測」と表示。
+- 介入効果には限定的との見方がある。 [^]
+  - Footnote: Googleニュース見出しに「効果限定的の見方が大勢」と表示。
+- 構造問題への対応が論点化されている。 [^]
+  - Footnote: Googleニュース見出しに「構造問題に切り込めるか」と表示。
+- 配信元は産経ニュースである。 [^]
+  - Footnote: Googleニュースの媒体表示が「産経ニュース」。
+
+### References
+- https://news.google.com/read/CBMidkFVX3lxTE9HOG9wQUtHMk8wT2drSURqckdKS2pZTHNqb2p1ZjdDUDVLNWdaRzNHbnVYOVl6RFpsaTY4b2FlaUlycXNBYUdHQ2hObVMzX0VNV1ZFbWw4ZnRocXYxa2M4a1RzSkFUYm85YnlxR2xNY0dyOExMaUE?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 「玄人質問」飛び出すことも 東大宇宙線研が一般向けの発信強化
+- Date: 2026-06-22T08:45:00+09:00
+
+### Executive Summary
+- トピック_宇宙はGoogleニュース検索「宇宙」から取得した。
+- 毎日新聞の記事で、東大宇宙線研究所の一般向け発信強化が扱われている。
+- 見出しでは、一般向けの場でも「玄人質問」が飛び出すことがあると示されている。
+- 宇宙線研究所の研究内容に対する市民や読者の関心の高さがうかがえる。
+- 記事は研究機関の広報や科学コミュニケーションを主題にしている。
+- Googleニュース検索上では21分前の記事として表示され、非常に新しい。
+- 本文詳細は未取得のため、具体的な発信施策名やイベント名は不明である。
+
+### Key Findings
+- 東大宇宙線研究所が一般向け発信を強めている。 [^]
+  - Footnote: Googleニュース見出しに「東大宇宙線研が一般向けの発信強化」と表示。
+- 一般向けの場でも専門的な質問が出ることがある。 [^]
+  - Footnote: Googleニュース見出しに「玄人質問」と表示。
+- 科学コミュニケーションが記事の中心テーマである。 [^]
+  - Footnote: 見出しが研究所の対外発信に焦点を当てている。
+- 配信元は毎日新聞である。 [^]
+  - Footnote: Googleニュースの媒体表示が「毎日新聞」。
+- 宇宙関連検索で最上位に表示された新着記事である。 [^]
+  - Footnote: Googleニュース検索「宇宙」で「21分前」と表示。
+
+### References
+- https://news.google.com/read/CBMiaEFVX3lxTE0xSzFGOUJtaHc0eGhLLU5maDlELUVzMGxHWVJzLVZTbnFTVFdlWXRXZ1N1T0NGSzg4eElWMTUzWld6dy1zejAzTXlsR0Vxdld0dUtvN1N4SHZTZjFRaGtma25UQzZ6XzRQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 海外では「食品扱い」の母乳強化剤「プリミーフォート」、クリニジェンが日本で医薬品として開発した理由
+- Date: 2026-06-22T06:00:00+09:00
+
+### Executive Summary
+- トピック_栄養はGoogleニュース検索「栄養」から取得した。
+- Answersの記事で、母乳強化剤「プリミーフォート」を扱っている。
+- 海外では食品扱いの製品を、日本では医薬品として開発した理由が主題である。
+- 対象はクリニジェンによる開発判断で、規制や医療上の位置づけが論点と見られる。
+- 母乳強化剤は栄養補助に関わる製品であり、栄養カテゴリとして扱った。
+- Googleニュース検索上では3時間前の記事として表示されていた。
+- 本文詳細は未取得のため、適応対象や承認経緯の具体値は不明である。
+
+### Key Findings
+- 記事は母乳強化剤「プリミーフォート」を扱う。 [^]
+  - Footnote: Googleニュース見出しに「母乳強化剤『プリミーフォート』」と表示。
+- 海外では食品扱いとされている点が比較軸である。 [^]
+  - Footnote: Googleニュース見出しに「海外では『食品扱い』」と表示。
+- 日本では医薬品として開発された理由が焦点である。 [^]
+  - Footnote: Googleニュース見出しに「日本で医薬品として開発した理由」と表示。
+- 企業名としてクリニジェンが示されている。 [^]
+  - Footnote: Googleニュース見出しに「クリニジェン」と表示。
+- 配信元はAnswersである。 [^]
+  - Footnote: Googleニュースの媒体表示が「Answers（アンサーズ）」。
+
+### References
+- https://news.google.com/read/CBMiV0FVX3lxTE5OaGlKMGM3VVdXYnVyQU1COGcyX053QmRRY19IbkNLNzJVYnlqS0Z4RTUxbmZZYzZ4MDM0dkVqNEtQbmpoRzhJdjFlNkhPVTNJS0xVVHNKNA?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 赤城耕一の「アカギカメラ」 第143回：モノクロ縛りの愉楽。「GR IV Monochrome」を使う覚悟とは
+- Date: 2026-06-20T09:00:00+09:00
+
+### Executive Summary
+- 興味深いニュースから、デジカメ Watchのカメラ記事を取得した。
+- 赤城耕一氏の連載「アカギカメラ」第143回として表示されていた。
+- テーマは「GR IV Monochrome」をモノクロ縛りで使う楽しさと覚悟である。
+- カラー撮影ではなくモノクロ専用機に向き合う視点が記事の中心と見られる。
+- Googleニュース上では2日前の記事として表示されていた。
+- 興味深いニュース欄では、政治、ゲーム、PC関連の記事と並んでいた。
+- 本文詳細は未取得のため、作例や具体的な評価点は不明として扱う。
+
+### Key Findings
+- 記事はデジカメ Watchの連載記事である。 [^]
+  - Footnote: Googleニュースの媒体表示が「デジカメ Watch」、見出しに「アカギカメラ 第143回」と表示。
+- 主題はモノクロ撮影に特化した使い方である。 [^]
+  - Footnote: Googleニュース見出しに「モノクロ縛りの愉楽」と表示。
+- 対象機種は「GR IV Monochrome」である。 [^]
+  - Footnote: Googleニュース見出しに「GR IV Monochrome」と表示。
+- 筆者は赤城耕一氏である。 [^]
+  - Footnote: Googleニュースに「記者/ライター: 赤城耕一」と表示。
+- 興味深いニュース欄に掲載されていた。 [^]
+  - Footnote: Googleニュースの「興味深いニュース」欄に掲載。
+
+### References
+- https://news.google.com/read/CBMiS0FVX3lxTE9yUktkak9BZEQ3a1hEaFNJLXY5Rjl2SVFaZUNJYmFzSEx4NkR1NFhJeWQtdEhnUEliRHkwSDAtY0F3ZmNVUTU3TkJLaw?hl=ja&gl=JP&ceid=JP%3Aja
