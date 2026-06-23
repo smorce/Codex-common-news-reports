@@ -1,0 +1,136 @@
+{
+  "generated_at": "2026-06-23T09:05:16.8824961+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://gigazine.net/news/20260622-anthropic-claude-identity-verification/",
+      "title": "Anthropicが2026年7月8日から一部サービスにおける本人確認の実施を明言、使用するシステムはDiscordで却下された「Persona Identities」 - GIGAZINE",
+      "date": "2026-06-22T00:00:00+09:00",
+      "executive_summary": [
+        "Anthropicは一部サービスで本人確認を導入する方針を示した。",
+        "開始日は2026年7月8日とされている。",
+        "対象は全サービスではなく、一部サービスに限定される。",
+        "新ポリシーでは年齢や身元に関する要請が明記された。",
+        "本人確認システムとしてPersona Identitiesが使われる。",
+        "このシステムはDiscordで却下された経緯がある。",
+        "AIサービス利用時の身元確認とプライバシーの扱いが論点になる。"
+      ],
+      "key_findings": [
+        {
+          "point": "Anthropicは本人確認を一部サービスへ導入する予定である。",
+          "footnote": "AI Newsの一覧には「一部サービスで2026年7月8日から本人確認を実施。」と表示されている。"
+        },
+        {
+          "point": "導入予定日は2026年7月8日である。",
+          "footnote": "記事タイトルに「2026年7月8日から一部サービスにおける本人確認の実施」とある。"
+        },
+        {
+          "point": "本人確認は年齢確認や身元確認と関連する。",
+          "footnote": "AI Newsの要約には「新ポリシーに年齢や身元の要請が明記。」とある。"
+        },
+        {
+          "point": "使用される本人確認システムはPersona Identitiesである。",
+          "footnote": "AI Newsの要約には「ペルソナ・アイデンティティーズを使用。」とある。"
+        },
+        {
+          "point": "Persona Identitiesには他サービスで採用されなかった経緯がある。",
+          "footnote": "記事タイトルに「Discordで却下された『Persona Identities』」とある。"
+        }
+      ],
+      "references": [
+        "https://gigazine.net/news/20260622-anthropic-claude-identity-verification/"
+      ],
+      "retrieved_at": "2026-06-23T09:05:16.8824961+09:00"
+    },
+    {
+      "url": "https://zenn.dev/usagi1975/articles/2026-06-21-000_mcp1",
+      "title": "VSCode + Continue + Ollama で構築するローカルMCP開発環境（その１）",
+      "date": "2026-06-21T00:00:00+09:00",
+      "executive_summary": [
+        "この記事はローカルMCP開発環境の構築手順を扱う。",
+        "VSCode、Continue、Ollamaを組み合わせる構成である。",
+        "目的はMCP開発をローカル環境で自動化しやすくすることにある。",
+        "実行環境としてWindows 11が想定されている。",
+        "LLMとローカルサーバを連携させる設定が中心になる。",
+        "設定ファイルでモデルとサーバを統合する流れが示される。",
+        "最後に動作確認まで行う実践的な記事である。"
+      ],
+      "key_findings": [
+        {
+          "point": "ローカルでMCP開発を進めるための手順解説である。",
+          "footnote": "AI Newsの要約には「ローカル環境でMCP開発を自動化する手順を解説する」とある。"
+        },
+        {
+          "point": "VSCode、Continue、Ollamaを組み合わせる構成が採用されている。",
+          "footnote": "記事タイトルは「VSCode + Continue + Ollama で構築するローカルMCP開発環境（その１）」である。"
+        },
+        {
+          "point": "対象環境はWindows 11である。",
+          "footnote": "AI Newsの要約には「Windows11上でLLMとローカルサーバを統合設定する」とある。"
+        },
+        {
+          "point": "LLMとローカルサーバの統合設定が主要テーマである。",
+          "footnote": "AI Newsの要約には「LLMとローカルサーバを統合設定する」とある。"
+        },
+        {
+          "point": "モデルとサーバは設定ファイルを通じて統合される。",
+          "footnote": "AI Newsの要約には「設定ファイルでモデルとサーバを統合し動作を確認する」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/usagi1975/articles/2026-06-21-000_mcp1"
+      ],
+      "retrieved_at": "2026-06-23T09:05:16.8824961+09:00"
+    },
+    {
+      "url": "https://future-architect.github.io/articles/20260622a/",
+      "title": "エージェントスキルを評価する仕組みを作ってみる | フューチャー技術ブログ",
+      "date": "2026-06-22T00:00:00+09:00",
+      "executive_summary": [
+        "この記事はエージェントスキルを評価する仕組みの試作を扱う。",
+        "Skillsを横断ツールとして比較する観点が中心である。",
+        "評価のために実測ベンチを作成している。",
+        "Codex-5.5を対象に処理時間を比較している。",
+        "トークン使用量も評価指標に含めている。",
+        "実行形式の違いによる評価も行われている。",
+        "明示実行と暗黙実行の差が検討対象である。",
+        "将来的なモデル選択やキャッシュ戦略にもつながる内容である。"
+      ],
+      "key_findings": [
+        {
+          "point": "エージェントスキルを評価するための仕組みを作る記事である。",
+          "footnote": "記事タイトルは「エージェントスキルを評価する仕組みを作ってみる」である。"
+        },
+        {
+          "point": "Skillsは横断ツールとして比較されている。",
+          "footnote": "AI Newsの要約には「Skillsを横断ツールとして比較し」とある。"
+        },
+        {
+          "point": "評価には実測ベンチが使われている。",
+          "footnote": "AI Newsの要約には「実測ベンチを作成する」とある。"
+        },
+        {
+          "point": "Codex-5.5の処理時間とトークンが比較対象になっている。",
+          "footnote": "AI Newsの要約には「Codex-5.5の処理時間・トークンを比較」とある。"
+        },
+        {
+          "point": "実行形式も評価対象である。",
+          "footnote": "AI Newsの要約には「実行形式を評価」とある。"
+        },
+        {
+          "point": "明示実行と暗黙実行の差が検討されている。",
+          "footnote": "AI Newsの要約には「明示/暗黙の実行差」とある。"
+        },
+        {
+          "point": "将来のモデル選択やキャッシュ戦略への示唆がある。",
+          "footnote": "AI Newsの要約には「将来のモデル選択・キャッシュ戦略を検討」とある。"
+        }
+      ],
+      "references": [
+        "https://future-architect.github.io/articles/20260622a/"
+      ],
+      "retrieved_at": "2026-06-23T09:05:16.8824961+09:00"
+    }
+  ]
+}
