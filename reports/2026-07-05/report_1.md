@@ -1,0 +1,99 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-07-05T09:01:27.1221529+09:00
+- Articles: 3
+
+## 「Tau」を試す ③ ガイド
+- Date: 2026-07-04T16:11:19+00:00
+
+### Executive Summary
+- Tau の公式ドキュメントにあるガイド類を読む回として構成されている。
+- 前回までの Quickstart とアーキテクチャ理解を踏まえ、実運用時に参照する項目へ進んでいる。
+- 対象トピックは対話セッション、セッション、プロバイダー・モデル、スキル・プロンプト・テンプレートである。
+- プロジェクト指示やコンテキスト管理も扱われ、コーディングエージェントとしての利用設定が主眼になっている。
+- Print mode とスクリプトでの利用も含まれ、TUI 以外の実行形態を確認する流れになっている。
+- 一覧上では Open 状態で、最新コメント追加は 8時間前として表示されている。
+- 本文抽出で判読できた範囲は見出し中心であり、詳細な評価は未確認部分を含む。
+
+### Key Findings
+- 記事は Tau のガイド文書を読むことを目的としている。 [^]
+  - Footnote: 本文冒頭に公式ドキュメントのガイドを読む趣旨と、トピック一覧が確認できる。
+- 扱う項目には対話セッションとセッションが含まれる。 [^]
+  - Footnote: 抽出テキストに「対話セッション」「セッション」がトピックとして並んでいる。
+- モデル設定に関するガイドも対象である。 [^]
+  - Footnote: 抽出テキストに「プロバイダー・モデル」という項目が確認できる。
+- プロンプトやテンプレートも Tau 利用時の重要要素として扱われる。 [^]
+  - Footnote: 抽出テキストに「スキル・プロンプト・テンプレート」という項目が確認できる。
+- プロジェクト固有の指示とコンテキスト管理も確認対象である。 [^]
+  - Footnote: 抽出テキストに「プロジェクト指示」「コンテキストの管理」が並んでいる。
+- TUI 以外の利用形態も取り上げている。 [^]
+  - Footnote: 抽出テキストに「Print mode とスクリプトでの利用」という項目が確認できる。
+
+### References
+- https://zenn.dev/kun432/scraps/d750e143a0f676
+
+## 「OpenWiki」を試す
+- Date: 2026-07-04T16:29:59+00:00
+
+### Executive Summary
+- OpenWiki をコードベース用の Wikipedia を AI が自動生成し、最新に保つツールとして紹介している。
+- README や AGENTS.md だけに情報を詰め込むと、巨大化やトークン浪費、保守負荷が問題になるという観点が示されている。
+- OpenWiki はリポジトリから wiki 形式のドキュメントを生成し、エージェントが参照できる導線を作るものとして説明されている。
+- CLI では npm install -g openwiki と openwiki --init で初期化し、モデルプロバイダーや API キーを設定する。
+- 初期化例では OpenRouter、GLM 5.2、LangSmith 任意キーの選択画面が確認されている。
+- サンプルの Python ToDo CLI リポジトリでは openwiki 配下に quickstart、architecture、workflows、testing が生成された。
+- 更新では openwiki --update により、変更差分に応じて既存 wiki を追従更新する流れが確認されている。
+
+### Key Findings
+- OpenWiki はコードベース向け wiki を自動生成・自動更新するツールとして位置づけられている。 [^]
+  - Footnote: 本文にコード用の Wikipedia を AI が自動で作り、最新に保つツールという説明がある。
+- README や AGENTS.md の肥大化は、情報量、トークン、メンテナンス面で課題になる。 [^]
+  - Footnote: 本文に 1ファイルが大きすぎる問題、トークンの無駄、メンテナンス負荷への言及がある。
+- インストールは npm 経由で実行できる。 [^]
+  - Footnote: 本文に `npm install -g openwiki` と `openwiki --init` のコマンドが掲載されている。
+- 初期設定では複数のモデルプロバイダーを選べる。 [^]
+  - Footnote: 抽出された設定画面に OpenRouter、Baseten、Fireworks、OpenAI、Anthropic の選択肢が表示されている。
+- デフォルト例では OpenRouter と z-ai/glm-5.2 が使われている。 [^]
+  - Footnote: 抽出テキストに `[CURRENT] Provider default OpenRouter` と `[PENDING] Model default z-ai/glm-5.2` がある。
+- 生成物は openwiki ディレクトリに複数 Markdown として出力される。 [^]
+  - Footnote: 完了出力に `openwiki/quickstart.md`、`openwiki/architecture.md`、`openwiki/workflows.md`、`openwiki/testing.md` が列挙されている。
+- AGENTS.md には OpenWiki の参照導線が追記される。 [^]
+  - Footnote: 本文抜粋に `This repository has documentation located in the /openwiki directory.` と `Start here` の記述がある。
+- 更新履歴は .last-update.json で管理される。 [^]
+  - Footnote: 本文に `openwiki/.last-update.json` と `updatedAt`、`command: update`、`model: z-ai/glm-5.2` の例がある。
+
+### References
+- https://zenn.dev/kun432/scraps/c4d2f75eb7e493
+
+## 「Tau」を試す ② Tau はどう動くのか？
+- Date: 2026-07-03T13:28:07+00:00
+
+### Executive Summary
+- Tau の Quickstart 後に、アーキテクチャや動作原理をドキュメントから確認する記事である。
+- Tau は最小限かつ階層化された設計を採り、環境非依存のエージェントコアを重視している。
+- パッケージ構成は tau_coding、tau_agent、tau_ai の三層で整理されている。
+- tau_ai はモデルプロバイダー API を Tau 独自のイベントストリームに変換する役割を持つ。
+- tau_agent はメッセージ、ツール、イベント、ループ、ハーネス、セッション永続化などのコアを担う。
+- tau_coding は CLI、組み込みツール、プロジェクト指示、スキル、Textual TUI などアプリケーション側の要素を扱う。
+- イベント駆動の構成により、print mode、TUI、独自フロントエンドが同じ中核部品を共有できる点が強調されている。
+
+### Key Findings
+- Tau は階層化された設計で、コアを UI から独立させる思想を持つ。 [^]
+  - Footnote: 本文に最小限かつ階層化された設計、境界が重要な設計思想として説明されている。
+- パッケージ依存は tau_coding から tau_agent、tau_ai へ一方向に流れる。 [^]
+  - Footnote: 本文に `tau_coding -> tau_agent -> tau_ai` の三層構造が示されている。
+- tau_ai は OpenAI や Anthropic などの API 差異を抽象化する。 [^]
+  - Footnote: 本文に各プロバイダーの API をイベントストリームへ変換する説明がある。
+- tau_agent は再利用可能なエージェントのコアである。 [^]
+  - Footnote: 本文に tau_agent の役割としてメッセージ処理、ツール、イベント、エージェントループ、ハーネス、セッション永続化が列挙されている。
+- tau_agent には CLI や Textual など UI 側のコードを入れない方針である。 [^]
+  - Footnote: 本文に CLI・Rich・Textual・リソース読み込み関連のコードをインポートしてはいけないという趣旨が記載されている。
+- tau_coding は Tau をコーディングエージェントとして機能させるアプリケーション層である。 [^]
+  - Footnote: 本文に tau_coding の対象として CLI、組み込みツール、プロジェクト指示、スキルとプロンプト、Textual TUI が列挙されている。
+- エージェント処理はイベントとして観測できる。 [^]
+  - Footnote: 本文に AgentStartEvent、MessageDeltaEvent、ToolExecutionStartEvent、QueueUpdateEvent、ErrorEvent などのイベント表がある。
+- ツール呼び出しと結果反映のループがエージェント的な動作の中心である。 [^]
+  - Footnote: 本文にツールを呼び出し、その結果を渡し、継続するというサイクルの説明がある。
+
+### References
+- https://zenn.dev/kun432/scraps/489be3c6b00b83
