@@ -1,0 +1,177 @@
+{
+  "generated_at": "2026-07-06T09:15:38.7361726+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://ledge.ai/articles/fujitsu_photon_llm_gpu_efficiency",
+      "title": "富士通、LLMのGPU効率を最大475倍に高めるポストTransformerの新アーキテクチャ「PHOTON」を開発",
+      "date": "2026-06-30T00:00:00+09:00",
+      "executive_summary": [
+        "富士通は2026年6月24日、LLMの推論コスト削減を目的とした新アーキテクチャ「PHOTON」を発表した。",
+        "PHOTONはTransformerに代わるポストTransformer型の構成として説明されている。",
+        "記事は、最大475倍という数値をLLMの精度向上ではなくGPUリソース当たりのマルチクエリー性能向上として整理している。",
+        "Transformerでは長文や同時処理でKVキャッシュなどのメモリアクセスが増え、処理速度の低下が課題になる。",
+        "PHOTONは入力を意味単位で階層的に圧縮し、低レートの文脈状態として保持する。",
+        "軽量なトップダウンデコーダでトークン表現を再構成し、推論時のメモリアクセスを抑える設計だ。",
+        "1.2Bパラメータモデルでは、わずかな性能劣化と引き換えに約475倍のマルチクエリー計算能力を示した。",
+        "9クエリー統合では従来Transformerと同水準の性能を実現したとされる。",
+        "成果はACL 2026のオーラルセッションで発表予定で、GPUリソース・消費電力・運用コスト削減が今後の狙いとされる。"
+      ],
+      "key_findings": [
+        {
+          "point": "PHOTONはLLMのコスト削減を目的に開発された新アーキテクチャである。",
+          "footnote": "本文に「富士通は2026年6月24日、大規模言語モデル（LLM）のコスト削減を目的とする新アーキテクチャ『PHOTON』を開発した」とある。"
+        },
+        {
+          "point": "最大475倍は精度ではなくGPUリソース当たりのスループットを指す。",
+          "footnote": "記事は「マルチクエリー性能は、GPUリソース当たりのスループットを指す」とし、「LLMの精度や性能が475倍になるという意味ではない」と明記している。"
+        },
+        {
+          "point": "Transformerの長文・同時処理ではメモリアクセス増加がボトルネックになる。",
+          "footnote": "本文は「入力が長くなったり、同時に多くの問い合わせを処理したりすると、過去の情報を保持するためのメモリアクセスが増え、処理速度が落ちやすい」と説明している。"
+        },
+        {
+          "point": "PHOTONはトークン単位ではなく意味のまとまりを階層的に扱う。",
+          "footnote": "記事に「文章をトークン単位で平面的に処理するのではなく、意味のまとまりとして捉え、階層的に処理する」とある。"
+        },
+        {
+          "point": "階層圧縮とトップダウン復元により推論時のメモリアクセスを減らす。",
+          "footnote": "本文は「入力トークンを階層的に圧縮し、低レートの文脈状態として保持」し、「軽量なトップダウンデコーダ」が再構成すると説明している。"
+        },
+        {
+          "point": "1.2Bモデルでは約475倍のマルチクエリー計算能力を実現した。",
+          "footnote": "記事に「特に1.2Bパラメータモデルでは、わずかな性能劣化と引き換えに、従来のTransformerと比べて約475倍」とある。"
+        },
+        {
+          "point": "9クエリー統合で従来Transformerと同水準の性能を得た。",
+          "footnote": "本文は「9クエリーを統合することで、従来のTransformerと同水準の性能を実現した」と述べている。"
+        }
+      ],
+      "references": [
+        "https://ledge.ai/articles/fujitsu_photon_llm_gpu_efficiency"
+      ],
+      "retrieved_at": "2026-07-06T09:15:38.7361726+09:00"
+    },
+    {
+      "url": "https://www.euronews.com/travel/2026/07/03/tripadvisor-ai-summaries-give-glowing-reviews-to-dangerous-hotels-consumer-watchdog-finds",
+      "title": "Tripadvisor AI summaries give glowing reviews to dangerous hotels, consumer watchdog finds",
+      "date": "2026-07-03T14:18:45+02:00",
+      "executive_summary": [
+        "Euronewsは、TripadvisorのAIレビュー要約が危険なホテルを好意的に描いているとするWhich?の調査を報じた。",
+        "記事によると、AI要約は食中毒、性的嫌がらせ、深刻な衛生不備の報告を十分に反映していなかった。",
+        "Riu Palace Santa MariaではAI要約が清潔さを好意的に表現した一方、最近のレビューには衛生不良や食中毒の訴えが多く含まれていた。",
+        "同ホテルでは2026年3月時点で食中毒への言及が102件あり、少なくとも412人の旅行者を代表する集団法的措置にも関わっている。",
+        "Tripadvisorの対話型AIボットOllieも、食中毒リスクを直接聞かれて十分に警告しなかったとされる。",
+        "別のホテルでも、AI要約が清潔さや設備を肯定的に扱い、重大な苦情を曖昧な表現にとどめた例が挙げられた。",
+        "性的嫌がらせの報告についても、AI要約は「friendly」や「lapses in service」といった弱い表現に落としていた。",
+        "TripadvisorはAI要約が個別レビューの代替ではなく、月次更新され過去12か月のレビューに基づくと説明している。",
+        "Which?側は、要約がページ上部に表示される以上、重要な安全情報を表面化しないことは容認できず生命に関わり得ると批判した。"
+      ],
+      "key_findings": [
+        {
+          "point": "TripadvisorのAI要約は重大な安全情報を覆い隠す可能性があると指摘された。",
+          "footnote": "記事冒頭に「masking reports of food poisoning, sexual harassment and serious hygiene failures」とある。"
+        },
+        {
+          "point": "Riu Palace Santa MariaのAI要約は好意的だったが、実際のレビューには衛生問題が多かった。",
+          "footnote": "本文はAI要約が「spotless」とした一方、宿泊者が「exceptionally poor hygiene」や「no basic cleaning or hygiene standards」と書いたと説明している。"
+        },
+        {
+          "point": "同ホテルでは食中毒関連の言及が多数確認された。",
+          "footnote": "Which?が確認した時点で「there were 102 mentions of food poisoning at the Riu Palace」と記載されている。"
+        },
+        {
+          "point": "低評価レビューの多くが深刻な体調不良を報告していた。",
+          "footnote": "記事は2025年12月から2026年4月の32件の1・2つ星レビューのうち、14件が少なくとも1人の深刻な食中毒を述べたと報じている。"
+        },
+        {
+          "point": "Riu Palaceを巡って大規模な法的措置が進んでいる。",
+          "footnote": "本文に「at least 412 holidaymakers」を代表する集団法的措置があり、2023年以降7件の死亡が報告されたとある。"
+        },
+        {
+          "point": "TripadvisorのOllieは食中毒リスクを低く見積もった。",
+          "footnote": "記事はOllieが食中毒は「quite unlikely」で、同リゾートは「strong reputation for high hygiene standards」と答えたと説明している。"
+        },
+        {
+          "point": "性的嫌がらせの報告もAI要約では弱い表現に変換された。",
+          "footnote": "Kaia Coracesiumの例で、複数の宿泊者が男性スタッフによる嫌がらせを報告したが、AI要約はサービスを「friendly」と表現したとある。"
+        },
+        {
+          "point": "Tripadvisorは要約が個別レビューの代替ではないと説明している。",
+          "footnote": "同社はAI要約について「not intended to replace individual reviews」と述べた。"
+        },
+        {
+          "point": "Which?はAI要約を盲信せず低評価レビューや他サイトも確認するよう助言している。",
+          "footnote": "記事末尾でBoland氏が、要約を越えてゲストレビュー、特に1つ星評価や他サイトのレビューを見るよう勧めている。"
+        }
+      ],
+      "references": [
+        "https://www.euronews.com/travel/2026/07/03/tripadvisor-ai-summaries-give-glowing-reviews-to-dangerous-hotels-consumer-watchdog-finds"
+      ],
+      "retrieved_at": "2026-07-06T09:15:38.7361726+09:00"
+    },
+    {
+      "url": "https://zenn.dev/sun_asterisk/articles/59fabe45a7aa76",
+      "title": "MCPとは？自分だけの「毎朝ニュースを読むMCP」を作ってみる",
+      "date": "2026-07-03T00:00:00+09:00",
+      "executive_summary": [
+        "この記事は、MCPの概念を説明しながら、自分専用のニュース取得MCPを作る過程を紹介している。",
+        "MCPはClaudeやCursorなどのAIアプリが外部ツールやデータを使うための接続規格として説明される。",
+        "著者はMCPをAI向けのUSB-Cのような共通規格に例え、個別の接続実装を減らす利点を示している。",
+        "構成要素はホスト、サーバー、クライアントの三つで、サーバーがツールを持ち具体的な処理を行う。",
+        "MCPが必要なのはAIが苦手な最新情報取得、長期記憶、外部操作などを補う場面だと整理されている。",
+        "作例ではClaudeにget_latest_newsツールを追加し、RSSから見出し、要約、リンクを取得する設計を採る。",
+        "ツール側はニュース取得だけを担当し、翻訳や要約、見せ方はClaude側に任せる役割分担が強調されている。",
+        "実装はPython、uv、mcp[cli]、httpx、feedparserを使い、@mcp.tool()付きの関数として提供する。",
+        "docstringは単なるコメントではなく、Claudeがツールの役割や出力形式を理解するための重要な指示になる。"
+      ],
+      "key_findings": [
+        {
+          "point": "MCPはAIアプリが外部ツールやデータを使うための接続規格である。",
+          "footnote": "本文に「MCPは Model Context Protocol ... AIアプリが、外部のツールやデータを使えるようにするための接続規格」とある。"
+        },
+        {
+          "point": "MCPは共通規格として、ツールごとの個別接続を減らす。",
+          "footnote": "記事はUSB-Cの比喩を使い、「どのツールも『共通の言葉』で話すので、差し込めばすぐAIが使えます」と説明している。"
+        },
+        {
+          "point": "基本構成はホスト、サーバー、クライアントの三層である。",
+          "footnote": "本文は「MCPを使うとき、実は3つの部分が連携しています」とし、Host、Server、Clientを列挙している。"
+        },
+        {
+          "point": "サーバーはツールを持ち、データ取得やAPI呼び出しなどの具体的な仕事をする。",
+          "footnote": "記事に「サーバー（Server）は、ツールを持っていて、具体的な仕事（データ取得、API呼び出し、ファイル操作……）をこなす部分」とある。"
+        },
+        {
+          "point": "MCPはAIが自力でできない最新情報や外部操作を補うときに使うべきだとされる。",
+          "footnote": "本文は「AIがいちばん苦手なのは『いまこの瞬間の情報』」と述べ、メール送信やファイル読み取りにもMCPが必要と説明している。"
+        },
+        {
+          "point": "ニュースMCPのツールは取得だけを担当し、要約はClaudeに任せる設計である。",
+          "footnote": "記事は「ここでツールの役目は、ニュースを取ってくるだけ。翻訳も要約もしません」と書いている。"
+        },
+        {
+          "point": "RSSはAPIキー不要でニュースリストを取得できるため採用されている。",
+          "footnote": "本文に「RSSなら登録もAPIキーも不要。サイトの .rss リンクを取ってくるだけ」とある。"
+        },
+        {
+          "point": "実装スタックはPython、uv、mcp[cli]、httpx、feedparserで構成される。",
+          "footnote": "準備セクションで各ツールが列挙され、Python、uv、mcp[cli]、httpx、feedparser、RSS、Claude for Desktopの役割が説明されている。"
+        },
+        {
+          "point": "@mcp.tool()により通常のPython関数をClaudeから呼べるツールに変える。",
+          "footnote": "記事は「@mcp.tool() の一行が、普通のPython関数を、Claudeから呼べるツールに変えてくれます」と述べている。"
+        },
+        {
+          "point": "docstringはツールの役割と出力形式をAIに伝える実質的な仕様になる。",
+          "footnote": "本文はdocstringについて「Claudeがツールの役割を理解するために読む部分」で、「結果をどう見せるか」まで書けると説明している。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/sun_asterisk/articles/59fabe45a7aa76"
+      ],
+      "retrieved_at": "2026-07-06T09:15:38.7361726+09:00"
+    }
+  ]
+}
