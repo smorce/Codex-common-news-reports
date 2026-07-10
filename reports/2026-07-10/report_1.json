@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-07-10T09:00:00+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/ebf30f75f903c8",
+      "title": "「OmniRoute」を試す",
+      "date": "2026-07-09T08:40:32+00:00",
+      "executive_summary": [
+        "OmniRouteは複数AIプロバイダーをOpenAI互換APIの1入口に集約するローカルゲートウェイとして紹介されている。",
+        "Claude Code、Cursor、Copilot、Clineなどのクライアントを同じbase URLに向けるだけで利用できる構成が説明されている。",
+        "237社以上のプロバイダー、90以上の無料枠、11個の長期無料枠を活用できる点が強調されている。",
+        "コンボ機能により、有料、低価格、無料プロバイダーを段階的に切り替える自動フェイルオーバーが可能とされる。",
+        "autoモデルはヘルス、クォータ、コスト、レイテンシ、成功率などを見てモデルを選ぶ仕組みとして説明されている。",
+        "RTK、Caveman、Relevanceなど最大10個の圧縮エンジンで入力トークンを15から95%削減する設計が紹介されている。",
+        "MCPとA2Aに対応し、エージェントからOmniRoute自身の設定やプロバイダー管理を操作できる点も特徴として扱われている。"
+      ],
+      "key_findings": [
+        {
+          "point": "OmniRouteはAIプロバイダーを単一のOpenAI互換エンドポイントにまとめる。",
+          "footnote": "記事では「Base URL: http://localhost:20128/v1」「API Key: OmniRouteが発行するやつ」「Model: auto」と設定するだけでよいと説明している。"
+        },
+        {
+          "point": "対応範囲は非常に広く、無料枠の活用も主要な価値として示されている。",
+          "footnote": "本文に「いろんなAIプロバイダ（OpenAI, Anthropic, Gemini, DeepSeek, Qwen, Groq, NVIDIA…合計237社）」および「90以上の無料枠あり」とある。"
+        },
+        {
+          "point": "コンボは複数モデルをチェーンし、障害やクォータ切れ時に次の候補へ切り替える仕組みである。",
+          "footnote": "記事では「1段目: 有料サブスクリプションのClaude」「2段目: ちょい安いGLM」「3段目: 完全無料のKiro / Qoder / Pollinations」と例示している。"
+        },
+        {
+          "point": "ルーティング戦略は優先順、コスト、残クォータ、直近成功経路、複数モデル統合などを含む。",
+          "footnote": "本文では「17種類のルーティング戦略」として priority、cost-optimized、headroom、lkgp、fusion が挙げられている。"
+        },
+        {
+          "point": "autoモデルは用途別プリセットを持ち、設定負荷を下げる。",
+          "footnote": "記事では auto/coding、auto/fast、auto/cheap、auto/offline、auto/smart のプリセットが列挙されている。"
+        },
+        {
+          "point": "トークン圧縮は構造化データを壊さないことを重視している。",
+          "footnote": "本文に「コードブロック・URL・JSONなどの構造化データは壊さないで保存」とある。"
+        },
+        {
+          "point": "ローカル実行と自己管理を前提にしたプライバシー面の特徴がある。",
+          "footnote": "記事では「プロンプトやAPIキーは自分のストレージにAES-256-GCMで暗号化保存」「デフォルトで外部にテレメトリ送らない」と説明している。"
+        },
+        {
+          "point": "LiteLLMなどの代替と比べ、MCP、A2A、圧縮、評価、ガードレールなど機能の多さを売りにしている。",
+          "footnote": "比較表では「内蔵MCPサーバー」「A2Aプロトコル」「トークン圧縮機能」「評価フレームワーク」などがOmniRoute側の強みとして並んでいる。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/ebf30f75f903c8"
+      ],
+      "retrieved_at": "2026-07-10T09:00:00+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/d8ca7bc1d62e8b",
+      "title": "「Tau」を試す ④ Tau をライブラリとして使う",
+      "date": "2026-07-08T04:33:59+00:00",
+      "executive_summary": [
+        "この記事は、これまでCLI利用を前提に見ていたTauをPythonライブラリとして使う方法を試している。",
+        "tau_agentのAgentHarnessが入口となり、その内部でエージェントループが動きイベントを返す構成が確認されている。",
+        "READMEの断片だけでは実行に足りないため、tau-ai、OpenAI互換プロバイダー、ツール定義を組み合わせたColaboratory例が示されている。",
+        "ダミー天気ツールをAgentToolとして登録し、東京と札幌の天気を問い合わせる例でツール呼び出しと応答生成を確認している。",
+        "tau_aiはプロバイダーとのHTTP/SSE通信を担い、ProviderEventへ変換してtau_agentに渡す層として整理されている。",
+        "tau_agent側ではAgentHarnessが会話履歴やキュー、キャンセル状態を保持し、run_agent_loopが実行エンジンとして動くと説明されている。",
+        "最後に、Tauの拡張、独自UIでのラップ、他言語向けエージェント設計の参考になるとまとめている。"
+      ],
+      "key_findings": [
+        {
+          "point": "TauはCLIだけでなくライブラリとしてAgentHarnessから利用できる。",
+          "footnote": "本文に「AgentHarness ってのが tau_agent の入口で、これの内部でエージェントループが動作する」とある。"
+        },
+        {
+          "point": "README例だけでは実行に必要な周辺要素が不足している。",
+          "footnote": "記事では「ただ、実際に動かすには諸々足りない」とし、必要なimportやprovider設定を補ったコードを示している。"
+        },
+        {
+          "point": "AgentToolで外部ツールを定義し、executorでツール結果を返す設計になっている。",
+          "footnote": "サンプルでは get_weather_executor が AgentToolResult を返し、AgentTool(name=\"get_weather\", ... executor=get_weather_executor) と登録している。"
+        },
+        {
+          "point": "イベントストリームにはエージェント開始、ターン、メッセージ、ツール実行、応答差分が含まれる。",
+          "footnote": "出力例には agent_start、turn_start、message_start、tool_execution_start、tool_execution_end、message_delta、agent_end が並んでいる。"
+        },
+        {
+          "point": "tau_aiはProviderEvent変換を担うプロバイダー層として位置づけられている。",
+          "footnote": "本文では「生成された生の HTTP/SSE ストリームを ProviderEvent に変換して返すのが tau_ai」と説明している。"
+        },
+        {
+          "point": "AgentHarnessはステートフルで、単純なマルチターン会話もtau_agentだけで実現可能である。",
+          "footnote": "記事に「AgentHarness は会話履歴を持つステートフルなインスタンスなので、tau_agent だけでも単純なマルチターンは実現できる」とある。"
+        },
+        {
+          "point": "永続化はtau_coding側の責務として扱われている。",
+          "footnote": "本文では「これを永続化したい場合は tau_coding で実装することになる」と締めている。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/d8ca7bc1d62e8b"
+      ],
+      "retrieved_at": "2026-07-10T09:00:00+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/e6833d0bb59161",
+      "title": "日本語形態素解析ライブラリ「Vibrato」を試す",
+      "date": "2026-07-06T01:49:38+00:00",
+      "executive_summary": [
+        "この記事は、日本語形態素解析ライブラリVibratoを知り、Pythonラッパーで試した記録である。",
+        "VibratoはRust実装の高速トークン化、形態素解析ツールで、MeCabの再実装として紹介されている。",
+        "著者はSudachi、MeCab、Janome、Lindera、Kuromojiには馴染みがあるが、Vibratoは知らなかったため検証対象にしている。",
+        "Pythonではpip install vibratoで導入し、Vibrato本体バージョン0.5.2を確認している。",
+        "辞書はGitHub Releasesから取得し、今回はv0.5.0のmecab-ipadic v2.7.0を利用している。",
+        "zstd圧縮された辞書をPython側で展開し、vibrato.Vibratoへ辞書バイト列を渡してトークナイザーを構築している。",
+        "サンプル文やWikipedia冒頭文でトークン数、表層形、feature、start、endを出力し、辞書ごとの分割結果の違いも確認している。"
+      ],
+      "key_findings": [
+        {
+          "point": "VibratoはViterbiアルゴリズムに基づく高速トークン化ツールとして紹介されている。",
+          "footnote": "記事ではREADME訳として「Viterbiアルゴリズムを基盤とした高速なトークン化（または形態素解析）ツール」と記載している。"
+        },
+        {
+          "point": "RustによるMeCab再実装で、簡素化と最適化により高速化を狙っている。",
+          "footnote": "本文に「高速トークン化ツールMeCabをRustで再実装したもの」とあり、実装の簡素化・最適化に触れている。"
+        },
+        {
+          "point": "Pythonラッパーはpipで導入でき、記事時点ではvibrato 0.2.3がインストールされている。",
+          "footnote": "実行出力として「Successfully installed vibrato-0.2.3」が示されている。"
+        },
+        {
+          "point": "Pythonラッパーから確認したVibrato本体バージョンは0.5.2である。",
+          "footnote": "記事では vibrato.VIBRATO_VERSION の出力として「0.5.2」を示している。"
+        },
+        {
+          "point": "辞書はzstd圧縮されており、Vibrato外で展開してから読み込む必要がある。",
+          "footnote": "本文に「辞書がzstdで圧縮されている場合はVibratoの外で展開する必要がある」とある。"
+        },
+        {
+          "point": "mecab-ipadic辞書では「社長は火星猫だ」が5トークンに分割された。",
+          "footnote": "出力例ではトークン数5、表層形として「社長」「は」「火星」「猫」「だ」が表示されている。"
+        },
+        {
+          "point": "v0.5.0ではBCCWJ+UniDic、IPADIC、JUMAN辞書、NAIST辞書など複数モデルが用意されている。",
+          "footnote": "記事では bccwj-suw+unidic-cwj-3_1_1、ipadic-mecab-2.7.0、jumandic-mecab-7.0、naist-jdic-mecab-0.6.3b などを列挙している。"
+        },
+        {
+          "point": "辞書により固有名詞や読みの扱いが変わるため、用途に応じたモデル選択が重要である。",
+          "footnote": "Wikipedia文の例で、ipadicは「シン」「ケン」「ジャー」に分割し、bccwj+unidicは「シンケンジャー」を1語として扱う出力を示している。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/e6833d0bb59161"
+      ],
+      "retrieved_at": "2026-07-10T09:00:00+09:00"
+    }
+  ]
+}

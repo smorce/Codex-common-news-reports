@@ -1,0 +1,246 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-07-10T09:08:00.6578193+09:00
+- Articles: 9
+
+## 皇室典範改正案、成立の公算 10日に衆院通過の見通し 国民民主も賛成へ
+- Date: 2026-07-09T21:08:00+09:00
+
+### Executive Summary
+- トップニュースでは、皇室典範改正案の国会審議が主要テーマになっている。
+- 産経ニュースは、改正案が成立する公算が大きいと報じている。
+- 10日に衆議院を通過する見通しが示されている。
+- 国民民主党も賛成に回る見込みとされ、与野党の一部合意が進んでいる。
+- 関連見出しでは男系男子の養子受け入れや宮家の範囲も論点になっている。
+- TBS NEWS DIG は同日の議院運営委員会で審議・採決が予定されていると伝えている。
+- 制度改正の具体的な中身と政治的合意の広がりが今後の焦点になる。
+
+### Key Findings
+- 改正案は成立に近づいている。 [^]
+  - Footnote: Google ニュース表示: 「皇室典範改正案、成立の公算」
+- 10日の衆議院通過が見込まれている。 [^]
+  - Footnote: Google ニュース表示: 「10日に衆院通過の見通し」
+- 国民民主党も賛成へ回る見通しが示された。 [^]
+  - Footnote: Google ニュース表示: 「国民民主も賛成へ」
+- 関連論点として男系男子の養子受け入れが扱われている。 [^]
+  - Footnote: 関連見出し: 「男系男子の養子、受け入れ想定は4宮家」
+- 審議・採決は衆議院の議院運営委員会で扱われる。 [^]
+  - Footnote: 関連見出し: 「衆議院・議院運営委員会（2026年7月10日午前9時～ LIVE配信）」
+
+### References
+- https://news.google.com/read/CBMidkFVX3lxTFBBQ3JMVXhlcWdaTWw2Tl8zTUk1c1NxSnJfbEN2eEpybFpaZEl5YTdmeVY2cXZIcm5XVmtWZU4tcXhtRXhfUTUwYVpSOXlEVllnV3Y5ZnZpbmxXeFpHQlVBVEdVWVBwVU5QYnVwUGJSUGFyN1F0d3c?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 日本先端工科大、開学が暗礁…　小田原に予定　準備委と学校法人が決裂状態
+
+### Executive Summary
+- ローカルニュースでは、神奈川県小田原市で予定されていた大学開学計画が取り上げられている。
+- 記事は日本先端工科大の開学が暗礁に乗り上げたと伝えている。
+- 準備委員会と学校法人の関係が決裂状態にあることが主な理由とされる。
+- 地域の高等教育・産業人材育成計画に影響する可能性がある。
+- Google ニュースのショーケース枠では神奈川の地域ニュースとして表示された。
+- 同枠では高校野球や横浜の商業施設ニュースも並び、地域関心の高い話題として扱われている。
+- 詳細な開学時期や再調整の見通しは、表示範囲では確認できなかった。
+
+### Key Findings
+- 小田原で予定されていた大学開学計画が停滞している。 [^]
+  - Footnote: Google ニュース表示: 「小田原に予定」
+- 大学名は日本先端工科大として表示されている。 [^]
+  - Footnote: Google ニュース表示: 「日本先端工科大、開学が暗礁」
+- 準備委員会と学校法人の対立が問題の中心である。 [^]
+  - Footnote: Google ニュース表示: 「準備委と学校法人が決裂状態」
+- 神奈川の地域ニュース枠で扱われている。 [^]
+  - Footnote: Google ニュース枠: 「神奈川のいま知りたいニュース」
+- 表示範囲では開学延期の正式日程や解決策は確認できない。 [^]
+  - Footnote: Google ニュース上の見出しと周辺表示に日程詳細はなし
+
+### References
+- https://news.google.com/read/CBMiwwJBVV95cUxPVWZfUFFPTUEzekJnSnVYXy1MZ25xT0lwTjFtcWVmenl4eEFaNlBMWklsekQ5S0F1bm83cGp5a0ZvV2MzTnNfOUhMMkNFeXcxby1NOExWTVVLbnZZT3FOMWlPUkRXRVMtLXhTa1JzZkU3a1o3OTU0SkFKSXU4T0h1NXJLLWRmclF5LWtrTFlnQ0o4a1oxR1h5QXRaaVVRWlBOX3RoNm0zeW1jQTNxYlFTUVRKdUlwWUFsR0hlOXE1UDRiVXFsVTBPOHdkalB4d211MzU0R1FWZVhTVmlXZmZDV2tQZ0lET1hQR3hsNURrUGZjcTJuNklOTzkxSjM0R3ZrNXA1VmhOVy0yS1ZGYk9FZmJHQUJ4LXBMSnZpenJnc1AzeVdZdG90bHpHRGJQajlCWTVwOFdfQ3RDd1hhMjdhYVdtYw?hl=ja&gl=JP&ceid=JP%3Aja
+
+## れいわ激震… 山本太郎氏が代表を電撃辞任 大石晃子共同代表も離党表明「山本体制の終了と同時に離れる」
+- Date: 2026-07-09T19:08:00+09:00
+
+### Executive Summary
+- おすすめ枠では、れいわ新選組の山本太郎氏の代表辞任が大きく扱われた。
+- Yahoo!ニュースは、山本氏が代表を電撃辞任したと報じている。
+- 大石晃子共同代表も離党を表明したとされる。
+- 記事見出しは、山本体制の終了と同時に離れるという発言を示している。
+- 関連するトップニュースにも山本氏の辞任表明と政界引退の可能性が表示されている。
+- 党名変更の可能性も別見出しで示され、組織再編の局面に入っている。
+- 今後は新代表の選出、党名変更、所属議員の動向が焦点になる。
+
+### Key Findings
+- 山本太郎氏が代表辞任を表明した。 [^]
+  - Footnote: Google ニュース表示: 「山本太郎氏が代表を電撃辞任」
+- 大石晃子共同代表も離党表明とされる。 [^]
+  - Footnote: Google ニュース表示: 「大石晃子共同代表も離党表明」
+- 山本体制の終了が離党判断と結びつけられている。 [^]
+  - Footnote: Google ニュース表示: 「山本体制の終了と同時に離れる」
+- 関連見出しでは政界引退の可能性も示されている。 [^]
+  - Footnote: 関連見出し: 「政界引退も」
+- 党名変更も今後の検討事項として表示されている。 [^]
+  - Footnote: 関連見出し: 「新代表が党名変更へ」
+
+### References
+- https://news.google.com/read/CBMiZ0FVX3lxTE1VRGJHYUxFaVBVdDh0b1VsajVTMHZRYmRZOW83bjdmY2NpLWxOWDN4SGFMR0M4WmMxRWxMWkIzRXBxZTRUdDVYV1hOejhrWjlRTndQN2loOUEydWN3UTg1TVZkM256Nlk?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 大型で非常に強い台風9号 今夜から明日にかけて先島諸島を直撃 身の安全の確保を
+- Date: 2026-07-10T07:08:00+09:00
+
+### Executive Summary
+- トピック_日本では、台風9号の接近が最上位で表示された。
+- ウェザーニュースは、大型で非常に強い台風9号が先島諸島を直撃すると伝えている。
+- Google ニュース上の気象枠では、10日3時時点で沖縄の南にあると説明されている。
+- 台風は時速約15キロで北北西へ進んでいると表示された。
+- 中心気圧は935ヘクトパスカル、最大風速は45メートルとされる。
+- 最大瞬間風速は60メートルとされ、暴風への警戒が必要な規模である。
+- 今夜から翌日にかけて先島諸島で身の安全確保が必要な局面と整理できる。
+
+### Key Findings
+- 台風9号は大型で非常に強い勢力とされている。 [^]
+  - Footnote: Google ニュース表示: 「大型で非常に強い台風9号」
+- 先島諸島への直撃が警告されている。 [^]
+  - Footnote: Google ニュース表示: 「今夜から明日にかけて先島諸島を直撃」
+- 10日3時時点で沖縄の南に位置している。 [^]
+  - Footnote: Google ニュース気象枠: 「１０日３時には沖縄の南」
+- 進行方向と速度は北北西へ時速約15キロである。 [^]
+  - Footnote: Google ニュース気象枠: 「１時間におよそ１５キロの速さで北北西へ」
+- 中心気圧935ヘクトパスカル、最大瞬間風速60メートルの強い台風である。 [^]
+  - Footnote: Google ニュース気象枠: 「中心の気圧は９３５ヘクトパスカル」「最大瞬間風速は６０メート」
+
+### References
+- https://news.google.com/read/CBMiVEFVX3lxTE5KR0xpQnlIanJxNkhHazFXajdKY0NCd2R1ZE0xSFIyQ2xmSnIzR185dEg3QUtaNHRpZDc5RmtXX0EzazFUa1lWXzVJTjZSZmxBYVlOVQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 「橋本さんと雑談はダメ。でも大人数では自然に」 佐藤二朗が明かすフジ弁護士からの“無茶な要求” 「目を合わせるのも、挨拶するのも怖くなった」
+- Date: 2026-07-10T06:08:00+09:00
+
+### Executive Summary
+- トピック_エンタメでは、佐藤二朗氏が明かしたフジ側弁護士の要求に関する記事が上位に表示された。
+- Yahoo!ニュース配信のデイリー新潮記事として表示されている。
+- 見出しでは、橋本さんとの雑談は避ける一方で大人数では自然に振る舞うよう求められたとされる。
+- 佐藤氏は目を合わせることや挨拶にも怖さを感じたと述べている。
+- 芸能現場における法務対応と出演者の心理的負担がテーマになっている。
+- 同じエンタメ枠には舞台あいさつや映画関連の話題も並んでいた。
+- 表示範囲では、発言の背景やフジ側の詳細説明までは確認できなかった。
+
+### Key Findings
+- 佐藤二朗氏がフジ側弁護士からの要求を明かした。 [^]
+  - Footnote: Google ニュース表示: 「佐藤二朗が明かすフジ弁護士からの“無茶な要求”」
+- 特定人物との雑談を避けるよう求められたとされる。 [^]
+  - Footnote: Google ニュース表示: 「橋本さんと雑談はダメ」
+- 大人数の場では自然な対応を求められたとされる。 [^]
+  - Footnote: Google ニュース表示: 「でも大人数では自然に」
+- 佐藤氏は挨拶や目線にも心理的負担を感じた。 [^]
+  - Footnote: Google ニュース表示: 「目を合わせるのも、挨拶するのも怖くなった」
+- 記事はデイリー新潮発、Yahoo!ニュース掲載として表示された。 [^]
+  - Footnote: Google ニュース表示: 「Yahoo!ニュース」「デイリー新潮」
+
+### References
+- https://news.google.com/read/CBMif0FVX3lxTE80MUpTcUhoeVF2My1kWDRGVTVtUXBfcmJBcHJHaDQ4LTNCYVk1QXdqeVZsNzRsTU5TeW9jdlA1M3BkQVJiZTAtTUhUMzByZUNEWEZUNndzUU1jb3NyLTF4OUpCaTFxSGN3TWVEd1l2V2t6UWhUTXF2VHVLdXhTeUU?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 破産手続き開始の全東信 預金残高の水増しなど粉飾決算の疑い
+- Date: 2026-07-10T06:08:00+09:00
+
+### Executive Summary
+- トピック_ビジネスでは、全東信の破産手続きと粉飾決算疑惑が上位に表示された。
+- NHKニュースは、破産手続き開始後に預金残高の水増しなどの疑いがあると報じている。
+- 金融・信用面の不正会計疑惑として、取引先や関係者への影響が懸念される。
+- 同じビジネス枠では、米株式市場や半導体株上昇のニュースも並んでいた。
+- 市場データでは日経平均株価や東証株価指数なども表示されている。
+- 表示範囲では、不正の規模や関係者の処分方針は確認できなかった。
+- 今後は破産手続きの進展、会計資料の検証、債権者対応が焦点になる。
+
+### Key Findings
+- 全東信は破産手続き開始後の企業として報じられている。 [^]
+  - Footnote: Google ニュース表示: 「破産手続き開始の全東信」
+- 預金残高の水増しが疑われている。 [^]
+  - Footnote: Google ニュース表示: 「預金残高の水増し」
+- 粉飾決算の疑いが明示されている。 [^]
+  - Footnote: Google ニュース表示: 「粉飾決算の疑い」
+- NHKニュースがビジネス枠の上位記事として配信している。 [^]
+  - Footnote: Google ニュース表示: 「ビジネス」「NHKニュース」
+- ビジネス枠では金融市場情報も併記され、経済関心の高い記事群として扱われている。 [^]
+  - Footnote: Google ニュース表示: 「日経平均株価」「東証株価指数」
+
+### References
+- https://news.google.com/read/CBMibEFVX3lxTE9yS3FBZVlDVDlweDczUGxOSzFxY090VWxMTjFQLUlVOVZiRGM1RkdfTGxQTVA5Y3JsQWpIbXVadEJVWElwR3FDcU56cUE1aDY1YS1VUXN2YTNiQWtoMTV6OWdZdjhlb0c5a2RCaQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ロケットで高知から宇宙へ 人口減少進む地元に希望を（共同通信）
+- Date: 2026-07-10T08:08:00+09:00
+
+### Executive Summary
+- トピック_宇宙では、高知からのロケット関連ニュースを選定した。
+- 共同通信配信、Yahoo!ニュース掲載の記事として表示されている。
+- 見出しは、ロケットで高知から宇宙へ向かう構想を示している。
+- 人口減少が進む地元に希望をもたらす取り組みとして位置づけられている。
+- 宇宙関連の産業振興や地域活性化が記事の中心テーマとみられる。
+- 検索結果には ISS 観測、JAXA、宇宙ビジネスなども並び、宇宙分野の話題が幅広い。
+- 表示範囲では、打ち上げ時期や事業主体の詳細は確認できなかった。
+
+### Key Findings
+- 高知を起点にしたロケット・宇宙関連構想が報じられている。 [^]
+  - Footnote: Google ニュース表示: 「ロケットで高知から宇宙へ」
+- 地域の人口減少対策や希望として扱われている。 [^]
+  - Footnote: Google ニュース表示: 「人口減少進む地元に希望を」
+- 共同通信の記事が Yahoo!ニュースに掲載されている。 [^]
+  - Footnote: Google ニュース表示: 「共同通信」「Yahoo!ニュース」
+- 同じ検索結果では JAXA や ISS などの宇宙ニュースも表示された。 [^]
+  - Footnote: Google ニュース検索結果: 「JAXA」「国際宇宙ステーション(ISS)」
+- 詳細な事業計画や打ち上げ予定日は表示範囲では不明である。 [^]
+  - Footnote: Google ニュースの見出し・周辺表示に具体日程の記載なし
+
+### References
+- https://news.google.com/read/CBMif0FVX3lxTE9RTlBZaEFmLW9iXzN1UDU4dnVUOWdjY19uRUNwNjYzM3dyakMyQnZPX2tqSFA5bS1JblpMOHRYb0VLMjJKWThycktSOUt5WnZVRXBRM3hTRnpRRVZtcnVQU3VqR0dZc3Z3R0NlbUo0ZWxxTUxhek04bjdoTFZHZ0U?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 第28回ダノン健康栄養フォーラム 更年期とホルモン変動をテーマに無料開催【日本栄養士会共催】
+- Date: 2026-07-10T09:01:00+09:00
+
+### Executive Summary
+- トピック_栄養では、ダノン健康栄養フォーラムの記事を選定した。
+- 第28回のフォーラムが更年期とホルモン変動をテーマに開催される。
+- 日本栄養士会共催として表示されており、専門職向けの栄養情報発信とみられる。
+- 無料開催である点が見出しに明示されている。
+- 栄養検索結果には納豆、レタス、給食献立AI、栄養教育など多様な話題が並んだ。
+- 更年期の健康課題と栄養支援を結びつける内容が中心と整理できる。
+- 表示範囲では開催日時、登壇者、申込方法の詳細は確認できなかった。
+
+### Key Findings
+- 第28回ダノン健康栄養フォーラムの開催情報である。 [^]
+  - Footnote: Google ニュース表示: 「第28回ダノン健康栄養フォーラム」
+- テーマは更年期とホルモン変動である。 [^]
+  - Footnote: Google ニュース表示: 「更年期とホルモン変動をテーマ」
+- 無料開催として案内されている。 [^]
+  - Footnote: Google ニュース表示: 「無料開催」
+- 日本栄養士会の共催が示されている。 [^]
+  - Footnote: Google ニュース表示: 「日本栄養士会共催」
+- 栄養分野では食品、教育、AI献立など複数の話題が同時に表示された。 [^]
+  - Footnote: Google ニュース検索結果: 「納豆」「栄養教育」「給食献立AI」
+
+### References
+- https://news.google.com/read/CBMiT0FVX3lxTFBDYXJaYk5UZ21DbkdDYUhyOThnSWc2dV80WDlhNzl5c2Q1Y2p3cGZBRnMxd0gxczFmQzQyQ3hGZFhucm03TmYwM2psb0tXSXM?hl=ja&gl=JP&ceid=JP%3Aja
+
+## SHIFT、440人の採用ストップ 新卒はAI活用で10年分スキルを1年で習得
+- Date: 2026-07-08T09:08:00+09:00
+
+### Executive Summary
+- 興味深いニュースでは、SHIFT の採用停止と AI 活用に関する記事が最上位に表示された。
+- 日経ビジネス電子版の記事として、440人の採用ストップが見出しに示されている。
+- 新卒社員が AI 活用で10年分のスキルを1年で習得するという方針も示されている。
+- 採用計画の見直しと人材育成の高速化が同時に進められている可能性がある。
+- AI による業務能力の底上げを前提に、従来型の採用人数を調整する動きとして読める。
+- 同じ枠にはゲーム翻訳、テスラ納車トラブル、ローカルAIミニPCの記事も並んだ。
+- 表示範囲では、対象職種や採用停止の期間、社内教育の具体設計は確認できなかった。
+
+### Key Findings
+- SHIFT は440人分の採用を止めたと報じられている。 [^]
+  - Footnote: Google ニュース表示: 「SHIFT、440人の採用ストップ」
+- 新卒育成に AI 活用を組み込む方針が示されている。 [^]
+  - Footnote: Google ニュース表示: 「新卒はAI活用」
+- AI により10年分のスキルを1年で習得するという表現が使われている。 [^]
+  - Footnote: Google ニュース表示: 「10年分スキルを1年で習得」
+- 記事は興味深いニュースの注目記事枠で表示された。 [^]
+  - Footnote: Google ニュース枠: 「興味深いニュース」「注目の記事と話題の記事」
+- AI と人材戦略を結びつけた企業ニュースとして扱われている。 [^]
+  - Footnote: Google ニュース表示: 「日経ビジネス電子版」「AI活用」
+
+### References
+- https://news.google.com/read/CBMiZ0FVX3lxTE5aXzdSenVod3RiWmczLTBvQmcwZ0FlOGxuWGFqbDFwc2ZQZWJPZFJEU3daTHlrX1RCbnV5cTljdTFFdHVZYlBLRnlNS2loMExqLWVCTGZrWUVpcGhMRzQ1azBVemY2OWM?hl=ja&gl=JP&ceid=JP%3Aja
