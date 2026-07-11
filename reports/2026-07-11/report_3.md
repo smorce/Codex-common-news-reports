@@ -1,0 +1,256 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-07-11T00:00:00+09:00
+- Articles: 9
+
+## 米イラン協議近く再開も、トランプ氏が継続同意 仲介国の外交活発化
+
+### Executive Summary
+- Google ニュースのトップニュース枠で表示されたロイターの記事です。
+- 米国とイランの協議が近く再開する可能性が示されています。
+- トランプ氏が協議継続に同意したことが中心論点です。
+- 仲介国の外交活動が活発化していると報じられています。
+- 同じ話題では日本経済新聞、毎日新聞、時事ドットコムの記事も並んでいました。
+- 中東情勢の緊張緩和と停戦認識の揺れが背景にあります。
+- 本文全文は取得していないため、要約は表示見出しと Google ニュース上の情報に限定しています。
+
+### Key Findings
+- トップニュースの主題は米イラン協議の再開可能性です。 [^]
+  - Footnote: 表示見出し: 米イラン協議近く再開も、トランプ氏が継続同意 仲介国の外交活発化
+- トランプ氏の同意が協議継続の焦点になっています。 [^]
+  - Footnote: 表示見出しに「トランプ氏が継続同意」とあります。
+- 仲介国の外交が活発化している点が強調されています。 [^]
+  - Footnote: 表示見出しに「仲介国の外交活発化」とあります。
+- 媒体はロイターです。 [^]
+  - Footnote: Google ニュースの aria-label: ロイター - 3 時間前
+- 掲載時刻は取得時点で約3時間前です。 [^]
+  - Footnote: Google ニュースの表示: 3 時間前
+- 関連見出しでは停戦終了発言や中東混迷も示されていました。 [^]
+  - Footnote: 同枠に「停戦は『終了した』」「混迷深まる中東」の見出しがあります。
+
+### References
+- https://news.google.com/read/CBMiekFVX3lxTE1XRjN2dUpKQ2p2bEpRVlVsRmF2S1k4WFg3MkdqVXFjVTdHOWtwbkViWW56eEs5dFkzbUU3MXhVaGsxSzQxTEdmYXhEVU5yczVGLWpNRnphVm5sbklzd1A5dVJCUlhqcUZhMHV1ZWVza3NMbXVGdTVXYmpn?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 日光白根山で女性滑落 搬送先の病院で死亡－NEWS
+
+### Executive Summary
+- ローカルニュース相当として、栃木テレビの記事を取得しました。
+- 日光白根山で女性が滑落した事故が報じられています。
+- 女性は搬送先の病院で死亡したとされています。
+- Google ニュースではおすすめ欄の近くに表示されていました。
+- 山岳事故であり、現場、救助、搬送後の経過が主要情報です。
+- 表示時刻は取得時点で14時間前でした。
+- 本文全文は取得していないため、要約は表示見出しと媒体情報に限定しています。
+
+### Key Findings
+- 事故は日光白根山で発生した滑落事故です。 [^]
+  - Footnote: 表示見出し: 日光白根山で女性滑落
+- 被害者は女性とされています。 [^]
+  - Footnote: 表示見出しに「女性滑落」とあります。
+- 搬送後に死亡が確認されたと報じられています。 [^]
+  - Footnote: 表示見出し: 搬送先の病院で死亡
+- 媒体は tochigi-tv.jp です。 [^]
+  - Footnote: Google ニュースの aria-label: tochigi-tv.jp - 14 時間前
+- 取得時点では14時間前の記事として表示されました。 [^]
+  - Footnote: Google ニュースの表示: 14 時間前
+- ログイン必須の情報には依存していません。 [^]
+  - Footnote: Google ニュースの公開表示から URL と見出しを取得しました。
+
+### References
+- https://news.google.com/read/CBMiX0FVX3lxTE5adEpYc2RSNzFaWWhvUktMMlNESTQzMjdZdnF2VXZJVk05T1R6TzVNSHlfOHhqMHY1Q1cxOG5oWkZoa3FUSkZLMGNmLXJSUVUtNDFtcGVfSlhldWRSTmxJ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## W杯 スペインが4大会ぶりベスト4へ ベルギーとの接戦制す
+
+### Executive Summary
+- おすすめ枠の公開表示から NHK ニュースの記事を取得しました。
+- W杯でスペインがベルギーとの接戦を制した内容です。
+- スペインは4大会ぶりにベスト4へ進出したとされています。
+- スポーツ結果として、勝敗と大会進出が主要なニュース価値です。
+- 同枠には見出しと意見をもっと見るリンクも表示されていました。
+- 表示時刻は取得時点で1時間前でした。
+- 本文全文は取得していないため、要約は表示見出しと媒体情報に限定しています。
+
+### Key Findings
+- 記事の対象は W杯 の試合結果です。 [^]
+  - Footnote: 表示見出し冒頭: W杯
+- スペインが勝利し、ベスト4へ進みました。 [^]
+  - Footnote: 表示見出し: スペインが4大会ぶりベスト4へ
+- 相手はベルギーで、試合は接戦でした。 [^]
+  - Footnote: 表示見出し: ベルギーとの接戦制す
+- 媒体は NHK ニュースです。 [^]
+  - Footnote: Google ニュースの aria-label: NHKニュース - 1 時間前
+- 取得時点で比較的新しい記事でした。 [^]
+  - Footnote: Google ニュースの表示: 1 時間前
+- 関連情報への導線も表示されていました。 [^]
+  - Footnote: 同記事に「見出しと意見をもっと見る」リンクがありました。
+
+### References
+- https://news.google.com/read/CBMiX0FVX3lxTFAtc3hpWDJjdVIyNHpaY3F3ZmxBVWY0aTF2WFpZSHllVmhlcmdMaGZ6VzVGcU9mcGViZGo1dzVmeDk1Y3NsT1JBT0gySEFXcTdZd3dQWl9pRXNXcEhTQUw4?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 【台風9号】沖縄本島路線バス 午後1時から運行再開 北部は始発から運行
+
+### Executive Summary
+- トピック_日本から琉球新報デジタルの記事を取得しました。
+- 台風9号に伴う沖縄本島の路線バス運行情報です。
+- 沖縄本島の路線バスは午後1時から運行再開とされています。
+- 北部は始発から運行するという地域差も示されています。
+- 台風接近後の交通復旧に関する生活情報です。
+- 表示時刻は取得時点で1時間前でした。
+- 本文全文は取得していないため、要約は表示見出しと媒体情報に限定しています。
+
+### Key Findings
+- 台風9号に関する地域交通情報です。 [^]
+  - Footnote: 表示見出し冒頭: 【台風9号】
+- 対象は沖縄本島の路線バスです。 [^]
+  - Footnote: 表示見出し: 沖縄本島路線バス
+- 運行再開は午後1時からとされています。 [^]
+  - Footnote: 表示見出し: 午後1時から運行再開
+- 北部は始発から運行とされています。 [^]
+  - Footnote: 表示見出し: 北部は始発から運行
+- 媒体は琉球新報デジタルです。 [^]
+  - Footnote: Google ニュースの aria-label: 琉球新報デジタル - 1 時間前
+- 取得時点で新しい地域ニュースでした。 [^]
+  - Footnote: Google ニュースの表示: 1 時間前
+
+### References
+- https://news.google.com/read/CBMiYEFVX3lxTE1udVVGYnlNTTZVNDhKS1VmLXl2ZWFSeFJWNTc1eTk2akxlTEFvTHZ6NVk2eVF0ZE11LUwwQmkyRURiX2JQRVNHcjVHcnd2dUJmVlRITy02b1JCVGo4UmJRbg?hl=ja&gl=JP&ceid=JP%3Aja
+
+## フジ月9「恋愛もの」企画変更報道…佐藤二朗・橋本愛ハラスメント騒動の “飛び火” に「過剰反応しすぎちゃう？」SNS呆れ
+
+### Executive Summary
+- トピック_エンタメから dメニューニュースの記事を取得しました。
+- フジテレビ月9枠の恋愛もの企画変更報道が主題です。
+- 佐藤二朗氏、橋本愛氏に関するハラスメント騒動の影響が言及されています。
+- 報道では騒動の飛び火という見方が示されています。
+- SNS では過剰反応ではないかという反応が出ているとされています。
+- 表示時刻は取得時点で14時間前でした。
+- 本文全文は取得していないため、要約は表示見出しと媒体情報に限定しています。
+
+### Key Findings
+- 記事はフジテレビ月9枠の企画変更報道を扱っています。 [^]
+  - Footnote: 表示見出し: フジ月9「恋愛もの」企画変更報道
+- 佐藤二朗氏と橋本愛氏のハラスメント騒動が背景に挙げられています。 [^]
+  - Footnote: 表示見出し: 佐藤二朗・橋本愛ハラスメント騒動
+- 企画変更への影響を飛び火として表現しています。 [^]
+  - Footnote: 表示見出しに「飛び火」とあります。
+- SNS 上には過剰反応との受け止めがあるとされています。 [^]
+  - Footnote: 表示見出し: 「過剰反応しすぎちゃう？」SNS呆れ
+- 媒体は dメニューニュースです。 [^]
+  - Footnote: Google ニュースの aria-label: ｄメニューニュース - 14 時間前
+- 取得時点では14時間前の記事でした。 [^]
+  - Footnote: Google ニュースの表示: 14 時間前
+
+### References
+- https://news.google.com/read/CBMiigFBVV95cUxQRWpPWjhhU3hPVGZ0WGl1WmFtY0xnQ0U4WWREbUktbFJzZDBFS1VYcDM1MTAtQUkwOXhGc0RHSk5TeDBlMWFlanE0dWRObHFGRGJmS1RKemNUYnZVM1dfZnJOVUVnVHBlOWdkLVNaLV9mR1o0a0c2QlBiRm1CS2RwalpMenFfYVpvZ3fSAY8BQVVfeXFMUGhIMmt1Wms5N21Ba0JZS0gwREp6NWFBSmtLXy0zcUt6ZVlJU3lUN011SmtFZ01VSUE5SVFfZjVPYk9JbjItbVhpNGVsaEJveHBaYWRHT2VvVjVSRFNEZi1JVFlHWGNGRjVJODR3bExXY1lyYnZPczRPWXQ2TmVGLUc4Q1ZfOHJBWW9kVThYbmM?hl=ja&gl=JP&ceid=JP%3Aja
+
+## SKハイニックスが米国上場、「IPO復活の勢い崩れず」ナスダック幹部
+
+### Executive Summary
+- トピック_ビジネスから日本経済新聞の記事を取得しました。
+- SKハイニックスの米国上場が主題です。
+- ナスダック幹部が IPO 復活の勢いに言及したとされています。
+- 半導体企業と米国資本市場の動向が交差するニュースです。
+- 同じビジネス枠にはセブン＆アイHDへの出資検討記事も表示されていました。
+- 表示時刻は取得時点で3時間前でした。
+- 本文全文は取得していないため、要約は表示見出しと媒体情報に限定しています。
+
+### Key Findings
+- 主題は SKハイニックスの米国上場です。 [^]
+  - Footnote: 表示見出し: SKハイニックスが米国上場
+- IPO 市場の復調が論点になっています。 [^]
+  - Footnote: 表示見出し: 「IPO復活の勢い崩れず」
+- 発言主体はナスダック幹部とされています。 [^]
+  - Footnote: 表示見出し末尾: ナスダック幹部
+- 媒体は日本経済新聞です。 [^]
+  - Footnote: Google ニュースの aria-label: 日本経済新聞 - 3 時間前
+- 取得時点で3時間前のビジネス記事でした。 [^]
+  - Footnote: Google ニュースの表示: 3 時間前
+- ビジネス枠では市場指標も併せて表示されていました。 [^]
+  - Footnote: 同枠に日経平均株価、東証株価指数などの表示がありました。
+
+### References
+- https://news.google.com/read/CBMibEFVX3lxTE1zS25OdFFGUVhCUE9ha2VuRlZOOTRzT29Od1hpeFMzeXN5SzdaWlB0RGN6YmlJMXN2ZlYxT0xEcG9jZXJMSHpGMWVTb1R1Y0UwSjVpV0JNbnFuUTVEcld0T2s0TmFvMFlCNEVVRA?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 的川博士の銀河教室 900 「はやぶさ2」が小惑星トリフネに高速接近
+
+### Executive Summary
+- トピック_宇宙として科学＆テクノロジー枠から毎日新聞の記事を取得しました。
+- 的川博士の銀河教室の900回記事です。
+- 探査機はやぶさ2が小惑星トリフネに高速接近する内容です。
+- 小惑星探査と宇宙科学の教育的解説記事と見られます。
+- 科学＆テクノロジー枠には別の技術記事やゲーム記事も並んでいました。
+- 表示時刻は取得時点で3時間前でした。
+- 本文全文は取得していないため、要約は表示見出しと媒体情報に限定しています。
+
+### Key Findings
+- 記事は宇宙探査を扱っています。 [^]
+  - Footnote: 表示見出し: 「はやぶさ2」が小惑星トリフネに高速接近
+- はやぶさ2が中心となる話題です。 [^]
+  - Footnote: 表示見出しに「はやぶさ2」とあります。
+- 対象天体は小惑星トリフネです。 [^]
+  - Footnote: 表示見出し: 小惑星トリフネ
+- 連載記事の一部として表示されています。 [^]
+  - Footnote: 表示見出し: 的川博士の銀河教室 900
+- 媒体は毎日新聞です。 [^]
+  - Footnote: Google ニュースの aria-label: 毎日新聞 - 3 時間前
+- 取得時点で3時間前の記事でした。 [^]
+  - Footnote: Google ニュースの表示: 3 時間前
+
+### References
+- https://news.google.com/read/CBMickFVX3lxTFBoQkhwQktVUFJydHdkWnZQeDhLTVJtZG5lWlBvRjU2ZU5oU1RLTk5TWnRWNm5vSkRzazZrbW5lVjBzY0hBamwxWk9IYzdyLW5zN0JvclZibEZfdGhKcWlxQXF5MHpaWmFHSUpncFlyYmJPZw?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 酢キャベツ - 【村上祥子のきょうの一品】サバ缶とゴーヤーの卵炒め - 写真・画像(2/2)
+
+### Executive Summary
+- トピック_栄養として、食に関する西日本新聞meの記事を取得しました。
+- 見出しには酢キャベツが示されています。
+- 記事名には村上祥子のきょうの一品が含まれています。
+- 関連する料理はサバ缶とゴーヤーの卵炒めです。
+- 写真・画像ページとして表示されており、料理紹介の一部と見られます。
+- 表示時刻は取得時点で1時間前でした。
+- 本文全文は取得していないため、要約は表示見出しと媒体情報に限定しています。
+
+### Key Findings
+- 栄養・食に関する候補として酢キャベツが表示されました。 [^]
+  - Footnote: 表示見出し冒頭: 酢キャベツ
+- 料理連載の一部として見出しが表示されています。 [^]
+  - Footnote: 表示見出し: 【村上祥子のきょうの一品】
+- サバ缶とゴーヤーの卵炒めが料理名として示されています。 [^]
+  - Footnote: 表示見出し: サバ缶とゴーヤーの卵炒め
+- 写真・画像ページの2枚目として表示されています。 [^]
+  - Footnote: 表示見出し末尾: 写真・画像(2/2)
+- 媒体は西日本新聞meです。 [^]
+  - Footnote: Google ニュースの aria-label: 西日本新聞me - 1 時間前
+- 取得時点で1時間前の記事でした。 [^]
+  - Footnote: Google ニュースの表示: 1 時間前
+
+### References
+- https://news.google.com/read/CBMiV0FVX3lxTE5rbzdrY0VjWFJVY0tZX2F6ZTBlNUVUUmU4algtQkpObGdyLTlYYnlSeUxvSFJkbXdnSmg5R29ELUZSNVNMZENLY2NfVVRBb2RuTVhjY1RSWQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## SHIFT、440人の採用ストップ 新卒はAI活用で10年分スキルを1年で習得
+
+### Executive Summary
+- 興味深いニュース枠から日経ビジネス電子版の記事を取得しました。
+- SHIFT が440人の採用をストップしたことが主題です。
+- 新卒人材について、AI 活用でスキル習得を加速する方針が示されています。
+- 見出しでは10年分のスキルを1年で習得するという表現が使われています。
+- 採用抑制と AI による人材育成の組み合わせが焦点です。
+- 表示時刻は取得時点で3日前でした。
+- 本文全文は取得していないため、要約は表示見出しと媒体情報に限定しています。
+
+### Key Findings
+- 主題は SHIFT の採用停止です。 [^]
+  - Footnote: 表示見出し: SHIFT、440人の採用ストップ
+- 人数規模は440人とされています。 [^]
+  - Footnote: 表示見出しに「440人」とあります。
+- 新卒育成に AI 活用が含まれています。 [^]
+  - Footnote: 表示見出し: 新卒はAI活用
+- スキル習得期間の短縮が強調されています。 [^]
+  - Footnote: 表示見出し: 10年分スキルを1年で習得
+- 媒体は日経ビジネス電子版です。 [^]
+  - Footnote: Google ニュースの aria-label: 日経ビジネス電子版 - 3 日前
+- 興味深いニュース枠の注目記事として表示されました。 [^]
+  - Footnote: Google ニュース本文に「興味深いニュース」「注目の記事と話題の記事」と表示されていました。
+
+### References
+- https://news.google.com/read/CBMiZ0FVX3lxTE5aXzdSenVod3RiWmczLTBvQmcwZ0FlOGxuWGFqbDFwc2ZQZWJPZFJEU3daTHlrX1RCbnV5cTljdTFFdHVZYlBLRnlNS2loMExqLWVCTGZrWUVpcGhMRzQ1azBVemY2OWM?hl=ja&gl=JP&ceid=JP%3Aja
