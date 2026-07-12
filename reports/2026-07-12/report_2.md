@@ -1,0 +1,84 @@
+# AI Common Report (https://ai-news.dev/)
+
+- Generated at: 2026-07-12T09:05:22.4538785+09:00
+- Articles: 3
+
+## Mesh LLM: distributed AI computing on iroh - Iroh
+- Date: 2026-07-11T00:00:00+09:00
+
+### Executive Summary
+- Mesh LLM は、手元や組織内にある GPU とメモリを束ね、単一の OpenAI 互換 API として公開する仕組みである。
+- 狙いは、外部 API 依存による費用、モデル変更、データ所在、ハードウェア制御の不確実性を減らすことにある。
+- 利用者は 1 ノードから開始し、後から複数ノードを追加してメッシュ全体に推論を分散できる。
+- リクエストはローカル実行、モデルを持つピアへのルーティング、複数マシンへのモデル分割実行の 3 方式で処理される。
+- 巨大モデル向けには、レイヤー範囲ごとにステージ分割し、活性化を順に流すパイプライン方式を採る。
+- ネットワークには iroh を使い、中央サーバなしで認証済み QUIC 接続、NAT traversal、リレー fallback を扱う。
+- 標準 OpenAI クライアントからは localhost:9337/v1 に見えるため、背後の分散処理を意識せず使える。
+
+### Key Findings
+- Mesh LLM は既存の GPU とメモリをプールし、OpenAI 互換 API として公開する。 [^]
+  - Footnote: 記事は、複数マシンの GPU とメモリを束ね、全体を one OpenAI-compatible API として公開すると説明している。
+- クラウド AI API 依存は、価格、モデル更新、データ所在、基盤ハードウェアの制御を失うリスクとして位置付けられている。 [^]
+  - Footnote: 記事は、モデル変更のタイミング、データの行き先、実行ハードウェアを利用者が制御できないと述べている。
+- 推論処理はローカル、ピアへの転送、複数ノードでの分割実行に分かれる。 [^]
+  - Footnote: 記事は、Run it locally、Route it to a peer、Split a model across several machines の 3 方式を列挙している。
+- 巨大モデルはレイヤー範囲で分割され、各ノードがパイプラインの一部を担当する。 [^]
+  - Footnote: 記事は、layers 0 to 15、16 to 31 のように stage を分け、activations が次ステージへ流れると説明している。
+- iroh はメッシュ内通信の認証、NAT traversal、QUIC 接続を担い、中央サーバを不要にする。 [^]
+  - Footnote: 記事は、各ノードが iroh endpoint を起動し、中央サーバなしで authenticated QUIC connection を開くと説明している。
+
+### References
+- https://www.iroh.computer/blog/mesh-llm
+
+## Don't Go Quietly Into the AI Night
+- Date: 2026-07-11T00:00:00+09:00
+
+### Executive Summary
+- 記事は AI の未来を、少数が制御する神格化された AI と、人間を中心に置く拡張型 AI の二択として描く。
+- 著者は、フロンティア AI へのアクセスが限られ、多くの人が制約された AI だけを使う二層構造を懸念している。
+- 安全上の制約には合理性がある一方、それが排除や恒久的依存につながるべきではないと主張する。
+- ソフトウェア開発では一部の AI エージェント熟練者だけが大幅な生産性向上を得ており、中央値は伸びていないと見る。
+- 社会全体に必要なのは、最上位モデルをさらに鋭くすることだけではなく、既存の知能を普通の人の仕事に統合することだとしている。
+- 企業は人員削減よりも、各従業員を AI エージェントの管理者に育てる成長戦略を選ぶべきだと述べる。
+- 結論として、AI の所有、記憶、権限、監査証跡を人間と組織が管理し、人間の主体性を増やす未来を提案している。
+
+### Key Findings
+- 著者は AI の未来を、少数支配型と人間拡張型の対立として整理している。 [^]
+  - Footnote: 冒頭で、AI as a deity built and controlled by a small group と Humans at the center with AI as an amplifier の二つを提示している。
+- フロンティア AI の高度能力は、リスクを理由に一部へ限定される可能性がある。 [^]
+  - Footnote: 記事は、創薬、サイバー、暗号、創作能力がそれぞれリスクを理由に制限され得ると述べている。
+- AI エージェント利用の生産性格差は、中央値の底上げなしには社会全体の改善につながりにくい。 [^]
+  - Footnote: 記事は、一部開発者が 100x に達する一方、中央値は 1x 近辺にとどまると説明している。
+- 企業の AI 戦略は、外部ベンダー任せの置換ではなく、自社チームがエージェントを管理する形が望ましい。 [^]
+  - Footnote: 記事は、チームが管理しなければベンダーが管理することになり、会社が redundant になると警告している。
+- 各従業員に一対一でエージェントを与え、管理能力を育てることを出発点にしている。 [^]
+  - Footnote: 記事は、最初は各人に first agent を与え、後に second and third agent を管理すると説明している。
+
+### References
+- https://off-policy.com/dont-go-quietly-into-the-ai-night/
+
+## Ghost Font: The Anti-AI Font Only Humans Can Read
+
+### Executive Summary
+- Ghost Font は、人間には読めるが主要 AI モデルには読み取りにくいことを狙った反 AI フォント実験である。
+- 通常のフォントファイルではなく、点の動き、動画、ノイズ、デコイを組み合わせて文字情報を伝える。
+- 静止画では点が背景に溶け込み、スクリーンショットだけでは埋め込まれたメッセージを読み取れない設計になっている。
+- サイト上で文字を入力するとローカルでプレビューでき、動画としてダウンロードして共有できる。
+- Claude Fable や GPT Sol 5.6 Ultra などのモデルは、正しい手法を示されない限り動くメッセージの復号に苦戦したと説明されている。
+- ただし専用のローカル実行環境を持つエージェントなら、点の動きを解析して復号できる可能性も認めている。
+- 今後は CAPTCHA、AI 視覚認識ベンチマーク、動画ネイティブモデル時代の知覚評価への応用が示唆されている。
+
+### Key Findings
+- Ghost Font は、動きによってメッセージを形成する実験的な視覚表現である。 [^]
+  - Footnote: 記事は、motion, video, noise, and decoys を組み合わせ、AI が容易に理解できない形式で文章を伝えると説明している。
+- 単一フレームでは文字が判別できないため、スクリーンショットでは内容が露出しにくい。 [^]
+  - Footnote: 記事は、動画を停止すると静的な点が混ざり、single frame だけでは埋め込まれたメッセージが分からないと述べている。
+- 生成処理はローカルで動作し、入力データはサーバへ送信されないとされている。 [^]
+  - Footnote: 記事は、type the message and preview it live、data is not shared or sent to any server と説明している。
+- 強力な AI モデルでも、動く本来のメッセージではなくデコイを読む失敗例が示されている。 [^]
+  - Footnote: 記事は、GPT-Sol 5.6 Ultra と Claude Fable が hidden decoy message を読み、actual moving message に失敗したと説明している。
+- 著者は、完全な秘匿には暗号や鍵が必要であり、Ghost Font は AI 知覚限界を探る実験だと位置付けている。 [^]
+  - Footnote: 記事は、truly hide a message には encryption や key が必要で、このプロジェクトは visual message が AI に読みにくいかを探るものだと述べている。
+
+### References
+- https://www.mixfont.com/ghost-font
