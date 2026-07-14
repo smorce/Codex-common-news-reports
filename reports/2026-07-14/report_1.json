@@ -1,0 +1,149 @@
+{
+  "generated_at": "2026-07-14T09:01:46+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/8f111401d4fe87",
+      "title": "「AnimeGen」を試す",
+      "date": "2026-07-14T00:00:00+09:00",
+      "executive_summary": [
+        "AnimeGen の Text-to-Video と Image-to-Video を試したスクラップである。",
+        "モデルカードは日本語版が用意され、デモも複数提示されている。",
+        "対象モデルには Text-to-Video、Image-to-Video、Frame Interpolation が含まれる。",
+        "ライセンスはいずれも Apache-2.0 と記録されている。",
+        "Ubuntu 22.04 と RTX 4090 の環境で Text-to-Video を検証している。",
+        "uv で Python 3.12 環境を作り、torch、diffusers、transformers などを導入している。",
+        "AnimeGen-T2V のモデルファイルは 60GB 強あり、初回準備に時間がかかる。",
+        "832x480、5 秒、16fps 相当の設定ではモデル取得を除き約 3 分で生成できた。",
+        "VRAM 使用量は約 23GB とされ、RTX 4090 でも余裕は小さい。"
+      ],
+      "key_findings": [
+        {
+          "point": "AnimeGen は動画生成系として Text-to-Video と Image-to-Video のモデルを提供している。",
+          "footnote": "本文に「モデル」「Text-to-Video」「Image-to-Video」とあり、それぞれ日本語版モデルカードが用意されていると記載されている。"
+        },
+        {
+          "point": "Frame Interpolation も対象機能として触れられている。",
+          "footnote": "本文に「Frame Interpolation（画像と画像の間を生成するフレーム補間）」とある。"
+        },
+        {
+          "point": "ライセンスは Apache-2.0 と整理されている。",
+          "footnote": "本文に「どちらも Apache−2.0ライセンス」と記載されている。"
+        },
+        {
+          "point": "検証環境は Ubuntu 22.04 と RTX 4090 である。",
+          "footnote": "本文に「Ubuntu-22.04 + RTX4090 で試す。」とある。"
+        },
+        {
+          "point": "実行には大容量モデルの事前取得が必要である。",
+          "footnote": "本文に「モデルをダウンロード。60GB強あるので気長に待つ。」と記載されている。"
+        },
+        {
+          "point": "生成時間は設定次第で数分規模だが、VRAM 消費は大きい。",
+          "footnote": "本文に「上記の設定で3分ぐらいで生成される。VRAMは23GBぐらい使う」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/8f111401d4fe87"
+      ],
+      "retrieved_at": "2026-07-14T09:01:46+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/2623d030baddcd",
+      "title": "日本語テキストをひらがな・カタカナに変換する（Python）",
+      "date": "2026-07-13T00:00:00+09:00",
+      "executive_summary": [
+        "日本語テキストから読みを取得し、ひらがな・カタカナへ変換する方法を比較している。",
+        "形態素解析ライブラリを使えば、多くの場合で読み取得は可能だと整理している。",
+        "候補として Sudachi、Mecab、fugashi、Janome、Vibrato が挙げられている。",
+        "用途特化のライブラリとして pykakasi と kanjiconv にも触れている。",
+        "精度は最終的に利用する日本語辞書へ依存しそうだと述べている。",
+        "kanjiconv は Sudachi ベースで、UniDic やカスタム辞書も使える可能性がある。",
+        "Sudachi 単体でも reading_form によってカタカナ読みを取得できる。",
+        "Vibrato は軽量辞書だと発音寄りになり、要件によっては読み用途に合わない可能性がある。",
+        "筆者の用途では依存を増やさず Sudachi 単体でよいとの結論である。"
+      ],
+      "key_findings": [
+        {
+          "point": "主題は日本語テキストから読みを得ることである。",
+          "footnote": "本文冒頭に「つまり、日本語テキストから読みを得る。」とある。"
+        },
+        {
+          "point": "汎用的には形態素解析ライブラリで実現できると見ている。",
+          "footnote": "本文に「基本的に、形態素解析ライブラリを使えば、どれでもできるはず。」と記載されている。"
+        },
+        {
+          "point": "変換精度は辞書に依存する可能性が高い。",
+          "footnote": "本文に「どの場合でも結局は日本語辞書を使っているので、精度については日本語辞書に依存しそう。」とある。"
+        },
+        {
+          "point": "kanjiconv は Sudachi ベースで辞書差し替えやカスタム辞書に対応する選択肢である。",
+          "footnote": "本文に「基本はSudachiベースで、UniDicに差し替えたり、カスタム辞書も使えるらしい。」とある。"
+        },
+        {
+          "point": "Vibrato の軽量辞書は発音寄りの出力になる場合がある。",
+          "footnote": "本文に「読みじゃなくて発音に特化（『う』が『ー』になったり、『は』が『ワ』になったり）」と記載されている。"
+        },
+        {
+          "point": "最終判断として、筆者の用途では Sudachi 単体が適している。",
+          "footnote": "本文に「自分の用途的には、sudachi単体でよいかな。依存を増やさなくて済むし。」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/2623d030baddcd"
+      ],
+      "retrieved_at": "2026-07-14T09:01:46+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/71c607ec770256",
+      "title": "Ubuntu の「snap」を試す",
+      "date": "2026-07-11T00:00:00+09:00",
+      "executive_summary": [
+        "Ubuntu の snap を初めて試し、基本概念から操作まで確認している。",
+        "snap は複数の Linux ディストリビューションで動く自己完結型パッケージとして説明されている。",
+        "snapd がインストール、隔離環境、アップデート処理を管理する。",
+        "Ubuntu 24.04 では snap がデフォルトで入っており、snap --version で確認している。",
+        "snap find で Markdown 関連パッケージを検索し、Publisher 記号の意味も整理している。",
+        "glow を例に snap info、install、list、which、snap run の挙動を確認している。",
+        "snap はデフォルトで自動更新され、refresh のタイミングや hold/unhold を設定できる。",
+        "vlc を例にチャネル変更、refresh、revert、revision 指定の挙動を試している。",
+        "snap には隔離の概念があり、アプリがアクセスできるリソース範囲を制御する仕組みがある。"
+      ],
+      "key_findings": [
+        {
+          "point": "snap は自己完結型の Linux アプリケーションパッケージである。",
+          "footnote": "本文に「snap は、組み込みデバイスからデスクトップ、サーバー、クラウド環境に至るまで、多様な Linux ディストリビューション間で動作する自己完結型のアプリケーションパッケージ」とある。"
+        },
+        {
+          "point": "snapd はインストール、隔離環境、更新処理を担当する。",
+          "footnote": "本文に「snap デーモン snapd は、インストール、隔離環境の設定、アップデート処理を管理します。」と記載されている。"
+        },
+        {
+          "point": "Ubuntu 24.04 では snap が最初から利用可能だった。",
+          "footnote": "本文に「Ubuntu-24.04でやってみる。snap はデフォルトでインストールされていた。」とある。"
+        },
+        {
+          "point": "Publisher の記号は信頼度の目安だが、安全監査済みを意味するものではない。",
+          "footnote": "本文に「Canonical / Snap Store の確認・審査によるもの」「そのパッケージが安全に監査された、ということではないよう」とある。"
+        },
+        {
+          "point": "snap の更新は自動で行われ、refresh や hold で制御できる。",
+          "footnote": "本文に「snap は自動的に更新され、デフォルトでは snapd デーモンが1日4回更新をチェックします。」とあり、hold/unhold の例も示されている。"
+        },
+        {
+          "point": "revert は過去に取得済みのリビジョンへ戻す用途として確認されている。",
+          "footnote": "本文に「過去にアップデートしたことがある、のが条件っぽく思える」「snap revert vlc」の実行例がある。"
+        },
+        {
+          "point": "snap パッケージは隔離とアクセス制御の概念を持つ。",
+          "footnote": "本文に「snapパッケージにはサンドボックスのような『隔離』の概念がある。」と記載されている。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/71c607ec770256"
+      ],
+      "retrieved_at": "2026-07-14T09:01:46+09:00"
+    }
+  ]
+}
