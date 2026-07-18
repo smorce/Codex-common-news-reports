@@ -1,0 +1,102 @@
+# AI Common Report (https://ai-news.dev/)
+
+- Generated at: 2026-07-18T09:04:43.2622880+09:00
+- Articles: 3
+
+## Build Without Limits on Roblox | Roblox
+- Date: 2026-07-16T00:00:00+09:00
+
+### Executive Summary
+- Robloxは、モバイルアプリ内でゲーム制作を始められるAI制作タブ「Build」を発表した。
+- ユーザーはテキストプロンプトから基本的なゲームの出発点を生成し、改良、プレイテスト、共有、公開へ進められる。
+- BuildはRoblox Studioとバックエンド、モデル、チャット履歴を共有し、モバイルとStudioの往復を前提にしている。
+- オープンソースモデルとRoblox独自モデルを組み合わせ、ゲームプレイ、環境、キャラクター、視覚スタイル、サウンドを処理する。
+- Roblox独自モデルは大規模な3Dモデルとゲーム特有データセットで学習され、3Dオブジェクトや3Dシーン生成を狙う。
+- 7月28日からニュージーランドで一部機能のパブリックアルファを開始し、対象は年齢確認済み9歳以上とされている。
+- 公開ゲームは安全チェックと通常審査を通過し、継続利用率に基づく発見システムで扱われる。
+- 今後はプレイテスト、分析、実験を支援するAIエージェント群もBuildとStudioに導入される予定だ。
+
+### Key Findings
+- BuildはRobloxモバイルアプリ内でテキストから基本ゲームを作る機能として位置づけられている。 [^]
+  - Footnote: 記事は「誰でもRobloxモバイルアプリ内で直接、テキストプロンプトを基本的なゲームに変換できる」と説明している。
+- RobloxはBuildとStudioを連携させ、モバイルで始めた作業をStudioで拡張できる設計にしている。 [^]
+  - Footnote: 本文では「バックエンド、モデル、チャット履歴が共有」され、Buildで開始してStudioの機能で充実させられるとされる。
+- 生成対象はゲームの見た目だけではなく、ゲームプレイや環境、キャラクター、サウンドまで広い。 [^]
+  - Footnote: 記事はBuildが「ゲームプレイの仕組み、環境、キャラクター、ビジュアルスタイル、サウンドなどを処理」すると述べている。
+- Roblox独自モデルは3Dとゲーム特化データを使い、実用的な3Dオブジェクトやシーン生成を目指している。 [^]
+  - Footnote: 本文は独自モデルが「大規模な3Dモデルとゲーム特有のデータセット」で学習され、機能的な3Dオブジェクトや完全な3Dシーンを生成可能と説明する。
+- 初期展開は限定的で、ニュージーランドで7月28日から公開アルファとして提供される。 [^]
+  - Footnote: 記事には「7月28日よりニュージーランドのユーザーを対象にパブリックアルファ版」と記載されている。
+- AI生成コンテンツであっても、Robloxの安全審査と発見ランキングの既存基準を通す方針だ。 [^]
+  - Footnote: 本文は厳格な安全チェック、通常の審査プロセス、継続利用率に基づく発見システムによるランキングを示している。
+- 将来のStudio/Build向けAI支援は、プレイテスト、分析、実験設計まで広がる。 [^]
+  - Footnote: 記事は「プレイテストエージェント」「分析エージェント」「実験エージェント」を今後のツールとして列挙している。
+
+### References
+- https://about.roblox.com/newsroom/2026/07/build-without-limits-on-roblox
+
+## Databricks hits $188B valuation, extending its run as AI's favorite second act | TechCrunch
+- Date: 2026-07-17T15:12:00-07:00
+
+### Executive Summary
+- DatabricksはCoatue主導の新たな資金調達ラウンドを発表し、評価額は1880億ドルに達した。
+- 調達額は公式には非開示だが、記事は他媒体が約30億ドルと報じたことに触れている。
+- 資金はまだ手元になく、ラウンドは夏後半にクローズ予定とされる。
+- 同社は過去1年半にわたり、AI企業としてのイメージ転換と資金調達を連続的に進めてきた。
+- 2024年12月、2025年9月、2026年2月にも大型ラウンドを実施し、評価額を段階的に引き上げた。
+- Databricksは企業データ基盤の強みを背景に、セキュリティとガバナンスを伴うAI需要へ対応している。
+- Lakebase、Unity、Omnigentなど、AIエージェントや複数エージェント管理に関わる製品を展開している。
+- 同社はGLM 5.2などのオープンウェイトモデルとエージェント用ハーネスの組み合わせを、コスト制御の観点から重視している。
+
+### Key Findings
+- Databricksの新ラウンド評価額は1880億ドルで、Coatueが主導した。 [^]
+  - Footnote: 記事冒頭で「values the company at $188 billion」かつ「led by Coatue」と説明されている。
+- 調達は発表時点で未完了で、正式クローズは夏後半とされている。 [^]
+  - Footnote: 本文は「the money isn't in its hands yet」「the round will close later in this summer」と記している。
+- Databricksは短期間で評価額を大きく伸ばしている。 [^]
+  - Footnote: 記事は2026年2月に1340億ドル、2025年9月に1000億ドル、2024年12月に620億ドルで調達したと整理している。
+- 同社のAI企業化は、既存の企業データ基盤上にAI需要が乗ったことが背景にある。 [^]
+  - Footnote: 本文は、同社が企業データを持つ位置にいたため、従来型ソフトウェア並みのセキュリティとガバナンスを求めるAI需要に応えやすかったと述べる。
+- DatabricksはAIエージェント向けデータベース、AIゲートウェイ、複数エージェント管理製品を投入している。 [^]
+  - Footnote: 記事はLakebase、Unity、Omnigentを例として挙げ、それぞれAI agents、AI gateway、multiple agentsの管理に関わると説明している。
+- オープンウェイトモデルの採用は企業のAIコスト抑制トレンドと結びついている。 [^]
+  - Footnote: 本文はDatabricksを、コスト管理のため中国系オープンウェイトモデルを採用する企業例として紹介している。
+- モデル単体ではなく、モデルを包むエージェント用ハーネスもコストに影響するとされる。 [^]
+  - Footnote: 記事はハーネス選択がコストに同程度影響し、Piが文脈管理と低コストで優れていたと説明する。
+
+### References
+- https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/
+
+## Kaiser nurses say AI, workplace surveillance are making their jobs and patient care worse - Local News Matters
+- Date: 2026-07-15T00:00:00-07:00
+
+### Executive Summary
+- Kaiser Permanenteの助言・トリアージ看護師らは、職場監視とAIが患者ケアを悪化させていると訴えている。
+- 複数の現職・元看護師は、15分を超える通話が管理側の批判や評価面談につながると証言した。
+- 看護師らによると、Kaiserは通話時間だけでなく、生産性や応答速度を予測するソフトウェアも使っている。
+- AIは共感や声のトーンを評価する用途でも試験され、看護師側は職務理解の不足や誤評価を懸念している。
+- Kaiserは平均処理時間を業績評価に使っていないとし、品質保証には人間のレビューと監督があると説明している。
+- 記事は、カリフォルニア看護師協会の契約交渉と、職場AI規制法案の検討が同時期に進んでいることを示す。
+- 看護師らは、自殺念慮、終末期診断、通訳を伴う相談など、長時間対応が必要なケースで時間圧力が安全性を損なうと主張している。
+- 研究や労働専門家の見解として、アルゴリズム管理は感情的疲労やミスのリスクを高め得ると紹介されている。
+
+### Key Findings
+- 看護師らは職場監視が患者へのケア義務を脅かしていると主張している。 [^]
+  - Footnote: 記事は、助言・トリアージ通話を担当する看護師が「duty of care for patients is being increasingly threatened by workplace surveillance」と述べたと報じている。
+- 15分を超える通話は、評価や管理側からの批判につながると複数の看護師が証言した。 [^]
+  - Footnote: 本文では7人の現職・元看護師が、15分超の通話で批判や業績評価面談を受けると説明したとされる。
+- Kaiserは日次の生産性や応答遅延の予測、共感・声のトーン評価にAIやソフトウェアを使っていると看護師側は述べている。 [^]
+  - Footnote: 記事は「predict on a daily basis whether they're being unproductive or failing to answer calls quickly」し、AIが「empathy and tone of voice」を評価したと記している。
+- KaiserはAI利用を擁護し、平均処理時間で業績評価していないと説明している。 [^]
+  - Footnote: Kaiserの広報は「does not use Average Handle Time to assess agent performance」とし、品質保証ツールには人間のレビューと監督があると述べた。
+- 自殺念慮などの重大ケースでは、長時間通話が必要でも評価への影響を意識せざるを得ない状況がある。 [^]
+  - Footnote: Raquel Alvarez Sanchezは、自殺念慮のある患者との通話が1時間超になり、平均通話時間への影響を意識した事例を語っている。
+- 通訳や慢性疾患、複数症状、人生を変える知らせを受けた患者では、15分以内の対応が現実的でない場合がある。 [^]
+  - Footnote: 記事は、通訳付き通話が30分以上かかることが多く、新米親、慢性疾患、複数症状、衝撃的診断後の患者などを例示している。
+- AIによる共感・トーン評価の試験は2024年夏に始まり、看護師は透明性や専門判断の権利を求めた。 [^]
+  - Footnote: 本文は2024年夏にAIツールの試験が始まり、看護師が患者プライバシー、透明性、専門的判断の権利を求める署名活動を行ったと記す。
+- アルゴリズム管理は医療現場ではミスや燃え尽きのリスクを高める可能性がある。 [^]
+  - Footnote: Virginia Dolleghastは、ストレスと燃え尽きがミスにつながり、医療では人命と健康を扱うためリスクが高いと述べている。
+
+### References
+- https://localnewsmatters.org/2026/07/15/kaiser-nurses-say-ai-workplace-surveillance-are-making-their-jobs-and-patient-care-worse/

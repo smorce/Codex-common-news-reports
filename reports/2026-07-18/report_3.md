@@ -1,0 +1,238 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-07-18T09:08:39.1774507+09:00
+- Articles: 9
+
+## 米軍は６日連続でイラン攻撃、インフラにも拡大…革命防衛隊はシリアの米軍通信施設を初めて攻撃
+
+### Executive Summary
+- トップニュースでは、米軍とイラン側の衝突拡大が大きく扱われている。
+- 読売新聞の記事は、米軍の攻撃が6日連続になったと伝えている。
+- 攻撃対象は軍事関連だけでなく、インフラにも広がったとされる。
+- イラン革命防衛隊側も、シリアの米軍通信施設を攻撃したと報じられている。
+- 地域紛争が周辺の米軍施設や通信網に波及している点が焦点である。
+- Google ニュース上では掲載時刻が11時間前と表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- 米軍によるイラン攻撃が継続している。 [^]
+  - Footnote: Google ニュース見出しに「米軍は６日連続でイラン攻撃」と表示。
+- 攻撃範囲がインフラに拡大した可能性がある。 [^]
+  - Footnote: 見出しに「インフラにも拡大」と表示。
+- イラン革命防衛隊側も米軍施設を攻撃したとされる。 [^]
+  - Footnote: 見出しに「革命防衛隊はシリアの米軍通信施設を初めて攻撃」と表示。
+- 配信元は読売新聞である。 [^]
+  - Footnote: Google ニュースのリンク表示に「読売新聞」と表示。
+- 新しい記事としてトップニュース上部に掲載されていた。 [^]
+  - Footnote: Google ニュースのトップニュース欄で「11 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMiYkFVX3lxTE5KaUV5NmhSNkxZZkpyZEFYemVtTDlseTBsODIxaEF2WHVYSTlTRk1YbGRjN3VXeWNHS1IteDlhZFRGMDRlTVoxZW5lZi02Ykx2QXI4aVRrVnFiRjlYQ09Tckx3?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ポケモン約９０種が横浜・みなとみらいに 広場には「カビゴン」１７日から
+
+### Executive Summary
+- ローカルニュースでは、横浜・みなとみらいのポケモン関連企画が掲載されていた。
+- 記事は、約90種のポケモンが横浜・みなとみらいに登場すると伝えている。
+- 広場には「カビゴン」が設置される内容が見出しで示されている。
+- 開始日は17日からとされ、地域イベントとしての性格が強い。
+- 横浜市周辺の集客や観光動線に関わる話題である。
+- Google ニュース上ではカナロコ配信、2日前の記事として表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- 横浜・みなとみらいでポケモン関連企画が行われている。 [^]
+  - Footnote: 見出しに「横浜・みなとみらい」と表示。
+- 登場するポケモンは約90種とされる。 [^]
+  - Footnote: 見出しに「ポケモン約９０種」と表示。
+- 広場にはカビゴンが設置される。 [^]
+  - Footnote: 見出しに「広場には『カビゴン』」と表示。
+- 開始日は17日からと示されている。 [^]
+  - Footnote: 見出しに「１７日から」と表示。
+- 配信元はカナロコで、掲載経過は2日前だった。 [^]
+  - Footnote: Google ニュース上に「カナロコ - 2 日前」と表示。
+
+### References
+- https://news.google.com/read/CBMiaEFVX3lxTFBXYndldFNUZ2VOWjA2ZVZCbDNfMGhQd3prUkhlVHd0eGhqcm1ITVVvbC1HajVXaW1pNWtVdE9sSGotckZOTy15akh6a0U0Z3EyTXctWVpUMEUwc3FzNmxSTVZsbmFZRGtZ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 画像 | 6500億円で作ったのに､富裕層も観光客も来ない…開業11カ月で｢きれいな廃墟｣になったリゾート島の末路
+
+### Executive Summary
+- おすすめ欄では、大型リゾート開発の失敗を扱う記事が掲載されていた。
+- 見出しは、6500億円規模で整備されたリゾート島に集客が進まない状況を示している。
+- 富裕層や観光客が来ないことが問題として強調されている。
+- 開業から11カ月で「きれいな廃墟」と表現される状態になったとされる。
+- 投資規模と実需の不一致が主要な論点である。
+- Google ニュース上では PRESIDENT Online 配信、19時間前の記事として表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- リゾート島の開発費は6500億円規模とされる。 [^]
+  - Footnote: 見出しに「6500億円で作った」と表示。
+- 想定客層である富裕層や観光客の来訪が不足している。 [^]
+  - Footnote: 見出しに「富裕層も観光客も来ない」と表示。
+- 開業後11カ月で厳しい評価を受けている。 [^]
+  - Footnote: 見出しに「開業11カ月」と表示。
+- 施設は「きれいな廃墟」と形容されている。 [^]
+  - Footnote: 見出しに「『きれいな廃墟』になった」と表示。
+- 配信元は PRESIDENT Online である。 [^]
+  - Footnote: Google ニュース上に「PRESIDENT Online（プレジデントオンライン） - 19 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMiVEFVX3lxTE1TVno2S2FkZldVbWMyY3BZX2I3M1VDNGQ2Q2dyRHdocGRGTHBFNmZXVE1FenFOYVVFTk9uNlB4NTBQSlVBTHZqdFd1d3YtOXM2R2psWQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 高校公民 中国の軍事力拡大「日本の脅威」と書く帝国書院、ほとんど触れない東京書籍 教科書はこう書いている
+
+### Executive Summary
+- トピック_日本では、高校公民教科書における中国の軍事力拡大の扱いが取り上げられていた。
+- 見出しは、帝国書院が中国の軍事力拡大を「日本の脅威」と記述している点を示す。
+- 一方で、東京書籍は同論点にほとんど触れていないとされる。
+- 同じ教科でも出版社により安全保障記述の濃淡があることが論点である。
+- 教育内容、国際情勢認識、教科書比較に関わる記事である。
+- Google ニュース上では産経ニュース配信、7分前の記事として表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- 記事は高校公民の教科書記述を扱っている。 [^]
+  - Footnote: 見出しに「高校公民」と表示。
+- 帝国書院は中国の軍事力拡大を日本の脅威として扱っている。 [^]
+  - Footnote: 見出しに「中国の軍事力拡大『日本の脅威』と書く帝国書院」と表示。
+- 東京書籍は同論点にほとんど触れていないとされる。 [^]
+  - Footnote: 見出しに「ほとんど触れない東京書籍」と表示。
+- 出版社間の記述差が主要テーマである。 [^]
+  - Footnote: 見出しに「教科書はこう書いている」と表示。
+- 配信元は産経ニュースで、記者名も表示されていた。 [^]
+  - Footnote: Google ニュース上に「産経ニュース - 7 分前 - 記者/ライター: 大森貴弘」と表示。
+
+### References
+- https://news.google.com/read/CBMidkFVX3lxTE5JQkstRXRmdzJkX2VRYlgtQnEzZkJQLWpRMUhydkJCQWY3aS1Jck93ZjNua3JiQUNpeS1HclYwa1BNVlBLc1VTQjk4OFdzS2tHak1RTnFoeWZBRWYzSEliWXpBS0RpSU9sZDE4R3paNEdSTmdJUGc?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 水玉れっぷう隊・アキ　自身の舞台を広げる「時が来た」！　新喜劇座長との違い「荒木良明のフルネームでやっている（感じ）」…２５日から時代劇エンタメ舞台開幕
+
+### Executive Summary
+- トピック_エンタメでは、水玉れっぷう隊・アキの舞台活動に関する記事が最上位に表示された。
+- 記事は本人が自身の舞台を広げる時期に来たと語った内容を扱っている。
+- 新喜劇座長としての活動との差異にも触れている。
+- 「荒木良明」のフルネームで取り組む感覚が見出しで示されている。
+- 25日から時代劇エンタメ舞台が開幕する予定とされる。
+- Google ニュース上では dメニューニュース配信、1時間前の記事として表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- 水玉れっぷう隊・アキの舞台活動が記事の中心である。 [^]
+  - Footnote: 見出しに「水玉れっぷう隊・アキ」と表示。
+- 本人は舞台の幅を広げる局面と捉えている。 [^]
+  - Footnote: 見出しに「自身の舞台を広げる『時が来た』」と表示。
+- 新喜劇座長との違いが語られている。 [^]
+  - Footnote: 見出しに「新喜劇座長との違い」と表示。
+- 時代劇エンタメ舞台の開幕が予定されている。 [^]
+  - Footnote: 見出しに「２５日から時代劇エンタメ舞台開幕」と表示。
+- 配信元は dメニューニュースで、掲載経過は1時間前だった。 [^]
+  - Footnote: Google ニュース上に「ｄメニューニュース - 1 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMijgFBVV95cUxQWG95M1NBQy1pUTlWc0RmYXhkRmZ2Y0IyRmZEczhOQlQ0Mkg4eHR1SGN1MGZieFBuMjcyaFB0X3BoMWFNQnRwZGpjTmpzcXRRY3ZCZTFpcU81R0hacjhScWxQaDlzMlNfYW1tUFYyTnhLRlJsazczb0FJMkVYcFlyWDhhWHRzUEZudm9vMXRn0gGTAUFVX3lxTE1xeDZvTm04X1BGY2Vvbk5QTGtDZmFVTHN3WkJDTlR1dzdWSWNyMlBTWWxmNDBpdWU5aFBxa2JuYWFHd05LaHJYVjRBdVowTGJsbWs1VGw4T1k4S3FqRWkyRzhaRDUwbkl2Z3VNX0F2ckI0WEdvZFZOZmNyRDc2TFkwM09HMGdmQ0JoWWVrWUxFdDBONA?hl=ja&gl=JP&ceid=JP%3Aja
+
+## IT予算の9割が人件費に消える――日本オラクル社長が切り込む「企業最大の課題」（ITmedia ビジネスオンライン）
+
+### Executive Summary
+- トピック_ビジネスでは、企業IT予算の人件費偏重を扱う記事が表示された。
+- 見出しは、IT予算の9割が人件費に消えるという問題提起をしている。
+- 日本オラクル社長が企業課題としてこの構造に言及しているとされる。
+- IT投資が実装・運用コストに吸収され、変革投資へ回りにくい課題を示唆している。
+- 企業のデジタル化、システム運用、IT人材コストに関わる話題である。
+- Google ニュース上では Yahoo!ニュース配信、55分前の記事として表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- IT予算の大部分が人件費に充てられているという問題提起がある。 [^]
+  - Footnote: 見出しに「IT予算の9割が人件費に消える」と表示。
+- 日本オラクル社長の発言・見解が記事の中心である。 [^]
+  - Footnote: 見出しに「日本オラクル社長が切り込む」と表示。
+- 企業課題としてITコスト構造が扱われている。 [^]
+  - Footnote: 見出しに「企業最大の課題」と表示。
+- 元記事は ITmedia ビジネスオンライン系の記事である。 [^]
+  - Footnote: 見出しに「ITmedia ビジネスオンライン」と表示。
+- 掲載経過は55分前で、比較的新しい記事だった。 [^]
+  - Footnote: Google ニュース上に「Yahoo!ニュース - 55 分前」と表示。
+
+### References
+- https://news.google.com/read/CBMif0FVX3lxTE5WQjMwZVBkWXBqWXpmXzNINmJWWmxZbUQ0Mm5qUmd4MEp6SEprRDExZ0hydlBOQ1hfZV85aGliZnNqUFFRQzlWZ0R0b05JQWd5ZHZxMkVzSGJKN1RzWGFxdjdFOUhJdVFEcXo5bk1uSnlVVzFiRUljSTQ4em1BZTA?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 国立天文台で油井宇宙飛行士と学ぶ！ ―月・火星探査に向けて―
+
+### Executive Summary
+- トピック_宇宙では、国立天文台と油井宇宙飛行士に関する教育・イベント系の記事を採用した。
+- 記事は、油井宇宙飛行士と学ぶ企画を伝えている。
+- テーマは月・火星探査に向けた学びとされる。
+- 宇宙探査への関心を広げるアウトリーチ活動として位置づけられる。
+- 国立天文台が関わるため、研究機関発信の情報として確認できる。
+- Google ニュース上では nao.ac.jp 配信、18時間前の記事として表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- 国立天文台で行われる企画が記事の対象である。 [^]
+  - Footnote: 見出しに「国立天文台で」と表示。
+- 油井宇宙飛行士が関わる学習企画である。 [^]
+  - Footnote: 見出しに「油井宇宙飛行士と学ぶ」と表示。
+- 月探査がテーマに含まれる。 [^]
+  - Footnote: 見出しに「月・火星探査に向けて」と表示。
+- 火星探査もテーマに含まれる。 [^]
+  - Footnote: 見出しに「月・火星探査に向けて」と表示。
+- 配信元は国立天文台系の nao.ac.jp で、掲載経過は18時間前だった。 [^]
+  - Footnote: Google ニュース上に「nao.ac.jp - 18 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMiaEFVX3lxTFBMVHcwOW5nTVJ5bk9pM3VieHlScUNxaWM2aE1mOUJoYjhqYjhlTjJvYUdPWmpIbXBBM3A5eTFzeFJ6VmlRZmdXQU1EY3lhR0N1OF9NaWJKX3owV2dkZUpWSThCMjFKWVg2?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 【巨人】浦田俊輔がとる栄養にも気を配り始めた？ 7月18日の地上波副音声で球団付の栄養士が食事事情を語る！
+
+### Executive Summary
+- トピック_栄養では、プロ野球選手の食事事情に関する記事が最上位に表示された。
+- 記事は、巨人の浦田俊輔選手が栄養にも気を配り始めた可能性を扱っている。
+- 球団付きの栄養士が食事事情を語る予定とされる。
+- 7月18日の地上波副音声で取り上げられる内容が見出しに含まれている。
+- 競技パフォーマンスと栄養管理の関係を示すスポーツ・健康系の話題である。
+- Google ニュース上では日テレNEWS NNN配信、1時間前の記事として表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- 巨人の浦田俊輔選手が記事の中心である。 [^]
+  - Footnote: 見出しに「【巨人】浦田俊輔」と表示。
+- 栄養への意識変化が話題になっている。 [^]
+  - Footnote: 見出しに「とる栄養にも気を配り始めた？」と表示。
+- 球団付き栄養士の解説が含まれる予定である。 [^]
+  - Footnote: 見出しに「球団付の栄養士が食事事情を語る」と表示。
+- 7月18日の地上波副音声に関連する内容である。 [^]
+  - Footnote: 見出しに「7月18日の地上波副音声」と表示。
+- 配信元は日テレNEWS NNNで、掲載経過は1時間前だった。 [^]
+  - Footnote: Google ニュース上に「日テレNEWS NNN - 1 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMie0FVX3lxTFB2VDV5TG0tN0NOWHdXR1Q3ejMxZ3lORmhhc2pJaHBHRVBpYXdTaUI0UUtTS2Q5MVBTNkhXV0ZLNnV5OUlCdDhQcHNmdXNZalV6QzBuX050cHdrVl9qVVJUdXNGMFoxM3VRVzRYNjBxSkJIalZPNklFQWw0VQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## “ひきこもりリスク”の高い人は、オンラインゲームでも交流を好まない傾向。匿名でも“人付き合いはしんどい”可能性、日本人ゲーマーを対象に研究
+
+### Executive Summary
+- 興味深いニュースでは、日本人ゲーマーを対象にした研究記事が掲載されていた。
+- 記事は、ひきこもりリスクが高い人ほどオンラインゲーム内の交流を好まない傾向を扱っている。
+- 匿名環境であっても、人付き合いへの負担感が残る可能性が示されている。
+- オンラインゲームを単純な交流促進の場と見なすことへの注意点がある。
+- ゲーム、心理、社会参加の接点を扱う研究報道である。
+- Google ニュース上では AUTOMATON 配信、2日前の記事として表示されていた。
+- 本文全体は確認できなかったため、要約は見出しと配信情報に限定した。
+
+### Key Findings
+- ひきこもりリスクの高い人を対象にした傾向が扱われている。 [^]
+  - Footnote: 見出しに「“ひきこもりリスク”の高い人」と表示。
+- オンラインゲーム内でも交流を好まない傾向が示されている。 [^]
+  - Footnote: 見出しに「オンラインゲームでも交流を好まない傾向」と表示。
+- 匿名性があっても対人負担は消えない可能性がある。 [^]
+  - Footnote: 見出しに「匿名でも“人付き合いはしんどい”可能性」と表示。
+- 調査対象は日本人ゲーマーである。 [^]
+  - Footnote: 見出しに「日本人ゲーマーを対象に研究」と表示。
+- 配信元は AUTOMATON で、記者名も表示されていた。 [^]
+  - Footnote: Google ニュース上に「AUTOMATON - 2 日前 - 記者/ライター: Kei Kano」と表示。
+
+### References
+- https://news.google.com/read/CBMibEFVX3lxTE1HVDFhdk1Mc2tDY25hemJQX0luVlJ0RGRXNFFCcTZiSmNwaDdoLTlsdk5JMkNlX3VDNVU4VFp6RHQ1eWFMWVpnbkU5WDY1V3AyOV81T1A2aWk5dnZaRmdYa0xndjFxejRXbi1IdQ?hl=ja&gl=JP&ceid=JP%3Aja
