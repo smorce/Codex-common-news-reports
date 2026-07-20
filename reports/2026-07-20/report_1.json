@@ -1,0 +1,163 @@
+{
+  "generated_at": "2026-07-20T09:03:00+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/cf1b98613e30e0",
+      "title": "「audio.cpp」を試す",
+      "date": "2026-07-20T03:36:00+09:00",
+      "executive_summary": [
+        "audio.cpp は ggml ベースの C++ オーディオ推論フレームワークとして紹介されている。",
+        "Python 依存を避け、複数モデルを共通のネイティブランタイムで扱う狙いがある。",
+        "TTS、STT、VAD、音声変換、音楽生成など幅広いタスクを単一フレームワークで扱える。",
+        "CUDA では TTS の一部経路で Python 実装比 1.8倍から5.0倍の高速化が示されている。",
+        "Supertonic 3 では RTX5090 上で約10時間分の音声を3分で生成した例が挙げられている。",
+        "ASR でも Nemotron 3.5 ASR が同等 WER のまま実行時間を約4分の1にしたとされる。",
+        "対応モデルが多いため、概要を把握したうえでモデルごとの差分を都度確認する必要がある。"
+      ],
+      "key_findings": [
+        {
+          "point": "audio.cpp は ggml を基盤にした高性能な C++ オーディオ推論フレームワークである。",
+          "footnote": "記事本文に「ggmlを基盤として構築された高性能なC++オーディオ推論フレームワーク」とある。"
+        },
+        {
+          "point": "Python 環境や依存関係の複雑さを避け、複数の音声モデルを共通ランタイムで試せることが価値として示されている。",
+          "footnote": "記事本文に「10種類以上のConda環境」や「数百ものPythonパッケージ」を避け、「共通のネイティブランタイムで共有」とある。"
+        },
+        {
+          "point": "CUDA 最適化により、複数 TTS パスで Python ベースの参照実装より高速化している。",
+          "footnote": "記事本文に「1.8倍～5.0倍の高速化」「エンドツーエンドのレイテンシも45%～80%削減」とある。"
+        },
+        {
+          "point": "VibeVoice 1.5B では 93.9分のポッドキャストを18.2分で生成する性能例が示された。",
+          "footnote": "記事本文に「93.9分のポッドキャストを18.2分で生成可能」「実時間の約5.15倍」とある。"
+        },
+        {
+          "point": "Supertonic 3 では RTX5090 上で約10時間分のオーディオを3分で生成した例がある。",
+          "footnote": "記事本文に「RTX5090上で約10時間分のオーディオを3分で生成可能」とある。"
+        },
+        {
+          "point": "ASR では Nemotron 3.5 ASR がノイズの多い会議音声で同等 WER のまま実行時間を短縮したとされる。",
+          "footnote": "記事本文に「同等の単語誤り率（WER）を達成しつつ、実行時間を約1/4に短縮」とある。"
+        },
+        {
+          "point": "サポート範囲は TTS、ASR、VAD、ダイアライゼーション、音源分離など多岐にわたる。",
+          "footnote": "記事本文に「テキスト読み上げ、音声クローン、音声変換、自動音声認識、話者ダイアライゼーション、音声活動検出、音源分離」などが列挙されている。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/cf1b98613e30e0",
+        "https://github.com/0xShug0/audio.cpp"
+      ],
+      "retrieved_at": "2026-07-20T09:01:25+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/f8b16a3139ebb1",
+      "title": "「AutoArk-AI/Audio8-ASR-0.1B」を試す",
+      "date": "2026-07-19T21:47:00+09:00",
+      "executive_summary": [
+        "Audio8-ASR-0.1B は小規模なプロダクション対応 ASR モデルとして紹介されている。",
+        "100M パラメータ、ピークメモリ200MB未満、クラウド不要という軽量性が強調されている。",
+        "ONNX Runtime と Apple Neural Engine を使ったデバイス上展開が想定されている。",
+        "対応言語は Mandarin、English、French、German、Japanese、Korean、Cantonese の7言語とされる。",
+        "筆者は Mac M2 Pro で ONNX 版 Web UI と PyTorch 版の推論スクリプトを試している。",
+        "ONNX 版では30秒超の音声切り詰めと512トークン制限が実用上の制約として確認された。",
+        "長時間音声では安定性に難があり、現時点では30秒前提の用途に限る評価になっている。"
+      ],
+      "key_findings": [
+        {
+          "point": "Audio8-ASR-0.1B はクラウドレベル精度をうたう小型 ASR モデルとして公開された。",
+          "footnote": "記事内の引用に「クラウドレベルの精度を備えた最小規模のプロダクション対応ASRモデルの一つ」とある。"
+        },
+        {
+          "point": "モデルは 100M パラメータで、ピークメモリ200MB未満という軽量性を前面に出している。",
+          "footnote": "記事本文に「わずか100Mのパラメータ、ピークメモリ200MB未満」とある。"
+        },
+        {
+          "point": "オンデバイス利用では ONNX Runtime と Apple Neural Engine、低遅延、高プライバシーが特徴として示された。",
+          "footnote": "記事本文に「ONNX Runtime + Apple Neural Engine」「低遅延かつ高いプライバシーを備えたローカル転写」とある。"
+        },
+        {
+          "point": "ONNX 版の実行時制限として、30秒超の音声切り詰めと512トークン上限がある。",
+          "footnote": "記事本文に「30秒を超える音声データは...自動的に切り詰め」「最大512トークンまでに制限」とある。"
+        },
+        {
+          "point": "PyTorch 版では短い日本語音声の文字起こしに成功している。",
+          "footnote": "記事本文に短い音声の出力として「おはようございます。今日はとてもいいお天気ですね...」とある。"
+        },
+        {
+          "point": "5分音声では30秒制限で出力が途中までになった。",
+          "footnote": "記事本文に5分音声の試行後「ここは30秒制限で切れている」とある。"
+        },
+        {
+          "point": "max_audio_seconds と max_new_tokens を増やしても安定した文字起こしには至らなかった。",
+          "footnote": "記事本文に「色々パラメータの組み合わせを試してみたのだが、安定して文字起こしできる感がない」とある。"
+        },
+        {
+          "point": "ライセンス変更への懸念がある。",
+          "footnote": "記事本文に「元々はApache-2.0で公開されたみたいだけど、あとからCC-BY-NC-4.0に変更されてるっぽくて」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/f8b16a3139ebb1",
+        "https://huggingface.co/AutoArk-AI/Audio8-ASR-0.1B"
+      ],
+      "retrieved_at": "2026-07-20T09:01:44+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/5abdf28aed50f0",
+      "title": "メモ: Octen Embedding",
+      "date": "2026-07-18T18:42:00+09:00",
+      "executive_summary": [
+        "記事は Nemotron 3 Embed の評価をきっかけに Octen Embedding に注目したメモである。",
+        "NVIDIA の投稿では Nemotron 3 Embed 8B が RTEB 総合1位に達したとされている。",
+        "筆者はリーダーボード上位に Octen のモデルが並んでいる点を発見している。",
+        "Octen の Embedding モデルは5つほど確認され、すべて Apache-2.0 ライセンスと記載されている。",
+        "モデル群は Qwen3-Embedding からのファインチューニングらしいと整理されている。",
+        "Octen は AI 向け検索インフラ/API を提供する会社として紹介されている。",
+        "Text embedding モデルは OSS として公開され、その他の検索・抽出・マルチモーダル機能はサービス提供と見られている。"
+      ],
+      "key_findings": [
+        {
+          "point": "Nemotron 3 Embed 8B は RTEB で総合1位に到達したと NVIDIA が投稿している。",
+          "footnote": "記事内の埋め込み投稿に「Nemotron 3 Embed 8B and it reached #1 overall on RTEB」とある。"
+        },
+        {
+          "point": "筆者は Voyage 系モデルが上位に並ぶ中で Nemotron 3 Embed 8B が1位である点を高く評価している。",
+          "footnote": "記事本文に「Voyageの各モデルが上位に並んでいて、その中で Nemotron 3 Embed 8B が1位ってのはすごい」とある。"
+        },
+        {
+          "point": "Octen の Embedding モデルがリーダーボード上位に複数並んでいることが観察されている。",
+          "footnote": "記事本文に「Octenという会社のモデルが上位に並んでいる」とある。"
+        },
+        {
+          "point": "Octen の公開モデルは 0.6B、4B、4B-INT8、8B、8B-INT8 の5種類としてリンクされている。",
+          "footnote": "記事本文に「モデルは5つほどあった」とあり、各 Hugging Face モデルカードへのリンクが続いている。"
+        },
+        {
+          "point": "公開モデルはすべて Apache-2.0 ライセンスと記載されている。",
+          "footnote": "記事本文に「全部Apache-2.0ライセンス」とある。"
+        },
+        {
+          "point": "Octen Embedding 群は Qwen3-Embedding 由来のファインチューニングと見られている。",
+          "footnote": "記事本文に「全てQwen3-Embeddingからのファインチューニングみたい」とある。"
+        },
+        {
+          "point": "Octen は AI が大量の検索結果を高速に取得して推論に使うことを前提にした検索インフラとして説明されている。",
+          "footnote": "記事本文に「AIが大量の検索結果を高速に取得し、そのまま推論に使うことを前提」とある。"
+        },
+        {
+          "point": "筆者は Text embedding は OSS、その他の検索・抽出などはサービス提供という位置づけと見ている。",
+          "footnote": "記事本文に「Text embeddingモデルだけOSSで公開」「その他の...検索・抽出等をサービスとして提供」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/5abdf28aed50f0",
+        "https://huggingface.co/Octen/Octen-Embedding-0.6B",
+        "https://octen.ai/"
+      ],
+      "retrieved_at": "2026-07-20T09:01:58+09:00"
+    }
+  ]
+}
