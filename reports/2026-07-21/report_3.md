@@ -1,0 +1,239 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-07-21T00:00:00+09:00
+- Articles: 9
+
+## 米軍、新たにイラン攻撃 ブシェール原発付近で防空作動と報道
+
+### Executive Summary
+- トップニュース枠では、米軍による新たなイラン攻撃の報道が最上位に表示されていた。
+- 記事はロイター配信として表示され、Google ニュース上の時刻は「3 時間前」だった。
+- 見出しは、ブシェール原発付近で防空作動があったとの報道を含んでいる。
+- 同じトップニュース枠には、トランプ氏の警告や停戦模索に関する関連報道も並んでいた。
+- TBS NEWS DIG は、イラン大統領が「全面戦争の状態にある」と述べた趣旨の記事を掲出していた。
+- 読売新聞は、米軍の連続攻撃と仲介国による10日間停戦案の報道を扱っていた。
+- このニュース群は、中東情勢の軍事的緊張と外交的仲介の両面を示している。
+
+### Key Findings
+- 米軍の新たなイラン攻撃がトップニュースとして扱われた。 [^]
+  - Footnote: Google ニュースのトップニュース枠に「米軍、新たにイラン攻撃 ブシェール原発付近で防空作動と報道」と表示。
+- 提供元はロイターとして表示された。 [^]
+  - Footnote: 該当記事の提供元欄に「ロイター」と表示。
+- 速報性の高い記事として扱われていた。 [^]
+  - Footnote: 該当記事の時刻欄に「3 時間前」と表示。
+- ブシェール原発付近の防空作動が見出し上の主要要素だった。 [^]
+  - Footnote: 見出しに「ブシェール原発付近で防空作動と報道」と明記。
+- 関連ニュースでは停戦模索も並行して報じられていた。 [^]
+  - Footnote: Yahoo!ニュース枠に「仲介国は停戦模索」とある Bloomberg 関連見出しが表示。
+
+### References
+- https://news.google.com/read/CBMiekFVX3lxTE1pZ1lNbmZzQlFvRURva2x5bkpubzRXM1JkUF83Y1V3MWtPVW5VejVOSHg5VUNhY1VaSGhELWl4aURJVmtTZW5HS3h2M0lUTk5ZbVBVWl96QlFoUFlJY3phaks5QVdJUE96V0JEd3Y5TkRwX25lS1F3LVZ3?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 救急隊員のコンビニ利用、福岡県内で容認拡大　「サボっていると市民から苦情」原則禁止の消防本部も
+
+### Executive Summary
+- ローカルニュース枠では、西日本新聞me の福岡・九州ニュースが表示されていた。
+- 記事は救急隊員のコンビニ利用をめぐる運用の変化を扱っている。
+- 福岡県内で容認が広がっている一方、原則禁止の消防本部もあると見出しに示されている。
+- 禁止の背景として、市民から「サボっている」と苦情が出る事情が示されている。
+- 救急隊員の勤務環境や休憩・補給の扱いが地域行政の課題になっている。
+- 同じローカル枠には、福岡県議会の金銭授受疑惑や人質司法体験の記事も並んでいた。
+- 地域ニュースとして、公共サービス従事者への市民理解が焦点になっている。
+
+### Key Findings
+- 救急隊員のコンビニ利用容認が福岡県内で拡大している。 [^]
+  - Footnote: 見出しに「救急隊員のコンビニ利用、福岡県内で容認拡大」と表示。
+- 一部消防本部では原則禁止が続いている。 [^]
+  - Footnote: 見出しに「原則禁止の消防本部も」と表示。
+- 市民からの苦情が運用判断に影響している。 [^]
+  - Footnote: 見出しに「『サボっていると市民から苦情』」と表示。
+- 提供元は西日本新聞me のローカル枠だった。 [^]
+  - Footnote: ニュース提供元として「西日本新聞me」、枠見出しとして「福岡・九州のニュース」と表示。
+- 取得時点ではGoogleニュース上に相対時刻だけが表示され、ISO日付は確認できなかった。 [^]
+  - Footnote: 同枠の時刻表示は「2 時間前」で、記事単位の絶対日付は確認できなかった。
+
+### References
+- https://news.google.com/read/CBMihAJBVV95cUxPNWc3VEwyemhnWlZycFIwU0lDSjZBM096VnNzcUFRS2pnVG00c0EyYVV4S0U5VWNvb0szX2JvcUwtLVBnYVE3dGFOdmlwZTBsZVAyaW9HM3BmVlZRVkpSQWl1ZjhkWmFUYnpNVXpPSW1YVzBaWmhtZThVQkFMZzEtbWJnVkgxUGFNbll1TkluNUExLUJBbEp5V2I3Rll0Y0lTSkdNaC1HTzhQeHdfNXdIeE5NVmhkR1Ezcmp0dFppUXhHenYxakZWeWoyb0hqSnZsa3dxMklVOHVmUzdweWRubEYtTHZ1MFRmSlhSaFA1WThDQlp4azAwV1JnZXlpeWpIbWZaeA?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 【ワークマン】アイスが6時間も溶けない“天才保冷アイテム”まるで冷蔵庫を持ち歩いているみたい！「暑い日でも1日中身が冷たいまま」「余裕で半日はカチカチです」「お茶も夜まで冷たかった」《購入レビュー》
+
+### Executive Summary
+- おすすめ相当の枠では、ダイヤモンド・オンラインの保冷アイテム購入レビューが表示されていた。
+- 記事はワークマンの商品を取り上げ、保冷性能を前面に出している。
+- 見出しでは、アイスが6時間溶けないという具体的な使用感が示されている。
+- 暑い日でも中身が冷たいままだったという利用者視点の表現が含まれている。
+- お茶も夜まで冷たかったという追加の使用例が示されている。
+- 猛暑関連のニュースが多い画面文脈の中で、暑さ対策用品として関心を集めている。
+- ログイン必須の個人化おすすめではなく、ログインなしで表示されたその他ニュースから採用した。
+
+### Key Findings
+- 商品レビュー記事として保冷性能が中心テーマだった。 [^]
+  - Footnote: 見出しに「アイスが6時間も溶けない」「天才保冷アイテム」と表示。
+- ワークマンの商品が対象だった。 [^]
+  - Footnote: 見出し冒頭に「【ワークマン】」と表示。
+- 暑い日の利用シーンが強調されていた。 [^]
+  - Footnote: 見出しに「暑い日でも1日中身が冷たいまま」と表示。
+- 半日程度の保冷を示す体験談が見出しに含まれていた。 [^]
+  - Footnote: 見出しに「余裕で半日はカチカチです」と表示。
+- 提供元と時刻は Google ニュース上で確認できた。 [^]
+  - Footnote: 提供元は「ダイヤモンド・オンライン」、時刻は「23 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMiTEFVX3lxTFByMUNEcmFNQXFscjk1UDhqalNKZkhDd0c0QzlNVVR2bjlHYjlaR2JvaTduRUhPOW1LLU5JVDJKeUhPM1lSbkl4OXppLWLSAU9BVV95cUxOdmZHalo2Mzl4ZmRNdlpwRDByT3RsWmZ4S2tZV3MzTTMtTU8xUkc3YUNIeHBPYnZCYXdKaXZLZmRWd0N5M0ZsUFFuVXpaUDRB?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 今日21日　東海や関東で危険な暑さ　40℃以上の酷暑日予想　熱中症に厳重警戒(気象予報士 久保　智子 2026年07月21日)
+- Date: 2026-07-21T00:00:00+09:00
+
+### Executive Summary
+- トピック_日本では、tenki.jp の猛暑・熱中症警戒記事が最上位に表示されていた。
+- 記事は2026年7月21日の東海・関東の危険な暑さを扱っている。
+- 見出しには40℃以上の酷暑日予想が明記されている。
+- 熱中症への厳重警戒が呼びかけられている。
+- 執筆者として気象予報士の久保智子氏が表示されていた。
+- Google ニュース上の時刻は「3 時間前」だった。
+- 日本トピック内では、天候リスクと防災行動が主要テーマになっている。
+
+### Key Findings
+- 東海や関東で危険な暑さが予想されている。 [^]
+  - Footnote: 見出しに「東海や関東で危険な暑さ」と表示。
+- 40℃以上の酷暑日予想が示された。 [^]
+  - Footnote: 見出しに「40℃以上の酷暑日予想」と表示。
+- 熱中症への厳重警戒が必要とされている。 [^]
+  - Footnote: 見出しに「熱中症に厳重警戒」と表示。
+- 記事日付は見出し内で2026年7月21日と確認できた。 [^]
+  - Footnote: 見出し末尾に「2026年07月21日」と表示。
+- 専門家名が表示された気象解説記事だった。 [^]
+  - Footnote: 見出しに「気象予報士 久保 智子」と表示。
+
+### References
+- https://news.google.com/read/CBMibkFVX3lxTE5LRUVLUXpXN2pkZFNnclRLX0VYZ0toQUFIbXFDMVFmcXNiMjI2a1UxRFFOSjhkTS1NbFZDZUhuTDFUNGNUWFBEXy1NcmVGRUpGY0lVZXk4R2dNdTJZR2t6REZ4eUhSQnVMcXEtak930gFzQVVfeXFMT25wNWFsWTRxMS1VZkluRnZ1R3E3QmoyLUZsYlY0enpxTTRIUTdUdmQ5U3pSR0w3b2xCX1FiWl95T285VU1kNHgzcFVCVENsTTBibmVUTVJNYndWcGRIcmtvSENsQ0JEZi1mdnJJYXJKdUtiUQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 反町隆史＆松嶋菜々子、『GTO』初回でいきなり”夫婦共演”実現　やりとりに視聴者も大興奮「こんな豪華なやり取り見れるとは」「あんなラブラブな感じだったのに、、、」
+
+### Executive Summary
+- トピック_エンタメでは、GTO 初回に関する芸能記事が表示されていた。
+- 記事は反町隆史氏と松嶋菜々子氏の夫婦共演を中心に扱っている。
+- 見出しでは、初回で共演が実現したことが強調されている。
+- 視聴者の反応として、大興奮や豪華なやり取りへの言及が示されている。
+- 提供元は dメニューニュースとして表示されていた。
+- Google ニュース上の時刻は「3 時間前」だった。
+- エンタメ枠では、番組の話題性と出演者の関係性が主要な訴求点になっている。
+
+### Key Findings
+- GTO 初回の話題がエンタメ枠で扱われた。 [^]
+  - Footnote: エンタメ枠に「『GTO』初回で」とある見出しが表示。
+- 反町隆史氏と松嶋菜々子氏の共演が中心だった。 [^]
+  - Footnote: 見出しに「反町隆史＆松嶋菜々子」「夫婦共演」と表示。
+- 視聴者反応が記事の重要要素だった。 [^]
+  - Footnote: 見出しに「視聴者も大興奮」と表示。
+- 共演の意外性や豪華さが強調されていた。 [^]
+  - Footnote: 見出しに「こんな豪華なやり取り見れるとは」と表示。
+- 提供元と時刻はログインなしで確認できた。 [^]
+  - Footnote: 提供元は「ｄメニューニュース」、時刻は「3 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMigAFBVV95cUxORjYxTjZWeC1zaEJ5M0dCX1RUejNLcS0xV2RZSDcxYXlSUnlEc29jTWRMNVZCM2lra0k5R2FkTDJ1Q2F5MnlMUHMyanN5ekQ5aml5U0pQZE9mbEZLSXgtRG5kZUFxMlZKUjQtN192MTR6UnJCR0N2R2pUUkJhUlVXcdIBhgFBVV95cUxPODI4cmRLbjFGZWdhWVVWT0lCNGl2dkpfU0NpR0JyMngzcEJrTmdsYTBNNzB1c0FqZlNXVDB2Z3lnRllzSU1Lb19WZ0pCaEQ0bGYwa1Q1cE56ZXNnamlGUGF3QUhhOFY1YnNscDhZY2lJTHZfX0JVdnFPNXR2SjE4Qy1SVU5sZw?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ＮＹダウ続落、終値３０７ドル安の５万１８３９ドル…金融や消費関連銘柄に売り
+
+### Executive Summary
+- トピック_ビジネスでは、読売新聞のNYダウ続落記事が表示されていた。
+- 見出しは、終値が307ドル安の5万1839ドルだったことを伝えている。
+- 下落の背景として、金融や消費関連銘柄への売りが示されている。
+- 同じビジネス枠には、原油続伸や金小幅反落の記事も並んでいた。
+- マーケット情報として、株式・商品市場の動きが同時に示されている。
+- Google ニュース上の時刻は「3 時間前」だった。
+- ビジネス枠では、米国市場の下落と中東情勢に関連する商品市場の変動が焦点になっている。
+
+### Key Findings
+- NYダウは続落したと報じられた。 [^]
+  - Footnote: 見出しに「ＮＹダウ続落」と表示。
+- 終値の下落幅は307ドルだった。 [^]
+  - Footnote: 見出しに「終値３０７ドル安」と表示。
+- 終値水準は5万1839ドルと表示された。 [^]
+  - Footnote: 見出しに「５万１８３９ドル」と表示。
+- 売りの中心は金融や消費関連銘柄だった。 [^]
+  - Footnote: 見出しに「金融や消費関連銘柄に売り」と表示。
+- 関連する商品市況として原油続伸も表示されていた。 [^]
+  - Footnote: 同じビジネス枠に「NY商品、原油続伸 中東情勢の悪化懸念 金は小幅反落」と表示。
+
+### References
+- https://news.google.com/read/CBMiZEFVX3lxTE1sdUNGUGVLMzNiY0swNHJ0alg2OWdvZnRTeHRQeUNob1NRQ0RPRDk4b2dndUFPRXZFQnZCSktOLTFOcGRvcDU5R1dQcmJVQmdWV1ExSWEyeEd6NTBCN1VIYktUeDM?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 宇宙関連ニュース検索結果
+
+### Executive Summary
+- トピック_宇宙はホーム画面の固定トピックとしては表示されなかった。
+- 対応範囲内で、Google ニュース上の検索対象として「宇宙」を扱うレポート項目を作成した。
+- 取得時点のホーム画面には、科学＆テクノロジーの一般枠は表示されていた。
+- 科学＆テクノロジー枠では、ゲーム、Canva、任天堂関連の記事が確認できた。
+- 宇宙専用の記事タイトルはホーム画面上で確認できなかった。
+- そのため、記事固有の本文要約ではなく、検索カテゴリ候補として記録した。
+- 不明な日付と記事本文は null 相当として扱い、予測による穴埋めは行っていない。
+
+### Key Findings
+- ホーム画面には宇宙専用トピックが表示されなかった。 [^]
+  - Footnote: ナビゲーションとトピック一覧に「科学＆テクノロジー」はあったが「宇宙」は確認できなかった。
+- 科学＆テクノロジー枠は確認できた。 [^]
+  - Footnote: リンク一覧に「科学＆テクノロジー」が表示。
+- 同枠の上位記事は宇宙ではなくゲームやWeb制作関連だった。 [^]
+  - Footnote: 同枠に「『紅の砂漠』」「Canvaコード 2.0」「任天堂から教授に」と表示。
+- ログインなしで宇宙記事の具体本文は取得できなかった。 [^]
+  - Footnote: ホーム画面抽出結果に宇宙記事の個別タイトルは含まれなかった。
+- 検索URLを参照先として残した。 [^]
+  - Footnote: 参照先に Google ニュース検索 URL「q=宇宙」を設定。
+
+### References
+- https://news.google.com/search?q=%E5%AE%87%E5%AE%99&hl=ja&gl=JP&ceid=JP%3Aja
+
+## 画像 | 最悪の場合､意識障害で倒れる…医師｢水代わりのつもりが血糖値を強烈に上昇させる危険な飲み物の名前｣
+
+### Executive Summary
+- トピック_栄養に相当する記事として、健康・飲料摂取に関する PRESIDENT Online の記事を採用した。
+- 見出しは、水代わりに飲むことで血糖値を強く上昇させる危険な飲み物を扱っている。
+- 最悪の場合は意識障害で倒れる可能性があると見出しに示されている。
+- 医師のコメントを軸にした健康リスク記事として表示されていた。
+- 提供元は PRESIDENT Online、記者・ライターは池谷敏郎氏と表示された。
+- Google ニュース上の時刻は「12 時間前」だった。
+- 栄養・健康管理の観点では、暑い時期の飲料選択と血糖リスクが主要テーマになっている。
+
+### Key Findings
+- 飲料による血糖値上昇リスクが中心テーマだった。 [^]
+  - Footnote: 見出しに「血糖値を強烈に上昇させる危険な飲み物」と表示。
+- 水代わりの摂取が問題として示されている。 [^]
+  - Footnote: 見出しに「水代わりのつもりが」と表示。
+- 重い健康影響として意識障害が挙げられている。 [^]
+  - Footnote: 見出しに「最悪の場合､意識障害で倒れる」と表示。
+- 医師の見解をもとにした記事だった。 [^]
+  - Footnote: 見出しに「医師」と表示され、記者/ライター欄に「池谷 敏郎」と表示。
+- 提供元と時刻は確認できた。 [^]
+  - Footnote: 提供元は「PRESIDENT Online（プレジデントオンライン）」、時刻は「12 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMiW0FVX3lxTE84LURyUm80cElpYkVjSVpONThad2R2Mi01dmV4VFZVU2VTcVktempVd0w5TWl4VlZxeGdISzc2RUFMaER0TTV0Skp3ZUZ1b3FlX2dwYkVsT1JMemM?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 世界の少子化は二つの普遍的経路に沿って進む
+
+### Executive Summary
+- 興味深いニュース枠では、riken.jp の少子化に関する記事が最上位に表示されていた。
+- 記事は世界の少子化が二つの普遍的経路に沿って進むという内容を扱っている。
+- 提供元は riken.jp と表示されていた。
+- Google ニュース上の時刻は「4 日前」だった。
+- 興味深いニュース枠には、モーター、ゲーム、空き家DIYビジネスの記事も並んでいた。
+- 少子化の記事は、科学・社会分析寄りの注目記事として扱われている。
+- 本文の詳細は取得していないため、見出しとGoogleニュース表示内容に基づく要約に限定した。
+
+### Key Findings
+- 世界的な少子化がテーマだった。 [^]
+  - Footnote: 見出しに「世界の少子化」と表示。
+- 少子化の進行に二つの経路があると示されている。 [^]
+  - Footnote: 見出しに「二つの普遍的経路に沿って進む」と表示。
+- 提供元は理化学研究所系の riken.jp だった。 [^]
+  - Footnote: 提供元欄に「riken.jp」と表示。
+- 掲載から一定時間が経過した注目記事として表示されていた。 [^]
+  - Footnote: 時刻欄に「4 日前」と表示。
+- 興味深いニュース枠の最上位に表示されていた。 [^]
+  - Footnote: 「興味深いニュース」「注目の記事と話題の記事」の直下に表示。
+
+### References
+- https://news.google.com/read/CBMiY0FVX3lxTE8yX1QtQ2NDWTVLSXpDUmktQkxUeHI0Uk1Ubk1IUzhZVENOWlAzZFdWcE1FYVdGX0VEU19Wa25qSmVtSEE0WVZmX2JQNWFKMlNQbUU4TEcwREdya0UtYzVYTzZ5RQ?hl=ja&gl=JP&ceid=JP%3Aja

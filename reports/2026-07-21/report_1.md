@@ -1,0 +1,92 @@
+# AI Common Report (https://zenn.dev/kun432?tab=scraps)
+
+- Generated at: 2026-07-21T09:02:41.2348733+09:00
+- Articles: 3
+
+## Agents-A1
+
+### Executive Summary
+- Agents-A1 は長期的タスク向けのエージェント型モデルとして紹介されている。
+- 検索、エンジニアリング、科学研究、指示追従、ツール呼び出しを対象領域にしている。
+- 35B-A3B MoE に加えて 4B Dense 版がリリースされ、注目度が上がっている。
+- モデルは Hugging Face Transformers、vLLM、SGLang などとの互換性があると説明されている。
+- 4B 版は小型ながら長期探索や科学系エージェント評価で高いスコアを示している。
+- 学習面では全ドメイン SFT、ドメイン教師モデル、マルチ教師蒸留の 3 段階が説明されている。
+- 筆者は長いトークンでエージェント的な振る舞いを学習させ、35B でも巨大モデル級に張り合う方向性と見ている。
+
+### Key Findings
+- Agents-A1 は 35B MoE エージェント型モデルとして、長期的な検索や研究タスクを主な対象にしている。 [^]
+  - Footnote: 記事本文に「検索、エンジニアリング、科学研究、指示追従、ツール呼び出しにわたる長期的タスク向けに構築された、35B MoE エージェント型モデル」とある。
+- 最新の話題化要因は 4B モデルの追加リリースにある。 [^]
+  - Footnote: モデルカードのニュースとして「2026年7月14日: 4Bモデルをリリースしました」と引用されている。
+- 公開バリエーションは 35B-A3B MoE と 4B Dense の双方に BF16、FP8、GGUF が用意されている。 [^]
+  - Footnote: 記事では「35B-A3B MoE」「4B Dense」それぞれに「BF16」「FP8」「GGUF（Q4_K_M / Q8_0 / F16）」が列挙されている。
+- Agents-A1 はツール利用を前提に、API、コードインタープリタ、検索エンジンなどと連携できる設計とされている。 [^]
+  - Footnote: 主な特徴として「関数呼び出し機能とツール統合機能を標準搭載」と説明されている。
+- 4B 版は BrowseComp 66.8、XBench-DS-2510 90.0、GAIA 95.1 など、小規模モデルとして高い評価値を示している。 [^]
+  - Footnote: 性能評価表に「BrowseComp 66.8」「XBench-DS-2510 90.0」「GAIA 95.1」が掲載されている。
+- 35B 版は複数ベンチマークで首位評価が示され、長期探索と科学系エージェント能力が強調されている。 [^]
+  - Footnote: 表では 35B-A3B MoE の Agents-A1 が BrowseComp 75.5、GAIA 96.0、SciCode 44.3、FrontierScience-Research 40.0 で最高評価として示されている。
+
+### References
+- https://zenn.dev/kun432/scraps/c070bfe51ac731
+
+## 「audio.cpp」を試す
+
+### Executive Summary
+- audio.cpp は ggml ベースの C++ オーディオ推論フレームワークとして紹介されている。
+- TTS、ASR、音声クローン、音声変換、VAD、音源分離など幅広い音声タスクを対象にしている。
+- Python 環境の複雑な依存関係を避け、共通のネイティブランタイムで複数モデルを扱う狙いがある。
+- CUDA では TTS パスで 1.8 倍から 5.0 倍の高速化、レイテンシ 45% から 80% 削減が示されている。
+- Mac M2 Pro では Metal ビルドスクリプトで CLI バイナリを作成する流れが試されている。
+- CLI は task、family、model、backend を指定する設計で、モデル管理ツールも用意されている。
+- 筆者は README の情報量が多く、モデルごとの差分が大きいため、使うモデルごとに調べるのがよいと見ている。
+
+### Key Findings
+- audio.cpp はローカルオーディオモデルを高速かつ移植性高く動かすための C++ フレームワークである。 [^]
+  - Footnote: 本文に「ggmlを基盤として構築された高性能なC++オーディオ推論フレームワーク」とある。
+- 複数の Python 環境や依存関係競合を避ける共通ランタイムとしての価値が強調されている。 [^]
+  - Footnote: 記事では「10種類以上のConda環境」や「数百ものPythonパッケージ」を管理せずに済む文脈で紹介されている。
+- CUDA 実行では TTS の高速化とレイテンシ削減が大きな訴求点になっている。 [^]
+  - Footnote: README 抜粋に「1.8倍～5.0倍の高速化」「エンドツーエンドのレイテンシも45%～80%削減」とある。
+- Supertonic 3 では RTX5090 上で約 10 時間分の音声を 3 分で生成可能という性能例が示されている。 [^]
+  - Footnote: 本文に「RTX5090上で約10時間分のオーディオを3分で生成可能」と記載されている。
+- 対応タスクは TTS、ASR、ダイアライゼーション、VAD、音源分離、アライメントなど広範囲である。 [^]
+  - Footnote: 記事本文に「テキスト読み上げ（TTS）、音声クローン、音声変換、自動音声認識（ASR）、話者ダイアライゼーション、音声活動検出（VAD）、音源分離、音声アライメント」などが列挙されている。
+- Mac では build_metal.sh により audiocpp_cli を作成する手順が確認されている。 [^]
+  - Footnote: 筆者は「scripts/build_metal.sh --target audiocpp_cli」を実行し、出力に「audiocpp_cli」が生成されたことを示している。
+- モデル取得には tools/model_manager.py が用意され、list、info、install などのコマンドを持つ。 [^]
+  - Footnote: 本文に「サポート対象モデルパッケージを...ダウンロードするためのモデル管理ツール tools/model_manager.py」とあり、主要コマンドとして list、info、install が説明されている。
+
+### References
+- https://zenn.dev/kun432/scraps/cf1b98613e30e0
+
+## 「AutoArk-AI/Audio8-ASR-0.1B」を試す
+
+### Executive Summary
+- Audio8-ASR-0.1B は小型のプロダクション対応 ASR モデルとして紹介されている。
+- 言語モデル部分は約 0.1B パラメータで、エンドツーエンド固有パラメータは約 0.324B とされる。
+- 対応言語は中国語、英語、フランス語、ドイツ語、日本語、韓国語、広東語の 7 言語である。
+- ONNX Runtime 版と iOS ANE 版が用意され、エッジデバイスや iPhone ローカル転写を想定している。
+- ONNX 版では 30 秒音声制限と 512 トークンのキャッシュ制限が実利用上の制約として確認されている。
+- PyTorch 版では max_audio_seconds や max_new_tokens を変更できるが、長尺では安定性に課題が見られた。
+- 筆者は 30 秒制約を活かせる用途なら軽量に使える可能性がある一方、ライセンス変更を注意点として挙げている。
+
+### Key Findings
+- Audio8-ASR-0.1B はクラウド不要のオンデバイス ASR を狙った小型モデルである。 [^]
+  - Footnote: 冒頭に「クラウドレベルの精度を備えた最小規模のプロダクション対応ASRモデルの一つ」「クラウドは不要」とある。
+- 公称では 100M パラメータ、ピークメモリ 200MB 未満が強調されている。 [^]
+  - Footnote: 本文に「わずか100Mのパラメータ、ピークメモリ200MB未満」と記載されている。
+- 対応言語は Mandarin、English、French、German、Japanese、Korean、Cantonese の 7 言語である。 [^]
+  - Footnote: デバイス展開向けの箇条書きに「7言語：Mandarin、English、French、German、Japanese、Korean、Cantonese」とある。
+- ONNX Runtime 版のピークメモリは約 1.1GB、iOS 版は約 200MB と説明されている。 [^]
+  - Footnote: モデルカード抜粋に「ONNX Runtime版...ピーク時のメモリ使用量は約1.1GB」「iOS版...約200MB」とある。
+- Open ASR Leaderboard の 7 分割平均では WER 7.03、H200 RTFx 741.15 が示されている。 [^]
+  - Footnote: 評価結果表に「7分割平均 / 複合スコア」「WER / RTFx」「7.03」「741.15」が掲載されている。
+- ONNX 版は 30 秒超の音声が自動的に切り詰められ、デコーダーのキャッシュも 512 トークンに制限される。 [^]
+  - Footnote: 実行時の制限事項として「30秒を超える音声データは...自動的に切り詰め」「デコーダーのキャッシュコンテキストは最大512トークン」と説明されている。
+- PyTorch サンプルでは長尺パラメータを増やせるが、筆者の検証では安定した文字起こし感は得られていない。 [^]
+  - Footnote: 筆者は --max_audio_seconds と --max_new_tokens を増やした後、「安定して文字起こしできる感がない」「今のところ30秒限定して使うのが安定」と述べている。
+
+### References
+- https://zenn.dev/kun432/scraps/f8b16a3139ebb1
