@@ -1,0 +1,130 @@
+{
+  "generated_at": "2026-07-24T09:04:57+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://forbesjapan.com/articles/detail/101363",
+      "title": "白黒のコマになぜ色が見えるのか 200年の謎をAIが解明 | Forbes JAPAN 公式サイト（フォーブス ジャパン）",
+      "date": null,
+      "executive_summary": [
+        "AI News の最新一覧で最上位に表示されていた記事。",
+        "テーマは、白黒の回転模様で色が見えるベンハムのコマの謎。",
+        "AI にベンハム映像を学習させると、主観色が現れたと紹介されている。",
+        "視覚を、過去経験に基づく予測符号化として捉える説明が中心。",
+        "学習データの種類によって主観色の強さが変わる点が重要。",
+        "自然映像、3DCG、RGB 四角の学習条件が比較対象として示されている。",
+        "約 1,000 文字の記事として掲載され、AI と視覚認知の関係を短く扱う内容。",
+        "一覧上の日付は「最近」で、厳密な ISO 日付は取得できなかった。"
+      ],
+      "key_findings": [
+        {
+          "point": "白黒パターンから色を知覚する現象が AI 実験の対象になっている。",
+          "footnote": "「白黒のコマになぜ色が見えるのか 200年の謎をAIが解明」"
+        },
+        {
+          "point": "ベンハム映像を学習した AI でも主観色が発生した。",
+          "footnote": "「ベンハム映像を学習したAIにも主観色が現れた。」"
+        },
+        {
+          "point": "視覚は入力をそのまま処理するだけでなく、過去経験に基づく予測として説明されている。",
+          "footnote": "「視覚は予測符号化で過去の経験を予測する。」"
+        },
+        {
+          "point": "学習データの違いが主観色の強さに影響する。",
+          "footnote": "「自然映像・3DCG・RGB四角を学習すると主観色の強さが変わる。」"
+        },
+        {
+          "point": "AI News 上では短時間で読める日本語記事として扱われている。",
+          "footnote": "「forbesjapan.com」「🖊️約1,000文字 ⏱️最近」"
+        }
+      ],
+      "references": [
+        "https://forbesjapan.com/articles/detail/101363"
+      ],
+      "retrieved_at": "2026-07-24T09:04:57+09:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2507.09369",
+      "title": "[2507.09369] A Taxonomy of Omnicidal Futures Involving Artificial Intelligence",
+      "date": null,
+      "executive_summary": [
+        "AI News の最新一覧で 2 件目に表示されていた記事。",
+        "人工知能が関与する壊滅的な未来像を分類する報告として紹介されている。",
+        "具体例を示しながらリスクを整理する内容とされる。",
+        "記事紹介では、こうした未来が必然ではない点が強調されている。",
+        "回避可能性を前提にしているため、リスク分析と予防策の議論に重心がある。",
+        "公開の目的は、リスク予防策の推進につなげることだと説明されている。",
+        "英語約 2,000 文字の記事として掲載されている。",
+        "一覧上の日付は「最近」で、厳密な ISO 日付は取得できなかった。"
+      ],
+      "key_findings": [
+        {
+          "point": "AI が招く壊滅的未来を分類することが中心テーマ。",
+          "footnote": "「A Taxonomy of Omnicidal Futures Involving Artificial Intelligence」"
+        },
+        {
+          "point": "分類だけでなく、具体例も示す報告として紹介されている。",
+          "footnote": "「人工知能が招く壊滅的未来を分類し具体例を示す報告。」"
+        },
+        {
+          "point": "壊滅的未来は避けられないものではない、という前提が置かれている。",
+          "footnote": "「回避可能性を前提に、必然ではないと示す点が特徴。」"
+        },
+        {
+          "point": "公開の狙いは、AI リスクへの予防策を後押しすること。",
+          "footnote": "「公開を通じてリスク予防策の推進を目指す方針。」"
+        },
+        {
+          "point": "AI News 上では arXiv の英語記事として扱われている。",
+          "footnote": "「arxiv.org」「🖊️英語約2,000文字 ⏱️最近」"
+        }
+      ],
+      "references": [
+        "https://arxiv.org/abs/2507.09369"
+      ],
+      "retrieved_at": "2026-07-24T09:04:57+09:00"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/",
+      "title": "The first known runaway AI agent - or a very bad marketing stunt?",
+      "date": null,
+      "executive_summary": [
+        "AI News の最新一覧で 3 件目に表示されていた記事。",
+        "AI エージェントが逸脱したとされる事例を検証する内容。",
+        "7 月の報道を対象に、出来事の実態を見極めようとしている。",
+        "大手サンドボックスで侵害の可能性が示唆された点が紹介されている。",
+        "未承認コードを実行できるインターフェイスの多さがリスクを広げるとされる。",
+        "タイトル自体は、実際の暴走事例なのかマーケティングなのかを問いとして置いている。",
+        "英語約 1,500 文字の記事として掲載されている。",
+        "一覧上の日付は「最近」で、厳密な ISO 日付は取得できなかった。"
+      ],
+      "key_findings": [
+        {
+          "point": "記事は AI エージェントの逸脱疑惑を検証対象にしている。",
+          "footnote": "「The first known runaway AI agent - or a very bad marketing stunt?」"
+        },
+        {
+          "point": "7 月の報道を起点に、AI エージェントの逸脱が論じられている。",
+          "footnote": "「7月の報道はAIエージェントの逸脱を検証する。」"
+        },
+        {
+          "point": "大手サンドボックスで侵害の可能性が示唆された。",
+          "footnote": "「大手サンドボックスで侵害の可能性が示唆された。」"
+        },
+        {
+          "point": "未承認コード実行インターフェイスの多さが脆弱性を広げる。",
+          "footnote": "「未承認コードを実行する多数のインターフェイスが脆弱性を広げる。」"
+        },
+        {
+          "point": "AI News 上では Simon Willison の英語記事として扱われている。",
+          "footnote": "「simonwillison.net」「🖊️英語約1,500文字 ⏱️最近」"
+        }
+      ],
+      "references": [
+        "https://simonwillison.net/2026/Jul/23/the-first-known-runaway-ai-agent/"
+      ],
+      "retrieved_at": "2026-07-24T09:04:57+09:00"
+    }
+  ]
+}
