@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-07-25T09:01:50.6284886+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/2386dace3b19df",
+      "title": "メモ: DSPy / GEPA / optimize_anything / optimize_anything omni",
+      "date": null,
+      "executive_summary": [
+        "DSPy、GEPA、optimize_anything、omni の関係を整理したスクラップである。",
+        "DSPy は LLM システムをプログラムとして構築し、評価可能にする枠組みとして説明されている。",
+        "GEPA は実行結果の振り返りを使い、プロンプトや指示を改善する最適化手法として位置付けられている。",
+        "optimize_anything は、プロンプトだけでなくコードや設定など任意の文字列成果物を最適化対象に広げる。",
+        "新しい API では GEPA、AutoResearch、Meta-Harness など複数エンジンを共通インターフェースで切り替えられる。",
+        "単独の最適化方式では問題ごとの得意不得意や停滞があり、1 つを選ぶだけでは安定しない。",
+        "omni は複数方式を試して最良候補を選び、別セッションで仕上げるメタ最適化として紹介されている。"
+      ],
+      "key_findings": [
+        {
+          "point": "単一の LLM オプティマイザが全タスクで優位になるわけではない。",
+          "footnote": "記事では「GEPA、AutoResearch、Meta-Harnessがそれぞれ異なるタスクで優位に立ち、単一のLLMオプティマイザがすべてで勝つものは存在しない」と紹介している。"
+        },
+        {
+          "point": "DSPy は LLM システムを構造化されたプログラムとして定義し、Optimizer で改善できる。",
+          "footnote": "本文では Signature、Module、Program、Metric、Optimizer を DSPy の構成要素として挙げ、compile は指示や few-shot 例などを調整する処理だと説明している。"
+        },
+        {
+          "point": "GEPA は数値スコアだけでなく、失敗理由などの自然言語フィードバックを改善に使う。",
+          "footnote": "本文では GEPA が現在のプロンプト、実際の入出力、スコア、フィードバックを LLM に見せ、Reflective Prompt Evolution と呼ぶ方法で改善すると説明している。"
+        },
+        {
+          "point": "optimize_anything は、評価関数で品質を測れる文字列成果物全般に GEPA 的な最適化を広げる。",
+          "footnote": "記事では Python コード、SQL、設定ファイル、エージェントの Skill、シェルスクリプト、SVG なども文字列として扱える例に挙げている。"
+        },
+        {
+          "point": "複数エンジンは同じタスク、評価関数、目的、予算のまま交換可能になった。",
+          "footnote": "本文では engine=\"gepa\"、engine=\"autoresearch\"、engine=\"meta_harness\" の切り替え例と、初期候補・評価関数・目的・評価環境・予算が共通化されたことを説明している。"
+        },
+        {
+          "point": "Frontier-CS 10 問では平均スコアだけでなく問題別勝者も分散した。",
+          "footnote": "記事は平均スコアを GEPA 43.8、AutoResearch 55.4、Meta-Harness 50.9 とし、問題別の最高スコア数は GEPA 3、AutoResearch 3、Meta-Harness 4 としている。"
+        },
+        {
+          "point": "omni は同じ 20 ドル予算でも単独方式より高い結果を出したとされる。",
+          "footnote": "本文では omni-AutoResearch が 63.2、omni-GEPA が 61.8、omni-Meta-Harness が 59.3 で、最良の単独方式 AutoResearch 55.4 を上回ったと示している。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/2386dace3b19df",
+        "https://gepa-ai.github.io/gepa/blog/2026/07/22/optimize-anything-omni/"
+      ],
+      "retrieved_at": "2026-07-25T09:01:50.6284886+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/77f4dd669bc319",
+      "title": "「APEX Quant」を試す",
+      "date": null,
+      "executive_summary": [
+        "APEX Quant を、MoE モデル向けの混合精度量子化手法として試したスクラップである。",
+        "目的は GGUF モデルの精度を保ちながら、サイズを削減し、推論速度も改善することにある。",
+        "通常の一律量子化ではなく、MoE の routed experts、shared expert、attention などを分けて扱う点が特徴である。",
+        "レイヤー位置によってビット幅を変える layer-wise gradient も重要な要素として説明されている。",
+        "I-Quality、Balanced、Compact、Mini など、VRAM と精度要求に応じた tier が用意されている。",
+        "筆者は公開済み APEX 量子化 GGUF を llama.cpp で動かし、標準 llama.cpp のまま動作することを確認している。",
+        "自前量子化では llama.cpp のビルド、F16 GGUF 変換、APEX Quant の scripts/quantize.sh 実行という流れを整理している。"
+      ],
+      "key_findings": [
+        {
+          "point": "APEX Quant は MoE モデルの構造に応じてビット幅を割り当てる量子化ルール集である。",
+          "footnote": "本文では「MoEモデル専用の、超工夫された量子化ルール集」とし、どの部分を何 bit で圧縮するかを丁寧に最適化すると説明している。"
+        },
+        {
+          "point": "サイズ削減と精度維持を両立する具体例として、35B MoE の複数サイズが示されている。",
+          "footnote": "記事では F16 64.6GB、Q8_0 34.4GB、APEX I-Quality 21.3GB、APEX Mini 12.2GB の例を挙げている。"
+        },
+        {
+          "point": "MoE-aware テンソル分類により、routed experts と shared expert を異なる精度で扱う。",
+          "footnote": "本文では routed experts は 1 トークンごとに一部しか呼ばれないため強めに量子化し、shared expert は毎トークン通るため最低でも Q8_0 必須と説明している。"
+        },
+        {
+          "point": "レイヤー位置によって精度を変えることで、エッジ層を守りつつ中間層を圧縮する。",
+          "footnote": "記事では L0-L4 と L35-L39 は Q6_K、近傍は Q5_K、中間 L10-L29 は Q4_K や IQ4_XS まで落とす構成を説明している。"
+        },
+        {
+          "point": "I-variants は実用タスク寄りの imatrix を使い、Wikipedia 系 perplexity より実タスク性能を重視する。",
+          "footnote": "本文では I 系がチャット、コード、推論、ツール呼び出しのデータでキャリブレーションし、HellaSwag、MMLU、TruthfulQA では良くなると説明している。"
+        },
+        {
+          "point": "公開済みモデルは標準 llama.cpp でそのまま動作することが確認されている。",
+          "footnote": "記事では README の「標準の llama.cpp を使用しており、コードの変更は一切必要ありません」という説明を引用し、実際に llama-cli で起動した結果を載せている。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/77f4dd669bc319",
+        "https://github.com/localai-org/apex-quant"
+      ],
+      "retrieved_at": "2026-07-25T09:01:50.6284886+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/66dc2af219472a",
+      "title": "LocalAI のいろいろな C++ 実装",
+      "date": null,
+      "executive_summary": [
+        "LocalAI 周辺の C++、GGML ネイティブ推論エンジンを整理したスクラップである。",
+        "LocalAI はテキスト生成だけでなく、音声、画像、動画、物体検出など幅広いローカル AI タスクを扱うものとして説明されている。",
+        "筆者は過去に parakeet.cpp を試し、CPU でも非常に高速に動作した記憶を手掛かりに再調査している。",
+        "共通方針として、Python、PyTorch、onnxruntime、CUDA toolkit を推論時に使わない C/C++/GGML 実装が強調されている。",
+        "音声認識、話者認識、音声合成、音響処理、LLM、画像、3D 生成、量子化まで、多数の実装が列挙されている。",
+        "多くの実装は GGUF 形式で配布され、GPU バックエンドにも対応する設計としてまとめられている。",
+        "低リソース環境では、whisper.cpp や llama.cpp に着想を得た同種の C++ 実装を探す価値があるという示唆で締めている。"
+      ],
+      "key_findings": [
+        {
+          "point": "LocalAI は複数モダリティのローカル推論を簡単に動かす方向のプロジェクトとして捉えられている。",
+          "footnote": "本文ではテキスト生成、音声認識・音声合成、画像・動画認識、画像・動画生成、物体検出などを対象例として挙げている。"
+        },
+        {
+          "point": "LocalAI には C++/GGML で再実装された多数の推論エンジンが統合されている。",
+          "footnote": "記事では「既存の実装を C++/ggmlで再実装したプロジェクトがLocalAIには多数ある」と述べている。"
+        },
+        {
+          "point": "共通設計として、推論時の Python や PyTorch 依存を避ける from-scratch 実装が掲げられている。",
+          "footnote": "本文の共通設計哲学では、from-scratch の C/C++/GGML 実装で、推論時に Python・PyTorch・onnxruntime・CUDA toolkit を使わないと説明している。"
+        },
+        {
+          "point": "モデル配布は自己完結した GGUF ファイルを重視している。",
+          "footnote": "記事ではモデルは自己完結した 1 個の GGUF ファイルとして配布されるとまとめている。"
+        },
+        {
+          "point": "音声領域だけでも ASR、話者認識、TTS、音響イベント分類、音質改善など広い範囲をカバーしている。",
+          "footnote": "本文では parakeet.cpp、moss-transcribe.cpp、voice-detect.cpp、vibevoice.cpp、moss-tts.cpp、ced.cpp、LocalVQE などを列挙している。"
+        },
+        {
+          "point": "vllm.cpp は ggml を使わない例外的な純 C++ 実装として扱われている。",
+          "footnote": "記事では vllm.cpp を例外的に ggml を使わない独自の純 C++ 実装と注記している。"
+        },
+        {
+          "point": "APEX Quant は推論エンジン本体ではなく、GGUF を生成する量子化手法として整理されている。",
+          "footnote": "本文では apex-quant を GGUF 生成ツールであり、MoE モデル向けの混合精度量子化手法と説明している。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/66dc2af219472a",
+        "https://github.com/mudler/LocalAI",
+        "https://github.com/localai-org"
+      ],
+      "retrieved_at": "2026-07-25T09:01:50.6284886+09:00"
+    }
+  ]
+}

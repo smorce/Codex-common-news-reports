@@ -1,0 +1,238 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-07-25T09:08:06+09:00
+- Articles: 9
+
+## 維新・吉村氏、「同日選目指す」宣言 副首都法付帯決議に反し
+
+### Executive Summary
+- Google ニュースのトップニュース枠で確認した政治記事である。
+- 記事は維新の吉村代表が「同日選を目指す」と発言した点を扱っている。
+- 副首都法の付帯決議との整合性が焦点として示されている。
+- 同じ話題では副首都法成立や野党反発の記事も並んでいる。
+- 政治日程と制度運用の関係が争点になっている。
+- 提供元は毎日新聞で、表示時点では10時間前の記事だった。
+- 本文詳細はログインや配信元制約の可能性があるため、Google ニュース上の確認情報に限定した。
+
+### Key Findings
+- トップニュース枠の主要政治記事として掲載されていた。 [^]
+  - Footnote: Google ニュース本文に「トップニュース」「毎日新聞」「維新・吉村氏、『同日選目指す』宣言」と表示。
+- 吉村氏の同日選発言が記事の中心である。 [^]
+  - Footnote: 見出しに「『同日選目指す』宣言」と明記。
+- 副首都法の付帯決議との関係が問題化している。 [^]
+  - Footnote: 見出しに「副首都法付帯決議に反し」と記載。
+- 関連ニュースでは副首都法成立への野党反発も確認できる。 [^]
+  - Footnote: 同じ枠に「副首都法2票差で成立 野党は反発」と表示。
+- 最新性は当日内のニュースとして扱える。 [^]
+  - Footnote: Google ニュース上の時刻表示は「10 時間前」。
+
+### References
+- https://news.google.com/read/CBMiaEFVX3lxTE5yVldFME9ZT012cDk1bmVhX0syUmdMNkZoWWc0cnpTR094S3IzbTI1RVVVNm1oQ29SQVV6d3Z1S3VnbkxVTEVhMlh5SGlkNnE0UjJMc3U4a1UzLWxKaFhiaFRRd3RZc0kx?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 身近な人のケアできる社会に 女性の健康課題の変化紹介 横浜で31日までパネル展
+
+### Executive Summary
+- ローカルニュース枠から横浜のパネル展に関する記事を取得した。
+- 記事は女性の健康課題の変化を紹介する展示を扱っている。
+- 身近な人をケアできる社会づくりがテーマとして示されている。
+- 開催場所は横浜で、期間は31日までと表示されている。
+- 地域の健康啓発イベントとしての性格が強い。
+- 提供元は東京新聞デジタルで、表示時点では1時間前の記事だった。
+- 本文全文は確認できないため、見出しと掲載情報に基づき要約した。
+
+### Key Findings
+- ローカルニュース枠に掲載された横浜関連の記事である。 [^]
+  - Footnote: Google ニュース本文に「ローカル ニュース」と当該見出しが表示。
+- 女性の健康課題の変化を紹介する内容である。 [^]
+  - Footnote: 見出しに「女性の健康課題の変化紹介」と記載。
+- 社会的なケアのあり方が主題に含まれる。 [^]
+  - Footnote: 見出しに「身近な人のケアできる社会に」と記載。
+- イベントは横浜で開催されている。 [^]
+  - Footnote: 見出しに「横浜で31日までパネル展」と記載。
+- 最新性は高い。 [^]
+  - Footnote: Google ニュース上の時刻表示は「1 時間前」。
+
+### References
+- https://news.google.com/read/CBMiU0FVX3lxTFBKQ09CUFJPZi1XcEhmTmJXUC02TmN6R2VaTnpyZlhqcmxrbDFRRTZXOXpEeXNmVlNDd1RlRG1kdlBzRUNodkdMcVZBQW13UVBnVVFv?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 署内で性行為、警察官減給 熊本、当直勤務中の男女（共同通信）
+
+### Executive Summary
+- おすすめ欄のログイン不要候補から取得した記事である。
+- 熊本の警察官に対する懲戒処分を扱っている。
+- 当直勤務中の男女警察官による署内での行為が問題とされている。
+- 処分内容は減給と見出しに示されている。
+- 共同通信配信の記事が Yahoo!ニュースに掲載されたものとして表示されている。
+- 表示時点では15時間前の記事だった。
+- 詳細な処分理由や組織対応は本文未確認のため、見出し情報に限定した。
+
+### Key Findings
+- おすすめ欄の「その他のニュース」内に掲載されていた。 [^]
+  - Footnote: Google ニュース本文に「あなたへのおすすめ」「その他のニュース」と当該見出しが表示。
+- 警察官の勤務規律に関する不祥事である。 [^]
+  - Footnote: 見出しに「署内で性行為、警察官減給」と記載。
+- 発生地または関係地は熊本である。 [^]
+  - Footnote: 見出しに「熊本」と記載。
+- 当直勤務中の男女が対象とされている。 [^]
+  - Footnote: 見出しに「当直勤務中の男女」と記載。
+- 共同通信配信として表示されている。 [^]
+  - Footnote: 見出しに「（共同通信）」と記載。
+
+### References
+- https://news.google.com/read/CBMif0FVX3lxTE5VUUFmUEx6ak1Lb3AzYjB4UVBEUTdXNFNtbWxfdnROb3d1Q2Y5M042WWRVX0pHWk9UeFl3d0tqU3VIclpSQWp6bHlHTGNjOGtVMmhQRVdHQkdOc3V4dG1NOG1DaFJsVDdVV2tEekpzTE1YNmI1V25BWHdHazFEUnM?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 週間天気予報 猛烈な暑さが継続 全国的に強雨や雷雨に注意
+
+### Executive Summary
+- トピック_日本枠から天気に関する最新記事を取得した。
+- 記事は猛暑の継続を主な注意点としている。
+- 全国的な強雨や雷雨にも注意が必要とされている。
+- 同じ日本枠には名古屋など40度予想の記事も並んでいた。
+- 暑さと急な天候変化の両方が生活リスクとして示されている。
+- 提供元はウェザーニュースで、表示時点では3時間前の記事だった。
+- 予報の具体地域・時系列は本文未確認のため、見出し情報に限定した。
+
+### Key Findings
+- 日本トピック内の天気記事として掲載されていた。 [^]
+  - Footnote: Google ニュース本文に「トピック」「日本」「週間天気予報」と表示。
+- 猛暑の継続が主な警戒点である。 [^]
+  - Footnote: 見出しに「猛烈な暑さが継続」と記載。
+- 強雨や雷雨への注意も必要とされている。 [^]
+  - Footnote: 見出しに「全国的に強雨や雷雨に注意」と記載。
+- 同トピックでは40度予想も扱われていた。 [^]
+  - Footnote: 同じ枠に「25日は名古屋など40℃予想」と表示。
+- 最新性は当日内である。 [^]
+  - Footnote: Google ニュース上の時刻表示は「3 時間前」。
+
+### References
+- https://news.google.com/read/CBMiVEFVX3lxTFBDZjRRa05zSzNYTHJ6R29WY21GeVJCM09pemN1ZUo0ZjhTVTVESWVGZXhXVzdVRVEwa0hVVXhRQnUwWkhZTU1LUEN6UkxRdWYtdExTeg?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 「心配になるくらいげっそり」 阿部寛、突然の“激痩せ姿”に視聴者衝撃 “生出演でさらした顔”に「大丈夫かな」「超小顔に見える」（1/2） | ドラマ ねとらぼ
+
+### Executive Summary
+- トピック_エンタメ枠から、俳優・阿部寛さんの生出演時の姿に関する記事を取得した。
+- 記事は視聴者が突然の激痩せ姿に驚いた反応を扱っている。
+- 見出しでは「心配になるくらいげっそり」という受け止めが強調されている。
+- 生出演で見えた顔つきについて「大丈夫かな」「超小顔に見える」といった反応が紹介されている。
+- ドラマ関連の記事として、芸能・テレビ視聴者反応の文脈で掲載されている。
+- 提供元はねとらぼで、表示時点では9時間前の記事だった。
+- 本人の健康状態など、見出しから確認できない内容は推測していない。
+
+### Key Findings
+- エンタメ枠に掲載されていた芸能記事である。 [^]
+  - Footnote: Google ニュース本文に「エンタメ」「ねとらぼ」と当該見出しが表示。
+- 阿部寛さんの生出演時の見た目が話題になっている。 [^]
+  - Footnote: 見出しに「阿部寛、突然の“激痩せ姿”に視聴者衝撃」と記載。
+- 視聴者の心配する反応が記事の軸である。 [^]
+  - Footnote: 見出しに「心配になるくらいげっそり」「大丈夫かな」と記載。
+- 顔つきの変化へのコメントも紹介されている。 [^]
+  - Footnote: 見出しに「超小顔に見える」と記載。
+- 表示上は当日内のエンタメニュースである。 [^]
+  - Footnote: Google ニュース上の時刻表示は「9 時間前」。
+
+### References
+- https://news.google.com/read/CBMiXkFVX3lxTE56bFZ1eTdaRDlmZjVFY3ZnRmVIeUdGRURLQVR0UWJhVG9la01GenBFRWhESnRhLVVMdm1fbnNzaXhoS2NMVWlXenJMd2RiY2RER2o1RWV3ZjVQNEJxd0HSAWNBVV95cUxPQWxnVGN5Y19vSE5GYmhyb214VnJrSzUyTXhZdEJzMHdZcGZiM1d4X1AtenpfUzlJRi05WURiZWtWQ3kycTFIV09hMVplcEQxWjNZSll0YTFIV1FsZEhkejlNbWM?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 米国株式市場＝まちまち、ＡＩ投資巡る懸念でナスダック続落
+
+### Executive Summary
+- トピック_ビジネス枠から米国株式市場の記事を取得した。
+- 米国株はまちまちの展開だったとされている。
+- AI投資をめぐる懸念がナスダック続落の要因として示されている。
+- 同じ枠にはコメ民間在庫量の過去最大記事も並んでいた。
+- 市場ではAI関連投資への期待と警戒が同時に意識されている。
+- 提供元はロイターで、記者名も表示されていた。
+- 表示時点では2時間前の記事で、速報性が高い。
+
+### Key Findings
+- ビジネス枠の先頭付近に掲載されていた。 [^]
+  - Footnote: Google ニュース本文に「ビジネス」「米国株式市場＝まちまち」と表示。
+- 米国株市場全体は方向感が分かれた。 [^]
+  - Footnote: 見出しに「まちまち」と記載。
+- ナスダックは続落した。 [^]
+  - Footnote: 見出しに「ナスダック続落」と記載。
+- AI投資への懸念が市場材料になっている。 [^]
+  - Footnote: 見出しに「ＡＩ投資巡る懸念」と記載。
+- ロイター配信で記者名が表示されている。 [^]
+  - Footnote: Google ニュース上に「記者/ライター: Ragini Mathur、シネイド・カルー」と表示。
+
+### References
+- https://news.google.com/read/CBMigAFBVV95cUxNck43UEFwYkQ3UGJNYTAyWXV0R2djd0EwbmhfTUxCMFpqQTN1d2x3aU1LX1FBZDQ3SkxIbkZzaURpS21ZOEl1eEotUTZsLXRXelZxb2NwODlqM09nMkszM3NmUTFYMVdaNkN5aFJJXzhucDdPdGMxek9SMmh3b1hJUg?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 「謎の電波」受信から半世紀、日米の天文学者ら「宇宙人探し」…来夏に世界で一斉に観測へ
+
+### Executive Summary
+- トピック_宇宙として Google ニュース検索「宇宙」から取得した。
+- 記事は半世紀前の「謎の電波」受信を起点にした天文学者の観測計画を扱っている。
+- 日米の天文学者らが宇宙人探しを進めるとされている。
+- 来夏に世界で一斉観測を行う計画が見出しに示されている。
+- 宇宙生命探索と電波天文学の話題である。
+- 提供元は読売新聞で、表示時点では18時間前の記事だった。
+- 観測対象や手法の詳細は本文未確認のため不明である。
+
+### Key Findings
+- 宇宙検索結果で上位に表示された科学記事である。 [^]
+  - Footnote: Google ニュース検索結果に当該見出しが表示。
+- 半世紀前の謎の電波受信が文脈になっている。 [^]
+  - Footnote: 見出しに「『謎の電波』受信から半世紀」と記載。
+- 日米の天文学者が関与している。 [^]
+  - Footnote: 見出しに「日米の天文学者ら」と記載。
+- 世界規模の一斉観測が予定されている。 [^]
+  - Footnote: 見出しに「来夏に世界で一斉に観測へ」と記載。
+- 最新性は当日内である。 [^]
+  - Footnote: Google ニュース上の時刻表示は「18 時間前」。
+
+### References
+- https://news.google.com/read/CBMiZEFVX3lxTE1TRFBBTmdLN3lDNWgxcDZvWUR5RHdqTU5fN0ZITndvYzYtRVVqNlV1ekpyZHo0cDQtTTRDdWNBNE14QUUyakI2MHhTNFBrUl81aVByUDhuemZEQ0xsYnR5U3VEclI?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 韓国、食品栄養情報32万7000件を一元化…国家データ基盤「K-FIND」始動
+
+### Executive Summary
+- トピック_栄養として Google ニュース検索「栄養」から取得した。
+- 韓国で食品栄養情報を一元化する国家データ基盤が始動したという記事である。
+- データ件数は32万7000件と見出しに示されている。
+- 名称は「K-FIND」とされている。
+- 食品栄養情報の標準化や利活用に関わる政策・データ基盤のニュースである。
+- 提供元はAFPBB Newsで、表示時点では12時間前の記事だった。
+- 制度の運用主体や利用方法の詳細は本文未確認のため不明である。
+
+### Key Findings
+- 栄養検索結果で確認した最新性の高い記事である。 [^]
+  - Footnote: Google ニュース検索結果に当該見出しが表示。
+- 韓国の食品栄養情報データ基盤に関する記事である。 [^]
+  - Footnote: 見出しに「韓国、食品栄養情報」と記載。
+- 一元化対象は32万7000件とされる。 [^]
+  - Footnote: 見出しに「32万7000件を一元化」と記載。
+- 国家データ基盤の名称はK-FINDである。 [^]
+  - Footnote: 見出しに「国家データ基盤『K-FIND』始動」と記載。
+- 配信元はAFPBB Newsである。 [^]
+  - Footnote: Google ニュース上に「AFPBB News」と表示。
+
+### References
+- https://news.google.com/read/CBMickFVX3lxTE8xRVVmdk1PTVZVXzg2ZXQyQTZUMk5IalJ6NjRWNldtWGpvSnJhVG1neEFCTHVYWHJzUFRHVEZ5eG5pVkhBSy00ekxUWlZYQmFGdm1WQTkwTDlsU3NWMkhsZ1NOUDhXY1pfZWJkaTZING1UZ9IBVEFVX3lxTFBnM0NJSzI2LTc3ek14djYtRkxkRDJURkoyZWNmZUlqemZQSVQ5d3k2cXhPWVRxOHpaeDhmaXVHM0tpQU9YUEdGNExvQVk1S0JiU3VQTg?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 戦後81年の夏 ～「戦争と平和」に向き合い続ける～｜NHKスペシャル
+
+### Executive Summary
+- 興味深いニュース枠から NHK スペシャル関連の記事を取得した。
+- 記事は戦後81年の夏をテーマにしている。
+- 戦争と平和に向き合い続けるという企画性が見出しに示されている。
+- 興味深いニュース欄では注目記事・話題記事として掲載されていた。
+- 過去の戦争体験や平和をめぐる報道・番組企画に関係する内容と考えられる。
+- 提供元はNHKで、表示時点では2日前の記事だった。
+- 番組内容の詳細は本文未確認のため、見出し情報に限定した。
+
+### Key Findings
+- 興味深いニュース枠の先頭候補として表示されていた。 [^]
+  - Footnote: Google ニュース本文に「興味深いニュース」「注目の記事と話題の記事」と当該見出しが表示。
+- 戦後81年が中心テーマである。 [^]
+  - Footnote: 見出しに「戦後81年の夏」と記載。
+- 戦争と平和への継続的な向き合い方を扱う。 [^]
+  - Footnote: 見出しに「『戦争と平和』に向き合い続ける」と記載。
+- NHKスペシャル関連のコンテンツである。 [^]
+  - Footnote: 見出し末尾に「NHKスペシャル」と記載。
+- 最新枠ではないが、話題記事として掲載されていた。 [^]
+  - Footnote: Google ニュース上の時刻表示は「2 日前」。
+
+### References
+- https://news.google.com/read/CBMid0FVX3lxTE1wM1EtZkd1TVdLeHNNbkFTcEI3NkUydlJtcG44RzBtNHlvVGNMME9UZzhXaFZNZjFlQjhXdktUVURQLWVybW9ibzhRWjZ3Vl9vdXpHdXNIakh3VHJEaFhTa0lweDBlMWJScWpYbTV6aTd4SXFKdUow?hl=ja&gl=JP&ceid=JP%3Aja
