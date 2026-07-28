@@ -1,0 +1,238 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-07-28T09:09:19.6057995+09:00
+- Articles: 9
+
+## 実務者会議 消費減税の意見集約を断念（ABEMA TIMES）
+
+### Executive Summary
+- TOPニュースから、消費減税をめぐる実務者会議の記事を抽出した。
+- 報道は、会議が意見集約を断念した点を中心に伝えている。
+- 消費税率や減税案をめぐる与野党・政府内の調整が難航していることが示される。
+- Google ニュース上では Yahoo!ニュース配信、ABEMA TIMES記事として表示されていた。
+- 表示時点では公開から35分前とされ、速報性の高い記事だった。
+- 本文詳細は取得できていないため、政策影響の具体的範囲は断定しない。
+- 今後は首相判断や法案提出時期が焦点になると読める。
+
+### Key Findings
+- 消費減税の意見集約は成立しなかった。 [^]
+  - Footnote: 見出しに「実務者会議 消費減税の意見集約を断念」と表示。
+- 記事は政治・経済政策上の調整難を扱う。 [^]
+  - Footnote: TOPニュース枠で消費減税関連の記事群として掲載。
+- 配信元は Yahoo!ニュース経由の ABEMA TIMES。 [^]
+  - Footnote: Google ニュースの aria 情報に「ABEMA TIMES） - Yahoo!ニュース」と表示。
+- 速報性が高い記事である。 [^]
+  - Footnote: Google ニュースの表示時刻は「35 分前」。
+- 詳細な合意内容や代替案は不明。 [^]
+  - Footnote: 取得できた情報は見出し、配信元、表示時刻に限られる。
+
+### References
+- https://news.google.com/read/CBMif0FVX3lxTE5ZRS1CYkplQXBvTGpEZFRpQ0gxeG1yWjROeEpWVUJGemtvcWFha2JuZlplRm14MGlGSGEzR2pBdkVhOS00WmpaN0lCcUg1a2dlMDRBWlRHVE0wenFNcW05bkhQVlpvTFl4aFhwY21aTUFwNVBWZVZVX2xEZE51dGc?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 星の上を歩くような体験を楽しむ
+
+### Executive Summary
+- ローカルニュースから、横浜周辺の体験型イベントとみられる記事を抽出した。
+- 見出しは「星の上を歩くような体験」を訴求している。
+- 掲載元はヨコハマ経済新聞で、地域情報として扱われている。
+- Google ニュース上では公開から5時間前と表示された。
+- 具体的な会場、開催期間、参加条件は本文未取得のため不明である。
+- 地域の観光・イベント需要に関係する話題と位置づけられる。
+- ログイン必須記事ではない候補として一覧から取得した。
+
+### Key Findings
+- 地域イベントまたは体験企画に関する記事である。 [^]
+  - Footnote: 見出しに「星の上を歩くような体験を楽しむ」と表示。
+- 横浜のローカル情報として掲載されていた。 [^]
+  - Footnote: Google ニュースの「ローカル ニュース」欄に表示。
+- 配信元はヨコハマ経済新聞。 [^]
+  - Footnote: aria 情報に「ヨコハマ経済新聞」と表示。
+- 比較的新しい地域記事である。 [^]
+  - Footnote: Google ニュースの表示時刻は「5 時間前」。
+- 詳細情報は本文確認が必要である。 [^]
+  - Footnote: 取得できた本文情報は見出しと媒体表示まで。
+
+### References
+- https://news.google.com/read/CBMiU0FVX3lxTE9WcWhxeHA2UU9WbWhvZ0RlN3ppZE9rbDJjR1ZWLThyWTdhTFNjVEJpMDlaQ2tOdlo0bG9nMGE5Nmk2bEMxQXpZYTNwUW9LeG1ZVndB?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 「楽天モバイルWiFiスポット」を試してみた　屋内通信の不満解消へ期待も「接続性」に課題 - ITmedia Mobile
+
+### Executive Summary
+- おすすめ枠から、楽天モバイルの WiFi スポット試用記事を抽出した。
+- 記事は屋内通信の改善可能性と接続性の課題を並べて扱っている。
+- ITmedia Mobile の検証記事として Google ニュースに表示された。
+- 公開時刻は2日前で、最新速報ではなく実用レビュー系の記事である。
+- 屋内通信品質に不満を持つユーザー向けの参考情報になり得る。
+- 一方で、接続性に課題が残るという留保が見出しで明示されている。
+- 本文未取得のため、検証場所や測定条件は不明である。
+
+### Key Findings
+- 楽天モバイルWiFiスポットの実利用レビューである。 [^]
+  - Footnote: 見出しに「試してみた」と表示。
+- 屋内通信の改善期待が論点になっている。 [^]
+  - Footnote: 見出しに「屋内通信の不満解消へ期待」と表示。
+- 接続性には課題があるとされる。 [^]
+  - Footnote: 見出しに「『接続性』に課題」と表示。
+- 媒体は ITmedia Mobile。 [^]
+  - Footnote: Google ニュース表示に「ITmedia Mobile - ITmedia」と表示。
+- 記事は数日前のおすすめ枠記事である。 [^]
+  - Footnote: Google ニュースの表示時刻は「2 日前」。
+
+### References
+- https://news.google.com/read/CBMib0FVX3lxTE1CVmszYkN0OU4xdVFLWHJXdDZmV2dTU0ZNTFo3SWY2QlV2dUlQOEVwNnVnSGJ5QndwVzBISTJvVmFFU1RJdXhRclpWbHctd3RqdjNxeVlqOUR1UngtNXFJRmFPenZSbjZOOHFOcDJrWdIBaEFVX3lxTE9EYm1UTVJlcEFOWlJ4VGRjYXRrYXNaQWltSHFrME1JZk1iRmhyR2U3a25lajRsT0lWSUpHT3pnMVBtMDhmREw2ajRUZlZHdmEtdGVOaFFmTXZ2a3ZmbGVUY3FVUVJmejlu?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 台風13号(ドルフィン) 日本列島方面へ北上してくる可能性も
+
+### Executive Summary
+- トピック_日本から、台風13号に関する気象ニュースを抽出した。
+- 記事は台風13号が日本列島方面へ北上する可能性を伝えている。
+- 配信元はウェザーニュースで、気象リスクに関する速報性のある情報である。
+- Google ニュース上では3時間前の記事として表示された。
+- 進路や影響範囲は変動し得るため、最新の気象情報確認が必要である。
+- 本文未取得のため、予報円や警戒地域の詳細は不明である。
+- 日本カテゴリ内では防災上の関心が高い記事といえる。
+
+### Key Findings
+- 台風13号の北上可能性が報じられている。 [^]
+  - Footnote: 見出しに「日本列島方面へ北上してくる可能性も」と表示。
+- 対象は台風13号、名称はドルフィンである。 [^]
+  - Footnote: 見出しに「台風13号(ドルフィン)」と表示。
+- 日本カテゴリに掲載された。 [^]
+  - Footnote: Google ニュースの「日本」セクションに表示。
+- 媒体はウェザーニュース。 [^]
+  - Footnote: aria 情報に「ウェザーニュース」と表示。
+- 新しい気象情報である。 [^]
+  - Footnote: Google ニュースの表示時刻は「3 時間前」。
+
+### References
+- https://news.google.com/read/CBMiVEFVX3lxTE1xazJCLTMxWDlmeUV6eVYtbnBPRk9oSF9ZSzJCTW9XWGlNTEtSS01wYjFkYVFsRzFwRGtpc1Zwek1lRUkxSEVudVVTaFg2RjhnN1R3Ug?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 東野圭吾さん、今年初めに車いすで舞台あいさつ登壇　５月頃にはとてもやせた姿で新作の試写会へ
+
+### Executive Summary
+- トピック_エンタメから、東野圭吾さんに関する記事を抽出した。
+- 記事は舞台あいさつや新作試写会での様子に触れている。
+- 媒体は日刊スポーツで、芸能・文化ニュースとして表示された。
+- Google ニュース上では11時間前の記事である。
+- 見出しは体調や近況を示唆する表現を含む。
+- 本文未取得のため、本人発言や関係者証言の有無は不明である。
+- センシティブな体調情報を含む可能性があるため、見出し以上の推測は避ける。
+
+### Key Findings
+- 東野圭吾さんの近況が記事化されている。 [^]
+  - Footnote: 見出しに「東野圭吾さん」と表示。
+- 車いすで舞台あいさつに登壇したとされる。 [^]
+  - Footnote: 見出しに「今年初めに車いすで舞台あいさつ登壇」と表示。
+- 新作試写会での姿にも言及している。 [^]
+  - Footnote: 見出しに「５月頃にはとてもやせた姿で新作の試写会へ」と表示。
+- 媒体は日刊スポーツ。 [^]
+  - Footnote: aria 情報に「日刊スポーツ」と表示。
+- エンタメ枠の比較的新しい記事である。 [^]
+  - Footnote: Google ニュースの表示時刻は「11 時間前」。
+
+### References
+- https://news.google.com/read/CBMid0FVX3lxTE9Hczk0eXJIVWl2a1N6YVJXN2dPaWFrQzB4dkFacWN6MnVGZ1VWZzNNc1JZaTRsWU5DNVd1a0JWOVhYVGItSmJKb3dnRk83NEQyYm1lY3NGb3UzRjJ6bFZ5bVhwVjhONXFpSm1RTHRCSGZnT18teEpN0gF_QVVfeXFMT2FQcnRnaUpERWJwM3lzVXRjZzRaOHpmYUNabllRa1l0Wkx5SmZ3N0ZqLWlCR0hySkJIRjNGQ0FmTEVyLS1PdFdMblBwc1ZvalpfRXo5NmlhcExqNV9QMUg1RFZiQ0tSdHVUcW4wSTFubjZSTm03RWJEUGJ0ekVlOA?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ＮＹ外為市場＝ドル軟調、対円でなお163円台後半 日米中銀会合に注目
+
+### Executive Summary
+- トピック_ビジネスから、NY外為市場の記事を抽出した。
+- 記事はドルが軟調である一方、対円では163円台後半にあると伝えている。
+- 日米の中央銀行会合が市場の注目点として示されている。
+- 媒体はロイターで、金融市場の動向記事である。
+- Google ニュース上では3時間前の記事として表示された。
+- 為替水準は変動が速いため、数値は取得時点の報道として扱う必要がある。
+- 本文未取得のため、背景要因や市場参加者コメントは不明である。
+
+### Key Findings
+- ドルは軟調と報じられている。 [^]
+  - Footnote: 見出しに「ドル軟調」と表示。
+- 対円では163円台後半とされる。 [^]
+  - Footnote: 見出しに「対円でなお163円台後半」と表示。
+- 日米中銀会合が注目材料である。 [^]
+  - Footnote: 見出しに「日米中銀会合に注目」と表示。
+- 媒体はロイター。 [^]
+  - Footnote: aria 情報に「ロイター」と表示。
+- ビジネスカテゴリの新しい市場記事である。 [^]
+  - Footnote: Google ニュースの表示時刻は「3 時間前」。
+
+### References
+- https://news.google.com/read/CBMieEFVX3lxTE91N05OdlJmbFB6SG42UUJNU1lsR0laVGZvV1d4MmhYZVdiNGxHMHdFYW9uNll2YlRUeU42eUtybXc3QlhxcjNjcTU2MXJvWmdjTUxwalA0WWdIVWd2VVVmcGplVEtsMERBc2JPbmhESkFpS0J0ekNLdA?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ロシアの宇宙船「ソユーズMS-28」が帰還　3名が8か月間のISS滞在を終える
+
+### Executive Summary
+- トピック_宇宙から、ソユーズMS-28帰還の記事を抽出した。
+- 記事は3名が8か月間の ISS 滞在を終えたことを伝えている。
+- Google ニュース検索で宇宙関連の新しい記事として表示された。
+- 媒体は dメニューニュースで、表示時刻は24分前だった。
+- 有人宇宙飛行と国際宇宙ステーション運用に関する話題である。
+- 本文未取得のため、帰還地点や搭乗者名、ミッション詳細は不明である。
+- 短時間前の記事であり、追加報道で詳細が更新される可能性がある。
+
+### Key Findings
+- ソユーズMS-28が帰還したと報じられている。 [^]
+  - Footnote: 見出しに「ロシアの宇宙船『ソユーズMS-28』が帰還」と表示。
+- 3名がISS滞在を終えた。 [^]
+  - Footnote: 見出しに「3名が8か月間のISS滞在を終える」と表示。
+- 滞在期間は8か月間とされる。 [^]
+  - Footnote: 見出しに「8か月間」と表示。
+- 媒体は dメニューニュース。 [^]
+  - Footnote: aria 情報に「ｄメニューニュース」と表示。
+- 非常に新しい宇宙ニュースである。 [^]
+  - Footnote: Google ニュースの表示時刻は「24 分前」。
+
+### References
+- https://news.google.com/read/CBMiekFVX3lxTE9jMGpFeGk1bk8zN1BFTXdUa3ZGMTJZbmwxOV9fZWxyTlF2TDdPZmhUVFNrdWVHM1Rtc0V4eFJpajUtTHpKYUVJLTBvYUV6eGlHVzNEZmVlczU1OUN6VFpUZUNZSXViNkxQdU55aHFzb3FNdXFMUmw5OUtB0gF_QVVfeXFMTjgtUHdvVlY2WTRTRElTYmh0OEFlQkJxYUJCalRZVjNwcTZCSWJXY1lOenB0aFFVbTdBWWlyb1VqaWJ4cjRKYVZRWk5XcklWNElXbzVlLUpHcXJDRVRMeTROLTZMenp2S1N0bjJpZnFYbi1fb21teURzdWhEVkREaw?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 葉酸不足で子に肥満リスク 妊婦の栄養、代謝に影響
+
+### Executive Summary
+- トピック_栄養から、妊婦の葉酸不足と子どもの肥満リスクに関する記事を抽出した。
+- 記事は妊娠中の栄養状態が子どもの代謝に影響し得る点を扱っている。
+- 媒体は47NEWSで、Google ニュースでは9時間前の記事として表示された。
+- 葉酸不足と肥満リスクの関連が見出しで示されている。
+- 健康・栄養分野の記事であり、医療的判断には原文や専門情報の確認が必要である。
+- 本文未取得のため、研究対象、統計値、因果関係の強さは不明である。
+- 栄養政策や妊産婦支援の観点で注目される話題である。
+
+### Key Findings
+- 葉酸不足が子の肥満リスクと関連すると報じられている。 [^]
+  - Footnote: 見出しに「葉酸不足で子に肥満リスク」と表示。
+- 妊婦の栄養が論点である。 [^]
+  - Footnote: 見出しに「妊婦の栄養」と表示。
+- 代謝への影響が示唆される。 [^]
+  - Footnote: 見出しに「代謝に影響」と表示。
+- 媒体は47NEWS。 [^]
+  - Footnote: aria 情報に「47NEWS」と表示。
+- 最新性のある健康ニュースである。 [^]
+  - Footnote: Google ニュースの表示時刻は「9 時間前」。
+
+### References
+- https://news.google.com/read/CBMiS0FVX3lxTE1oeEtISTJ1MjBvNng4YkdLVndRaTRseEQzZTJ3UmQ4c0JMWWxBMzRWRHFtNHNZOUNyek5QZEg3a3d6U21OQnFuLXoxZw?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 『Slay the Spire』が初見でも上手い人は「再確認が少ない」「視野が広い」傾向との研究結果。“次の一手”に繋げるゲームの上手さと“視線移動”の関係を解き明かす試み
+
+### Executive Summary
+- 興味深いニュースから、ゲーム技能と視線移動に関する研究紹介記事を抽出した。
+- 記事は『Slay the Spire』のプレイ能力と視線行動の関係を扱っている。
+- 上手い人には再確認が少なく、視野が広い傾向があると見出しで示されている。
+- 媒体は AUTOMATON で、記者名も Google ニュース上に表示された。
+- 公開は2日前で、速報ではなく研究紹介・解説系の記事である。
+- 本文未取得のため、研究方法、被験者数、統計的有意性は不明である。
+- ゲーム研究、認知科学、ユーザー行動分析にまたがる興味深い話題である。
+
+### Key Findings
+- ゲームの上手さと視線移動の関係を扱う記事である。 [^]
+  - Footnote: 見出しに「ゲームの上手さと“視線移動”の関係」と表示。
+- 対象ゲームは『Slay the Spire』である。 [^]
+  - Footnote: 見出しに「『Slay the Spire』」と表示。
+- 上手い人は再確認が少ない傾向とされる。 [^]
+  - Footnote: 見出しに「再確認が少ない」と表示。
+- 上手い人は視野が広い傾向とされる。 [^]
+  - Footnote: 見出しに「視野が広い」と表示。
+- 媒体は AUTOMATON。 [^]
+  - Footnote: aria 情報に「AUTOMATON - 2 日前 - 記者/ライター: Kei Kano」と表示。
+
+### References
+- https://news.google.com/read/CBMibEFVX3lxTFB1ejkwT1RISXZrZENLd1dvbmUxd28tNEs1QkZTaUJ2VVByR0VpMjhOeFVPeEliblR3dlZMbmpoT1pZczMzcmdjVmhPbFJmd1pOdWNFSm9qRi1LYzB0aE53M0cwRC11cEE3UWw3MA?hl=ja&gl=JP&ceid=JP%3Aja
