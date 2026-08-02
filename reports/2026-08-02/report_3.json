@@ -1,0 +1,367 @@
+{
+  "generated_at": "2026-08-02T09:08:33.0819675+09:00",
+  "site": "https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com",
+  "num_articles": 9,
+  "articles": [
+    {
+      "url": "https://news.google.com/read/CBMiX0FVX3lxTE9KTGwxcjFZQnVZSHphbUhLcVJNajQyMThYQWw5cmEyY3FwUDdfb2tWSmRQbk1oTUxrNEkwWHhKYWhkem1KNERBNDJETEFzWklMaVZDUHpKQTI3MFBKVUZv?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "熊本 地震活動が活発 震度7程度に注意 危険な暑さ熱中症対策を",
+      "date": null,
+      "executive_summary": [
+        "区分: TOPニュース。",
+        "熊本で地震活動が活発化していることを伝える速報性の高い記事。",
+        "震度7程度への注意が呼びかけられている。",
+        "同時に危険な暑さへの熱中症対策も主要な論点になっている。",
+        "災害対応では避難、屋内環境、水分補給の両立が必要になる。",
+        "Google ニュース上では NHKニュースの記事として表示された。",
+        "取得時点では本文全量ではなく公開見出しと一覧情報を根拠に要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "熊本の地震活動が主要ニュースとして扱われている。",
+          "footnote": "Google ニュース一覧に「熊本 地震活動が活発」と表示。"
+        },
+        {
+          "point": "強い揺れへの警戒が必要とされている。",
+          "footnote": "見出しに「震度7程度に注意」と明記。"
+        },
+        {
+          "point": "地震だけでなく暑さも同時リスクになっている。",
+          "footnote": "見出しに「危険な暑さ熱中症対策を」と明記。"
+        },
+        {
+          "point": "記事は速報性の高い時間帯に掲載されている。",
+          "footnote": "Google ニュースの aria 情報で「NHKニュース - 1 時間前」と表示。"
+        },
+        {
+          "point": "災害報道として生活者向けの注意喚起が中心とみられる。",
+          "footnote": "見出しが「注意」「対策」を含み、読者行動を促す構成。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiX0FVX3lxTE9KTGwxcjFZQnVZSHphbUhLcVJNajQyMThYQWw5cmEyY3FwUDdfb2tWSmRQbk1oTUxrNEkwWHhKYWhkem1KNERBNDJETEFzWklMaVZDUHpKQTI3MFBKVUZv?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiZ0FVX3lxTE5ON3JoUzM4UU1Jc0FLZHd3SUYwTENJZHdUUkItME13NkFwWWhrSUFFNXk0WDh4cGNVLXVrSVRENVVpU0hpVkF2Qm9yYWZEWjF2WmRiM2loTmFGSGxaWUlRQUpaWWdBTEE?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "雑魚寝、ミルク…「プッシュ型」のはずの物資、なぜ避難所に届かない [熊本県] [2026年熊本地震]",
+      "date": null,
+      "executive_summary": [
+        "区分: ローカルニュース。",
+        "熊本地震に関連し、避難所への物資供給の課題を扱う記事。",
+        "「プッシュ型」支援であるにもかかわらず、必要物資が届かない状況が示されている。",
+        "雑魚寝やミルクといった避難生活の具体的な困難が見出しに含まれる。",
+        "被災地の生活支援と物流調整のずれが焦点になる。",
+        "Google ニュース上では朝日新聞の記事として表示された。",
+        "取得時点ではログインなしで確認できる一覧情報をもとに要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "避難所支援の実効性が問題化している。",
+          "footnote": "見出しに「なぜ避難所に届かない」とある。"
+        },
+        {
+          "point": "物資供給方式はプッシュ型とされている。",
+          "footnote": "見出しに「『プッシュ型』のはずの物資」と明記。"
+        },
+        {
+          "point": "避難生活の睡眠環境に課題がある。",
+          "footnote": "見出し冒頭に「雑魚寝」と表示。"
+        },
+        {
+          "point": "乳幼児など配慮が必要な層への支援も論点である。",
+          "footnote": "見出しに「ミルク」と表示。"
+        },
+        {
+          "point": "記事は熊本県の地震被害に紐づく地域報道である。",
+          "footnote": "見出し末尾に「[熊本県] [2026年熊本地震]」と表示。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiZ0FVX3lxTE5ON3JoUzM4UU1Jc0FLZHd3SUYwTENJZHdUUkItME13NkFwWWhrSUFFNXk0WDh4cGNVLXVrSVRENVVpU0hpVkF2Qm9yYWZEWjF2WmRiM2loTmFGSGxaWUlRQUpaWWdBTEE?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMi0wRBVV95cUxOOVVhSnZvanhEZS0wTF8tQ2otRzN3ZWF6VUxBRTZpV2FBbWgzN0VfeTZ4dWNvTkdwS0tyZDVvYXJYYzRNUzlyNG9VVWtSNnYyM2V3NHpsT0JvZF9YTkhRMS1NOUxXcEQwYmstSGh1RUU1QXJNOU1TNDF1V3gyRXl2OWtxb1NDbG1GOVd0SDdoTVc2cWhjT3g3Z0hFVjU1OFRxbl85dVFSVDlGTzhDOFNHaE5yYVJFSUZXVDllakp4ckZBWjQ0N3h0T3lscXEtMWdqUnQ4VTVEd2FfNlVnRnc5ZVBFbW9KM1RfU1duMXEwVjFncUV4R3Z6ZVIxMGVNV054LWtnUmpma0xxMGIwOExYUmJRb1VvZ2o1b0I5REo3QXN2QjhOWmtoUTJob3plTkJkaUZ6d0Fvc3JaWHhZeTB5M3l4NDFqSVJqTEJPOFFSbDMzRTV6MkNjSTk2TnRLR1BoNWdXSGN1SmlCNElhRGFlWnNraUN5RF9wc1h5MGMtOURiYmcwcDJfQmotdW9NUDVkS3plYWJwZTZLZHNTSndmRlVzNDVnRjZrMFFvUXJsSXM2S1RyaTNuSWlPTEJXeUdTTDdIU0VpZGtWQktqUTl5V2JVSnZIN1otYnhYZWVtRzBaN1FTXzVuaG5QVWpIX0hMV1NRcEVBVVdTZVlLMUZoMGgwcnFHRXhVd1Y3YlhPSmtIVzhqb295ZHNUckRNSGZ3eEx4LXhHY2RnVDFRcmZMYzBTTGNLRXdKNHItTjl0MG5YczlMcWFMS0RRNHo3WkRoVDBN?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "高額療養費見直し　現役世代の負担軽減へ制度改革　年内に高齢者負担見直しで工程表",
+      "date": null,
+      "executive_summary": [
+        "区分: おすすめ。",
+        "高額療養費制度の見直しをめぐる政策記事。",
+        "現役世代の負担軽減が改革目的として掲げられている。",
+        "高齢者負担の見直しについて年内に工程表を示す方向が示されている。",
+        "医療費負担の世代間バランスが主要論点になる。",
+        "Google ニュースのおすすめ欄に関連ニュースとして表示された。",
+        "公開一覧で確認できた見出し情報を根拠に要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "制度改革の対象は高額療養費である。",
+          "footnote": "見出しに「高額療養費見直し」と表示。"
+        },
+        {
+          "point": "改革目的は現役世代の負担軽減である。",
+          "footnote": "見出しに「現役世代の負担軽減へ」と明記。"
+        },
+        {
+          "point": "高齢者負担の見直しが予定されている。",
+          "footnote": "見出しに「高齢者負担見直し」と表示。"
+        },
+        {
+          "point": "政策スケジュールは年内が節目である。",
+          "footnote": "見出しに「年内に」と明記。"
+        },
+        {
+          "point": "工程表の策定が報じられている。",
+          "footnote": "見出しに「工程表」と表示。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMi0wRBVV95cUxOOVVhSnZvanhEZS0wTF8tQ2otRzN3ZWF6VUxBRTZpV2FBbWgzN0VfeTZ4dWNvTkdwS0tyZDVvYXJYYzRNUzlyNG9VVWtSNnYyM2V3NHpsT0JvZF9YTkhRMS1NOUxXcEQwYmstSGh1RUU1QXJNOU1TNDF1V3gyRXl2OWtxb1NDbG1GOVd0SDdoTVc2cWhjT3g3Z0hFVjU1OFRxbl85dVFSVDlGTzhDOFNHaE5yYVJFSUZXVDllakp4ckZBWjQ0N3h0T3lscXEtMWdqUnQ4VTVEd2FfNlVnRnc5ZVBFbW9KM1RfU1duMXEwVjFncUV4R3Z6ZVIxMGVNV054LWtnUmpma0xxMGIwOExYUmJRb1VvZ2o1b0I5REo3QXN2QjhOWmtoUTJob3plTkJkaUZ6d0Fvc3JaWHhZeTB5M3l4NDFqSVJqTEJPOFFSbDMzRTV6MkNjSTk2TnRLR1BoNWdXSGN1SmlCNElhRGFlWnNraUN5RF9wc1h5MGMtOURiYmcwcDJfQmotdW9NUDVkS3plYWJwZTZLZHNTSndmRlVzNDVnRjZrMFFvUXJsSXM2S1RyaTNuSWlPTEJXeUdTTDdIU0VpZGtWQktqUTl5V2JVSnZIN1otYnhYZWVtRzBaN1FTXzVuaG5QVWpIX0hMV1NRcEVBVVdTZVlLMUZoMGgwcnFHRXhVd1Y3YlhPSmtIVzhqb295ZHNUckRNSGZ3eEx4LXhHY2RnVDFRcmZMYzBTTGNLRXdKNHItTjl0MG5YczlMcWFMS0RRNHo3WkRoVDBN?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiakFVX3lxTE1GYm5zMzFvWllfdGZhdWFxeWNfV0ZIX2RwYzNSdk03TVg4bkkxMDhvNUQzcHlqWEp6Z2RSdmZ3dnJPTklfNFgtdS13RTdacUN2TXhUU01QQ0ppSUY5UGtCVDcwNjR4TTRaQWc?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "倒壊した自宅から聞こえる母の声、数時間で途絶える…夜通し救助待った家族「助けられなくて悔しい」",
+      "date": null,
+      "executive_summary": [
+        "区分: トピック_日本。",
+        "日本カテゴリで表示された熊本地震関連の記事。",
+        "倒壊した自宅に閉じ込められた家族の救助待ちを扱う。",
+        "母の声が数時間で途絶えたという深刻な状況が見出しに示されている。",
+        "救助の遅れや家族の悔しさが人間面の焦点になっている。",
+        "Google ニュース上では読売新聞の記事として表示された。",
+        "一覧で確認できる見出しと掲載情報をもとに要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "倒壊家屋での救助困難が主題である。",
+          "footnote": "見出しに「倒壊した自宅」と表示。"
+        },
+        {
+          "point": "被災者の生存反応が時間とともに失われた可能性が示される。",
+          "footnote": "見出しに「母の声、数時間で途絶える」とある。"
+        },
+        {
+          "point": "家族は夜通し救助を待った。",
+          "footnote": "見出しに「夜通し救助待った家族」と表示。"
+        },
+        {
+          "point": "遺族または家族の無念が強調されている。",
+          "footnote": "見出しに「助けられなくて悔しい」と引用。"
+        },
+        {
+          "point": "日本カテゴリ内の災害・社会ニュースとして扱われている。",
+          "footnote": "Google ニュース本文で「トピック」「日本」の直下に表示。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiakFVX3lxTE1GYm5zMzFvWllfdGZhdWFxeWNfV0ZIX2RwYzNSdk03TVg4bkkxMDhvNUQzcHlqWEp6Z2RSdmZ3dnJPTklfNFgtdS13RTdacUN2TXhUU01QQ0ppSUY5UGtCVDcwNjR4TTRaQWc?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiZ0FVX3lxTE5wbWUxb1hUX2I3WmU0RTRHdlZnanpvWWJtZHJWSnhJYXVvTTdtYUowS2QyM0pxT1RnYzZWVjYwak5ybXhoMnpXbVpsaDZWd0lSRGl1Zm53Ukk3TXp5SE4tRVZHQXlMM1Y4YkllR0k4ZzZiUXZOYy05Q1p3?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "映画『踊る大捜査線』、医師役で出演の佐藤二朗ビジュアル&コメント公開「100点満点の面白いものになっています」",
+      "date": null,
+      "executive_summary": [
+        "区分: トピック_エンタメ。",
+        "映画『踊る大捜査線』関連の新情報を伝える記事。",
+        "佐藤二朗が医師役で出演することが見出しで示されている。",
+        "出演ビジュアルと本人コメントが公開された。",
+        "コメントでは作品の面白さに強い自信が示されている。",
+        "Google ニュース上ではオリコンニュースの記事として表示された。",
+        "取得時点では公開見出しと一覧情報を根拠に要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "対象作品は映画『踊る大捜査線』である。",
+          "footnote": "見出しに「映画『踊る大捜査線』」と表示。"
+        },
+        {
+          "point": "佐藤二朗が出演者として取り上げられている。",
+          "footnote": "見出しに「佐藤二朗」と表示。"
+        },
+        {
+          "point": "役柄は医師役である。",
+          "footnote": "見出しに「医師役で出演」と明記。"
+        },
+        {
+          "point": "ビジュアルとコメント公開がニュースの要点である。",
+          "footnote": "見出しに「ビジュアル&コメント公開」と表示。"
+        },
+        {
+          "point": "作品評価への前向きな発言が引用されている。",
+          "footnote": "見出しに「100点満点の面白いものになっています」と引用。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiZ0FVX3lxTE5wbWUxb1hUX2I3WmU0RTRHdlZnanpvWWJtZHJWSnhJYXVvTTdtYUowS2QyM0pxT1RnYzZWVjYwak5ybXhoMnpXbVpsaDZWd0lSRGl1Zm53Ukk3TXp5SE4tRVZHQXlMM1Y4YkllR0k4ZzZiUXZOYy05Q1p3?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMif0FVX3lxTE5fM3k5TkVxWUoxQ2QtNDFPNWxaaWktVDhraURtSXRGRnlNemdvMVJYWXF6TkdMbU5IV21GM3lZM21MdUowMENUVTNMc1RJa0hFNUQxdWh2dVgyREQ5d3BfRFhCdnRDdXVRR05tbm1rZTRFZXpTN2lYbkZnb21wUTA?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "時価総額日本一から1カ月で株価半値へ乱高下、「キオクシア相場」が物語るAI時代でも逃れられない半導体業界の悲しき宿命",
+      "date": null,
+      "executive_summary": [
+        "区分: トピック_ビジネス。",
+        "キオクシアの株価変動を通じて半導体業界の構造リスクを扱う記事。",
+        "時価総額日本一から短期間で株価が半値になった乱高下が強調されている。",
+        "AI時代でも半導体市況の振れから逃れにくい点が論点である。",
+        "投資家心理、需給、業界循環が背景にあると読み取れる。",
+        "Google ニュース上では Yahoo!ニュースの記事として表示された。",
+        "公開見出しと一覧情報を根拠に要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "キオクシアの株価乱高下が主題である。",
+          "footnote": "見出しに「『キオクシア相場』」と表示。"
+        },
+        {
+          "point": "一時は時価総額日本一に達したとされる。",
+          "footnote": "見出しに「時価総額日本一」と明記。"
+        },
+        {
+          "point": "短期間で大幅下落した。",
+          "footnote": "見出しに「1カ月で株価半値」と表示。"
+        },
+        {
+          "point": "AI需要下でも半導体業界は循環性を免れないという論旨である。",
+          "footnote": "見出しに「AI時代でも逃れられない半導体業界」とある。"
+        },
+        {
+          "point": "掲載時点ではビジネス欄の上位記事として表示された。",
+          "footnote": "Google ニュース本文で「ビジネス」直下に表示。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMif0FVX3lxTE5fM3k5TkVxWUoxQ2QtNDFPNWxaaWktVDhraURtSXRGRnlNemdvMVJYWXF6TkdMbU5IV21GM3lZM21MdUowMENUVTNMc1RJa0hFNUQxdWh2dVgyREQ5d3BfRFhCdnRDdXVRR05tbm1rZTRFZXpTN2lYbkZnb21wUTA?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMibkFVX3lxTE9nTkZmMWNYZjdlX2JJR05kT0s4dU4xT0FncFRKbW1DRExvVUFCTmdmM01wcGJURC1QOENWTzQ5b2dUckF2MVc1NTl0dFFwVmlqWllHd2VodTVHWExEMmdsZjBoUlJDdGJBckhqcjhR?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "アンドロメダ銀河の星形成率が過去5億年間で低下 ハッブル宇宙望遠鏡の観測データを分析",
+      "date": null,
+      "executive_summary": [
+        "区分: トピック_宇宙。",
+        "アンドロメダ銀河の星形成率低下を扱う宇宙科学記事。",
+        "過去5億年間の変化が分析対象になっている。",
+        "ハッブル宇宙望遠鏡の観測データが根拠として示されている。",
+        "近傍銀河の進化や星形成史を理解する材料になる。",
+        "Google ニュース検索の宇宙カテゴリ候補では sorae の記事として表示された。",
+        "公開見出しと一覧情報を根拠に要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "対象天体はアンドロメダ銀河である。",
+          "footnote": "見出しに「アンドロメダ銀河」と表示。"
+        },
+        {
+          "point": "星形成率の低下が報告されている。",
+          "footnote": "見出しに「星形成率が過去5億年間で低下」とある。"
+        },
+        {
+          "point": "分析期間は過去5億年間である。",
+          "footnote": "見出しに「過去5億年間」と明記。"
+        },
+        {
+          "point": "観測データの出所はハッブル宇宙望遠鏡である。",
+          "footnote": "見出しに「ハッブル宇宙望遠鏡の観測データ」と表示。"
+        },
+        {
+          "point": "記事は宇宙専門媒体による科学ニュースである。",
+          "footnote": "Google ニュースの aria 情報で「sorae 宇宙へのポータルサイト - 22 時間前」と表示。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMibkFVX3lxTE9nTkZmMWNYZjdlX2JJR05kT0s4dU4xT0FncFRKbW1DRExvVUFCTmdmM01wcGJURC1QOENWTzQ5b2dUckF2MVc1NTl0dFFwVmlqWllHd2VodTVHWExEMmdsZjBoUlJDdGJBckhqcjhR?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiVEFVX3lxTE1Ud0ZUal9CSlRiaVo4dlB3QW9RRTNiRkQ2V2I0RFBnMlVTc01hLUxlVTNfeTNYUXZWbG1qZ2lyQzVxdVY2Q2RrVzBLMDV1WU9ZTVpqeg?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "幼児向け食品の8割は超加工食品、約半数は栄養基準満たさず 米研究",
+      "date": null,
+      "executive_summary": [
+        "区分: トピック_栄養。",
+        "幼児向け食品の栄養品質をめぐる米研究の記事。",
+        "対象食品の8割が超加工食品とされている。",
+        "約半数が栄養基準を満たさない点が問題視されている。",
+        "子どもの食環境、加工食品依存、表示や規制の課題につながる。",
+        "Google ニュース検索の栄養カテゴリ候補では CNN.co.jp の記事として表示された。",
+        "公開見出しと一覧情報を根拠に要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "幼児向け食品が分析対象である。",
+          "footnote": "見出しに「幼児向け食品」と表示。"
+        },
+        {
+          "point": "超加工食品の割合が高い。",
+          "footnote": "見出しに「8割は超加工食品」と明記。"
+        },
+        {
+          "point": "栄養基準未達の商品が多い。",
+          "footnote": "見出しに「約半数は栄養基準満たさず」と表示。"
+        },
+        {
+          "point": "研究対象は米国の研究である。",
+          "footnote": "見出し末尾に「米研究」と表示。"
+        },
+        {
+          "point": "記事は栄養と食品政策の両面に関わる。",
+          "footnote": "見出しが「栄養基準」と「超加工食品」を同時に扱っている。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiVEFVX3lxTE1Ud0ZUal9CSlRiaVo4dlB3QW9RRTNiRkQ2V2I0RFBnMlVTc01hLUxlVTNfeTNYUXZWbG1qZ2lyQzVxdVY2Q2RrVzBLMDV1WU9ZTVpqeg?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMickFVX3lxTE1ram5BSGNhNEdDTFd4eG5fcW42ckdiTk4wYnM5Mk1pWVowdmdGNnN2UF83V3I3SVZBTEx1TkUwdEhDaWJ4NWIyUjJhZ19qZTZUblpMVm5la0V4eUh5RGlsTER4bW5HaHNxZGtQaDhHYlVsZw?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "「プロンプトを打ち続ける」のはもう終わり。PC内で自走するAIエージェント「OpenClaw」の真価と始め方",
+      "date": null,
+      "executive_summary": [
+        "区分: 興味深いニュース。",
+        "PC内で動作するAIエージェント OpenClaw を紹介する記事。",
+        "従来の対話型プロンプト操作から、自走型の作業支援へ移る流れを示している。",
+        "導入方法や使い始め方が記事の中心とみられる。",
+        "ローカルPC上でのエージェント実行が実用化している点が注目点である。",
+        "Google ニュースの興味深いニュース欄で PC Watch の記事として表示された。",
+        "公開見出しと一覧情報を根拠に要約した。"
+      ],
+      "key_findings": [
+        {
+          "point": "OpenClaw というAIエージェントが取り上げられている。",
+          "footnote": "見出しに「AIエージェント『OpenClaw』」と表示。"
+        },
+        {
+          "point": "利用形態はPC内での自走である。",
+          "footnote": "見出しに「PC内で自走する」と明記。"
+        },
+        {
+          "point": "プロンプトを逐次入力する作業からの変化が論点である。",
+          "footnote": "見出しに「『プロンプトを打ち続ける』のはもう終わり」と表示。"
+        },
+        {
+          "point": "記事は価値と導入方法の両方を扱う。",
+          "footnote": "見出しに「真価と始め方」と表示。"
+        },
+        {
+          "point": "掲載媒体はPC Watchで、技術解説記事として扱われている。",
+          "footnote": "Google ニュースの aria 情報で「PC Watch - 2 日前 - 記者/ライター: 芹澤正芳」と表示。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMickFVX3lxTE1ram5BSGNhNEdDTFd4eG5fcW42ckdiTk4wYnM5Mk1pWVowdmdGNnN2UF83V3I3SVZBTEx1TkUwdEhDaWJ4NWIyUjJhZ19qZTZUblpMVm5la0V4eUh5RGlsTER4bW5HaHNxZGtQaDhHYlVsZw?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-02T09:08:33.0819675+09:00"
+    }
+  ]
+}
