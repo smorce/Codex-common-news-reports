@@ -1,0 +1,367 @@
+{
+  "generated_at": "2026-08-03T09:07:33.7665725+09:00",
+  "site": "https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com",
+  "num_articles": 9,
+  "articles": [
+    {
+      "url": "https://news.google.com/read/CBMif0FVX3lxTE1HWHFKdmZMMS1wV2syclRfV2tGVDVrTFp4SDZ1MHlQdDctQTVMMWtJYVIwZ3V0enVLSTJGakh0aVZXSkFtdXpITUN1OUJLd2M3TlE0d0RCNWtmQ09rbE9xWWVCczk5VnJUSnRPVVNRWjdXSnY2dFEycVZobzlpeFU?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "「売上金を金庫に」 イオンモール熊本で死亡の22歳女性 勤務店運営会社の指示受け、店に戻り爆発に巻き込まれる",
+      "date": null,
+      "executive_summary": [
+        "トップニュース枠では、イオンモール熊本の爆発事故に関する続報が最も新しい候補として表示された。",
+        "記事は、死亡した22歳女性が勤務先運営会社の指示を受けて店内に戻った可能性を伝えている。",
+        "店内に戻った理由として、売上金を金庫に入れるよう求められたとの説明が示されている。",
+        "同じニュース群では、従業員2人死亡、通夜での謝罪、会社指示への遺族感情も並んでいる。",
+        "事故は熊本地震に関連する被害として扱われ、避難後に店舗へ戻った経緯が焦点になっている。",
+        "Google ニュース上の時刻表示では、当該記事は35分前で、関連ニュース群の中で最も新しい。",
+        "ログイン不要で確認できた範囲では、事故対応時の安全判断と企業指示の妥当性が主要論点である。"
+      ],
+      "key_findings": [
+        {
+          "point": "22歳女性が爆発に巻き込まれ死亡したことが中心事実として報じられている。",
+          "footnote": "見出しに「イオンモール熊本で死亡の22歳女性」「爆発に巻き込まれる」とある。"
+        },
+        {
+          "point": "女性は勤務店運営会社の指示を受けて店に戻ったとされる。",
+          "footnote": "見出しに「勤務店運営会社の指示受け、店に戻り」とある。"
+        },
+        {
+          "point": "店へ戻った目的は売上金の保管だった可能性が示されている。",
+          "footnote": "見出しに「売上金を金庫に」とある。"
+        },
+        {
+          "point": "関連ニュースではテナント会社側の謝罪が報じられている。",
+          "footnote": "同じトップニュース群に「テナント幹部が通夜で謝罪」「遺族に謝罪」と表示された。"
+        },
+        {
+          "point": "記事は速報性が高い続報として扱われている。",
+          "footnote": "Google ニュース上の時刻は「35 分前」と表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMif0FVX3lxTE1HWHFKdmZMMS1wV2syclRfV2tGVDVrTFp4SDZ1MHlQdDctQTVMMWtJYVIwZ3V0enVLSTJGakh0aVZXSkFtdXpITUN1OUJLd2M3TlE0d0RCNWtmQ09rbE9xWWVCczk5VnJUSnRPVVNRWjdXSnY2dFEycVZobzlpeFU?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiV0FVX3lxTE9yb18tTVFqdWhzcmU3SGZ6WDhGRmRWSjltLXgwX3pXMUxvY0sxZS1XQU1EYnNiTmlQSlNzaWwwRDRjRVNYRmQ5aS04Wl9JeG5TZDVHbVNpSQ?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "死亡の従業員は会社の指示で館内に、テナント会社が遺族に謝罪 熊本地震",
+      "date": null,
+      "executive_summary": [
+        "おすすめ枠から、熊本地震に関連するイオンモール熊本爆発事故の続報を取得した。",
+        "記事は、死亡した従業員が会社の指示で館内にいたという点を前面に出している。",
+        "テナント会社が遺族へ謝罪したことが見出しで明示されている。",
+        "トップニュース枠の記事と同一事故を扱うが、こちらは謝罪と会社指示に焦点がある。",
+        "Google ニュース上では7時間前の配信として表示され、関連報道の中で詳細説明の役割を持つ。",
+        "ログイン不要で確認できた範囲では、災害時の退避判断と従業員保護が主な論点である。",
+        "事故の責任関係については、今後の調査や会社側説明の継続確認が必要である。"
+      ],
+      "key_findings": [
+        {
+          "point": "従業員が館内にいた理由として会社指示が報じられている。",
+          "footnote": "見出しに「会社の指示で館内に」とある。"
+        },
+        {
+          "point": "テナント会社は遺族に謝罪している。",
+          "footnote": "見出しに「テナント会社が遺族に謝罪」とある。"
+        },
+        {
+          "point": "熊本地震に関連する事故として扱われている。",
+          "footnote": "見出し末尾に「熊本地震」と表示された。"
+        },
+        {
+          "point": "同じ関連群で従業員2人死亡が報じられている。",
+          "footnote": "トップニュース群に「従業員2人死亡」の見出しが表示された。"
+        },
+        {
+          "point": "Google ニュース上では続報として一定時間が経過した記事である。",
+          "footnote": "当該記事の時刻表示は「7 時間前」だった。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiV0FVX3lxTE9yb18tTVFqdWhzcmU3SGZ6WDhGRmRWSjltLXgwX3pXMUxvY0sxZS1XQU1EYnNiTmlQSlNzaWwwRDRjRVNYRmQ5aS04Wl9JeG5TZDVHbVNpSQ?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiWkFVX3lxTE5DZ2VQMlpwWUhIWkZGb01sOFdTaUpaZXpnLTFNZnVmMGI2MXh6TUd2RFdfZ2dJUEhpYmhuTlNJdXhSRXpjX0FhUWJSdzNGTVpWRWZFN1F2cEVCZw?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "JAXA宇宙飛行士の金井宣茂さん、広島市中区で「宇宙での生活」語る",
+      "date": null,
+      "executive_summary": [
+        "宇宙トピックは Google ニュース検索で確認し、JAXA宇宙飛行士の講演記事を選んだ。",
+        "記事は、金井宣茂さんが広島市中区で宇宙での生活について語った内容を扱う。",
+        "検索結果上では13時間前の配信で、宇宙関連候補の中でも新しい部類だった。",
+        "宇宙開発そのものの技術ニュースではなく、宇宙経験の普及・教育寄りの地域記事である。",
+        "同じ検索結果には宇宙データセンター、宇宙ごみ、宇宙食糧栽培など多様な関連記事も並んでいた。",
+        "ログイン不要で確認できた範囲では、講演場所、人物、テーマが主要な確認済み情報である。",
+        "詳細な講演内容は記事本文側の確認が必要だが、宇宙での生活体験の共有が中心と判断できる。"
+      ],
+      "key_findings": [
+        {
+          "point": "JAXA宇宙飛行士の金井宣茂さんが記事の中心人物である。",
+          "footnote": "見出しに「JAXA宇宙飛行士の金井宣茂さん」とある。"
+        },
+        {
+          "point": "講演または発言のテーマは宇宙での生活である。",
+          "footnote": "見出しに「『宇宙での生活』語る」と表示された。"
+        },
+        {
+          "point": "場所は広島市中区とされている。",
+          "footnote": "見出しに「広島市中区で」とある。"
+        },
+        {
+          "point": "媒体は中国新聞デジタルである。",
+          "footnote": "Google ニュース検索結果に「中国新聞デジタル」と表示された。"
+        },
+        {
+          "point": "記事は比較的新しい宇宙関連ニュースとして表示された。",
+          "footnote": "Google ニュース上の時刻は「13 時間前」だった。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiWkFVX3lxTE5DZ2VQMlpwWUhIWkZGb01sOFdTaUpaZXpnLTFNZnVmMGI2MXh6TUd2RFdfZ2dJUEhpYmhuTlNJdXhSRXpjX0FhUWJSdzNGTVpWRWZFN1F2cEVCZw?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiYEFVX3lxTE1keVUzdTZiaElxeXNfalNqR0pMM3NXOFJfRHg3NUZpT2ZOVFpfVU14a0YtSnZLUTAtUC0zcmZYYnotWWpZZXV2X2V1QmdlLTVSU2NWNGplbG90azRGbWswTA?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "横浜の避暑地、ポケモンねがおリサーチ、新横浜の22時以降OKな飲食店などについて伝えた1週間【7月24日-7月30日のまとめ記事】",
+      "date": null,
+      "executive_summary": [
+        "ローカルニュース枠から、横浜周辺の話題をまとめた地域記事を取得した。",
+        "記事は、7月24日から7月30日までの1週間に扱った地域情報をまとめている。",
+        "主な話題として、横浜の避暑地、ポケモンねがおリサーチ、新横浜の夜遅くまで利用できる飲食店が挙がっている。",
+        "媒体は sumaitoseikatsu.yokohama で、横浜生活圏向けの情報記事として表示された。",
+        "Google ニュース上では2日前の配信で、ローカル枠の上位候補だった。",
+        "事件・事故ではなく、生活情報と地域イベントを横断するまとめ記事である。",
+        "ログイン不要で確認できた範囲では、各話題の詳細リンクや本文内容までは不明である。"
+      ],
+      "key_findings": [
+        {
+          "point": "横浜周辺の生活情報を1週間分まとめた記事である。",
+          "footnote": "見出しに「伝えた1週間【7月24日-7月30日のまとめ記事】」とある。"
+        },
+        {
+          "point": "暑さ対策に関係する地域情報が含まれる。",
+          "footnote": "見出しに「横浜の避暑地」と表示された。"
+        },
+        {
+          "point": "ポケモン関連の話題も扱われている。",
+          "footnote": "見出しに「ポケモンねがおリサーチ」とある。"
+        },
+        {
+          "point": "新横浜の飲食店情報も含まれる。",
+          "footnote": "見出しに「新横浜の22時以降OKな飲食店」とある。"
+        },
+        {
+          "point": "媒体は横浜地域向けの sumaitoseikatsu.yokohama である。",
+          "footnote": "Google ニュースのローカル枠に「sumaitoseikatsu.yokohama」と表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiYEFVX3lxTE1keVUzdTZiaElxeXNfalNqR0pMM3NXOFJfRHg3NUZpT2ZOVFpfVU14a0YtSnZLUTAtUC0zcmZYYnotWWpZZXV2X2V1QmdlLTVSU2NWNGplbG90azRGbWswTA?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiT0FVX3lxTE95cGJuWXczejlhejRTeTV1UzUyTGYzem1CaGd0VWM1enJfRFdvZ1RaUlMtQ3Q4MXNETkpqbzk5MjN1c3M4OERHeVdHdWRsREU?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "2026年熊本地震＞「責任感強い子だった」 イオンモール爆発で犠牲の大竹さん通夜 一度退避、店舗へ戻る 同僚女性の葬儀も",
+      "date": null,
+      "executive_summary": [
+        "日本トピック枠から、熊本地震とイオンモール爆発事故に関する犠牲者の通夜記事を取得した。",
+        "記事は、犠牲となった大竹さんについて「責任感強い子だった」とする周辺の声を伝えている。",
+        "一度退避した後に店舗へ戻った経緯が見出しに含まれ、事故時の行動が焦点になっている。",
+        "同僚女性の葬儀にも触れており、複数の犠牲者に関する地域報道である。",
+        "Google ニュース上では10時間前の配信として表示されている。",
+        "同じ日本枠には台風13号や災害関連死疑いの記事も並び、災害関連ニュースが多かった。",
+        "ログイン不要で確認できた範囲では、人物像と事故直前の行動が主な要点である。"
+      ],
+      "key_findings": [
+        {
+          "point": "犠牲者の通夜が行われたことが報じられている。",
+          "footnote": "見出しに「大竹さん通夜」とある。"
+        },
+        {
+          "point": "周囲は犠牲者を責任感が強い人物として語っている。",
+          "footnote": "見出しに「責任感強い子だった」とある。"
+        },
+        {
+          "point": "一度退避した後、店舗へ戻った経緯が示されている。",
+          "footnote": "見出しに「一度退避、店舗へ戻る」とある。"
+        },
+        {
+          "point": "同僚女性の葬儀も同時に言及されている。",
+          "footnote": "見出しに「同僚女性の葬儀も」と表示された。"
+        },
+        {
+          "point": "媒体は kumanichi.com で、Google ニュース上では10時間前の記事である。",
+          "footnote": "検索結果に「kumanichi.com」「10 時間前」と表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiT0FVX3lxTE95cGJuWXczejlhejRTeTV1UzUyTGYzem1CaGd0VWM1enJfRFdvZ1RaUlMtQ3Q4MXNETkpqbzk5MjN1c3M4OERHeVdHdWRsREU?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiW0FVX3lxTFBfX0VSMkRTbklkeU52TWFEQUdqYXo0MXFDMGtuMkpmR3ZBQmZBVVVQUktGaDNQaFR5dVNjUjJrVTF1U3VJR3o0NUNiQ2Fub19UN3l5LVVQWThZNGs?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "川口春奈さんと板倉滉さんが結婚を発表 「笑顔の絶えない家庭を」",
+      "date": null,
+      "executive_summary": [
+        "エンタメ枠から、川口春奈さんと板倉滉さんの結婚発表記事を取得した。",
+        "記事は、二人が結婚を発表したことを短く伝える芸能ニュースである。",
+        "見出しには「笑顔の絶えない家庭を」というコメントが含まれている。",
+        "Google ニュース上では13時間前の配信として表示された。",
+        "同じエンタメ枠にはドラマ関連考察や朝ドラ新登場人物の記事も並んでいた。",
+        "ログイン不要で確認できた範囲では、発表の事実と本人コメントが主要情報である。",
+        "結婚発表の詳細な経緯、発表媒体、両者の追加コメントは本文確認が必要である。"
+      ],
+      "key_findings": [
+        {
+          "point": "川口春奈さんと板倉滉さんが結婚を発表した。",
+          "footnote": "見出しに「川口春奈さんと板倉滉さんが結婚を発表」とある。"
+        },
+        {
+          "point": "発表コメントとして家庭像への言及がある。",
+          "footnote": "見出しに「笑顔の絶えない家庭を」と表示された。"
+        },
+        {
+          "point": "媒体は朝日新聞である。",
+          "footnote": "Google ニュースのエンタメ枠に「朝日新聞」と表示された。"
+        },
+        {
+          "point": "エンタメ枠内では最上位候補として表示された。",
+          "footnote": "エンタメ見出しの直下に当該記事が表示された。"
+        },
+        {
+          "point": "Google ニュース上の時刻表示は13時間前である。",
+          "footnote": "当該記事の下に「13 時間前」と表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiW0FVX3lxTFBfX0VSMkRTbklkeU52TWFEQUdqYXo0MXFDMGtuMkpmR3ZBQmZBVVVQUktGaDNQaFR5dVNjUjJrVTF1U3VJR3o0NUNiQ2Fub19UN3l5LVVQWThZNGs?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiR0FVX3lxTE9ZV1k1WXB6Nk53ZV9YX3lNSkhPdGpzOXMwOEZjNFMzNFBuTFNZNElaT1JlM1ZQWWJOUXN0TXIzXzl1cGxUb2ZlNXdN?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "為替介入、日本が支援要求 トランプ米大統領「米国に利益」",
+      "date": null,
+      "executive_summary": [
+        "ビジネス枠から、為替介入をめぐる日米関係の記事を取得した。",
+        "記事は、日本が為替介入で支援を要求したとする内容を伝えている。",
+        "トランプ米大統領の発言として「米国に利益」との文言が見出しに含まれている。",
+        "Google ニュース上では12分前の配信で、ビジネス枠の中でも特に速報性が高い。",
+        "同じ枠には東京株式市場見通しや主要株価指数も表示され、金融市場文脈で配置されている。",
+        "ログイン不要で確認できた範囲では、為替介入支援要求と米国側評価が中心論点である。",
+        "政策の具体的条件、実施時期、関係当局の公式文書は本文または追加資料で確認が必要である。"
+      ],
+      "key_findings": [
+        {
+          "point": "日本が為替介入に関して支援を求めたと報じられている。",
+          "footnote": "見出しに「為替介入、日本が支援要求」とある。"
+        },
+        {
+          "point": "トランプ米大統領の発言が記事の焦点になっている。",
+          "footnote": "見出しに「トランプ米大統領」と表示された。"
+        },
+        {
+          "point": "米国に利益があるとの認識が示されている。",
+          "footnote": "見出しに「米国に利益」とある。"
+        },
+        {
+          "point": "媒体は時事ドットコムである。",
+          "footnote": "Google ニュースのビジネス枠に「時事ドットコム」と表示された。"
+        },
+        {
+          "point": "ビジネス枠で最も新しい候補として表示された。",
+          "footnote": "当該記事の時刻表示は「12 分前」だった。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiR0FVX3lxTE9ZV1k1WXB6Nk53ZV9YX3lNSkhPdGpzOXMwOEZjNFMzNFBuTFNZNElaT1JlM1ZQWWJOUXN0TXIzXzl1cGxUb2ZlNXdN?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiakFVX3lxTFA4Z1hxd1NvSVhGRHI2REtiMURuMTF2Z0FlYzJjR3Z4NW1lV3JJQmVKN3FfdjRQemFVZkdsQVBtQlhhRzlHQ3NDZDdhRFVEc2NoNmlMelZUdEdSMlA4bG1UWUo0WE00Ym9FQnc?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "「さくらみこ」10月14日に2ndアルバムリリース決定！10月29日にKアリーナ横浜でライブ開催！",
+      "date": null,
+      "executive_summary": [
+        "興味深いニュース枠から、さくらみこの2ndアルバムとライブ開催に関する記事を取得した。",
+        "記事は、10月14日に2ndアルバムをリリースする決定を伝えている。",
+        "あわせて10月29日にKアリーナ横浜でライブを開催する予定も示されている。",
+        "媒体はPR TIMESで、企業・団体発表系のニュースとして掲載されている。",
+        "Google ニュース上では2日前の配信として表示された。",
+        "同じ枠には映画、ガジェットレビュー、音楽研究など話題性の高い記事が並んでいた。",
+        "ログイン不要で確認できた範囲では、発売日、会場、イベント日程が主要な確定情報である。"
+      ],
+      "key_findings": [
+        {
+          "point": "さくらみこの2ndアルバムリリースが決定した。",
+          "footnote": "見出しに「2ndアルバムリリース決定」とある。"
+        },
+        {
+          "point": "アルバム発売日は10月14日とされている。",
+          "footnote": "見出しに「10月14日に2ndアルバム」と表示された。"
+        },
+        {
+          "point": "ライブ開催日は10月29日とされている。",
+          "footnote": "見出しに「10月29日にKアリーナ横浜でライブ開催」とある。"
+        },
+        {
+          "point": "会場はKアリーナ横浜である。",
+          "footnote": "見出しに「Kアリーナ横浜」とある。"
+        },
+        {
+          "point": "媒体はPR TIMESで、Google ニュース上では2日前の記事である。",
+          "footnote": "興味深いニュース枠に「PR TIMES」「2 日前」と表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiakFVX3lxTFA4Z1hxd1NvSVhGRHI2REtiMURuMTF2Z0FlYzJjR3Z4NW1lV3JJQmVKN3FfdjRQemFVZkdsQVBtQlhhRzlHQ3NDZDdhRFVEc2NoNmlMelZUdEdSMlA4bG1UWUo0WE00Ym9FQnc?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiX0FVX3lxTE9hd0dlUW9sb0FBazV2MUxpQjU2cFNORENYZ290bHB2b2hCZTY4T0ZXbW1HQVdrdm9iUkE2VnFlZGVWZG1EcTRDcXo5TlRldDN0NFRTS2dWUWE1TFljTTBJ?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "ベタインとは？スポーツ栄養で注目されるビート（てん菜）由来の成分を米フィットネス誌が解説",
+      "date": null,
+      "executive_summary": [
+        "栄養検索結果から、スポーツ栄養で注目されるベタインに関する記事を取得した。",
+        "記事は、ビート由来成分であるベタインを解説する内容として表示されている。",
+        "媒体はFITNESS LOVEで、米フィットネス誌の解説を紹介する形の見出しである。",
+        "Google ニュース上では12時間前の配信で、栄養トピックの中でも新しい候補だった。",
+        "栄養ドリンク、ビタミンD、熱中症と朝食などの周辺記事も同じ検索結果に並んでいた。",
+        "ログイン不要で確認できた範囲では、ベタインの由来とスポーツ栄養上の注目が主要情報である。",
+        "成分の効果量、安全性、研究条件については本文や一次情報の確認が必要である。"
+      ],
+      "key_findings": [
+        {
+          "point": "ベタインがスポーツ栄養分野で注目されている。",
+          "footnote": "見出しに「スポーツ栄養で注目される」とある。"
+        },
+        {
+          "point": "ベタインはビート、つまりてん菜由来の成分として説明されている。",
+          "footnote": "見出しに「ビート（てん菜）由来の成分」と表示された。"
+        },
+        {
+          "point": "記事は解説型コンテンツである。",
+          "footnote": "見出しに「ベタインとは？」「米フィットネス誌が解説」とある。"
+        },
+        {
+          "point": "媒体はFITNESS LOVEである。",
+          "footnote": "Google ニュース検索結果に「FITNESS LOVE」と表示された。"
+        },
+        {
+          "point": "Google ニュース上では12時間前の新しい栄養記事である。",
+          "footnote": "当該記事の時刻表示は「12 時間前」だった。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiX0FVX3lxTE9hd0dlUW9sb0FBazV2MUxpQjU2cFNORENYZ290bHB2b2hCZTY4T0ZXbW1HQVdrdm9iUkE2VnFlZGVWZG1EcTRDcXo5TlRldDN0NFRTS2dWUWE1TFljTTBJ?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-03T09:07:33.7665725+09:00"
+    }
+  ]
+}
