@@ -1,0 +1,238 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-08-05T00:00:00+09:00
+- Articles: 9
+
+## 避難後なぜ再入館 証言からの実態
+
+### Executive Summary
+- トップニュース欄で確認した熊本地震関連の記事です。
+- 主題は、イオンモール熊本で避難後に再入館が起きた経緯です。
+- Googleニュース上では、Yahoo!ニュースの記事として表示されていました。
+- 同じニュース枠に、テレ朝NEWSと熊本日日新聞社の記事も並んでいました。
+- 関連見出しでは、売上金や貴重品を取りに戻った可能性が示されています。
+- 避難指導や退避徹底の不足が主要な検証点になっています。
+- 本文詳細はログインや遷移先制限の可能性があるため、確認できた範囲で要約しています。
+
+### Key Findings
+- 記事は熊本地震後のイオンモール熊本での再入館問題を扱っている。 [^]
+  - Footnote: Googleニュースの見出し: 「避難後なぜ再入館 証言からの実態」
+- 同じ話題で、複数媒体が避難後の行動を報じている。 [^]
+  - Footnote: Googleニュースの関連枠に Yahoo!ニュース、テレ朝NEWS、熊本日日新聞社が表示された。
+- テナント従業員の証言が、事故実態を読み解く材料になっている。 [^]
+  - Footnote: 関連見出し: 「生存したテナント従業員ら証言、浮かび上がる実態」
+- 再入館の理由として、店舗資産や貴重品への対応が示唆されている。 [^]
+  - Footnote: 関連見出し: 「館内に戻って売上げを金庫に」「貴重品取りに店舗に戻った」
+- 退避指導の徹底不足が焦点の一つになっている。 [^]
+  - Footnote: 熊本日日新聞社の関連見出し: 「退避指導、徹底できず」
+
+### References
+- https://news.google.com/read/CBMiUEFVX3lxTE82OGF3ZDFCTEl5NlpXYWhaV0RZYmdRWE5lQm5ZR2lTQk1mdEo3cmpnQXFBTWJDRkl6dkZ4Mkw1ZFhNbzRYTnBGanJLZ20zeUZp?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 横浜で放置自転車のパンク被害急増 交番勤務員ら３カ月張り込み…男を逮捕
+
+### Executive Summary
+- ローカルニュース欄で確認した横浜市関連の記事です。
+- 放置自転車のパンク被害が急増していた事案を扱っています。
+- Googleニュース上では、カナロコの記事として表示されていました。
+- 警察側は交番勤務員らによる張り込みを続けたとされています。
+- 張り込み期間は見出し上で3カ月と確認できます。
+- 結果として、男の逮捕に至ったことが見出しで示されています。
+- 本文詳細は確認できた見出し情報に限定して要約しています。
+
+### Key Findings
+- 地域は横浜で、ローカルニュースとして掲載されていた。 [^]
+  - Footnote: Googleニュースのローカルニュース欄に表示された。
+- 被害内容は放置自転車のパンク被害である。 [^]
+  - Footnote: 見出し: 「横浜で放置自転車のパンク被害急増」
+- 警察関係者が長期間の張り込みを行った。 [^]
+  - Footnote: 見出し: 「交番勤務員ら３カ月張り込み」
+- 事件は逮捕という段階まで進んだ。 [^]
+  - Footnote: 見出し末尾: 「男を逮捕」
+- 媒体は地域紙系のカナロコである。 [^]
+  - Footnote: Googleニュースの媒体表示: 「カナロコ」
+
+### References
+- https://news.google.com/read/CBMiZ0FVX3lxTE50MTA5XzZhR1JCLXM0Z0FTd0NGVnFJVXFSa3U5YkEyejN2akZPOWhVMTkwSXlvcjlpVlZENlM3X2laRnJka0tSNEw3LVVWb0J5NDRwYlR1Sl9vZG9sTEhWQ0FsRElYRWc?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 奥日光・中禅寺湖で「船禅頂」 日光開山の祖、勝道上人が修行した霊場を巡拝
+
+### Executive Summary
+- おすすめニュース欄で確認した栃木県内ニュースの記事です。
+- 奥日光・中禅寺湖で行われた「船禅頂」を扱っています。
+- 日光開山の祖とされる勝道上人に関わる霊場巡拝が主題です。
+- Googleニュース上では、栃木県内ニュースとして表示されていました。
+- 宗教行事、地域文化、観光資源が交差する内容です。
+- 地域の伝統行事を紹介する記事として位置づけられます。
+- 本文詳細は確認できた見出し情報に限定して要約しています。
+
+### Key Findings
+- 記事の舞台は奥日光・中禅寺湖である。 [^]
+  - Footnote: 見出し: 「奥日光・中禅寺湖で『船禅頂』」
+- 主題は船を使った霊場巡拝行事と読み取れる。 [^]
+  - Footnote: 見出し: 「霊場を巡拝」
+- 勝道上人の修行地と関連づけて報じられている。 [^]
+  - Footnote: 見出し: 「日光開山の祖、勝道上人が修行した霊場」
+- 地域のおすすめニュース枠に掲載されていた。 [^]
+  - Footnote: Googleニュースの表示: 「とちぎのおすすめニュース」
+- 媒体表示は栃木県内ニュースだった。 [^]
+  - Footnote: Googleニュースの媒体表示: 「栃木県内ニュース」
+
+### References
+- https://news.google.com/read/CBMiigJBVV95cUxOdUdqeWF5d1NxOUJhelByOFlzLTFXdlpZc0tWVmpuUzgwYnpUMV9KYkl6TXNBTExjTFV6eFdKaElKbEQ3NVNCRlJNWjBfM1phd3F4VDFYV0d2VEpNNm1wUlVmalNjcjNmd2ZfMUZVZlExR2lOcFJSX2Qwb2tpVUxjRXQ1UEw2d08xbE94YlJLQWZkSld4M05odkRyNklBUllhMlA3eWFpbW5yNG93QS1sNXI3aU4zcDByTXU3SDNDR240VkVmWVdLOGQ5dTNMaUtRaFAzcmk1bkRTOU1Xc0Z2QkZObzJaMVFLYVVQS21JMHVma0dXNWtSVGJYcEpzTzd5Ukp4SEdsRjYyQQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 台風13号(ドルフィン) 沖縄では数日にわたり暴風雨となるおそれ
+
+### Executive Summary
+- トピック_日本欄で確認した台風13号の記事です。
+- 沖縄で数日にわたり暴風雨となるおそれが示されています。
+- Googleニュース上では、ウェザーニュースの記事として表示されていました。
+- ホーム上部の気象情報にも、台風第13号の進路と勢力が表示されていました。
+- 台風は日本の南を西へ進む状況として示されています。
+- 中心気圧、最大風速、最大瞬間風速の情報が確認できました。
+- 防災上は、沖縄を中心に長引く影響への警戒が必要な内容です。
+
+### Key Findings
+- 記事は台風13号、別名ドルフィンを扱っている。 [^]
+  - Footnote: 見出し: 「台風13号(ドルフィン)」
+- 沖縄では暴風雨が数日続く可能性がある。 [^]
+  - Footnote: 見出し: 「沖縄では数日にわたり暴風雨となるおそれ」
+- Googleニュース上部の気象欄でも台風第13号が注目情報として表示された。 [^]
+  - Footnote: 気象欄: 「全般台風情報、台風第13号」
+- 台風は日本の南を西へ進んでいると表示されていた。 [^]
+  - Footnote: 気象欄: 「日本の南にあって、1時間におよそ20キロの速さで西へ」
+- 勢力情報として、中心気圧945ヘクトパスカル、最大風速45メートル、最大瞬間風速60メートルが表示された。 [^]
+  - Footnote: 気象欄: 「中心の気圧は945ヘクトパスカル、中心付近の最大風速は45メートル、最大瞬間風速は60メートル」
+
+### References
+- https://news.google.com/read/CBMiVEFVX3lxTE12NTBKM0FuMVNudmd2MW04TERqX2k1TG5MbmxMVUE3UjVRM0h3MGd2bXpvd2dIdHNBN3BOenV3U013VHRfOUFacEtSY3NhbUJGU2NDXw?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 中村倫也、3年ぶり朝ドラ帰還のインパクト 『風、薫る』の空気を一瞬で変えた存在感
+
+### Executive Summary
+- トピック_エンタメ欄で確認した芸能記事です。
+- 俳優の中村倫也さんが朝ドラに3年ぶりに帰還したことを扱っています。
+- 作品名として『風、薫る』が見出しに含まれています。
+- Googleニュース上では、リアルサウンドの記事として表示されていました。
+- 記事は出演そのものより、登場による作品内の空気の変化に焦点を置いています。
+- 見出しでは、存在感の強さが評価軸になっています。
+- 本文詳細は確認できた見出し情報に限定して要約しています。
+
+### Key Findings
+- 対象人物は中村倫也さんである。 [^]
+  - Footnote: 見出し冒頭: 「中村倫也」
+- 朝ドラへの出演が3年ぶりであることが強調されている。 [^]
+  - Footnote: 見出し: 「3年ぶり朝ドラ帰還」
+- 対象作品は『風、薫る』である。 [^]
+  - Footnote: 見出し: 「『風、薫る』」
+- 記事は演技や登場感が作品の印象を変えた点を評価している。 [^]
+  - Footnote: 見出し: 「空気を一瞬で変えた存在感」
+- 媒体はリアルサウンドで、エンタメ欄に掲載されていた。 [^]
+  - Footnote: Googleニュースの表示: 「エンタメ」「リアルサウンド」
+
+### References
+- https://news.google.com/read/CBMiYkFVX3lxTFBMVHRSd3FwczExcnNjVk5fY0RUdE1sRDJxempGUDhHWEFtcUV1NGhEQktpaXpHQ1VHdmtsNkRZSzVpLXZFOFYyMGVSUVI4QmxTVnB0b1dDMUJGUTU1MVZGTzJR0gFnQVVfeXFMUGtDc2JsUS11aDZrbE0xQVZnZkhlNmhFb2ozcHdwb3FHeWExclpvekRPeVJnY2FwczRESjdzSDBWRG1OVElnX1BkY0RKcXBVRGxtM2JqSGR6Z1E1LWk5bGx4VklGYW5pUQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ＮＹ外為市場＝円が対ドル・ユーロで下落、協調介入の円売りけん制効果に注目
+
+### Executive Summary
+- トピック_ビジネス欄で確認した為替市場の記事です。
+- ニューヨーク外国為替市場で円が対ドル、対ユーロで下落した内容です。
+- Googleニュース上では、ロイターの記事として表示されていました。
+- 見出しでは、協調介入に関する円売りけん制効果が注目点とされています。
+- 為替変動と政策当局の市場けん制が焦点です。
+- 同じ欄には株価指数や金融情報も表示されていました。
+- 本文詳細は確認できた見出し情報に限定して要約しています。
+
+### Key Findings
+- 対象市場はニューヨーク外国為替市場である。 [^]
+  - Footnote: 見出し冒頭: 「ＮＹ外為市場」
+- 円はドルに対して下落した。 [^]
+  - Footnote: 見出し: 「円が対ドル・ユーロで下落」
+- 円はユーロに対しても下落した。 [^]
+  - Footnote: 見出し: 「対ドル・ユーロで下落」
+- 市場では協調介入に関する発言や姿勢の影響が注目されている。 [^]
+  - Footnote: 見出し: 「協調介入の円売りけん制効果に注目」
+- 媒体はロイターで、ビジネス欄に掲載されていた。 [^]
+  - Footnote: Googleニュースの表示: 「ビジネス」「ロイター」
+
+### References
+- https://news.google.com/read/CBMieEFVX3lxTFBtN190ZDJQaXc5a3p3ckk4QUNyVm9fRXktamxMajF1djdBZmR2V0o1ZUk4T3ZuNlRGbVdIaWVmcjF4QkVQTHhRMDdqZHpsaGlCVjdtNGhRQUF5YU8wSjhQLWQtM05XaTF5SURKZVNYY2YzTlJJajBQMQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 大質量星団「ウェスタールンド1」は銀河最強クラスの宇宙線加速器
+
+### Executive Summary
+- トピック_宇宙として、科学＆テクノロジー欄の宇宙関連記事を取得しました。
+- 大質量星団ウェスタールンド1に関する天文学記事です。
+- Googleニュース上では、astroarts.co.jpの記事として表示されていました。
+- 見出しは、この星団を銀河最強クラスの宇宙線加速器と位置づけています。
+- 宇宙線の発生や加速源をめぐる研究成果が中心と考えられます。
+- 掲載時刻はGoogleニュース上で12時間前と表示されていました。
+- 本文詳細は確認できた見出し情報に限定して要約しています。
+
+### Key Findings
+- 対象は大質量星団ウェスタールンド1である。 [^]
+  - Footnote: 見出し: 「大質量星団『ウェスタールンド1』」
+- この星団が宇宙線加速に関わる存在として報じられている。 [^]
+  - Footnote: 見出し: 「宇宙線加速器」
+- 強度は銀河最強クラスと表現されている。 [^]
+  - Footnote: 見出し: 「銀河最強クラス」
+- 媒体は天文情報を扱うastroarts.co.jpである。 [^]
+  - Footnote: Googleニュースの媒体表示: 「astroarts.co.jp」
+- 科学＆テクノロジー欄で12時間前の記事として表示されていた。 [^]
+  - Footnote: Googleニュースの表示: 「科学＆テクノロジー」「12 時間前」
+
+### References
+- https://news.google.com/read/CBMiakFVX3lxTE93czVMN1hzTGNiLUNUemViTm8tUnlZV1lXbHVRLThXQ3NVQlY5OUtaYTZaRG1FTXQxWmczb1JIcXdndWFsX01VTjc2Zml5M2hscThnSEdmS0JqLTU2N1Y2YUdUcmhxWHQxTFE?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 栄養の質ではなく、量を感じる腸細胞
+
+### Executive Summary
+- トピック_栄養として、Googleニュース内で「栄養」を検索して取得しました。
+- 理化学研究所系の riken.jp の記事として表示されていました。
+- 主題は、腸細胞が栄養の質ではなく量を感じるという研究内容です。
+- 栄養感知の仕組みに関する基礎研究記事と位置づけられます。
+- 見出しは、栄養の質と量を明確に対比しています。
+- 検索結果ではこの見出しが上位に表示されました。
+- 本文詳細は確認できた見出し情報に限定して要約しています。
+
+### Key Findings
+- 記事の主題は腸細胞による栄養感知である。 [^]
+  - Footnote: 見出し: 「栄養の質ではなく、量を感じる腸細胞」
+- 栄養の質ではなく量が焦点とされている。 [^]
+  - Footnote: 見出し内の対比: 「質ではなく、量」
+- 腸細胞が感知主体として扱われている。 [^]
+  - Footnote: 見出し末尾: 「腸細胞」
+- 媒体は riken.jp と表示されていた。 [^]
+  - Footnote: Googleニュース検索結果の媒体表示: 「riken.jp」
+- Googleニュース検索で栄養関連の最新候補として取得した。 [^]
+  - Footnote: 検索URL: https://news.google.com/search?q=%E6%A0%84%E9%A4%8A&hl=ja&gl=JP&ceid=JP%3Aja
+
+### References
+- https://news.google.com/read/CBMiY0FVX3lxTFBlT05nTUx3dktjazNhT2h1Z2ZfTGpjcHZUeXNPWVpGY05seE9EbnRVRUJqMHZDcEFiQ0Z0VUJXYVNPY3FhX1JiZG9Da3N3cnV2eV8xenB5QjZUdmVMY290eXI0bw?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 『ファイナルファンタジーVII リベレーション』に関するいろいろな噂を浜口Dに訊いた。ハッピーエンドになりそうって本当？ACにつながるって本当？DLCは？
+
+### Executive Summary
+- 興味深いニュース欄で確認したゲーム関連の記事です。
+- 『ファイナルファンタジーVII リベレーション』に関する噂を扱っています。
+- Googleニュース上では、AUTOMATONの記事として表示されていました。
+- 浜口Dへの質問形式で、物語展開や関連作品との接続が話題になっています。
+- 見出しでは、ハッピーエンド、ACとの接続、DLCの有無が論点です。
+- 掲載時刻はGoogleニュース上で4日前と表示されていました。
+- 本文詳細は確認できた見出し情報に限定して要約しています。
+
+### Key Findings
+- 対象作品は『ファイナルファンタジーVII リベレーション』である。 [^]
+  - Footnote: 見出し冒頭: 「『ファイナルファンタジーVII リベレーション』」
+- 記事は作品に関する複数の噂を検証する形式である。 [^]
+  - Footnote: 見出し: 「いろいろな噂を浜口Dに訊いた」
+- 物語の結末に関する関心が論点になっている。 [^]
+  - Footnote: 見出し: 「ハッピーエンドになりそうって本当？」
+- 関連作品ACとの接続も論点に含まれる。 [^]
+  - Footnote: 見出し: 「ACにつながるって本当？」
+- DLCの有無も読者関心として扱われている。 [^]
+  - Footnote: 見出し末尾: 「DLCは？」
+
+### References
+- https://news.google.com/read/CBMidkFVX3lxTE1RTDdEQzlSV0JkUTNVc3JLeGFXUTlyLWYwSnhCck5ldHJIdU1YSjdiZ293cTFnTXZUVEdVc3R3TzFsN0RYamhMV0djT3AycVJMRjJnS0xnNTdsaFE3MEhtT0tKcGE1dVJYQ1NsZnJEZDhUQWtnM3c?hl=ja&gl=JP&ceid=JP%3Aja
