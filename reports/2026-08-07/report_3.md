@@ -1,0 +1,239 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-08-07T00:00:00+09:00
+- Articles: 9
+
+## 高市首相、広島の原爆死没者慰霊式・平和祈念式 あいさつ全文
+
+### Executive Summary
+- トップニュース枠で広島の原爆死没者慰霊式・平和祈念式に関する首相あいさつ全文が掲載された。
+- 記事は産経ニュース配信で、Google ニュース上では23時間前の記事として表示された。
+- 同じトップ枠には原爆忌、被爆体験、首相動静など関連ニュースが並んでいた。
+- 式典と政治発信が、戦後・核廃絶・慰霊をめぐる主要論点として扱われている。
+- 本文全文の詳細取得は未確認のため、要約はGoogleニュース一覧で確認できた範囲に限定した。
+- ログイン必須判定は表示上確認できず、Googleニュース記事URLを参照先として記録した。
+- カテゴリはTOPニュースとして扱った。
+
+### Key Findings
+- 記事の中心は広島の慰霊式・平和祈念式での首相あいさつである。 [^]
+  - Footnote: 見出しに「高市首相、広島の原爆死没者慰霊式・平和祈念式 あいさつ全文」と表示。
+- Google ニュース上ではトップニュースの先頭候補として確認された。 [^]
+  - Footnote: ホーム画面の「トップニュース」直下に掲載。
+- 配信元は産経ニュースである。 [^]
+  - Footnote: 記事リンクの aria 情報に「産経ニュース」と表示。
+- 掲載時刻は相対表示で23時間前だった。 [^]
+  - Footnote: 記事リンクの aria 情報に「23 時間前」と表示。
+- 同枠では広島原爆の日に関する複数記事が並んでいた。 [^]
+  - Footnote: 周辺に「原爆忌」「戦後８１年」「被爆語り」などの見出しを確認。
+
+### References
+- https://news.google.com/read/CBMidkFVX3lxTE4wNGhoTTFLb0NzTzVZempSaUdkelEycXVZOTI2UktBOFlfQVpQR0sycUlkWEJGWEdoVUR4YU1fNnpoVXdfZk5kUE1zVVBiT0t2dWc0UHNybUV5MnpTM2NGX01HT0JlT3FRbkVuRE5YNTlCeENocFE?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ベイスターズファンからも人気！ ビーフと高菜とスケボーもはさむ、横浜にあるプレスサンドの店
+
+### Executive Summary
+- ローカルニュース枠から横浜のプレスサンド店を扱う記事を取得した。
+- 記事はDig-it配信で、Google ニュース上では昨日の記事として表示された。
+- 見出しはベイスターズファンからの人気に触れ、地域色の強い飲食店紹介になっている。
+- ビーフ、高菜、スケボーという複数要素を含む店舗の個性が前面に出ている。
+- 横浜のローカル話題として、観光・スポーツファン・飲食が交差する内容と読める。
+- 本文全文の詳細取得は未確認のため、要約は一覧で確認できた範囲に限定した。
+- カテゴリはローカルニュースとして扱った。
+
+### Key Findings
+- 対象は横浜にあるプレスサンドの店である。 [^]
+  - Footnote: 見出しに「横浜にあるプレスサンドの店」と表示。
+- ベイスターズファンからの人気が記事の訴求点になっている。 [^]
+  - Footnote: 見出しに「ベイスターズファンからも人気！」と表示。
+- 飲食メニューとしてビーフと高菜が強調されている。 [^]
+  - Footnote: 見出しに「ビーフと高菜」と表示。
+- 店舗紹介にスケボーというカルチャー要素も含まれている。 [^]
+  - Footnote: 見出しに「スケボーもはさむ」と表示。
+- 配信元はDig-itで、掲載は昨日と表示された。 [^]
+  - Footnote: aria 情報に「Dig-it [ディグ・イット] - 昨日」と表示。
+
+### References
+- https://news.google.com/read/CBMiWkFVX3lxTE55eFpUa1plbm5JanlNbVZJQWg0VzY0aDJLNDFhSTVIRGJFcWk0bW15RGV6LXdYbzF0SFJHZFpJMmI2ekNpaWtncEdMczFSTjVHUkJDUmdkUV9iUQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## イオン爆発 ガス供給会社コメント
+
+### Executive Summary
+- おすすめ枠から、イオンでの爆発に関するガス供給会社コメントの記事を取得した。
+- 記事はYahoo!ニュース配信で、Google ニュース上では12時間前の記事として表示された。
+- 見出しから、事故・トラブルに対する関係会社の説明が主題と分かる。
+- ガス供給会社のコメントが出ているため、原因や責任範囲への関心が高い話題と考えられる。
+- 周辺にはログイン促進表示があったが、この記事自体はGoogleニュースの一覧から参照可能だった。
+- 本文全文の詳細取得は未確認のため、要約は一覧で確認できた範囲に限定した。
+- カテゴリはおすすめとして扱った。
+
+### Key Findings
+- 記事はイオンでの爆発事案を扱っている。 [^]
+  - Footnote: 見出しに「イオン爆発」と表示。
+- ガス供給会社のコメントが焦点になっている。 [^]
+  - Footnote: 見出しに「ガス供給会社コメント」と表示。
+- 配信元はYahoo!ニュースである。 [^]
+  - Footnote: aria 情報に「Yahoo!ニュース」と表示。
+- 掲載時刻は相対表示で12時間前だった。 [^]
+  - Footnote: aria 情報に「12 時間前」と表示。
+- おすすめ枠はログインによる個別最適化案内と併記されていた。 [^]
+  - Footnote: 周辺テキストに「ログインすると、興味や関心に基づいた記事」と表示。
+
+### References
+- https://news.google.com/read/CBMiUEFVX3lxTE5yTjRDb29yX0pzUmdBeXd1bFNBU2s5cjFkUnI2RjczendvOWtpa1RuOXRXTHpNbldZbGJPN25pTkNDd3RTcEE1VFc3TUtqVGJl?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 7日は台風13号が沖縄や奄美に最接近　線状降水帯発生のおそれ　長時間の暴風・高波(気象予報士 青山　亜紀子 2026年08月07日)
+- Date: 2026-08-07T00:00:00+09:00
+
+### Executive Summary
+- トピック_日本枠から、台風13号が沖縄や奄美に最接近する見通しの記事を取得した。
+- 記事はtenki.jp配信で、Google ニュース上では3時間前の記事として表示された。
+- 見出しは線状降水帯発生のおそれを明示し、大雨リスクを強調している。
+- 長時間の暴風と高波にも注意が必要な気象ニュースとして扱われている。
+- 記事タイトルには気象予報士名と2026年08月07日の記載が含まれていた。
+- 本文全文の詳細取得は未確認のため、要約は一覧で確認できた範囲に限定した。
+- カテゴリはトピック_日本として扱った。
+
+### Key Findings
+- 台風13号が沖縄や奄美に最接近する見通しである。 [^]
+  - Footnote: 見出しに「台風13号が沖縄や奄美に最接近」と表示。
+- 線状降水帯発生のおそれが示されている。 [^]
+  - Footnote: 見出しに「線状降水帯発生のおそれ」と表示。
+- 暴風と高波が長時間続く可能性がある。 [^]
+  - Footnote: 見出しに「長時間の暴風・高波」と表示。
+- 記事の日付は2026年8月7日である。 [^]
+  - Footnote: 見出し末尾に「2026年08月07日」と表示。
+- 配信元はtenki.jpで、気象予報士名も表示された。 [^]
+  - Footnote: 見出しに「気象予報士 青山 亜紀子」、aria 情報に「tenki.jp」と表示。
+
+### References
+- https://news.google.com/read/CBMiakFVX3lxTE1PcEJOakxkQWo2T2ZScFg5djV4YVNWcnBpaEY5Rkt2NndTT0JBaHZtb1BXRVcxOU9PZ1J1TlZFLU5TWUFzcFo5TjZrLVpHV3VDdHJhZ29KUHNPUTdNSEhSMC1QMW1vRFRDdGfSAW9BVV95cUxQWGNuNUE5SzNfdmYzVDltTktGUE9yMVhrdEFoMl9JblM0eTdCblpod2VRdlpkSi1tSmtPelhBQVlyR01PVGtydlFzWG90RHJLakN4cllEZXFwcTE0QXp4aFgyeVBKd1BnMkI4UUhOQmc?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 小栗旬、5年ぶり民放ドラマレギュラー出演 横浜流星と初共演で“異色バディ”「もう最高です」【コメント全文】（オリコン）
+
+### Executive Summary
+- トピック_エンタメ枠から、小栗旬の民放ドラマ出演に関する記事を取得した。
+- 記事はYahoo!ニュース上のオリコン記事で、Google ニュースでは2時間前と表示された。
+- 小栗旬が5年ぶりに民放ドラマでレギュラー出演する点が主題である。
+- 横浜流星との初共演が見出しで強調されている。
+- “異色バディ”という表現から、作品内の関係性や配役が注目点になっている。
+- コメント全文を含む記事として案内されていた。
+- カテゴリはトピック_エンタメとして扱った。
+
+### Key Findings
+- 小栗旬が民放ドラマにレギュラー出演する。 [^]
+  - Footnote: 見出しに「民放ドラマレギュラー出演」と表示。
+- 小栗旬にとって5年ぶりの民放ドラマレギュラー出演である。 [^]
+  - Footnote: 見出しに「5年ぶり」と表示。
+- 横浜流星との初共演がニュース価値として扱われている。 [^]
+  - Footnote: 見出しに「横浜流星と初共演」と表示。
+- 作品では“異色バディ”が訴求されている。 [^]
+  - Footnote: 見出しに「“異色バディ”」と表示。
+- 配信元はYahoo!ニュース、元記事はオリコンである。 [^]
+  - Footnote: 見出しに「（オリコン）」、aria 情報に「Yahoo!ニュース - 2 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMif0FVX3lxTFBjUkREZ3NtYW1qSGp4WDBuRHZFOXluSVU1el9fbk5lbEVqWFdKOGRycW1tUE1aWWxiSnFRakRpOV96NEZBd0Y0VkZOenVXTnI1WEZ4VlRlcWpYSFdteDFzeUx6RkRsNkp3VS1Bbm9xdE9KZlh2OFpZdHBwalg3UFU?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 【データセンター】地元・秋田は経済効果に期待 膨大な電力と水の供給が課題
+
+### Executive Summary
+- トピック_ビジネス枠から、秋田のデータセンターに関する記事を取得した。
+- 記事は秋田魁新報電子版配信で、Google ニュース上では2時間前と表示された。
+- 地元ではデータセンターによる経済効果への期待が示されている。
+- 一方で、膨大な電力と水の供給が課題として明示されている。
+- 産業誘致と地域インフラ負荷の両面を扱うビジネスニュースである。
+- 本文全文の詳細取得は未確認のため、要約は一覧で確認できた範囲に限定した。
+- カテゴリはトピック_ビジネスとして扱った。
+
+### Key Findings
+- 記事の対象はデータセンターである。 [^]
+  - Footnote: 見出し冒頭に「【データセンター】」と表示。
+- 秋田の地元経済への効果が期待されている。 [^]
+  - Footnote: 見出しに「地元・秋田は経済効果に期待」と表示。
+- 電力供給が主要課題として挙げられている。 [^]
+  - Footnote: 見出しに「膨大な電力」と表示。
+- 水の供給も課題として挙げられている。 [^]
+  - Footnote: 見出しに「水の供給が課題」と表示。
+- 配信元は秋田魁新報電子版で、掲載は2時間前と表示された。 [^]
+  - Footnote: aria 情報に「秋田魁新報電子版 - 2 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMiYkFVX3lxTE03MDI2c0RsZXQwc2ZXNHg1Ql80Z0pPOWVvRDh1VVFKN09McTlZWnAtTDh2bExIUWpIbGs2OWlvZ0htdTFVNVlZNlBrVFR2dXI1TE4td1luZlhlbkdDODBNNUln?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 猛暑で干上がる欧州の河川、宇宙からも深刻な状況を確認 広大な砂州が露出
+
+### Executive Summary
+- トピック_宇宙枠はGoogleニュース検索で「宇宙」を検索し、最新候補から取得した。
+- 記事はCNN.co.jp配信で、Google ニュース上では19時間前と表示された。
+- 猛暑で欧州の河川が干上がる状況を、宇宙からも確認したという内容である。
+- 広大な砂州の露出が、深刻な渇水状況の視覚的な根拠として示されている。
+- 宇宙観測が地上の気候・水資源リスク把握に使われている事例と読める。
+- 本文全文の詳細取得は未確認のため、要約は一覧で確認できた範囲に限定した。
+- カテゴリはトピック_宇宙として扱った。
+
+### Key Findings
+- 欧州の河川が猛暑で干上がっている。 [^]
+  - Footnote: 見出しに「猛暑で干上がる欧州の河川」と表示。
+- 深刻な状況は宇宙からも確認された。 [^]
+  - Footnote: 見出しに「宇宙からも深刻な状況を確認」と表示。
+- 広大な砂州の露出が報じられている。 [^]
+  - Footnote: 見出しに「広大な砂州が露出」と表示。
+- 配信元はCNN.co.jpである。 [^]
+  - Footnote: aria 情報に「CNN.co.jp」と表示。
+- Google ニュース検索上では19時間前の記事として表示された。 [^]
+  - Footnote: aria 情報に「19 時間前」と表示。
+
+### References
+- https://news.google.com/read/CBMiVEFVX3lxTE1CczJBalB1YUF1eUhNclM5YTNja1pKbTNWYnlkLUJFRWZPMDVjeFhyWVBxbU42bjVPVFVlb1ZkNWJVUEo0SG1WWTNGZkwwX3pTSzd5MQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 「健康的な食事不可能に」 栄養価の高い食品、5年間に25％上昇 国連機関（時事通信）
+
+### Executive Summary
+- トピック_栄養枠はGoogleニュース検索で「栄養」を検索し、最新候補から取得した。
+- 記事はYahoo!ニュース上の時事通信記事で、Google ニュースでは2日前と表示された。
+- 栄養価の高い食品価格が5年間で25％上昇したことが主題である。
+- 国連機関の情報として、健康的な食事が困難になっている状況を伝えている。
+- 食品価格の上昇が栄養摂取や食料アクセスに与える影響を示すニュースである。
+- 本文全文の詳細取得は未確認のため、要約は一覧で確認できた範囲に限定した。
+- カテゴリはトピック_栄養として扱った。
+
+### Key Findings
+- 栄養価の高い食品価格が上昇している。 [^]
+  - Footnote: 見出しに「栄養価の高い食品、5年間に25％上昇」と表示。
+- 上昇幅は5年間で25％と示されている。 [^]
+  - Footnote: 見出しに「5年間に25％上昇」と表示。
+- 健康的な食事が困難になっているという問題提起である。 [^]
+  - Footnote: 見出しに「健康的な食事不可能に」と表示。
+- 国連機関に関する情報として扱われている。 [^]
+  - Footnote: 見出しに「国連機関」と表示。
+- 配信元はYahoo!ニュース上の時事通信で、掲載は2日前と表示された。 [^]
+  - Footnote: 見出しに「時事通信」、aria 情報に「Yahoo!ニュース - 2 日前」と表示。
+
+### References
+- https://news.google.com/read/CBMif0FVX3lxTFBzRjRuLU5zX3RlRW5vREgwUVFIYXYxUzFOY0daTVJwdzc5aUZUWXhjLUxkVmd2cVVIc0l6bUVGdFZ3cUV3UFAzU2VDbXRUWDI5eXYtdnNPRUZrcWxHeDdjaFJpY0F3Ykt6bGJqUTExR0ExV19LZHp3YzlrMU8xcE0?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ド軍戦4時間前…駆け巡る「ビッグニュース」 大谷翔平の気になる"情報"「興味深い」
+
+### Executive Summary
+- 興味深いニュース枠はGoogleニュース検索で「興味深い ニュース」を検索し、候補から取得した。
+- 記事はfull-count.jp配信で、Google ニュース上では7月31日の記事として表示された。
+- ドジャース戦の4時間前に大谷翔平に関する“ビッグニュース”が駆け巡ったという内容である。
+- 見出しは大谷翔平の情報に対して「興味深い」とする反応を強調している。
+- スポーツ領域の話題だが、検索条件に合致する興味深いニュース候補として採用した。
+- 本文全文の詳細取得は未確認のため、要約は一覧で確認できた範囲に限定した。
+- カテゴリは興味深いニュースとして扱った。
+
+### Key Findings
+- 記事は大谷翔平に関する情報を扱っている。 [^]
+  - Footnote: 見出しに「大谷翔平の気になる情報」と表示。
+- ドジャース戦の4時間前に情報が広がったとされる。 [^]
+  - Footnote: 見出しに「ド軍戦4時間前」と表示。
+- 情報は“ビッグニュース”として表現されている。 [^]
+  - Footnote: 見出しに「ビッグニュース」と表示。
+- 記事内の反応として「興味深い」が強調されている。 [^]
+  - Footnote: 見出しに「興味深い」と表示。
+- 配信元はfull-count.jpで、掲載日は7月31日と表示された。 [^]
+  - Footnote: aria 情報に「full-count.jp - 7月31日」と表示。
+
+### References
+- https://news.google.com/read/CBMiWEFVX3lxTE5tNlowWFJmSUZ3NEg5S2RDeVBhY3pEWWQ3SmpkOFhrdGV6V2UyMUJFMEpxRTNTLTFJR3BleFBCS3FRdGhCNE9qdV9ITlktbmxNcXVUeGlvMm0?hl=ja&gl=JP&ceid=JP%3Aja
