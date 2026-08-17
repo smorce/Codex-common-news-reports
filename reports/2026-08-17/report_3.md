@@ -1,0 +1,265 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-08-17T09:07:55.7709304+09:00
+- Articles: 9
+
+## モスクワへ過去2年で最大規模のドローン攻撃 ロシア各地で7人死亡
+
+### Executive Summary
+- Google ニュースのトップニュース枠で、朝日新聞の記事として表示された。
+- 見出しは、モスクワへの大規模ドローン攻撃を伝えている。
+- 攻撃規模は「過去2年で最大規模」とされている。
+- ロシア各地で7人死亡したと報じられている。
+- 関連枠には、ウクライナ軍によるモスクワへの大規模攻撃を伝える記事が複数並んだ。
+- 別媒体では600機飛来、822機撃墜などの数字も見出しに出ており、被害と迎撃の双方が焦点になっている。
+- Google ニュース上の表示時刻は12時間前だったため、速報性の高い国際ニュースとして扱われている。
+- ログイン不要で確認できた範囲では、詳細な作戦経緯や公式発表全文までは確認できない。
+
+### Key Findings
+- トップニュースの主要項目は、モスクワへのドローン攻撃だった。 [^]
+  - Footnote: Google ニュースのトップニュース欄に「モスクワへ過去2年で最大規模のドローン攻撃 ロシア各地で7人死亡」と表示。
+- 攻撃は近年でも大規模と位置付けられている。 [^]
+  - Footnote: 見出しに「過去2年で最大規模」と明記。
+- 人的被害が発生している。 [^]
+  - Footnote: 見出しに「ロシア各地で7人死亡」と表示。
+- 同一テーマの関連記事が複数媒体から表示されていた。 [^]
+  - Footnote: 日本経済新聞、Yahoo!ニュース、ロイターの記事が同じトップニュース群に並んでいた。
+- 攻撃機数や迎撃数は媒体ごとに異なる切り口で提示されていた。 [^]
+  - Footnote: 関連記事の見出しに「600機飛来」「822機撃墜」が表示。
+- Google ニュース上では最新性の高い記事として扱われた。 [^]
+  - Footnote: 当該記事の表示時刻は「12 時間前」。
+
+### References
+- https://news.google.com/read/CBMiZ0FVX3lxTE93NUJTOXZVODRNcTM1alV6bmhkYm95WmY3ajRfRHg5Wkd4VHM1bjh2WGhXWVZOUF9kZ1R0U24xZ2RBVjYxa3Bzb0Fqb2d5TmU4eWFlbmdPOUN6Q3hpRTlQRzktYXVoWFE?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 【地震速報】福岡 糸島で震度4 津波の心配なし
+
+### Executive Summary
+- Google ニュースのその他ニュース枠で、NHKニュースの記事として表示された。
+- 福岡県糸島で震度4の地震があったことを伝える速報記事である。
+- 見出し上では、津波の心配はないとされている。
+- 同じニュース群には、福岡地方でM4.4、最大震度4とする関連記事も並んだ。
+- 地震の規模、震度、津波有無が短く整理された災害速報として読める。
+- 表示時刻は2時間前で、ローカルニュースとしても即時性が高い。
+- ログイン不要で確認できた範囲では、詳細な震源深さや自治体別震度までは確認できない。
+- 住民向けには、続報と自治体・気象庁情報の確認が必要なニュースである。
+
+### Key Findings
+- 福岡県糸島で震度4が観測された。 [^]
+  - Footnote: 見出しに「福岡 糸島で震度4」と表示。
+- 津波の心配はないと報じられている。 [^]
+  - Footnote: 見出しに「津波の心配なし」と表示。
+- 地震規模は関連記事でM4.4と示されていた。 [^]
+  - Footnote: ウェザーニュース関連記事に「福岡県福岡地方でM4.4の地震 最大震度4」と表示。
+- ローカル災害情報として速報性が高い。 [^]
+  - Footnote: NHKニュース記事の表示時刻は「2 時間前」。
+- Google ニュースでは関連見出しへの導線も提示されていた。 [^]
+  - Footnote: 「見出しと意見をもっと見る - 【地震速報】福岡 糸島で震度4 津波の心配なし」が表示。
+- 確認できた範囲では人的被害の有無は不明である。 [^]
+  - Footnote: Google ニュース上の該当表示には被害状況の詳細文は出ていなかった。
+
+### References
+- https://news.google.com/read/CBMiX0FVX3lxTE9LY2dxVkU0cmJTU0lsOVlVZFVYS2hqd2Zod3FwMk9WblZmMjJOMUlfNGFCcHZoaTJvMUpmajBONHRsRl8wWTVHRGJEV200SWVCNnVtQTZRZVRHaTdPejNv?hl=ja&gl=JP&ceid=JP%3Aja
+
+## はじめしゃちょー「サマージャンボ宝くじ」3500万円購入　結果報告に「すごい検証」「やはりこれが現実か」
+
+### Executive Summary
+- Google ニュースのおすすめ周辺に、dメニューニュースの記事として表示された。
+- 記事は、はじめしゃちょーがサマージャンボ宝くじを3500万円分購入した結果報告を扱っている。
+- 見出しでは、購入額の大きさと検証企画としての反響が強調されている。
+- 読者・視聴者からは「すごい検証」「やはりこれが現実か」といった反応が出ている。
+- 宝くじ購入をエンタメ化した話題性の高い記事である。
+- 表示時刻は11時間前で、比較的新しい芸能・ネット話題として扱われている。
+- ログイン不要で確認できた範囲では、当選総額や具体的な収支の詳細は確認できない。
+- おすすめ欄はログインで個人化される旨も表示されていたため、非ログイン状態で見える一般候補として取得した。
+
+### Key Findings
+- 記事の中心人物は、はじめしゃちょーである。 [^]
+  - Footnote: 見出しに「はじめしゃちょー」と表示。
+- 購入対象はサマージャンボ宝くじである。 [^]
+  - Footnote: 見出しに「サマージャンボ宝くじ」と表示。
+- 購入額は3500万円とされている。 [^]
+  - Footnote: 見出しに「3500万円購入」と表示。
+- 結果報告に対して検証としての反応があった。 [^]
+  - Footnote: 見出しに「結果報告に『すごい検証』」と表示。
+- 現実的な結果を受け止める反応も示されている。 [^]
+  - Footnote: 見出しに「やはりこれが現実か」と表示。
+- Google ニュース上では11時間前の記事として表示された。 [^]
+  - Footnote: 該当記事の表示時刻は「11 時間前」。
+
+### References
+- https://news.google.com/read/CBMigwFBVV95cUxPa0U3WGRSZWp5dHB3VWtjdjZkeVdnLWFmQTRza2RJbmU5MWNBU25lTlJxNFdkcFV1VkRtUXhPVExacTIzeUw0eVdTdWJSODZGamoxMTNOOGhWVzZqSVJGakpPQ2tRa2tNNHVTY09MaURoMDU1cFlwakRSQWs3ZFIwakozY9IBiAFBVV95cUxNZTFINjBEQUlqaTBhQ2pycHRVdE5ERWFUejhnUFpRUkpQRWZCNzBHcjRJVmpxZG1XQWZraExHUzFsYVVqS283anU3Zk00SjU3TzhvYmxYV3dvbjRXTmxpdkMtcFFoQW1VOHlSVnJXQXRjN3JQazQtTTNobWFZTE55LTR3d21CbzJG?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 一酸化炭素中毒で死亡、停電中の発電機か 千葉豪雨で死者10人に [千葉県]
+
+### Executive Summary
+- Google ニュースのトピック「日本」で、朝日新聞の記事として表示された。
+- 千葉豪雨に関連し、一酸化炭素中毒による死亡が報じられている。
+- 見出しは、停電中の発電機が原因の可能性を示している。
+- 千葉豪雨の死者数は10人になったとされている。
+- 災害時の停電対応と発電機使用リスクが焦点になっている。
+- 表示時刻は52分前で、国内災害の続報として非常に新しい。
+- 同じページ上では、千葉豪雨に関するトップニュースも複数表示されていた。
+- ログイン不要で確認できた範囲では、死亡した人の属性や詳しい発生場所までは確認できない。
+
+### Key Findings
+- 千葉豪雨に関連する死亡事案が報じられた。 [^]
+  - Footnote: 見出しに「千葉豪雨で死者10人に」と表示。
+- 一酸化炭素中毒が死亡原因として示されている。 [^]
+  - Footnote: 見出しに「一酸化炭素中毒で死亡」と表示。
+- 停電中の発電機が関係した可能性がある。 [^]
+  - Footnote: 見出しに「停電中の発電機か」と表示。
+- 国内ニュースの日本トピックで扱われた。 [^]
+  - Footnote: Google ニュースの「トピック 日本」欄に表示。
+- 記事は朝日新聞によるものとして表示された。 [^]
+  - Footnote: 該当見出しの直前に媒体名「朝日新聞」が表示。
+- 新しい続報として表示された。 [^]
+  - Footnote: 該当記事の表示時刻は「52 分前」。
+
+### References
+- https://news.google.com/read/CBMiZ0FVX3lxTFBTV3c1U2J0Z2RROURvTU0xclNrU3JVNlBSY2Z2T3NXb052Qk9neFhzWF80ZTVKRk01NkQwMUVuanFDOTgxM0tqQ01FVnRiQnAxcldibkVIZHhRbS1mejUzRTQwLXFrM00?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 明日の風、薫る：8月17日 第101回 あらすじ＆場面カット 虎太郎が“目にしてしまった”もの
+
+### Executive Summary
+- Google ニュースのトピック「エンタメ」で、Mantan Webの記事として表示された。
+- 記事は「明日の風、薫る」の8月17日放送回に関する内容である。
+- 第101回のあらすじと場面カットを紹介する形式の記事とみられる。
+- 見出しでは、虎太郎が何かを目にする展開が示されている。
+- 放送前後の視聴者向けに、ストーリーの予告・確認を提供する記事である。
+- 表示時刻は19時間前で、エンタメ欄の最新候補として表示された。
+- 同欄には「VIVANT」や永野芽郁関連の記事も並び、ドラマ・芸能ニュースが中心だった。
+- ログイン不要で確認できた範囲では、本文内の詳細なあらすじ全文は確認していない。
+
+### Key Findings
+- 記事対象は「明日の風、薫る」である。 [^]
+  - Footnote: 見出し冒頭に「明日の風、薫る」と表示。
+- 8月17日の第101回を扱っている。 [^]
+  - Footnote: 見出しに「8月17日 第101回」と表示。
+- 記事形式は、あらすじと場面カットの紹介である。 [^]
+  - Footnote: 見出しに「あらすじ＆場面カット」と表示。
+- 登場人物の虎太郎に関する展開が見出し化されている。 [^]
+  - Footnote: 見出しに「虎太郎が“目にしてしまった”もの」と表示。
+- Mantan Webの記事として表示された。 [^]
+  - Footnote: 該当見出しの直前に媒体名「Mantan Web」が表示。
+- 表示時刻は19時間前である。 [^]
+  - Footnote: 該当記事の表示時刻は「19 時間前」。
+
+### References
+- https://news.google.com/read/CBMia0FVX3lxTE1rR1cwX1ZibEE2bWxqaDhKMGtJRWxDeDBkLTB5VGVRWmhrblBDSXFFMUtpR1BQOWlGZEtWN0ZXdVEzMnQ1dHhCYnZnV09vLUtTNmpaMWNlVF9EZjk4Xzc1Q2o4akMtVURPUVdZ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## データで読む日本経済 成長力は米欧に見劣り 4〜6月のGDPきょう発表
+
+### Executive Summary
+- Google ニュースのトピック「ビジネス」で、日本経済新聞の記事として表示された。
+- 記事は、日本経済の成長力をデータで読む内容として示されている。
+- 見出しでは、日本の成長力が米欧に見劣りするとされている。
+- 4〜6月期のGDP発表が当日の焦点である。
+- ビジネス欄には同時に東京株式市場見通しや主要株価指数も表示されていた。
+- マクロ経済指標と市場動向が同じセクションで扱われている。
+- 表示時刻は4時間前で、当日発表前の解説記事とみられる。
+- ログイン不要で確認できた範囲では、具体的なGDP予測値や寄与度までは確認できない。
+
+### Key Findings
+- 日本経済の成長力がテーマである。 [^]
+  - Footnote: 見出しに「データで読む日本経済 成長力」と表示。
+- 日本の成長力は米欧と比べて見劣りすると示されている。 [^]
+  - Footnote: 見出しに「成長力は米欧に見劣り」と表示。
+- 4〜6月期GDPが当日の注目材料である。 [^]
+  - Footnote: 見出しに「4〜6月のGDPきょう発表」と表示。
+- 記事は日本経済新聞によるものとして表示された。 [^]
+  - Footnote: 該当見出しの直前に媒体名「日本経済新聞」が表示。
+- ビジネス欄では株式市場見通しも並行して表示された。 [^]
+  - Footnote: 同じビジネス欄に「１７日の東京株式市場見通し＝堅調な値動きか 速報」と表示。
+- 表示時刻は4時間前である。 [^]
+  - Footnote: 該当記事の表示時刻は「4 時間前」。
+
+### References
+- https://news.google.com/read/CBMibEFVX3lxTE1odTFmSVJCd0otN2dlbk5vT19NTnFBYnlsZFJiOW5GOEVJTkxfdERmSS1HR3dXQ3F3YWsyc1hSbWJNRmU5aHNJX1VENG1rX3hwZ1gtd0FUM0lUTzNCMnZfOHRSUXFKSkFtU01ESQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## NASA、宇宙の広大なパノラマ地図するローマン宇宙望遠鏡 8月末打ち上げへ
+
+### Executive Summary
+- Google ニュースで「宇宙」を検索し、Forbes JAPANの記事として表示された候補を取得した。
+- 記事はNASAのローマン宇宙望遠鏡を扱っている。
+- 見出しでは、宇宙の広大なパノラマを地図化する望遠鏡と説明されている。
+- 打ち上げ時期は8月末とされている。
+- 宇宙観測計画と大型望遠鏡ミッションの進展を伝えるニュースである。
+- 検索結果では、ニュートリノ研究、宇宙データセンター、宇宙不動産など多様な宇宙関連話題も並んでいた。
+- 表示時刻は18時間前で、宇宙カテゴリの新しい記事として扱われている。
+- ログイン不要で確認できた範囲では、ミッションの観測波長や軌道などの詳細仕様は確認できない。
+
+### Key Findings
+- 記事はNASAのローマン宇宙望遠鏡を扱う。 [^]
+  - Footnote: 見出しに「NASA」「ローマン宇宙望遠鏡」と表示。
+- 望遠鏡の目的は宇宙の広域地図化と示されている。 [^]
+  - Footnote: 見出しに「宇宙の広大なパノラマ地図する」と表示。
+- 打ち上げ予定は8月末とされている。 [^]
+  - Footnote: 見出しに「8月末打ち上げへ」と表示。
+- 記事媒体はForbes JAPANである。 [^]
+  - Footnote: 該当見出しの直前に媒体名「Forbes JAPAN」が表示。
+- Google ニュース検索の宇宙関連結果から取得した。 [^]
+  - Footnote: 検索ページに「宇宙」関連の複数見出しが表示されていた。
+- 表示時刻は18時間前である。 [^]
+  - Footnote: 該当記事の表示時刻は「18 時間前」。
+
+### References
+- https://news.google.com/read/CBMiWkFVX3lxTFBKeUw3YVdyVHc5dC1fY1lMd2ZHZ1BDd0NLUFNUdDByS2MwWk5MUVM1bUFkWnRabGRHNk1NM1RURzRlVU5ZcTZOREpQZmVyUE5qalhfSkVYd015UQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 皮ごと食べると栄養豊富？ デラウェアの栄養と効果的な食べ方
+
+### Executive Summary
+- Google ニュースで「栄養」を検索し、ウェザーニュースの記事として表示された候補を取得した。
+- 記事は、ぶどう品種デラウェアの栄養と食べ方を扱っている。
+- 見出しでは、皮ごと食べると栄養が豊富かどうかが問いとして提示されている。
+- 栄養を効果的に摂る食べ方が主題になっている。
+- 検索結果では、栄養教育、フレイル予防、調理器具、機能性食品市場など幅広い栄養関連ニュースが並んでいた。
+- 表示時刻は4時間前で、生活情報として新しい記事である。
+- ログイン不要で確認できた範囲では、具体的な栄養素名や推奨摂取量までは確認できない。
+- 食材の食べ方を通じた健康・栄養情報として要約対象にした。
+
+### Key Findings
+- 記事はデラウェアの栄養を扱っている。 [^]
+  - Footnote: 見出しに「デラウェアの栄養」と表示。
+- 皮ごと食べることが焦点になっている。 [^]
+  - Footnote: 見出しに「皮ごと食べると栄養豊富？」と表示。
+- 効果的な食べ方もテーマである。 [^]
+  - Footnote: 見出しに「効果的な食べ方」と表示。
+- 記事媒体はウェザーニュースである。 [^]
+  - Footnote: 該当見出しの直前に媒体名「ウェザーニュース」が表示。
+- Google ニュース検索の栄養関連結果から取得した。 [^]
+  - Footnote: 検索ページに「栄養」を含む複数記事が表示されていた。
+- 表示時刻は4時間前である。 [^]
+  - Footnote: 該当記事の表示時刻は「4 時間前」。
+
+### References
+- https://news.google.com/read/CBMiVEFVX3lxTE5FZVdCaVVfV3VFaEMtWm9ERXQwZjFWUmtjQjZ3Z0xCa0RFOW9RbUtLT3psVnlBcmRkYzBvNU0yS0l6VnR1bnBUWjl2R0FlRDBrN3M1YQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## なぜ、MUFGスタジアムは「ドコモスタジアム」じゃないのか　命名の裏に迫る - ITmedia Mobile
+
+### Executive Summary
+- Google ニュースの「興味深いニュース」欄で、ITmediaの記事として表示された。
+- 記事はMUFGスタジアムの命名をめぐる背景を扱っている。
+- 見出しでは、なぜ「ドコモスタジアム」ではないのかという疑問を提示している。
+- 命名権、ブランド戦略、企業名の出し方が主な関心点とみられる。
+- 興味深いニュース欄では、技術、音楽制作、Linux、AI開発など多様な記事が並んでいた。
+- 表示時刻は2日前で、速報ではなく読み物・解説寄りの記事として取得した。
+- ログイン不要で確認できた範囲では、契約条件や命名権料などの詳細数値は確認できない。
+- 企業ブランドと施設名称の関係を掘り下げる記事として要約対象にした。
+
+### Key Findings
+- 記事はMUFGスタジアムの名称を扱っている。 [^]
+  - Footnote: 見出しに「MUFGスタジアム」と表示。
+- 名称が「ドコモスタジアム」ではない理由がテーマである。 [^]
+  - Footnote: 見出しに「『ドコモスタジアム』じゃないのか」と表示。
+- 記事は命名の背景を掘り下げる内容である。 [^]
+  - Footnote: 見出しに「命名の裏に迫る」と表示。
+- 媒体はITmedia Mobileである。 [^]
+  - Footnote: 見出し末尾に「ITmedia Mobile」と表示。
+- Google ニュースの興味深いニュース欄から取得した。 [^]
+  - Footnote: 同欄に「注目の記事と話題の記事」として表示されていた。
+- 表示時刻は2日前である。 [^]
+  - Footnote: 該当記事の表示時刻は「2 日前」。
+
+### References
+- https://news.google.com/read/CBMib0FVX3lxTE1Fdi0yNE91VzdTODlPdnFfRzB1d1VPV2wzODVmdzRvOUFMZVB0LXhJMXJ4VFVXQkdWVnlSWmhOTkd5ajg1N1lxTnZsejRDYllxY3QzNFBuYmw5d2hTWnczbl9XM29neGhLaW1QTUNfUdIBaEFVX3lxTE4yY2JTVVFfTHFZaHNLUW5OSGpFZlNrWHZsdWQ2RDNhQi1JLVB4a1lIYTBNMUJCcVotMEczMnNHY2xmY2F5WHVEVEcwRjRwT3JHZWtvMjJmN2kySklNcG1SUHBRRVJsYVpk?hl=ja&gl=JP&ceid=JP%3Aja
