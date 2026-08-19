@@ -1,0 +1,239 @@
+# AI Common Report (https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com)
+
+- Generated at: 2026-08-19T00:00:00+09:00
+- Articles: 9
+
+## ICC赤根所長を制裁対象に、トランプ政権「悪意をもって権限乱用」
+
+### Executive Summary
+- トップニュースから、ICCの赤根智子所長への米国制裁に関する記事を取得した。
+- Googleニュース上では朝日新聞の記事として表示され、掲載時刻は1時間前だった。
+- 記事タイトルは、トランプ政権が赤根所長を制裁対象にしたと伝えている。
+- 制裁理由として「悪意をもって権限乱用」とする米政権側の見方が示されている。
+- 同じ話題について日本経済新聞、産経新聞、ロイターも関連記事を掲載していた。
+- 関連見出しでは米国内資産凍結やICC側の反発も報じられている。
+- 本文の詳細はログイン・遷移先制約のため確認できた範囲に限定した。
+
+### Key Findings
+- 米政権がICC所長を制裁対象にしたことが主要ニュースとして扱われた。 [^]
+  - Footnote: Googleニュース表示: 「ICC赤根所長を制裁対象に、トランプ政権」
+- 対象者は赤根智子ICC所長とされている。 [^]
+  - Footnote: 関連見出し: 「トランプ政権、ICCの赤根智子所長に制裁」
+- 米政権側は権限乱用を問題視している。 [^]
+  - Footnote: タイトル中の根拠: 「悪意をもって権限乱用」
+- 制裁には資産凍結が含まれる可能性が示された。 [^]
+  - Footnote: 関連見出し: 「米国内の保有資産を凍結」
+- ICC側は制裁に反発している。 [^]
+  - Footnote: 関連見出し: 「ICC『法の支配損なう』と反発」
+
+### References
+- https://news.google.com/read/CBMiZ0FVX3lxTE1VTXJ4Q1NTUGMyUTZZT1Bva1BYdkU5cmp0WHRVRDVRTWktVUk0WjZpd2lRZHhTXzZFNmtNS1dNVnBEMll0N05pRXdSTmNicnYyVmI3UU5hWmlYdTkwOUVOV01kejlQVm8?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 千葉豪雨、令和３度目の浸水「繰り返されるのはつらい」…河川の流下能力を高める拡幅工事中、熊谷知事「加速しないと」
+
+### Executive Summary
+- ローカルニュースから、千葉県の豪雨被害に関する記事を取得した。
+- Googleニュース上では読売新聞の記事として表示され、掲載時刻は51分前だった。
+- 記事は大網白里周辺の浸水被害を扱っている。
+- 見出しでは、令和に入って3度目の浸水と説明されている。
+- 住民の負担感として「繰り返されるのはつらい」という声が示されている。
+- 河川の流下能力を高める拡幅工事が進行中とされる。
+- 熊谷知事が対策加速の必要性に言及したことが伝えられている。
+
+### Key Findings
+- 千葉豪雨による浸水が地域課題として報じられた。 [^]
+  - Footnote: タイトル: 「千葉豪雨、令和３度目の浸水」
+- 被災地域では浸水の反復が心理的負担になっている。 [^]
+  - Footnote: タイトル引用: 「繰り返されるのはつらい」
+- 河川改修が対策の中心に置かれている。 [^]
+  - Footnote: タイトル: 「河川の流下能力を高める拡幅工事中」
+- 行政側は対応速度を課題視している。 [^]
+  - Footnote: タイトル: 「熊谷知事『加速しないと』」
+- Googleニュース上では掲載から1時間未満の新しいローカル記事だった。 [^]
+  - Footnote: Googleニュース表示: 「読売新聞 - 51 分前」
+
+### References
+- https://news.google.com/read/CBMiZkFVX3lxTFBZcTE3enJzQnMwMjFGMTgySGx2X0R5RGREelBCME16RTNiOFJJYThsaGxPdlhDbDZGaUtXM2txSmFRMEVVRXdtcldTaWJvMjJVbVNqQXMzSmhRRWEwMkVXcmlHbjk2UQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 【倒産】1983年に子供服店として創業…「コムサ・デ・モード」「コムサイズム」FC→三井アウトレットパーク進出など経営多角化 「ゴディバ」「ポップメイズ」飲食店も手掛けるが、資金繰り限界に…破産手続開始決定 負債総額約1億5000万円 | TBS NEWS DIG
+
+### Executive Summary
+- おすすめ相当の一覧から、企業倒産に関するTBS NEWS DIGの記事を取得した。
+- Googleニュース上では掲載時刻が19時間前と表示されていた。
+- 対象企業は1983年に子供服店として創業したと見出しにある。
+- コムサ系ブランドのフランチャイズやアウトレット進出など、経営多角化が行われた。
+- 飲食店としてゴディバやポップメイズも手掛けたとされる。
+- 最終的には資金繰りが限界となり、破産手続開始決定に至った。
+- 負債総額は約1億5000万円と報じられている。
+
+### Key Findings
+- 長期営業企業の破産手続開始が報じられた。 [^]
+  - Footnote: タイトル: 「1983年に子供服店として創業」
+- アパレルFC事業が事業履歴に含まれる。 [^]
+  - Footnote: タイトル: 「『コムサ・デ・モード』『コムサイズム』FC」
+- アウトレット施設への進出も行っていた。 [^]
+  - Footnote: タイトル: 「三井アウトレットパーク進出」
+- 飲食分野にも事業を広げていた。 [^]
+  - Footnote: タイトル: 「『ゴディバ』『ポップメイズ』飲食店も手掛ける」
+- 資金繰り悪化と負債規模が倒産の焦点である。 [^]
+  - Footnote: タイトル: 「資金繰り限界」「負債総額約1億5000万円」
+
+### References
+- https://news.google.com/read/CBMiV0FVX3lxTFBUYkRQRWxqeVo5S1lGMERpeld4aF9GTHpMYWFoNWpFb2x0QW5vME00bXljWHpIeUp5bHgtekZseEpSTXJEbjlCdGo0UXVsMndhMlg2dkNYUQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 今日19日は大阪や名古屋で35℃以上の猛暑日か　九州では38℃を超える所も(気象予報士 中川　裕美子 2026年08月19日)
+- Date: 2026-08-19T00:00:00+09:00
+
+### Executive Summary
+- トピック_日本から、全国的な猛暑見通しに関するtenki.jpの記事を取得した。
+- 記事タイトルには2026年08月19日の日付が明記されている。
+- 大阪や名古屋で35度以上の猛暑日になる可能性が示されている。
+- 九州では38度を超える地点が出る可能性も伝えられている。
+- 気象予報士の中川裕美子氏による解説記事として表示された。
+- Googleニュース上では掲載時刻が3時間前だった。
+- 熱中症対策や屋外活動の判断に関わる生活情報として重要度が高い。
+
+### Key Findings
+- 大阪と名古屋で猛暑日が予想されている。 [^]
+  - Footnote: タイトル: 「大阪や名古屋で35℃以上の猛暑日か」
+- 九州ではさらに高温となる可能性がある。 [^]
+  - Footnote: タイトル: 「九州では38℃を超える所も」
+- 記事日は2026年8月19日である。 [^]
+  - Footnote: タイトル: 「2026年08月19日」
+- 専門家による天気解説として掲載されている。 [^]
+  - Footnote: タイトル: 「気象予報士 中川 裕美子」
+- Googleニュース上では当日内の新しい記事だった。 [^]
+  - Footnote: Googleニュース表示: 「tenki.jp - 3 時間前」
+
+### References
+- https://news.google.com/read/CBMibEFVX3lxTE55WTQyamFwZWgyd1RYeEZER1B1anNoVHJxRUJlTk5QY2podjdHem1pUHpiWC1LS0FuMnA5VDY0cWRlSGRGVXRScEl2bUR3QS1sWFVzR0VraGx0ZjdfTXQzNjVFMmNGdmlScjRKetIBckFVX3lxTE5Zei1CcUhScTg3WFA2WEFNaFFSQ1BvQ200SkxGdUFKMGdkZWRCbEgyQlBsb21ranZVeEgzQmtrN21BRFRqZGdqc1dFeHZUc3FZMEVCMFFDNmdQNHpPT2V1RTR2Uzh0Z1VpeVhYYUxpS0c0dw?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 横浜高校監督 インタビューで号泣
+
+### Executive Summary
+- トピック_エンタメ相当として、Googleニュース上のエンタメ系一覧から記事を取得した。
+- 記事はnews.yahoo.co.jp提供として表示されていた。
+- 見出しは横浜高校監督がインタビューで号泣したという内容だった。
+- Googleニュース上では掲載時刻が2時間前と表示された。
+- 詳細な背景や発言内容は本文確認範囲外のため補完していない。
+- 人物の感情的な反応がニュース価値の中心になっている。
+- ログイン必須または遷移先制約により、要約は表示見出しに限定した。
+
+### Key Findings
+- 横浜高校監督のインタビュー場面が記事化された。 [^]
+  - Footnote: タイトル: 「横浜高校監督 インタビューで号泣」
+- 記事の焦点は監督の感情的反応にある。 [^]
+  - Footnote: タイトル中の表現: 「号泣」
+- Yahooニュース系の記事としてGoogleニュースに掲載された。 [^]
+  - Footnote: Googleニュース表示: 「news.yahoo.co.jp」
+- 掲載時刻は比較的新しい。 [^]
+  - Footnote: Googleニュース表示: 「2 時間前」
+- 本文未確認のため、経緯や原因は不明として扱う。 [^]
+  - Footnote: 確認できた根拠はGoogleニュース上の見出しと媒体表示のみ
+
+### References
+- https://news.google.com/read/CBMiUEFVX3lxTE9TNzdrbFQyZ3ZXUWVXdzYwWnJYUFNaQ3VEQ1BIZlVKYzRqZTJlcEloV09rbGMtMkZ5VUJrTnFvbGY4cERHM04wZEkzNXZwcWFF?hl=ja&gl=JP&ceid=JP%3Aja
+
+## なにわ筋線事業費　倍増の6425億円　資材価格高騰など響く　大阪市、開業目標は維持
+
+### Executive Summary
+- トピック_ビジネスから、なにわ筋線の事業費増加に関する記事を取得した。
+- Googleニュース上では産経ニュースの朝のおすすめ枠に表示されていた。
+- なにわ筋線の事業費が倍増し、6425億円になったと伝えている。
+- 増額の背景として資材価格高騰などが影響したとされる。
+- 大阪市は開業目標を維持する方針と見出しにある。
+- 都市インフラ投資のコスト上昇を示すビジネス・政策ニュースである。
+- Googleニュース上では掲載時刻が1時間前の新しい記事だった。
+
+### Key Findings
+- なにわ筋線の事業費が大幅に増加した。 [^]
+  - Footnote: タイトル: 「事業費 倍増」
+- 新たな事業費規模は6425億円と示された。 [^]
+  - Footnote: タイトル: 「6425億円」
+- 資材価格高騰が増額要因とされている。 [^]
+  - Footnote: タイトル: 「資材価格高騰など響く」
+- 大阪市は開業目標を維持する姿勢である。 [^]
+  - Footnote: タイトル: 「大阪市、開業目標は維持」
+- 掲載媒体は産経ニュースで、朝のおすすめ枠に表示された。 [^]
+  - Footnote: Googleニュース表示: 「産経ニュース」「朝のおすすめ」
+
+### References
+- https://news.google.com/read/CBMi0gRBVV95cUxQaDFBY00yNzN5ZW02LUswc2llUEJjMzRjdi05Mnc2OWV5NjdTM0NvamJ6OEwzWjBNY2ttX2ljcU55UEMyb0k4NlB2MWRZWkRoQ0x5M3ZxNWFhR1pDY0I3bnpVZEp4ZTREd3pROEl3c0NTZzd6bG04RGdVQ09FS1R1Z1BQSnhaTFZrNEF0OGJYYjhQQ080UENVVU5QRk5tWDFLVk5EcGx5ZF81cDJkNVh2bXI0SWFKdlc0TTk0Zm5vcHVVbHdPeEFnZTFFczZCSWR6Zl9aRFkxVThPa0tpX3dodHh6Wm8wQjRLRHZNNTN4aDlnM1UxREJ3TFpsQkJBcjB4MkZTOUwwWXJvR3cyanppUkFSeENyYTdhN1pwNWxPM1I1ZTFqNU5lV0pvTGdKOThERUZLZGdCc0VzQzhjUm9RRGxzM09BYTNJMzEwby1zeVd0SFo3bHZrZHA4U3hYUUpkaVNvTmFfWGo5czA1b1hBcVFGM2RpQlo4ODYwOGFkbEI1dU03UHJOOUprNDBYUmx2elpNYm9EZ1NOeUQwYXpRbE4xd2Zibk1jdE5sZnBrMTlzSXJLTTRkeHNGY0pfOTlIemJZcksxYVdaV2dJczAyUnF1TFdpZWpyeTRGLXR5YTdwckN4S0VJOEh6eU5jQl80UE9ONW9KOWs1MlZUalhMTXZfSmxYSUl2ZTcwYWRXTktlUmt6bHk1cXpWY3VQWmZTS2tOdEJCV09UZDJZSXF1VWUyX0pkWlV3NHNvLWdDOVo1a2RCNF9Yc2JoU0U3TEEtX2c?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 動き出した「宇宙データセンター」
+
+### Executive Summary
+- トピック_宇宙はGoogleニュース検索で確認し、宇宙データセンターの記事を取得した。
+- 見出しは宇宙空間でのデータセンター構想が動き出したことを示している。
+- 宇宙分野が通信、計算資源、インフラ投資と結びつくテーマとして扱われている。
+- Googleニュース検索結果では上位に表示された記事の一つだった。
+- 同じ検索結果には宇宙センター攻撃、防衛省の宇宙領域、JAXA関連の記事も並んでいた。
+- 本文詳細は確認できた範囲外のため、技術仕様や事業主体は不明とした。
+- 宇宙利用の対象が探査だけでなくデータ基盤へ広がる動きとして整理できる。
+
+### Key Findings
+- 宇宙データセンター構想がニュース化されている。 [^]
+  - Footnote: タイトル: 「動き出した『宇宙データセンター』」
+- 宇宙分野がデジタルインフラと接続している。 [^]
+  - Footnote: タイトル中の用語: 「データセンター」
+- Googleニュース検索の宇宙カテゴリ相当で確認した。 [^]
+  - Footnote: 検索URL: https://news.google.com/search?q=宇宙
+- 関連結果には防衛、JAXA、ISSなど多様な宇宙記事が並んだ。 [^]
+  - Footnote: 検索結果表示: 「防衛省」「JAXA」「国際宇宙ステーション」
+- 本文未確認のため、主体や投資額は不明として扱う。 [^]
+  - Footnote: 確認できた根拠はGoogleニュース上の見出しとURLのみ
+
+### References
+- https://news.google.com/read/CBMiX0FVX3lxTFB1YXVzUnNyVE81UGNKQ3lRUVJIWEJDYVBsMWM2MlF1MmhXZGVWWktLY3VtUnA1U1ozeVRVVGFlTFphTWtFbU16LUU0YnpqX2xGSk1ZSDJQb2NFMHVqQS1z?hl=ja&gl=JP&ceid=JP%3Aja
+
+## 皮ごと食べると栄養豊富？ デラウェアの栄養と効果的な食べ方
+
+### Executive Summary
+- トピック_栄養はGoogleニュース検索で確認し、デラウェアの栄養に関する記事を取得した。
+- 記事はデラウェアを皮ごと食べることと栄養面の関係を扱っている。
+- 見出しでは、栄養と効果的な食べ方が主題として示されている。
+- 食品の食べ方によって摂取できる栄養が変わる可能性が示唆されている。
+- 検索結果には納豆、がん治療中の栄養、プロテイン市場などの記事も並んでいた。
+- 本文詳細は確認できた範囲外のため、具体的な栄養素名は補完していない。
+- 生活者向けの健康・食情報として扱える記事である。
+
+### Key Findings
+- デラウェアの栄養価が記事テーマになっている。 [^]
+  - Footnote: タイトル: 「デラウェアの栄養」
+- 皮ごと食べる方法が焦点になっている。 [^]
+  - Footnote: タイトル: 「皮ごと食べると栄養豊富？」
+- 食べ方の工夫が栄養摂取に関係する可能性が示されている。 [^]
+  - Footnote: タイトル: 「効果的な食べ方」
+- 栄養カテゴリ相当の検索結果から取得した。 [^]
+  - Footnote: 検索URL: https://news.google.com/search?q=栄養
+- 具体的な栄養成分は本文未確認のため不明である。 [^]
+  - Footnote: 確認できた根拠はGoogleニュース上の見出しとURLのみ
+
+### References
+- https://news.google.com/read/CBMiVEFVX3lxTE5FZVdCaVVfV3VFaEMtWm9ERXQwZjFWUmtjQjZ3Z0xCa0RFOW9RbUtLT3psVnlBcmRkYzBvNU0yS0l6VnR1bnBUWjl2R0FlRDBrN3M1YQ?hl=ja&gl=JP&ceid=JP%3Aja
+
+## ほぼ個人で10年開発MMORPG『Soul's Remnant』いきなり人気沸騰中。『メイプル』『マビノギ』大好き開発者が執念で作った“自分のMMO”
+
+### Executive Summary
+- 興味深いニュースから、AUTOMATONのゲーム関連記事を取得した。
+- 記事はMMORPG『Soul's Remnant』が急に人気を集めていると伝えている。
+- 開発はほぼ個人で10年かけて進められたと見出しにある。
+- 開発者は『メイプル』や『マビノギ』を好む人物として紹介されている。
+- 個人開発に近い長期プロジェクトが注目を集めた点がニュース性である。
+- Googleニュース上では掲載時刻が2日前、記者名はHiroyuki Furukawaと表示された。
+- 本文詳細は確認できた範囲外のため、プレイヤー数などは不明として扱う。
+
+### Key Findings
+- 『Soul's Remnant』が人気化していると報じられた。 [^]
+  - Footnote: タイトル: 「いきなり人気沸騰中」
+- 開発期間は10年とされる。 [^]
+  - Footnote: タイトル: 「10年開発MMORPG」
+- 開発体制はほぼ個人とされている。 [^]
+  - Footnote: タイトル: 「ほぼ個人で」
+- 開発者の嗜好として既存MMO作品が言及されている。 [^]
+  - Footnote: タイトル: 「『メイプル』『マビノギ』大好き開発者」
+- 媒体はAUTOMATONで、記者名も表示されていた。 [^]
+  - Footnote: Googleニュース表示: 「AUTOMATON」「記者/ライター: Hiroyuki Furukawa」
+
+### References
+- https://news.google.com/read/CBMibEFVX3lxTE5hVTRxZ3RFblViWW9FakktMk1yWXBuV0FqQV8tR09QQ1c1LWppM3JCdnNDOEhpSWN5RDdFRi13cXFXVG95ckxZYzA4SUdOSjZyblgwa1hRQzFuQ0FtWFpNNEcwb01HbFRhdHQxUw?hl=ja&gl=JP&ceid=JP%3Aja
