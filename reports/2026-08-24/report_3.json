@@ -1,0 +1,367 @@
+{
+  "generated_at": "2026-08-24T00:00:00+09:00",
+  "site": "https://news.google.com/home?ceid=JP%3Aja&gl=JP&hl=ja&utm_source=chatgpt.com",
+  "num_articles": 9,
+  "articles": [
+    {
+      "url": "https://news.google.com/read/CBMiZkFVX3lxTE9WUV9DVnNneHpnZjVUcFFMQjZlTEYydDBMakZycjVvVU5CS2pXZ0NPVVNSV0V1NGRwaThpZE9XcGVHc0FtaVpMMEJVZUkzM2hsVnJLbGZDYWRUXzBaTjVqcjNyRUtsdw?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "不出馬表明の福岡市長「同じ人間が長く続けることには、慎重でなければならない」…きょう記者会見",
+      "date": null,
+      "executive_summary": [
+        "トップニュースでは福岡市長の次期市長選不出馬が大きく扱われている。",
+        "読売新聞の記事は、不出馬表明後の記者会見を軸にした内容とみられる。",
+        "高島市長は長期在任への慎重姿勢を示したと報じられている。",
+        "同一人物が長く続けることへの問題意識が、判断理由の中心に置かれている。",
+        "関連報道では11月の選挙に立候補しない考えも確認されている。",
+        "TBS、日経、NHKなど複数媒体が同じテーマを追っており、地域政治上の注目度が高い。",
+        "後継候補や市政継続の論点が今後の焦点になる。"
+      ],
+      "key_findings": [
+        {
+          "point": "福岡市長の不出馬表明がトップニュースとして表示された。",
+          "footnote": "Googleニュースのトップニュース欄に読売新聞記事が表示された。"
+        },
+        {
+          "point": "記事の中心発言は長期在任への慎重姿勢である。",
+          "footnote": "見出しに「同じ人間が長く続けることには、慎重でなければならない」とある。"
+        },
+        {
+          "point": "記者会見が当日の報道イベントになっている。",
+          "footnote": "見出し末尾に「きょう記者会見」と記載されている。"
+        },
+        {
+          "point": "同テーマは複数社が追跡している。",
+          "footnote": "TBS NEWS DIG、日本経済新聞、NHKニュースの関連記事が並んでいた。"
+        },
+        {
+          "point": "時期は直近の速報性が高い。",
+          "footnote": "読売新聞記事はGoogleニュース上で「1時間前」と表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiZkFVX3lxTE9WUV9DVnNneHpnZjVUcFFMQjZlTEYydDBMakZycjVvVU5CS2pXZ0NPVVNSV0V1NGRwaThpZE9XcGVHc0FtaVpMMEJVZUkzM2hsVnJLbGZDYWRUXzBaTjVqcjNyRUtsdw?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMi4wRBVV95cUxNeGswMWs1UV9sUWhfd3RNaE5fTVVFclBQX1oyeWJuRHdhU0gwdzVjMlV3UTFUSm5CREpid2MxZTY3d1VpVGNJaXdJdTYtRFJPaEZ2TldRUzFiaHc5SzVHQWtYdm5GbVhwUDM3SFMwU3FxMHNsYUV0d2MwNXJ0dVplX3NoOU1SUVp2b0Zwb2hQWW92bmFiX2FBZjM3TDhxZ0lJMXlGMUtQUUs5b2Y5d3N5ZS1XaXBFT0JkV3N6eHFiek9nRmtqdmFuRzB2QXlybkxNMTBQSFJYWGxua1BJYklpUDIwejN1NWduTG0xRHZ3cWk5M05QZ0RhaFdhemFqQVdZU3BrTjFzOTZPM0VrVzNKNWhsc3JSZnRlUHAwQkNtSExIWTAyUG9qUkVRTzZCcVNZNm8wcDJ6OS1kU3Z2QkotNUN1ckRxZzNITTRCSThUMEprMHM1Q3RETm5YbU1ydDMwbUJkdV9GdktSczJIWmNVanhORGRldWxvZ200OVdPWWM1WUZ0eDZvc29BLWtveTdtS0JZMExxOXpHQTB6cHhfWXhRc3FNWFRmMDZ4cU5RU0wyeDEtQ3hvRFBHNjZ6aTFuVXZBZUkwTWxsQ1liVkltZGV2YjZ0T19NVWoza25kRGhOdjNsTklGVmw5UjlZalkxYjE3R0FhbzVqOWk4a0pFc3ptclB3M1RtdGp6dUNmc0M1U0g0NEJBTzdtTXhIcDV3YkM0dlEyNEdSdXdVWjAzSTVqTmpXLXhMcG5sZkJuaV82UGlCbGRFSEZHTlF0OFEtSTNfajhDUDZQT0RySHo3YUFQWQ?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "大漁願い海上渡御　勇壮／野辺地祇園まつり　にぎやか",
+      "date": null,
+      "executive_summary": [
+        "ローカルニュースでは東奥日報の野辺地祇園まつりの記事を取得した。",
+        "記事は海上渡御を中心に、祭りのにぎわいを伝えている。",
+        "大漁祈願が行事の主題として示されている。",
+        "見出しでは「勇壮」「にぎやか」と表現され、地域行事の活気が強調されている。",
+        "Googleニュース上では東奥日報の本日のヘッドライン内にローカル記事として表示された。",
+        "同欄には事件やスポーツなど複数の地域記事も並んでいた。",
+        "地域文化と漁業に結びつく季節行事として扱われている。"
+      ],
+      "key_findings": [
+        {
+          "point": "対象記事はローカルニュース枠から取得した。",
+          "footnote": "Googleニュースの東奥日報欄に「ローカル記事」と表示された。"
+        },
+        {
+          "point": "野辺地祇園まつりが記事の主題である。",
+          "footnote": "見出しに「野辺地祇園まつり」と明記されている。"
+        },
+        {
+          "point": "海上渡御が主要な行事として扱われている。",
+          "footnote": "見出しに「海上渡御」とある。"
+        },
+        {
+          "point": "大漁祈願の意味づけが示されている。",
+          "footnote": "見出し冒頭に「大漁願い」とある。"
+        },
+        {
+          "point": "地域のにぎわいを伝える記事である。",
+          "footnote": "見出しに「勇壮」「にぎやか」と記載されている。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMi4wRBVV95cUxNeGswMWs1UV9sUWhfd3RNaE5fTVVFclBQX1oyeWJuRHdhU0gwdzVjMlV3UTFUSm5CREpid2MxZTY3d1VpVGNJaXdJdTYtRFJPaEZ2TldRUzFiaHc5SzVHQWtYdm5GbVhwUDM3SFMwU3FxMHNsYUV0d2MwNXJ0dVplX3NoOU1SUVp2b0Zwb2hQWW92bmFiX2FBZjM3TDhxZ0lJMXlGMUtQUUs5b2Y5d3N5ZS1XaXBFT0JkV3N6eHFiek9nRmtqdmFuRzB2QXlybkxNMTBQSFJYWGxua1BJYklpUDIwejN1NWduTG0xRHZ3cWk5M05QZ0RhaFdhemFqQVdZU3BrTjFzOTZPM0VrVzNKNWhsc3JSZnRlUHAwQkNtSExIWTAyUG9qUkVRTzZCcVNZNm8wcDJ6OS1kU3Z2QkotNUN1ckRxZzNITTRCSThUMEprMHM1Q3RETm5YbU1ydDMwbUJkdV9GdktSczJIWmNVanhORGRldWxvZ200OVdPWWM1WUZ0eDZvc29BLWtveTdtS0JZMExxOXpHQTB6cHhfWXhRc3FNWFRmMDZ4cU5RU0wyeDEtQ3hvRFBHNjZ6aTFuVXZBZUkwTWxsQ1liVkltZGV2YjZ0T19NVWoza25kRGhOdjNsTklGVmw5UjlZalkxYjE3R0FhbzVqOWk4a0pFc3ptclB3M1RtdGp6dUNmc0M1U0g0NEJBTzdtTXhIcDV3YkM0dlEyNEdSdXdVWjAzSTVqTmpXLXhMcG5sZkJuaV82UGlCbGRFSEZHTlF0OFEtSTNfajhDUDZQT0RySHo3YUFQWQ?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMi0gRBVV95cUxQUk5kWEl5WFJTd0tQZktyU0hwVzE0MkI3Q2t3eFFfS283VjFLTGwzT3RkQWNNQnZZc3hQWGwzWjF4VkI1RVdoM2dROEppMlB5eXJUWUxhVUFGSkFVV0dEUG9ZaWw4UktSek5rb0dTTXNidkxvX29SdlFJczFqZzQ2QTR4YlRHbTlNbXdUQnBKZGlXYVZBSmRFUlVodUhZbWRYTWNlNWdEM0s4WlhuWDJGS29CeXY0WjM3S2pmSDFuRk1IaWpSUHZHYnd6cDY0VnVpUjFaUmphaWVtUXpjSDdpWWk3TnVwSVllOEdDY3lXOUxKb0E2MkVqN0YtSmpXeG9zVjRnejgtT0hjWWVqbnNuTXBnanJkNVZiNGFEbXJRYW9kRHdNNms4TW9zeFR4aGliM04zQm1LZGpUWWhKc3FuXzgwd2tpNElRNEp3Q2NQbEtFclk4Rk00eUNaV3ozOG1acmtnQ3JteXQ3X2dzZlpnaXdYeFFMM200YXRBR0dlZEJETTNNb0V5ekIzMXlSSFkwZXdnRVdVcVVqMlpnS20wUmZCMTJGMUF4Um04T1QzNE5mQ2FQLW0weGpVaHRTaVU2VG9MNjVqTVZnZmFpZk9odnZoMzA0cWhGdGYtZHlja1Y4MU9BanhVeUZ0cnBCTVIyUmJxd1FTRy13OXQ2N3puYzJUaURCTC1JNjBlX0poMWVla0MyNDVEM1ZFdVE4cHJ1NEZjaWlhcUs2TF9rSVlrLW9OU09Eelo5WG1FTEIzMl81QXRLZG5GeHNXdm5PMDJJanc?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "首都直下の「前兆」とみなせる根拠ない、と専門家　活動活発な地域で発生",
+      "date": null,
+      "executive_summary": [
+        "おすすめ枠に相当する朝のおすすめから、関東の震度5弱に関する産経ニュース記事を取得した。",
+        "記事は地震を首都直下地震の前兆とみなす根拠はないとする専門家見解を伝えている。",
+        "発生地域は地震活動が活発な地域と説明されている。",
+        "不安をあおる見方を抑え、科学的な評価を促す内容である。",
+        "災害報道では、個別地震と大規模地震の因果を慎重に扱う姿勢が重要になる。",
+        "同じおすすめ欄にはウクライナ情勢や在留外国人政策の記事も並んでいた。",
+        "防災上は過度な断定を避けつつ、日常的な備えを継続する文脈で読むべき記事である。"
+      ],
+      "key_findings": [
+        {
+          "point": "おすすめ枠では関東の震度5弱が注目テーマになっていた。",
+          "footnote": "産経ニュースの朝のおすすめ欄に「関東で震度5弱」と表示された。"
+        },
+        {
+          "point": "専門家は首都直下地震の前兆と断定できないとした。",
+          "footnote": "見出しに「前兆」とみなせる根拠ない、と専門家とある。"
+        },
+        {
+          "point": "地震活動が活発な地域での発生と位置付けられている。",
+          "footnote": "見出しに「活動活発な地域で発生」と記載されている。"
+        },
+        {
+          "point": "災害情報の解釈には慎重さが必要である。",
+          "footnote": "記事見出しは不確かな前兆論を否定する構成になっている。"
+        },
+        {
+          "point": "Googleニュース上では産経ニュースのショーケース内で扱われた。",
+          "footnote": "同欄に「ショーケース」「1時間前」と表示されていた。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMi0gRBVV95cUxQUk5kWEl5WFJTd0tQZktyU0hwVzE0MkI3Q2t3eFFfS283VjFLTGwzT3RkQWNNQnZZc3hQWGwzWjF4VkI1RVdoM2dROEppMlB5eXJUWUxhVUFGSkFVV0dEUG9ZaWw4UktSek5rb0dTTXNidkxvX29SdlFJczFqZzQ2QTR4YlRHbTlNbXdUQnBKZGlXYVZBSmRFUlVodUhZbWRYTWNlNWdEM0s4WlhuWDJGS29CeXY0WjM3S2pmSDFuRk1IaWpSUHZHYnd6cDY0VnVpUjFaUmphaWVtUXpjSDdpWWk3TnVwSVllOEdDY3lXOUxKb0E2MkVqN0YtSmpXeG9zVjRnejgtT0hjWWVqbnNuTXBnanJkNVZiNGFEbXJRYW9kRHdNNms4TW9zeFR4aGliM04zQm1LZGpUWWhKc3FuXzgwd2tpNElRNEp3Q2NQbEtFclk4Rk00eUNaV3ozOG1acmtnQ3JteXQ3X2dzZlpnaXdYeFFMM200YXRBR0dlZEJETTNNb0V5ekIzMXlSSFkwZXdnRVdVcVVqMlpnS20wUmZCMTJGMUF4Um04T1QzNE5mQ2FQLW0weGpVaHRTaVU2VG9MNjVqTVZnZmFpZk9odnZoMzA0cWhGdGYtZHlja1Y4MU9BanhVeUZ0cnBCTVIyUmJxd1FTRy13OXQ2N3puYzJUaURCTC1JNjBlX0poMWVla0MyNDVEM1ZFdVE4cHJ1NEZjaWlhcUs2TF9rSVlrLW9OU09Eelo5WG1FTEIzMl81QXRLZG5GeHNXdm5PMDJJanc?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiVEFVX3lxTE5ZWFpqQlJSTGJmY3ZjTU5weko4QnBJMEZfWjR0MW1XbDZsUms4NnNQWlhHTUl4ZjRjdlZEdENJc2dFZVRWWll3Vjc2SXk4UHc1emdtUg?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "非常に強い台風18号は沖縄に接近へ 台風20号による大雨にも警戒",
+      "date": null,
+      "executive_summary": [
+        "トピック_日本から、ウェザーニュースの台風関連記事を取得した。",
+        "非常に強い台風18号が沖縄へ接近する見通しが示されている。",
+        "台風20号による大雨にも警戒が必要とされている。",
+        "複数の台風影響が重なる可能性を意識した防災情報である。",
+        "Googleニュースの日本トピック欄では上位に表示されていた。",
+        "同欄には猛暑や福岡市長不出馬など国内ニュースも並んでいた。",
+        "短期的には沖縄周辺の風雨と、台風20号由来の降雨リスクが焦点になる。"
+      ],
+      "key_findings": [
+        {
+          "point": "日本トピックの上位に台風情報が表示された。",
+          "footnote": "Googleニュースの「日本」欄にウェザーニュース記事が表示された。"
+        },
+        {
+          "point": "台風18号は非常に強い勢力とされている。",
+          "footnote": "見出しに「非常に強い台風18号」とある。"
+        },
+        {
+          "point": "沖縄への接近が主要リスクである。",
+          "footnote": "見出しに「沖縄に接近へ」と記載されている。"
+        },
+        {
+          "point": "別系統の台風20号も大雨要因として扱われている。",
+          "footnote": "見出しに「台風20号による大雨にも警戒」とある。"
+        },
+        {
+          "point": "速報性は高い。",
+          "footnote": "Googleニュース上で「2時間前」と表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiVEFVX3lxTE5ZWFpqQlJSTGJmY3ZjTU5weko4QnBJMEZfWjR0MW1XbDZsUms4NnNQWlhHTUl4ZjRjdlZEdENJc2dFZVRWWll3Vjc2SXk4UHc1emdtUg?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiS0FVX3lxTE45ZWhFN1JxRXFwNFNxSXh0MTZCRi00UnNucmxWcUN6LVlNcE90Q2tnSmVQa0dhTldwMjFtdm83OEVZMXRIa2ZxVWVrZw?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "学生界で注目のイベント「UNIDOL」とは？",
+      "date": null,
+      "executive_summary": [
+        "トピック_エンタメではTVerのUNIDOL関連記事を取得した。",
+        "記事は学生界で注目されるイベントとしてUNIDOLを紹介している。",
+        "エンタメ検索結果の最上位付近に表示され、直近性が高い。",
+        "UNIDOLは学生主体のパフォーマンスやイベント文化を扱うテーマとみられる。",
+        "同じ検索結果にはアイドル、ドラマ、芸能人関連の記事が多く並んでいた。",
+        "エンタメ分野ではライブレポートや番組連動記事が目立つ。",
+        "この記事は若年層・学生文化に寄ったエンタメニュースとして位置付けられる。"
+      ],
+      "key_findings": [
+        {
+          "point": "エンタメ検索結果でTVer記事が上位表示された。",
+          "footnote": "Googleニュース検索「エンタメ」でTVer記事が最初に表示された。"
+        },
+        {
+          "point": "UNIDOLが学生界で注目されるイベントとして扱われている。",
+          "footnote": "見出しに「学生界で注目のイベント『UNIDOL』とは？」とある。"
+        },
+        {
+          "point": "記事は説明型の構成とみられる。",
+          "footnote": "見出しが「とは？」で終わり、イベント解説を示している。"
+        },
+        {
+          "point": "掲載時刻は比較的新しい。",
+          "footnote": "Googleニュース上で「5時間前」と表示された。"
+        },
+        {
+          "point": "周辺記事には芸能・アイドル関連が多い。",
+          "footnote": "同ページにKEY TO LIT、SixTONES、清原翔などの記事が並んでいた。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiS0FVX3lxTE45ZWhFN1JxRXFwNFNxSXh0MTZCRi00UnNucmxWcUN6LVlNcE90Q2tnSmVQa0dhTldwMjFtdm83OEVZMXRIa2ZxVWVrZw?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiakFVX3lxTE5mX1F5OWctdU1Lc1BHQ2haU2NXQ0trMGw2b1ByZTdYTnI1RFdleXNkenVIY1NyQWtVNlFPR1dKSS1DMHhtWlRrbkE4T3FWZldyVFlUVTVSblhhdEUxNXJrUFo1WldWbjR0R1E?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "韓国の次のヒット商品を日本へ。KOTRA×LeaguEが海外商材の発掘から独占販売・事業化までを解説する無料セミナーを8月31日に開催",
+      "date": null,
+      "executive_summary": [
+        "トピック_ビジネスではPR TIMESのKOTRA×LeaguEセミナー記事を取得した。",
+        "韓国商材を日本市場へ展開する方法を扱う内容である。",
+        "海外商材の発掘から独占販売、事業化までを解説するとされている。",
+        "無料セミナーの開催日は8月31日と示されている。",
+        "ビジネス検索結果では最上位に表示され、投稿直後の情報とみられる。",
+        "周辺にはカフェチェーン比較、AI分析、航空ビジネスクラスなど幅広い記事が並んだ。",
+        "中小事業者や輸入販売事業者向けの実務的な告知記事として読める。"
+      ],
+      "key_findings": [
+        {
+          "point": "記事は韓国商品の日本展開を主題にしている。",
+          "footnote": "見出しに「韓国の次のヒット商品を日本へ」とある。"
+        },
+        {
+          "point": "KOTRAとLeaguEが関与する。",
+          "footnote": "見出しに「KOTRA×LeaguE」と記載されている。"
+        },
+        {
+          "point": "対象範囲は商材発掘から事業化まで広い。",
+          "footnote": "見出しに「海外商材の発掘から独占販売・事業化まで」とある。"
+        },
+        {
+          "point": "セミナーは無料開催とされている。",
+          "footnote": "見出しに「無料セミナー」と記載されている。"
+        },
+        {
+          "point": "開催日は8月31日である。",
+          "footnote": "見出しに「8月31日に開催」とある。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiakFVX3lxTE5mX1F5OWctdU1Lc1BHQ2haU2NXQ0trMGw2b1ByZTdYTnI1RFdleXNkenVIY1NyQWtVNlFPR1dKSS1DMHhtWlRrbkE4T3FWZldyVFlUVTVSblhhdEUxNXJrUFo1WldWbjR0R1E?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiX0FVX3lxTE9hbFN2OXlPQW5Qdnh1SDZxRDZwbEdscmZCcHRwYUJ4QnE4YjNDSmh1UFEwejM0eUNUTG5mT0g2ZWJ0NGdVVFg4OHY0M3NOZTU0ZHZIYmFmYjJEWWdXblpN?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "NASA 次世代宇宙望遠鏡打ち上げへ 視野は従来型の100倍超え",
+      "date": null,
+      "executive_summary": [
+        "トピック_宇宙ではNHKニュースのNASA次世代宇宙望遠鏡記事を取得した。",
+        "NASAが次世代宇宙望遠鏡を打ち上げる見通しを伝えている。",
+        "視野は従来型の100倍を超えるとされ、観測能力の大幅な向上が焦点である。",
+        "宇宙望遠鏡の性能向上は広域観測や系外惑星探査などに影響する。",
+        "検索結果では宇宙の最上位に表示され、科学ニュースとして注目されている。",
+        "関連結果には巨大構造、地球型惑星、宇宙飛行士の健康なども並んだ。",
+        "天文学の観測範囲拡大を示す技術ニュースとして位置付けられる。"
+      ],
+      "key_findings": [
+        {
+          "point": "NASAの次世代宇宙望遠鏡が記事の主題である。",
+          "footnote": "見出しに「NASA 次世代宇宙望遠鏡打ち上げへ」とある。"
+        },
+        {
+          "point": "観測視野の広さが最大の訴求点である。",
+          "footnote": "見出しに「視野は従来型の100倍超え」と記載されている。"
+        },
+        {
+          "point": "NHKニュースが配信元である。",
+          "footnote": "Googleニュース検索結果の配信元欄にNHKニュースと表示された。"
+        },
+        {
+          "point": "掲載日は前日扱いである。",
+          "footnote": "Googleニュース上で「昨日」と表示された。"
+        },
+        {
+          "point": "宇宙カテゴリでは科学・探査関連の記事が多い。",
+          "footnote": "同ページにジャイアント・リング、地球そっくりの惑星、ESAの眼科検査の記事が並んでいた。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiX0FVX3lxTE9hbFN2OXlPQW5Qdnh1SDZxRDZwbEdscmZCcHRwYUJ4QnE4YjNDSmh1UFEwejM0eUNUTG5mT0g2ZWJ0NGdVVFg4OHY0M3NOZTU0ZHZIYmFmYjJEWWdXblpN?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiakFVX3lxTFBhUlE3S2NjaVB3bWhyTlIyaUlwYmkxOGNFZXU5TnJJZjFMUEVhUGJYb1gxRTlBNVM3OVFzRWphN1Y4bDE2TWNOazN6Y1FOV2dsRmxndXpRNUdQQnpJMU5oWThUNmwwYzNnMHc?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "栄養を取らせねば 「国策雑誌」も料理家も奮闘した戦時下の食事",
+      "date": null,
+      "executive_summary": [
+        "トピック_栄養では朝日新聞の戦時下の食事に関する記事を取得した。",
+        "記事は栄養確保をめぐる国策雑誌や料理家の取り組みを扱っている。",
+        "戦時下の食生活を、栄養という観点から振り返る内容とみられる。",
+        "「栄養を取らせねば」という表現から、食糧事情と健康維持の緊張関係が読み取れる。",
+        "栄養検索結果では上位に表示され、歴史・食文化寄りの記事である。",
+        "同ページには低栄養、栄養機能食品、スポーツ栄養など幅広いテーマも並んでいた。",
+        "現代の栄養課題を考える際にも、食の制度・社会環境の視点を与える記事である。"
+      ],
+      "key_findings": [
+        {
+          "point": "記事は戦時下の食事を栄養面から扱っている。",
+          "footnote": "見出しに「戦時下の食事」とある。"
+        },
+        {
+          "point": "国策雑誌が栄養確保に関わったとされる。",
+          "footnote": "見出しに「国策雑誌」も奮闘したと記載されている。"
+        },
+        {
+          "point": "料理家も取り組みの主体として示されている。",
+          "footnote": "見出しに「料理家も奮闘」とある。"
+        },
+        {
+          "point": "栄養検索結果の上位記事である。",
+          "footnote": "Googleニュース検索「栄養」で朝日新聞記事が最初に表示された。"
+        },
+        {
+          "point": "掲載時刻は直近である。",
+          "footnote": "Googleニュース上で「5時間前」と表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiakFVX3lxTFBhUlE3S2NjaVB3bWhyTlIyaUlwYmkxOGNFZXU5TnJJZjFMUEVhUGJYb1gxRTlBNVM3OVFzRWphN1Y4bDE2TWNOazN6Y1FOV2dsRmxndXpRNUdQQnpJMU5oWThUNmwwYzNnMHc?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    },
+    {
+      "url": "https://news.google.com/read/CBMiVEFVX3lxTE5naENKbkFCd3VQTzI3T0xxZWRmeEkxcXRoZWR3TGVJcllWTWNyREJIbFZoMl9aaWtiMEJNMV9Ob2xYUGFpYWxpM0ItYWtWQVZWR3dnMQ?hl=ja&gl=JP&ceid=JP%3Aja",
+      "title": "スマホ依存からの脱却で中国でE Ink端末が一大ブームに 知恵と工夫で生まれつつあるE Ink搭載ガジェットの新文化 (1/2)",
+      "date": null,
+      "executive_summary": [
+        "興味深いニュースからASCII.jpのE Ink端末ブーム記事を取得した。",
+        "中国でスマホ依存からの脱却を背景にE Ink端末が注目されている。",
+        "記事はE Ink搭載ガジェットの新しい文化が生まれつつあると伝えている。",
+        "E Inkは通知や動画中心のスマホ体験から距離を置く選択肢として読める。",
+        "デジタルウェルビーイングや集中環境への関心が市場を後押ししている可能性がある。",
+        "興味深いニュース欄ではPC、アート、舞台など幅広い話題と並んでいた。",
+        "消費者ガジェットの用途が、性能競争から生活習慣の調整へ広がる兆しを示す記事である。"
+      ],
+      "key_findings": [
+        {
+          "point": "中国でE Ink端末がブームになっていると報じられている。",
+          "footnote": "見出しに「中国でE Ink端末が一大ブームに」とある。"
+        },
+        {
+          "point": "背景にはスマホ依存からの脱却ニーズがある。",
+          "footnote": "見出し冒頭に「スマホ依存からの脱却で」と記載されている。"
+        },
+        {
+          "point": "E Ink搭載ガジェットの文化形成が主題である。",
+          "footnote": "見出しに「E Ink搭載ガジェットの新文化」とある。"
+        },
+        {
+          "point": "記事はASCII.jpによるテック系記事である。",
+          "footnote": "Googleニュース上の配信元にASCII.jpと表示された。"
+        },
+        {
+          "point": "興味深いニュース欄の注目記事として表示された。",
+          "footnote": "Googleニュースの「興味深いニュース」欄で最上位に表示された。"
+        }
+      ],
+      "references": [
+        "https://news.google.com/read/CBMiVEFVX3lxTE5naENKbkFCd3VQTzI3T0xxZWRmeEkxcXRoZWR3TGVJcllWTWNyREJIbFZoMl9aaWtiMEJNMV9Ob2xYUGFpYWxpM0ItYWtWQVZWR3dnMQ?hl=ja&gl=JP&ceid=JP%3Aja"
+      ],
+      "retrieved_at": "2026-08-24T00:00:00+09:00"
+    }
+  ]
+}
