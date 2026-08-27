@@ -1,0 +1,127 @@
+{
+  "generated_at": "2026-08-27T09:04:09+09:00",
+  "site": "https://ai-news.dev/",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://www.watch.impress.co.jp/docs/news/2135607.html",
+      "title": "OpenAI、自社チップ「ハラペーニョ」の性能を公表 電力効率やレイテンシ向上",
+      "date": "2026-08-26T10:28:00+09:00",
+      "executive_summary": [
+        "OpenAIは自社開発の推論向けチップ「Jalapeño」の実測ベンチマーク結果を公表した。",
+        "JalapeñoはBroadcomと共同開発しているカスタムチップで、推論処理を主用途に設計されている。",
+        "目的は単位電力あたりのAI処理量を増やし、応答速度を高めることにある。",
+        "比較ではGPT-OSS 120B、DeepSeek R1、Kimi K2.5 1Tの各モデルが使われた。",
+        "1ワットあたりのAI処理量、エンドツーエンドのレイテンシ、対話型ワークロードで改善が示された。",
+        "開発にはCodexと次世代モデルGPT-Astraも活用され、短期間で高性能化したとされる。",
+        "OpenAIは2026年内に自社インフラで導入を開始し、次世代チップ開発も進める方針だ。"
+      ],
+      "key_findings": [
+        {
+          "point": "JalapeñoはOpenAIの自社推論プラットフォームとして設計された。",
+          "footnote": "記事は「自社開発の推論プラットフォームとして設計した新チップ『Jalapeño』」の実測ベンチマーク結果を公開したと説明している。"
+        },
+        {
+          "point": "同チップはBroadcomとの共同開発による推論向けカスタムチップである。",
+          "footnote": "本文では「米Broadcomとの共同開発している、推論(inference)のための、カスタムチップ」と記載されている。"
+        },
+        {
+          "point": "電力効率は比較対象に対して1.5倍から1.9倍向上した。",
+          "footnote": "記事は「1ワットあたりのAI処理量を1.5～1.9倍向上」としている。"
+        },
+        {
+          "point": "エンドツーエンドのレイテンシは1.7倍から3.6倍低減した。",
+          "footnote": "ベンチマーク結果として「エンドツーエンドのレイテンシを1.7～3.6倍低減」と述べている。"
+        },
+        {
+          "point": "AI生成実装は一部ブロックで人間の専門家の既存実装より高速だった。",
+          "footnote": "GPT-OSSのattentionとMOE blocksで「AIが生成した実装が、人間の専門家による既存の実装よりも1.5倍から1.8倍高速」と説明されている。"
+        }
+      ],
+      "references": [
+        "https://www.watch.impress.co.jp/docs/news/2135607.html"
+      ],
+      "retrieved_at": "2026-08-27T09:04:09+09:00"
+    },
+    {
+      "url": "https://pc.watch.impress.co.jp/docs/news/2135792.html",
+      "title": "ChatGPT Workが要ログインサイトの作業も代行。Plusは5時間制限復活",
+      "date": "2026-08-26T16:18:00+09:00",
+      "executive_summary": [
+        "OpenAIはChatGPT Workのアップデートを発表し、ログインが必要なWeb作業にも対応させた。",
+        "対象はChatGPT Plus、Pro、Businessユーザーで、Web版とモバイル版に順次展開される。",
+        "作業中にログインが必要になると、チャット画面上にログイン用ポップアップが表示される。",
+        "ユーザーが認証情報を入力するとログインが実行され、タスクが継続される。",
+        "パスワードマネージャの自動入力や2要素認証のセキュリティコード入力にも対応している。",
+        "認証情報はChatGPTやAIモデルから見えず、モデル学習にも使われない仕様と説明されている。",
+        "PlusではChatGPT WorkとCodexの5時間制限が復活し、Proには当面適用しない予定とされる。"
+      ],
+      "key_findings": [
+        {
+          "point": "ChatGPT Workはログインを伴うWebサイト上の作業を扱えるようになった。",
+          "footnote": "本文では「旅行の手配などWebサイトへのログインが必要な作業も、『ChatGPT Work』に任せられるようになった」と説明している。"
+        },
+        {
+          "point": "展開対象はPlus、Pro、Businessで、Web版とモバイル版に順次提供される。",
+          "footnote": "記事は「ChatGPT Plus/Pro/Businessのユーザー向け」「Web版およびモバイル版で順次展開」と記載している。"
+        },
+        {
+          "point": "ログイン時はチャット画面上のポップアップを通じてユーザーが認証する。",
+          "footnote": "ログインが必要になった際に「チャット画面上にログイン用のポップアップが出現」し、認証情報入力後にタスクが続行されるとある。"
+        },
+        {
+          "point": "AIモデルはユーザー名やパスワードを閲覧できず、学習にも使われない。",
+          "footnote": "本文は「ChatGPTやAIモデルはユーザー名やパスワードといった認証情報を見ることができない」「モデルの学習に使用されることもない」と述べている。"
+        },
+        {
+          "point": "PlusプランではChatGPT WorkとCodexの5時間制限が復活した。",
+          "footnote": "記事は「ChatGPT Plusプランのユーザーに対し、ChatGPT WorkおよびCodexの5時間制限を復活させた」と説明している。"
+        }
+      ],
+      "references": [
+        "https://pc.watch.impress.co.jp/docs/news/2135792.html"
+      ],
+      "retrieved_at": "2026-08-27T09:04:09+09:00"
+    },
+    {
+      "url": "https://forest.watch.impress.co.jp/docs/news/2135731.html",
+      "title": "「ChatGPT」の無償プランにも予定済みタスクが開放 ～Plus/Proは「Webhook」に対応",
+      "date": "2026-08-26T15:43:00+09:00",
+      "executive_summary": [
+        "OpenAIはChatGPTのスケジュール機能に関する複数のアップデートを発表した。",
+        "予定済みタスクは、あらかじめ登録したタスクを指定時刻に実行する機能である。",
+        "今回の更新で、対応アプリのイベントをきっかけにタスクを実行できるWebhook連携が加わった。",
+        "Gmail、Slack、GitHubなどのイベントをトリガーにできると説明されている。",
+        "Slackチャンネル監視にはChatGPT Slackアプリの事前追加が必要とされる。",
+        "Freeユーザーにも予定済みタスクが開放されたが、有効タスクは3件までに制限される。",
+        "Webhook機能はWeb版とモバイル版のPlusおよびProプランで利用できる。"
+      ],
+      "key_findings": [
+        {
+          "point": "ChatGPTの予定済みタスク機能にWebhookによるイベントトリガーが追加された。",
+          "footnote": "記事は「対応アプリでなにかが起きたこと（イベント）をきっかけ（トリガー）に実行できるようになった」と述べている。"
+        },
+        {
+          "point": "Gmail、Slack、GitHubの動きをタスク起動条件にできる。",
+          "footnote": "本文では「Gmailの新着メッセージ」「Slackチャンネルへの投稿」「GitHubのプルリクエストの動き」をトリガー例として挙げている。"
+        },
+        {
+          "point": "承認が必要なアクションではユーザー確認まで処理が一時停止する。",
+          "footnote": "記事は「承認が必要なアクションは、ユーザーが確認するまで一時停止する」と説明している。"
+        },
+        {
+          "point": "Freeユーザーにも予定済みタスクが開放されたが、作成数と頻度に制限がある。",
+          "footnote": "本文は「有効なタスクは3つまで」「1回限りの実行か、1日1回までの繰り返しに限られる」としている。"
+        },
+        {
+          "point": "WebhookによるイベントトリガーはPlusとPro向けで、FreeとGoでは作成できない。",
+          "footnote": "記事には「Free」「Go」プランでは「Webhook」でイベントトリガーされるタスクは作成できないとある。"
+        }
+      ],
+      "references": [
+        "https://forest.watch.impress.co.jp/docs/news/2135731.html"
+      ],
+      "retrieved_at": "2026-08-27T09:04:09+09:00"
+    }
+  ]
+}
