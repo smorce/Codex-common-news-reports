@@ -18,7 +18,7 @@ dependencies = [
     "torch",
     "torchvision",
     "transformers>=5.5.0",
-    "yt-dlp[default]>=2026.2.4",
+    "yt-dlp[default]>=2026.8.19",
     "fast-bunkai>=0.1.1",
 ]
 

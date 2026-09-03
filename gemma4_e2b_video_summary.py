@@ -117,6 +117,9 @@ RSS_USER_AGENT = (
 # チャンネル最新 N 本を確保するため、RSS/プレイリストから多めに候補を取る
 VIDEO_CANDIDATE_POOL_FACTOR = 5
 VIDEO_CANDIDATE_POOL_MIN_EXTRA = 10
+# 403 やメンバー限定でスキップが続くとき、追加でプレイリストから取る上限
+VIDEO_CANDIDATE_MAX_TOTAL = 50
+VIDEO_CANDIDATE_REFETCH_CHUNK = 10
 
 # yt-dlp がスキップして次候補へ進めるエラー（メンバー限定・非公開など）
 YTDLP_SKIPPABLE_ERROR_MARKERS: tuple[str, ...] = (
@@ -129,6 +132,22 @@ YTDLP_SKIPPABLE_ERROR_MARKERS: tuple[str, ...] = (
     "premium subscriber",
     "sign in to confirm your age",
     "confirm your age",
+)
+
+# 一時的な 403 など。別フォーマット／再実行で回復することがある。
+YTDLP_RETRYABLE_ERROR_MARKERS: tuple[str, ...] = (
+    "http error 403",
+    "http error 429",
+    "unable to download video data",
+    "the downloaded file is empty",
+    "n challenge solving failed",
+)
+
+# (format_spec, merge_to_mp4)。SABR 環境では bv*+ba が使えず 360p の 18 だけになることがある。
+YTDLP_FORMAT_FALLBACKS: tuple[tuple[str, bool], ...] = (
+    ("bv*+ba/b", True),
+    ("b", False),
+    ("best[ext=mp4]/best", False),
 )
 
 
@@ -247,16 +266,32 @@ def is_skippable_ytdlp_error(text: str) -> bool:
     return any(marker in lowered for marker in YTDLP_SKIPPABLE_ERROR_MARKERS)
 
 
+def is_retryable_ytdlp_error(text: str) -> bool:
+    """403 など、フォーマット変更や再実行で回復しうる yt-dlp エラーか。"""
+    lowered = text.lower()
+    return any(marker in lowered for marker in YTDLP_RETRYABLE_ERROR_MARKERS)
+
+
+def _ytdlp_error_summary(text: str) -> str:
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    for line in reversed(lines):
+        if line.upper().startswith("ERROR") or "http error" in line.lower():
+            return line
+    return lines[-1] if lines else "yt-dlp failed"
+
+
 def _ytdlp_output_text(cp: subprocess.CompletedProcess[str]) -> str:
     return ((cp.stderr or "") + "\n" + (cp.stdout or "")).strip()
 
 
 def _detect_js_runtimes() -> list[str]:
-    """PATH 上の deno / node を検出（YouTube 用 JS 実行環境）。"""
+    """PATH 上の JS 実行環境。deno を優先（node は n-challenge に失敗しやすい）。"""
     found: list[str] = []
     for name in ("deno", "node"):
         if shutil.which(name):
             found.append(name)
+    if "deno" in found:
+        return ["deno"]
     return found
 
 
@@ -270,33 +305,49 @@ def _warn_if_no_js_runtime() -> None:
     _js_runtime_warned = True
     print(
         "[WARNING] No JS runtime (deno/node) on PATH. "
-        "YouTube extraction may be incomplete. Install deno or node.",
+        "YouTube download will likely fail with HTTP 403. "
+        "Install Node.js or Deno and ensure it is on PATH.",
         file=sys.stderr,
     )
 
 
-def _ytdlp_base_args() -> list[str]:
-    """yt-dlp 共通オプション（古いバージョン警告の抑制・JS ランタイム・言語固定）。"""
+def _ytdlp_base_args(*, cookies_browser: str | None = None) -> list[str]:
+    """yt-dlp 共通オプション（JS チャレンジ解決・言語固定・任意でブラウザ Cookie）。"""
     args = [
         "--no-update",
         "--no-warnings",
-        # YouTube が自動生成した英訳タイトルではなく、元の日本語メタデータを要求する。
-        # 指定しないとサーバ側ロケール判定で英訳が返ってくることがある。
+        # 日本語メタデータ + android_sdkless 由来の 403 を避ける。
         "--extractor-args",
-        "youtube:lang=ja",
+        "youtube:lang=ja;player_client=default,-android_sdkless",
     ]
-    for runtime in _detect_js_runtimes():
+    runtimes = _detect_js_runtimes()
+    for runtime in runtimes:
         args.extend(["--js-runtimes", runtime])
+    if runtimes:
+        # YouTube の n/signature チャレンジ解決（未指定だと simulate だけ成功し 403 になりやすい）
+        args.extend(["--remote-components", "ejs:github"])
+    if cookies_browser:
+        args.extend(["--cookies-from-browser", cookies_browser])
     return args
 
 
-def probe_video_downloadable(video_url: str) -> tuple[bool, str]:
+def probe_video_downloadable(
+    video_url: str,
+    *,
+    cookies_browser: str | None = None,
+) -> tuple[bool, str]:
     """
     yt-dlp --simulate でダウンロード可否を確認する。
     メンバー限定などは (False, 理由) を返す。
     """
     _warn_if_no_js_runtime()
-    cmd = ["yt-dlp", *_ytdlp_base_args(), "--simulate", "--no-download", video_url]
+    cmd = [
+        "yt-dlp",
+        *_ytdlp_base_args(cookies_browser=cookies_browser),
+        "--simulate",
+        "--no-download",
+        video_url,
+    ]
     cp = run(cmd, check=False, capture=True, text=True)
     if cp.returncode == 0:
         return True, ""
@@ -306,26 +357,36 @@ def probe_video_downloadable(video_url: str) -> tuple[bool, str]:
     return False, err.splitlines()[-1] if err else "yt-dlp simulate failed"
 
 
-def get_latest_video_urls_via_ytdlp(channel_url: str, max_entries: int) -> list[tuple[str, str]]:
+def get_latest_video_urls_via_ytdlp(
+    channel_url: str,
+    max_entries: int,
+    *,
+    start_index: int = 1,
+    cookies_browser: str | None = None,
+) -> list[tuple[str, str]]:
     """
     RSS が 404 や空になる場合の代替。
     yt-dlp のフラットプレイリストで最新 max_entries 本を取得する。
+    start_index は 1 始まりのプレイリスト位置。
     """
     if max_entries < 1:
         raise ValueError("max_entries must be >= 1")
+    if start_index < 1:
+        raise ValueError("start_index must be >= 1")
 
     _warn_if_no_js_runtime()
     page = _channel_videos_page_url(channel_url)
+    end_index = start_index + max_entries - 1
     cp = run(
         [
             "yt-dlp",
-            *_ytdlp_base_args(),
+            *_ytdlp_base_args(cookies_browser=cookies_browser),
             "--quiet",
             "--flat-playlist",
             "--print",
             "%(title)s\t%(url)s",
             "--playlist-items",
-            f"1:{max_entries}",
+            f"{start_index}:{end_index}",
             page,
         ],
         check=False,
@@ -376,83 +437,113 @@ def check_ffprobe_available() -> bool:
         return False
 
 
-def download_mp4_simple(video_url: str, out_path: Path) -> Path:
-    """
-    yt-dlp で動画を取得し mp4 にまとめる。
-    圧縮やファイルサイズによる再試行は行わない。
-    """
-    out_path.parent.mkdir(parents=True, exist_ok=True)
-    template = str(out_path.with_suffix(".%(ext)s"))
-    has_ffmpeg = check_ffmpeg_available()
-
-    if has_ffmpeg:
-        format_spec = "bv*+ba/b"
-        merge_format = "mp4"
-    else:
-        print(
-            "[WARNING] ffmpeg not found. Using single-format download (may be lower quality).",
-            file=sys.stderr,
-        )
-        format_spec = "best[ext=mp4][vcodec*=avc1]/best[ext=mp4]/best"
-        merge_format = None
-
+def _cleanup_download_artifacts(out_path: Path) -> None:
     mp4 = out_path.with_suffix(".mp4")
     if mp4.exists():
         try:
             mp4.unlink()
         except OSError as exc:
             print(f"[WARNING] Failed to remove existing file: {exc}", file=sys.stderr)
-
     for part_file in out_path.parent.glob(out_path.stem + "*.part"):
         try:
             part_file.unlink()
         except OSError:
             pass
 
-    _warn_if_no_js_runtime()
-    cmd = [
-        "yt-dlp",
-        *_ytdlp_base_args(),
-        "-f",
-        format_spec,
-        "-o",
-        template,
-        video_url,
-        "--no-part",
-        "--no-continue",
-    ]
-    if merge_format:
-        cmd.extend(["--merge-output-format", merge_format])
 
-    cp = run(cmd, check=False, capture=True, text=True)
-    if cp.returncode != 0:
-        err = _ytdlp_output_text(cp)
-        if is_skippable_ytdlp_error(err):
-            raise SkippableVideoDownloadError(
-                video_url,
-                err.splitlines()[-1] if err else "not downloadable",
-            )
-        raise subprocess.CalledProcessError(
-            cp.returncode,
-            cmd,
-            output=cp.stdout,
-            stderr=cp.stderr,
+def _find_downloaded_file(out_path: Path) -> Path | None:
+    mp4 = out_path.with_suffix(".mp4")
+    if mp4.exists():
+        return mp4
+    candidates = list(out_path.parent.glob(out_path.stem + ".*"))
+    if not candidates:
+        return None
+    candidates.sort(key=lambda p: p.stat().st_size, reverse=True)
+    return candidates[0]
+
+
+def download_mp4_simple(
+    video_url: str,
+    out_path: Path,
+    *,
+    cookies_browser: str | None = None,
+) -> Path:
+    """
+    yt-dlp で動画を取得し mp4 にまとめる。
+    HTTP 403 などはフォーマットを変えて再試行する。
+    """
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    template = str(out_path.with_suffix(".%(ext)s"))
+    has_ffmpeg = check_ffmpeg_available()
+    if not has_ffmpeg:
+        print(
+            "[WARNING] ffmpeg not found. Using single-format download (may be lower quality).",
+            file=sys.stderr,
         )
 
-    mp4 = out_path.with_suffix(".mp4")
-    if not mp4.exists():
-        candidates = list(out_path.parent.glob(out_path.stem + ".*"))
-        if candidates:
-            candidates.sort(key=lambda p: p.stat().st_size, reverse=True)
-            mp4 = candidates[0]
-        else:
-            raise FileNotFoundError(f"Download finished but output not found: {out_path}")
+    _warn_if_no_js_runtime()
+    last_err = ""
+    last_cmd: list[str] = []
 
-    print(
-        f"[INFO] Downloaded: {mp4} ({mp4.stat().st_size / (1024 * 1024):.2f} MB)",
-        file=sys.stderr,
+    for format_spec, want_merge in YTDLP_FORMAT_FALLBACKS:
+        merge_format = "mp4" if (want_merge and has_ffmpeg) else None
+        _cleanup_download_artifacts(out_path)
+        cmd = [
+            "yt-dlp",
+            *_ytdlp_base_args(cookies_browser=cookies_browser),
+            "-f",
+            format_spec,
+            "-o",
+            template,
+            video_url,
+            "--retries",
+            "10",
+            "--fragment-retries",
+            "10",
+            "--extractor-retries",
+            "3",
+        ]
+        if merge_format:
+            cmd.extend(["--merge-output-format", merge_format])
+        last_cmd = cmd
+        print(
+            f"[INFO] yt-dlp format={format_spec!r} merge={merge_format!r}",
+            file=sys.stderr,
+        )
+        cp = run(cmd, check=False, capture=True, text=True)
+        if cp.returncode == 0:
+            downloaded = _find_downloaded_file(out_path)
+            if downloaded is not None:
+                print(
+                    f"[INFO] Downloaded: {downloaded} "
+                    f"({downloaded.stat().st_size / (1024 * 1024):.2f} MB)",
+                    file=sys.stderr,
+                )
+                return downloaded
+            last_err = f"Download finished but output not found: {out_path}"
+            print(f"[WARNING] {last_err}", file=sys.stderr)
+            continue
+
+        last_err = _ytdlp_output_text(cp)
+        summary = _ytdlp_error_summary(last_err)
+        print(f"[WARNING] yt-dlp failed ({format_spec}): {summary}", file=sys.stderr)
+        if last_err:
+            print(last_err, file=sys.stderr)
+        if is_skippable_ytdlp_error(last_err):
+            raise SkippableVideoDownloadError(video_url, summary)
+        if is_retryable_ytdlp_error(last_err):
+            continue
+        raise RuntimeError(
+            f"yt-dlp failed (exit {cp.returncode}): {summary}\nCommand: {cmd}"
+        )
+
+    summary = _ytdlp_error_summary(last_err)
+    if is_skippable_ytdlp_error(last_err) or is_retryable_ytdlp_error(last_err):
+        raise SkippableVideoDownloadError(video_url, summary)
+    raise RuntimeError(
+        f"yt-dlp failed after format fallbacks: {summary or last_err or 'unknown error'}\n"
+        f"Command: {last_cmd}"
     )
-    return mp4
 
 
 def delete_downloaded_video_permanently(video_path: Path) -> None:
@@ -572,6 +663,35 @@ def get_latest_video_urls_from_channel(
         )
 
     return get_latest_video_urls_via_ytdlp(channel_url, pool)
+
+
+def fetch_more_channel_video_candidates(
+    channel_url: str,
+    *,
+    start_index: int,
+    count: int,
+    seen_urls: set[str],
+    cookies_browser: str | None = None,
+) -> list[tuple[str, str]]:
+    """
+    プレイリストの start_index から count 件を yt-dlp で追加取得する。
+    既に seen_urls にある URL は除外する。
+    """
+    if count < 1:
+        return []
+    batch = get_latest_video_urls_via_ytdlp(
+        channel_url,
+        count,
+        start_index=start_index,
+        cookies_browser=cookies_browser,
+    )
+    out: list[tuple[str, str]] = []
+    for url, title in batch:
+        if url in seen_urls:
+            continue
+        seen_urls.add(url)
+        out.append((url, title))
+    return out
 
 
 def video_id_from_watch_url(url: str) -> str | None:
@@ -1526,6 +1646,15 @@ def parse_args() -> argparse.Namespace:
             "大きいほど速い一方、CUDA メモリを多く使います。"
         ),
     )
+    parser.add_argument(
+        "--ytdlp-cookies-browser",
+        default=None,
+        metavar="BROWSER",
+        help=(
+            "yt-dlp の --cookies-from-browser に渡すブラウザ名 "
+            "(例: chrome, edge, firefox)。403 が続く場合に試す。"
+        ),
+    )
     return parser.parse_args()
 
 
@@ -1593,7 +1722,11 @@ def main() -> None:
         video_url = args.video_url.strip()
         print(f"[INFO] Using explicit video URL: {video_url}", file=sys.stderr)
         out_base = args.download_dir / args.download_filename
-        mp4_path = download_mp4_simple(video_url, out_base)
+        mp4_path = download_mp4_simple(
+            video_url,
+            out_base,
+            cookies_browser=args.ytdlp_cookies_browser,
+        )
 
         try:
             if args.dry_run:
@@ -1634,12 +1767,16 @@ def main() -> None:
         return
 
     # --- チャンネル RSS: 複数本（メンバー限定はスキップして件数を確保） ---
+    cookies_browser = args.ytdlp_cookies_browser
     pool_size = video_candidate_pool_size(args.num_videos)
     candidates = get_latest_video_urls_from_channel(
         args.channel_url,
         n=args.num_videos,
         max_entries=pool_size,
     )
+    seen_urls = {url for url, _ in candidates}
+    next_playlist_index = len(candidates) + 1
+
     for i, (url, title) in enumerate(candidates, start=1):
         print(f"[INFO] Candidate #{i}: {title!r}\n       {url}", file=sys.stderr)
 
@@ -1648,18 +1785,45 @@ def main() -> None:
         print(f"video_input_mode: {resolve_video_input_mode(args.video_input_mode)}")
         print(f"frame_sampling: {args.frame_sampling}")
         selected = 0
-        for url, title in candidates:
-            ok, reason = probe_video_downloadable(url)
+        pending_dry = list(candidates)
+        while selected < args.num_videos and (
+            pending_dry or next_playlist_index <= VIDEO_CANDIDATE_MAX_TOTAL
+        ):
+            if not pending_dry:
+                chunk = min(
+                    VIDEO_CANDIDATE_REFETCH_CHUNK,
+                    VIDEO_CANDIDATE_MAX_TOTAL - next_playlist_index + 1,
+                )
+                if chunk < 1:
+                    break
+                print(
+                    f"[dry-run] Fetching more candidates from playlist index "
+                    f"{next_playlist_index}…",
+                    file=sys.stderr,
+                )
+                pending_dry = fetch_more_channel_video_candidates(
+                    args.channel_url,
+                    start_index=next_playlist_index,
+                    count=chunk,
+                    seen_urls=seen_urls,
+                    cookies_browser=cookies_browser,
+                )
+                next_playlist_index += chunk
+            if not pending_dry:
+                break
+            url, title = pending_dry.pop(0)
+            ok, reason = probe_video_downloadable(
+                url,
+                cookies_browser=cookies_browser,
+            )
             if ok:
                 selected += 1
                 print(f"[dry-run] Would summarize #{selected}: {title!r}")
-                if selected >= args.num_videos:
-                    break
             else:
                 print(f"[dry-run] Skip: {title!r} — {reason}", file=sys.stderr)
         if selected < args.num_videos:
             raise RuntimeError(
-                f"dry-run: only {selected} downloadable video(s) in {len(candidates)} "
+                f"dry-run: only {selected} downloadable video(s) in {len(seen_urls)} "
                 f"candidates (need {args.num_videos})"
             )
         return
@@ -1668,9 +1832,37 @@ def main() -> None:
     report_entries: list[tuple[str, str, str]] = []
     pending = list(candidates)
 
-    while len(report_entries) < args.num_videos and pending:
+    while len(report_entries) < args.num_videos:
+        if not pending:
+            if next_playlist_index > VIDEO_CANDIDATE_MAX_TOTAL:
+                break
+            chunk = min(
+                VIDEO_CANDIDATE_REFETCH_CHUNK,
+                VIDEO_CANDIDATE_MAX_TOTAL - next_playlist_index + 1,
+            )
+            if chunk < 1:
+                break
+            print(
+                f"[INFO] Need more downloadable videos; fetching playlist items "
+                f"{next_playlist_index}:{next_playlist_index + chunk - 1}…",
+                file=sys.stderr,
+            )
+            pending = fetch_more_channel_video_candidates(
+                args.channel_url,
+                start_index=next_playlist_index,
+                count=chunk,
+                seen_urls=seen_urls,
+                cookies_browser=cookies_browser,
+            )
+            next_playlist_index += chunk
+            if not pending:
+                continue
+
         video_url, title = pending.pop(0)
-        ok, reason = probe_video_downloadable(video_url)
+        ok, reason = probe_video_downloadable(
+            video_url,
+            cookies_browser=cookies_browser,
+        )
         if not ok:
             print(
                 f"[INFO] Skipping (probe): {title!r} — {reason}",
@@ -1687,7 +1879,11 @@ def main() -> None:
             file=sys.stderr,
         )
         try:
-            mp4_path = download_mp4_simple(video_url, out_base)
+            mp4_path = download_mp4_simple(
+                video_url,
+                out_base,
+                cookies_browser=cookies_browser,
+            )
         except SkippableVideoDownloadError as exc:
             print(
                 f"[INFO] Skipping (download): {title!r} — {exc.reason}",
@@ -1718,10 +1914,16 @@ def main() -> None:
             delete_downloaded_video_permanently(mp4_path)
 
     if len(report_entries) < args.num_videos:
+        js_hint = (
+            " Node.js または Deno を PATH に追加し、yt-dlp を最新版に更新してください。"
+            if not _detect_js_runtimes()
+            else ""
+        )
         raise RuntimeError(
-            f"Only {len(report_entries)} video(s) summarized from {len(candidates)} "
+            f"Only {len(report_entries)} video(s) summarized from {len(seen_urls)} "
             f"candidates (need {args.num_videos}). "
-            "Members-only or unavailable videos may dominate the channel feed."
+            "Members-only, unavailable, or blocked downloads may dominate the feed."
+            f"{js_hint}"
         )
 
     out = args.output or default_report_path()

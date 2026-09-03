@@ -22,8 +22,32 @@ def test_is_skippable_ytdlp_error_other() -> None:
     assert not g4.is_skippable_ytdlp_error("ERROR: network timeout")
 
 
+def test_is_retryable_ytdlp_error_403() -> None:
+    err = "ERROR: unable to download video data: HTTP Error 403: Forbidden"
+    assert g4.is_retryable_ytdlp_error(err)
+    assert g4._ytdlp_error_summary(err) == err
+
+
+def test_ytdlp_base_args_include_player_client() -> None:
+    args = g4._ytdlp_base_args()
+    joined = " ".join(args)
+    assert "youtube:lang=ja;player_client=default,-android_sdkless" in joined
+    assert "--no-update" in args
+
+
+def test_ytdlp_base_args_include_ejs_when_js_runtime_present() -> None:
+    args = g4._ytdlp_base_args()
+    if any(name in args for name in ("node", "deno")):
+        assert "--remote-components" in args
+        idx = args.index("--remote-components")
+        assert args[idx + 1] == "ejs:github"
+
+
 if __name__ == "__main__":
     test_video_candidate_pool_size()
     test_is_skippable_ytdlp_error_members_only()
     test_is_skippable_ytdlp_error_other()
+    test_is_retryable_ytdlp_error_403()
+    test_ytdlp_base_args_include_player_client()
+    test_ytdlp_base_args_include_ejs_when_js_runtime_present()
     print("all tests passed")
