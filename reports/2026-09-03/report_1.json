@@ -1,0 +1,135 @@
+{
+  "generated_at": "2026-09-03T09:01:30+09:00",
+  "site": "https://zenn.dev/kun432?tab=scraps",
+  "num_articles": 3,
+  "articles": [
+    {
+      "url": "https://zenn.dev/kun432/scraps/d1ddb8405e0b13",
+      "title": "MiaAI-Lab Qwen3.8-27B EXL3量子化版を試す",
+      "date": "2026-09-01T16:11:00+09:00",
+      "executive_summary": [
+        "MiaAI-Lab が公開した Qwen3.8-27B の EXL3 量子化版を、ローカル推論の観点で試している。",
+        "対象モデルは 24GB VRAM 環境で 200k 超のコンテキストを扱える点が大きな特徴として紹介されている。",
+        "筆者は EXL3 や dflash2、MiaAI-Lab の既存レシピとの関係を踏まえて検証している。",
+        "Pi のモデル設定例を追加し、OpenAI 互換の completions API としてローカルサーバーを登録している。",
+        "reasoning_effort や thinkingFormat など、推論系パラメータの扱いも確認対象になっている。",
+        "過去に試した Qwen3.8-27B 量子化モデルと比較し、今回の構成は最も高速だったと評価している。",
+        "一方で API はまだシンプルで、reasoning budget や Inception パターン対応など追加改善が必要としている。"
+      ],
+      "key_findings": [
+        {
+          "point": "記事は Qwen3.8-27B の EXL3 量子化版を主題にしている。",
+          "footnote": "本文に「Qwen3.8-27BのEXL3版を出された方がいる」とある。"
+        },
+        {
+          "point": "公開元の説明では 24GB VRAM で 200k 超コンテキストを扱えることが訴求されている。",
+          "footnote": "引用された投稿に「24GB VRAMでdflash2を使用しながら200k+のコンテキストでQwen3.8-27Bを提供」とある。"
+        },
+        {
+          "point": "筆者はローカル推論ツール Pi の設定に Qwen3.8 EXL3 ローカルプロバイダを追加している。",
+          "footnote": "本文に「Piの設定を変更」とあり、models.json に baseUrl、api、model id などを設定している。"
+        },
+        {
+          "point": "reasoning_effort は low でも実行時間が長く、truncated 発生後に compaction で完走した。",
+          "footnote": "本文に「low で Pagoda Garden を試してみたら、一回 \"truncated\" が発生したけど、compactionして何とか完走」とある。"
+        },
+        {
+          "point": "過去の量子化モデル比較では今回の構成が最速とされている。",
+          "footnote": "まとめに「条件が違う...それでも今までで最も高速に動作するものだった」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/d1ddb8405e0b13"
+      ],
+      "retrieved_at": "2026-09-03T09:01:30+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/6070a2fd5dca29",
+      "title": "OpenAI CLI",
+      "date": "2026-08-29T20:01:00+09:00",
+      "executive_summary": [
+        "OpenAI CLI の存在に気づいた筆者が、インストールから主要 API 操作までを試している。",
+        "CLI は Go 製で、GitHub に openai/openai-cli として公開されていると紹介している。",
+        "Homebrew でインストールし、手元環境では openai version 1.9.0 を確認している。",
+        "Responses API へのリクエストでは gpt-5.6 を指定し、日本語が JSON 内で Unicode エスケープされる挙動を確認している。",
+        "--format には auto、explore、json、jsonl、pretty、raw、yaml があり、pretty や yaml では日本語表示が読みやすいとしている。",
+        "Files API では PDF をアップロードし、取得した file_id を input_file として Responses API に渡す流れを示している。",
+        "画像生成・編集や音声合成も CLI から扱えるが、TTS の instructions は新しいモデル別名では効きにくい可能性を観察している。"
+      ],
+      "key_findings": [
+        {
+          "point": "OpenAI CLI は公式ドキュメントと GitHub リポジトリが確認されている。",
+          "footnote": "本文に OpenAI CLI ドキュメントへの埋め込みと「openai/openai-cli Official CLI for the OpenAI API」が表示されている。"
+        },
+        {
+          "point": "CLI は比較的新しいものとして認識され、v1.0.0 は 2026年5月のリリースとされている。",
+          "footnote": "本文に「Releasesを遡るとv1.0.0は2026年5月なので、4ヶ月ほど前」とある。"
+        },
+        {
+          "point": "Homebrew から `brew install openai/tools/openai` で導入できる。",
+          "footnote": "本文のインストール例に「brew install openai/tools/openai」とある。"
+        },
+        {
+          "point": "Responses API の標準 JSON 出力では日本語が Unicode エンコードされたまま表示される場合がある。",
+          "footnote": "本文に「日本語はUnicodeエンコードされたままになる」とあり、出力例にもエスケープ文字列が示されている。"
+        },
+        {
+          "point": "CLI の `--format` 指定で yaml や pretty を使うと日本語を読みやすく出力できる。",
+          "footnote": "本文に「explore / pretty / yaml では日本語で出力された」とある。"
+        },
+        {
+          "point": "Files API 連携では `files create` で file_id を取得し、Responses API の input_file に渡す手順が示されている。",
+          "footnote": "本文に「ファイルをアップロード。これでファイルのIDを取得する」「file_id: ${FILE_ID}」とある。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/6070a2fd5dca29"
+      ],
+      "retrieved_at": "2026-09-03T09:01:30+09:00"
+    },
+    {
+      "url": "https://zenn.dev/kun432/scraps/77b53e782bdeef",
+      "title": "「Pyodide」 を試す ③ Python compatibility",
+      "date": "2026-08-29T01:46:00+09:00",
+      "executive_summary": [
+        "Pyodide の Python 互換性と制約を、通常の CPython と比較する目的で整理している。",
+        "Pyodide は WebAssembly VM 上で動くため、Python 自体の多くの機能は動くが OS 依存機能には制約がある。",
+        "標準ライブラリの大部分は利用できる一方、一部は機能制限、削除、またはインポートできても動作しない。",
+        "decimal、pydoc、webbrowser、zoneinfo、hashlib、ssl などは制限や追加ロードの必要がある。",
+        "HTTP 通信はブラウザのネットワーク API を経由するため、証明書、タイムアウト、プロキシ、CORS などを自由に制御できない。",
+        "threading、multiprocessing、socket は WebAssembly VM の制約で実用上動かないと整理されている。",
+        "筆者は Cloudflare Workers for Python の理解に向けた下調べとして確認し、次は Workers 側を見る予定としている。"
+      ],
+      "key_findings": [
+        {
+          "point": "Pyodide は Python 機能の多くを動かせるが、OS・ネットワーク・スレッド依存機能に制約がある。",
+          "footnote": "本文に「Python そのものの機能は結構動く」「OS・ネットワーク・スレッドなどに依存する機能には制約がある」とある。"
+        },
+        {
+          "point": "標準ライブラリは大部分が動作するものの、例外として制限・削除・非動作のカテゴリがある。",
+          "footnote": "本文に「Python標準ライブラリの大部分は動作する。ただし...例外がある」とある。"
+        },
+        {
+          "point": "pydoc は初期状態では含まれず、pydoc_data を明示的にロードまたはインストールする必要がある。",
+          "footnote": "本文に「pydoc...デフォルトでは組み込まれていない」「pyodide.loadPackage('pydoc_data')」「micropip.install('pydoc_data')」とある。"
+        },
+        {
+          "point": "HTTP 通信はブラウザ経由であり、サーバー上の Python と同じ自由度はない。",
+          "footnote": "本文に「HTTP通信はブラウザ経由」「ブラウザの制約を受ける」「サーバー上のPythonのような自由な通信はできない」とある。"
+        },
+        {
+          "point": "ストリーミングダウンロードには Web Worker と cross-origin isolated が必要で、条件外では非ストリーミングになる。",
+          "footnote": "本文に「Pyodideが Web Worker 内で動いている」「Webサイトが cross-origin isolated」「条件を満たさない場合は非ストリーミング」とある。"
+        },
+        {
+          "point": "threading、multiprocessing、socket はインポートできても WebAssembly VM の制約で機能しないとされている。",
+          "footnote": "本文に「WebAssembly VMの制約からインポートはできても機能しないもの」として multiprocessing、threading、socket が挙げられている。"
+        }
+      ],
+      "references": [
+        "https://zenn.dev/kun432/scraps/77b53e782bdeef"
+      ],
+      "retrieved_at": "2026-09-03T09:01:30+09:00"
+    }
+  ]
+}
